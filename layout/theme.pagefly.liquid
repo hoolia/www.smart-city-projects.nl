@@ -51,8 +51,8 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     <link rel="preload" as="style" href="//cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" onload="this.rel='stylesheet'" crossorigin defer>
     <link rel="preload" as="style" href="{{ 'stroke-gap-icons.css' | asset_url }}" onload="this.rel='stylesheet'" defer>
     {% include 'google-fonts' %}
-    {% if template == 'index' %}<link rel="preload" as="style" href="{{ 'slideshow.css' | asset_url }}" onload="this.rel='stylesheet'">{% endif %}
-    {% if template contains 'product' %}
+    {% if template == 'index' or template contains 'product.' %}<link rel="preload" as="style" href="{{ 'slideshow.css' | asset_url }}" onload="this.rel='stylesheet'">{% endif %}
+    {% if template contains 'product-disabled' %}
     <link rel="preload" as="style" href="{{ 'zoom.css' | asset_url }}" onload="this.rel='stylesheet'">
     <link rel="preload" as="style" href="{{ 'magnific-popup.css' | asset_url }}" onload="this.rel='stylesheet'">
 {% endif %}
