@@ -49,7 +49,7 @@
     "social_youtube_link": "",
     "social_vimeo_link": "",
     "social_fancy_link": "",
-    "show_multiple_currencies": true,
+    "show_multiple_currencies": false,
     "currency_format": "money_format",
     "supported_currencies": "USD EUR GBP PKR CAD JPY",
     "default_currency": "EUR",
@@ -255,7 +255,7 @@
           "use_box_layout": false,
           "show_search": true,
           "show_cart": false,
-          "show_settings_menu": true
+          "show_settings_menu": false
         }
       },
       "footer": {
