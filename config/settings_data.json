@@ -423,23 +423,6 @@
           "bottom_border": false
         }
       },
-      "1504983008053": {
-        "type": "collection",
-        "settings": {
-          "collection_layout": "feature-carousal",
-          "heading": "Mostviewed Products",
-          "description": "",
-          "collection": "watches",
-          "listing_rows": 1,
-          "no_of_products": 3,
-          "products_tab_count": 6,
-          "fullwidth": false,
-          "background": false,
-          "background_color": "#f8f8f8",
-          "product_grid_img_carousel": false,
-          "bottom_padding": false
-        }
-      },
       "1507135844484": {
         "type": "testimonial",
         "blocks": {
@@ -488,7 +471,7 @@
           "description": "Welcome to my personal presentation",
           "fullwidth": false,
           "background": true,
-          "background_color": "#242424",
+          "background_color": "#002500",
           "top_margin": false
         }
       },
@@ -1152,7 +1135,6 @@
       "1480267833382",
       "1504781997946",
       "16115865560156a5cb",
-      "1504983008053",
       "161181259114520bcf",
       "1507135844484",
       "1611815271ffccd07b",
