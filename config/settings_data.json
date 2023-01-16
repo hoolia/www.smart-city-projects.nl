@@ -29,7 +29,7 @@
     "footer_color_bg": "#e5e5e5",
     "footer_color_heading": "#4ad44a",
     "footer_color_links": "#0c9e0e",
-    "footer_bottom_bg_color": "#242424",
+    "footer_bottom_bg_color": "#001e00",
     "label_new": "#e5e5e5",
     "label_sale": "#a8741a",
     "cookie_constent_background": "#30bf32",
@@ -201,47 +201,10 @@
               "mega_menu_image_link_col_4": "",
               "bottom_image_link": ""
             }
-          },
-          "1523367384581": {
-            "type": "megamenu",
-            "settings": {
-              "mega_menu": "",
-              "menu_items_count": 6,
-              "mega_menu_col_1": "menu",
-              "mega_menu_title_col_1": "Collections",
-              "mega_menu_link_col_1": "",
-              "mega_menu_ll_col_1": "",
-              "mega_menu_collection_col_1": "",
-              "mega_menu_product_col_1": "",
-              "mega_menu_image_link_col_1": "",
-              "mega_menu_col_2": "menu",
-              "mega_menu_title_col_2": "Products",
-              "mega_menu_link_col_2": "",
-              "mega_menu_ll_col_2": "",
-              "mega_menu_collection_col_2": "",
-              "mega_menu_product_col_2": "",
-              "mega_menu_image_link_col_2": "",
-              "mega_menu_col_3": "none",
-              "mega_menu_title_col_3": "",
-              "mega_menu_link_col_3": "",
-              "mega_menu_ll_col_3": "",
-              "mega_menu_collection_col_3": "",
-              "mega_menu_product_col_3": "",
-              "mega_menu_image_link_col_3": "",
-              "mega_menu_col_4": "none",
-              "mega_menu_title_col_4": "",
-              "mega_menu_link_col_4": "",
-              "mega_menu_ll_col_4": "",
-              "mega_menu_collection_col_4": "",
-              "mega_menu_product_col_4": "",
-              "mega_menu_image_link_col_4": "",
-              "bottom_image_link": ""
-            }
           }
         },
         "block_order": [
-          "1522697402496",
-          "1523367384581"
+          "1522697402496"
         ],
         "settings": {
           "header_layout": "header-5",
