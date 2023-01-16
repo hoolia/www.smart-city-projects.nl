@@ -825,13 +825,41 @@
           "fit_to_container": true,
           "full_size_on_mobile": false
         }
+      },
+      "0e1add50-7e47-4d95-8abd-91a8f07e3c01": {
+        "type": "image-spinner",
+        "blocks": {
+          "0e1add50-7e47-4d95-8abd-91a8f07e3c01-1673906130837cde12-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pic.png"
+            }
+          },
+          "0e1add50-7e47-4d95-8abd-91a8f07e3c01-1673906130837cde12-1": {
+            "type": "image",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "0e1add50-7e47-4d95-8abd-91a8f07e3c01-1673906130837cde12-0",
+          "0e1add50-7e47-4d95-8abd-91a8f07e3c01-1673906130837cde12-1"
+        ],
+        "settings": {
+          "heading": "",
+          "description": "",
+          "fullwidth": false,
+          "background": false,
+          "background_color": "#f8f8f8"
+        }
       }
     },
     "content_for_index": [
       "1480267833382",
       "1528559564920",
       "1504781997946",
-      "1527121164309"
+      "1527121164309",
+      "0e1add50-7e47-4d95-8abd-91a8f07e3c01"
     ]
   },
   "presets": {
