@@ -252,7 +252,7 @@
           "use_bottom_menu": false,
           "use_box_layout": false,
           "show_search": true,
-          "show_cart": true,
+          "show_cart": false,
           "show_settings_menu": true
         }
       },
