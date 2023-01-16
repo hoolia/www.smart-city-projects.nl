@@ -13,7 +13,7 @@
     "product_grid_img_carousel": true,
     "product_show_compare_at_price": true,
     "product_reviews_enable": true,
-    "hide_wishlist": false,
+    "hide_wishlist": true,
     "add_to_cart_layout": "redirect",
     "color_skin": "#a8741a",
     "color_skin_2": "#242424",
