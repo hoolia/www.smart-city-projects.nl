@@ -303,48 +303,6 @@
           "footer_layout": "footer-1"
         }
       },
-      "1480267833382": {
-        "type": "slideshow",
-        "blocks": {
-          "1480267833382-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/city-behind-greenery.jpg",
-              "animation_style": "slider-1",
-              "heading": "De nieuwe standaard in Energie",
-              "heading_size": "12px",
-              "heading_color": "#ffffff",
-              "subheading": "SMART CITY PROJECTS",
-              "subheading_size": "60px",
-              "subheading_color": "#ffffff",
-              "description": "<b>Community driven Micro-Grids<\/b><br> om lokale groene initiatieven tot leven te brengen.",
-              "description_size": "14px",
-              "description_color": "#ffffff",
-              "slide_link_text": "Laat zien",
-              "slide_link": "shopify:\/\/collections",
-              "link_bg": "#a8741a",
-              "link_color": "#ffffff",
-              "image_clickable": false,
-              "top": "50%",
-              "right": "0%",
-              "left": "0%",
-              "width": "50%",
-              "float": "left"
-            }
-          }
-        },
-        "block_order": [
-          "1480267833382-1"
-        ],
-        "settings": {
-          "autoplay_speed": "10000",
-          "layout_slider": "slider-1",
-          "fullwidth": true,
-          "use_box_layout": false,
-          "fit_to_container": true,
-          "full_size_on_mobile": false
-        }
-      },
       "brands": {
         "type": "brands",
         "blocks": {
@@ -423,131 +381,6 @@
           "bottom_border": false
         }
       },
-      "1507135844484": {
-        "type": "testimonial",
-        "blocks": {
-          "1507135844484-0": {
-            "type": "testimonial",
-            "settings": {
-              "title": "",
-              "description": "This is Photoshops version  of Lorem Ipsum. Proin gravida nibh vel velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie augue magna. Pellentesque felis lorem, pulvinar sed eros n..",
-              "author": "Rebecka Filson"
-            }
-          },
-          "1507135844484-1": {
-            "type": "testimonial",
-            "settings": {
-              "title": "",
-              "description": "Mauris blandit, metus a venenatis lacinia, felis enim tincidunt est, condimentum vulputate orci augue eu metus. Fusce dictum, nisi et semper ultricies, felis tortor blandit odio, egestas consequat pur..",
-              "author": "Nathanael Jaworski"
-            }
-          },
-          "858fe437-327a-4a9a-b167-340fdb21734f": {
-            "type": "testimonial",
-            "settings": {
-              "title": "",
-              "description": "This is Photoshops version  of Lorem Ipsum. Proin gravida nibh vel velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie augue magna. Pellentesque felis lorem, pulvinar sed eros n..",
-              "author": "Andrew Tye"
-            }
-          },
-          "af58c100-871f-4f9b-b062-f643c14bfa95": {
-            "type": "testimonial",
-            "settings": {
-              "title": "",
-              "description": "This is Photoshops version  of Lorem Ipsum. Proin gravida nibh vel velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie augue magna. Pellentesque felis lorem, pulvinar sed eros n..",
-              "author": "Santa Clause"
-            }
-          }
-        },
-        "block_order": [
-          "1507135844484-0",
-          "1507135844484-1",
-          "858fe437-327a-4a9a-b167-340fdb21734f",
-          "af58c100-871f-4f9b-b062-f643c14bfa95"
-        ],
-        "settings": {
-          "layout": "testimonials",
-          "heading": "Latest Testimonials",
-          "description": "Welcome to my personal presentation",
-          "fullwidth": false,
-          "background": true,
-          "background_color": "#002500",
-          "top_margin": false
-        }
-      },
-      "1507203403431": {
-        "type": "blog",
-        "disabled": true,
-        "settings": {
-          "layout": "blog-1",
-          "fullwidth": false,
-          "heading": "From Our Blog",
-          "blog": "news",
-          "items": 3,
-          "text_align": "left",
-          "background": false,
-          "background_color": "#f8f8f8"
-        }
-      },
-      "1509373704466": {
-        "type": "brands",
-        "disabled": true,
-        "blocks": {
-          "1509373704466-0": {
-            "type": "image",
-            "settings": {
-              "link": "shopify:\/\/collections\/all"
-            }
-          },
-          "1509373704466-1": {
-            "type": "image",
-            "settings": {
-              "link": "shopify:\/\/collections\/all"
-            }
-          },
-          "1509373753755": {
-            "type": "image",
-            "settings": {
-              "link": "shopify:\/\/collections\/all"
-            }
-          },
-          "1509373760841": {
-            "type": "image",
-            "settings": {
-              "link": "shopify:\/\/collections\/all"
-            }
-          },
-          "1509373767400": {
-            "type": "image",
-            "settings": {
-              "link": "shopify:\/\/collections\/all"
-            }
-          },
-          "1509373774774": {
-            "type": "image",
-            "settings": {
-              "link": "shopify:\/\/collections"
-            }
-          }
-        },
-        "block_order": [
-          "1509373704466-0",
-          "1509373704466-1",
-          "1509373753755",
-          "1509373760841",
-          "1509373767400",
-          "1509373774774"
-        ],
-        "settings": {
-          "layout": "brands",
-          "heading": "Logo Brands & Clients",
-          "fullwidth": false,
-          "background": false,
-          "background_color": "#f8f8f8",
-          "top_margin": false,
-          "bottom_padding": false
-        }
-      },
       "1527121164309": {
         "type": "newsletter",
         "settings": {
@@ -577,29 +410,6 @@
         "settings": {
           "display_type": "all",
           "sort": "alphabetical_reversed"
-        }
-      },
-      "16115865560156a5cb": {
-        "type": "feature-product",
-        "settings": {
-          "heading": "Our Featured Watch",
-          "feature_product_design": "feature-product1",
-          "feature_product": "acer-aspire-aio",
-          "description": true,
-          "product_summary_words": "30",
-          "show_summary_stripped": true,
-          "price": true,
-          "view_details": true,
-          "add_to_cart": false,
-          "buy_now": true,
-          "image_position": "left",
-          "ad_align": "center",
-          "fullwidth": false,
-          "background": true,
-          "background_color": "#1d1d1d",
-          "top_margin": true,
-          "bottom_padding": false,
-          "bottom_border": false
         }
       },
       "product-page": {
@@ -680,123 +490,6 @@
           "show_collection_sidebar": "left",
           "show_color_box": true,
           "color_box_variant": "color"
-        }
-      },
-      "161181259114520bcf": {
-        "type": "ad-product-feature",
-        "blocks": {
-          "161181259114520bcf-0": {
-            "type": "feature",
-            "settings": {
-              "use_feature_icon": true,
-              "feature_icon": "fa-shopping-bag",
-              "text1": "Movement",
-              "text2": "Automatic"
-            }
-          },
-          "354eb8e4-a53d-4d87-bb5b-b2e2983ecf99": {
-            "type": "feature",
-            "settings": {
-              "use_feature_icon": true,
-              "feature_icon": "fa-shopping-bag",
-              "text1": "Color",
-              "text2": "Black"
-            }
-          },
-          "d3061341-e13e-494f-850b-b4f418c587a5": {
-            "type": "feature",
-            "settings": {
-              "use_feature_icon": true,
-              "feature_icon": "fa-shopping-bag",
-              "text1": "Chain \/ Strap",
-              "text2": "High Quality Stainless Steel"
-            }
-          },
-          "2ad40d9d-cc7f-4369-9086-c5e2eab58573": {
-            "type": "feature",
-            "settings": {
-              "use_feature_icon": true,
-              "feature_icon": "fa-shopping-bag",
-              "text1": "Case",
-              "text2": "Stainless Steel"
-            }
-          },
-          "8dfaa4f7-6485-41bf-a0f8-504026654c9a": {
-            "type": "feature",
-            "settings": {
-              "use_feature_icon": true,
-              "feature_icon": "fa-shopping-bag",
-              "text1": "Shape",
-              "text2": "Round"
-            }
-          },
-          "161181259114520bcf-1": {
-            "type": "feature",
-            "settings": {
-              "use_feature_icon": true,
-              "feature_icon": "fa-shopping-bag",
-              "text1": "Glass",
-              "text2": "Sapphire Crystal Glass"
-            }
-          }
-        },
-        "block_order": [
-          "161181259114520bcf-0",
-          "354eb8e4-a53d-4d87-bb5b-b2e2983ecf99",
-          "d3061341-e13e-494f-850b-b4f418c587a5",
-          "2ad40d9d-cc7f-4369-9086-c5e2eab58573",
-          "8dfaa4f7-6485-41bf-a0f8-504026654c9a",
-          "161181259114520bcf-1"
-        ],
-        "settings": {
-          "product_advert_design": "product-feature-advert2alt",
-          "fullwidth": false,
-          "background": true,
-          "background_color": "#1d1d1d",
-          "top_margin": true,
-          "bg-image": "shopify:\/\/shop_images\/5.jpg",
-          "image_position": "right",
-          "heading": "Our BestSelling",
-          "heading_color": "#a8741a",
-          "description": "Body color is used for heading and blocks description which can be modified from settings > color tab",
-          "link_text": "Shop Now",
-          "link": "shopify:\/\/collections",
-          "bottom_padding": false,
-          "bottom_border": false
-        }
-      },
-      "1611815271ffccd07b": {
-        "type": "ad-product",
-        "settings": {
-          "product_advert_design": "product-advert4alt2",
-          "fullwidth": true,
-          "background": false,
-          "background_color": "#f8f8f8",
-          "top_margin": false,
-          "bg-image": "shopify:\/\/shop_images\/img-middle-mirora1.jpg",
-          "image_position": "right",
-          "img_percentage": "55",
-          "subheading": "Sale Off 20% All Products",
-          "sub_heading_color": "#f8f8f8",
-          "heading": "Watches For Men",
-          "heading_color": "#ffffff",
-          "description": "We Believe That Good Design is Always in Season.",
-          "description_color": "#ffffff",
-          "price": "123",
-          "price_color": "#f8f8f8",
-          "link_text": "Shop Now",
-          "link": "",
-          "overwrite_link_color": true,
-          "link_color_text": "#f8f8f8",
-          "link_color_bg": "rgba(0,0,0,0)",
-          "link_text_2": "",
-          "link_2": "",
-          "overwrite_link2_color": false,
-          "link2_color_text": "#454545",
-          "link2_color_bg": "#ffffff",
-          "ad_align": "center",
-          "bottom_padding": false,
-          "bottom_border": false
         }
       },
       "cart-page": {
@@ -1129,19 +822,55 @@
           "accept_check_enable": true,
           "accept_text": "I agree with the terms and conditions."
         }
+      },
+      "1480267833382": {
+        "type": "slideshow",
+        "blocks": {
+          "1480267833382-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/city-behind-greenery.jpg",
+              "animation_style": "slider-1",
+              "heading": "De nieuwe standaard in Energie",
+              "heading_size": "12px",
+              "heading_color": "#ffffff",
+              "subheading": "SMART CITY PROJECTS",
+              "subheading_size": "60px",
+              "subheading_color": "#ffffff",
+              "description": "<b>Community driven Micro-Grids<\/b><br> om lokale groene initiatieven tot leven te brengen.",
+              "description_size": "14px",
+              "description_color": "#ffffff",
+              "slide_link_text": "Laat zien",
+              "slide_link": "shopify:\/\/collections",
+              "link_bg": "#a8741a",
+              "link_color": "#ffffff",
+              "image_clickable": false,
+              "top": "50%",
+              "right": "0%",
+              "left": "0%",
+              "width": "50%",
+              "float": "left"
+            }
+          }
+        },
+        "block_order": [
+          "1480267833382-1"
+        ],
+        "settings": {
+          "autoplay_speed": "10000",
+          "layout_slider": "slider-1",
+          "fullwidth": true,
+          "use_box_layout": false,
+          "fit_to_container": true,
+          "full_size_on_mobile": false
+        }
       }
     },
     "content_for_index": [
       "1480267833382",
+      "1528559564920",
       "1504781997946",
-      "16115865560156a5cb",
-      "161181259114520bcf",
-      "1507135844484",
-      "1611815271ffccd07b",
-      "1507203403431",
-      "1509373704466",
-      "1527121164309",
-      "1528559564920"
+      "1527121164309"
     ]
   },
   "presets": {
