@@ -5,7 +5,7 @@
   "general": {
     "404": {
       "title": "OOPS! PAGE NOT FOUND",
-      "subtext_html": "The page you requested does not exist. Click <a href=\"\/collections\/all\">here<\/a> to come back.",
+      "subtext_html": "The page you requested does not exist. Click <a href=\"\/home\">here<\/a> to come back.",
       "button": "BACK TO HOME PAGE"
     },
     "meta": {
