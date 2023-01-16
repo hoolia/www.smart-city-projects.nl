@@ -277,6 +277,7 @@
           },
           "11142acd-b13b-4b86-8f47-dfb9e6b99bbf": {
             "type": "menu",
+            "disabled": true,
             "settings": {
               "footer_menu_1": "main-menu"
             }
@@ -284,7 +285,7 @@
           "7c50d02d-25ab-4d84-849d-979c2a85eae6": {
             "type": "bottom_footer",
             "settings": {
-              "footer_content_text": "Copyright © 2021  <a href=\"http:\/\/masstechnologist.com\/\">MassTechnologist.com.<\/a> All rights reserved.",
+              "footer_content_text": "Copyright © 2023 Hoolia BV All rights reserved.",
               "footer_social_enable": true
             }
           },
