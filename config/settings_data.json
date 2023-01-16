@@ -275,13 +275,6 @@
               "footer_menu_1": "main-menu"
             }
           },
-          "11142acd-b13b-4b86-8f47-dfb9e6b99bbf": {
-            "type": "menu",
-            "disabled": true,
-            "settings": {
-              "footer_menu_1": "main-menu"
-            }
-          },
           "7c50d02d-25ab-4d84-849d-979c2a85eae6": {
             "type": "bottom_footer",
             "settings": {
@@ -300,7 +293,6 @@
         "block_order": [
           "ce0c8397-1e10-46a3-b96e-2112a4c4e3a9",
           "3e5bbff7-3d4a-4692-99f6-8ef503248b9f",
-          "11142acd-b13b-4b86-8f47-dfb9e6b99bbf",
           "7c50d02d-25ab-4d84-849d-979c2a85eae6",
           "ecc04d8d-f4c8-481c-b8af-713c5dd8dcb5"
         ],
