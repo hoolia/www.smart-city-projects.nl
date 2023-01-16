@@ -413,9 +413,9 @@
         "settings": {
           "layout": "feature-service1",
           "heading": "",
-          "heading_color": "#027e03",
+          "heading_color": "#4ad44a",
           "description": "",
-          "description_color": "#e7e4e4",
+          "description_color": "#4ad44a",
           "fullwidth": false,
           "background": false,
           "background_color": "#f8f8f8",
