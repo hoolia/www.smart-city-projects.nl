@@ -398,7 +398,7 @@
       "1528559564920": {
         "type": "videobox",
         "settings": {
-          "video_type": "youtube",
+          "video_type": "mp4",
           "video_src": "iI2D4LbV6Os",
           "video_autoplay": false,
           "fullwidth": true,
