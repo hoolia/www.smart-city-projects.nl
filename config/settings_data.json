@@ -808,7 +808,7 @@
               "link_bg": "#0c9e0e",
               "link_color": "#ffffff",
               "image_clickable": false,
-              "top": "50%",
+              "top": "0%",
               "right": "0%",
               "left": "0%",
               "width": "50%",
