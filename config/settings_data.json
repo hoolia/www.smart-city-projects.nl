@@ -24,6 +24,7 @@
     "header_fg_color": "#f8f8f8",
     "overwrite_header_bg_color": false,
     "hd_menu_color": "#30bf32",
+    "hd_menu_inner_color": "#30bf32",
     "top_bar_bgcolor": "#242424",
     "footer_color_bg": "#e5e5e5",
     "footer_color_heading": "#4ad44a",
