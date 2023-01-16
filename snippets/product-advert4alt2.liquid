@@ -1,0 +1,19 @@
+<div class="static5-elomus2 alt2" {% if section.settings.bg-image != blank %}style="background-image: url('{{ section.settings.bg-image | img_url: 'master' }}');" {% endif %}>
+  <div class="container text-{{ section.settings.ad_align }}">
+    {% if section.settings.subheading != blank %} 
+    <h4>{{ section.settings.subheading }}</h4>
+    {% endif %}
+    {% if section.settings.heading != blank %} 
+    <h3>{{ section.settings.heading }}</h3>
+    {% endif %}
+    {% if section.settings.description != blank %} 
+    <p>{{ section.settings.description }}</p>
+    {% endif %}
+    {% if section.settings.link_text != blank %} 
+    <a href="{{ section.settings.link }}" class="txt">{{ section.settings.link_text }}</a>
+    {% endif %}
+    {% if section.settings.link_text_2 != blank %} 
+    <a href="{{ section.settings.link_2 }}" class="txt2">{{ section.settings.link_text_2 }}</a>
+    {% endif %}
+  </div>
+</div>

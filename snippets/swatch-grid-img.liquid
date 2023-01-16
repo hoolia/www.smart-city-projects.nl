@@ -1,0 +1,50 @@
+{% if swatch-grid-img != blank %}
+{% if settings.lazyloading_enable -%}
+{% assign size = w360 %}
+{% else %}
+{% assign size = img_size %}
+{% endif %}
+{% if settings.grid_auto_resize == 'resize-crop' -%}
+<input type="hidden" value="{{ product.featured_image.src | img_url: size, crop:img_crop }}" class="img-default-{{ product.id }}{% if section.id %}-{{section.id}}{%endif %}" />
+{% else %}
+<input type="hidden" value="{{ product.featured_image.src | img_url: size }}" class="img-default-{{ product.id }}{% if section.id %}-{{section.id}}{%endif %}" />
+{% endif %}
+
+{% assign found_option = false %}
+{% assign is_color = false %}
+{% assign option_index = 0 %}
+
+{% for option in product.options %}
+{% if option == swatch-grid-img %}
+{% assign found_option = true %}
+{% assign option_index = forloop.index0 %}
+{% assign downcased_option = swatch-grid-img | downcase %}
+{% if downcased_option contains 'color' or downcased_option contains 'colour' %}
+{% assign is_color = true %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{% if found_option %}
+{% assign values = '' %}
+{% for variant in product.variants %}
+{% assign value = variant.options[option_index] %}
+{% unless values contains value %}
+{% assign values = values | join: ',' %}
+{% assign values = values | append: ',' | append: value %} 
+{% assign values = values | split: ',' %}
+{% if is_color %}
+{% if variant.image.src %}
+{% if settings.grid_auto_resize == 'resize-crop' -%}
+<input type="hidden" value="{{ variant.image.src | img_url: size, crop:img_crop }}" class="img-swatch-{{ product.id }}{% if section.id %}-{{section.id}}{%endif %}-{{ variant.id }}" />
+{% else %}
+<input type="hidden" value="{{ variant.image.src | img_url: size }}" class="img-swatch-{{ product.id }}{% if section.id %}-{{section.id}}{%endif %}-{{ variant.id }}" />
+{% endif %}
+{% endif %}
+{% endif %}
+{% endunless %}
+{% endfor %}
+
+{% endif %}
+
+{% endif %}

@@ -1,0 +1,151 @@
+<div class="main-row {% if section.settings.fullwidth == true %}full-width{% endif  %} {% if section.settings.background == true %} layer-background {% endif  %}" data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div class="row sub-row">
+          {% include section.settings.products_tab_layout %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Collection Tabs",
+  "class": "index-section",
+	 "settings": [
+      {
+        "type": "header",
+        "content": "Select the collection to show products from"
+      },
+      {
+        "type": "select",
+        "id": "products_tab_layout",
+        "label": "Select section layout",
+        "options": [
+          {
+            "value": "products-tab1",
+            "label": "Design 1"
+          }
+        ]
+      },
+      {
+      "type": "range",
+      "id": "listing_rows",
+      "label": "No of product rows",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 2
+      },
+	  {
+	    "type": "range",
+    	"id": "no_of_products",
+    	"label": "No of products in a row",
+        "info": "Used for column as well in vertical layouts",
+        "min": 1,
+        "max": 6,
+        "step": 1,
+        "default": 4
+
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Featured collection"
+      },
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description",
+        "default": "Browse the collection of our best selling and trending products"
+      },
+	  {
+        "type": "checkbox",
+        "id": "fullwidth",
+        "label": "Set Div fullwidth?",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "background",
+        "label": "Add Background",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Sections Background Color",
+        "info": "This option allows you to set different background color than default one for the section.",
+        "default": "#f8f8f8"
+      },
+      {
+        "type": "collection",
+        "id": "products_tab_collection1",
+        "label": "Collection for Tab 1"
+      },
+      {
+        "type": "collection",
+        "id": "products_tab_collection2",
+        "label": "Collection for Tab 2"
+      },
+      {
+        "type": "collection",
+        "id": "products_tab_collection3",
+        "label": "Collection for Tab 3"
+      },
+      {
+        "type": "collection",
+        "id": "products_tab_collection4",
+        "label": "Collection for Tab 4"
+      },
+      {
+        "type": "collection",
+        "id": "products_tab_collection5",
+        "label": "Collection for Tab 5"
+      },
+      {
+        "type": "range",
+        "id": "products_tab_count",
+        "label": "No of products to show",
+        "min": 1,
+        "max": 99,
+        "step": 1,
+        "default": 8
+      },
+      {
+        "type": "checkbox",
+        "id": "product_grid_img_carousel",
+        "label": "Slide All images in product grid?",
+        "default": false,
+        "info": "Used for Product grid carousel enable\/disable"
+      }
+    ],
+  "presets": [
+    {
+      "name": "Collection Tabs",
+      "category": "Collection"
+    }
+  ]
+}
+{% endschema %}
+<style>
+  {% if section.settings.background_color != settings.section_bg_color -%}
+  #shopify-section-{{section.id }} .layer-background {
+    background: {{ section.settings.background_color }};
+  }
+  {%- endif %}
+</style>
+{% if settings.grid_auto_resize != 'false' -%}
+<script type="text/javascript">
+  $(document).ready(function() {
+    mass.resizeGrid('#product_module{{section.id}}',{{section.settings.listing_rows}});
+  });
+  $(window).resize(function() {
+    setTimeout(function () {
+    mass.resizeGrid('#product_module{{section.id}}',{{section.settings.listing_rows}});
+    }, 300);
+  });
+</script>
+{% endif %}

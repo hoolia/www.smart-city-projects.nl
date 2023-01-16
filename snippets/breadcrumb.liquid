@@ -1,0 +1,146 @@
+{% include 'advanced-tag-loop' %}
+
+{% unless true %} {% comment %} unless template == 'index' or template == 'cart' {% endcomment %}
+<div class="breadcrumbs {% if section.settings.header_layout contains '3'%} hd3{% endif %}">
+  <h1 itemprop="name">{{ page_title }}</h1>
+  <div class="container">
+    <!-- Breadcumb area start -->
+    <ul class="breadcrumb">
+      <li><a href="/" title="{{ 'general.breadcrumbs.home_link_title' | t }}">
+        {{ 'general.breadcrumbs.home' | t }}
+        </a>
+      </li>
+      {% if template contains 'product-disabled' %}
+
+      {% if collection %}
+      {% if collection.handle %}
+      {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
+      <li>{{ collection.title | link_to: url }}</li>
+      {% endif %}
+      {% endif %}
+      <li><a href=""><span>{{ product.title }}</span></a></li>
+
+      {% elsif template contains 'collection' and collection.handle %}
+      <li>
+        {% if current_tags %}
+
+        {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
+        {{ collection.title | link_to: url }}
+
+
+        {% for tag in current_tags %}
+
+        {% assign is_advanced_tag = false %}
+        {% assign cat = tag | split: '_' | first %}
+        {% unless cat == tag %}
+        {% if cat_array contains cat %}
+        {% assign is_advanced_tag = true %}
+        <span class="navigation"> &gt;</span>
+        <span>{{ tag | remove_first: cat | remove_first: '_' }}</span>
+        {% endif %}
+        {% endunless %}
+
+        {% if is_advanced_tag == false %}
+        {{ tag }}
+        {% endif %}
+
+        {% unless forloop.last %}
+        {% endunless %}
+
+        {% endfor %}
+
+        {% else %}
+
+        <a href=""><span>{{ collection.title }}</span></a>
+        {% endif %}
+      </li>
+      {% elsif template == 'blog' %}
+      <li>
+        {% if current_tags %}
+        {{ blog.title | link_to: blog.url }}
+        <span class="navigation">&gt;</span>
+        <span>{{ current_tags | join: " + " }}</span>
+        {% else %}
+        <a href=""><span>{{ blog.title }}</span></a>
+        {% endif %}
+      </li>
+      {% elsif template == 'article' %}
+      <li>
+        {{ blog.title | link_to: blog.url }}
+      </li>
+      <li>
+        <a href=""><span>{{ article.title }}</span></a>
+      </li>
+      {% elsif template contains 'page' %}
+      <li>
+        <a href=""><span>{{ page.title }}</span></a>
+      </li>
+      {% else %}
+      <li>
+        <a href=""><span>{{ page_title }}</span></a>
+      </li>
+      {% endif %}
+    </ul>
+    <!--End Breadcumb area -->
+  </div>
+</div>
+<style type="text/css">
+  {% if settings.show_collection_top_image %}
+  /*.breadcrumbs {
+    background-image:url({{ 'collection_top.jpg' | asset_url }});
+  } */ 
+  {% case template %}
+    {% when 'collection' %}
+      {% if collection.description contains 'alt="topbanner"' %}
+        {% assign coll_image = collection.description | split:'<img src="' | last | split :'" alt="topbanner"' | first %}
+  			.breadcrumbs { {{ coll_image }};background-image:url({{ coll_image }}); } 
+      {% else %}
+  			.breadcrumbs { background-image:url({{ 'collection_top.jpg' | asset_url }}); }	 
+      {% endif %}
+	{% when 'product-disabled' %}
+      {% if product.description contains 'alt="topbanner"' %}
+        {% assign coll_image = product.description | split:'<img src="' | last | split :'" alt="topbanner"' | first %}
+  			.breadcrumbs { {{ coll_image }};background-image:url({{ coll_image }}); } 
+      {% else %}
+  			.breadcrumbs { background-image:url({{ 'collection_top.jpg' | asset_url }}); }	 
+      {% endif %}
+  	{% when 'blog' %}
+  		{% if blog.content contains 'alt="topbanner"' %}
+        {% assign coll_image = blog.content | split:'<img src="' | last | split :'" alt="topbanner"' | first %}        	        
+          .breadcrumbs { {{ coll_image }};background-image:url({{ coll_image }}); }
+      {% else %}
+          .breadcrumbs { background-image:url({{ 'collection_top.jpg' | asset_url }}); }
+      {% endif %}
+    {% when 'article' %}
+      {% if article.content contains 'alt="topbanner"' %}
+        {% assign coll_image = article.content | split:'<img src="' | last | split :'" alt="topbanner"' | first %}        	        
+          .breadcrumbs { {{ coll_image }};background-image:url({{ coll_image }}); }
+      {% else %}
+          .breadcrumbs { background-image:url({{ 'collection_top.jpg' | asset_url }}); }
+      {% endif %}
+    {% when 'page' or 'page.contact' or 'page.faq' or 'page.wishlist' %}
+      {% if page.content contains 'alt="topbanner"' %}
+      {% assign coll_image = page.content | split:'<img src="' | last | split :'" alt="topbanner"' | first %}
+        .breadcrumbs { {{ coll_image }};background-image:url({{ coll_image }}); }
+      {% else %}
+        .breadcrumbs { background-image:url({{ 'collection_top.jpg' | asset_url }}); }
+      {% endif %}
+    {% when 'page.gallery' or 'page.about' or 'page.services' %}
+      {% if section.settings.page_top != blank %}
+        .breadcrumbs { {{ coll_image }};background-image:url({{ section.settings.page_top | img_url: 'master' }}); }
+      {% elsif page.content contains 'alt="topbanner"' %}
+      {% assign coll_image = page.content | split:'<img src="' | last | split :'" alt="topbanner"' | first %}
+        .breadcrumbs { {{ coll_image }};background-image:url({{ coll_image }}); }
+      {% else %}
+        .breadcrumbs { background-image:url({{ 'collection_top.jpg' | asset_url }}); }
+      {% endif %}
+    {% else %}
+      .breadcrumbs { background-image:url({{ 'collection_top.jpg' | asset_url }}); } 
+  {% endcase %}
+  {% else %}
+  .breadcrumbs {
+    background-color: {{ settings.color_top_bg }};
+  }
+  {% endif %}
+</style>
+{% endunless %}

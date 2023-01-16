@@ -1,0 +1,336 @@
+{% include 'product-page-section' %}
+{% schema %}
+{
+   "name": "Product Page",
+      "settings": [
+    	{
+          "type": "paragraph",
+          "content": "[Video Guide for product page](https://youtu.be/Agbw0GrE48U?list=PLvJCnPMUAdwr6XxWVo_f9dkVRh8GNCXoa)"
+        },
+        {
+          "type": "select",
+          "id": "product_page_layout",
+          "label": "Page layout",
+          "options": [
+            {
+              "value": "horizontal_thumbs",
+              "label": "Horizontal Thumbs layout"
+            },
+            {
+              "value": "vertical_thumbs",
+              "label": "Vertical Thumbs layout"
+            },
+            {
+              "value": "vertical_thumbs_right",
+              "label": "Vertical Thumbs Right layout"
+            },
+            {
+              "value": "sticky_layout",
+              "label": "Sticky Layout"
+            },
+			{
+              "value": "horizontal_slide_full",
+              "label": "Horizontal Slide Full layout"
+            },
+			{
+              "value": "horizontal_slide_grid",
+              "label": "Horizontal Slide Grid layout"
+            }
+          ],
+          "default": "horizontal_thumbs"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_zoom",
+          "label": "Enable Image Zoom",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_preload",
+          "label": "Enable Image Preload",
+          "default": false,
+		  "info": "Pre-loading product images, to avoid a lag when a thumbnail is clicked."
+        },
+        {
+          "type": "checkbox",
+          "id": "show_summary",
+          "label": "Show Product Summary",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_summary_stripped",
+          "label": "Strip Product Summary",
+          "default": true,
+		  "info": "Strips html tags to show text without format"
+        },
+        {
+          "type": "text",
+          "id": "product_summary_words",
+          "label": "Words count on summary area",
+          "default": "30"
+        },
+        {
+          "type": "checkbox",
+          "id": "product_vendor_enable",
+          "label": "Show product vendor",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "product_stock_enable",
+          "label": "Show product Stock Availability",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "product_show_sku",
+          "label": "Show SKU",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "product_show_barcode",
+          "label": "Show Barcode",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "show_variant_swatches",
+          "label": "Variant Swatch",
+          "options": [
+            {
+              "value": "false",
+              "label": "Disable"
+            },
+            {
+              "value": "color",
+              "label": "Color Swatch"
+            },
+            {
+              "value": "thumb",
+              "label": "Product Thumb Swatch"
+            }
+          ],
+          "default": "color",
+          "info": "Product page display handled from product page settings area. Incase of thumb, it will show colors if variant images are not added."
+        },
+        {
+          "type": "checkbox",
+          "id": "product_quantity_enable",
+          "label": "Show quantity selector",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "product_quantity_message",
+          "label": "Show remaining quantity message",
+          "info": "Shown when less than 10 items are in stock",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "overwrite_addtocart_color",
+          "label": "Override default Add to Cart Color?",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "addtocart_color_text",
+          "label": "Text Color",
+          "default": "#454545"
+        },
+        {
+          "type": "color",
+          "id": "addtocart_color_bg",
+          "label": "Background Color",
+          "default": "#fff"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_buy_now",
+          "label": "Show Buy Now button?",
+          "info": "This button will redirect direct to checkout page.",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "overwrite_buy_now_color",
+          "label": "Override default Buy Now button Color?",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "buy_now_color_text",
+          "label": "Text Color",
+          "default": "#454545"
+        },
+        {
+          "type": "color",
+          "id": "buy_now_color_bg",
+          "label": "Background Color",
+          "default": "#fff"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_tags_links",
+          "label": "Show Tags Links",
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "trust_badge_image",
+          "label": "Image",
+          "info": "Upload Trust Badge image to show on product page. Remove to hide"
+        },
+        {
+          "type": "select",
+          "id": "product_description_layout",
+          "label": "Description Area Layout",
+          "options": [
+            {
+              "value": "tab",
+              "label": "Tabs"
+            },
+            {
+              "value": "sequence",
+              "label": "Sequential"
+            }
+          ],
+          "default": "tab"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_description_tab",
+          "label": "Show Description Tab",
+          "default": true,
+          "info": "If set to false, all the tabs will be hidden"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_reviews_tab",
+          "label": "Show Reviews Tab",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_third_tab",
+          "label": "Show Extra Tab",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "third_tab_title",
+          "label": "Extra Tab Title",
+          "info": "Tab 1",
+          "default": "Custom Tab"
+        },
+        {
+          "type": "textarea",
+          "id": "third_tab_text",
+          "label": "Extra Tab Text",
+          "info": "Use basic HTML to format text",
+          "default": "You can add, text, html, images and videos as well to the tab from product settings area"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_tags_tab",
+          "label": "Show Tags Tab",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "custom_tab_title",
+          "label": "Custom Tab Title(if added any)",
+          "default": "Additional Info"
+        },
+        {
+          "type": "checkbox",
+          "id": "related_products_enable",
+          "label": "Show related products",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "recent_products_enable",
+          "label": "Show recent viewed products",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "product_grid_img_carousel",
+          "label": "Slide All images in product grid?",
+          "default": false,
+          "info": "Used for Product grid carousel enable\/disable"
+        },
+        {
+          "type": "checkbox",
+          "id": "product_sharing_links",
+          "label": "Show Sharing Links?",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "product_sticky_cart",
+          "label": "Show Bottom Sticky Add to Cart Bar?",
+          "default": true
+        }
+      ],
+   "blocks": [],
+   "presets": []
+}
+{% endschema %}
+{% if settings.grid_auto_resize != 'false' -%}
+<script>
+  // Equal height grid divs 
+  $(document).ready(function() {
+    mass.resizethumbs();
+  });
+  $(window).resize(function() {
+    setTimeout(function () {
+      mass.resizethumbs();
+    }, 200);
+  });
+</script>
+{% endif %}
+<style>
+  {% if section.settings.show_zoom == false %}
+  #cloud-zoom-big,.cloud-zoom-lens {
+    display: none !important;
+  } 
+  {% endif %}
+  {% if section.settings.product_description_layout == 'sequence' %}
+  .mobtab {
+    display: block;
+  }
+  {% endif %}
+  {% if section.settings.overwrite_addtocart_color %}
+  .product-info-main .button-cart{
+    color: {{ section.settings.addtocart_color_text }};
+    background-color: {{ section.settings.addtocart_color_bg }};
+  }
+  .product-info-main .button-cart:hover {
+    background: {{ section.settings.addtocart_color_text }};
+    color: {{ section.settings.addtocart_color_bg }};
+    border-color: {{ section.settings.addtocart_color_bg }};
+  }
+  {% endif %}
+  {% if section.settings.overwrite_buy_now_color %}
+  .shopify-payment-button__button--unbranded{
+    color: {{ section.settings.buy_now_color_text }} !important;
+    background-color: {{ section.settings.buy_now_color_bg }} !important;
+  }
+  .shopify-payment-button__button--unbranded:hover {
+    background: {{ section.settings.buy_now_color_text }} !important;
+    color: {{ section.settings.buy_now_color_bg }} !important;
+    border-color: {{ section.settings.buy_now_color_bg }} !important;
+  }
+  {% endif %}
+  {% if section.settings.product_vendor_enable == false and section.settings.product_stock_enable == false and section.settings.product_show_sku == false and section.settings.product_show_barcode  == false %}
+  .product-info-main ul.list-unstyled {
+    display: none;
+  }
+  {% endif %}
+</style>
+

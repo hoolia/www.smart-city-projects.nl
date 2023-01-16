@@ -1,0 +1,103 @@
+<!-- Begin Recently Viewed Products -->
+{{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
+{{ 'jquery.products.min.js' | asset_url | script_tag }}
+
+{% if template contains 'product' %}
+<script>
+Shopify.Products.recordRecentlyViewed();
+</script>
+{% endif %}
+<!-- End Recently Viewed Products -->
+<div class="module-title" style="margin-top:50px;">
+  <h2>{{ 'products.general.recent_products' | t }}</h2>
+</div>
+<div class="owl-container">
+  <div id="recently-viewed-products" class="tt-product owl-carousel owl-theme" style="display:none">
+  </div>
+</div>
+{% raw %}
+<script id="recently-viewed-product-template"  type="text/x-jquery-tmpl">
+<div class="product-layout product-grid grid-style product-item" id="product-${handle}">
+    <div class="product-thumb transition">
+    <div class="item">
+     <div class="item-inner">
+      <div class="image images-container">
+        <a href="${url}" class="product-image">
+          <img class="img-responsive has-rotator img-default-image lazyload" src="${Shopify.Products.resizeImage(featured_image, "master")}" alt="${title}">
+        </a>
+        <div class="box-label"></div>
+      </div>
+      <!-- image -->
+      
+        <div class="caption">
+          <div class="ratings">
+             <div class="rating-box">
+               <span class="shopify-product-reviews-badge" data-id="${id}"></span>
+             </div>
+          </div>
+          <p class="manufacture-product hide">
+             <a href="/collections/vendors?q=${vendor}">${vendor}</a>                
+          </p>
+          <h4 class="product-name">
+            <a href="${url}">
+                ${title}
+            </a>
+          </h4>
+          <div class="price-box">
+            <p class="special-price"><span class="price">{{html Shopify.formatMoney(price_min)}}</span></p>
+            {{if compare_at_price_min > price_min}} 
+            <p class="old-price"><span class="price">{{html Shopify.formatMoney(compare_at_price_min)}}</span></p>
+            {{/if}}
+          </div>
+          <button class="button btn-cart {{if !available}} btn disabled{{/if}}" type="button" data-toggle="tooltip" data-loading-text="" title="" {{if available}}onclick="cart.add('${variants[0].id}');"{{/if}}>
+              <span>{{if available}}Add to Cart{{/if}}{{if !available}}Sold Out{{/if}}</span>
+          </button>
+        </div>
+        <!-- caption -->
+      </div>
+     </div>
+    </div>
+<!-- product-thumb -->
+</div>
+</script>
+{% endraw %}
+
+<script>
+  Shopify.Products.showRecentlyViewed( { howManyToShow:8, onComplete:function(){
+    {% if settings.product_show_compare_at_price == false %}
+    $('#recently-viewed-products p.old-price').each(function() {
+      $(this).addClass('hidden');
+    });
+    {% endif %}
+    $('#recently-viewed-products').owlCarousel({
+      nav: true,
+      dots: false,
+      navSpeed: 1000,
+      margin: 0,
+      responsive:{
+        0:{
+          items: 1,
+          nav: false,
+          dots: true
+        },
+        480:{
+          items: 2,
+          nav: false,
+          dots: true
+        },
+        768:{
+          items: 3
+        },
+        992:{
+          items: 4
+        },
+        1200:{
+          items: 4
+        }
+      }
+    });
+    {% if settings.grid_auto_resize != 'false' -%}
+    	mass.resizeRecentGrid();
+    {% endif %}
+  } } );
+</script>

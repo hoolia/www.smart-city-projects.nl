@@ -1,0 +1,11 @@
+{% if settings.hide_wishlist == false %}
+{% if template != 'search' %}
+<button class="btn-wishlist button wishlist-btn" data-product-handle="{{ product.handle }}" type="button" data-toggle="tooltip" title="{{ 'products.product.add_to_wishlist' | t }}" data-original-title="{{ 'products.product.add_to_wishlist' | t }}"  >
+  <span>{{ 'products.product.add_to_wishlist' | t }}</span>
+</button>
+{% else %}
+<button class="btn-wishlist button wishlist-btn" data-product-handle="{{ item.handle }}" type="button" data-toggle="tooltip" title="{{ 'products.product.add_to_wishlist' | t }}" data-original-title="{{ 'products.product.add_to_wishlist' | t }}"  >
+  <span>{{ 'products.product.add_to_wishlist' | t }}</span>
+</button>
+{% endif %}
+{% endif %}

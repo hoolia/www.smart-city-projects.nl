@@ -1,0 +1,31 @@
+{% if template == 'search' %}
+{% assign product_created_at = item.created_at | date: '%s' %}
+{% assign time_ago = 'now' | date: '%s' | minus: product_created_at | divided_by: 86400 %}
+{% assign product_new_time = settings.product_new_time | times: 1 %}
+{% if time_ago < product_new_time %}
+<div class="label-product label_new"><span>{{ 'products.product.new' | t }}</span></div>
+{% endif %}          
+{% if on_sale %}
+<div class="label-product label_sale">
+  <span>-{{ item.compare_at_price | minus: item.price | times: 100.0 | divided_by: item.compare_at_price | round}}%</span>
+</div>
+{% endif %}
+{% if sold_out %}
+<div class="label-product label-sale"><span>{{ 'products.product.sold_out' | t }}</span></div>
+{% endif %}
+{% else %}
+{% assign product_created_at = product.created_at | date: '%s' %}
+{% assign time_ago = 'now' | date: '%s' | minus: product_created_at | divided_by: 86400 %}
+{% assign product_new_time = settings.product_new_time | times: 1 %}
+{% if time_ago < product_new_time %}
+<div class="label-product label_new"><span>{{ 'products.product.new' | t }}</span></div>
+{% endif %}          
+{% if on_sale %}
+<div class="label-product label_sale">
+  <span>-{{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round}}%</span>
+</div>
+{% endif %}
+{% if sold_out %}
+<div class="label-product label-sale"><span>{{ 'products.product.sold_out' | t }}</span></div>
+{% endif %}
+{% endif %}

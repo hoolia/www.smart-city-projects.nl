@@ -1,0 +1,104 @@
+<div class="testimonial-container testi2" {% if section.settings.image != blank %}style="background-image: url('{{ section.settings.image | img_url: 'master' }}');" {% endif %}>
+  <div class="module-title">
+    {% if section.settings.description %}
+    <p class="sub-title1">{{ section.settings.description }}</p>
+    {% endif %}
+    {% if section.settings.heading %}
+    <h2>{{ section.settings.heading }}</h2>
+    {% endif %}
+  </div>
+  <div class="block-content">
+    <div class="owl-container">
+      <div id="slides" class="owl-carousel owl-theme {{ section.id }}">
+        {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+        <div class="row_items">
+          <div class="testimonial-content">
+            <div class="item">
+              <div class="item-inner">
+                <div class="testimonial-images">
+                  {% if block.settings.image != blank %}
+                  <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ block.settings.image | img_url: '100x100' }}" alt="{{ block.settings.author }}"/>
+                  {% endif %}
+                </div>
+                <h4 class="title">
+                  <a href="#">{{ block.settings.title }}</a>
+                </h4>
+                <div class="testimonial-box">
+                  {{ block.settings.description }}
+                </div>
+                <h4 class="testimonial-author">{{ block.settings.author }}</h4>
+              </div>
+            </div>
+          </div>
+          <!--testimonial-content-->
+        </div>
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <!--block-content-->
+</div>
+<!--testimonial-container-->
+<script >
+  $(document).ready(function() {
+    $("#slides.{{ section.id }}").owlCarousel({
+      autoPlay :  false ,
+      loop: false,
+      margin: 0,
+      navSpeed : 1000,
+      dotsSpeed : 1000,
+      autoplaySpeed : 1000,
+      nav :  false,
+      dots : true,
+      lazyLoad: true,
+      responsive:{
+      0:{
+      items: 1
+      },
+      480:{
+      items: 2
+      },
+      768:{
+      items: 2
+      },
+      992:{
+      items: 3
+      },
+      1200:{
+      items : 4
+      },
+      1600:{
+      items : 5
+      }
+      },
+      onInitialized: function() {
+      var count = $("#slides.{{ section.id }} .owl-item.active").length;
+                    if(count == 1) {
+        $("#slides.{{ section.id }} .owl-item").removeClass('first');
+          $("#slides.{{ section.id }} .owl-item").removeClass('last');
+          $("#slides.{{ section.id }} .owl-item.active").addClass('first');
+          } else {
+          $("#slides.{{ section.id }} .owl-item").removeClass('first');
+          $("#slides.{{ section.id }} .owl-item").removeClass('last');
+          $("#slides.{{ section.id }} .owl-item.active:first").addClass('first');
+          $("#slides.{{ section.id }} .owl-item.active:last").addClass('last');
+          }
+          },
+          onTranslated: function() {
+          var count = $("#slides.{{ section.id }} .owl-item.active").length;
+                        if(count == 1) {
+            $("#slides.{{ section.id }} .owl-item").removeClass('first');
+              $("#slides.{{ section.id }} .owl-item").removeClass('last');
+              $("#slides.{{ section.id }} .owl-item.active").addClass('first');
+              } else {
+              $("#slides.{{ section.id }} .owl-item").removeClass('first');
+              $("#slides.{{ section.id }} .owl-item").removeClass('last');
+              $("#slides.{{ section.id }} .owl-item.active:first").addClass('first');
+              $("#slides.{{ section.id }} .owl-item.active:last").addClass('last');
+              }
+              }
+              });
+          });
+</script>

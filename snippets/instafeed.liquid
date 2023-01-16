@@ -1,0 +1,10 @@
+{{ 'instafeed.min.js' | asset_url | script_tag }}
+<div id="instagram_block_home" class="block instagram-container">
+  <div class="module-title">
+    {% if section.settings.insta_title != blank%}
+    <h2>{{ section.settings.insta_title }}</h2>
+    {% endif %}
+  </div>
+  <div class="content_block owl-carousel owl-theme" id="instafeed">
+  </div>
+</div>

@@ -1,0 +1,78 @@
+{% include 'product-grid-variables' %}
+<div class="product-layout {% if search %} product-grid grid-style col-lg-3 col-md-3 col-sm-3 col-xs-6 {% else %}product-list col-xs-12 {% endif %}product-item">
+  <div class="product-thumb">
+    <div class="item item{{ forloop.index }}">
+      <div class="item-inner">
+        <div class="image images-container rotate-image-container">
+          {% include 'product_label' %}
+          {% if settings.product_grid_img_carousel == true %}
+          {% include 'product-grid-image-carousel'%}
+          {% else %}
+          <a href="{{ product.url }}" class="">
+            {% include 'product-grid-image',image:product.featured_image %}
+            {% if settings.hide_hover != true %}
+            {% include 'product-grid-image',image:product.images.last,hover:true %}
+            {% endif %}
+            {% if settings.grid_color_swatches != 'false' and settings.product_grid_img_carousel == false %}
+            {% if product.available and product.variants.size > 1 %}
+            {% include 'swatch-grid-img' with 'Color'  %}
+            {% endif %}
+            {% endif %}
+          </a>
+          {% endif %}
+          {% include 'deal' %}
+          <div class="button-group action-links">
+            <button class="button btn-compare" type="button" data-toggle="tooltip" title="{{ 'products.product.view_details' | t }}" onclick="location.href='{{ product.url }}';">
+              <span>{{ 'products.product.view_details' | t }}</span>
+            </button>
+            {% include 'product-wishlist2' %}
+            {% if settings.hide_quick_view == false %}
+            <button class="button btn-quickview quickview" type="button" title="{{ 'products.product.quickview' | t }}" data-toggle="modal" data-target="#productModal" data-productinfo='{{ product | json | escape}}' data-original-title="{{ 'products.product.quickview' | t }}">
+              <span>{{ 'products.product.quickview' | t }}</span>
+            </button>
+            {% endif %}
+          </div>
+        </div>
+        <!-- image -->
+        <div class="caption">
+          {% if settings.grid_vendor_enable %}
+          <p class="manufacture-product">
+            <span>{{ 'products.product.brand' | t }}: </span>{{ product.vendor | link_to_vendor }}
+          </p>
+          {% endif %}
+          {% include 'review' %}        
+          {% if settings.grid_color_swatches != 'false' and settings.product_grid_img_carousel == false%}
+          {% if product.available and product.variants.size > 1 %}
+          {% include 'swatch-grid' with 'Color' %}
+          {% endif %}
+          {% endif %}
+          <h4 class="product-name">
+            <a href="{{ product.url | within: collection }}">
+              {% if settings.limit_title_words == true %}{{ product.title | truncate:settings.limit_title_words_count, "" }}{% else %}{{ product.title }}{% endif %}
+            </a>
+          </h4>
+          {% if section.settings.show_summary %}
+          <p class="product-des">
+            {% if product.description contains '[summary]' %}
+            {{ product.description | split:'[summary]' | last | split :'[/summary]' | first | truncatewords: section.settings.product_summary_words }}
+            {% else %}
+            {% if section.settings.show_summary_stripped %}
+            {{ product.content | split:"[summary]" | first | split:"[video]" | first | split:"[tab]" | first | split:"[deal]" | first | strip_html | truncatewords: section.settings.product_summary_words }}
+            {% else %}
+            {{ product.content | split:"[summary]" | first | split:"[video]" | first | split:"[tab]" | first | split:"[deal]" | first  | truncatewords: section.settings.product_summary_words }}
+            {% endif %}
+            {% endif %}
+          </p>
+          {% endif %}
+          {% include 'price'%}
+          <button class="button btn-cart {% if sold_out %} btn disabled {% endif %}" type="button" data-toggle="tooltip" data-loading-text="{{ 'products.product.loading' | t }}" title="{{ 'products.product.add_to_cart' | t }}" {% if sold_out == false %}onclick="{% if product.variants.first.available %}cart.add('{{  product.variants.first.id  }}'){% else %}window.top.location.href='{{product.url}}'{% endif %};"{% endif %}>
+            <span>{% if sold_out == false %}{{ 'products.product.add_to_cart' | t }}{% else %} {{ 'products.product.sold_out' | t }}{%endif%}</span>
+          </button>
+        </div>
+        <!-- caption -->
+      </div>
+    </div>
+  </div>
+  <!-- product-thumb -->
+</div>
+<!-- product-layout -->

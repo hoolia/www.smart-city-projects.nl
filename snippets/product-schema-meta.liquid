@@ -1,0 +1,14 @@
+<meta itemprop="mpn" content="{{ product.id}}" />
+<meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
+<meta itemprop="image" content="{{ product.featured_image.src | img_url: 'grande' }}">
+<meta itemprop="description" content="{{ product.description | split:"[summary]" | first | split:"[video]" | first | split:"[tab]" | first | split:"[deal]" | first | strip_html }}">
+<meta itemprop="sku" content="{{ product.selected_or_first_available_variant.sku }}">
+<div itemprop="brand" itemtype="http://schema.org/Thing" itemscope>
+  <meta itemprop="name" content="{{ product.vendor }}" />
+</div>
+<div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
+  <link itemprop="url" href="{{ shop.url }}{{ product.url }}" />
+  <meta itemprop="availability" content="https://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}" />
+  <meta itemprop="priceCurrency" content="{{ shop.currency }}" />
+  <meta itemprop="price" content="{{ product.selected_or_first_available_variant.price | money_without_currency }}" />
+</div>

@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="row">
+    <div id="content" class="col-sm-12">
+      <div class="row">
+        {% include 'gallery-page-section' %}
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Gallery",
+"class": "index-section",
+  "settings": [	
+    {
+        "type": "paragraph",
+        "content": "[Video Guide](https://youtu.be/3qbQL8dPCQY?list=PLvJCnPMUAdwr6XxWVo_f9dkVRh8GNCXoa)"
+      },        
+      {
+      "type":"image_picker",
+      "id":"page_top",
+      "label":"Top image"
+    },
+	{
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "FEATURED PRODUCTS"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description",
+      "default": "Browse the collection of our best selling and trending products"
+    },
+    {
+      "type": "color",
+      "id": "caption_color",
+      "label": "Caption Color",
+      "info": "This option allows you to set caption color.",
+      "default": "#fff"
+    }
+  ],
+  "blocks": [
+	{
+      "type": "image",
+      "name": "Image",
+      "settings": [
+		{
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Image"
+        },
+		{
+          "type": "text",
+          "id": "caption",
+          "label": "Caption"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+    "name": "Gallery",
+    "category": "Image"
+    }
+  ]
+}
+{% endschema %}
+<style>
+  {% if section.settings.caption_color != '#fff' -%}
+  #shopify-section-{{section.id }} .my-gallery figure:hover figcaption {
+    color: {{ section.settings.caption_color }};
+  }
+  {%- endif %}
+</style>

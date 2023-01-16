@@ -1,0 +1,135 @@
+<div class="main-row {% if section.settings.fullwidth == true %}fluid-width{% endif  %} {% if section.settings.background == true %} layer-background {% endif  %}{% if section.settings.bottom_padding %} padding-bottom{% endif %}" data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div class="row sub-row">
+          <div class="sub-col col-sm-12 col-md-12">
+            {% include section.settings.collection_layout %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Featured collection",
+"class": "index-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "collection_layout",
+      "label": "Select section layout",
+      "options": [
+        {
+        "value": "feature-carousal",
+        "label": "Design 1"
+        }
+      ]
+    },
+	{
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "FEATURED PRODUCTS"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Browse the collection of our best selling and trending products"
+    },
+    {
+      "id": "collection",
+      "type": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "listing_rows",
+      "label": "No of product rows",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "no_of_products",
+      "label": "No of products in a row",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "products_tab_count",
+      "label": "No of products to show",
+      "min": 1,
+      "max": 99,
+      "step": 1,
+      "default": 8
+    },
+    {
+      "type": "checkbox",
+      "id": "fullwidth",
+      "label": "Set Div fullwidth?",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "background",
+      "label": "Add Background",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Sections Background Color",
+      "info": "This option allows you to set different background color than default one for the section.",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "checkbox",
+      "id": "product_grid_img_carousel",
+      "label": "Slide All images in product grid?",
+      "default": false,
+      "info": "Used for Product grid carousel enable\/disable"
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding",
+      "label": "Add bottom margin?",
+      "info": "White empty space below section",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+    "name": "Featured collection",
+    "category": "Collection"
+    }
+  ]
+}
+{% endschema %}
+<style>
+  {% if section.settings.background_color != settings.section_bg_color -%}
+  #shopify-section-{{section.id }} .layer-background {
+    background: {{ section.settings.background_color }};
+  }
+  {%- endif %}
+</style>
+{% if settings.grid_auto_resize != 'false' -%}
+<script type="text/javascript">
+  $(document).ready(function() {
+    mass.resizeGrid('#product_module{{section.id}}',{{section.settings.listing_rows}});
+  });
+  $(window).resize(function() {
+    setTimeout(function () {
+      mass.resizeGrid('#product_module{{section.id}}',{{section.settings.listing_rows}});
+    }, 300);
+
+  });
+</script>
+{% endif %}

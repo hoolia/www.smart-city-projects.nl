@@ -1,0 +1,66 @@
+{% unless current_collection %}
+{% assign current_collection = collection %}
+{% endunless %}
+
+{% assign on_sale = false %}
+{% if product.compare_at_price > product.price %}
+{% assign on_sale = true %}
+{% endif %}
+
+{% assign sold_out = true %}
+{% if product.available  %}
+{% assign sold_out = false %}
+{% endif %}
+
+{% comment %}Select the product image size from settings.
+{% assign img_size = settings.img_size_grid %}
+{% endcomment %}
+
+{% assign img_width = settings.img_width_grid %}
+
+{% assign img_crop = 'center'%}
+
+{% if ratio %}
+{% assign grid_aspect_ratio = ratio %}
+{% else %}
+{% assign grid_aspect_ratio = settings.grid_aspect_ratio %}
+{% endif %}
+
+{% case grid_aspect_ratio %}
+  {% when '1:1' %}
+  	{% capture img_size %}{{img_width}}x{{ img_width | times : 1 | divided_by: 1 | round:2 }}{% endcapture %}
+	{% capture w100 %}100x{{ 100 | times : 1 | divided_by: 1 | round:2 }}{% endcapture %}
+  	{% capture w360 %}300x{{ 300 | times : 1 | divided_by: 1 | round:2 }}{% endcapture %}
+  	{% capture w540 %}400x{{ 400 | times : 1 | divided_by: 1 | round:2 }}{% endcapture %}
+  	{% capture w720 %}500x{{ 500 | times : 1 | divided_by: 1 | round:2 }}{% endcapture %}
+  	{%capture w1024 %}600x{{ 600 | times : 1 | divided_by: 1 | round:2 }}{% endcapture %}
+  {% when '3:2' %}
+  	{% capture img_size %}{{img_width}}x{{ img_width | times : 2 | divided_by: 3 | round:2 }}{% endcapture %}
+	{% capture w100 %}100x{{ 100 | times : 2 | divided_by: 3 | round:2 }}{% endcapture %}
+  	{% capture w360 %}300x{{ 300 | times : 2 | divided_by: 3 | round:2 }}{% endcapture %}
+  	{% capture w540 %}400x{{ 400 | times : 2 | divided_by: 3 | round:2 }}{% endcapture %}
+  	{% capture w720 %}500x{{ 500 | times : 2 | divided_by: 3 | round:2 }}{% endcapture %}
+  	{%capture w1024 %}600x{{ 600 | times : 2 | divided_by: 3 | round:2 }}{% endcapture %}
+  {% when '4:3' %}
+  	{% capture img_size %}{{img_width}}x{{ img_width | times : 3 | divided_by: 4 | round:2 }}{% endcapture %}
+	{% capture w100 %}100x{{ 100 | times : 3 | divided_by: 4 | round:2 }}{% endcapture %}
+  	{% capture w360 %}300x{{ 300 | times : 3 | divided_by: 4 | round:2 }}{% endcapture %}
+  	{% capture w540 %}400x{{ 400 | times : 3 | divided_by: 4 | round:2 }}{% endcapture %}
+  	{% capture w720 %}500x{{ 500 | times : 3 | divided_by: 4 | round:2 }}{% endcapture %}
+  	{%capture w1024 %}600x{{ 600 | times : 3 | divided_by: 4 | round:2 }}{% endcapture %}
+  {% when '2:3' %}
+  	{% capture img_size %}{{img_width}}x{{ img_width | times : 3 | divided_by: 2 | round:2 }}{% endcapture %}
+	{% capture w100 %}100x{{ 100 | times : 3 | divided_by: 2 | round:2 }}{% endcapture %}
+  	{% capture w360 %}300x{{ 300 | times : 3 | divided_by: 2 | round:2 }}{% endcapture %}
+  	{% capture w540 %}400x{{ 400 | times : 3 | divided_by: 2 | round:2 }}{% endcapture %}
+  	{% capture w720 %}500x{{ 500 | times : 3 | divided_by: 2 | round:2 }}{% endcapture %}
+  	{%capture w1024 %}600x{{ 600 | times : 3 | divided_by: 2 | round:2 }}{% endcapture %}
+  {% when '3:4' %}
+  	{% capture img_size %}{{img_width}}x{{ img_width | times : 4 | divided_by: 3 | round:2 }}{% endcapture %}
+  	{% capture w100 %}100x{{ 100 | times : 4 | divided_by: 3 | round:2 }}{% endcapture %}
+  	{% capture w360 %}300x{{ 300 | times : 4 | divided_by: 3 | round:2 }}{% endcapture %}
+  	{% capture w540 %}400x{{ 400 | times : 4 | divided_by: 3 | round:2 }}{% endcapture %}
+  	{% capture w720 %}500x{{ 500 | times : 4 | divided_by: 3 | round:2 }}{% endcapture %}
+  	{% capture w1024 %}600x{{ 600 | times : 4 | divided_by: 3 | round:2 }}{% endcapture %}
+  {% else %}
+{% endcase %}

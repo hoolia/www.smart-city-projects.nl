@@ -1,0 +1,19 @@
+{% if settings.product_reviews_enable %}
+{% if template == 'search' %}
+{% assign product = item %}
+{% endif %}
+<div class="ratings">
+  {% case settings.product_reviews_app %}
+  {% when 'shopifyreviews' %}
+  <div class="rating-box"><span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span></div>
+  {% when 'loox' %}
+  <a href="#looxReviews"><div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div></a>
+  {% when 'alireviews' %}
+  <div product-id="{{ product.id }}" class="arv-collection arv-collection--{{ product.id }}"></div>
+  {% when 'judgeme' %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false, product: product %}
+  {% when 'stamped' %}
+  <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" data-product-type="{{product.type}}" data-product-title="{{product.title}}" style="display: inline-block;">{{ product.metafields.stamped.badge }}</span>
+  {% endcase %}
+</div>
+{% endif %}

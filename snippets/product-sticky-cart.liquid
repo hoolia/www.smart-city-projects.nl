@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <form action="/cart/add" method="post" enctype="multipart/form-data" id="form_buy_sticky" name="form_buy_sticky" class="form-inline">
+      <div class="form_buy_sticky">
+        <div class="form-group hidden-xs">
+          <a class="product-image" title="{{ product.title }}" href="{{ product.url | within: collection }}">
+            <img class="img-thumbnail" src="{{ featured_img_src | img_url: '32x32'  }}" alt="">
+          </a>
+        </div>
+        <div class="form-group col-3" id="title">
+          <h5 class="hidden-sm hidden-xs">{{ product.title }}</h5>
+          {% include 'price' %}
+        </div>
+        <div class="form-group col-7 hidden-xs"  {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}style="display:none"{% endif %}>
+          <select name="id" id="productSelect" class="form-control">
+            {% for variant in product.variants %}
+            {% if variant.available %}
+            <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }}</option>
+            {% else %}
+            <option disabled="disabled">
+              {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+            </option>
+            {% endif %}
+            {% endfor %}
+          </select>
+        </div>
+        <div class="form-group col-2">
+          {% if section.settings.product_quantity_enable %}
+          <input type="text" name="stickyquantity" value="1" size="2" id="Quantity" onkeyup="updatecartsticky(2)" class="form-control" />					
+          {% endif %}
+        </div>
+        <div class="form-group col-3">
+          {% if template != 'product.pre-order' %}
+          <button class="btn button button-cart" type="button" id="button-cart-sticky" data-loading-text="{{ 'products.product.loading' | t }}">
+            {{ 'products.product.add_to_cart' | t }}
+          </button>
+          {% else %}
+          <button class="btn button button-cart" type="button" id="button-cart-buy" data-loading-text="{{ 'products.product.loading' | t }}">
+            {{ 'products.product.pre_order' | t }}
+          </button>
+          {% endif %}
+        </div>
+      </div>
+    </form>
+    <!-- end-form -->
+  </div>
+</div>
+<script type="text/javascript">
+  function updatecartsticky(input1) {
+    if (input1 == 1 ) {
+      $('#form_buy_sticky').find('input[name="stickyquantity"]').val($('#form_buy').find('input[name="quantity"]').val());
+    } else {
+      $('#form_buy').find('input[name="quantity"]').val($('#form_buy_sticky').find('input[name="stickyquantity"]').val());
+    }
+  }
+</script>

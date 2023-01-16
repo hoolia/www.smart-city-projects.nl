@@ -1,0 +1,49 @@
+<div class="toolbar toolbar-products toolbar-bottom"  id="pagination">
+  <div class="toolbar-amount">
+    {% assign current_first_item = paginate.current_offset | plus:1 %}
+    {% if paginate.pages == paginate.current_page %}
+    {% assign current_displayed = paginate.items | modulo:paginate.page_size %}
+    {% assign current_last_item = paginate.items %}
+    {% else %}
+    {% assign current_displayed = paginate.page_size %}
+    {% assign current_last_item = paginate.current_offset | plus:paginate.page_size %}
+    {% endif %}
+    <span>{{ 'products.pagination.showing' | t }} {{ current_first_item }} {{ 'products.pagination.to' | t }} {% unless current_first_item == current_last_item %}{{ current_last_item }}{% endunless %} {{ 'products.pagination.of' | t }} {{ paginate.items }} {{ 'products.pagination.items' | t }}
+    </span>
+  </div>
+  <div class="pages ajax_pagination">
+    {% if paginate.pages > 1 %}
+    <ul class="pagination">
+      {% if paginate.previous %}
+      <li>
+        <a href="{{ paginate.previous.url }}" title="{{ paginate.previous.title }}">
+          &lt;
+        </a>
+      </li>
+      {% else %}
+      {% endif %}
+      {% for part in paginate.parts %}
+      {% if part.is_link %}
+      <li>
+        <a href="{{ part.url }}" title="">{{ part.title }}</a>
+      </li>
+      {% else %}
+      {% if part.title == paginate.current_page %}
+      <li class="active"><span>{{ part.title }}</span></li>
+      {% else %}
+      <li>{{ part.title }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+      {% if paginate.next %}
+      <li class="pagination-next">
+        <a href="{{ paginate.next.url }}" title="{{ paginate.next.title }}">
+          &gt;
+        </a>
+      </li>
+      {% else %}
+      {% endif %}
+    </ul>
+    {% endif %}
+  </div>
+</div>

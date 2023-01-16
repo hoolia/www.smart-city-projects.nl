@@ -1,0 +1,79 @@
+<div class="testimonial-container" {% if section.settings.image != blank %}style="background-image: url('{{ section.settings.image | img_url: 'master' }}');" {% endif %}>
+  <div class="container">
+    <div class="module-title">
+      {% if section.settings.description %}
+      <p class="sub-title">{{ section.settings.description }}</p>
+      {% endif %}
+      {% if section.settings.heading %}
+      <h2>{{ section.settings.heading }}</h2>
+      {% endif %}
+    </div>
+    <div class="block-content">
+      <div class="owl-container">
+        <div id="slides" class="owl-carousel owl-theme {{ section.id }}">
+          {% if section.blocks.size > 0 %}
+          {% for block in section.blocks %}
+          <div class="row_items">
+            <div class="testimonial-content">
+              <div class="item">
+                <div class="item-inner">
+                  <div class="testimonial-images">
+                    {% if block.settings.image != blank %}
+                    <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ block.settings.image | img_url: '100x100' }}" alt="{{ block.settings.author }}"/>
+                    {% endif %}
+                  </div>
+                  <h4 class="title">
+                    <a href="#">{{ block.settings.title }}</a>
+                  </h4>
+                  <div class="testimonial-box">
+                    <a href="#">{{ block.settings.description }}</a>
+                  </div>
+                  <i class="fa fa-quote-right"></i>
+                  <h4 class="testimonial-author">{{ block.settings.author }}</h4>
+                </div>
+              </div>
+            </div>
+            <!--testimonial-content-->
+          </div>
+          {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <!--block-content-->
+  </div>
+</div>
+<!--testimonial-container-->
+<script >
+  $(document).ready(function() {
+    $("#slides.{{ section.id }}").owlCarousel({
+      autoPlay :  false ,
+
+      loop: true,
+      margin: 0,
+      navSpeed : 3000,
+      dotsSpeed : 3000,
+      autoplaySpeed : 3000,
+      nav :  false ,
+      dots : true ,
+      lazyLoad: true,
+      responsive:{
+        0:{
+          items: 1
+        },
+        480:{
+          items: 2
+        },
+        768:{
+          items: 2
+        },
+        992:{
+          items: 3
+        },
+        1200:{
+          items : 3
+        }
+      }
+    });
+  });
+</script>

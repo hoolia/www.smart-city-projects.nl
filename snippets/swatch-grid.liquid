@@ -1,0 +1,51 @@
+<div class="category-options">
+
+  {% if swatch-grid != blank %}
+
+  {% assign found_option = false %}
+  {% assign is_color = false %}
+  {% assign option_index = 0 %}
+
+  {% for option in product.options %}
+  {% if option == swatch-grid %}
+  {% assign found_option = true %}
+  {% assign option_index = forloop.index0 %}
+  {% assign downcased_option = swatch-grid | downcase %}
+  {% if downcased_option contains 'color' or downcased_option contains 'colour' %}
+  {% assign is_color = true %}
+  {% endif %}
+  {% endif %}
+  {% endfor %}
+
+  {% if found_option %}
+  <ul class="ul-swatches-colors">
+    {% assign values = '' %}
+    {% for variant in product.variants %}
+    {% assign value = variant.options[option_index] %}
+    {% unless values contains value %}
+    {% assign values = values | join: ',' %}
+    {% assign values = values | append: ',' | append: value %} 
+    {% assign values = values | split: ',' %}
+    {% if is_color %}
+    <li class="swatches-options">
+      {% if settings.grid_color_swatches == 'thumb' and variant.image.src != blank %}
+      <a href="javascript:void(0);" onclick="swatches.changeSwatchInCategory($(this));" title="{{ value | escape }}"
+         style="width: 20px; height: 20px;background-repeat: no-repeat;background-size: cover;background-image: url({{ variant.image.src | img_url:'20x20' }});" class="bg-{{ value | split: ' ' | last | handle }}" 
+         data-product-id="{{ product.id }}{% if section.id %}-{{section.id}}{%endif %}"
+         data-product-option-value-id="{{ variant.id }}"></a>
+      {% elsif settings.grid_color_swatches == 'color' or variant.image.src == blank %}
+      <a href="javascript:void(0);" onclick="swatches.changeSwatchInCategory($(this));" title="{{ value | escape }}"
+         style="width: 10px; height: 10px;background-color: {{ value | split: ' ' | last | handle }};" class="bg-{{ value | split: ' ' | last | handle }}" 
+         data-product-id="{{ product.id }}{% if section.id %}-{{section.id}}{%endif %}"
+         data-product-option-value-id="{{ variant.id }}"></a>
+      {% endif %}
+    </li>
+    {% endif %}
+    {% endunless %}
+    {% endfor %}
+  </ul>
+
+  {% endif %}
+
+  {% endif %}
+</div>

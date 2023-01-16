@@ -1,0 +1,15 @@
+{% include 'product-grid-variables', ratio:'1:1' %}
+
+<div class="text-center about-page">
+  <a href="{{ block.settings[link] }}" title="{{ block.settings[heading] }}">
+    {% if block.settings[image] != blank %}
+    {% include 'product-grid-image',image:block.settings[image] %}
+    {% endif %}          
+    {% if block.settings[heading] != blank %} 
+    <h3 class="text-center">{{ block.settings[heading] }}</h3>
+    {% endif %}
+  </a>
+  {% if block.settings[description] != blank %} 
+  <p>{{ block.settings[description] }}</p>
+  {% endif %}
+</div>

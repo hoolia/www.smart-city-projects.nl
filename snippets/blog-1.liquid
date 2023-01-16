@@ -1,0 +1,70 @@
+<div id="blog_home1" class="menu-recent module-nav2 carousal2">
+  <div class="">
+    <div class="blog-title module-title">
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="owl-container">
+      <div class="articles-container owl-carousel owl-theme">
+        {% for article in blogs[section.settings.blog].articles %}
+        <div class="row_items">
+          <div class="articles-inner">
+            <div class="articles-image">
+              <a class="" href="{{ article.url }}">
+                <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ article.image.src | img_url: 'master' }}" alt="">
+              </a>
+            </div>
+            <div class="aritcles-content text-{{ section.settings.text_align }}">
+              <div class="content-inner">
+                <a class="articles-name" href="{{ article.url }}">{{ article.title }}</a> 
+                <div class="articles-date">
+                  <span class="author-name">
+                    {{ 'blogs.article.by' | t }}: {{ article.author }}
+                  </span>
+                  <time datetime="{{ article.published_at | date }}">
+                    {{ article.published_at | date: ' %b %d, %Y' }}
+                  </time>
+                </div>
+                <a class="read-more" href="{{ article.url }}">{{ 'blogs.article.readmore' | t }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<script >
+  $(document).ready(function() {
+    $(".articles-container").owlCarousel({
+      autoPlay :  false ,
+      items : {{ section.settings.items }},
+      margin: 0,
+      loop: false,			
+      navSpeed : 1000,
+      dotsSpeed : 1000,
+      autoplaySpeed : 1000,
+      nav :  false ,
+      dots :  true ,
+      responsive:{
+        0:{
+          items: 1,
+          nav: false
+        },
+        480:{
+          items: 2,
+          nav: false
+        },
+        768:{
+          items: 3
+        },
+        992:{
+          items: 3
+        },
+        1200:{
+          items: {{ section.settings.items }}
+        }
+      }
+    });
+  });
+</script>
