@@ -794,10 +794,10 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/city-behind-greenery.jpg",
               "animation_style": "slider-1",
-              "heading": "De nieuwe standaard in Energie",
+              "heading": "",
               "heading_size": "12px",
               "heading_color": "#ffffff",
-              "subheading": "SMART CITY PROJECTS",
+              "subheading": "Share Energy, Save and Respect the Environment",
               "subheading_size": "60px",
               "subheading_color": "#ffffff",
               "description": "<b>Community driven Micro-Grids<\/b><br> om lokale groene initiatieven tot leven te brengen.",
