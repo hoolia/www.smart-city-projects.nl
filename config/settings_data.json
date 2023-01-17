@@ -370,7 +370,7 @@
         "type": "videobox",
         "settings": {
           "video_type": "mp4",
-          "video_src": "QmXcDC4UjaUhnA5uzRYFak6XdrXgFwpQwgqPdPYkfjCeiD",
+          "video_src": "https:\/\/gateway.pinata.cloud\/ipfs\/QmXcDC4UjaUhnA5uzRYFak6XdrXgFwpQwgqPdPYkfjCeiD?_gl=1*1uy2d9s*_ga*MTE0MjUzODQ4Mi4xNjczOTA4NjQ4*_ga_5RMPXG14TE*MTY3Mzk4MTU1NS4yLjEuMTY3Mzk4MTkwNi42MC4wLjA.",
           "video_autoplay": true,
           "fullwidth": true,
           "top_margin": false
