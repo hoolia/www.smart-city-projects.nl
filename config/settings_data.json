@@ -292,8 +292,8 @@
             "settings": {
               "use_feature_service_icon": true,
               "feature_service_icon": "fa-user",
-              "feature_service_title": "Communities maken",
-              "feature_service_description": "Mensen bij elkaar brengen, <br>daar zijn wij sterk in!<br>"
+              "feature_service_title": "Dependance on fossil",
+              "feature_service_description": "Natural gas is a finite resource, and increasing reliance on it could contribute to energy insecurity and price volatility in the long term."
             }
           },
           "1504781997946-1": {
@@ -301,8 +301,8 @@
             "settings": {
               "use_feature_service_icon": true,
               "feature_service_icon": "fa-money-check",
-              "feature_service_title": "Lucratief",
-              "feature_service_description": "Een lokale circulaire economie elimineert kosten en belasting waardoor iedere deelnemer wint."
+              "feature_service_title": "Cost",
+              "feature_service_description": "Natural gas prices can be volatile, and companies may be subject to price increases over time. Additionally, there may be costs associated with installing and maintaining natural gas infrastructure."
             }
           },
           "1504782065705": {
@@ -310,8 +310,8 @@
             "settings": {
               "use_feature_service_icon": true,
               "feature_service_icon": "fa-headset",
-              "feature_service_title": "Project management",
-              "feature_service_description": "Wij ontzorgen in het opzetten en onderhouden van EnergieCoöperaties."
+              "feature_service_title": "Reputational Risk",
+              "feature_service_description": "Companies that use natural gas may be perceived as contributing to environmental and climate change, and could face backlash from consumers, investors, or other stakeholders."
             }
           },
           "5fbcce04-ef97-4d4d-9c57-f352145cb080": {
@@ -322,23 +322,13 @@
               "feature_service_title": "Groen",
               "feature_service_description": "Draag uw steentje bij in de EnergieTransitie."
             }
-          },
-          "bee1350c-65a9-4bfa-841a-748630516b5d": {
-            "type": "box",
-            "settings": {
-              "use_feature_service_icon": false,
-              "feature_service_icon": "fa-shopping-bag",
-              "feature_service_title": "",
-              "feature_service_description": ""
-            }
           }
         },
         "block_order": [
           "1504781997946-0",
           "1504781997946-1",
           "1504782065705",
-          "5fbcce04-ef97-4d4d-9c57-f352145cb080",
-          "bee1350c-65a9-4bfa-841a-748630516b5d"
+          "5fbcce04-ef97-4d4d-9c57-f352145cb080"
         ],
         "settings": {
           "layout": "feature-service4",
