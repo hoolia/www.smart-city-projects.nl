@@ -848,35 +848,31 @@
           "bottom_border": false
         }
       },
-      "a0e4c1d5-1056-4543-904c-ba38d79eada6": {
-        "type": "brands",
+      "3dc0ffee-d94c-49a0-aebc-cd471e5845d8": {
+        "type": "image-spinner",
         "blocks": {
-          "a0e4c1d5-1056-4543-904c-ba38d79eada6-167403478266dd44bb-0": {
+          "3dc0ffee-d94c-49a0-aebc-cd471e5845d8-167403619022a3930e-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Colorful_Freelancer_YouTube_Thumbnail_2_f88e8ea3-b88d-48c2-8e0d-0fb93b8ba7ec.png",
-              "link": ""
+              "image": "shopify:\/\/shop_images\/city-behind-greenery_b502cd38-ca93-4000-ad95-11c0fd53d3ca.jpg"
             }
           },
-          "a0e4c1d5-1056-4543-904c-ba38d79eada6-167403478266dd44bb-1": {
+          "3dc0ffee-d94c-49a0-aebc-cd471e5845d8-167403619022a3930e-1": {
             "type": "image",
             "settings": {
-              "link": ""
             }
           }
         },
         "block_order": [
-          "a0e4c1d5-1056-4543-904c-ba38d79eada6-167403478266dd44bb-0",
-          "a0e4c1d5-1056-4543-904c-ba38d79eada6-167403478266dd44bb-1"
+          "3dc0ffee-d94c-49a0-aebc-cd471e5845d8-167403619022a3930e-0",
+          "3dc0ffee-d94c-49a0-aebc-cd471e5845d8-167403619022a3930e-1"
         ],
         "settings": {
-          "layout": "brands",
-          "heading": "Logo Brands & Clients",
+          "heading": "",
+          "description": "",
           "fullwidth": false,
           "background": false,
-          "background_color": "#f8f8f8",
-          "top_margin": false,
-          "bottom_padding": false
+          "background_color": "#f8f8f8"
         }
       }
     },
@@ -885,7 +881,7 @@
       "1504781997946",
       "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
       "1527121164309",
-      "a0e4c1d5-1056-4543-904c-ba38d79eada6"
+      "3dc0ffee-d94c-49a0-aebc-cd471e5845d8"
     ]
   },
   "presets": {
