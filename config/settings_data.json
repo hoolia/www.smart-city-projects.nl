@@ -349,9 +349,9 @@
         "settings": {
           "fullwidth": true,
           "mailing_list_form_action": "",
-          "overwrite_text_color": false,
-          "heading_color_text": "#ffffff",
-          "subheading_color_bg": "#f4f4f4",
+          "overwrite_text_color": true,
+          "heading_color_text": "#4ad44a",
+          "subheading_color_bg": "#0c9e0e",
           "heading": "Subscribe",
           "background": false,
           "background_color": "#242424",
@@ -902,8 +902,8 @@
       "1504781997946",
       "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
       "dd2de1a0-dce4-4bdd-a8aa-4cb8fe55753c",
-      "1527121164309",
-      "2ed49d5d-c193-49be-a728-959c0685fe8b"
+      "2ed49d5d-c193-49be-a728-959c0685fe8b",
+      "1527121164309"
     ]
   },
   "presets": {
