@@ -290,7 +290,6 @@
           "1504781997946-0": {
             "type": "box",
             "settings": {
-              "image": "shopify:\/\/shop_images\/pic-removebg-preview.png",
               "use_feature_service_icon": true,
               "feature_service_icon": "fa-user",
               "feature_service_title": "Communities maken",
@@ -863,8 +862,8 @@
     "content_for_index": [
       "1480267833382",
       "1504781997946",
-      "1527121164309",
-      "386b4cd7-ab21-481a-b3c6-e1a106db3b6a"
+      "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
+      "1527121164309"
     ]
   },
   "presets": {
