@@ -10,7 +10,7 @@
     "grid_auto_resize": "false",
     "grid_layout": 5,
     "show_border_grid": false,
-    "grid_color_swatches": "thumb",
+    "grid_color_swatches": "false",
     "product_new_time": "30",
     "product_grid_img_carousel": false,
     "product_show_compare_at_price": false,
@@ -895,23 +895,6 @@
           "bottom_padding": false,
           "bottom_border": false
         }
-      },
-      "0cb720de-c604-4a86-8c07-1106b2a969c0": {
-        "type": "collection",
-        "settings": {
-          "collection_layout": "feature-carousal",
-          "heading": "FEATURED PRODUCTS",
-          "description": "Browse the collection of our best selling and trending products",
-          "collection": "positive-impact",
-          "listing_rows": 2,
-          "no_of_products": 3,
-          "products_tab_count": 6,
-          "fullwidth": false,
-          "background": false,
-          "background_color": "#f8f8f8",
-          "product_grid_img_carousel": false,
-          "bottom_padding": false
-        }
       }
     },
     "content_for_index": [
@@ -920,8 +903,7 @@
       "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
       "dd2de1a0-dce4-4bdd-a8aa-4cb8fe55753c",
       "2ed49d5d-c193-49be-a728-959c0685fe8b",
-      "1527121164309",
-      "0cb720de-c604-4a86-8c07-1106b2a969c0"
+      "1527121164309"
     ]
   },
   "presets": {
