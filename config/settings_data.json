@@ -290,6 +290,7 @@
           "1504781997946-0": {
             "type": "box",
             "settings": {
+              "image": "shopify:\/\/shop_images\/pic-removebg-preview.png",
               "use_feature_service_icon": true,
               "feature_service_icon": "fa-user",
               "feature_service_title": "Communities maken",
