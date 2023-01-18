@@ -309,7 +309,7 @@
             "type": "box",
             "settings": {
               "use_feature_service_icon": true,
-              "feature_service_icon": "fa-headset",
+              "feature_service_icon": "fa-star",
               "feature_service_title": "Reputational Risk",
               "feature_service_description": "Companies that use natural gas may be perceived as contributing to environmental and climate change, and could face backlash from consumers, investors, or other stakeholders."
             }
