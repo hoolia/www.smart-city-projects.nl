@@ -889,6 +889,38 @@
           "fit_to_container": false,
           "full_size_on_mobile": false
         }
+      },
+      "805de54d-6b47-41fc-89c4-dce58122e1b9": {
+        "type": "text-section",
+        "settings": {
+          "product_advert_design": "text-content1",
+          "fullwidth": true,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "top_margin": false,
+          "subheading": "",
+          "sub_heading_size": 20,
+          "sub_heading_color": "#ababab",
+          "heading": "THE SMART GRID INNOVATION",
+          "heading_size": 36,
+          "heading_color": "#0c9e0e",
+          "description": "",
+          "description_size": 16,
+          "description_color": "#7e7e7e",
+          "link_text": "",
+          "link": "",
+          "overwrite_link_color": false,
+          "link_color_text": "#454545",
+          "link_color_bg": "#fff",
+          "link_text_2": "",
+          "link_2": "",
+          "overwrite_link2_color": false,
+          "link2_color_text": "#454545",
+          "link2_color_bg": "#fff",
+          "ad_align": "left",
+          "bottom_padding": false,
+          "bottom_border": false
+        }
       }
     },
     "content_for_index": [
@@ -896,6 +928,7 @@
       "1504781997946",
       "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
       "1527121164309",
+      "805de54d-6b47-41fc-89c4-dce58122e1b9",
       "cf2bf6cd-4848-4a05-9bc6-0b2ddcc34266"
     ]
   },
