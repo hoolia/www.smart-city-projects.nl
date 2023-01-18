@@ -5,6 +5,7 @@
     "color_top_bg": "#292929",
     "lazyloading_enable": true,
     "img_size_product": "900x900",
+    "img_width_grid": "100",
     "grid_aspect_ratio": "2:3",
     "grid_auto_resize": "false",
     "grid_layout": 5,
@@ -843,7 +844,7 @@
           "ad_align": "left",
           "fullwidth": false,
           "background": false,
-          "background_color": "#0c9e0e",
+          "background_color": "#f8f8f8",
           "top_margin": true,
           "bottom_padding": false,
           "bottom_border": false
