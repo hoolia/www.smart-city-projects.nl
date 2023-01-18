@@ -847,109 +847,13 @@
           "bottom_padding": false,
           "bottom_border": false
         }
-      },
-      "cf2bf6cd-4848-4a05-9bc6-0b2ddcc34266": {
-        "type": "slideshow",
-        "blocks": {
-          "cf2bf6cd-4848-4a05-9bc6-0b2ddcc34266-167403619050e6241d-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/We-buy-that-electricity-and-consume-it-locally-in-the-building-for-the-data-center-transformed.png",
-              "animation_style": "slider-3",
-              "heading": "",
-              "heading_size": "18px",
-              "heading_color": "#fff",
-              "subheading": "",
-              "subheading_size": "90px",
-              "subheading_color": "#fff",
-              "description": "",
-              "description_size": "16px",
-              "description_color": "#fff",
-              "slide_link_text": "",
-              "slide_link": "",
-              "link_bg": "#000",
-              "link_color": "#fff",
-              "image_clickable": false,
-              "top": "50%",
-              "right": "0%",
-              "left": "0%",
-              "width": "100%",
-              "float": "left"
-            }
-          }
-        },
-        "block_order": [
-          "cf2bf6cd-4848-4a05-9bc6-0b2ddcc34266-167403619050e6241d-0"
-        ],
-        "settings": {
-          "autoplay_speed": "5000",
-          "layout_slider": "slider-1",
-          "fullwidth": true,
-          "use_box_layout": false,
-          "fit_to_container": false,
-          "full_size_on_mobile": false
-        }
-      },
-      "805de54d-6b47-41fc-89c4-dce58122e1b9": {
-        "type": "text-section",
-        "settings": {
-          "product_advert_design": "text-content1",
-          "fullwidth": true,
-          "background": false,
-          "background_color": "#f8f8f8",
-          "top_margin": false,
-          "subheading": "",
-          "sub_heading_size": 20,
-          "sub_heading_color": "#ababab",
-          "heading": "THE SMART GRID INNOVATION",
-          "heading_size": 36,
-          "heading_color": "#0c9e0e",
-          "description": "",
-          "description_size": 16,
-          "description_color": "#7e7e7e",
-          "link_text": "",
-          "link": "",
-          "overwrite_link_color": false,
-          "link_color_text": "#454545",
-          "link_color_bg": "#fff",
-          "link_text_2": "",
-          "link_2": "",
-          "overwrite_link2_color": false,
-          "link2_color_text": "#454545",
-          "link2_color_bg": "#fff",
-          "ad_align": "left",
-          "bottom_padding": false,
-          "bottom_border": false
-        }
-      },
-      "5cd39d05-05ed-4780-928c-b8f93eb7bae1": {
-        "type": "gallery-page",
-        "blocks": {
-          "02ba400c-bed6-49ec-968f-47907b488a71": {
-            "type": "image",
-            "settings": {
-              "caption": ""
-            }
-          }
-        },
-        "block_order": [
-          "02ba400c-bed6-49ec-968f-47907b488a71"
-        ],
-        "settings": {
-          "heading": "FEATURED PRODUCTS",
-          "description": "Browse the collection of our best selling and trending products",
-          "caption_color": "#fff"
-        }
       }
     },
     "content_for_index": [
       "1480267833382",
       "1504781997946",
       "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
-      "805de54d-6b47-41fc-89c4-dce58122e1b9",
-      "cf2bf6cd-4848-4a05-9bc6-0b2ddcc34266",
-      "1527121164309",
-      "5cd39d05-05ed-4780-928c-b8f93eb7bae1"
+      "1527121164309"
     ]
   },
   "presets": {
