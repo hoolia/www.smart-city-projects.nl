@@ -38,7 +38,7 @@
     "label_new": "#e5e5e5",
     "label_sale": "#a8741a",
     "cookie_constent_background": "#30bf32",
-    "cookie_constent_text": "#fff",
+    "cookie_constent_text": "#30bf32",
     "cookie_constent_border_color": "#fff",
     "show_pupup": false,
     "popup_title": "newsletter",
