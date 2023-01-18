@@ -333,7 +333,7 @@
         "settings": {
           "layout": "feature-service4",
           "heading": "<br>Switch to renewable energy <br>for a sustainable future.",
-          "heading_color": "#4ad44a",
+          "heading_color": "#0c9e0e",
           "description": "",
           "description_color": "#007501",
           "fullwidth": false,
