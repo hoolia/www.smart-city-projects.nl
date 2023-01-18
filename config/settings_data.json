@@ -847,13 +847,45 @@
           "bottom_padding": false,
           "bottom_border": false
         }
+      },
+      "a0e4c1d5-1056-4543-904c-ba38d79eada6": {
+        "type": "brands",
+        "blocks": {
+          "a0e4c1d5-1056-4543-904c-ba38d79eada6-167403478266dd44bb-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Colorful_Freelancer_YouTube_Thumbnail_2_f88e8ea3-b88d-48c2-8e0d-0fb93b8ba7ec.png",
+              "link": ""
+            }
+          },
+          "a0e4c1d5-1056-4543-904c-ba38d79eada6-167403478266dd44bb-1": {
+            "type": "image",
+            "settings": {
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "a0e4c1d5-1056-4543-904c-ba38d79eada6-167403478266dd44bb-0",
+          "a0e4c1d5-1056-4543-904c-ba38d79eada6-167403478266dd44bb-1"
+        ],
+        "settings": {
+          "layout": "brands",
+          "heading": "Logo Brands & Clients",
+          "fullwidth": false,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "top_margin": false,
+          "bottom_padding": false
+        }
       }
     },
     "content_for_index": [
       "1480267833382",
       "1504781997946",
       "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
-      "1527121164309"
+      "1527121164309",
+      "a0e4c1d5-1056-4543-904c-ba38d79eada6"
     ]
   },
   "presets": {
