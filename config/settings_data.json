@@ -217,7 +217,7 @@
           "use_top_bar": false,
           "top_bar_message": "",
           "logo_use_image": true,
-          "logo": "shopify:\/\/shop_images\/hoolia_no_face.png",
+          "logo": "shopify:\/\/shop_images\/Colorful_Freelancer_YouTube_Thumbnail_2_f88e8ea3-b88d-48c2-8e0d-0fb93b8ba7ec.png",
           "logo_padding": "25px 0px 25px 0px",
           "header_menu_1": "main-menu",
           "show_menu_fixbar": true,
@@ -835,33 +835,35 @@
           "full_size_on_mobile": false
         }
       },
-      "7c6473f5-d4a4-40de-ba4f-298ab20d961a": {
-        "type": "gallery-page",
-        "blocks": {
-          "818e0f83-c96d-4a55-b973-a7a6b62ad7c2": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/pic-removebg-preview.png",
-              "caption": ""
-            }
-          }
-        },
-        "block_order": [
-          "818e0f83-c96d-4a55-b973-a7a6b62ad7c2"
-        ],
+      "386b4cd7-ab21-481a-b3c6-e1a106db3b6a": {
+        "type": "feature-product",
         "settings": {
-          "page_top": "shopify:\/\/shop_images\/pic-removebg-preview.png",
-          "heading": "Our mission",
-          "description": "At Hoolia Energy, we're on a mission to make a positive impact on the environment and society. Our data center is built with energy-saving in mind, and we offer businesses the opportunity to improve their sustainability by installing photovoltaic modules on their roofs. Not only does this provide a guaranteed income for the roof owner, but Hoolia handles all the administrative and maintenance work. Join us in our mission to create a sustainable and connected world, and move towards a zero carbon footprint.",
-          "caption_color": "#0c9e0e"
+          "heading": "Our Featured Product",
+          "feature_product_design": "feature-product1",
+          "feature_product": "acer-aspire-aio",
+          "description": true,
+          "product_summary_words": "30",
+          "show_summary_stripped": true,
+          "price": false,
+          "view_details": false,
+          "add_to_cart": false,
+          "buy_now": false,
+          "image_position": "right",
+          "ad_align": "left",
+          "fullwidth": false,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "top_margin": true,
+          "bottom_padding": false,
+          "bottom_border": false
         }
       }
     },
     "content_for_index": [
       "1480267833382",
       "1504781997946",
-      "7c6473f5-d4a4-40de-ba4f-298ab20d961a",
-      "1527121164309"
+      "1527121164309",
+      "386b4cd7-ab21-481a-b3c6-e1a106db3b6a"
     ]
   },
   "presets": {
