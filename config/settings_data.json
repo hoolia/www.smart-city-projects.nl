@@ -895,6 +895,46 @@
           "bottom_padding": false,
           "bottom_border": false
         }
+      },
+      "831e46bc-75d9-4f60-9eeb-8f09c8f54921": {
+        "type": "collection-tab",
+        "settings": {
+          "products_tab_layout": "products-tab1",
+          "listing_rows": 2,
+          "no_of_products": 4,
+          "heading": "Featured collection",
+          "description": "Browse the collection of our best selling and trending products",
+          "fullwidth": false,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "products_tab_collection1": "",
+          "products_tab_collection2": "",
+          "products_tab_collection3": "",
+          "products_tab_collection4": "",
+          "products_tab_collection5": "",
+          "products_tab_count": 8,
+          "product_grid_img_carousel": false
+        }
+      },
+      "846f1671-c1c2-45e5-ad75-c1ac4cc034c7": {
+        "type": "collection-tab",
+        "settings": {
+          "products_tab_layout": "products-tab1",
+          "listing_rows": 2,
+          "no_of_products": 4,
+          "heading": "Featured collection",
+          "description": "Browse the collection of our best selling and trending products",
+          "fullwidth": false,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "products_tab_collection1": "",
+          "products_tab_collection2": "",
+          "products_tab_collection3": "",
+          "products_tab_collection4": "",
+          "products_tab_collection5": "",
+          "products_tab_count": 8,
+          "product_grid_img_carousel": false
+        }
       }
     },
     "content_for_index": [
@@ -903,6 +943,8 @@
       "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
       "dd2de1a0-dce4-4bdd-a8aa-4cb8fe55753c",
       "2ed49d5d-c193-49be-a728-959c0685fe8b",
+      "831e46bc-75d9-4f60-9eeb-8f09c8f54921",
+      "846f1671-c1c2-45e5-ad75-c1ac4cc034c7",
       "1527121164309"
     ]
   },
