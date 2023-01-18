@@ -834,7 +834,7 @@
           "feature_product": "dcx-immersion-cooling",
           "description": true,
           "product_summary_words": "30",
-          "show_summary_stripped": true,
+          "show_summary_stripped": false,
           "price": false,
           "view_details": false,
           "add_to_cart": false,
@@ -843,7 +843,7 @@
           "ad_align": "left",
           "fullwidth": false,
           "background": false,
-          "background_color": "#f8f8f8",
+          "background_color": "#0c9e0e",
           "top_margin": true,
           "bottom_padding": false,
           "bottom_border": false
