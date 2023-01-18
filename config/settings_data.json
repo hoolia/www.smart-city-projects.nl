@@ -872,6 +872,29 @@
           "bottom_padding": false,
           "bottom_border": false
         }
+      },
+      "2ed49d5d-c193-49be-a728-959c0685fe8b": {
+        "type": "feature-product",
+        "settings": {
+          "heading": "Our Featured Product",
+          "feature_product_design": "feature-product1",
+          "feature_product": "the-batteries",
+          "description": true,
+          "product_summary_words": "30",
+          "show_summary_stripped": true,
+          "price": false,
+          "view_details": false,
+          "add_to_cart": false,
+          "buy_now": false,
+          "image_position": "right",
+          "ad_align": "left",
+          "fullwidth": false,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "top_margin": true,
+          "bottom_padding": false,
+          "bottom_border": false
+        }
       }
     },
     "content_for_index": [
@@ -879,7 +902,8 @@
       "1504781997946",
       "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
       "dd2de1a0-dce4-4bdd-a8aa-4cb8fe55753c",
-      "1527121164309"
+      "1527121164309",
+      "2ed49d5d-c193-49be-a728-959c0685fe8b"
     ]
   },
   "presets": {
