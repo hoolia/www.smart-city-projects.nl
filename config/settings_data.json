@@ -847,41 +847,13 @@
           "bottom_padding": false,
           "bottom_border": false
         }
-      },
-      "3dc0ffee-d94c-49a0-aebc-cd471e5845d8": {
-        "type": "image-spinner",
-        "blocks": {
-          "3dc0ffee-d94c-49a0-aebc-cd471e5845d8-167403619022a3930e-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/city-behind-greenery_b502cd38-ca93-4000-ad95-11c0fd53d3ca.jpg"
-            }
-          },
-          "3dc0ffee-d94c-49a0-aebc-cd471e5845d8-167403619022a3930e-1": {
-            "type": "image",
-            "settings": {
-            }
-          }
-        },
-        "block_order": [
-          "3dc0ffee-d94c-49a0-aebc-cd471e5845d8-167403619022a3930e-0",
-          "3dc0ffee-d94c-49a0-aebc-cd471e5845d8-167403619022a3930e-1"
-        ],
-        "settings": {
-          "heading": "",
-          "description": "",
-          "fullwidth": false,
-          "background": false,
-          "background_color": "#f8f8f8"
-        }
       }
     },
     "content_for_index": [
       "1480267833382",
       "1504781997946",
       "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
-      "1527121164309",
-      "3dc0ffee-d94c-49a0-aebc-cd471e5845d8"
+      "1527121164309"
     ]
   },
   "presets": {
