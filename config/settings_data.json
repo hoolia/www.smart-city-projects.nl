@@ -300,7 +300,7 @@
             "type": "box",
             "settings": {
               "use_feature_service_icon": true,
-              "feature_service_icon": "fa-money-check",
+              "feature_service_icon": "fa-money-bill",
               "feature_service_title": "Cost",
               "feature_service_description": "Prices can be volatile, and companies may be subject to price increases over time. Additionally, there may be costs associated with installing and maintaining natural gas infrastructure."
             }
