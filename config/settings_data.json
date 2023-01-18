@@ -847,13 +847,82 @@
           "bottom_padding": false,
           "bottom_border": false
         }
+      },
+      "cf2bf6cd-4848-4a05-9bc6-0b2ddcc34266": {
+        "type": "slideshow",
+        "blocks": {
+          "cf2bf6cd-4848-4a05-9bc6-0b2ddcc34266-167403619050e6241d-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Capture_d_ecran_20230118_115532-removebg-preview.png",
+              "animation_style": "slider-1",
+              "heading": "",
+              "heading_size": "18px",
+              "heading_color": "#fff",
+              "subheading": "",
+              "subheading_size": "90px",
+              "subheading_color": "#fff",
+              "description": "",
+              "description_size": "16px",
+              "description_color": "#fff",
+              "slide_link_text": "",
+              "slide_link": "",
+              "link_bg": "#000",
+              "link_color": "#fff",
+              "image_clickable": false,
+              "top": "50%",
+              "right": "0%",
+              "left": "0%",
+              "width": "100%",
+              "float": "left"
+            }
+          },
+          "cf2bf6cd-4848-4a05-9bc6-0b2ddcc34266-167403619050e6241d-1": {
+            "type": "image",
+            "settings": {
+              "animation_style": "slider-1",
+              "heading": "",
+              "heading_size": "18px",
+              "heading_color": "#fff",
+              "subheading": "",
+              "subheading_size": "90px",
+              "subheading_color": "#fff",
+              "description": "",
+              "description_size": "16px",
+              "description_color": "#fff",
+              "slide_link_text": "",
+              "slide_link": "",
+              "link_bg": "#000",
+              "link_color": "#fff",
+              "image_clickable": false,
+              "top": "50%",
+              "right": "0%",
+              "left": "0%",
+              "width": "100%",
+              "float": "left"
+            }
+          }
+        },
+        "block_order": [
+          "cf2bf6cd-4848-4a05-9bc6-0b2ddcc34266-167403619050e6241d-0",
+          "cf2bf6cd-4848-4a05-9bc6-0b2ddcc34266-167403619050e6241d-1"
+        ],
+        "settings": {
+          "autoplay_speed": "5000",
+          "layout_slider": "slider-1",
+          "fullwidth": true,
+          "use_box_layout": false,
+          "fit_to_container": false,
+          "full_size_on_mobile": false
+        }
       }
     },
     "content_for_index": [
       "1480267833382",
       "1504781997946",
       "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
-      "1527121164309"
+      "1527121164309",
+      "cf2bf6cd-4848-4a05-9bc6-0b2ddcc34266"
     ]
   },
   "presets": {
