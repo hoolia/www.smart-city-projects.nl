@@ -291,7 +291,7 @@
             "type": "box",
             "settings": {
               "use_feature_service_icon": true,
-              "feature_service_icon": "f5f4",
+              "feature_service_icon": "fa-f5f4",
               "feature_service_title": "Dependance on fossil",
               "feature_service_description": "Gas is a finite resource, and increasing reliance on it could contribute to energy insecurity and price volatility in the long term."
             }
