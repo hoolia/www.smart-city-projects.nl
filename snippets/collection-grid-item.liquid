@@ -1,0 +1,19 @@
+{% include 'product-grid-variables', ratio:'1:1' %}
+
+{% unless collection_item_width %}
+{% assign collection_item_width = 'text-center' %}
+{% endunless %}
+<div class="{{ collection_item_width }} ">
+  {% capture collection_title %}{{ collection.title | escape }}{% endcapture %}
+  <a href="{{ collection.url }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}">
+    {% if collection.image %}
+    {% include 'product-grid-image',image:collection.image %}
+    {% else %}
+    {% include 'product-grid-image',image:collection.products.first.featured_image %}
+    {% endif %}
+    <div class="text-center">
+      <h2 class="text-center">{{ collection.title }}<small> ({{ 'collections.general.items_with_count' | t: count: collection.all_products_count }})</small>
+      </h2>
+    </div>
+  </a>
+</div>

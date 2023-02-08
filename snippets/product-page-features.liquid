@@ -1,0 +1,163 @@
+{% include 'review' %}
+<!-- end-rating -->
+<h2 class="product-name" itemprop="name">{{ product.title }}</h2>
+{% include 'price', page:true %}
+{% if section.settings.show_summary %}
+<p class="short-des">
+  {% if product.description contains '[summary]' %}
+  {{ product.description | split:'[summary]' | last | split :'[/summary]' | first }}
+  {% else %}
+  {% assign product_summary_words = section.settings.product_summary_words | times: 1 %} 
+  {% if section.settings.show_summary_stripped %}
+  {{ product.content | split:"[summary]" | first | split:"[video]" | first | split:"[tab]" | first | split:"[deal]" | first | split:"[affiliate]" | first | strip_html | truncatewords: product_summary_words }}
+  {% else %}
+  {{ product.content | split:"[summary]" | first | split:"[video]" | first | split:"[tab]" | first | split:"[deal]" | first | split:"[affiliate]" | first | truncatewords: product_summary_words }}
+  {% endif %}
+  {% endif %}
+</p>
+{% endif %}
+<ul class="list-unstyled">
+  {% if section.settings.product_vendor_enable %}
+  <li>{{ 'products.product.brand' | t }}: {{ product.vendor | link_to_vendor }}</li>
+  {% endif %}
+  <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}"> 
+  <li {% if section.settings.product_stock_enable == false %} style="display:none;"{% endif %} >
+    {{ 'products.product.availability' | t }}: 
+    <script>       
+      var inv_qty = {};
+      {% for var in product.variants %}
+      inv_qty[{{- var.id -}}] = {{ var.inventory_quantity | default: 0 }};
+      {% endfor %}
+    </script>
+    {% if product.variants.first.inventory_management == "shopify" %}
+    {% if product.variants.first.inventory_quantity >= 10 %}
+    <span class="ex-text">{{ 'products.product.in_stock' | t }}</span>
+    {% elsif product.variants.first.inventory_quantity > 0 and product.variants.first.inventory_quantity < 10  %}
+    <span style="font-weight:bold; color:orange" class="ex-text">{{ product.variants.first.inventory_quantity }} {{ 'products.product.in_stock' | t }}</span>
+    {% else %}
+    <span style="font-weight:bold; color:red" class="ex-text">{{ 'products.product.out_stock' | t }}</span>
+    {% endif %}
+    {% else %} 
+    <span style="" class="ex-text">
+      {% if product.available %} {{ 'products.product.in_stock' | t }}{% else %} {{ 'products.product.out_stock' | t }}{% endif %}
+    </span>
+    {% endif %}
+  </li>
+
+  {% if section.settings.product_show_sku %}
+  {% assign current_variant = product.selected_or_first_available_variant %}
+  <li class="skuvariant">{{ 'products.product.sku' | t }}: 
+    <span class="variant-sku">{{ current_variant.sku }}</span>
+  </li>
+  {% endif %}
+
+  {% if section.settings.product_show_barcode %}
+  {% assign current_variant = product.selected_or_first_available_variant %}
+  <li class="barcodevariant">{{ 'products.product.barcode' | t }}: 
+    <span class="variant-barcode">{{ current_variant.barcode }}</span>
+  </li>
+  {% endif %}
+</ul>
+{% if product.description contains "[deal]" %}
+<div class="item-inner">
+  <div class="caption">
+    <div id="Countdown{{product.id}}" class="box-timer"></div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(function () {
+    $('#Countdown{{product.id}}').countdown({
+      until: new Date('{{ product.description | split:'[deal]' | last | split :'[/deal]' | first }}'),
+      labels: ['Years', 'Months ', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'],
+      labels1: ['Year', 'Month ', 'Week', 'Day', 'Hr', 'Min', 'Sec'],
+      });
+  });
+</script>
+{% endif %}
+<div id="product">
+  {% form 'product', product, id: "form_buy", name: "form_buy" %}
+  <div class="form-group"  {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}style="display:none"{% endif %}>
+    <select name="id" id="productSelect" class="form-control">
+      {% for variant in product.variants %}
+      {% if variant.available %}
+      <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_with_currency }}</option>
+      {% else %}
+      <option disabled="disabled">
+        {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+      </option>
+      {% endif %}
+      {% endfor %}
+    </select>
+    {% if section.settings.show_variant_swatches != 'false' %}
+    {% if product.available and product.variants.size > 1 %}
+    {% for option in product.options %}
+    {% include 'swatch' with option %}
+    {% endfor %}
+    {% endif %}
+    {% else %}
+    <style type="text/css">
+      .selector-wrapper {
+        display: block;
+      }
+      #productSelect {
+        display: block;
+      }
+    </style>
+    {% endif %}
+  </div>
+  <div class="form-group">
+    {% if section.settings.product_quantity_enable %}
+    <label class="control-label" for="Quantity">{{ 'products.product.quantity' | t }}:</label>
+    <input type="text" name="quantity" value="1" size="2" id="Quantity" onkeyup="updatecartsticky(1)" class="form-control" />
+    {% endif %}
+    {% if section.settings.product_quantity_message %}
+    <span id="variantQuantity" class="variant-quantity hidden"></span>
+    {% endif %}      
+    {% include 'product-wishlist2' %}
+    {% if product.description contains "[affiliate]" %}
+    {% capture affiliate %} {{ product.description | split:'[affiliate]' | last | split :'[/affiliate]' | first }} {% endcapture %}
+    <button class="button button-cart btn" type="button" onclick="window.open('{{ affiliate | split :'|' | last }}', '_blank')" id="button-cart-affiliate" data-loading-text="{{ 'products.product.loading' | t }}">
+      {{ affiliate | split :'|' | first }}
+    </button>
+    {% else %}
+    {% if template != 'product.pre-order' %}
+    <button class="button button-cart btn" type="button" id="button-cart" data-loading-text="{{ 'products.product.loading' | t }}">
+      {{ 'products.product.add_to_cart' | t }}
+    </button>
+    {% if section.settings.show_buy_now %}
+    {{ form | payment_button }}
+    {% endif %}
+    {% elsif template == 'product.pre-order' %}
+    <button class="button button-cart btn" type="button" id="button-cart-buy" data-loading-text="{{ 'products.product.loading' | t }}">
+      {{ 'products.product.pre_order' | t }}
+    </button> 
+    {% endif %}      
+    {% endif %}
+  </div>
+  {% endform %}
+  <!-- end-button -->
+</div>
+<!-- AddThis Button BEGIN -->
+{% if section.settings.trust_badge_image %}
+<div>
+  <a href="#">
+    <img {% if settings.lazyloading_enable %}data-{% endif %}src="{{ section.settings.trust_badge_image | img_url: 'master' }}" class="{% if settings.lazyloading_enable %}lazyload{% endif %} img-responsive">
+  </a>
+</div>
+{% else %}
+{% endif %}
+{% if section.settings.show_tags_links %}
+<p class="short-des">{{ 'products.product.tags' | t }}: 
+  {% for tag in product.tags %}
+  {% unless tag contains '_' %}
+  <a href="/collections/all/{{ tag }}">{{ tag }}</a>
+  {% unless forloop.last %}, {% endunless %}
+  {% endunless %}
+  {% endfor %}
+</p>
+{% endif %}
+{% if section.settings.product_sharing_links %}
+<div class="addthis_toolbox addthis_default_style" data-url="{{ product.url }}"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_counter addthis_pill_style"></a></div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script>
+<!-- AddThis Button END -->
+{% endif %}

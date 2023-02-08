@@ -1,0 +1,74 @@
+<div role="menu" id="oc-menu-{{section.id}}" class="oc-menu horizontal-menu oc-menu-bar visible-lg">
+  {% if c == true %}
+  <div class="container">
+    {% endif %}
+    <input type="hidden" id="menu-effect-{{section.id}}" class="menu-effect" value="none" />
+    <ul class="ul-top-items">
+      {% for link in linklists[section.settings.header_menu_1].links %}
+      {% assign child_list_handle = link.title | handleize %}
+      {% assign megamenu = false %}
+
+      {% for block in section.blocks %}
+      {% if block.type == 'megamenu' %}
+      {% if child_list_handle == block.settings.mega_menu %}
+      {% include 'mega-menu' %}
+      {% assign megamenu = true %}
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+      {% if megamenu == false %}
+      {% if linklists[child_list_handle].links != blank %}
+      <li class="li-top-item left{% if link.active %} active{% endif %}" style="float: left">
+        <a class="a-top-link" href="{{link.url}}">
+          <span>{{link.title}}</span>
+          <i class="icon-arrow-down" aria-hidden="true"></i>
+        </a>
+        <!-- Flyout Menu -->
+        <div class="flyout-menu-container sub-menu-container left">
+          <ul class="ul-second-items">
+            {% for childlink in linklists[child_list_handle].links %}
+            <!-- Nested Level Third -->
+            {% assign grand_child_list_handle = childlink.title | handleize %}
+            {% if linklists[grand_child_list_handle].links != blank %}
+            <li class="li-second-items">
+              <a href="{{childlink.url}}" class="a-second-link a-item">
+                <span class="a-second-title">{{ childlink.title | escape }}</span>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+              <div class="flyout-third-items left">
+                <ul class="ul-third-items">
+                  {% for grand_childlink in linklists[grand_child_list_handle].links %}
+                  <li class="li-third-items">
+                    <a href="{{grand_childlink.url}}" class="a-third-link">
+                      <span class="a-third-title">{{ grand_childlink.title | escape }}</span>
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </li>
+            {% else %}
+            <li class="li-second-items">
+              <a href="{{childlink.url}}" class="a-second-link a-item">
+                <span class="a-second-title">{{ childlink.title | escape }}</span>
+              </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </li>
+      {% else %}
+      <li class="li-top-item left{% if link.active %} active{% endif %}" style="float: left">
+        <a class="a-top-link" href="{{link.url}}">
+          <span>{{link.title}}</span>
+        </a>
+      </li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+    {% if c == true %}
+  </div>
+  {% endif %}
+</div>

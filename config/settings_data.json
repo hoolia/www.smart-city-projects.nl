@@ -1,0 +1,911 @@
+{
+  "current": {
+    "favicon_enable": true,
+    "show_collection_top_image": false,
+    "color_top_bg": "#292929",
+    "lazyloading_enable": true,
+    "img_size_product": "900x900",
+    "img_width_grid": "400",
+    "grid_aspect_ratio": "2:3",
+    "grid_auto_resize": "false",
+    "grid_layout": 5,
+    "show_border_grid": false,
+    "grid_color_swatches": "false",
+    "product_new_time": "30",
+    "product_grid_img_carousel": false,
+    "product_show_compare_at_price": false,
+    "product_reviews_enable": false,
+    "hide_wishlist": false,
+    "hide_quick_view": false,
+    "add_to_cart_layout": "redirect",
+    "color_skin": "#30bf32",
+    "color_skin_2": "#242424",
+    "color_body": "#cccccc",
+    "bg_color": "#f8f8f8",
+    "section_bg_color": "#f8f8f8",
+    "headings_color": "#f8f8f8",
+    "header_fg_color": "#30bf32",
+    "overwrite_header_bg_color": true,
+    "header_inner_bar_color": "#0c9e0e",
+    "hd_menu_color": "#0c9e0e",
+    "hd_menu_inner_color": "#30bf32",
+    "top_bar_color": "#fff",
+    "top_bar_bgcolor": "#4ad44a",
+    "footer_color_bg": "#e5e5e5",
+    "footer_color_heading": "#4ad44a",
+    "footer_color_links": "#0c9e0e",
+    "footer_bottom_bg_color": "#001e00",
+    "footer_bar_color_links": "#f8f8f8",
+    "label_new": "#0c9e0e",
+    "label_sale": "#a8741a",
+    "cookie_constent_background": "#f8f8f8",
+    "cookie_constent_text": "#30bf32",
+    "cookie_constent_border_color": "#fff",
+    "show_pupup": false,
+    "popup_title": "newsletter",
+    "show_pupup_image": false,
+    "popup_heading": "SUBSCRIBE TO OUR NEWSLETTER",
+    "popup_description": "Enter your email address to receive all news, updates on new arrivals, special offers and other discount information.",
+    "popup_btn_text": "Subscribe",
+    "popup_no_link_text": "Don’ts show",
+    "social_sidebar_enable": true,
+    "social_twitter_link": "https:\/\/twitter.com\/shopify",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
+    "social_google_plus_link": "https:\/\/plus.google.com\/+shopify",
+    "social_instagram_link": "https:\/\/instagram.com\/shopify",
+    "social_tumblr_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "social_fancy_link": "",
+    "show_multiple_currencies": false,
+    "currency_format": "money_format",
+    "supported_currencies": "USD EUR GBP PKR CAD JPY",
+    "default_currency": "EUR",
+    "logo_use_image": true,
+    "show_gdpr_msg": false,
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1990c6",
+    "checkout_error_color": "#ff6d6d",
+    "img_size_grid": "450x450",
+    "product_page_layout": "horizontal_thumbs",
+    "show_trust_badge": true,
+    "trust_badge_image": "shopify:\/\/shop_images\/trust-badge.png",
+    "show_third_tab": true,
+    "third_tab_title": "Additional Information",
+    "third_tab_text": "<p>You can use this tab for adding shipping details, return policies and information or measurements etc. <\/p>\n<p>\nLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi<\/p>",
+    "show_tags_tab": true,
+    "custom_tab_title": "Additional Info",
+    "product_summary_words": "60",
+    "product_quantity_enable": true,
+    "product_quantity_message": true,
+    "product_vendor_enable": true,
+    "related_products_enable": true,
+    "show_variant_swatches": true,
+    "show_map": true,
+    "map_code": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2950.6822073234102!2d-83.71685604946924!3d42.30664594636449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cac2c20114b69%3A0x96fe590afa21efb6!2s2300+Traverwood+Dr%2C+Ann+Arbor%2C+MI+48105!5e0!3m2!1sen!2s!4v1461260551915\" width=\"100%\" height=\"400\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
+    "product_count_per_page": "9",
+    "show_collection_sidebar": "left",
+    "show_sidebar_categories": true,
+    "category_count": "5",
+    "collection_sidebar_filters": "groups",
+    "show_collection_side_image": true,
+    "collection_side_link": "#",
+    "cart_notes_enable": true,
+    "cart_promo_enable": true,
+    "ajax_cart_method": "page",
+    "shipping_calculator": "Enabled",
+    "shipping_calculator_heading": "Get shipping estimates",
+    "shipping_calculator_default_country": "United States",
+    "shipping_calculator_submit_button_label": "Calculate shipping",
+    "shipping_calculator_submit_button_label_disabled": "Calculating...",
+    "no_articles": "3",
+    "show_dollar_symbol": false,
+    "superscript_decimals": true,
+    "collection_view_default": "list",
+    "color_menu_links": "#ffffff",
+    "color_bg": "#14151b",
+    "color_top_header": "#4ed99c",
+    "color_top_header_label": "#b2ffdd",
+    "color_bottom_header_border": "#ffffff",
+    "color_center_header": "#ffffff",
+    "color_footer_newsletter_bar": "#303031",
+    "color_footer": "#292929",
+    "color_footer_heading": "#ffffff",
+    "color_footer_links": "#919191",
+    "color_social_links": "#363636",
+    "color_footer_text": "#818181",
+    "color_footer_border": "#363636",
+    "show_collection_side_listing": false,
+    "collection_side_listing_title": "Random Products",
+    "collection_side_listing": "frontpage",
+    "product_sticky_layout": false,
+    "product_vertical_thumbs": false,
+    "product_vertical_related": false,
+    "product_show_saved_amount": "true",
+    "product_enable_zoom": true,
+    "social_sharing_products": true,
+    "social_sharing_blog": true,
+    "social_sharing_count": true,
+    "social_sharing_style": "is-default",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "share_fancy": true,
+    "share_google": true,
+    "type_base_size": "13px",
+    "show_banner": true,
+    "sidebar_image_link": "collections\/all",
+    "collection_prod_image_sizes": "large",
+    "product_reviews_star_color": "#e5c649",
+    "footer_legallinks_enable": true,
+    "footer_legallinks_linklist": "",
+    "type_navigation_size": "15px",
+    "type_navigation_transform": true,
+    "type_button_size": "16px",
+    "type_button_transform": false,
+    "logo_max_width": "305",
+    "type_header_transform": true,
+    "color_primary": "#49aa9d",
+    "color_secondary": "#dcdcdc",
+    "color_accent": "#49aa9d",
+    "color_borders": "#ececec",
+    "color_header_background": "#ffffff",
+    "color_header_text": "#585858",
+    "color_header_cart_search": "#f2f2f2",
+    "color_nav_bg": "#49aa9d",
+    "color_nav_text": "#ffffff",
+    "color_body_text": "#585858",
+    "color_heading_text": "#333333",
+    "color_footer_bg": "#f2f2f2",
+    "color_footer_social_link": "#bbbbbb",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1522697402496": {
+            "type": "megamenu",
+            "settings": {
+              "mega_menu": "",
+              "menu_items_count": 6,
+              "mega_menu_col_1": "menu",
+              "mega_menu_title_col_1": "Accessories",
+              "mega_menu_link_col_1": "",
+              "mega_menu_ll_col_1": "main-menu",
+              "mega_menu_collection_col_1": "",
+              "mega_menu_product_col_1": "",
+              "mega_menu_image_link_col_1": "",
+              "mega_menu_col_2": "menu",
+              "mega_menu_title_col_2": "Fashion",
+              "mega_menu_link_col_2": "",
+              "mega_menu_ll_col_2": "main-menu",
+              "mega_menu_collection_col_2": "",
+              "mega_menu_product_col_2": "",
+              "mega_menu_image_link_col_2": "",
+              "mega_menu_col_3": "menu",
+              "mega_menu_title_col_3": "Beauty",
+              "mega_menu_link_col_3": "",
+              "mega_menu_ll_col_3": "main-menu",
+              "mega_menu_collection_col_3": "",
+              "mega_menu_product_col_3": "",
+              "mega_menu_image_link_col_3": "",
+              "mega_menu_col_4": "menu",
+              "mega_menu_title_col_4": "Jewelry",
+              "mega_menu_link_col_4": "",
+              "mega_menu_ll_col_4": "main-menu",
+              "mega_menu_collection_col_4": "",
+              "mega_menu_product_col_4": "",
+              "mega_menu_image_link_col_4": "",
+              "bottom_image_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1522697402496"
+        ],
+        "settings": {
+          "header_layout": "header-5",
+          "use_top_bar": false,
+          "top_bar_message": "",
+          "logo_use_image": true,
+          "logo": "shopify:\/\/shop_images\/Colorful_Freelancer_YouTube_Thumbnail_2_f88e8ea3-b88d-48c2-8e0d-0fb93b8ba7ec.png",
+          "logo_padding": "25px 0px 25px 0px",
+          "header_menu_1": "main-menu",
+          "show_menu_fixbar": true,
+          "use_bottom_menu": false,
+          "use_box_layout": false,
+          "show_search": true,
+          "show_cart": false,
+          "show_settings_menu": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "ce0c8397-1e10-46a3-b96e-2112a4c4e3a9": {
+            "type": "contact_information",
+            "settings": {
+              "footer_content_enable": false,
+              "footer_about_us": "Be part of the futur. Contact us now and let our experts spark your savings.",
+              "footer_address": "Alexanderstraat 946812BH  Amsterdam",
+              "footer_phone": "+31 – 85 – 7738870",
+              "footer_email": "support@hoolia.eu"
+            }
+          },
+          "3e5bbff7-3d4a-4692-99f6-8ef503248b9f": {
+            "type": "menu",
+            "settings": {
+              "footer_menu_1": "main-menu"
+            }
+          },
+          "7c50d02d-25ab-4d84-849d-979c2a85eae6": {
+            "type": "bottom_footer",
+            "settings": {
+              "footer_content_text": "Copyright © 2023 Hoolia BV All rights reserved.",
+              "footer_social_enable": true
+            }
+          }
+        },
+        "block_order": [
+          "ce0c8397-1e10-46a3-b96e-2112a4c4e3a9",
+          "3e5bbff7-3d4a-4692-99f6-8ef503248b9f",
+          "7c50d02d-25ab-4d84-849d-979c2a85eae6"
+        ],
+        "settings": {
+          "footer_layout": "footer-1"
+        }
+      },
+      "brands": {
+        "type": "brands",
+        "blocks": {
+          "1499679798583": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1499679798583"
+        ],
+        "settings": {
+          "layout": "brands",
+          "heading": "Logo Brands & Clients",
+          "fullwidth": true
+        }
+      },
+      "1504781997946": {
+        "type": "service-box",
+        "blocks": {
+          "1504781997946-0": {
+            "type": "box",
+            "settings": {
+              "use_feature_service_icon": true,
+              "feature_service_icon": "fa-oil-can",
+              "feature_service_title": "Dependance on fossil",
+              "feature_service_description": "Gas is a finite resource, and increasing reliance on it could contribute to energy insecurity and price volatility in the long term."
+            }
+          },
+          "1504781997946-1": {
+            "type": "box",
+            "settings": {
+              "use_feature_service_icon": true,
+              "feature_service_icon": "fa-money-bill",
+              "feature_service_title": "Cost",
+              "feature_service_description": "Prices can be volatile, and companies may be subject to price increases over time. Additionally, there may be costs associated with installing and maintaining natural gas infrastructure."
+            }
+          },
+          "1504782065705": {
+            "type": "box",
+            "settings": {
+              "use_feature_service_icon": true,
+              "feature_service_icon": "fa-star",
+              "feature_service_title": "Reputational Risk",
+              "feature_service_description": "Companies that use natural gas may be perceived as contributing to environmental and climate change, and could face backlash from consumers, investors, or other stakeholders."
+            }
+          },
+          "5fbcce04-ef97-4d4d-9c57-f352145cb080": {
+            "type": "box",
+            "settings": {
+              "use_feature_service_icon": true,
+              "feature_service_icon": "fa-leaf",
+              "feature_service_title": "Netherlands Energy Plan",
+              "feature_service_description": "Government aims to\nreduce CO2 emissions in\nAmsterdam. The price of natural gas will be higher, and as a result, will the electricity price."
+            }
+          }
+        },
+        "block_order": [
+          "1504781997946-0",
+          "1504781997946-1",
+          "1504782065705",
+          "5fbcce04-ef97-4d4d-9c57-f352145cb080"
+        ],
+        "settings": {
+          "layout": "feature-service4",
+          "heading": "<br>Switch to renewable energy <br>for a sustainable future.",
+          "heading_color": "#0c9e0e",
+          "description": "",
+          "description_color": "#007501",
+          "fullwidth": false,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "bottom_border": false
+        }
+      },
+      "1527121164309": {
+        "type": "newsletter",
+        "settings": {
+          "fullwidth": true,
+          "mailing_list_form_action": "",
+          "overwrite_text_color": true,
+          "heading_color_text": "#4ad44a",
+          "subheading_color_bg": "#0c9e0e",
+          "heading": "Subscribe",
+          "background": false,
+          "background_color": "#242424",
+          "top_margin": true
+        }
+      },
+      "list-collection-page": {
+        "type": "list-collection-page",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical_reversed"
+        }
+      },
+      "product-page": {
+        "type": "product-page",
+        "settings": {
+          "product_page_layout": "horizontal_thumbs",
+          "show_zoom": true,
+          "show_summary": true,
+          "show_summary_stripped": true,
+          "product_summary_words": "30",
+          "product_vendor_enable": true,
+          "product_show_sku": true,
+          "product_show_barcode": false,
+          "show_variant_swatches": "color",
+          "product_quantity_enable": true,
+          "product_quantity_message": true,
+          "show_buy_now": true,
+          "show_description_tab": true,
+          "show_reviews_tab": true,
+          "show_third_tab": true,
+          "third_tab_title": "Custom Tab",
+          "third_tab_text": "You can add, text, html, images and videos as well to the tab from product settings area",
+          "show_tags_tab": true,
+          "custom_tab_title": "Additional Info",
+          "related_products_enable": true,
+          "recent_products_enable": true,
+          "product_grid_img_carousel": false,
+          "product_sharing_links": true,
+          "product_sticky_cart": true
+        }
+      },
+      "collection-page": {
+        "type": "collection-page",
+        "blocks": {
+          "5e7a001c-4ee4-4205-811d-d9ea55809438": {
+            "type": "categories",
+            "settings": {
+              "category_count": "5"
+            }
+          },
+          "b26a6808-62f1-4f10-a829-6124157a689d": {
+            "type": "links",
+            "settings": {
+              "collection_sidebar_menu": "footer"
+            }
+          },
+          "11bcc8d1-66d6-4919-98c4-e708bc80c85a": {
+            "type": "vendors",
+            "settings": {
+              "show_vendors_title": true
+            }
+          },
+          "24b8d877-6643-4195-8735-ddd4232a42f5": {
+            "type": "filters",
+            "settings": {
+              "collection_sidebar_filters": "groups"
+            }
+          },
+          "f4a3e410-db44-4dad-a6d2-848c63586498": {
+            "type": "image",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "5e7a001c-4ee4-4205-811d-d9ea55809438",
+          "b26a6808-62f1-4f10-a829-6124157a689d",
+          "11bcc8d1-66d6-4919-98c4-e708bc80c85a",
+          "24b8d877-6643-4195-8735-ddd4232a42f5",
+          "f4a3e410-db44-4dad-a6d2-848c63586498"
+        ],
+        "settings": {
+          "product_count_per_page": "12",
+          "collection_view_default": "0",
+          "show_summary": true,
+          "show_summary_stripped": true,
+          "product_summary_words": "15",
+          "show_collection_sidebar": "left",
+          "show_color_box": true,
+          "color_box_variant": "color"
+        }
+      },
+      "cart-page": {
+        "type": "cart-page",
+        "settings": {
+          "cart_notes_enable": false,
+          "cart_promo_enable": true,
+          "ajax_cart_method": "page",
+          "shipping_calculator": "Enabled",
+          "shipping_calculator_heading": "Get shipping estimates",
+          "shipping_calculator_default_country": "United States",
+          "shipping_calculator_submit_button_label": "Calculate shipping",
+          "shipping_calculator_submit_button_label_disabled": "Calculating...",
+          "cart_terms_c_enable": true
+        }
+      },
+      "faq-page": {
+        "type": "faq-page",
+        "blocks": {
+          "f9dd5fa8-68a1-4dbc-9f2c-566057f591e8": {
+            "type": "faq",
+            "settings": {
+              "question": "How do i signup?",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+            }
+          },
+          "849e68ea-e642-4b51-b239-45162dc16656": {
+            "type": "faq",
+            "settings": {
+              "question": "Do you offer refunds?",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+            }
+          },
+          "904a04a6-90c8-4196-be36-cca12dcfab85": {
+            "type": "faq",
+            "settings": {
+              "question": "What are your shipping rates?",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+            }
+          },
+          "0b49f8f2-98ea-425a-ab3c-ce144fbf2302": {
+            "type": "faq",
+            "settings": {
+              "question": "Do you offer international Delivery?",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+            }
+          }
+        },
+        "block_order": [
+          "f9dd5fa8-68a1-4dbc-9f2c-566057f591e8",
+          "849e68ea-e642-4b51-b239-45162dc16656",
+          "904a04a6-90c8-4196-be36-cca12dcfab85",
+          "0b49f8f2-98ea-425a-ab3c-ce144fbf2302"
+        ],
+        "settings": {
+        }
+      },
+      "about-page": {
+        "type": "about-page",
+        "blocks": {
+          "1586972178284": {
+            "type": "message_box",
+            "settings": {
+              "description": "A separate template for team\/about us page. You can add multiple message box blocks, video blocks and team member blocks. There can be member blocks for single, two, three and four members."
+            }
+          },
+          "1586966337579": {
+            "type": "single_member",
+            "settings": {
+              "heading": "President",
+              "image_1": "shopify:\/\/shop_images\/a.jpg",
+              "heading_1": "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+              "description_1": "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+              "link_1": ""
+            }
+          },
+          "1586966373027": {
+            "type": "two_member",
+            "settings": {
+              "heading": "Directors",
+              "image_1": "shopify:\/\/shop_images\/b.jpg",
+              "heading_1": "Director 1",
+              "description_1": "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+              "link_1": "",
+              "image_2": "shopify:\/\/shop_images\/c.jpg",
+              "heading_2": "Director 2",
+              "description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+              "link_2": ""
+            }
+          },
+          "1586965960028": {
+            "type": "three_member",
+            "settings": {
+              "heading": "Team Leads",
+              "image_1": "shopify:\/\/shop_images\/d.jpg",
+              "heading_1": "Team Lead One",
+              "description_1": "",
+              "link_1": "",
+              "image_2": "shopify:\/\/shop_images\/e.jpg",
+              "heading_2": "Team Lead Two",
+              "description_2": "",
+              "link_2": "",
+              "image_3": "shopify:\/\/shop_images\/f.jpg",
+              "heading_3": "Team Lead Three",
+              "description_3": "",
+              "link_3": ""
+            }
+          },
+          "1586966419162": {
+            "type": "four_member",
+            "settings": {
+              "heading": "Employee of the month",
+              "image_1": "shopify:\/\/shop_images\/g.jpg",
+              "heading_1": "One",
+              "description_1": "",
+              "link_1": "",
+              "image_2": "shopify:\/\/shop_images\/h.jpg",
+              "heading_2": "Two",
+              "description_2": "",
+              "link_2": "",
+              "image_3": "shopify:\/\/shop_images\/i.jpg",
+              "heading_3": "Three",
+              "description_3": "",
+              "link_3": "",
+              "image_4": "shopify:\/\/shop_images\/j.jpg",
+              "heading_4": "Four",
+              "description_4": "",
+              "link_4": ""
+            }
+          }
+        },
+        "block_order": [
+          "1586972178284",
+          "1586966337579",
+          "1586966373027",
+          "1586965960028",
+          "1586966419162"
+        ],
+        "settings": {
+          "page_top": "",
+          "heading": "Our Team",
+          "description": ""
+        }
+      },
+      "services-page": {
+        "type": "services-page",
+        "blocks": {
+          "1586454290396": {
+            "type": "message_box",
+            "settings": {
+              "description": "A separate template for services page. You can add multiple message box blocks, video blocks and services blocks. There can be service blocks for single, two, three and four members."
+            }
+          },
+          "1586445060359": {
+            "type": "three_service",
+            "settings": {
+              "heading": "",
+              "image_1": "shopify:\/\/shop_images\/1.jpg",
+              "heading_1": "Packaging",
+              "description_1": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
+              "link_1": "",
+              "image_2": "shopify:\/\/shop_images\/2.jpg",
+              "heading_2": "Delivery",
+              "description_2": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
+              "link_2": "",
+              "image_3": "shopify:\/\/shop_images\/3.jpg",
+              "heading_3": "Support",
+              "description_3": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
+              "link_3": ""
+            }
+          },
+          "1586450456882": {
+            "type": "four_service",
+            "settings": {
+              "heading": "",
+              "image_1": "shopify:\/\/shop_images\/4_bd8ba3e0-b34a-4243-a161-54d31620fb12.jpg",
+              "heading_1": "Storage",
+              "description_1": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
+              "link_1": "",
+              "image_2": "shopify:\/\/shop_images\/5.jpg",
+              "heading_2": "Manufacture",
+              "description_2": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
+              "link_2": "",
+              "image_3": "shopify:\/\/shop_images\/6.jpg",
+              "heading_3": "Showcase",
+              "description_3": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
+              "link_3": "",
+              "image_4": "shopify:\/\/shop_images\/7.jpg",
+              "heading_4": "Deliver",
+              "description_4": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
+              "link_4": ""
+            }
+          },
+          "1586454650018": {
+            "type": "video",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/computer-program-code_1920x800_32731ebe-3b7a-4bd8-9dcb-66cdaea80eed.jpg",
+              "video_type": "youtube",
+              "video_src": "z5sORo2v0l0",
+              "video_autoplay": true
+            }
+          }
+        },
+        "block_order": [
+          "1586454290396",
+          "1586445060359",
+          "1586450456882",
+          "1586454650018"
+        ],
+        "settings": {
+          "page_top": "",
+          "heading": "Our Services",
+          "description": ""
+        }
+      },
+      "gallery-page": {
+        "type": "gallery-page",
+        "blocks": {
+          "1586977408241": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "caption": ""
+            }
+          },
+          "1586977516820": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "caption": ""
+            }
+          },
+          "1586977540166": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "caption": ""
+            }
+          },
+          "1586977579903": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "caption": ""
+            }
+          },
+          "1586977601997": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "caption": ""
+            }
+          },
+          "1586977622521": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "caption": ""
+            }
+          },
+          "1586977658211": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "caption": ""
+            }
+          },
+          "1586977728669": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "caption": ""
+            }
+          },
+          "1586977752075": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "caption": ""
+            }
+          },
+          "1586977853312": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "caption": ""
+            }
+          },
+          "1586978002698": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "caption": ""
+            }
+          },
+          "1586978040257": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "caption": ""
+            }
+          }
+        },
+        "block_order": [
+          "1586977408241",
+          "1586977516820",
+          "1586977540166",
+          "1586977579903",
+          "1586977601997",
+          "1586977622521",
+          "1586977658211",
+          "1586977728669",
+          "1586977752075",
+          "1586977853312",
+          "1586978002698",
+          "1586978040257"
+        ],
+        "settings": {
+          "page_top": "",
+          "heading": "Our Gallery",
+          "description": "A responsive gallery page where you can add images with caption. Only one gallery at the moment."
+        }
+      },
+      "contact-page": {
+        "type": "contact-page",
+        "settings": {
+          "show_map": true,
+          "map_code": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2950.6822073234102!2d-83.71685604946924!3d42.30664594636449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cac2c20114b69%3A0x96fe590afa21efb6!2s2300+Traverwood+Dr%2C+Ann+Arbor%2C+MI+48105!5e0!3m2!1sen!2s!4v1461260551915\" width=\"100%\" height=\"400\" frameborder=\"0\" style=\"border:0\" allowfullscreen=\"\"><\/iframe>",
+          "show_content": false,
+          "accept_check_enable": true,
+          "accept_text": "I agree with the terms and conditions."
+        }
+      },
+      "1480267833382": {
+        "type": "slideshow",
+        "blocks": {
+          "1480267833382-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/city-behind-greenery_b502cd38-ca93-4000-ad95-11c0fd53d3ca.jpg",
+              "animation_style": "slider-1",
+              "heading": "",
+              "heading_size": "12px",
+              "heading_color": "#ffffff",
+              "subheading": "Share Energy, Save and Respect the Environment",
+              "subheading_size": "60px",
+              "subheading_color": "#ffffff",
+              "description": "<b>Take part in the company's ecological transition. <\/b><br> For you. For your city. For the whole planet",
+              "description_size": "20px",
+              "description_color": "#ffffff",
+              "slide_link_text": "Let's discover",
+              "slide_link": "",
+              "link_bg": "#0c9e0e",
+              "link_color": "#ffffff",
+              "image_clickable": false,
+              "top": "40%",
+              "right": "0%",
+              "left": "0%",
+              "width": "50%",
+              "float": "left"
+            }
+          },
+          "16e78fb4-bae5-4082-b449-e6ceb0344c2b": {
+            "type": "video",
+            "settings": {
+              "video_type": "mp4",
+              "video_src": "https:\/\/gateway.pinata.cloud\/ipfs\/QmXcDC4UjaUhnA5uzRYFak6XdrXgFwpQwgqPdPYkfjCeiD?_gl=1*1wg0wlc*_ga*MTE0MjUzODQ4Mi4xNjczOTA4NjQ4*_ga_5RMPXG14TE*MTY3Mzk4MTU1NS4yLjEuMTY3Mzk4MTkwNi42MC4wLjA.",
+              "video_autoplay": false
+            }
+          }
+        },
+        "block_order": [
+          "1480267833382-1",
+          "16e78fb4-bae5-4082-b449-e6ceb0344c2b"
+        ],
+        "settings": {
+          "autoplay_speed": "10000",
+          "layout_slider": "slider-1",
+          "fullwidth": true,
+          "use_box_layout": false,
+          "fit_to_container": true,
+          "full_size_on_mobile": false
+        }
+      },
+      "386b4cd7-ab21-481a-b3c6-e1a106db3b6a": {
+        "type": "feature-product",
+        "settings": {
+          "heading": "Our Featured Product",
+          "feature_product_design": "feature-product1",
+          "feature_product": "dcx-immersion-cooling",
+          "description": true,
+          "product_summary_words": "30",
+          "show_summary_stripped": false,
+          "price": false,
+          "view_details": false,
+          "add_to_cart": false,
+          "buy_now": false,
+          "image_position": "right",
+          "ad_align": "left",
+          "fullwidth": false,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "top_margin": true,
+          "bottom_padding": false,
+          "bottom_border": false
+        }
+      },
+      "dd2de1a0-dce4-4bdd-a8aa-4cb8fe55753c": {
+        "type": "feature-product",
+        "settings": {
+          "heading": "Our Featured Product",
+          "feature_product_design": "feature-product1",
+          "feature_product": "vaillant-allstor-system",
+          "description": true,
+          "product_summary_words": "30",
+          "show_summary_stripped": true,
+          "price": false,
+          "view_details": false,
+          "add_to_cart": false,
+          "buy_now": false,
+          "image_position": "left",
+          "ad_align": "left",
+          "fullwidth": false,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "top_margin": true,
+          "bottom_padding": false,
+          "bottom_border": false
+        }
+      },
+      "2ed49d5d-c193-49be-a728-959c0685fe8b": {
+        "type": "feature-product",
+        "settings": {
+          "heading": "Our Featured Product",
+          "feature_product_design": "feature-product1",
+          "feature_product": "the-batteries",
+          "description": true,
+          "product_summary_words": "30",
+          "show_summary_stripped": true,
+          "price": false,
+          "view_details": false,
+          "add_to_cart": false,
+          "buy_now": false,
+          "image_position": "right",
+          "ad_align": "left",
+          "fullwidth": false,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "top_margin": true,
+          "bottom_padding": false,
+          "bottom_border": false
+        }
+      }
+    },
+    "content_for_index": [
+      "1480267833382",
+      "1504781997946",
+      "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
+      "dd2de1a0-dce4-4bdd-a8aa-4cb8fe55753c",
+      "2ed49d5d-c193-49be-a728-959c0685fe8b",
+      "1527121164309"
+    ]
+  },
+  "presets": {
+  }
+}

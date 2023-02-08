@@ -1,0 +1,186 @@
+<!--Footer Start-->
+{% include section.settings.footer_layout %}
+<!--End of Footer-->
+{% schema %}
+{
+   "name": "Footer",
+   "class": "section-footer",
+   "settings": [
+      {
+         "type": "select",
+         "id": "footer_layout",
+         "label": "Select header layout",
+         "options": [
+            {
+               "value": "footer-1",
+               "label": "Design 1"
+            },
+            {
+                "value": "footer-2",
+                "label": "Design 2"
+            }
+         ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Links and Background color can be set from Theme settings > Color tab"
+      },
+	  {
+        "type": "image_picker",
+        "id": "bkg_image",
+        "label": "Background Image",
+        "info": "Footer area background image"
+      }
+   ],
+   "blocks":[
+	 {
+        "type": "contact_information",
+        "name": "Contact info Widget",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Logo Image"
+          },
+          {
+             "type": "checkbox",
+             "id": "footer_content_enable",
+             "label": "Show footer contact info"
+          },
+          {
+             "type": "textarea",
+             "id": "footer_about_us",
+             "label": "Contact About Us",
+			"default": "We are a team of designers and developers who creates high quality premium Shopify themes."
+          },
+          {
+             "type": "text",
+             "id": "footer_address",
+             "label": "Contact Address",
+			"default": "No 40 Baria Sreet 133/2, NewYork, USA."
+          },
+          {
+             "type": "text",
+             "id": "footer_phone",
+             "label": "Contact Phone",
+			"default": "(012) 800 456 789"
+          },
+          {
+             "type": "text",
+             "id": "footer_email",
+             "label": "Contact Email",
+			"default": "support@masstechnologist"
+          }
+        ]
+      },
+	  {
+        "type": "product_collection",
+        "name": "Product Collection Widget",
+        "settings": [
+          {
+            "type": "text",
+            "id": "product_heading",
+            "label": "Heading",
+            "default": "Custom Products"
+          },
+          {
+            "id": "collection",
+            "type": "collection",
+            "label": "Collection"
+          }
+        ]
+      },
+	  {
+        "type": "menu",
+        "name": "Menu Widget",
+        "settings": [
+          {
+            "type": "link_list",
+            "id": "footer_menu_1",
+            "label": "Menu"
+          }
+        ]
+      },
+      {
+        "type": "newsletter",
+        "name": "Newsletter Widget",
+        "settings": [
+          {
+            "type": "text",
+            "id": "mailing_list_form_action",
+            "label": "MailChimp form action URL",
+            "info": "[Find your MailChimp form action URL](https://docs.shopify.com/manual/configuration/store-customization/communicating-with-customers/accounts-and-newsletters/get-a-mailchimp-form-action-url/)."
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Subscribe",
+            "info": "You can use the language editor for editing literals text as shown [here](https://help.shopify.com/manual/using-themes/change-wording). The literals are 'layout.footer.newsletter_title_1' & layout.footer.newsletter_description."
+          }
+        ]
+      },
+	  {
+        "type": "instagram",
+        "name": "Instagram Widget",
+        "settings": [          
+          {
+            "type": "paragraph",
+            "content": "Used in Design 1. Install free app [Section Feed](https:\/\/apps.shopify.com\/section-feed-by-maestrooo) and it will be added automatically"
+          },
+          {
+            "type": "text",
+            "id": "insta_title",
+            "label": "Title",
+            "default": "Instagram"
+          }
+        ]
+      },
+	  {
+        "type": "content_box",
+        "name": "Content Box",
+        "settings": [
+          {
+            "type": "text",
+            "id": "footer_content_box_title",
+            "default": "Opening Hours",
+			"label": "Content Box Title",
+			"default": "Opening Hours"
+          },
+          {
+            "type": "textarea",
+            "id": "footer_content_box_text",
+            "label": "Content Box Text",
+			"default": "<ul class=\"footer-contact\">\n<li>Mon - Fri: 8AM - 10PM<\/li>\n<li>Sat: 9AM-8PM<\/li>\n<li>Sun: Closed<\/li>\n<li>National Holidays: Closed<\/li>\n<\/ul>\n<h4>Home Delivery Service also available!<\/h4>"
+          }
+        ]
+      },
+      {
+        "type": "bottom_footer",
+        "name": "Bottom Footer Bar Widget",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "footer_content_text",
+            "label": "Contact text",
+            "info": "Use basic HTML to format text",
+			"default": "Copyright © 2021  <a href=\"http:\/\/masstechnologist.com\/\">MassTechnologist.com.<\/a> All rights reserved."
+          },
+          {
+            "type": "image_picker",
+            "id": "payment_image",
+            "label": "Payment Image",
+            "info": "Add this image to show an image of payment icons otherwise default icons will be shown if payments enabled"
+          },
+          {
+             "type": "checkbox",
+             "id": "footer_social_enable",
+             "label": "Show social media icons",
+             "info": "Add accounts in Social media section",
+			"default": true
+          }
+        ]
+      }
+	]
+}
+{% endschema %}

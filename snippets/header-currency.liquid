@@ -1,0 +1,44 @@
+{% if settings.show_multiple_currencies %}
+{% if settings.checkout_multiple_currencies %}
+<div class="currency" id="form-currency">
+  <span class="pull-left hidden-xs hidden-sm hidden-md text-ex">{{ 'general.header.currency'| t }}:</span>
+  <button class="btn btn-link btn-link-current">
+    <span class="selected-currency item-selected">{{ shop.currency }}</span>
+    <i class="icon-arrow-down"></i>
+  </button>
+
+  <ul name="currencies" class="content">
+    {% for currency in shop.enabled_currencies %}
+    <li>
+      <button class="currency-select btn btn-link btn-block {% if currency == cart.currency %}item-selected{% endif %}" type="button" name="{{ currency.iso_code }}">{{currency.iso_code}}</button>
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% form 'currency' %}
+  {{ form | currency_selector }}
+  {% endform %}
+
+</div>
+{% else %}
+{% assign codes = 'USD,EUR,GBP,CAD,ARS,AUD,BBD,BDT,BSD,BHD,BRL,BOB,BND,BGN,ILS,MMK,KYD,CLP,CNY,COP,CRC,HRK,CZK,DKK,DOP,XCD,EGP,XPF,FJD,GHS,GTQ,GYD,GEL,HKD,HUF,ISK,INR,IDR,NIS,JMD,JPY,JOD,KZT,KES,KWD,LVL,LTL,MXN,MYR,MUR,MDL,MAD,MNT,MZN,ANG,NZD,NGN,NOK,OMR,PKR,PYG,PEN,PHP,PLN,QAR,RON,RUB,SAR,RSD,SCR,SGD,SYP,ZAR,KRW,LKR,SEK,CHF,TWD,THB,TZS,TTD,TRY,UAH,AED,UYU,VEB,VND,ZMK' | split: ',' %}
+{% assign supported_codes = settings.supported_currencies | split: ' ' %}   
+<div class="currency" id="form-currency">
+  <span class="pull-left hidden-xs hidden-sm hidden-md text-ex">{{ 'general.header.currency'| t }}:</span>
+  <button class="btn btn-link btn-link-current">
+    <span class="selected-currency">{{ shop.currency }}</span>
+    <i class="icon-arrow-down"></i>
+  </button>
+  <ul name="currencies" class="content">
+    {% for code in supported_codes %}
+    <li>
+      <button class="currency-select btn btn-link btn-block"  type="button" name="{{ code }}">{{ code }}</button>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+{% endif %}
+{% comment %}
+<button class="currency-select btn btn-link btn-block {% if code == shop.currency %}item-selected{% endif %}" type="button" name="{{ code }}">{{ code }}</button>
+{% endcomment %}

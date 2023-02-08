@@ -1,0 +1,319 @@
+<div class="main-row {% if section.settings.fullwidth == true %}full-width{% endif  %} {% if section.settings.background == true %} layer-background {% endif  %} {% if section.settings.top_margin %} margin-top{% endif %}" data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div class="row sub-row">
+          <div class="sub-col col-sm-12 col-md-12">
+            {% include section.settings.product_advert_design %}
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>    
+<style>
+  {% if section.settings.background_color != settings.section_bg_color -%}
+  #shopify-section-{{section.id }} .layer-background {
+    background: {{ section.settings.background_color }};
+  }
+  {%- endif %}
+  #shopify-section-{{section.id }} h4, #shopify-section-{{section.id }} .sub-title, #shopify-section-{{section.id }} .sub-title1 {
+    color: {{ section.settings.sub_heading_color }};
+  }
+  #shopify-section-{{section.id }} h2, #shopify-section-{{section.id }} h3 {
+    color: {{ section.settings.heading_color }};
+  }
+  #shopify-section-{{section.id }} p, #shopify-section-{{section.id }}  div {
+    color: {{ section.settings.description_color }};
+  }
+  #shopify-section-{{section.id }} .col-text .price {
+    color: {{ section.settings.price_color }};
+  }
+  {% if section.settings.overwrite_link_color %}
+  #shopify-section-{{section.id }} a.txt {
+    color: {{ section.settings.link_color_text }};
+    border-color: {{ section.settings.link_color_text }};
+    background-color: {{ section.settings.link_color_bg }};
+  }
+  #shopify-section-{{section.id }} a.txt:hover {
+    color: {{ section.settings.link_color_text }};
+    border-color: {{ settings.color_skin }};
+    background-color: {{ settings.color_skin }};
+  }
+  {% endif %}
+  {% if section.settings.overwrite_link2_color %}
+  #shopify-section-{{section.id }} a.txt2 {
+    color: {{ section.settings.link2_color_text }};
+    border-color: {{ section.settings.link2_color_text }};
+    background-color: {{ section.settings.link2_color_bg }};
+  }
+  #shopify-section-{{section.id }} a.txt2:hover {
+    color: {{ section.settings.link2_color_bg }};
+    border-color: {{ settings.color_skin }};
+    background-color: {{ settings.color_skin }};
+  }
+  {% endif %}
+  
+  {% if section.settings.product_advert_design == 'product-advert2' %}
+  #shopify-section-{{section.id }} .static4-elomus2 .col-image {
+    width: {{ section.settings.img_percentage }}%; 
+  }
+  {% endif %}
+</style>
+{% schema %}
+{
+  "name": "Ad Product section",
+  "class": "index-section index-section--flush",
+  "settings": [
+    {
+    "type": "select",
+    "id": "product_advert_design",
+    "label": "Select Design",
+    "options": [
+	  {
+        "value": "product-advert1",
+        "label": "Design 1"
+      },
+	  {
+        "value": "product-advert1alt",
+        "label": "Design 1 Alt"
+      },
+	  {
+        "value": "product-advert2",
+        "label": "Design 2"
+      },
+	  {
+        "value": "product-advert2alt",
+        "label": "Design 2 Alt - 50/50"
+      },
+	  {
+        "value": "product-advert3",
+        "label": "Design 3"
+      },
+      {
+      "value": "product-advert4",
+      "label": "Design 4 (Parralax)"
+      },
+      {
+      "value": "product-advert4alt",
+      "label": "Design 4 Alt (Parralax)"
+      },
+      {
+      "value": "product-advert4alt2",
+      "label": "Design 4 Alt2"
+      },
+      {
+      "value": "product-advert5",
+      "label": "Design 5"
+      },
+      {
+      "value": "product-advert6",
+      "label": "Design 6"
+      }
+    ],
+    "default": "product-advert1"
+    },
+	{
+      "type": "checkbox",
+      "id": "fullwidth",
+      "label": "Set Div fullwidth?",
+      "default": true
+    },
+	{
+      "type": "checkbox",
+      "id": "background",
+      "label": "Add Background",
+      "default": false
+    },
+    {
+    "type": "color",
+    "id": "background_color",
+    "label": "Sections Background Color",
+    "info": "This option allows you to set different background color than default one for the section.",
+    "default": "#f8f8f8"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_margin",
+      "label": "Add top margin?",
+      "info": "White empty space above section",
+      "default": false
+    },
+	{
+      "type": "image_picker",
+      "id": "bg-image",
+      "label": "Image",
+      "info": "ad image"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position",
+      "info": "Not applied on full image layouts",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },
+	{
+      "type": "text",
+      "id": "img_percentage",
+      "label": "Image portion percentage",
+      "default": "55",
+      "info": "Used in Design 2"
+    },
+	{
+      "type": "text",
+      "id": "subheading",
+      "label": "SubHeading",
+      "info": "Mostly appears on top of main heading in small fonts"
+    },
+    {
+      "type": "color",
+      "id": "sub_heading_color",
+      "label": "Subheading Color",
+      "default": "#ababab",
+      "info": "Used for top heading and features Text1"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main Heading"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#454545",
+      "info": "Used for main title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#7e7e7e"
+    },
+    {
+      "type": "text",
+      "id": "price",
+      "label": "Price",
+      "info": "Used in Design2 layouts"
+    },
+    {
+      "type": "color",
+      "id": "price_color",
+      "label": "Price Text Color",
+      "default": "#454545"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link Text"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link URL"
+    },
+	{
+      "type": "checkbox",
+      "id": "overwrite_link_color",
+      "label": "Override default link Color?",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "link_color_text",
+      "label": "Text Color",
+      "default": "#454545"
+    },
+    {
+      "type": "color",
+      "id": "link_color_bg",
+      "label": "Background Color",
+      "default": "#fff"
+    },
+    {
+      "type": "text",
+      "id": "link_text_2",
+      "label": "Button 2 Text"
+    },
+    {
+      "type": "url",
+      "id": "link_2",
+      "label": "Button 2 URL"
+    },
+	{
+      "type": "checkbox",
+      "id": "overwrite_link2_color",
+      "label": "Override default link Color?",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "link2_color_text",
+      "label": "Text Color",
+      "default": "#454545"
+    },
+    {
+      "type": "color",
+      "id": "link2_color_bg",
+      "label": "Background Color",
+      "default": "#fff"
+    },
+    {
+      "type": "select",
+      "id": "ad_align",
+      "label": "Align",
+      "options": [
+        {
+        "value": "left",
+        "label": "left"
+        },
+        {
+        "value": "center",
+        "label": "center"
+        },
+        {
+        "value": "right",
+        "label": "right"
+        }
+       ],
+      "default": "left",
+	  "info": "Used for text alignment"
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding",
+      "label": "Add bottom margin?",
+      "info": "White empty space below section",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_border",
+      "label": "Add bottom border?",
+      "info": "Border line below section",
+      "default": false
+    }
+  ],
+  "presets": [{
+    "name": "Ad product section",
+    "category": "Image"
+  }]
+}
+{% endschema %}
+
+

@@ -1,0 +1,220 @@
+<div class="main-row {% if section.settings.fullwidth == true %}full-width{% endif  %} {% if section.settings.background == true %} layer-background {% endif  %} {% if section.settings.top_margin %} margin-top{% endif %}" data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div class="row sub-row">
+          <div class="sub-col col-sm-12 col-md-12">
+            {% include section.settings.product_advert_design %}
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>    
+<style>
+  {% if section.settings.background_color != settings.section_bg_color -%}
+  #shopify-section-{{section.id }} .layer-background {
+    background: {{ section.settings.background_color }};
+  }
+  {%- endif %}
+</style>
+{% schema %}
+{
+  "name": "Ad Product plus feature",
+  "class": "index-section index-section--flush",
+  "max_blocks": 10,
+  "settings": [
+    {
+    "type": "select",
+    "id": "product_advert_design",
+    "label": "Select Design",
+    "options": [
+	  {
+        "value": "product-feature-advert1",
+        "label": "Design 1"
+      },
+	  {
+        "value": "product-feature-advert1alt",
+        "label": "Design 1 Alt"
+      },
+	  {
+        "value": "product-feature-advert2",
+        "label": "Design 2"
+      },
+	  {
+        "value": "product-feature-advert2alt",
+        "label": "Design 2 alt"
+      },
+	  {
+        "value": "product-feature-advert3",
+        "label": "Design 3"
+      },
+	  {
+        "value": "product-feature-advert4",
+        "label": "Design 4"
+      },
+	  {
+        "value": "product-feature-advert5",
+        "label": "Design 5"
+      },
+	  {
+        "value": "product-feature-advert5alt",
+        "label": "Design 5 Alt"
+      },
+	  {
+        "value": "product-feature-advert6",
+        "label": "Design 6"
+      },
+	  {
+        "value": "product-feature-advert6alt",
+        "label": "Design 6 Alt"
+      },
+	  {
+        "value": "product-feature-advert6alt2",
+        "label": "Design 6 Alt2"
+      }
+    ],
+    "default": "product-feature-advert1"
+    },
+	{
+      "type": "checkbox",
+      "id": "fullwidth",
+      "label": "Set Div fullwidth?",
+      "default": false
+    },
+	{
+      "type": "checkbox",
+      "id": "background",
+      "label": "Add Background",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Sections Background Color",
+      "info": "This option allows you to set different background color than default one for the section.",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_margin",
+      "label": "Add top margin?",
+      "info": "White empty space above section",
+      "default": false
+    },
+	{
+      "type": "image_picker",
+      "id": "bg-image",
+      "label": "Image",
+      "info": "ad image"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#454545",
+      "info": "Used for top heading and features Text1"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "info": "Body color is used for heading and blocks description which can be modified from settings > color tab"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link Text"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link URL"
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding",
+      "label": "Add bottom margin?",
+      "info": "White empty space below section",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_border",
+      "label": "Add bottom border?",
+      "info": "Border line below section",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Icon Image",
+          "info": "Used for adding Icon Images. Get icon from [this link](https:\/\/www.google.com\/search?q=image+icons). Ideal size 56x56"
+        },
+        {
+            "type": "checkbox",
+            "id": "use_feature_icon",
+            "label": "Use Font Icon?",
+            "default": false
+        },
+		{
+          "type": "text",
+          "id": "feature_icon",
+          "label": "Font Icon Code",
+		  "default": "fa-shopping-bag",
+		  "info": "Used for adding Icon fonts. Get icon codes from [this link](https:\/\/fontawesome.com\/cheatsheet\/). \'fa-\' should be prepended to each icon e.g. \'fa-shopping-bag\' . For brand icons \'fab ' also needs to be prepended."
+		},
+		{
+          "type": "text",
+          "id": "text1",
+          "label": "Text 1"
+        },
+		{
+          "type": "textarea",
+          "id": "text2",
+          "label": "Text 2"
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Ad product plus feature section",
+    "category": "Image",
+    "blocks": [
+      {
+        "type": "feature"
+      },
+      {
+        "type": "feature"
+      }
+    ]
+  }]
+}
+{% endschema %}

@@ -1,0 +1,133 @@
+<footer class="" {% if section.settings.bkg_image != blank %}style="background-image: url('{{ section.settings.bkg_image | img_url: 'master' }}')"{% endif %}>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        {% for block in section.blocks %}
+        {% if block.type == 'contact_information' %}
+        <div class="col1 col-md-5 col-sm-12 col-xs-12 col-footer">
+          {% if block.settings.image %}
+          <a href="/" itemprop="url" class="logo-footer">
+            <img {% if block.lazyloading_enable %}class="lazyload" data-{% endif %}src="{{ block.settings.image | img_url: 'master' }}"
+                 alt="{{ block.settings.image.alt | default: shop.name }}"
+                 itemprop="logo">
+          </a>
+          {% endif %}
+          {% if block.settings.image == blank %}
+          <div class="footer-title"><h5>{{ 'layout.footer.contact' | t }}</h5></div>
+          {% endif %}
+          <div class="footer-content">
+            {% if block.settings.footer_about_us %}
+            <p>{{ block.settings.footer_about_us }}</p>
+            {% endif %}
+            <ul class="footer-contact">
+              {% if block.settings.footer_address != blank %}
+              <li class="address">{{ block.settings.footer_address }}</li>
+              {% endif %}
+              {% if block.settings.footer_phone != blank %}
+              <li class="phone">{{ block.settings.footer_phone }}</li>
+              {% endif %}
+              {% if block.settings.footer_email != blank %}
+              <li class="email">{{ block.settings.footer_email }}</li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+        {% elsif block.type == 'menu' %}
+        <div class="col col2 col-md-2 col-sm-6 col-xs-12 col-footer">
+          <div class="footer-title">
+            <h5>{{ linklists[block.settings.footer_menu_1].title }}</h5>
+          </div>
+          <div class="footer-content">
+            <ul class="list-unstyled text-content">
+              {% for link in linklists[block.settings.footer_menu_1].links %}
+              <li><a href="{{link.url}}">{{link.title}}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {% elsif block.type == 'instagram' %}
+        <div class="col4  col-md-4 col-sm-12 col-xs-12 col-footer">
+          {% include 'footer-insta' %}
+        </div>
+        {% elsif block.type == 'content_box' %}
+        <div class="col col3 col-md-3 col-sm-12 col-xs-12 col-footer">
+          {% if block.settings.footer_content_box_title != blank %}
+          <div class="footer-title"><h5>{{ block.settings.footer_content_box_title }}</h5></div>
+          {% endif %}
+          {% if block.settings.footer_content_box_text != blank %}
+          <div class="footer-content">
+            <p>{{ block.settings.footer_content_box_text }}</p>
+          </div>
+          {% endif %}
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% for block in section.blocks %}
+  {% if block.type == 'bottom_footer' %}
+    <div class="footer-bottom">
+    <div class="container">
+      <div class="container-inner">
+        <div class="footer-copyright">
+          <p><span>{{ block.settings.footer_content_text }}</span></p>
+        </div>
+        {% if block.settings.payment_image %}
+        <div class="payment">
+          <a href="#">
+            <img src="{{ block.settings.payment_image | img_url: 'master' }}" alt="payment">
+          </a>
+        </div>
+        {% else %}
+        {% unless shop.enabled_payment_types == empty %}
+        <div class="paypal-footer footer-payment">
+          <ul class="list-unstyled list-inline ct-socials text-center-sm ct-payment">
+            {% assign enabled_payment_types = 'visa,mastercard,amex,paypal' | remove: ' ' | split: ',' %}
+            {% for type in enabled_payment_types %}
+            <li>
+              <a class="f-payment  fab fa-cc-{{ type }} fa-2x" aria-hidden="true"></a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div> 
+        {% endunless %}
+        {% endif %}
+        {% include 'social-button' %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+  <div id="back-top"><i class="fa fa-angle-up"></i></div>
+</footer>
+<script >
+  $(document).ready(function(){
+    // hide #back-top first
+    $("#back-top").hide();
+    // fade in #back-top
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > $('body').height()/3) {
+          $('#back-top').fadeIn();
+        } else {
+          $('#back-top').fadeOut();
+        }
+      });
+      // scroll body to 0px on click
+      $('#back-top').click(function () {
+        $('body,html').animate({scrollTop: 0}, 800);
+        return false;
+      });
+    });
+    // footer toggle
+    if (jQuery(window).width() < 992) {   
+      jQuery('.footer-top .footer-title').click(function(){     
+        jQuery(this).parent('.col').toggleClass('active').siblings().removeClass('active'); 
+        jQuery(this).next('.col .footer-content').toggle(300);
+        jQuery(this).parent('.col.active').siblings().children('.col .footer-content').slideUp(300); 
+      }); 
+
+    }
+  });
+</script>

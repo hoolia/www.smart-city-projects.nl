@@ -1,0 +1,67 @@
+<div class="banner-static static3-elomus3{% if section.settings.bottom_padding %} padding-bottom{% endif %} {% if section.settings.bottom_border %} border-bottom{% endif %}">
+  <div class="module-title">
+    {% if section.settings.description != blank %} 
+    <p class="sub-title1">{{ section.settings.description }}</p>
+    {% endif %}
+    {% if section.settings.heading != blank %} 
+    <h2 style="color:{{ section.settings.heading_color }};">{{ section.settings.heading }}</h2>
+    {% endif %}
+  </div>
+  {% if section.blocks.size > 0 %}
+  {% assign leftfeatures = ''%}
+  {% for block in section.blocks %}
+  {% capture feature %}
+  <div class="box box{{forloop.index}}">
+    <div class="text">
+      {% if block.settings.text1 != blank %} 
+      <h4 style="color:{{ section.settings.heading_color }};">{{ block.settings.text1 }}</h4>
+      {% endif %}
+      {% if block.settings.text2 != blank %} 
+      <p>{{ block.settings.text2 }}</p>
+      {% endif %}
+    </div>
+    {% if block.settings.use_feature_icon %}
+    {% if block.settings.feature_icon != blank %}
+    <div class="icon-image">
+      <i class="fa {{block.settings.feature_icon }}"></i>
+    </div>
+    {% endif %}
+    {% else %}
+    {% if block.settings.image != blank %}
+    <div class="icon-image image">
+      <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ block.settings.image | img_url: 'master' }}" alt=""/>
+    </div>
+    {% endif %}
+    {% endif %}
+  </div>
+  {% endcapture %}
+  {% assign ind = forloop.index | times: 1 | modulo:2 %}
+  {% if  ind != 0 %}
+  {% assign leftfeatures = leftfeatures | append:feature %}
+  {% else %}
+  {% assign rightfeatures = rightfeatures | append:feature %}
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+  <div class="row">
+    <div class="col col1 col-sm-4 col-xs-12">
+      {{ leftfeatures }}
+    </div>
+    <div class="col col2 col-sm-4 col-xs-12">
+      {% if section.settings.bg-image %}
+      <div class="image">
+        {% if section.settings.link != blank %}
+        <a href="{{ section.settings.link }}">
+          {% endif %}
+          <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ section.settings.bg-image | img_url: 'master' }}" alt=""/>
+          {% if section.settings.link != blank %}       
+        </a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+    <div class="col col3 col-sm-4 col-xs-12">
+      {{ rightfeatures }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,105 @@
+{%- assign base_font = settings.type_base_family %}
+{%- assign base_font_5 = base_font | font_modify: 'weight', '500' -%}
+{%- assign base_font_6 = base_font | font_modify: 'weight', '600' -%}
+{%- assign base_font_7 = base_font | font_modify: 'weight', '700' -%}
+
+{%- assign header_font = settings.type_header_family %}
+{%- assign header_font_5 = header_font | font_modify: 'weight', '500' -%}
+{%- assign header_font_6 = header_font | font_modify: 'weight', '600' -%}
+{%- assign header_font_7 = header_font | font_modify: 'weight', '700' -%}
+
+{%- assign accent_font = settings.type_accent_family %}
+{%- assign accent_font_5 = accent_font | font_modify: 'weight', '500' -%}
+{%- assign accent_font_6 = accent_font | font_modify: 'weight', '600' -%}
+{%- assign accent_font_7 = accent_font | font_modify: 'weight', '700' -%}
+
+<link rel="preload" as="font" href="{{ header_font | font_url }}" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="{{ base_font | font_url }}" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="{{ accent_font | font_url }}" type="font/woff2" crossorigin>
+
+<style>
+  {{ base_font | font_face: font_display: 'swap' }}
+  {{ base_font_5 | font_face: font_display: 'swap' }}
+  {{ base_font_6 | font_face: font_display: 'swap' }}
+  {{ base_font_7 | font_face: font_display: 'swap' }}
+
+  {{ header_font | font_face: font_display: 'swap' }}
+  {{ header_font_5 | font_face: font_display: 'swap' }}
+  {{ header_font_6 | font_face: font_display: 'swap' }}
+  {{ header_font_7 | font_face: font_display: 'swap' }}
+
+  {{ accent_font | font_face: font_display: 'swap' }}
+  {{ accent_font_5 | font_face: font_display: 'swap' }}
+  {{ accent_font_6 | font_face: font_display: 'swap' }}
+  {{ accent_font_7 | font_face: font_display: 'swap' }}
+</style>
+
+
+{% comment %}
+
+{% assign base_font = settings.type_base_family %}
+{{ base_font | font_url | stylesheet_tag }}
+
+{% assign header_font = settings.type_header_family %}
+{{ header_font | font_url | stylesheet_tag }}
+
+{% assign accent_font = settings.type_accent_family %}
+{{ accent_font | font_url | stylesheet_tag }}
+
+{% if settings.type_base_family contains 'Google' %}
+{% assign type_base_parts = settings.type_base_family | split: '_' %}
+{% capture baseGoogleUrl %}{{ type_base_parts[1] }}:{{ type_base_parts[2] }}{% endcapture %}
+{{ '//fonts.googleapis.com/css?family=' | append: baseGoogleUrl | stylesheet_tag }}
+{% endif %}
+{% if settings.type_header_family contains 'Google' %}
+{% unless settings.type_header_family contains type_base_parts[1] %}
+{% assign type_header_parts = settings.type_header_family | split: '_' %}
+{% capture headerGoogleUrl %}{{ type_header_parts[1] }}:{{ type_header_parts[2] }}{% endcapture %}
+{{ '//fonts.googleapis.com/css?family=' | append: headerGoogleUrl | stylesheet_tag }}
+{% endunless %}
+{% endif %}
+{% if settings.type_accent_family contains 'Google' %}
+{% unless settings.type_accent_family contains type_base_parts[1] or settings.type_accent_family contains type_header_parts[1] %}
+{% assign type_accent_parts = settings.type_accent_family | split: '_' %}
+{% capture accentGoogleUrl %}{{ type_accent_parts[1] }}:{{ type_accent_parts[2] }}{% endcapture %}
+{{ '//fonts.googleapis.com/css?family=' | append: accentGoogleUrl | stylesheet_tag }}
+{% endunless %}
+{% endif %}
+{% comment %} {{ '//fonts.googleapis.com/css?family=' | append: baseGoogleUrl | append: '|' | append: headerGoogleUrl | append: '|' | append: accentGoogleUrl |stylesheet_tag }}{% endcomment %} 
+{% endcomment %}
+
+{% comment %}
+{% if settings.type_base_family contains 'Google' %}
+{% assign type_base_parts = settings.type_base_family | split: '_' %}
+{% assign type_base_name = type_base_parts[1] %}
+{% capture base_family %}"{{ type_base_name | split: ':' | first | replace: '+', ' ' }}"{% if type_base_parts.last == 'serif' %}, serif {% else %}, "HelveticaNeue", "Helvetica Neue", sans-serif{% endif %}{% endcapture %}
+{% else %}
+{% assign base_family = settings.type_base_family %}
+{% endif %}
+
+{% if settings.type_header_family contains 'Google' %}
+{% assign type_header_parts = settings.type_header_family | split: '_' %}
+{% assign type_header_name = type_header_parts[1] %}
+{% capture header_family %}"{{ type_header_name | split: ':' | first | replace: '+', ' ' }}"{% if type_header_parts.last == 'serif' %}, serif {% else %}, "HelveticaNeue", "Helvetica Neue", sans-serif{% endif %}{% endcapture %}
+{% assign header_weight = type_header_parts[2] %}
+{% else %}
+{% assign header_family = settings.type_header_family %}
+{% assign header_weight = 700 %}
+{% endif %}
+
+{% if settings.type_accent_family contains 'Google' %}
+{% assign type_accent_parts = settings.type_accent_family | split: '_' %}
+{% assign type_accent_name = type_accent_parts[1] %}
+{% capture accent_family %}"{{ type_accent_name | split: ':' | first | replace: '+', ' ' }}"{% if type_accent_parts.last == 'serif' %}, serif {% else %}, "HelveticaNeue", "Helvetica Neue", sans-serif{% endif %}{% endcapture %}
+{% else %}
+{% assign accent_family = settings.type_accent_family %}
+{% endif %}
+
+{% assign base_font = settings.type_header_family %}
+{{ header_font | font_face: font_display: 'swap'  }}
+{% capture header_family %} {{ header_font.family }}, {{ header_font.fallback_families }} {% endcapture %}
+
+{% assign accent_font = settings.type_accent_family %}
+{{ accent_font | font_face: font_display: 'swap'  }}
+{% capture accent_family %} {{ accent_font.family }}, {{ accent_font.fallback_families }} {% endcapture %}
+{% endcomment %}

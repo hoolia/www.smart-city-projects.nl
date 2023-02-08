@@ -1,0 +1,65 @@
+<!--FAQ -->
+<div class="container">
+  <div class="row">
+    <div id="content" class="col-sm-12">
+      <section class="cd-faq">
+
+        <div class="cd-faq-items">
+          <ul id="" class="cd-faq-group">
+            <li class="cd-faq-title" style="display:none;"><h2>{{ page_title }}</h2></li>
+            {% if section.blocks.size > 0 %}
+            {% for block in section.blocks %}
+            <li>
+              <a class="cd-faq-trigger" href="#0">{{ block.settings.question }}</a>
+              <div class="cd-faq-content">
+                <p>{{ block.settings.answer }}</p>
+              </div> <!-- cd-faq-content -->
+            </li>
+            {% endfor %}
+            {% endif %}
+          </ul> <!-- cd-faq-group -->
+
+        </div> <!-- cd-faq-items -->
+      </section> <!-- cd-faq -->
+
+    </div>
+  </div>
+</div>
+<!--End of FAQ Area-->
+{% schema %}
+{
+   "name": "FAQ Page",
+   "settings": [
+      {
+        "type": "paragraph",
+        "content": "[Video Guide](https://youtu.be/K2nxwuiLtdg?list=PLvJCnPMUAdwr6XxWVo_f9dkVRh8GNCXoa)"
+      },
+	  {
+        "type": "paragraph",
+        "content": "Add blocks for representing each FAQ"
+      }
+    ],
+   "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "info": "Question to be asnwered!",
+		  "default": "How do i signup?"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer to the Question",
+		  "default": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+		}
+      ]
+    }
+  ],
+   "presets": []
+}
+{% endschema %}

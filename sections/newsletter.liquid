@@ -1,0 +1,119 @@
+<div class="main-row news {% if section.settings.fullwidth == true %}full-width{% endif  %} {% if section.settings.background == true %} layer-background {% endif  %}">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div class="row sub-row">
+          <div class="sub-col col-sm-12 col-md-12">
+            {% include 'newsletter' %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  {% if section.settings.background_color != settings.section_bg_color -%}
+  #shopify-section-{{section.id }} .layer-background {
+    background: {{ section.settings.background_color }};
+  }
+  {%- endif %}
+  {% if section.settings.top_margin %}
+  #shopify-section-{{section.id }} .news.layer-background {
+    margin-top: 80px !important;
+  }
+  {%- endif %}
+  
+  {% if section.settings.image != blank %}
+  #shopify-section-{{section.id }} .news {
+    background-image: url('{{ section.settings.image | img_url: 'master' }}');
+      background-size: auto 100%;
+  }
+  {% endif %}
+  {% if section.settings.overwrite_text_color %}
+  #shopify-section-{{section.id }} .module-title h2 {
+    color: {{ section.settings.heading_color_text }};
+  }
+  #shopify-section-{{section.id }} .module-title .sub-title {
+    color: {{ section.settings.subheading_color_bg }};
+  }
+  {% endif %}
+</style>
+{% schema %}
+{
+  "name": "Newsletter section",
+  "settings": [
+	{
+      "type": "checkbox",
+      "id": "fullwidth",
+      "label": "Set Div fullwidth?",
+      "default": true
+    },
+	{
+      "type": "text",
+      "id": "mailing_list_form_action",
+      "label": "MailChimp form action URL",
+      "info": "[Find your MailChimp form action URL](https://docs.shopify.com/manual/configuration/store-customization/communicating-with-customers/accounts-and-newsletters/get-a-mailchimp-form-action-url/)"
+    },
+	{
+	  "type": "paragraph",
+      "content": "You can use the language editor for editing literals text as shown [here](https://help.shopify.com/manual/using-themes/change-wording). The literals are 'layout.footer.newsletter_title_1' and layout.footer.newsletter_description'."
+    },
+	{
+      "type": "checkbox",
+      "id": "overwrite_text_color",
+      "label": "Override default Text Colors?",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "heading_color_text",
+      "label": "Heading Color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color_bg",
+      "label": "Subheading Color",
+      "default": "#f4f4f4"
+    },
+	{
+      "type": "text",
+      "id": "heading",
+      "label": "Button Text",
+      "default": "Sign up for our Newsletter!"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background Image",
+      "info": "Testimonial area background image"
+    },
+    {
+      "type": "checkbox",
+      "id": "background",
+      "label": "Add Background",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Sections Background Color",
+      "info": "This option allows you to set different background color than default one for the section.",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_margin",
+      "label": "Add top margin?",
+      "info": "White empty space above section",
+      "default": true
+    }
+  ],
+  "blocks": [
+  ],
+  "presets": [{
+    "name": "Newsletter section",
+    "category": "Feature Sections"
+  }]
+}
+{% endschema %}

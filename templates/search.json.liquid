@@ -1,0 +1,20 @@
+{%comment%}
+Add this to the template folder in the customize code page.
+{%endcomment%}
+{% layout none %}
+{% capture results %}
+  {% for item in search.results %}
+    {% assign product = item %}
+    { 
+      "title"    : {{ product.title | json }},
+      "url"      : {{ product.url | within: product.collections.last | json }},
+      "price"      : {{ product.selected_or_first_available_variant.price | json }},
+      "thumbnail": {{ product.featured_image.src | product_img_url: '70x70' | json }}
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+{% endcapture %}
+{
+  "results_count": {{ search.results_count }},
+  "results": [{{ results }}]
+}

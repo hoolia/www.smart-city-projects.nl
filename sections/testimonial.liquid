@@ -1,0 +1,135 @@
+<div class="main-row {% if section.settings.background == true %} layer-background {% endif  %} {% if section.settings.fullwidth == true %}fluid-width{% endif  %}{% if section.settings.top_margin %} margin-top{% endif %}" data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div class="row sub-row">
+          <div class="sub-col col-sm-12 col-md-12">
+            {% include section.settings.layout %}
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div> 
+<style>
+  {% if section.settings.background_color != settings.section_bg_color -%}
+  #shopify-section-{{section.id }} .layer-background {
+    background: {{ section.settings.background_color }};
+  }
+  {%- endif %}
+</style>
+{% schema %}
+{
+  "name": "Testimonial",
+  "settings": [
+	{
+        "type": "select",
+        "id": "layout",
+        "label": "Select layout design",
+        "options": [
+          {
+            "value": "testimonials",
+            "label": "Design 1"
+          },
+		  {
+            "value": "testimonials-2",
+            "label": "Design 2"
+          },
+		  {
+            "value": "testimonials-3",
+            "label": "Design 3"
+          }
+        ]	
+      },
+	{
+      "type": "header",
+      "content": "Testimonial"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "WHAT OUR CLIENTS SAY"
+	},
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Welcome to my personal presentation"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background Image",
+      "info": "Testimonial area background image"
+    },
+	{
+      "type": "checkbox",
+      "id": "fullwidth",
+      "label": "Set Div fullwidth?",
+      "default": false
+    },
+	{
+      "type": "checkbox",
+      "id": "background",
+      "label": "Add Background",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Sections Background Color",
+      "info": "This option allows you to set different background color than default one for the section.",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_margin",
+      "label": "Add top margin?",
+      "info": "White empty space above section",
+      "default": false
+    }
+  ],
+    "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Customer Image"
+        },
+		{
+          "type": "text",
+          "id": "title",
+          "label": "Testimonial Title"
+        },
+		{
+          "type": "textarea",
+          "id": "description",
+          "label": "Testimonial Text"
+        },
+		{
+          "type": "text",
+          "id": "author",
+          "label": "Testimonial Author"
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Testimonial section",
+    "category": "Feature Sections",
+	"blocks": [
+      {
+        "type": "testimonial"
+      },
+      {
+        "type": "testimonial"
+      }
+    ]
+  }]
+}
+{% endschema %}

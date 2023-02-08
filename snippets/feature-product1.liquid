@@ -1,0 +1,82 @@
+<div class="banner-static static2-elomus3{% if section.settings.bottom_padding %} padding-bottom{% endif %} {% if section.settings.bottom_border %} border-bottom{% endif %}">
+  <div class="row">
+    {% if section.settings.image_position == 'left' %} 
+    <div class="col col-image col-sm-6 col-xs-12">
+      {% if section.settings.bg-image %}
+      <div class="image">
+        <a href="{{ section.settings.link }}">
+          <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ section.settings.bg-image | img_url: 'master' }}" alt=""/>
+        </a>
+      </div>
+      {% elsif product.featured_image %}
+      <div class="image">
+        <a href="{{ product.url }}" class="product-image">
+            {% include 'product-grid-image',image:product.featured_image %}
+         </a>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+    <div class="col col-text col-sm-6 col-xs-12">
+      <div class="inner text-{{ section.settings.ad_align }}" style="text-align:{{ section.settings.ad_align }}">
+        <div class="module-title" style="text-align:{{ section.settings.ad_align }};">
+          {% if section.settings.heading != blank %}  
+          <h2>{{ section.settings.heading }}</h2>
+          {% endif %}
+        </div>
+        {% if product.title != blank %} 
+        <h3>{{ product.title }}</h3>
+        {% endif %}
+        {% if section.settings.description and product.description != blank %} 
+        <p>
+        {% if product.description contains '[summary]' %}
+        {{ product.description | split:'[summary]' | last | split :'[/summary]' | first }}
+        {% else %}
+        {% assign product_summary_words = section.settings.product_summary_words | times: 1 %} 
+        {% if section.settings.show_summary_stripped %}
+        {{ product.content | split:"[summary]" | first | split:"[video]" | first | split:"[tab]" | first | split:"[deal]" | first | split:"[affiliate]" | first | strip_html | truncatewords: product_summary_words }}
+        {% else %}
+        {{ product.content | split:"[summary]" | first | split:"[video]" | first | split:"[tab]" | first | split:"[deal]" | first | split:"[affiliate]" | first | truncatewords: product_summary_words }}
+        {% endif %}
+        {% endif %}
+        </p>
+        {% endif %}    
+        {% if section.settings.price %} 
+        <p class="price">{% include 'price'%}</p>
+        {% endif %}
+        {% if section.settings.view_details %}
+        <button class="button btn-compare" type="button" data-toggle="tooltip" title="{{ 'products.product.view_details' | t }}" onclick="window.top.location.href='{{ product.url }}';">
+          {{ 'products.product.view_details' | t }}
+        </button>
+        {% endif %}
+        {% if section.settings.add_to_cart %} 
+        <button class="button btn-cart {% if sold_out %} btn disabled {% endif %}" type="button" data-toggle="tooltip" data-loading-text="{{ 'products.product.loading' | t }}" title="{{ 'products.product.add_to_cart' | t }}" {% if sold_out == false %}onclick="{% if product.variants.first.available %}cart.add('{{  product.variants.first.id  }}'){% else %}window.top.location.href='{{product.url}}'{% endif %};"{% endif %}>
+           <span>{% if sold_out == false %}{{ 'products.product.add_to_cart' | t }}{% else %} {{ 'products.product.sold_out' | t }}{% endif %}</span>
+        </button>
+        {% endif %}
+        {% if section.settings.buy_now %}
+        <button class="button button-cart btn" style="clear:none;" type="button" data-loading-text="{{ 'products.product.loading' | t }}" onclick="{% if product.variants.first.available %}cart.add('{{  product.variants.first.id  }}',1,true){% else %}window.top.location.href='{{product.url}}'{% endif %};">
+          {{ 'products.product.buy_now' | t }}
+        </button>
+        {% endif %}
+      </div>
+    </div>
+    {% if section.settings.image_position == 'right' %} 
+    <div class="col col-image col-sm-6 col-xs-12">
+      {% if section.settings.bg-image %}
+      <div class="image">
+        <a href="{{ section.settings.link }}">
+          <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ section.settings.bg-image | img_url: 'master' }}" alt=""/>
+        </a>
+      </div>
+      {% elsif product.featured_image %}
+      <div class="image">
+        <a href="{{ product.url }}" class="product-image">
+            {% include 'product-grid-image',image:product.featured_image %}
+         </a>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,100 @@
+{% include 'cart-page-section' %}
+{% schema %}
+{
+   "name": "Cart Page",
+   "settings": [
+      {
+        "type": "paragraph",
+        "content": "[Video Guide](https://youtu.be/cHj7mDpHMNY?list=PLvJCnPMUAdwr6XxWVo_f9dkVRh8GNCXoa)"
+      },
+	  {
+        "type": "checkbox",
+        "id": "cart_notes_enable",
+        "label": "Enable order notes"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_promo_enable",
+        "label": "Enable discounts",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "ajax_cart_method",
+        "label": "Cart type",
+        "options": [
+          {
+            "value": "page",
+            "label": "Page"
+          }
+        ],
+        "default": "page"
+      },
+	  {
+        "type": "header",
+        "content": "Shipping Calculator"
+      },
+	  {
+        "type": "select",
+        "id": "shipping_calculator",
+        "label": "Show the shipping calculator?",
+        "options": [
+          {
+            "value": "Disabled",
+            "label": "No"
+          },
+          {
+            "value": "Enabled",
+            "label": "Yes"
+          }
+        ],
+        "default": "Enabled"
+      },
+      {
+        "type": "text",
+        "id": "shipping_calculator_heading",
+        "label": "Heading text",
+        "default": "Get shipping estimates"
+      },
+      {
+        "type": "text",
+        "id": "shipping_calculator_default_country",
+        "label": "Default country selection",
+        "default": "United States"
+      },
+      {
+        "type": "paragraph",
+        "content": "If your customer is logged-in, the country in his default shipping address will be selected. If you are not sure about the  spelling to use here, refer to the first checkout page."
+      },
+      {
+        "type": "text",
+        "id": "shipping_calculator_submit_button_label",
+        "label": "Submit button label",
+        "default": "Calculate shipping"
+      },
+      {
+        "type": "text",
+        "id": "shipping_calculator_submit_button_label_disabled",
+        "label": "Submit button label when calculating",
+        "default": "Calculating..."
+      },
+      {
+        "type": "paragraph",
+        "content": "Below options are to make user accept your terms to checkout"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_terms_c_enable",
+        "label": "Enable Terms & Condition check",
+        "default": true
+      },
+      {
+        "type": "url",
+        "id": "cart_terms_c_page",
+        "label": "Terms & Condition page link"
+      }
+    ],
+   "blocks": [],
+   "presets": []
+}
+{% endschema %}

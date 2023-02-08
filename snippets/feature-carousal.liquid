@@ -1,0 +1,96 @@
+{% assign product_collection = section.settings.collection %}
+<div class="tt_product_module module-style1 {% if section.settings.no_of_products == 3 %} large-product {% endif %} {% if section.settings.listing_rows != 1 %} multi-rows {% endif %}" id="product_module{{section.id}}">
+  <div class="module-title">
+    {% if section.settings.description != blank %}  
+    <p class="sub-title">{{ section.settings.description }}</p>
+    {% endif %}
+    {% if section.settings.heading != blank %}  
+    <h2>{{ section.settings.heading }}</h2>
+    {% endif %}
+  </div>
+  <div class="owl-container">
+    <div class="tt-product owl-carousel owl-theme ">
+      {% if section.settings.listing_rows == 1 %}
+      {% for product in collections[product_collection].products limit:section.settings.products_tab_count %}
+      <div class="row_items {% cycle 'odd','even' %}">
+        {% include 'product-grid-item' %}
+      </div>
+      {% endfor %}
+      {% else %}
+      <div class="row_items {% cycle 'odd','even' %}">
+        {% for product in collections[product_collection].products limit:section.settings.products_tab_count %}
+        {% include 'product-grid-item' %}
+        {% assign ind = forloop.index | times: 1 | modulo:section.settings.listing_rows %}
+        {% if  ind == 0 and forloop.last == false %}
+      </div><div class="row_items">
+      {% endif %}
+      {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<script >
+  $(document).ready(function() {
+    $("#product_module{{section.id}} .tt-product").owlCarousel({
+      loop:  false ,
+      margin:  0 ,
+      nav:  true ,
+      dots:  false ,
+      autoplay:   false ,
+      autoplayTimeout:  3000 ,
+      autoplayHoverPause: true,
+      autoplaySpeed:  1000 ,
+      navSpeed:  1000 ,
+      dotsSpeed:  1000 ,
+      lazyLoad: true,
+      responsive:{
+      0:{
+      items: 1,
+      nav: false,
+      dots: true
+      },
+      480:{
+      items: 2,
+      nav: false,
+      dots: true
+      },
+      768:{
+      items: 3
+      },
+      992:{
+      items: 4
+      },
+      1200:{
+      items: {{ section.settings.no_of_products }}
+      },
+      1600:{
+      items: {{ section.settings.no_of_products }}
+      }
+      },
+      onInitialized: function() {
+      var count = $("#product_module{{section.id}} .tt-product .owl-item.active").length;
+                    if(count == 1) {
+        $("#product_module{{section.id}} .tt-product .owl-item").removeClass('first');
+          $("#product_module{{section.id}} .tt-product .active").addClass('first');
+          } else {
+          $("#product_module{{section.id}} .tt-product .owl-item").removeClass('first');
+          $("#product_module{{section.id}} .tt-product .owl-item.active:first").addClass('first');
+          }
+
+          },
+          onTranslated: function() {
+          var count = $("#product_module{{section.id}} .tt-product .owl-item.active").length;
+                        if(count == 1) {
+            $("#product_module{{section.id}} .tt-product .owl-item").removeClass('first');
+              $("#product_module{{section.id}} .tt-product .active").addClass('first');
+              } else {
+              $("#product_module{{section.id}} .tt-product .owl-item").removeClass('first');
+              $("#product_module{{section.id}} .tt-product .owl-item.active:first").addClass('first');
+              }
+              }
+              });
+
+          });
+</script>

@@ -1,0 +1,71 @@
+<input type="hidden" id="check-use-zoom" value="1" />
+<input type="hidden" id="light-box-position" value="1" />
+<input type="hidden" id="product-identify" value="{{ product.id }}" />
+<div class="lightbox-container"></div>
+{% if thumb == 'left' %}
+<div class="col-sm-1 hidden-sm hidden-xs">
+  <div class="thumbnails-additional bxslider" id="gallery_01">
+    {% if product.description contains '[video]' %}
+    <a class="thumbnail popup-youtube" href="{{ product.description | split:'[video]' | last | split :'[/video]' | first }}">
+      <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ 'video.png' | asset_img_url: product_img_size }}" alt="">
+    </a>
+    {% endif %}                  
+    {% for image in product.images %}
+    <div class="item">
+      <a class="cloud-zoom-gallery sub-image" href="{{ image.src | img_url: 'master' }}" title="{{ featured_img_alt }}"
+         rel="useZoom: 'product-cloud-zoom', smallImage: '{{ image.src | img_url: product_img_size }}'" data-pos="{{ forloop.index }}">
+        <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ image.src | img_url: product_img_size }}" title="{{ featured_img_alt }}" alt="{{ featured_img_alt }}" />
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+<div class="col-sm-6 block-1 owl-style2">
+  {% assign featured_img_src = current_variant.featured_image.src | default: product.featured_image.src %}
+  {% assign featured_img_alt = current_variant.featured_image.alt | default: product.featured_image.alt %}
+  <div class="product-zoom-image">
+    <a href="{{ featured_img_src | img_url: 'master' }}" class="cloud-zoom main-image" id="product-cloud-zoom" style="width: {{ product_img_size | split:'x' | first }}px; height: {{ product_img_size | split:'x' | last }}px;"
+       rel="tint:'{{color_skin}}',tintOpacity:0.5,showTitle: false ,zoomWidth:{{ product_img_size | split:'x' | first }},zoomHeight:{{ product_img_size | split:'x' | last }},adjustX: 0,position:'inside' ">
+      <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ featured_img_src | img_url: product_img_size, crop: 'center' }}" title="{{ featured_img_alt }}" alt="{{ featured_img_alt }}" />
+    </a>
+  </div>
+  <div class="additional-images owl-carousel owl-theme visible-sm visible-xs">
+    {% if product.description contains '[video]' %}
+    <a class="thumbnail popup-youtube" href="{{ product.description | split:'[video]' | last | split :'[/video]' | first }}">
+      <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ 'video.png' | asset_img_url: product_img_size }}" alt="">
+    </a>
+    {% endif %}                  
+    {% for image in product.images %}
+    <div class="item">
+      <a class="cloud-zoom-gallery sub-image" href="{{ featured_img_src | img_url: 'master' }}" title="{{ featured_img_alt }}"
+         rel="useZoom: 'product-cloud-zoom', smallImage: '{{ image.src | img_url: product_img_size }}'" data-pos="{{ forloop.index }}">
+        <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ image.src | img_url: product_img_size }}" title="{{ featured_img_alt }}" alt="{{ featured_img_alt }}" />
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  <!-- end wrapper-img-additional -->
+</div>
+{% if thumb == 'right' %}
+<div class="col-sm-1 hidden-sm hidden-xs">
+  <div class="thumbnails-additional bxslider" id="gallery_01">
+    {% if product.description contains '[video]' %}
+    <a class="thumbnail popup-youtube" href="{{ product.description | split:'[video]' | last | split :'[/video]' | first }}">
+      <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ 'video.png' | asset_img_url: product_img_size }}" alt="">
+    </a>
+    {% endif %}                  
+    {% for image in product.images %}
+    <div class="item">
+      <a class="cloud-zoom-gallery sub-image" href="{{ image.src | img_url: 'master' }}" title="{{ featured_img_alt }}"
+         rel="useZoom: 'product-cloud-zoom', smallImage: '{{ image.src | img_url: product_img_size }}'" data-pos="{{ forloop.index }}">
+        <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ image.src | img_url: product_img_size }}" title="{{ featured_img_alt }}" alt="{{ featured_img_alt }}" />
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+<div class="col-sm-5 ver product-info-main">
+  {% include 'product-page-features' %}
+</div>

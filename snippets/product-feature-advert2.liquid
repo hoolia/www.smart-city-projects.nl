@@ -1,0 +1,25 @@
+<div class="banner-static static4-elomus1{% if section.settings.bottom_padding %} padding-bottom{% endif %} {% if section.settings.bottom_border %} border-bottom{% endif %}">
+  {% if section.settings.bg-image %}
+  <div class="image">
+    {% if section.settings.link != blank %}
+    <a href="{{ section.settings.link }}">
+      {% endif %}
+      <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ section.settings.bg-image | img_url: 'master' }}" alt=""/>
+      {% if section.settings.link != blank %}       
+    </a>
+    {% endif %}
+  </div>
+  {% endif %}
+  {% if section.blocks.size > 0 %}
+  {% for block in section.blocks limit:4 %}
+  <div class="text text{{forloop.index}}">
+    {% if block.settings.text1 != blank %} 
+    <h4>{{ block.settings.text1 }}</h4>
+    {% endif %}
+    {% if block.settings.text2 != blank %} 
+    <p>{{ block.settings.text2 }}</p>
+    {% endif %}
+  </div>
+  {% endfor %}
+  {% endif %}
+</div>

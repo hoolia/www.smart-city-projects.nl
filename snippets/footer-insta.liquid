@@ -1,0 +1,29 @@
+<div id="instagram_block_home1" class="block">
+  {% if block.settings.insta_title != blank%}
+  <div class="footer-title">
+    <h5>{{ block.settings.insta_title }}</h5>
+  </div>
+  {% endif %}
+    <div class="row_items content_block owl-carousel owl-theme" id="instafeed">
+  </div>
+  <script type = "text/javascript" >
+    $(document).ready(function() {
+      fetch(`https://d3ejra0xbg20rg.cloudfront.net/instagram/media?shop=${Shopify.shop}&resource=default`).then((response) => { 
+        response.json().then((media) => { 
+          // media is a json containing the data about the 18 latest media. 
+          //console.log(media);
+          var feed;
+          $.each( media, function( i, item ) {
+            var feed = "<a target='_blank' href='" + item.permalink +"'><img src='"+ item.media_url +"' class='fancybox img-responsive insta-size {% if settings.lazyloading_enable %}lazyload{% endif %}'></a>";
+			$("#instafeed").append(feed);
+
+            if ( i === 5 ) {
+              return false;
+            }
+          });
+          
+        }); 
+      });
+    }); 
+</script>
+</div>

@@ -1,0 +1,47 @@
+<div class="static4-elomus4{% if section.settings.bottom_padding %} padding-bottom{% endif %} {% if section.settings.bottom_border %} border-bottom{% endif %}" {% if section.settings.bg-image != blank %}style="background-image: url('{{ section.settings.bg-image | img_url: 'master' }}');" {% endif %}>
+  <div class="container">
+    <div class="module-title">
+      {% if section.settings.description != blank %} 
+      <p class="sub-title1">{{ section.settings.description }}</p>
+      {% endif %}
+      {% if section.settings.heading != blank %} 
+      <h2>{{ section.settings.heading }}</h2>
+      {% endif %}
+    </div>
+    <div class="row">
+      <div class="col col1 col-sm-6 col-xs-12">
+        {% if section.blocks.size > 0 %}
+        {% for block in section.blocks limit:6 %}
+        <div class="box box{{forloop.index}}">
+          <div class="text">
+            {% if block.settings.text1 != blank %} 
+            <h4>{{ block.settings.text1 }}</h4>
+            {% endif %}
+            {% if block.settings.text2 != blank %} 
+            <p>{{ block.settings.text2 }}</p>
+            {% endif %}
+          </div>
+          {% if block.settings.use_feature_icon %}
+            {% if block.settings.feature_icon != blank %}
+              <div class="icon-image">
+                <i class="fa {{block.settings.feature_icon }}"></i>
+              </div>
+            {% endif %}
+          {% else %}
+            {% if block.settings.image != blank %}
+              <div class="icon-image">
+                <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ block.settings.image | img_url: 'master' }}" class="" alt=""/>
+              </div>
+            {% endif %}
+          {% endif %}
+        </div>
+        {% if forloop.index == 3 %}
+      </div>
+      <div class="col col3 col-sm-6 col-xs-12">
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

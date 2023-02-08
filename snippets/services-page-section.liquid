@@ -1,0 +1,103 @@
+<div class="main-row about" data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="row">
+      {% if section.settings.heading != blank %}  
+      <div class="module-title">
+        <h2><span>{{ section.settings.heading }}</span></h2>
+      </div>
+      {% endif %}
+      {% if section.settings.description != blank %}  
+      <div class="module-description"><p>{{ section.settings.description }}</p></div>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+
+      {% for block in section.blocks %}
+      {% if block.type == 'video' %}
+
+      <div id="cmsblock-33" class="cmsblock">
+        <div class='description'>
+          <div class="our_story1">
+            <div class="static_video1" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-anchor-placement="top-top">
+              &nbsp;<br />
+              <div id="cms_play1"><img src="{{ 'playing_video.png' | asset_url }}" alt=""></div>
+              <img src="{% if block.settings.image != blank %}{{ block.settings.image | img_url: '1920x800' }}{% else %} {{ 'videobox.jpg' | asset_img_url: '1920x800' }} {% endif %}" class="img_static1" alt="">
+
+            </div>
+          </div>
+          <script>// <![CDATA[
+            $(document).ready(function(){
+              $('#cms_play1').click(function(){
+                $(this).hide('fast');
+
+                {% if block.settings.video_type == 'youtube' %}
+                $('.static_video1').append('<iframe class="added_video1" src="https://www.youtube.com/embed/{{ block.settings.video_src }}?rel=0&showinfo=0&autoplay={{ block.settings.video_autoplay }}" frameborder="0" allowfullscreen="" style="margin: 1em 1em 0 1em;"></iframe>');
+                                           {% elsif block.settings.video_type == 'vimeo' %}
+                                           $('.static_video1').append('<iframe class="added_video1" src="https://player.vimeo.com/video/{{ block.settings.video_src }}?color=ffffff&title=0&byline=0&portrait=0&autoplay={{ block.settings.video_autoplay }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+                                                                      {% elsif block.settings.video_type == 'mp4' %}
+                                                                      $('.static_video1').append('<video class="added_video1" controls autoplay width="100%" height="100%" poster="https://via.placeholder.com/1920x850/ffffff/ffffff" ><source src="{{ block.settings.video_src }}" type="video/mp4"></video>');
+                                                                      {% endif %}
+                                                                      });
+                                                                      });
+                                                                      // ]]>
+          </script>																																																																																										
+        </div>
+      </div>
+
+      {% elsif block.type == 'message_box' %}
+
+      <div class="module-description"><p>
+        {% if block.settings.description != blank %}
+        <p>{{ block.settings.description }}</p>
+        {% endif %}
+      </div>
+
+      {% else %}
+      <div class="row block">
+
+
+        {% case block.type %}
+
+        {% when 'single_service' %}
+        {% assign member_count = 1 %}
+        {% assign cols = '6 col-sm-offset-3' %}
+        {% when 'two_service' %}
+        {% assign member_count = 2 %}                
+        {% assign cols = 6 %}
+        {% when 'three_service' %}
+        {% assign member_count = 3 %}
+        {% assign cols = 4 %}
+        {% when 'four_service' %}
+        {% assign member_count = 4 %}                
+        {% assign cols = 3 %}
+        {% else %}
+
+        {% endcase %}
+
+        {% if block.settings.heading != blank %}  
+        <h2 class="text-center">{{ block.settings.heading }}</h2>
+        {% endif %}
+
+        {% for i in (1..member_count) %}
+
+        {% capture image %}image_{{ i }}{% endcapture %}
+        {% capture heading %}heading_{{ i }}{% endcapture %}
+        {% capture description %}description_{{ i }}{% endcapture %}
+        {% capture link %}link_{{ i }}{% endcapture %}
+
+        <div class="col-sm-{{ cols }} col-xs-12">
+          {% include 'page-grid-item' %}
+        </div>
+
+        {% endfor %}
+      </div>
+
+
+      {% endif %}
+
+      {% endfor %}
+      {% endif %}
+
+    </div>    
+  </div>
+</div> 
