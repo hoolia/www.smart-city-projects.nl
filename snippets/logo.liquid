@@ -1,0 +1,13 @@
+<div class="logo-container">
+  <div id="logo" {% if section.settings.logo_padding != '35px 0px 35px 0px' %}style="padding:{{section.settings.logo_padding}}"{% endif %}>
+    {% if section.settings.logo %}
+    <a href="/" itemprop="url">
+      <img src="{{ section.settings.logo | img_url: 'master' }}"
+           alt="{{ section.settings.logo.alt | default: shop.name }}"
+           itemprop="logo" class="img-responsive logo"  />
+    </a>
+    {% else %}
+    <a href="/" itemprop="url" class="navbar-brand img-responsive">{{ shop.name }}</a>
+    {% endif %}  
+  </div>
+</div>

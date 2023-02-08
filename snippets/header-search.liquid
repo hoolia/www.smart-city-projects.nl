@@ -1,0 +1,18 @@
+{% assign layout = section.settings.header_layout | strip %}
+<div id="search" class="input-group">
+  <div class="btn-group">
+    <div class="dropdown-toggle search-button" data-toggle="dropdown"></div>
+    <div class="dropdown-menu search-content" >
+      <button class="button-close"><i class="fa fa-times"></i></button>
+      <div class="container">
+        <div class="inner">
+          <input type="text" name="q" id="text-search" value="{{ search.terms | escape }}" placeholder="{{ 'layout.search_bar.placeholder' | t }}" class="form-control input-lg" aria-label="{{ 'layout.search_bar.placeholder' | t }}" />
+          <ul class="search-results" style="display:none";></ul>
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-default btn-lg"></button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

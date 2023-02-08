@@ -1,0 +1,7 @@
+{% if paginate.next %}
+<div onclick="loadMore()" id="more" class="text-center"> 
+  <a class="button btn-cart"><span>{{ 'products.pagination.load_more' | t }}</span>
+  <i class='fa fa-spinner fa-spin' style="display:none;"></i>
+  </a>
+</div>
+{% endif %}

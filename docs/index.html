@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="layoutmode" content="standard" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="renderer" content="webkit" />
+    <link rel="shortcut icon" href="https://jsob20d3288-pic2.eznetonline.com/upload/Sans_titre-removebg-preview.png?_t=055629" type="image/x-icon" />
+    <link rel="Bookmark" href="https://jsob20d3288-pic2.eznetonline.com/upload/Sans_titre-removebg-preview.png?_t=055629" />
+    <link href="/public/fontico/iconfont.css" rel="stylesheet" type="text/css" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="./static.eznetonline.com//webquick/public/bootstrap/index.css" rel="stylesheet" type="text/css" />
+    <link href="./static.eznetonline.com//webquick/public/inner/animate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+
+
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const titleNavs = document.querySelectorAll('.title-nav');
+            const swiperItems = document.querySelectorAll('.swiper_item');
+
+            swiperItems[0].classList.add('show_animate');
+            for (let i = 0; i < titleNavs.length; i++) {
+                titleNavs[i].addEventListener('click', function() {
+                    // remove the "active" class from all the title-nav elements
+                    for (let j = 0; j < titleNavs.length; j++) {
+                        titleNavs[j].classList.remove('active');
+                    }
+
+                    // add the "active" class to the clicked title-nav element
+                    this.classList.add('active');
+
+                    // remove the "show_animate" class from all the swiper_item elements
+                    for (let j = 0; j < swiperItems.length; j++) {
+                        swiperItems[j].classList.remove('show_animate');
+                    }
+
+                    // add the "show_animate" class to the corresponding swiper_item element
+                    swiperItems[i].classList.add('show_animate');
+                });
+            }
+            document.querySelector(".video__icon").addEventListener("click", function() {
+                var video = document.querySelector("video");
+                if (video.requestFullscreen) {
+                    video.requestFullscreen();
+                } else if (video.mozRequestFullScreen) {
+                    video.mozRequestFullScreen();
+                } else if (video.webkitRequestFullscreen) {
+                    video.webkitRequestFullscreen();
+                } else if (video.msRequestFullscreen) {
+                    video.msRequestFullscreen();
+                }
+            });
+            document.addEventListener("fullscreenchange", function() {
+                if (!document.fullscreenElement) {
+                    document.querySelector("video").pause();
+                }
+                if (document.fullscreenElement) {
+                    document.querySelector("video").play();
+                }
+            });
+        });
+    </script>
+    <title>Hoolia Energy</title>
+
+    <script type="text/javascript" src="http://static.eznetonline.com//webquick/public/??vue.min.js,jq/core.js?v=16637260"></script>
+
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white !important;
+        }
+        
+        .slide_img {
+            width: 315px !important;
+            border-radius: 14px !important;
+            display: block !important;
+            height: 216px !important;
+            -o-object-fit: cover !important;
+            object-fit: cover !important;
+        }
+        
+        .mySwiper {
+            display: flex;
+            overflow-x: hidden;
+            scroll-snap-type: x mandatory;
+            width: 90%;
+            position: relative;
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+            z-index: 1;
+            padding-left: 20rem;
+            padding-right: 20rem;
+        }
+        
+        .swiper-slide:not(.active) .layer-mask {
+            opacity: 0.6;
+        }
+        
+        .gallerie img {
+            width: 582px!important;
+            height: auto !important;
+            transform: scale(1);
+            border-radius: 5px;
+            display: block;
+            border: none;
+            margin: 0 auto;
+        }
+        
+        .swiper-slide.swiper-slide-active img {
+            transform: scale(1.2);
+            transition: transform 1.8s ease;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        .main-timeline .timeline-year {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+    </style>
+    <style id="gstyles" type="text/css">
+        .Jso-Main-Col {
+            background-color: #008aff !important;
+        }
+        
+        .Jso-Main-Border-Col {
+            border-color: #008aff !important;
+        }
+        
+        .Jso-Assistance-Col1 {
+            background: #008117 !important;
+        }
+        
+        .Jso-Assistance-Border-Col1 {
+            border-color: #008117 !important;
+        }
+        
+        .Jso-Assistance-Col2 {
+            background: #f7f7f7 !important;
+        }
+        
+        .Jso-Assistance-Border-Col2 {
+            border-color: #f7f7f7 !important;
+        }
+        
+        .Jso-Assistance-Col3 {
+            background: #fff !important;
+        }
+        
+        .Jso-Assistance-Border-Col3 {
+            border-color: #fff !important;
+        }
+        
+        .Jso-Assistance-Col4 {
+            background: transparent !important;
+        }
+        
+        .Jso-Assistance-Border-Col4 {
+            border-color: transparent !important;
+        }
+        
+        .Jso-Assistance-Col5 {
+            background: #008117 !important;
+        }
+        
+        .Jso-Assistance-Border-Col5 {
+            border-color: #008117 !important;
+        }
+        
+        .Jso-Assistance-Col6 {
+            background: #4C342A !important;
+        }
+        
+        .Jso-Assistance-Border-Col6 {
+            border-color: #4C342A !important;
+        }
+        
+        .Jso-Assistance-Col7 {
+            background: #FE500C !important;
+        }
+        
+        .Jso-Assistance-Border-Col7 {
+            border-color: #FE500C !important;
+        }
+        
+        .cstlayer:not(.isnav) a {
+            color: #008117;
+        }
+        
+        .cstlayer:not(.isnav) a:hover {
+            color: #000;
+        }
+        
+        .cartnum,
+        .scrollview::-webkit-scrollbar-thumb,
+        .newscroll20221115::-webkit-scrollbar-thumb,
+        .firmorder .djdetail_list::-webkit-scrollbar-thumb {
+            background-color: #008aff
+        }
+        
+        .scrollview::-webkit-scrollbar-track,
+        .newscroll20221115::-webkit-scrollbar-track,
+        .firmorder .djdetail_list::-webkit-scrollbar-track {
+            background-color: rgba(0, 138, 255, 0.1)
+        }
+        
+        .button:hover,
+        .firmorder .adddresstexthover:hover .adddresstext,
+        .settlebtm,
+        .cartbottomsum .savelogi,
+        .cert_container .uploadquestion:hover {
+            background: #008aff
+        }
+        
+        .order_img,
+        .product_imgp,
+        .settlebtm.disable,
+        .cartbottomsum .savelogi.disable {
+            background: rgba(0, 138, 255, 0.1)
+        }
+        
+        .head {
+            background: rgba(0, 138, 255, 0.1)
+        }
+        
+        .button {
+            border: 1px solid #008aff;
+            color: #008aff;
+        }
+        
+        .adddresstext,
+        .nodata_pos>button,
+        .nodata_pos>button,
+        .cart-empty>button,
+        .yfhcolor,
+        .upload_cert {
+            border: 1px solid #008aff;
+            color: #008aff;
+        }
+        
+        .firmorder .adddresstext,
+        .adddressbigtxt,
+        .paystyleselect.newpaystyleselect {
+            border: 1px dashed #008aff;
+            color: #008aff;
+        }
+        
+        .firmorder_cont .tab_list,
+        .firmorder .border008a {
+            border: 1px solid #008aff;
+        }
+        
+        .tab_list,
+        .pay_img {
+            background-image: linear-gradient(rgba(255, 255, 255), rgba(0, 138, 255, 0.1));
+        }
+        
+        .current,
+        .preage:hover,
+        .nextage:hover {
+            background: linear-gradient(#008aff, rgba(0, 138, 255, 0.6));
+        }
+        
+        .act_radios,
+        .base_actradio {
+            background-image: linear-gradient(#008aff, rgba(0, 138, 255, 0.6));
+        }
+        
+        .act_radios,
+        .base_actradio {
+            box-shadow: 2px 4px 8px rgba(0, 138, 255, 0.12);
+        }
+        
+        .tab_list .tabtxt,
+        .iconsgroup .iconitem:hover,
+        .title_wind,
+        .money_num3,
+        .center_ul>li:hover>a,
+        .down_ul_item:hover,
+        .nav10spantrform,
+        .ip_yfhcolor,
+        .hovermaincolor:hover,
+        .setsitem:hover,
+        .Membericon,
+        .prd_link:hover,
+        .no_payment_method,
+        .Offlinepayimg,
+        .upload_cert a,
+        .upload_cert:hover {
+            color: #008aff
+        }
+        
+        .color008a,
+        .activecolor,
+        .pagenum_pre,
+        .upload_cert {
+            color: #008aff !important
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="./public/webquick/public/vplugin/slider3/slider3.css?_r=16703190">
+    <link rel="stylesheet" type="text/css" href="./public/webquick/public/vplugin/video5/video5.css?_r=16727942">
+    <link rel="stylesheet" type="text/css" href="./public/webquick/public/vplugin/aboutus4/aboutus4.css?_r=16503522">
+    <link rel="stylesheet" type="text/css" href="./public/webquick/public/vplugin/pictures1/pictures1.css?_r=16709234">
+    <link rel="stylesheet" type="text/css" href="./public/webquick/public/vplugin/timeline7/timeline7.css?_r=16685842">
+    <link rel="stylesheet" type="text/css" href="./public/webquick/public/vplugin/html/html.css?_r=16575258">
+    <link rel="stylesheet" type="text/css" href="./public/webquick/public/vplugin/timeline4/timeline4.css?_r=16503522">
+    <style id="layer356F8356B3FBE17294C0259809D849D6_timeline4" type="text/css">
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(1) .timeline-content:after {
+            background-color: #f1f1f1
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(1) .timeline-year {
+            background-color: #f1f1f1
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(1) .timeline-year:after {
+            border-color: #f1f1f1;
+            border-left-color: transparent;
+            pointer-events: none;
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(1) .timeline-content {
+            border-color: #f1f1f1
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(1) .timeline-content {
+            background-color: transparent
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(2) .timeline-content:after {
+            background-color: #f1f1f1
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(2) .timeline-year {
+            background-color: #f1f1f1
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(2) .timeline-year:after {
+            border-color: #f1f1f1;
+            border-left-color: transparent;
+            pointer-events: none;
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(2) .timeline-content {
+            border-color: #f1f1f1
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(2) .timeline-content {
+            background-color: transparent
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(3) .timeline-content:after {
+            background-color: #f1f1f1
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(3) .timeline-year {
+            background-color: #f1f1f1
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(3) .timeline-year:after {
+            border-color: #f1f1f1;
+            border-left-color: transparent;
+            pointer-events: none;
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(3) .timeline-content {
+            border-color: #f1f1f1
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(3) .timeline-content {
+            background-color: transparent
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(4) .timeline-content:after {
+            background-color: #f1f1f1
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(4) .timeline-year {
+            background-color: #f1f1f1
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(4) .timeline-year:after {
+            border-color: #f1f1f1;
+            border-left-color: transparent;
+            pointer-events: none;
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(4) .timeline-content {
+            border-color: #f1f1f1
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(4) .timeline-content {
+            background-color: transparent
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(5) .timeline-content:after {
+            background-color: #00f100
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(5) .timeline-year {
+            background-color: #00f100
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(5) .timeline-year:after {
+            border-color: #00f100;
+            border-left-color: transparent;
+            pointer-events: none;
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(5) .timeline-content {
+            border-color: #00f100
+        }
+        
+        #layer356F8356B3FBE17294C0259809D849D6 .main-timeline .timeline:nth-child(5) .timeline-content {
+            background-color: transparent
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./public/webquick/public/vplugin/graphic5/graphic5.css?_r=16503522">
+    <link rel="stylesheet" type="text/css" href="./public/webquick/public/vplugin/footer1/footer1.css?_r=16539032">
+</head>
+
+<body style="overflow-x: hidden;">
+    <link id="submenu_css" rel="stylesheet" type="text/css" href="./public/webquick/public/submenu/bootstrap-submenu.min.css">
+    <link id="swiper_css-1675105131176" rel="stylesheet" type="text/css" href="./public/webquick/public/swiper/swiper.min.css">
+
+
+
+
+    <div data-v-cdd72b66="" id="approot">
+        <!---->
+        <!---->
+        <!---->
+        <div data-v-cdd72b66="" class="bootstrap_content">
+            <div data-v-cdd72b66="" id="bsmain" class="content_l default_conte">
+                <div data-v-cdd72b66="" class="iphone">
+                    <div data-v-cdd72b66="" class="iphone_top_radio" style="display: none;"></div>
+                    <!---->
+                    <div data-v-3f5bad52="" data-v-cdd72b66="" class="scroll_wrap ihpone_c nc">
+                        <!---->
+                        <!---->
+                        <div data-v-3f5bad52="" id="canvas" class="scroll_cont" style="height: auto; min-height: 480.4px;">
+                            <div data-v-3f5bad52="" id="layerPPEI08DWG5O6E55NHQA8IKWKZRNN9Y97" data-role="slider3" class="cstlayer">
+                                <!---->
+                                <div data-v-53c50bb0="" data-v-3f5bad52="" id="slider3scroll-1675105131176" class="slider3-div" style="padding: 0px;">
+                                    <section data-v-53c50bb0="" class="speebHead">
+                                        <nav data-v-53c50bb0="" id="sticky-navbar" class="navbar navbar-default navbar-fixed-top time03 newslider3z2" style="margin-top: 35px;">
+                                            <div data-v-53c50bb0="" class="container containerM PC_FLEX">
+                                                <div data-v-53c50bb0="" class="navbar-header">
+                                                    <a data-v-53c50bb0="" href="/" class="navbar-brand" style="--img-height:50px;">
+                                                        <div data-v-129dd9bd="" data-v-53c50bb0="" class="imgbox">
+                                                            <!---->
+                                                            <a data-v-129dd9bd="" href="/home#layerPPEI08DWG5O6E55NHQA8IKWKZRNN9Y97" target="_self"><img data-v-129dd9bd="" title="" class="w100slider3" style="height: 50px;" data-psize="{&quot;w&quot;:164.575,&quot;h&quot;:50}" data-src="./public/upload/hoolia no face.png?_t=055315?_t=055315?_t=055315?_t=055315?_t=055315?_t=055315?_t=055315?_t=055315?_t=055315?_t=055315?_t=055315?_t=055315?_t=055315"
+                                                                    src="./public/assets/hoolia_green.png" lazy="loaded"></a>
+
+                                                        </div>
+                                                    </a>
+                                                    <button data-v-53c50bb0="" type="button" data-toggle="collapse" data-target="#nav3-collapse-1675105131176" aria-expanded="false" class="navbar-toggle collapsed time03 slider3btn"><span
+                                                            data-v-53c50bb0="" class="icon-bar time03"
+                                                            style="background-color: rgb(255, 255, 255);"></span> <span
+                                                            data-v-53c50bb0="" class="icon-bar time03"
+                                                            style="background-color: rgb(255, 255, 255);"></span></button>
+                                                </div>
+                                                <div data-v-53c50bb0="" id="nav3-collapse-1675105987204" class="collapse navbar-collapse PC_right">
+                                                    <ul data-v-53c50bb0="" class="nav navbar-nav navbar-right PC_FLEXED">
+                                                        <li data-v-53c50bb0="" class="Jso-Navigation-Menu newhover_show "><a data-v-53c50bb0="" href="/home" target="_self" style="color: rgb(66, 219, 69); border-bottom: 1px solid rgb(66, 219, 69);">Home</a>
+                                                        </li>
+                                                        <li data-v-53c50bb0="" class="Jso-Navigation-Menu newhover_show "><a data-v-53c50bb0="" href="/contact.html" target="_self" style="color: rgb(255, 255, 255);">Contact</a></li>
+                                                        <li data-v-53c50bb0="" class="Jso-Navigation-Menu newhover_show "><a data-v-53c50bb0="" href="/faq.html" target="_self" style="color: rgb(255, 255, 255);">FAQ</a></li>
+                                                        <!---->
+                                                        <!---->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </section>
+                                    <section data-v-53c50bb0="" class="speebBanner time03 slider3-div-banner" style="height: 726px;">
+                                        <div data-v-53c50bb0="" id="swiper-1675460988740" class="swiper-container speebBanner-swiper norelative swiper-container-initialized swiper-container-horizontal" style="cursor: grab;">
+                                            <div data-v-53c50bb0="" class="swiper-wrapper norelative" style="transition-duration: 0ms; transform: translate3d(-2550px, 0px, 0px);">
+                                                <div data-v-53c50bb0="" class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-prev" style="background-image: url(&quot;http://jsob20d3288.pic2.eznetonline.com/upload/almere-shadow.jpg?_t=431925?_t=431925&quot;); width: 2550px;"
+                                                    data-swiper-slide-index="0">
+                                                    <div data-v-53c50bb0="" class="container containerM hei100">
+                                                        <div data-v-53c50bb0="" class="row">
+                                                            <div data-v-53c50bb0="" class="col-md-12">
+                                                                <div data-v-53c50bb0="" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.8s" swiper-animate-delay="0.5s" class="text ani" style="visibility: hidden;" swiper-animate-style-cache="visibility: hidden;">
+                                                                    <div data-v-53c50bb0="" class="h1-div Jso-L-Title" data-top="layerPPEI08DWG5O6E55NHQA8IKWKZRNN9Y97">
+                                                                        <h2 class="sub-title">&nbsp;</h2>
+                                                                        <h2 class="sub-title"><span style="color: #f7f7f7;"><strong><span
+                                                                                        style="font-size: 4.8rem;">Share
+                                                                                        Energy,
+                                                                                    </span></strong><strong><span
+                                                                                        style="font-size: 4.8rem;">Save
+                                                                                        The
+                                                                                        Environment</span></strong></span>
+                                                                        </h2>
+                                                                    </div>
+                                                                    <div data-v-53c50bb0="" class="h2-div Jso-M-Title" data-top="layerPPEI08DWG5O6E55NHQA8IKWKZRNN9Y97">
+                                                                        <p><span style="color: #f7f7f7;">Creating
+                                                                                Self-sustaining
+                                                                                Communities</span><br><span style="color: #f7f7f7;">For you. For
+                                                                                your city. For the whole planet</span>
+                                                                        </p>
+                                                                        <p>&nbsp;</p>
+                                                                        <p>&nbsp;</p>
+                                                                        <p>&nbsp;</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-v-53c50bb0="" swiper-animate-effect="fadeInUp" swiper-animate-duration="3s" swiper-animate-delay="0.5s" class="speebBtn a ani slider3Btna slider3_btn_left" style="visibility: hidden;" swiper-animate-style-cache="visibility: hidden;">
+                                                                    <div data-v-53c50bb0="" nocolor="true" class="slider3_btn Jso-Btn-Rounded Jso-Btn Jso-Assistance-Col4" data-top="layerPPEI08DWG5O6E55NHQA8IKWKZRNN9Y97" style="border: 1px solid rgb(255, 255, 255); border-radius: 5px; visibility: hidden;">
+                                                                        Learn More</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-v-53c50bb0="" class="swiper-slide swiper-slide-active swiper-slide-duplicate-next swiper-slide-duplicate-prev" style="background-image: url(./public/assets/Almere-bg.jpg); width: 1550px;" data-swiper-slide-index="0">
+                                                    <div data-v-53c50bb0="" class="container containerM hei100">
+                                                        <div data-v-53c50bb0="" class="row">
+                                                            <div data-v-53c50bb0="" class="col-md-12">
+                                                                <div data-v-53c50bb0="" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.8s" swiper-animate-delay="0.5s" class="text ani       fadeInUp animated" style="visibility: visible; animation-duration: 1.8s; animation-delay: 0.5s;animation-duration:1.8s;-webkit-animation-duration:1.8s;animation-delay:0.5s;-webkit-animation-delay:0.5s;"
+                                                                    swiper-animate-style-cache="visibility: visible;animation-duration:1.8s;-webkit-animation-duration:1.8s;animation-delay:0.5s;-webkit-animation-delay:0.5s;">
+                                                                    <div data-v-53c50bb0="" class="h1-div Jso-L-Title" data-top="layerPPEI08DWG5O6E55NHQA8IKWKZRNN9Y97">
+                                                                        <h2 class="sub-title">&nbsp;</h2>
+                                                                        <h2 class="sub-title"><span style="color: #f7f7f7;"><strong><span
+                                                                                        style="font-size: 4.8rem;">Share
+                                                                                        Energy,
+                                                                                    </span></strong><strong><span
+                                                                                        style="font-size: 4.8rem;">Save
+                                                                                        The
+                                                                                        Environment</span></strong></span>
+                                                                        </h2>
+                                                                    </div>
+                                                                    <div data-v-53c50bb0="" class="h2-div Jso-M-Title" data-top="layerPPEI08DWG5O6E55NHQA8IKWKZRNN9Y97">
+                                                                        <p><span style="color: #f7f7f7;">Creating
+                                                                                Self-sustaining
+                                                                                Communities</span><br><span style="color: #f7f7f7;">For you. For
+                                                                                your city. For the whole planet</span>
+                                                                        </p>
+                                                                        <p>&nbsp;</p>
+                                                                        <p>&nbsp;</p>
+                                                                        <p>&nbsp;</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-v-53c50bb0="" swiper-animate-effect="fadeInUp" swiper-animate-duration="3s" swiper-animate-delay="0.5s" class="speebBtn a ani slider3Btna slider3_btn_left       fadeInUp animated" style="visibility: visible; animation-duration: 3s; animation-delay: 0.5s;animation-duration:3s;-webkit-animation-duration:3s;animation-delay:0.5s;-webkit-animation-delay:0.5s;"
+                                                                    swiper-animate-style-cache="visibility: visible;animation-duration:3s;-webkit-animation-duration:3s;animation-delay:0.5s;-webkit-animation-delay:0.5s;">
+                                                                    <div data-v-53c50bb0="" nocolor="true" class="slider3_btn Jso-Btn-Rounded Jso-Btn Jso-Assistance-Col4" data-top="layerPPEI08DWG5O6E55NHQA8IKWKZRNN9Y97" style="border: 1px solid rgb(255, 255, 255); border-radius: 5px; visibility: hidden;">
+                                                                        Learn More</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-v-53c50bb0="" class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-next" style="background-image: url(./public/assets/Almere-bg.jpg); width: 2550px;" data-swiper-slide-index="0">
+                                                    <div data-v-53c50bb0="" class="container containerM hei100">
+                                                        <div data-v-53c50bb0="" class="row">
+                                                            <div data-v-53c50bb0="" class="col-md-12">
+                                                                <div data-v-53c50bb0="" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.8s" swiper-animate-delay="0.5s" class="text ani" style="visibility: hidden;" swiper-animate-style-cache="visibility: hidden;">
+                                                                    <div data-v-53c50bb0="" class="h1-div Jso-L-Title" data-top="layerPPEI08DWG5O6E55NHQA8IKWKZRNN9Y97">
+                                                                        <h2 class="sub-title">&nbsp;</h2>
+                                                                        <h2 class="sub-title"><span style="color: #f7f7f7;"><strong><span
+                                                                                        style="font-size: 4.8rem;">Share
+                                                                                        Energy,
+                                                                                    </span></strong><strong><span
+                                                                                        style="font-size: 4.8rem;">Save
+                                                                                        The
+                                                                                        Environment</span></strong></span>
+                                                                        </h2>
+                                                                    </div>
+                                                                    <div data-v-53c50bb0="" class="h2-div Jso-M-Title" data-top="layerPPEI08DWG5O6E55NHQA8IKWKZRNN9Y97">
+                                                                        <p><span style="color: #f7f7f7;">Creating
+                                                                                Self-sustaining
+                                                                                Communities</span><br><span style="color: #f7f7f7;">For you. For
+                                                                                your city. For the whole planet</span>
+                                                                        </p>
+                                                                        <p>&nbsp;</p>
+                                                                        <p>&nbsp;</p>
+                                                                        <p>&nbsp;</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-v-53c50bb0="" swiper-animate-effect="fadeInUp" swiper-animate-duration="3s" swiper-animate-delay="0.5s" class="speebBtn a ani slider3Btna slider3_btn_left" style="visibility: hidden;" swiper-animate-style-cache="visibility: hidden;">
+                                                                    <div data-v-53c50bb0="" nocolor="true" class="slider3_btn Jso-Btn-Rounded Jso-Btn Jso-Assistance-Col4" data-top="layerPPEI08DWG5O6E55NHQA8IKWKZRNN9Y97" style="border: 1px solid rgb(255, 255, 255); border-radius: 5px; visibility: hidden;">
+                                                                        Learn More</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-v-53c50bb0="" id="swiperpag-1675460988740" class="swiper-pagination swiper-pagination-custom"> <span class="swiper-pagination-bullet swiper-pagination-bullet-active" role="button" style="background-color:transparent"></span></div>
+                                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                        </div>
+                                    </section>
+                                </div>
+                                <!---->
+                                <!---->
+                            </div>
+                            <div data-v-3f5bad52="" id="layerED6854433301648AE6AF2BA7864CC971" data-role="video5" class="cstlayer" style="background-color: rgb(255, 255, 255);">
+                                <div data-v-3f5bad52="" class="bgoverlay">
+                                    <!---->
+                                </div>
+                                <div data-v-434c247c="" data-v-3f5bad52="" class="Video5 Video5_padding_t_b" style="padding: 90px 0px;">
+                                    <div data-v-434c247c="" class="container containerM" style="--btnbghcolor:#008AFF; --btnhcolor:#fff; --showspliter:0; --titlebcolor:#008AFF;">
+                                        <div data-v-434c247c="" class="Video5_content-wrapper">
+                                            <div data-v-434c247c="" class="row align-items-center">
+                                                <div data-v-434c247c="" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div data-v-434c247c="" class="at__left mb-30">
+                                                        <div data-v-434c247c="" class="at__big-img">
+                                                            <div data-v-129dd9bd="" data-v-434c247c="" class="imgbox">
+                                                                <!----><img data-v-129dd9bd="" title="" class="at__big-img_size2" data-psize="{&quot;w&quot;:567,&quot;h&quot;:645}" data-src="" src="./public/assets/greenbuilding.jpg" lazy="loaded">
+                                                                <!---->
+                                                            </div>
+                                                        </div>
+                                                        <div data-v-434c247c="" class="at__smll-img">
+
+
+                                                            <img data-v-434c247c="" src="./public/assets/hoolia-video.png" alt="" class="at__big-img_size1">
+
+                                                            <a data-v-434c247c="" class="video__icon">
+
+                                                                <img data-v-434c247c="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAJFBMVEVHcEwgKjYhLDchKzUgKzYgKjYhKzYhKzYfKzYhKzYhKzUhKzaa4IbhAAAAC3RSTlMAgBxsvJqN3UTmTQsX4qIAAABXSURBVCjPY2CgDmBSQBOQ3oYmIr27GF1gtwe6wO4kdIHtBmgCu7c0oAns3qqAJrB7MrrAbi90gd0B6AIbCQoEEDB0MgGHoTsdw3NJBAKomEAgY0QDpQAAX/NUw9QOmSsAAAAASUVORK5CYII="
+                                                                    class="video5_play">
+
+
+                                                            </a>
+                                                            <!--<video width="250px" height="250px" id="myvideo" style="margin-top: -250px;">
+                                                                <source src="./public/assets/Hoolia-Presentation-video-v1.mp4" type="video/mp4">
+                                                                Your browser does not support the video tag.
+                                                            </video>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-v-434c247c="" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div data-v-434c247c="" class="mt-25">
+                                                        <div data-v-434c247c="" class="sec__title"><span data-v-434c247c="" class="Jso-L-Title" data-top="layerED6854433301648AE6AF2BA7864CC971" style="margin-bottom: 10px;"><span
+                                                                    style="color: #42db44;"><strong>Welcome to Hoolia
+                                                                        Energy</strong></span></span>
+                                                            <div data-v-434c247c="" class="video5_bigtile Jso-M-Title" data-top="layerED6854433301648AE6AF2BA7864CC971" style="margin-bottom: 20px;">
+                                                                <p><strong>Revolutionizing the industry with its
+                                                                        "Distributed DataCenter" based on 100% renewable
+                                                                        energy!</strong></p>
+                                                            </div>
+                                                            <div data-v-434c247c="" class="divp Jso-S-Title" data-top="layerED6854433301648AE6AF2BA7864CC971">
+                                                                <p>With our deepest belief in the concept of circular economy, we have generated a brilliant idea:
+                                                                    <br>Repurpose waste heat from DataCenters to heat Office Buildings, by bringing small “DataCenter modules” running on 100% pure Green Renewable &amp; Recycled Energy!
+                                                                </p>
+                                                                <p>&nbsp;</p>
+                                                                <p>Ending the cycle of Big Centralized DataCenter. It is time to create micro-grid communities and give power back to the people.</p>
+                                                                <p>&nbsp;</p>
+                                                                <p>Watch this video for more information.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div data-v-434c247c="" style="display: flex; justify-content: left;">
+                                                            <!---->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-434c247c="" class="video5_bgopacity"></div>
+                                        <div data-v-434c247c="" class="video5close"></div> <video data-v-434c247c="" id="videojs-1675105132115" controls="controls" controlslist="nodownload" preload="auto" class="video5control">
+                                            <source data-v-434c247c=""
+                                                src="./public/assets/Hoolia-Presentation-video-v1.mp4"
+                                                type="video/mp4">
+                                            <p data-v-434c247c="" class="vjs-no-js">To view this video please enable
+                                                JavaScript, and consider upgrading to a web browser.</p>
+                                        </video>
+                                    </div>
+                                </div>
+                                <!---->
+                                <!---->
+                            </div>
+                            <div data-v-3f5bad52="" id="layer46557221273FFE244DD98D09BA9DBE87" data-role="aboutus4" class="cstlayer" style="background-color: rgb(66, 219, 68);">
+                                <!---->
+                                <section data-v-3f5bad52="" class="time05 padA about4 plug-padding-tb" style="padding: 50px 0px;">
+                                    <div class="container containerM">
+                                        <div class="about4-container-row">
+                                            <div class="col-12 about4-centert">
+                                                <div class="about4title1 Jso-L-Title" style="" data-top="layer46557221273FFE244DD98D09BA9DBE87">
+                                                    <p><strong>The reasons behind this idea</strong></p>
+                                                </div>
+                                                <div class="about4title2 M-Title-padding-b Jso-S-Title" style="margin-bottom: 28px;" data-top="layer46557221273FFE244DD98D09BA9DBE87">
+                                                    <p>&nbsp;</p>
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                                <!---->
+                                            </div>
+                                        </div>
+                                        <div class="about4-center" style="">
+                                            <div class="col-sm-12 col-md-6 col-lg-6 about4sbottom newabout4">
+                                                <div class="about4item">
+                                                    <div class="about4-img" style="background: rgb(248, 249, 250);">
+                                                        <div data-v-129dd9bd="" class="imgbox">
+                                                            <!----><img data-v-129dd9bd="" title="" class="about4-img-div" data-psize="{&quot;w&quot;:15,&quot;h&quot;:110}" data-src="./public/upload/icons8-oil-industry-100_paly.png?_t=318885?_t=318885?_t=318885?_t=318885"
+                                                                src="./public/assets/oil.png" lazy="loaded">
+                                                            <!---->
+                                                        </div>
+                                                    </div>
+                                                    <div class="about4-box">
+                                                        <div class="about4-box1 Jso-M-Title" data-top="layer46557221273FFE244DD98D09BA9DBE87">
+                                                            <div class="tit Jso-M-Title" data-v-4326615a="" data-top="layer456B3523C3059245EC69DF7249A891EB">
+                                                                <p><span style="color: #42db44;"><strong>Economical
+                                                                            Risk</strong></span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="about4-box2 Jso-Text" data-top="layer46557221273FFE244DD98D09BA9DBE87">
+                                                            <p>Gas is a finite resource, and increasing reliance on it could contribute to a global energy insecurity</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 col-lg-6 about4sbottom newabout4">
+                                                <div class="about4item">
+                                                    <div class="about4-img" style="background: rgb(248, 249, 250);">
+                                                        <div data-v-129dd9bd="" class="imgbox">
+                                                            <!----><img data-v-129dd9bd="" title="" class="about4-img-div" data-psize="{&quot;w&quot;:15,&quot;h&quot;:110}" data-src="./public/upload/icons8-average-price-100 (1)_fpm1.png?_t=318915?_t=318915?_t=318915?_t=318915"
+                                                                src="./public/assets/dollarcoin.png" lazy="loaded">
+                                                            <!---->
+                                                        </div>
+                                                    </div>
+                                                    <div class="about4-box">
+                                                        <div class="about4-box1 Jso-M-Title" data-top="layer46557221273FFE244DD98D09BA9DBE87">
+                                                            <p style="text-align: left;"><span style="color: #42db44;"><strong>Cost</strong></span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="about4-box2 Jso-Text" data-top="layer46557221273FFE244DD98D09BA9DBE87">
+                                                            <ul class="container containerM" data-v-4326615a="">
+                                                                <li class="col-xs-12 col-sm-3 col-md-3" data-v-4326615a="">
+                                                                    <div class="sub Jso-Text" data-v-4326615a="" data-top="layer456B3523C3059245EC69DF7249A891EB">
+                                                                        <p style="text-align: left;">Prices can be volatile, and companies may be subject to price increases over time. Additionally, there may be costs associated with installing and maintaining natural gas infrastructure
+                                                                        </p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="col-xs-12 col-sm-3 col-md-3" data-v-4326615a="">
+                                                                    <div class="imgbox" data-v-129dd9bd="" data-v-4326615a="">&nbsp;</div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 col-lg-6 about4sbottom newabout4">
+                                                <div class="about4item">
+                                                    <div class="about4-img" style="background: rgb(248, 249, 250);">
+                                                        <div data-v-129dd9bd="" class="imgbox">
+                                                            <!----><img data-v-129dd9bd="" title="" class="about4-img-div" data-psize="{&quot;w&quot;:15,&quot;h&quot;:110}" data-src="./public/upload/icons8-reputation-100 (2)_u45f.png?_t=318934?_t=318934?_t=318934?_t=318934"
+                                                                src="./public/assets/contractstar.png" lazy="loaded">
+                                                            <!---->
+                                                        </div>
+                                                    </div>
+                                                    <div class="about4-box">
+                                                        <div class="about4-box1 Jso-M-Title" data-top="layer46557221273FFE244DD98D09BA9DBE87">
+                                                            <div class="tit Jso-M-Title" data-v-4326615a="" data-top="layer456B3523C3059245EC69DF7249A891EB">
+                                                                <p><span style="color: #42db44;"><strong>Reputation</strong></span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="about4-box2 Jso-Text" data-top="layer46557221273FFE244DD98D09BA9DBE87">
+                                                            <ul class="container containerM" data-v-4326615a="">
+                                                                <li class="col-xs-12 col-sm-3 col-md-3" data-v-4326615a="">
+                                                                    <div class="sub Jso-Text" data-v-4326615a="" data-top="layer456B3523C3059245EC69DF7249A891EB">
+                                                                        <p style="text-align: left;">Companies that use natural gas may be perceived as contributing to environmental and climate change, and could face backlash from consumers, investors, or other stakeholders</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="col-xs-12 col-sm-3 col-md-3" data-v-4326615a="">
+                                                                    <div class="imgbox" data-v-129dd9bd="" data-v-4326615a="">&nbsp;</div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 col-lg-6 about4sbottom newabout4">
+                                                <div class="about4item">
+                                                    <div class="about4-img" style="background: rgb(248, 249, 250);">
+                                                        <div data-v-129dd9bd="" class="imgbox">
+                                                            <!----><img data-v-129dd9bd="" title="" class="about4-img-div" data-psize="{&quot;w&quot;:15,&quot;h&quot;:110}" data-src="./public/upload/icons8-co2-reduction-100 (1)_0bkb.png?_t=318958?_t=318958?_t=318958?_t=318958"
+                                                                src="./public/assets/co2.png" lazy="loaded">
+                                                            <!---->
+                                                        </div>
+                                                    </div>
+                                                    <div class="about4-box">
+                                                        <div class="about4-box1 Jso-M-Title" data-top="layer46557221273FFE244DD98D09BA9DBE87">
+                                                            <div class="tit Jso-M-Title" data-v-4326615a="" data-top="layer456B3523C3059245EC69DF7249A891EB">
+                                                                <p><span style="color: #42db44;"><strong>Changing
+                                                                            Plans</strong></span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="about4-box2 Jso-Text" data-top="layer46557221273FFE244DD98D09BA9DBE87">
+                                                            <p>The Dutch Government aims to reduce CO2 emissions with a whopping 49% by 2030. The price of natural gas will be higher, and as a result, so will the electricity price.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!---->
+                                <!---->
+                            </div>
+                            <div data-v-3f5bad52="" id="layer4FFE1A1A775312CD6BE3346880F0C70F" data-role="pictures1" class="cstlayer" style="background-color: rgb(255, 255, 255);">
+                                <div data-v-3f5bad52="" class="bgoverlay">
+                                    <!---->
+                                </div>
+                                <section data-v-325f81bc="" data-v-3f5bad52="" class="time05 padA about4 plug-padding-tb" style="padding: 50px 0px;">
+                                    <div data-v-325f81bc="" class="container containerM scontainer">
+                                        <div data-v-325f81bc="" class="about4-container-row">
+                                            <div data-v-325f81bc="" class="col-12 about4-centert">
+                                                <div data-v-325f81bc="" class="about4title1 Jso-L-Title" data-top="layer4FFE1A1A775312CD6BE3346880F0C70F" style="">
+                                                    <p style="line-height: 1;"><strong><span style="color: #42db44;">The
+                                                                Installation</span></strong></p>
+                                                </div>
+                                                <div data-v-325f81bc="" class="about4title2 M-Title-padding-b Jso-S-Title" data-top="layer4FFE1A1A775312CD6BE3346880F0C70F" style="margin-bottom: 28px;">
+                                                    <p><span style="color: #ffffff;">.</span></p>
+                                                </div>
+                                                <div data-v-325f81bc="" class="about4title3 M-text-padding-b Jso-M-Title" data-top="layer4FFE1A1A775312CD6BE3346880F0C70F" style="margin-bottom: 50px;">
+                                                    <p style="line-height: 1;"><span style="color: #999999;">The
+                                                            material that makes the magic happen</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-325f81bc="" class="pc-banner">
+
+
+                                            <swiper-container class="mySwiper" navigation="true" zoom="true" loop="true" watch-slides-progress="true" speed="1000">
+
+                                                <swiper-slide class="swiper-slide gallerie"> <img data-v-325f81bc="" src="./public/assets/dcx+text.PNG">
+                                                    <div data-v-325f81bc="" class="layer-mask"></div>
+                                                </swiper-slide>
+
+                                                <swiper-slide class="swiper-slide gallerie"> <img data-v-325f81bc="" src="./public/assets/air-conditioning+text.png">
+                                                    <div data-v-325f81bc="" class="layer-mask"></div>
+                                                </swiper-slide>
+
+                                                <swiper-slide class="swiper-slide gallerie"> <img data-v-325f81bc="" src="./public/assets/batteries+text.png">
+                                                    <div data-v-325f81bc="" class="layer-mask"></div>
+                                                </swiper-slide>
+
+                                                <swiper-slide class="swiper-slide gallerie"> <img data-v-325f81bc="" src="./public/assets/container+text.png">
+                                                    <div data-v-325f81bc="" class="layer-mask"></div>
+                                                </swiper-slide>
+
+                                                <swiper-slide class="swiper-slide gallerie"> <img data-v-325f81bc="" src="./public/assets/solar-panels+text.png">
+                                                    <div data-v-325f81bc="" class="layer-mask"></div>
+                                                </swiper-slide>
+
+                                                <swiper-slide class="swiper-slide gallerie"> <img data-v-325f81bc="" src="./public/assets/vaillant+text.PNG">
+                                                    <div data-v-325f81bc="" class="layer-mask"></div>
+                                                </swiper-slide>
+
+                                            </swiper-container>
+
+
+
+                                        </div>
+                                    </div>
+                                </section>
+                                <!---->
+
+                                <!---->
+                            </div>
+                            <div data-v-3f5bad52="" id="layer020CD24B234A4DBBE6EFD98AB3B66AD1" data-role="timeline7" class="cstlayer">
+                                <div data-v-3f5bad52="" class="bgoverlay">
+                                    <!---->
+                                </div>
+                                <section data-v-40e70fa0="" data-v-3f5bad52="" class="timeline7 timeline7_padding_t_b" style="padding: 72px 0px 150px;">
+                                    <div data-v-40e70fa0="">
+                                        <div data-v-40e70fa0="" class="titles">
+                                            <div data-v-40e70fa0="" class="Jso-L-Title" data-top="layer020CD24B234A4DBBE6EFD98AB3B66AD1" style="margin-bottom: 0px;">
+                                                <p><strong><span style="color: #42db44;">The Financial
+                                                            Benefits</span></strong></p>
+                                            </div>
+                                            <div data-v-40e70fa0="" class="timetxt_f Jso-M-Title" data-top="layer020CD24B234A4DBBE6EFD98AB3B66AD1" style="margin-bottom: 100px;">
+                                                <p><span style="color: #707070;">Here is what to expect with our
+                                                        solution</span></p>
+                                            </div>
+                                        </div>
+                                        <div data-v-40e70fa0="" class="view_list" style="">
+                                            <div data-v-40e70fa0="" class="nav_style">
+                                                <div data-v-40e70fa0="" class="nav_line" style="background: rgb(213, 213, 213);"></div>
+                                                <div data-v-40e70fa0="" class="timeline7_nav" style="--shownumbersplit:0; --number-split-color:#00df70; --number-color:#707070; --number-active-color:#42db44; --active-fontsize:4rem;">
+                                                    <a data-v-40e70fa0="" class="title-nav active Jso-M-Title">Rent</a>
+                                                    <a data-v-40e70fa0="" class="title-nav Jso-M-Title">Savings</a>
+                                                    <a data-v-40e70fa0="" class="title-nav Jso-M-Title">Subsidy</a>
+                                                    <a data-v-40e70fa0="" class="title-nav Jso-M-Title">Investment</a>
+                                                </div>
+                                                <div data-v-40e70fa0="" class="nav_line" style="background: rgb(213, 213, 213);"></div>
+                                            </div>
+                                            <div data-v-40e70fa0="" class="swiper_list container containerM">
+                                                <div data-v-40e70fa0="" class="swiper_item">
+                                                    <section data-v-40e70fa0="" class="pc-banner">
+                                                        <div data-v-40e70fa0="" class="swiper-container swiper-1675105135218 swiper-container-initialized swiper-container-horizontal">
+                                                            <div data-v-40e70fa0="" class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                                                                <div data-v-40e70fa0="" class="swiper-slide swiper-slide-active">
+                                                                    <div data-v-40e70fa0="" class="swiper_flex">
+                                                                        <div data-v-40e70fa0="" class="swiper_txt">
+                                                                            <div data-v-40e70fa0="" class="btom10 Jso-M-Title" data-top="layer020CD24B234A4DBBE6EFD98AB3B66AD1">
+                                                                                <p>Office and Roof rent revenue</p>
+                                                                            </div>
+                                                                            <div data-v-40e70fa0="" class="Jso-Text" data-top="layer020CD24B234A4DBBE6EFD98AB3B66AD1">
+                                                                                <p>We pay you the rent for a corner of your space and a place on the roof. The space you want to allocate for our system can be variable and adapted to your case.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div data-v-129dd9bd="" data-v-40e70fa0="" class="imgbox">
+                                                                            <img data-v-129dd9bd="" style=" width: 315px !important;
+                                                                            border-radius: 14px !important;
+                                                                            display: block !important;
+                                                                            height: 216px !important;
+                                                                            -o-object-fit: cover !important;
+                                                                            object-fit: cover !important;" class="slide_img" src="./public/assets/white-offices.png" lazy="loaded">
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                                        </div>
+                                                        <!---->
+                                                    </section>
+                                                </div>
+                                                <div data-v-40e70fa0="" class="swiper_item">
+                                                    <section data-v-40e70fa0="" class="pc-banner">
+                                                        <div data-v-40e70fa0="" class="swiper-container swiper-1675105135218 swiper-container-initialized swiper-container-horizontal">
+                                                            <div data-v-40e70fa0="" class="swiper-wrapper" style="transition-duration: 0ms;">
+                                                                <div data-v-40e70fa0="" class="swiper-slide">
+                                                                    <div data-v-40e70fa0="" class="swiper_flex">
+                                                                        <div data-v-40e70fa0="" class="swiper_txt">
+                                                                            <div data-v-40e70fa0="" class="btom10 Jso-M-Title" data-top="layer020CD24B234A4DBBE6EFD98AB3B66AD1">
+                                                                                <p>Save heating cost</p>
+                                                                            </div>
+                                                                            <div data-v-40e70fa0="" class="Jso-Text" data-top="layer020CD24B234A4DBBE6EFD98AB3B66AD1">
+                                                                                <p>Expect to save about 66% on building heating cost with our green renewable energy system. A classic source of heating would cost you XX€ for XXkW/h, meanwhile our solution
+                                                                                    costs around XX€ for XXkW/h.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div data-v-129dd9bd="" data-v-40e70fa0="" class="imgbox">
+                                                                            <img data-v-129dd9bd="" class="slide_img" src="./public/assets/calculate-chauffage.png" lazy="loaded">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                                        </div>
+                                                        <!---->
+                                                    </section>
+                                                </div>
+                                                <div data-v-40e70fa0="" class="swiper_item">
+                                                    <section data-v-40e70fa0="" class="pc-banner">
+                                                        <div data-v-40e70fa0="" class="swiper-container swiper-1675105135218 swiper-container-initialized swiper-container-horizontal">
+                                                            <div data-v-40e70fa0="" class="swiper-wrapper" style="transition-duration: 0ms;">
+                                                                <div data-v-40e70fa0="" class="swiper-slide">
+                                                                    <div data-v-40e70fa0="" class="swiper_flex">
+                                                                        <div data-v-40e70fa0="" class="swiper_txt">
+                                                                            <div data-v-40e70fa0="" class="btom10 Jso-M-Title" data-top="layer020CD24B234A4DBBE6EFD98AB3B66AD1">
+                                                                                <p style="text-align: left;">Contract terms
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-v-40e70fa0="" class="Jso-Text" data-top="layer020CD24B234A4DBBE6EFD98AB3B66AD1">
+                                                                                <p>The government guarantees a success with its SDE++ subsidy offering a guarenteed steady revenue for a much as 15 years if you use a sustainable source of energy. Following
+                                                                                    this advantage, we propose contracts from 10 to 15 years.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div data-v-129dd9bd="" data-v-40e70fa0="" class="imgbox">
+                                                                            <img data-v-129dd9bd="" style=" width: 315px !important;
+                                                                            border-radius: 14px !important;
+                                                                            display: block !important;
+                                                                            height: 216px !important;
+                                                                            -o-object-fit: cover !important;
+                                                                            object-fit: cover !important;" class="slide_img" src="./public/assets/contract-leaf.png" lazy="loading">
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                                        </div>
+
+                                                    </section>
+                                                </div>
+                                                <div data-v-40e70fa0="" class="swiper_item">
+                                                    <section data-v-40e70fa0="" class="pc-banner">
+                                                        <div data-v-40e70fa0="" class="swiper-container swiper-1675105135218 swiper-container-initialized swiper-container-horizontal">
+                                                            <div data-v-40e70fa0="" class="swiper-wrapper" style="transition-duration: 0ms;">
+                                                                <div data-v-40e70fa0="" class="swiper-slide">
+                                                                    <div data-v-40e70fa0="" class="swiper_flex">
+                                                                        <div data-v-40e70fa0="" class="swiper_txt">
+                                                                            <div data-v-40e70fa0="" class="btom10 Jso-M-Title" data-top="layer020CD24B234A4DBBE6EFD98AB3B66AD1">
+                                                                                <p>Own the solar panels after 15 years
+                                                                                </p>
+                                                                            </div>
+                                                                            <div data-v-40e70fa0="" class="Jso-Text" data-top="layer020CD24B234A4DBBE6EFD98AB3B66AD1">
+                                                                                <p>Become 100% owner of the solar panels after 15 years.<br>Solar Panels easily last 25 years.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div data-v-129dd9bd="" data-v-40e70fa0="" class="imgbox">
+                                                                            <img data-v-129dd9bd="" style=" width: 315px !important;
+                                                                            border-radius: 14px !important;
+                                                                            display: block !important;
+                                                                            height: 216px !important;
+                                                                            -o-object-fit: cover !important;
+                                                                            object-fit: cover !important;" class="slide_img" src="./public/assets/solar-panels-install.png" lazy="loading">
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                                        </div>
+                                                        <!---->
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!---->
+                                <!---->
+                            </div>
+                            <div class="calculator" data-calc-id="3oa6npQaxaGJDGmZd" data-type="framed"></div>
+                            <div data-v-3f5bad52="" id="layer4D42E3B3EF905068834BA66000B4EC68" data-role="html" class="cstlayer">
+                                <div data-v-3f5bad52="" class="bgoverlay">
+                                    <!---->
+                                </div>
+                                <section data-v-b8a7f1bc="" data-v-3f5bad52="" class="html-div" style="padding: 0px;">
+                                    <iframe data-v-b8a7f1bc="" sandbox="allow-scripts allow-same-origin allow-popups-to-escape-sandbox allow-popups" src="http://hooliaenergy.iwopop.com/gsohicode.html?domain=jsob20d3288&amp;id=86ce4b00066ab438860509fe3b3e24d4&amp;_r=1&amp;_t=1675105136470"
+                                        frameborder="0" scrolling="no" width="100%" height="0" allowtransparency="true" style="position: relative; visibility: visible;" id="mmFrameId_0.8387314757171562"></iframe>
+                                    <!---->
+                                </section>
+                                <!---->
+                                <!---->
+                            </div>
+                            <div data-v-3f5bad52="" id="layer356F8356B3FBE17294C0259809D849D6" data-role="timeline4" class="cstlayer" style="background-color: rgb(17, 171, 19);">
+                                <!---->
+                                <section data-v-3f5bad52="" class="timeline4 time05 padA timeline4-div plug-padding-tb" style="padding: 100px 0px;">
+                                    <div class="container containerM">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="main-timeline">
+                                                    <div class="timeline">
+                                                        <a href="#" class="timeline-content">
+                                                            <div class="timeline-year">
+                                                                <div class="Jso-M-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                    <p><span style="color: #42db43;">We</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="timeline-icon" style="background-color: rgb(241, 241, 241);">
+                                                                <div data-v-129dd9bd="" class="imgbox">
+                                                                    <!----><img data-v-129dd9bd="" title="" class="" data-psize="{&quot;w&quot;:40,&quot;h&quot;:40}" data-src="./public/upload/project-management.png?_t=310627?_t=310627?_t=310627?_t=310627?_t=310627?_t=310627?_t=310627"
+                                                                        src="./public/assets/icon1.png" lazy="loaded">
+                                                                    <!---->
+                                                                </div>
+                                                            </div>
+                                                            <div class="title Jso-S-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                <p style="text-align: left;"><span style="color: #f8f8f8;">Task&nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        <span style="color: #434343;"><strong><span
+                                                                                    style="font-size: 1.4rem;">Day
+                                                                                    02</span></strong>
+                                                                    </span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="description Jso-M-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                <p><strong><span style="color: #f8f8f8;">Manage the
+                                                                            project</span></strong></p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="timeline">
+                                                        <a href="#" class="timeline-content">
+                                                            <div class="timeline-year">
+                                                                <div class="Jso-M-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                    <p><span style="color: #42db43;">We</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="timeline-icon" style="background-color: rgb(241, 241, 241);">
+                                                                <div data-v-129dd9bd="" class="imgbox">
+                                                                    <!----><img data-v-129dd9bd="" title="" class="" data-psize="{&quot;w&quot;:40,&quot;h&quot;:40}" data-src="./public/upload/subsidies.png?_t=310628?_t=310628?_t=310628?_t=310628?_t=310628?_t=310628?_t=310628"
+                                                                        src="./public/assets/icon2.png" lazy="loaded">
+                                                                    <!---->
+                                                                </div>
+                                                            </div>
+                                                            <div class="title Jso-S-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                <p><span style="color: #f8f8f8;">Task&nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp;<strong><span
+                                                                                style="font-size: 1.4rem; color: #434343;">day
+                                                                                xx</span></strong>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="description Jso-M-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                <p><strong><span style="color: #f8f8f8;">Manage the
+                                                                            subsidies</span></strong></p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="timeline">
+                                                        <a href="#" class="timeline-content">
+                                                            <div class="timeline-year">
+                                                                <div class="Jso-M-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                    <p><span style="color: #42db43;">We</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="timeline-icon" style="background-color: rgb(241, 241, 241);">
+                                                                <div data-v-129dd9bd="" class="imgbox">
+                                                                    <!----><img data-v-129dd9bd="" title="" class="" data-psize="{&quot;w&quot;:40,&quot;h&quot;:40}" data-src="./public/upload/contract.png?_t=310651?_t=310651?_t=310651?_t=310651?_t=310651?_t=310651?_t=310651"
+                                                                        src="./public/assets/icon3.png" lazy="loaded">
+                                                                    <!---->
+                                                                </div>
+                                                            </div>
+                                                            <div class="title Jso-S-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                <p><span style="color: #f8f8f8;">Task&nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp;<span
+                                                                            style="font-size: 1.4rem; color: #434343;"><strong>day
+                                                                                xx</strong></span></span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="description Jso-M-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                <p><strong><span style="color: #f8f8f8;">Prepare the
+                                                                            legal contracts</span></strong></p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="timeline">
+                                                        <a href="#" class="timeline-content">
+                                                            <div class="timeline-year">
+                                                                <div class="Jso-M-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                    <p><span style="color: #42db43;">We</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="timeline-icon" style="background-color: rgb(241, 241, 241);">
+                                                                <div data-v-129dd9bd="" class="imgbox">
+                                                                    <!----><img data-v-129dd9bd="" title="" class="" data-psize="{&quot;w&quot;:40,&quot;h&quot;:40}" data-src="./public/upload/installation.png?_t=310628?_t=310628?_t=310628?_t=310628?_t=310628?_t=310628?_t=310628"
+                                                                        src="./public/assets/icon4.png">
+                                                                </div>
+                                                            </div>
+                                                            <div class="title Jso-S-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                <p><span style="color: #f8f8f8;">Task&nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp;<span
+                                                                            style="font-size: 1.4rem; color: #434343;"><strong>day
+                                                                                xx</strong></span></span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="description Jso-M-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                <p><strong><span style="color: #f8f8f8;">Install all the
+                                                                            devices</span></strong></p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="timeline">
+                                                        <a href="#" class="timeline-content">
+                                                            <div class="timeline-year">
+                                                                <div class="Jso-M-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                    <p><span style="color: #f7f7f7;">You</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="timeline-icon" style="background-color: rgb(0, 241, 0);">
+                                                                <div data-v-129dd9bd="" class="imgbox">
+                                                                    <!----><img data-v-129dd9bd="" title="" class="" data-psize="{&quot;w&quot;:40,&quot;h&quot;:40}" data-src="./public/upload/icons8-euro-100.png?_t=070978?_t=070978?_t=070978?_t=070978?_t=070978?_t=070978?_t=070978"
+                                                                        src="./public/assets/icon5.png" lazy="loaded">
+                                                                    <!---->
+                                                                </div>
+                                                            </div>
+                                                            <div class="title Jso-S-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                <p><span style="color: #f8f8f8;">Task&nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp;<span
+                                                                            style="font-size: 1.4rem; color: #434343;"><strong>Day
+                                                                                xx</strong></span></span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="description Jso-M-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                                                                <p><strong><span style="color: #f8f8f8;">Earn the
+                                                                            benefits.</span></strong></p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!---->
+                                <!---->
+                            </div>
+                            <div data-v-3f5bad52="" id="layerECF7E7C40ED02CD6D20E6D8B0378044C" data-role="graphic5" class="cstlayer" style="background-color: rgb(255, 255, 255);">
+                                <div data-v-3f5bad52="" class="bgoverlay">
+                                    <!---->
+                                </div>
+                                <section data-v-3a588062="" data-v-3f5bad52="" class="time05 padA plug-padding-tb" style="padding: 60px 0px;">
+                                    <div data-v-3a588062="" class="container containerM">
+                                        <div data-v-3a588062="" class="text-center">
+                                            <div data-v-3a588062="" class="gp5tl1 Jso-L-Title" data-top="layerECF7E7C40ED02CD6D20E6D8B0378044C" style="">
+                                                <p style="line-height: 1;"><span style="color: #42db44;"><strong>Additional
+                                                            Advantages</strong></span></p>
+                                            </div>
+                                            <div data-v-3a588062="" class="gp5tl2 M-Title-padding-b Jso-S-Title" data-top="layerECF7E7C40ED02CD6D20E6D8B0378044C" style="margin-bottom: 30px;">
+                                            </div>
+                                            <div data-v-3a588062="" class="gp5tl3 M-text-padding-b Jso-M-Title" data-top="layerECF7E7C40ED02CD6D20E6D8B0378044C" style="margin-bottom: 80px;">
+                                                <p style="line-height: 1;"><span style="color: #707070;">Some other
+                                                        public and financial advantages</span></p>
+                                            </div>
+                                        </div>
+                                        <div data-v-3a588062="" class="speebPro-con">
+                                            <ul data-v-3a588062="" class="row grapic5item" style="">
+                                                <li data-v-3a588062="" class="col-xs-6 ipadcol-xs-6 col-sm-4 col-md-2 ipadcol-md-2 time03">
+                                                    <div data-v-3a588062="" class="flex_colmn">
+                                                        <div data-v-3a588062="" class="pic" style="background: rgb(242, 243, 249);">
+                                                            <div data-v-129dd9bd="" data-v-3a588062="" class="imgbox">
+                                                                <!----><img data-v-129dd9bd="" title="" class="w100 img-scale time05" data-psize="{&quot;w&quot;:15,&quot;h&quot;:15}" data-src="./public/upload/global-warming.png?_t=085141?_t=085141" src="./public/assets/bottom-icon1.png"
+                                                                    lazy="loaded">
+                                                                <!---->
+                                                            </div>
+                                                        </div>
+                                                        <div data-v-3a588062="" class="dhjiezi Jso-S-Title" data-top="layerECF7E7C40ED02CD6D20E6D8B0378044C">
+                                                            <p style="text-align: center;"><strong>Global Warming
+                                                                    Reduction</strong></p>
+                                                            <p style="text-align: justify;">&nbsp;</p>
+                                                            <p style="text-align: justify;">With minimal emissions, renewable energy sources offer a solution to reducing global warming. By augmenting their supply, we can substitute carbon-intensive sources and greatly decrease emissions.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-v-3a588062="" class="col-xs-6 ipadcol-xs-6 col-sm-4 col-md-2 ipadcol-md-2 time03">
+                                                    <div data-v-3a588062="" class="flex_colmn">
+                                                        <div data-v-3a588062="" class="pic" style="background: rgb(242, 243, 249);">
+                                                            <div data-v-129dd9bd="" data-v-3a588062="" class="imgbox">
+                                                                <!----><img data-v-129dd9bd="" title="" class="w100 img-scale time05" data-psize="{&quot;w&quot;:15,&quot;h&quot;:15}" data-src="./public/upload/care.png?_t=085449?_t=085449" src="./public/assets/bottom-icon2.png"
+                                                                    lazy="loaded">
+                                                                <!---->
+                                                            </div>
+                                                        </div>
+                                                        <div data-v-3a588062="" class="dhjiezi Jso-S-Title" data-top="layerECF7E7C40ED02CD6D20E6D8B0378044C">
+                                                            <p style="text-align: center;"><strong>Improved public
+                                                                    health</strong></p>
+                                                            <p style="text-align: justify;">&nbsp;</p>
+                                                            <p style="text-align: justify;">Air and water pollution, the root cause of many health issues, are non-existent with clean energy technologies. These technologies have been estimated to save public health costs of $74.6 billion
+                                                                annually.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-v-3a588062="" class="col-xs-6 ipadcol-xs-6 col-sm-4 col-md-2 ipadcol-md-2 time03">
+                                                    <div data-v-3a588062="" class="flex_colmn">
+                                                        <div data-v-3a588062="" class="pic" style="background: rgb(242, 243, 249);">
+                                                            <div data-v-129dd9bd="" data-v-3a588062="" class="imgbox">
+                                                                <!----><img data-v-129dd9bd="" title="" class="w100 img-scale time05" data-psize="{&quot;w&quot;:15,&quot;h&quot;:15}" data-src="./public/upload/inexhaustible-energy.png?_t=085204?_t=085204" src="./public/assets/bottom-icon3.png"
+                                                                    lazy="loaded">
+                                                                <!---->
+                                                            </div>
+                                                        </div>
+                                                        <div data-v-3a588062="" class="dhjiezi Jso-S-Title" data-top="layerECF7E7C40ED02CD6D20E6D8B0378044C">
+                                                            <p style="text-align: center;"><strong>Inexhaustible
+                                                                    energy</strong></p>
+                                                            <p style="text-align: justify;">&nbsp;</p>
+                                                            <p style="text-align: justify;">Renewable energy has been proven time and again to be capable of meeting a significant portion of future electricity demands, even with potential limitations taken into account.</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-v-3a588062="" class="col-xs-6 ipadcol-xs-6 col-sm-4 col-md-2 ipadcol-md-2 time03">
+                                                    <div data-v-3a588062="" class="flex_colmn">
+                                                        <div data-v-3a588062="" class="pic" style="background: rgb(242, 243, 249);">
+                                                            <div data-v-129dd9bd="" data-v-3a588062="" class="imgbox">
+                                                                <!----><img data-v-129dd9bd="" title="" class="w100 img-scale time05" data-psize="{&quot;w&quot;:15,&quot;h&quot;:15}" data-src="./public/upload/jobs.png?_t=085151?_t=085151" src="./public/assets/bottom-icon4.png"
+                                                                    lazy="loaded">
+                                                                <!---->
+                                                            </div>
+                                                        </div>
+                                                        <div data-v-3a588062="" class="dhjiezi Jso-S-Title" data-top="layerECF7E7C40ED02CD6D20E6D8B0378044C">
+                                                            <p style="text-align: center;"><strong>Jobs and
+                                                                    other</strong><br><strong>economic benefits</strong>
+                                                            </p>
+                                                            <p style="text-align: justify;">&nbsp;</p>
+                                                            <p style="text-align: justify;">Renewable energy sources generate more jobs per unit of electricity compared to fossil fuels. Furthermore, the expansion of clean energy can also have positive economic “ripple” effects.</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-v-3a588062="" class="col-xs-6 ipadcol-xs-6 col-sm-4 col-md-2 ipadcol-md-2 time03">
+                                                    <div data-v-3a588062="" class="flex_colmn">
+                                                        <div data-v-3a588062="" class="pic" style="background: rgb(242, 243, 249);">
+                                                            <div data-v-129dd9bd="" data-v-3a588062="" class="imgbox">
+                                                                <!----><img data-v-129dd9bd="" title="" class="w100 img-scale time05" data-psize="{&quot;w&quot;:15,&quot;h&quot;:15}" data-src="./public/upload/money-time.png?_t=085155?_t=085155" src="./public/assets/bottom-icon5.png"
+                                                                    lazy="loaded">
+                                                                <!---->
+                                                            </div>
+                                                        </div>
+                                                        <div data-v-3a588062="" class="dhjiezi Jso-S-Title" data-top="layerECF7E7C40ED02CD6D20E6D8B0378044C">
+                                                            <p style="text-align: center;"><strong>Stable
+                                                                    energy&nbsp;prices</strong></p>
+                                                            <p style="text-align: justify;">&nbsp;</p>
+                                                            <p style="text-align: justify;">Initial investments are necessary to construct renewable facilities, but once in operation, they have low ongoing costs, resulting in stable energy prices over time compared to fossil energy
+                                                                prices.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-v-3a588062="" class="col-xs-6 ipadcol-xs-6 col-sm-4 col-md-2 ipadcol-md-2 time03">
+                                                    <div data-v-3a588062="" class="flex_colmn">
+                                                        <div data-v-3a588062="" class="pic" style="background: rgb(242, 243, 249);">
+                                                            <div data-v-129dd9bd="" data-v-3a588062="" class="imgbox">
+                                                                <!----><img data-v-129dd9bd="" title="" class="w100 img-scale time05" data-psize="{&quot;w&quot;:15,&quot;h&quot;:15}" data-src="./public/upload/solar-panel-trust.png?_t=085176?_t=085176" src="./public/assets/bottom-icon6.png"
+                                                                    lazy="loaded">
+                                                                <!---->
+                                                            </div>
+                                                        </div>
+                                                        <div data-v-3a588062="" class="dhjiezi Jso-S-Title" data-top="layerECF7E7C40ED02CD6D20E6D8B0378044C">
+                                                            <p><strong>Reliability
+                                                                    and&nbsp;</strong><strong>resilience</strong></p>
+                                                            <p>&nbsp;</p>
+                                                            <p style="text-align: justify;">Solar panels, due to their distributed and modular design, are less susceptible to widespread failure and can function dependably even under conditions that would necessitate shutting down a
+                                                                fossil fuel plant.</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!---->
+                                <!---->
+                            </div>
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                        </div>
+                        <div data-v-3f5bad52="" id="footer" class="">
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                            <div data-v-3f5bad52="" data-role="footer1" id="layer4636D513FE8C7DFA4E3E514B0E0607F6" class="cstlayer ifooter" style="background-color: rgb(12, 22, 6);">
+                                <div data-v-3f5bad52="" class="bgoverlay">
+                                    <!---->
+                                </div>
+                                <div data-v-170fa730="" data-v-3f5bad52="" class="footer_style1 footer1_div" style="padding: 20px 0px;">
+                                    <div data-v-170fa730="" class="" style="width: 150px;">
+                                        <a data-v-170fa730="">
+                                            <div data-v-129dd9bd="" data-v-170fa730="">
+                                                <!----><img data-v-129dd9bd="" title="" style="width:150px !important;height:100%;" src="./public/assets/hoolia-group-white.png" lazy="loaded">
+                                                <!---->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-v-170fa730="" class="footer_style12 Jso-F-Text" data-top="layer4636D513FE8C7DFA4E3E514B0E0607F6" style="">
+                                        <p>Email: sales@hoolia-energy.eu</p>
+                                        <p>Amsterdam&nbsp;</p>
+                                    </div>
+                                    <div data-v-170fa730="" class="footer_style13 Jso-Text" data-top="layer4636D513FE8C7DFA4E3E514B0E0607F6" style="">
+                                        <p>+31 – 85 – 7738871</p>
+                                    </div>
+                                    <div data-v-170fa730="" class="footer_style14">
+                                        <div data-v-170fa730="" class="item_div" style="position: relative;">
+                                            <a data-v-170fa730="" href="javascript:;" target="_self" title="Here is the default prompt text" style="cursor: default;">
+                                                <div data-v-129dd9bd="" data-v-170fa730="" class="imgbox">
+                                                    <!----<img data-v-129dd9bd="" class="imgscale" data-psize="{&quot;w&quot;:40,&quot;h&quot;:40}" data-src="./public/webquick/public/assets/facebook.png" src="./public/webquick/public/assets/facebook.png" lazy="loaded">
+                                                    -->
+                                                    <i class="fa-brands fa-facebook fa-2x" style="color: white;"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div data-v-170fa730="" class="item_div" style="position: relative;">
+                                            <a data-v-170fa730="" href="javascript:;" target="_self" title="Here is the default prompt text" style="cursor: default;">
+                                                <div data-v-129dd9bd="" data-v-170fa730="" class="imgbox">
+                                                    <!--<img data-v-129dd9bd="" class="imgscale" data-psize="{&quot;w&quot;:40,&quot;h&quot;:40}" data-src="./public/webquick/public/assets/twitter.png" src="./public/webquick/public/assets/twitter.png" lazy="loaded">
+                                                    -->
+                                                    <i class="fa-brands fa-twitter fa-2x" style="color: white;"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div data-v-170fa730="" class="footer1_div_b">
+                                        <!---->
+                                        <div data-v-170fa730="" class="footer_style12 Jso-F-Text" data-top="layer4636D513FE8C7DFA4E3E514B0E0607F6">©Copyright 2023 - All Rights Reserved
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <!---->
+                            </div>
+                            <!---->
+                        </div>
+                        <!---->
+                        <!---->
+                    </div>
+                </div>
+            </div>
+            <!---->
+        </div>
+        <!---->
+        <div data-v-ada335e4="" data-v-cdd72b66="" class="alertModal">
+            <!---->
+            <!---->
+        </div>
+        <!---->
+    </div>
+
+    <script src="https://scripts.convertcalculator.com/embed.js" async="true"></script>
+    <script src="https://scripts.convertcalculator.com/embed.js" async="true"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/vstatic/js/manifest.js"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/vstatic/js/vendor.js"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/vstatic/js/app.js"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/common.js"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/bootstrap/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/slider3.js"></script>
+    <script id="swiper_js-1675105131176" type="text/javascript" src="./static.eznetonline.com/webquick/public/swiper.min.js"></script>
+    <script id="swiper_js-1675105133939" type="text/javascript" src="./static.eznetonline.com/webquick/public/swiper.min.js"></script>
+    <script id="swiper_js-1675105135218" type="text/javascript" src="./static.eznetonline.com/webquick/public/swiper.min.js"></script>
+    <script id="submenu_js" type="text/javascript" src="./static.eznetonline.com/webquick/public/bootstrap-submenu.min.js"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/video5.js"></script>
+    <script id="swiper_animate_js" type="text/javascript" src="./static.eznetonline.com/webquick/public/swiper.animate1.0.3.min.js"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/aboutus4.js"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/vplugin/pictures1/pictures1.js"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public//timeline4.js"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/timeline7.js"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/html.js"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/graphic5.js"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/footer1.js?"></script>
+    <script type="text/javascript" src="./static.eznetonline.com/webquick/public/swiper.js?"></script>
+
+</body>
+
+</html>

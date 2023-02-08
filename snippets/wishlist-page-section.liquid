@@ -1,0 +1,61 @@
+{% include 'product-grid-variables', ratio:'1:1' %}
+<!-- wishlist-area start -->
+<div class="container">
+  <div class="row">
+    <div id="content" class="col-sm-12">
+      <h1>{{ page_title }}</h1>
+
+      <div class="table-responsive">
+        <table class="table table-bordered wishlist-product"  style="display: none;">
+          <thead class="wishlist-head">
+            <tr>
+              <td class="text-center">{{ 'cart.general.remove' | t }}</td>
+              <td class="text-center">{{ 'cart.general.heading_image' | t }}</td>
+              <td class="text-center">{{ 'cart.general.heading_product_name' | t }}</td>
+              <td class="text-center">{{ 'cart.general.heading_unit_price' | t }}</td>
+              <td class="text-center">{{ 'wishlist.general.add_cart' | t }}</td>
+            </tr>
+          </thead>
+          {% paginate collections.all.products by 9999 %}
+          {% for product in collections.all.products %}
+          {% assign sold_out = true %}
+          {% if product.available  %}
+          {% assign sold_out = false %}
+          {% endif %}
+          <tbody class="wishlist-container" data-line="{{ forloop.index }}" data-product-id="{{ product.id }}" data-product-handle="{{ product.handle }}">
+            <tr>
+              <td class="text-center btn-remove-product">
+                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="{{ product.handle }}" data-line="{{ forloop.index }}">
+                  <i class="fa fa-times-circle"></i>
+                </a>
+              </td>
+              <td class="text-center">
+                <a href="{{ product.url }}">
+                  {% include 'product-grid-image',image:product.featured_image, customclass:'img-thumbnail' %}
+                </a>
+              </td>
+              <td class="text-center">
+                <h5><a href='{{ product.url }}'>{{ product.title }}</a></h5>
+              </td>
+              <td class="text-center price-box box-special">
+                {% include 'price' %}
+              </td>
+              <td class="text-center">
+                <a href="javascript: void(0)" class="is-add-cart btn btn-primary {% if sold_out %} btn disabled {% endif %}" data-product-id="{{ product.variants.first.id }}" data-product-handle="{{ product.handle }}">{{ 'wishlist.general.add_cart' | t }}</a>
+              </td>
+            </tr>
+          </tbody>
+          {% endfor %}
+          {% endpaginate %}
+          <p class="text-center wishlist-empty" style="display:none;">{{ 'wishlist.general.empty_wishlist' | t }} <a href="/collections/all">{{ 'wishlist.general.start_shopping_wishlist' | t }}</a> </p>
+
+        </table>
+      </div>
+
+      <!-- Loader -->
+      <div class="wishlist-loader">
+        <p class="wishlist-loader--text text-center">{{ 'wishlist.general.loading_wishlist' | t }}</p>
+      </div>
+    </div>
+  </div>
+</div>

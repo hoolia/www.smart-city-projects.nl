@@ -1,0 +1,398 @@
+<div id="product-category" class="container layer-category">
+  <div class="layered-navigation-block"></div>
+  <div class="clearfix"></div>
+  <div class="row">
+    <div class="col-order">
+      {% if section.settings.show_collection_sidebar == 'left' %}
+      {% include 'collection-sidebar' %}
+      {% endif %}
+      <div id="content" class="{% if section.settings.show_collection_sidebar != 'no' %}col-md-9{% else %}col-md-12{% endif %} col-sm-12 col-xs-12">
+        {% if collection.description %}
+        <div class="category-info"><p>{{ collection.description }}</p></div>
+        {% endif %}
+        <div class="custom-category">
+          <div id="wraper_ajax" class="loadding_ajaxcart" ><i class="fa fa-spinner fa-spin"></i></div>
+          {% case template %}
+          {% when 'collection.10' %}
+          {% assign product_count_per_page = 10 %}
+          {% when 'collection.20' %}
+          {% assign product_count_per_page = 20 %}
+          {% when 'collection.30' %}
+          {% assign product_count_per_page = 30 %}
+          {% when 'collection.all' %}
+          {% assign product_count_per_page = 999 %}
+          {% else %}
+          {% assign product_count_per_page = section.settings.product_count_per_page %}
+          {% endcase %}
+          {% paginate collection.products by product_count_per_page %}
+          <div class="toolbar toolbar-products {% if section.settings.show_top_filters == false %} hide {% endif %}">
+            <div class="modes">{% include 'collection-views' %}</div>
+            <div class="toolbar-amount">{% include 'collection-amount' %}</div>
+            <div class="sorter">{% include 'collection-sorting' %}</div>
+            <div class="limiter">{% include 'collection-show-count' %}</div>
+          </div>
+          <div data-next-url="{% if paginate.next %}{{ paginate.next.url }}{% endif %}" class="row quickview-products" id="custom-products">
+            {% for product in collection.products %}
+            {% if section.settings.show_collection_sidebar != false %}
+            {% include 'product-grid-item-collection' %}
+            {% else %}
+            {% include 'product-grid-item-collection' %}
+            {% endif %}
+            {% else %}
+            <div class="grid-item">
+              <p>{{ 'collections.general.no_matches' | t }}</p>
+            </div>
+            {% endfor %}
+          </div>
+
+          
+          {% if section.settings.show_pagination_bar == 'true'%}
+          {% include 'pagination' %}
+          {% else %}
+          {% include 'pagination_load_more' %}
+          {% endif %}
+
+          {% endpaginate %}
+        </div>
+      </div>
+      {% if section.settings.show_collection_sidebar == 'right' %}
+      {% include 'collection-sidebar' %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+   "name":"Collection",
+   "settings":[
+	  {
+        "type": "paragraph",
+        "content": "In order to experience the actual layout, it is best to refresh the page while moving between mobile and desktop layout. [Video Tutorial for Setting up Collection page](https://youtu.be/fvWlGrg82Mg?list=PLvJCnPMUAdwr6XxWVo_f9dkVRh8GNCXoa)"
+      },
+      {
+         "type":"text",
+         "id":"product_count_per_page",
+         "label":"Number of products to show",
+         "default":"12"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_top_filters",
+        "label": "Show Top Filters",
+        "default": true
+      },
+      {
+         "type":"select",
+         "id":"collection_view_default",
+         "label":"Listing View",
+         "options":[
+            {
+               "value":"2",
+               "label":"grid 2"
+            },
+			{
+               "value":"3",
+               "label":"grid 3"
+            },
+			{
+               "value":"4",
+               "label":"grid 4"
+            },
+			{
+               "value":"5",
+               "label":"grid 5"
+            },
+            {
+               "value":"0",
+               "label":"List"
+            }
+         ],
+         "default":"0"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_summary",
+        "label": "Show summary in list view",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_summary_stripped",
+        "label": "Strip Summary",
+        "default": true,
+        "info": "Strips html tags to show text without format"
+      },
+      {
+        "type": "text",
+        "id": "product_summary_words",
+        "label": "Words count on summary area",
+        "default": "15"
+      },
+      {
+         "type":"select",
+         "id":"show_collection_sidebar",
+         "label":"Sidebar position",
+         "options":[
+            {
+               "value":"no",
+               "label":"No Sidebar"
+            },
+            {
+               "value":"left",
+               "label":"Left Sidebar"
+            },
+            {
+               "value":"right",
+               "label":"Right Sidebar"
+            }
+         ],
+         "default":"left"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_color_box",
+        "label": "Show Color Box",
+        "default": true,
+        "info": "Shows color variant as color box rather than text"
+      },
+      {
+        "type": "text",
+        "id": "color_box_variant",
+        "label": "Color variant Title",
+        "default": "color",
+        "info": "Name of the color variant on your products. Refresh required to see the correct effect on page."
+      },
+      {
+         "type":"select",
+         "id":"show_pagination_bar",
+         "label":"Pagination mode",
+         "options":[
+            {
+               "value":"true",
+               "label":"Pagination Bar"
+            },
+            {
+               "value":"false",
+               "label":"Auto Scroll"
+            }
+         ],
+         "default":"false"
+      }
+   ],
+   "blocks":[
+	 {
+        "type": "categories",
+        "name": "Sidebar Categories",
+        "settings": [
+          {
+             "type":"text",
+             "id":"category_count",
+             "label":"Categories count on sidebar",
+             "default":"5"
+          }
+        ]
+      },
+      {
+        "type": "links",
+        "name": "Sidebar links menu",
+        "settings": [
+          {
+             "type": "link_list",
+             "id": "collection_sidebar_menu",
+             "label": "Sidebar links menu"
+          }
+        ]
+      },
+      {
+        "type": "vendors",
+        "name": "Sidebar Vendors menu",
+        "settings": [
+          {
+             "type":"checkbox",
+             "id":"show_vendors_title",
+             "label":"Show Title",
+             "default":true
+          }
+        ]
+      },
+      {
+        "type": "filters",
+        "name": "Sidebar Filters",
+        "settings": [
+          {
+             "type":"radio",
+             "id":"collection_sidebar_filters",
+             "label":"Sidebar product filters",
+             "options":[
+                {
+                   "value":"tags",
+                   "label":"By tag"
+                },
+                {
+                   "value":"groups",
+                   "label":"By group"
+                }
+             ],
+             "default":"groups",
+             "info":"For group filter product tags needs to be PREPENDED with the name of the group you want them to be in, with the format Group_Tag Name e.g. for group \“Size\” it should be Size_Small, Size_Medium, Size_large as can be seen [here](https://nimb.ws/il8YIC)"
+			}
+        ]
+      },
+	  {
+        "type": "image",
+        "name": "Sidebar Image",
+        "settings": [
+          {
+             "type":"image_picker",
+             "id":"collection_side_image",
+             "label":"Side image"
+          },
+          {
+             "type":"url",
+             "id":"collection_side_link",
+             "label":"Side image link"
+          }
+        ]
+      }
+   ],
+   "presets":[
+
+   ]
+}
+{% endschema %}
+
+{% if section.settings.show_color_box and section.settings.color_box_variant != blank %}
+<style>
+  [data-filter-group="{{ section.settings.color_box_variant }}"] {
+  float: left;
+  width: 100%;
+  }
+  [data-filter-group="{{ section.settings.color_box_variant }}"] span {
+  float: left;
+  margin: 6px 6px 6px 7px;
+  }
+  [data-filter-group="{{ section.settings.color_box_variant }}"] span.bg-white {
+  border: 1px solid #ccc;
+  }
+  [data-filter-group="{{ section.settings.color_box_variant }}"] a.add-filter:before {
+  width: 26px !important;
+  height: 30px !important;
+  line-height: 28px !important;
+  top: 0px;
+  margin-top: 0px;
+  background: inherit !important;
+  border-radius: 0px !important;
+  border: {{ settings.grid_layout }}px !important; 
+}
+[data-filter-group="{{ section.settings.color_box_variant }}"] span a {
+  font-size:0 !important;
+}
+[data-filter-group="{{ section.settings.color_box_variant }}"] a:after {
+  top: 6px !important;
+  left: 5px !important;
+  width: 16px !important;
+  height: 18px !important;
+  margin-top: 0px !important;
+}
+[data-filter-group="{{ section.settings.color_box_variant }}"] a.advanced-filter:hover:after {
+  line-height: 18px !important;
+}
+</style>
+{% endif %}
+<script type="text/javascript">
+  function resizeMobGrid(){
+    if ($(window).width() <= 478 ) {
+      category_view.changeView('grid', 2, 'btn-grid-2');
+    }
+  }
+  {% if settings.grid_auto_resize != 'false' -%}
+  // Equal height grid divs 
+  function resizeCollGrid(){
+    var gridtype = localStorage.getItem('type');
+    var gridcols = localStorage.getItem('cols');
+    var gridwidth = -1;
+    var contwidth = 0; 
+
+    if(gridtype == 'list') {
+      gridcols = 3;
+      if ($(window).width() <= 479 ) {
+        gridcols = 1; 
+        contwidth = -60;
+      }
+    }
+    contwidth = contwidth + $('#custom-products').width();
+    gridwidth = contwidth/gridcols - 30;
+    $('#custom-products .product-layout .image img').css("height",(gridwidth/img_ratio));
+  }
+  {% endif %}
+  $(window).on("load",function() {
+    {% if settings.grid_auto_resize != 'false' -%}resizeCollGrid();{% endif %}
+    resizeMobGrid();
+  });
+  $(window).resize(function() {
+    setTimeout(function () {
+      {% if settings.grid_auto_resize != 'false' -%}resizeCollGrid();{% endif %}
+      resizeMobGrid();
+    }, 200);
+  });
+  
+  // Load more pagination 
+  {% if section.settings.show_pagination_bar == 'false' %}
+  var custom_products = $("#custom-products");
+  var next_url = custom_products.data('next-url');
+
+  function loadMore(){
+    event.preventDefault();
+    //var url = $('#more').last().find('#more a').attr("href");
+    $.ajax({
+      type: 'GET',
+      dataType:'html',
+      url: next_url,
+      data: {},
+      beforeSend: function( xhr ) {
+        $("#more .button > i").show();
+      },
+      complete: function (data) {  
+        $("#more .button > i").hide();
+        var new_products = $(data.responseText).find('#custom-products');
+        var new_url = new_products.data('next-url');
+        next_url = new_url;
+        if(next_url == '') {
+          $("#more").hide();
+        }
+        custom_products.append(new_products.html());
+
+        //$('#custom-products').append($("#custom-products", data.responseText).html());
+        $('#column-left').html($("#column-left", data.responseText).html());
+        $('#collection-amount').html($("#collection-amount", data.responseText).html());
+        if(localStorage.getItem('type') == null) {
+          var type = $('#category-view-type').val();
+          var cols = $('#category-grid-cols').val();
+
+          if(type == "list") {
+            category_view.initView(type, cols, 'btn-list');
+            category_view.customPriceBoxList();
+          }
+
+          if(type == 'grid') {
+            category_view.initView(type, cols, 'btn-grid-' + cols);
+            category_view.customPriceBoxGrid();
+          }
+        } else {
+          var type = localStorage.getItem('type');
+          var cols = localStorage.getItem('cols');
+          var element = localStorage.getItem('element');
+
+          category_view.initView(type, cols, element);
+        }
+        $('#pagination').html($("#pagination", data.responseText).html());
+        history.pushState({
+          page: next_url
+        }, next_url, next_url);      
+        $("#wraper_ajax").hide();
+        SPR.registerCallbacks(), SPR.initRatingHandler(), SPR.initDomEls(), SPR.loadProducts(), SPR.loadBadges();
+      }
+    });
+  }
+  {% endif %}
+</script>

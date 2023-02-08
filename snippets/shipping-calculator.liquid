@@ -1,0 +1,60 @@
+{% unless section.settings.shipping_calculator == 'Disabled' %}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a href="#collapse-shipping" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">{{ section.settings.shipping_calculator_heading | default: 'Get shipping estimates' }} <i class="fa fa-caret-down"></i></a>
+    </h4>
+  </div>
+  <div id="collapse-shipping" class="panel-collapse collapse">
+    <div class="panel-body">
+      <p>{{ 'cart.general.shipping_text' | t }}</p>
+      <div class="form-horizontal">
+        <div class="form-group required">
+          <label class="col-sm-2 control-label" for="address_country">{{ 'cart.general.shipping_country' | t }}</label>
+          <div class="col-sm-10">
+            <select id="address_country" name="address[country]" class="form-control" data-default="{% if shop.customer_accounts_enabled and customer %}{{ customer.default_address.country }}{% elsif section.settings.shipping_calculator_default_country != '' %}{{ section.settings.shipping_calculator_default_country }}{% endif %}">{{ country_option_tags }}</select>
+          </div>
+        </div>
+        <div class="form-group required" id="address_province_container" style="display:none;">
+          <label class="col-sm-2 control-label" for="input-zone">{{ 'cart.general.shipping_province' | t }}</label>
+          <div class="col-sm-10">
+            <select id="address_province" name="address[province]" class="form-control" data-default="{% if shop.customer_accounts_enabled and customer and customer.default_address.province != '' %}{{ customer.default_address.province }}{% endif %}"></select>
+          </div>
+        </div>
+        <div class="form-group required">
+          <label class="col-sm-2 control-label" for="input-postcode">{{ 'cart.general.shipping_zip' | t }}</label>
+          <div class="col-sm-10">
+            <input type="text" id="address_zip" name="address[zip]" class="form-control" {% if shop.customer_accounts_enabled and customer %} value="{{ customer.default_address.zip }}"{% endif %} />
+          </div>
+        </div>
+        <input type="button" class="get-rates btn btn-primary" value="{{ section.settings.shipping_calculator_submit_button_label | default: 'Calculate shipping' }}" />
+        <div id="wrapper-response" style="padding-top:10px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script id="shipping-calculator-response-template" type="text/template">
+  {% raw %}
+  <p id="shipping-rates-feedback" {{#if success}} class="success" {{else}} class="error" {{/if}}>
+  {{#if success}}
+    {{#if rates}}
+      {{#rates}}
+        {{#if @first}}
+            Rates start at {{price}}.
+        {{/if}}
+      {{/rates}}
+    {{else}}
+      We do not ship to this destination.
+    {{/if}}    
+  {{else}}
+    {{ errorFeedback }}
+  {{/if}}
+    </p>
+  {% endraw %}
+  </script>
+
+  <!--[if lte IE 8]>
+<style> #shipping-calculator { display: none; } </style>
+<![endif]-->
+</div>
+{% endunless %}

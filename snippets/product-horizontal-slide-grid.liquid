@@ -1,0 +1,40 @@
+<div class="col-sm-6">
+  <input type="hidden" id="check-use-zoom" value="1" />
+  <input type="hidden" id="light-box-position" value="1" />
+  <input type="hidden" id="slide_count" value="2" />
+  <input type="hidden" id="product-identify" value="{{ product.id }}" />
+  <div class="lightbox-container"></div>
+  {% assign featured_img_src = current_variant.featured_image.src | default: product.featured_image.src %}
+  {% assign featured_img_alt = current_variant.featured_image.alt | default: product.featured_image.alt %}
+
+  {% assign counter = 0 %}
+  <div class="additional-images slide_grid owl-carousel owl-theme">
+    <div class="item product-zoom-image">
+      {% if product.description contains '[video]' %}
+      <a class="thumbnail popup-youtube" href="{{ product.description | split:'[video]' | last | split :'[/video]' | first }}">
+        <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ 'video_400x400.png' | asset_img_url: product_img_size }}" alt="">
+      </a>
+        {% assign counter = counter | plus: 1 %}
+      {% endif %}                  
+      {% for image in product.images %}
+      <a href="{{ image.src | img_url: 'master' }}" class="cloud-zoom main-image" id="product-cloud-zoom" style="width: {{ image.src | split:'x' | first }}px; height: {{ product_img_size | split:'x' | last }}px;"
+         rel="showTitle: false ,zoomWidth:{{ product_img_size | split:'x' | first }},zoomHeight:{{ product_img_size | split:'x' | last }},adjustX: 0,position:'inside' ">
+        <img src="{{ image.src | img_url: product_img_size, crop: 'center' }}" title="{{ image.alt | escape }}" alt="{{ featured_img_alt }}" />
+      </a>
+        {% assign counter = counter | plus: 1 %}
+        {% if forloop.last == false %}
+          {% assign ind = counter | times: 1 | modulo:2 %}
+          {% if  ind == 0 %}
+          </div><div class="item product-zoom-image">
+          {% endif %}
+        {% endif %}
+    {% endfor %}
+    </div>
+
+  </div>
+
+  <!-- end wrapper-img-additional -->
+</div>
+<div class="col-sm-6 product-info-main">
+  {% include 'product-page-features' %}
+</div>

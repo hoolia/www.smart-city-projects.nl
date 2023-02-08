@@ -1,0 +1,45 @@
+<div class="banner-static static4-elomus2{% if section.settings.bottom_padding %} padding-bottom{% endif %} {% if section.settings.bottom_border %} border-bottom{% endif %}">
+  <div class="box {% if section.settings.image_position == 'right' %} box-bottom {% else %} box-top{% endif %}">
+    {% if section.settings.image_position == 'left' %} 
+    <div class="col col-image">
+      {% if section.settings.bg-image %}
+      <div class="image">
+        <a href="{{ section.settings.link }}">
+          <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ section.settings.bg-image | img_url: 'master' }}" alt=""/>
+        </a>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+    <div class="col col-text">
+      <div class="inner text-{{ section.settings.ad_align }}" style="text-align:{{ section.settings.ad_align }}">
+        {% if section.settings.heading != blank %} 
+        <h3>{{ section.settings.heading }}</h3>
+        {% endif %}
+        {% if section.settings.description != blank %} 
+        <p>{{ section.settings.description }}</p>
+        {% endif %}
+        {% if section.settings.price != blank %} 
+        <p class="price">{{ section.settings.price }}</p>
+        {% endif %}
+        {% if section.settings.link_text != blank %} 
+        <a href="{{ section.settings.link }}" class="txt">{{ section.settings.link_text }}</a>
+        {% endif %}
+        {% if section.settings.link_text_2 != blank %} 
+        <a href="{{ section.settings.link_2 }}" class="txt2">{{ section.settings.link_text_2 }}</a>
+        {% endif %}
+      </div>
+    </div>
+    {% if section.settings.image_position == 'right' %} 
+    <div class="col col-image">
+      {% if section.settings.bg-image %}
+      <div class="image">
+        <a href="{{ section.settings.link }}">
+          <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ section.settings.bg-image | img_url: 'master' }}" alt=""/>
+        </a>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>

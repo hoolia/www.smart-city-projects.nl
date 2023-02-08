@@ -1,0 +1,110 @@
+<div class="main-row {% if section.settings.fullwidth == true %}full-width{% endif  %}{% if section.settings.background == true %} layer-background {% endif  %} {% if section.settings.top_margin %} margin-top{% endif %}" data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div class="row sub-row">
+          <div class="sub-col col-sm-12 col-md-12">
+            {% include section.settings.layout %}         
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  {% if section.settings.background_color != settings.section_bg_color -%}
+  #shopify-section-{{section.id }} .layer-background {
+    background: {{ section.settings.background_color }};
+  }
+  {%- endif %}
+</style>
+{% schema %}
+{
+  "name": "Brands section",
+  "class": "index-section index-section--flush",
+  "max_blocks": 8,
+  "settings": [
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Select layout design",
+        "options": [
+          {
+            "value": "brands",
+            "label": "Design 1"
+          }
+        ]	
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+		"default": "Logo Brands & Clients"
+      },
+      {
+         "type": "checkbox",
+         "id": "fullwidth",
+         "label": "Set Div fullwidth?",
+         "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "background",
+        "label": "Add Background",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Sections Background Color",
+        "info": "This option allows you to set different background color than default one for the section.",
+        "default": "#f8f8f8"
+      },
+      {
+        "type": "checkbox",
+        "id": "top_margin",
+        "label": "Add top margin?",
+        "info": "White empty space above section",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "bottom_padding",
+        "label": "Add bottom margin?",
+        "info": "White empty space below section",
+        "default": false
+      }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image brand",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "brand image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link URL"
+		}
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Brands section",
+    "category": "Feature Sections",
+    "blocks": [
+      {
+        "type": "image"
+      },
+      {
+        "type": "image"
+      }
+    ]
+  }]
+}
+{% endschema %}

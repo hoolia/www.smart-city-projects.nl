@@ -1,0 +1,95 @@
+{% include 'product-grid-variables' %}
+<li class="li-top-item left{% if link.active %} active{% endif %}" style="float: left">
+  <a class="a-top-link" href="{{link.url}}">
+    <span>{{link.title}}</span>
+    <i class="icon-arrow-down" aria-hidden="true"></i>
+  </a>
+  <!-- Mega Menu -->
+  <div class="mega-menu-container sub-menu-container left">
+    <div class="row">
+      {% assign cols = 0 %}
+      {% for i in (1..4) %}
+      {% capture handle %}mega_menu_col_{{ i }}{% endcapture %}
+      {% if block.settings[handle] != 'none' %}
+      {% assign cols = cols | plus:1 %}
+      {% endif %}
+      {% endfor %}
+
+      {% for i in (1..4) %}
+      {% capture handle %}mega_menu_col_{{ i }}{% endcapture %}
+
+      {% case block.settings[handle] %}
+
+      {% when 'menu' %}
+
+      {% capture menu_width %}mega_menu_width_col_{{ i }}{% endcapture %}
+      {% capture menu_title %}mega_menu_title_col_{{ i }}{% endcapture %}
+      {% capture menu_link %}mega_menu_link_col_{{ i }}{% endcapture %}
+      {% capture menu %}mega_menu_ll_col_{{ i }}{% endcapture %}
+      <div class="col-md-{{ 12 | divided_by:cols }} sub-item2-content" data-cols="{{ 12 | divided_by:cols }}">
+        <h4><a class="a-mega-second-link" href="{{ block.settings[menu_link] }}">{{ block.settings[menu_title] }}</a></h4>
+        <div class="sub_item3-content">
+          {% for link in linklists[block.settings[menu]].links limit:block.settings.menu_items_count %}
+          <h5><a class="a-mega-third-link" href="{{link.url}}">{{link.title}}</a></h5>
+          {% endfor %}
+        </div>
+      </div>
+      {% when 'collection' %}
+      {% capture menu_collection %}mega_menu_collection_col_{{ i }}{% endcapture %}
+      <div class="col-md-{{ 12 | divided_by:cols }} sub-item2-content coll" data-cols="{{ 12 | divided_by:cols }}">
+        <h4><a class="a-mega-second-link" href="{{ collections[block.settings[menu_collection]].url }}">{{ collections[block.settings[menu_collection]].title }}</a></h4>
+        <div class="sub_item3-content">
+          {% for product in collections[block.settings[menu_collection]].products limit:block.settings.menu_items_count %}
+          <h5><a class="a-mega-third-link" href="{{ product.url | within: collection }}">{{ product.title }}</a></h5>
+          {% endfor %}
+        </div>
+      </div>
+      {% when 'product' %}
+      {% capture menu_product %}mega_menu_product_col_{{ i }}{% endcapture %}
+      {% assign product = all_products[block.settings[menu_product]] %}
+      {% assign img_size = settings.img_size_grid %}
+      <div class="col-md-{{ 12 | divided_by:cols }} sub-item2-content sub-product" data-cols="{{ 12 | divided_by:cols }}">
+        <a href="{{ product.url }}">
+          {% include 'product-grid-image',image:product.featured_image, customclass:'mega-second-image' %}
+        </a>
+        <h4>
+          <a class="a-mega-second-link" href="{{ product.url | within: collection }}">{{ product.title }}</a>
+        </h4>
+        {% include 'price'%}
+      </div>
+      {% when 'image' %}
+      {% capture menu_title %}mega_menu_title_col_{{ i }}{% endcapture %}
+      {% capture menu_image %}mega_menu_image_col_{{ i }}{% endcapture %}
+      {% capture menu_image_link %}mega_menu_image_link_col_{{ i }}{% endcapture %}
+      <div class="col-md-{{ 12 | divided_by:cols }} sub-item2-content" data-cols="{{ 12 | divided_by:cols }}">
+        <p class="widget-html-title"></p>
+        <div>
+          <div class="banner-static">
+            <div class="image">
+              <a href="{{ block.settings[menu_image_link] }}">
+                {% include 'product-grid-image',image:block.settings[menu_image] %}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% else %}
+      {% endcase %}
+      {% endfor %}
+      {% if block.settings.bottom_image %}
+      <div class="col-md-12 sub-item2-content" data-cols="12">
+        <p class="widget-html-title"></p>
+        <div>
+          <div class="banner-static static-menu-bottom">
+            <div class="image">
+              <a href="{{ block.settings.bottom_image_link }}">
+                {% include 'product-grid-image',image:block.settings[menu_image] %}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</li>

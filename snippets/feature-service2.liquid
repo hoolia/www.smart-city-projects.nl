@@ -1,0 +1,33 @@
+<!--Service Area Start-->
+<div class="static1-elomus2">
+  {% if section.settings.heading != blank %} 
+  <div class="module-title">
+    {% if section.settings.description != blank %}  
+    <p class="sub-title">{{ section.settings.description }}</p>
+    {% endif %}
+    <h2>{{ section.settings.heading }}</h2>
+  </div>
+  {% endif %}
+  <div class="row">
+    {% if section.blocks.size > 0 %}
+    {% for block in section.blocks limit:3 %}
+    <div class="col col-sm-4 col-xs-12">
+      <div class="icon">
+        {% if block.settings.use_feature_service_icon %}
+        {% if block.settings.feature_service_icon != blank %}
+        <i class="fa {{block.settings.feature_service_icon }}"></i>
+        {% endif %}
+        {% else %}
+        {% if block.settings.image != blank %}
+        <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ block.settings.image | img_url: 'master' }}" alt="" />
+        {% endif %}
+        {% endif %} 
+      </div>
+      <h3>{{ block.settings.feature_service_title }}</h3>
+      <p>{{ block.settings.feature_service_description }}</p>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+</div>
+<!--End of Service Area-->

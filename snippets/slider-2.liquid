@@ -1,0 +1,136 @@
+<div class="row-{{section.id}} main-row {% if section.settings.fullwidth == true %}full-width{% endif  %}">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div class="row sub-row">
+          <div class="sub-col col-sm-12 col-md-12">
+            <!--Slider Area Start-->
+            <div class="banner8">
+              {% if section.blocks.size > 0 %}
+              <div class= "oc-banner8-container" id="Slideshow-{{ section.id }}">
+                <div class="flexslider oc-nivoslider our_story">
+                  <div class="oc-loading"></div>
+                  <div id="oc-inivoslider1" class="nivoSlider slides static_video">
+                    {% for block in section.blocks %}
+                    {% if block.type == 'image' or block.type == 'video' %}
+                    {% if block.settings.image != blank %}
+                    {% if block.settings.image_clickable %}
+                    <a href="{{ block.settings.slide_link }}">
+                      {% endif %}
+                      {% assign slide_image = block.settings.image | img_url: '1920x900', format: 'pjpg' %}
+                      {% if block.settings.image contains 'png' %} 
+                      {% assign slide_image = block.settings.image | img_url: '1920x900' %}
+                      {% endif %}
+                      <img style="display: none;" class="{% if block.type == 'video' %}img_static{% endif %}{% if settings.lazyloading_enable %} lazyload{% endif %}" {% if settings.lazyloading_enable %} data-{% endif %}src="{{ slide_image }}" alt="" title="#banner{{section.id}}-caption{{ forloop.index }}" />
+                      {% if block.settings.image_clickable %}
+                    </a>
+                    {% endif %}
+                    {% else %}
+                    <img style="display: none;" class="{% if settings.lazyloading_enable %} lazyload{% endif %}" {% if settings.lazyloading_enable %} data-{% endif %}src="{{ 'slider-background.jpg' | asset_img_url: 'master' }}" alt="{{ block.settings.heading }}" title="#banner{{section.id}}-caption{{ forloop.index }}" />                  
+                    {% endif %}
+                    {% endif %}
+                    {% endfor %}
+                  </div>
+                  {% for block in section.blocks %}
+                  {% if block.type == 'image' %}
+                  <div id="banner{{section.id}}-caption{{ forloop.index }}" {{ block.shopify_attributes }} class="banner8-caption nivo-html-caption nivo-caption move-slides-effect" data-class="slide-movetype{{ forloop.inidex }}">
+                    <div class="timeloading"></div>
+                    <div class="banner8-content {{ block.settings.animation_style }}" >
+                      <div class="text-content" style="top:{{ block.settings.top }};right:{{ block.settings.right }};left:{{ block.settings.left }};width:{{ block.settings.width }};text-align:{{ block.settings.float }};" >
+                        {% if block.settings.heading != blank %}  
+                        <h1 class="title1" style="font-size:{{ block.settings.heading_size }}; color:{{ block.settings.heading_color }};">{{ block.settings.heading }}</h1>
+                        {% endif %}
+                        {% if block.settings.subheading != blank %}  
+                        <h2 class="sub-title" style="font-size:{{ block.settings.subheading_size }};color:{{ block.settings.subheading_color }};">{{ block.settings.subheading }}</h2>
+                        {% endif %}
+                        {% if block.settings.description != blank %}  
+                        <div class="banner8-des">
+                          <h4 style="font-size:{{ block.settings.description_size }};color:{{ block.settings.description_color }}; {% if block.settings.float == 'center' %} margin-right:auto;margin-left:auto;{% endif %}"> {{ block.settings.description }}</h4>
+                        </div>
+                        {% endif %}
+                        {% if block.settings.slide_link_text != blank %} 
+                        <div class="banner8-readmore">
+                          {% assign link_bg =  block.settings.link_bg | color_to_hex %}
+                          {% if link_bg == '#000000' %}
+                          {% capture border %}border-color: {{block.settings.link_color}} !important;{% endcapture %}
+                          {% else %}
+                          {% capture border %}border-color: {{block.settings.link_bg}} !important;{% endcapture %}
+                          {% endif %}
+                          <a class="btn" href="{{ block.settings.slide_link }}" style="background-color:{{ block.settings.link_bg }} !important;{{ border }}color:{{ block.settings.link_color }} !important;" onmouseover="this.style='background-color:{{ settings.color_skin }} !important;color:#fff !important;';" onmouseout="this.style='color:{{ block.settings.link_color }} !important;{{ border }}background-color:{{ block.settings.link_bg }} !important';">
+                            {{ block.settings.slide_link_text }}</a>		
+                        </div>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                  {% endif %}
+                  {% if block.type == 'video' %}
+                  <div id="banner{{section.id}}-caption{{ forloop.index }}" {{ block.shopify_attributes }} class="banner8-caption nivo-html-caption nivo-caption move-slides-effect">
+                    <div class="timeloading"></div>
+                    <div class="banner8-content {{ block.settings.animation_style }}">
+                      <div class="text-content">
+                      </div>
+                    </div>
+                    <div id="cms_play"><img style="display: block; z-index: 99;" src=" {{ 'playing_video.png' | asset_url }}" alt="" width="100"></div>
+                    <script>// <![CDATA[
+                      $(document).ready(function(){
+                        $('.row-{{section.id}} #cms_play').click(function(){
+                          $(this).hide('fast');
+                          $('.row-{{section.id}} .nivo-main-image').hide();
+                          {% if block.settings.video_type == 'youtube' %}
+                          $('.row-{{section.id}} .nivo-main-image').after('<iframe class="added_video" id="svid" src="https://www.youtube.com/embed/{{ block.settings.video_src }}?rel=0&showinfo=0&autoplay={{ block.settings.video_autoplay }}" frameborder="0" allowfullscreen></iframe>');
+                                                      {% elsif block.settings.video_type == 'vimeo' %}
+                                                      $('.row-{{section.id}} .nivo-main-image').after('<iframe class="added_video" id="svid" src="https://player.vimeo.com/video/{{ block.settings.video_src }}?color=ffffff&title=0&byline=0&portrait=0&autoplay={{ block.settings.video_autoplay }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+                                                      {% elsif block.settings.video_type == 'mp4' %}
+                                                      $('.row-{{section.id}} .nivo-main-image').after('<video class="added_video" id="svid" controls autoplay width="100%" height="100%" poster="https://via.placeholder.com/1920x850/ffffff/ffffff" ><source src="{{ block.settings.video_src }}" type="video/mp4"></video>');
+                                                      {% endif %}
+                                                      });
+                                                      });
+                                                      {% unless block.settings.video_type == 'mp4' and block.settings.video_autoplay == false %}
+                                                      $('.row-{{section.id}} #cms_play').click();
+                                                      {% endunless %}
+                                                      // ]]></script>
+                  </div>
+                  {% endif %}
+                  {% endfor %}
+                  <script>
+                    $(document).ready(function() {
+                      $('.row-{{section.id}} #oc-inivoslider1').nivoSlider({
+                        effect:    "random"  ,
+                        slices: 15,
+                        boxCols: 8,
+                        boxRows: 4,
+                        manualAdvance:  false  ,
+                        animSpeed: 500,
+                        pauseTime:   {{ section.settings.autoplay_speed }},
+                        startSlide: 0,
+                        controlNav: {% if section.blocks.size > 1 %}true{% else %}false{% endif %},
+                        directionNav: {% if section.blocks.size > 1 %}true{% else %}false{% endif %},
+                        controlNavThumbs: false,
+                        pauseOnHover:   true  ,
+                        prevText: '<i class="fa fa-angle-left"></i>',
+                        nextText: '<i class="fa fa-angle-right"></i>',
+                        afterLoad: function(){
+                        $('.row-{{section.id}} .oc-loading').css("display","none");
+                        $('.row-{{section.id}} .timeloading').css('animation-duration'," {{ section.settings.autoplay_speed }}ms ");
+                      },						
+                                                       });
+                      // Move menu below slider
+                      if ($(".bottom-menu").length) {
+                        $("#shopify-section-{{section.id}}").insertBefore("#shopify-section-header");
+                          $(".banner8").css({"margin-bottom": "0px"});
+                            stickyOffset += $('.shopify-section.slider').height();
+                      }
+                    });
+                  </script>
+                </div>
+              </div>
+              {% endif %}
+            </div>  
+          </div>
+        </div>
+        <!--End of Slider Area-->
+      </div>
+    </div>
+  </div>
+</div>

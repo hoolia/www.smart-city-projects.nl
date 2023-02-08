@@ -1,0 +1,32 @@
+{{ '//cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js'  | script_tag }}
+{{ '//cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css' | stylesheet_tag }}
+
+<script>
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "{{ settings.cookie_constent_background }}",
+        "text": "{{ settings.cookie_constent_text }}"
+      },
+      "button": {
+        "background": "{{ settings.cookie_constent_button_background }}",
+        "text": "{{ settings.cookie_constent_button_text }}",
+        "border": "{{ settings.cookie_constent_border_color }}"
+      }
+    },
+    "content": {
+      "message": "{{ settings.constent_text }}",
+      "href": "{{ settings.cookie_constent_url }}",
+      link: 'Learn more',
+      header: 'Cookies used on the website!',
+      dismiss: 'Got it!',
+      allow: 'Allow cookies',
+      deny: 'Decline',
+      close: '&#x274c;',
+      policy: 'Cookie Policy',
+      target: '_blank'
+    },
+    "theme": "classic",
+    "position": "bottom-left"
+  });
+</script>

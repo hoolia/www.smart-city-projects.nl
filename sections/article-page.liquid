@@ -1,0 +1,235 @@
+{% assign number_of_comments = article.comments_count %}
+{% if comment and comment.created_at %}
+{% assign number_of_comments = article.comments_count | plus: 1 %}
+{% endif %}
+<!--blog main area -->
+<div class="container">
+  <div class="main">
+    <div class="row">
+      <div class="col-order">
+        
+        {% if section.settings.show_sidebar == 'left' %}
+        {% include 'blog-sidebar' %}
+        {% endif %}
+
+        <div id="" class="{% if section.settings.show_sidebar != 'no' %}col-md-9{% else %}col-md-12{% endif %} col-sm-12">
+          <div class="article-container">
+            <div class="article-subtitle">
+            </div>
+            <div class="article-description">
+              {% if article.image %}
+                <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ article | img_url: 'master' }}" alt="">
+              {% endif %}
+              <div class="article-title">
+                <h1>{{ article.title }}</h1>
+              </div>
+              <p class="article-date">
+                <time datetime="{{ article.published_at | date }}">
+                  {{ article.published_at | date: '%d/%m/%Y' }}
+                </time> | {{ article.author }}  
+              </p>
+              <div style="padding: 20px 0 10px;">
+                <p>{{ article.content }}</p>
+                <!-- AddThis Button BEGIN -->
+                <div class="addthis_toolbox addthis_default_style"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_counter addthis_pill_style"></a></div>
+                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script>
+                <!-- AddThis Button END -->
+              </div>
+            </div>
+            <div class="clear"></div>
+            {% if blog.comments_enabled? %}
+            {% comment %}
+            Just like blog.liquid page, define how many comments should be on each page.
+            {% endcomment %}
+            {% paginate article.comments by 5 %}
+            {% comment %}
+            #comments is required, it is used as an anchor link by Shopify.
+            {% endcomment %}
+            {% if number_of_comments > 0 %}
+            <div class="comment-area">
+              <div class="comments-heading">
+                <h3>{{ 'blogs.comments.with_count' | t: count: number_of_comments }}</h3>
+              </div>
+              <div class="comments-list" id="comments">
+                <ul>
+                  {% if comment and comment.created_at %}
+                  <div class="row">
+                    {% if blog.moderated? %}
+                    <div class="item-message-box item-message-success">
+                      <p><span class="lnr lnr-hand"></span> {{ 'blogs.comments.success_moderated' | t }}</p>
+                    </div>
+                    {% else %}
+                    <div class="item-message-box item-message-success">
+                      <p><span class="lnr lnr-hand"></span> {{ 'blogs.comments.success' | t }}</p>
+                    </div>
+                    {% endif %}
+                  </div>
+                  {% endif %}
+                  {% if number_of_comments > 0 %}
+                  {% comment %}
+                  If a comment was just submitted with no blank field, show it.
+                  {% if comment and comment.created_at %}
+                  {% include 'comment' %}
+                  {% endif %}
+                  {% endcomment %}
+
+                  {% comment %}
+                  Showing the rest of the comments.
+                  {% endcomment %}
+                  {% for comment in article.comments %}
+                  {% include 'comment' %}
+                  {% endfor %}
+                  <!-- end comments-list -->
+                  {% if paginate.pages > 1 %}
+                  <div class="pagination">
+                    {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
+                  </div>
+                  {% endif %}
+                  {% endif %}
+                </ul>
+              </div>
+            </div>
+            {% endif %}
+            <div class="comment-respond">
+              <h3 class="comment-reply-title">{{ 'blogs.comments.title' | t }} </h3>
+              <span class="email-notes">Your email address will not be published.</span>
+
+              {% form 'new_comment', article %}
+              {{ form.errors | default_errors }}
+              <div class="row">
+                <div class="col-md-6">
+                  <p>{{ 'blogs.comments.name' | t }} *</p>
+                  <input type="text" name="comment[author]" id="CommentAuthor" placeholder="{{ 'blogs.comments.name' | t }}" value="{{ form.author }}" autocapitalize="words"  />
+                </div>
+                <div class="col-md-6">
+                  <p>{{ 'blogs.comments.email' | t }} *</p>
+                  <input type="email"  name="comment[email]" id="CommentEmail" placeholder="{{ 'blogs.comments.email' | t }}" value="{{ form.email }}" autocorrect="off" autocapitalize="off" />
+                </div>
+                <div class="col-md-12 comment-form-comment">
+                  <p>{{ 'blogs.comments.message' | t }}</p>
+                  <textarea cols="30" rows="10" name="comment[body]" id="CommentBody" placeholder="{{ 'blogs.comments.message' | t }}">{{ form.body }}</textarea>
+                  <input type="submit" value="{{ 'blogs.comments.post' | t }}" />
+                </div>
+              </div>
+              {% if blog.moderated? %}
+              <p style="margin-top: 10px;">{{ 'blogs.comments.moderated' | t }}</p>
+              {% endif %}
+              {% endform %}
+            </div>
+            {% endpaginate %}
+            {% endif %}
+          </div>
+        </div>
+
+        {% if section.settings.show_sidebar == 'right' %}
+        {% include 'blog-sidebar' %}
+        {% endif %}
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--End blog area -->
+{% schema %}
+{
+   "name": "Blog Post Page",
+   "settings": [
+      {
+        "type": "paragraph",
+        "content": "[Video Guide for Blog Posts page](https://youtu.be/5Az5ocFMsRU?list=PLvJCnPMUAdwr6XxWVo_f9dkVRh8GNCXoa)"
+      },
+	  {
+         "type":"select",
+         "id":"show_sidebar",
+         "label":"Sidebar position",
+         "options":[
+            {
+               "value":"no",
+               "label":"No Sidebar"
+            },
+            {
+               "value":"left",
+               "label":"Left Sidebar"
+            },
+            {
+               "value":"right",
+               "label":"Right Sidebar"
+            }
+         ],
+         "default":"no"
+      }
+    ],
+   "blocks": [
+      {
+        "type": "search",
+        "name": "Sidebar Search",
+        "settings": [
+          {
+             "type":"checkbox",
+             "id":"show_sidebar_search_box",
+             "label":"Show Sidebar Search Box",
+             "default":true
+          }
+        ]
+      },
+      {
+        "type": "links",
+        "name": "Sidebar links menu",
+        "settings": [
+          {
+             "type": "link_list",
+             "id": "sidebar_menu",
+             "label": "Sidebar links menu"
+          }
+        ]
+      },
+      {
+        "type": "recent-articles",
+        "name": "Sidebar Recent Articles",
+        "settings": [
+          {
+             "type":"checkbox",
+             "id":"show_article_heading",
+             "label":"Show Heading",
+             "default":true
+          },
+		  {
+             "type":"checkbox",
+             "id":"article_publish_info",
+             "label":"Show Publish Info",
+             "default":false
+          }
+        ]
+      },
+      {
+        "type": "tags",
+        "name": "Sidebar Tags",
+        "settings": [
+          {
+             "type":"checkbox",
+             "id":"show_sidebar_tags_title",
+             "label":"Show Title",
+             "default":true
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "name": "Sidebar Image",
+        "settings": [
+          {
+             "type":"image_picker",
+             "id":"side_image",
+             "label":"Side image"
+          },
+          {
+             "type":"url",
+             "id":"side_link",
+             "label":"Side image link"
+          }
+        ]
+      }
+	],
+   "presets": []
+}
+{% endschema %}

@@ -1,0 +1,103 @@
+<div class="row-{{section.id}} {% if section.settings.fullwidth == true %}full-width{% endif  %}" data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div id="cmsblock-33" class="cmsblock">
+          <div class='description'>
+            <div class="our_story1 {% if section.settings.top_margin %} margin-top{% endif %}">
+              <div class="static_video1">
+                <img class="img_static1{% if settings.lazyloading_enable %} lazyload{% endif %}" {% if settings.lazyloading_enable %} data-{% endif %}src="{% if section.settings.image != blank %}{{ section.settings.image | img_url: '1920x601' }}{% else %} {{ 'videobox.jpg' | asset_img_url: '1920x601' }} {% endif %}" alt="">
+                <div id="cms_play1" class="{{section.id}}"><img src="{{ 'playing_video.png' | asset_url }}" alt=""></div>
+              </div>
+            </div>
+            <script>// <![CDATA[
+              $(document).ready(function(){
+                $('#cms_play1.{{section.id}}').click(function(){
+                  $(this).hide('fast');
+
+                {% if section.settings.video_type == 'youtube' %}
+                $('.row-{{section.id}} .static_video1').append('<iframe class="added_video1" src="https://www.youtube.com/embed/{{ section.settings.video_src }}?rel=0&showinfo=0&autoplay=0&controls=0" frameborder="0" allowfullscreen></iframe>');
+                  {% elsif section.settings.video_type == 'vimeo' %}
+                  $('.row-{{section.id}} .static_video1').append('<iframe class="added_video1" src="https://player.vimeo.com/video/{{ section.settings.video_src }}?color=ffffff&title=0&byline=0&portrait=0&autoplay={{ section.settings.video_autoplay }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+                  {% elsif section.settings.video_type == 'mp4' %}
+                  $('.row-{{section.id}} .static_video1').append('<video class="added_video1" controls autoplay width="100%" height="100%" poster="https://via.placeholder.com/1920x850/ffffff/ffffff" ><source src="{{ section.settings.video_src }}" type="video/mp4"></video>');
+                  {% endif %}
+                  });
+                {% if section.settings.video_autoplay %}
+                	$('#cms_play1.{{section.id}}').click();
+                {% endif %}
+              });
+              // ]]>
+            </script>																																																																																										
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+   "name": "Video Box Section",
+   "settings": [
+      {
+         "type": "image_picker",
+         "id": "image",
+         "label": "Image",
+         "info": "1920 x 650px recommended for preload image"
+      },
+      {
+         "type": "select",
+         "id": "video_type",
+         "label": "Select video type",
+         "options": [
+            {
+               "value": "youtube",
+               "label": "Youtube"
+            },
+            {
+               "value": "vimeo",
+               "label": "Vimeo"
+            },
+            {
+               "value": "mp4",
+               "label": "Mp4"
+            }
+         ],
+         "default": "youtube"
+      },
+      {
+         "type": "text",
+         "id": "video_src",
+         "label": "Video Src",
+         "default": "bLwl0gRbyrk",
+         "info": "Add src id for youtube/vimeo and full link for video file"
+      },
+      {
+         "type": "checkbox",
+         "id": "video_autoplay",
+         "label": "Autoplay",
+         "default": true,
+         "info": "If set to true, the preload image won't be shown. Autoplay with youtube/Vimeo still won't work as browsers don't allow autoplay anymore"
+      },
+	  {
+         "type": "checkbox",
+         "id": "fullwidth",
+         "label": "Set Div fullwidth?",
+         "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "top_margin",
+        "label": "Add top margin?",
+        "info": "White empty space above section",
+        "default": false
+      }
+   ],
+   "presets": [
+      {
+         "name": "VideoBox",
+         "category": "Image"
+      }
+   ]
+}
+{% endschema %}

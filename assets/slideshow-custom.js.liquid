@@ -1,0 +1,29 @@
+$(document).ready(function() {
+  //$('#oc-inivoslider1').nivoSlider({});
+    {% comment %}   effect:    "random"  ,
+    slices: 15,
+    boxCols: 8,
+    boxRows: 8,
+    manualAdvance:  false  ,
+    animSpeed: 500,
+    pauseTime:   {{ section.settings.autoplay_speed }}  ,
+    startSlide: 0,
+    controlNav:   {% if section.blocks.size > 1 %}true{% else %}false{% endif %}  ,
+    directionNav:   {% if section.blocks.size > 1 %}true{% else %}false{% endif %}  ,
+    controlNavThumbs: false,
+    pauseOnHover:   true  ,
+    prevText: '<i class="fa fa-angle-left"></i>',
+    nextText: '<i class="fa fa-angle-right"></i>',
+    afterLoad: function(){
+    $('.row-{{section.id}} .oc-loading').css("display","none");
+      $('.row-{{section.id}} .timeloading').css('animation-duration'," {{ section.settings.autoplay_speed }}ms ");
+      },		{% endcomment %}				
+
+      // Move menu below slider
+      if ($(".bottom-menu").length) {
+      $("#shopify-section-{{section.id}}").insertBefore("#shopify-section-header");
+        $(".banner7").css({"margin-bottom": "0px"});
+      stickyOffset += $('.shopify-section.slider').height();
+      //console.log(stickyOffset);
+    }
+  });

@@ -1,0 +1,195 @@
+{% assign product = all_products[section.settings.feature_product] %}
+{% include 'product-grid-variables' %}
+<div class="main-row {% if section.settings.fullwidth == true %}full-width{% endif  %} {% if section.settings.background == true %} layer-background {% endif  %} {% if section.settings.top_margin %} margin-top{% endif %}" data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div class="row sub-row">
+          <div class="sub-col col-sm-12 col-md-12">
+            {% include section.settings.feature_product_design %}
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>    
+<style>
+  {% if section.settings.background_color != settings.section_bg_color -%}
+  #shopify-section-{{section.id }} .layer-background {
+    background: {{ section.settings.background_color }};
+  }
+  {%- endif %}
+</style>
+{% schema %}
+{
+  "name": "Feature Product section",
+  "class": "index-section index-section--flush",
+  "settings": [
+	{
+      "type": "text",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "Our Featured Product"
+    },
+    {
+    "type": "select",
+    "id": "feature_product_design",
+    "label": "Select Design",
+    "options": [
+	  {
+        "value": "feature-product1",
+        "label": "Design 1"
+      },
+	  {
+        "value": "feature-product2",
+        "label": "Design 2"
+      },
+	  {
+        "value": "feature-product2alt",
+        "label": "Design 2 - 50/50"
+      }
+    ],
+    "default": "feature-product1"
+    },
+    {
+      "type": "product",
+      "id": "feature_product",
+      "label": "Product to Show",
+      "info": "Enter product handle"
+    },
+    {
+      "type": "checkbox",
+      "id": "description",
+      "label": "Show Description Summary",
+      "default": true
+    },
+	{
+      "type": "text",
+      "id": "product_summary_words",
+      "label": "Words count on summary area",
+      "default": "30"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_summary_stripped",
+      "label": "Strip Product Summary",
+      "default": true,
+      "info": "Strips html tags to show text without format"
+    },
+	{
+      "type": "checkbox",
+      "id": "price",
+      "label": "Show price?",
+      "default": true
+    },
+	{
+      "type": "checkbox",
+      "id": "view_details",
+      "label": "View Details Page?",
+      "default": true
+    },
+	{
+      "type": "checkbox",
+      "id": "add_to_cart",
+      "label": "Show Add to Cart button?",
+      "default": true
+    },
+	{
+      "type": "checkbox",
+      "id": "buy_now",
+      "label": "Show Buy Now button?",
+      "default": true
+    },
+	{
+      "type": "image_picker",
+      "id": "bg-image",
+      "label": "Image",
+      "info": "If empty product featured image will be used."
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position",
+      "info": "Not applied on full image layouts",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "select",
+      "id": "ad_align",
+      "label": "Align",
+      "options": [
+        {
+        "value": "left",
+        "label": "left"
+        },
+        {
+        "value": "center",
+        "label": "center"
+        },
+        {
+        "value": "right",
+        "label": "right"
+        }
+       ],
+      "default": "left",
+	  "info": "Used for text area alignment"
+    },
+	{
+      "type": "checkbox",
+      "id": "fullwidth",
+      "label": "Set Div fullwidth?",
+      "default": false
+    },
+	{
+      "type": "checkbox",
+      "id": "background",
+      "label": "Add Background",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Sections Background Color",
+      "info": "This option allows you to set different background color than default one for the section.",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_margin",
+      "label": "Add top margin?",
+      "info": "White empty space above section",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding",
+      "label": "Add bottom margin?",
+      "info": "White empty space below section",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_border",
+      "label": "Add bottom border?",
+      "info": "Border line below section",
+      "default": false
+    }
+  ],
+  "presets": [{
+    "name": "Feature product section",
+    "category": "Collection"
+  }]
+}
+{% endschema %}
+
+

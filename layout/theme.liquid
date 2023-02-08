@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="en" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="ltr" lang="en">
+  <!--<![endif]-->
+  <head>{% render 'pagefly-head' %}
+    <!-- Basic page needs ================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Helpers ================================================== -->
+    {%- if canonical_url != blank  -%}
+    <link rel="canonical" href="{{ canonical_url }}">
+    {%- endif -%}
+    {% if settings.favicon_enable %}
+    <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" />
+    <link rel="apple-touch-icon" href="{{ 'favicon.png' | asset_url }}" />
+    {% endif %}
+    <!-- Title and description ================================================== -->
+    <title>
+      {{ page_title }}{% if current_tags %}{% assign current_tags_joined = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: current_tags_joined }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+    </title>
+    {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+
+    <!-- Prefetch Preconnect ================================================== -->
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.shopify.com" crossorigin>
+    <link rel="preconnect" href="//cdnjs.cloudflare.com" crossorigin="">
+    <link rel="dns-prefetch" href="{{ canonical_url }}" crossorigin="">
+    <link rel="dns-prefetch" href="//cdn.shopify.com" crossorigin="">
+    <link rel="dns-prefetch" href="//fonts.shopifycdn.com" crossorigin="">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" crossorigin="">
+
+    <!-- Product meta ================================================== -->
+    {% include 'open-graph-tags' %}
+    {% include 'twitter-card' %}
+
+    <!-- CSS ================================================== -->
+    <link rel="preload" as="style" href="{{ 'plugins.min.css' | asset_url }}">
+    <link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}">
+    <link rel="preload" as="style" href="{{ 'stylesheet.css' | asset_url }}">
+    <link rel="preload" as="style" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" onload="this.rel='stylesheet'" crossorigin defer>
+    <link rel="preload" as="style" href="//cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" onload="this.rel='stylesheet'" crossorigin defer>
+    <link rel="preload" as="style" href="{{ 'stroke-gap-icons.css' | asset_url }}" onload="this.rel='stylesheet'" defer>
+    {% include 'google-fonts' %}
+    {% if template == 'index' or template contains 'product.' %}<link rel="preload" as="style" href="{{ 'slideshow.css' | asset_url }}" onload="this.rel='stylesheet'">{% endif %}
+    {% if template contains 'product-disabled' %}
+    <link rel="preload" as="style" href="{{ 'zoom.css' | asset_url }}" onload="this.rel='stylesheet'">
+    <link rel="preload" as="style" href="{{ 'magnific-popup.css' | asset_url }}" onload="this.rel='stylesheet'">
+{% endif %}
+    {% if template contains 'collection' or template contains 'blog' or template contains 'article' %}
+    <link rel="preload" as="style" href="{{ 'filter.css' | asset_url }}" onload="this.rel='stylesheet'">   
+    {% endif %}
+    <link rel="preload" as="style" href="{{ 'custom.css' | asset_url }}">
+    <link rel="preload" as="style" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css" onload="this.rel='stylesheet'" crossorigin defer>
+    {% if template == 'page.faq' %}
+    <link rel="preload" as="style" href="{{ 'faq-style.css' | asset_url }}" onload="this.rel='stylesheet'">   
+    {% endif %}
+
+    {{ 'plugins.min.css' | asset_url | stylesheet_tag }}
+    {{ 'theme.css' | asset_url | stylesheet_tag }}
+    {{ 'stylesheet.css' | asset_url | stylesheet_tag }}
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
+    {% if template contains 'collection' or template contains 'blog' or template contains 'article' %}
+    {{ 'filter.css' | asset_url | stylesheet_tag }}
+    {% endif %}
+    <!-- Header hook for plugins ================================================== -->
+    {{ content_for_header }}
+
+    <script src="{{ 'jquery-2.1.1.min.js' | asset_url }}"></script>
+    {% if template contains 'customers' %}
+    <script src="{{ 'shopify_common.js' | shopify_asset_url }}"></script>
+    <script src="{{ 'customer_area.js'  | shopify_asset_url }}"></script>
+    {% endif %}
+    {% if template != 'cart' %}
+    <script src="{{ 'option_selection.js' | shopify_asset_url }}"></script>
+    {% endif %}
+    {% if template == 'cart' %}
+    <script src="{{ 'shipping-cart.js' | asset_url }}"></script>
+    {% endif %}
+  </head>
+  <body class="{% case template %}
+               {% when 'index' %}
+               common-home
+               {% when 'collection' %}
+               collection
+               {% when 'product' %}
+               product-product
+               {% when 'blog' %}
+               blog-blog
+               {% when 'article' %}
+               blog-article
+               {% when 'cart' %}
+               checkout-cart
+               {% when 'customers/login' %}
+               account-login
+               {% else %} {{ template }}
+               {% endcase %} home1" >
+    <!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+    <div class="wrapper">
+      {% section 'header' %}
+      {% if template == 'index' or template contains 'product.' %}
+      <div id="content">
+        {% endif %}
+        {{ content_for_layout }}
+        {% if template == 'index' or template contains 'product.' %}
+      </div>
+      {% endif %}
+      <!-- End Content -->  
+
+      {% include 'quickview' %}
+
+      {% section 'footer' %}
+
+      {% if settings.show_pupup and template == 'index' %}
+      {% include 'popup' %}
+      {% endif %}
+
+      <!-- JavaScripts-->
+
+      {% include 'oldIE-js' %}
+      <script src="{{ 'jquery-ui.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'bootstrap.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'owl.carousel.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'jquery.plugin.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'jquery.countdown.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'menu.js' | asset_url }}" defer="defer"></script>
+      {% if settings.grid_color_swatches %}<script src="{{ 'swatches.js' | asset_url }}" defer="defer"></script>{% endif %}
+      {% if template contains 'collection' and template != 'list-collections' %}
+      <script src="{{ 'grid.js' | asset_url }}" defer="defer"></script>
+      {% endif %}
+      {% if template contains 'collection' %}
+      {% if template != 'list-collections' %}
+      <script src="{{ 'filter.js' | asset_url }}" defer="defer"></script>    
+      {% endif %}
+      {% endif %}
+      {% if template == 'index' or template contains 'product.' %}
+      <script src="{{ 'jquery.nivo.slider.js' | asset_url }}" defer="defer"></script>
+      {% endif %}
+      <script src="{{ 'moment.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'jquery.bpopup.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'jquery.cookie.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'quickview.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'common.js' | asset_url }}" defer="defer"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js" defer="defer"></script>
+      <script src="{{ 'jquery.magnific-popup.min.js' | asset_url }}" defer="defer"></script>
+
+      {% if template contains 'product' %}
+      <script src="{{ 'cloud-zoom.1.0.2.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'zoom.js' | asset_url }}" defer="defer"></script> 
+      {% endif %}
+      {% if template == 'page.faq' %}
+      <script src="{{ 'faq-main.js' | asset_url }}" defer="defer"></script>
+      {% endif %}
+
+      {% if settings.lazyloading_enable -%}
+      <script src="//cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" defer="defer"></script>
+      {% endif %}
+
+      {% comment %}
+      {{ 'moment.min.js' | asset_url | script_tag }}
+      {% endcomment %}
+
+      <script>
+        var moneyFormat = '{{ shop.money_format }}';
+      </script>
+
+      {% if template contains 'product' %}
+      <script src="{{ 'handlebars.min.js' | asset_url }}" defer="defer"></script>
+      {% endif %}
+      {% if settings.ajax_cart_method != 'page' %}
+      {% include 'ajax-cart-template' %}
+      <script src="{{ 'ajaxify.js' | asset_url }}" defer="defer"></script>
+      <script>
+        jQuery(function($) {
+          ajaxifyShopify.init({
+            method: '{{ settings.ajax_cart_method }}',
+            wrapperClass: 'product-detail',
+            formSelector: '#addToCartForm',
+            addToCartSelector: '#addToCart',
+            cartCountSelector: '.cart-count',
+            cartCostSelector: '.cart-cost',
+            toggleCartButton: '.cart-toggle',
+            useCartTemplate: true,
+            btnClass: 'btn',
+            moneyFormat: {{ shop.money_format | json }},
+            disableAjaxCart: false,
+            enableQtySelectors: true
+          });
+        });
+      </script>
+      {% endif %}      
+      <script src="{{ 'fastclick.min.js' | asset_url }}" defer="defer"></script>
+      {% if template  contains 'product' %}
+      <script src="{{ 'shop.js' | asset_url }}" defer="defer"></script>
+      {% endif %}
+      {% if settings.hide_wishlist == false %}
+      <script src="{{ 'Wishlist.js' | asset_url }}" defer="defer"></script>
+      <script>
+        window.addEventListener('DOMContentLoaded', function() {
+          (function() {
+            Wishlist.init();
+          }());
+        });
+      </script>
+      {% endif %}
+      {% if settings.search_autofil_enable %}{% include 'search-autocomplete' %}{% endif %}
+      {% if settings.show_gdpr_msg %}{% include 'cookie-consent' %} {% endif %}
+      {% include 'currencies' %}
+    </div>
+  </body>
+</html>

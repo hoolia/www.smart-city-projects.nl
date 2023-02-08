@@ -1,0 +1,54 @@
+{% include 'product-grid-variables', ratio:'1:1' %}
+
+<div id="cart" class="btn-group btn-block">
+  <button type="button" data-toggle="dropdown" data-loading-text="{{ 'products.product.loading' | t }}" class="btn dropdown-toggle">
+    <span id="cart-total">
+      <span class="txt_number">{{ cart.item_count }}</span>
+      <span class="txt_items">{{ 'cart.general.my_cart'| t }}</span>
+      <span class="total-price">{{ cart.total_price | money }}</span>
+    </span>
+  </button>
+  <ul class="dropdown-menu pull-right">
+    <li class="has-scroll">
+      <table class="table">
+        <tbody>
+          {% if cart.item_count < 1 %} 
+          <p class="text-center cart-empty">{{ 'cart.general.no_items'| t }}</p>
+          {% else %}
+          {% for item in cart.items %}
+          <tr>
+            <td class="text-center">
+              <a href="{{ item.url }}">
+                {% include 'product-grid-image',image:item.image, customclass:'cart-image' %}
+              </a>
+            </td>
+            <td class="text-left info-item">
+              <a class="cart-name" href="{{ item.url }}">{{ item.product.title }}</a>
+              <p class="cart-quantity">{{ item.quantity }} &times;</p>
+              <p class="cart-price">{{ item.line_price | money }}</p>
+            </td>
+            <td class="text-center cart-close">
+              <button type="button" onclick="cart.remove('{{ item.variant_id }}');" title="Remove" class="btn btn-danger btn-xs">
+                <i class="fa fa-angle-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+          {% endfor %}
+          {% endif %}
+        </tbody>
+      </table>
+    </li>
+    <li {% if cart.item_count < 1 %} class="hide"{% endif %}>
+      <table class="table">
+        <tr>
+          <td class="text-left">{{ 'cart.general.subtotal' | t }} :</td>
+          <td class="text-right" id="cart-subtotal">{{ cart.total_price | money }}</td>
+        </tr>
+      </table>
+      <p class="text-center cart-button">
+        <a href="/cart">{{ 'cart.general.view_cart' | t }}</a> 
+        <a href="/checkout">{{ 'cart.general.checkout' | t }}</a>
+      </p>
+    </li>
+  </ul>
+</div>

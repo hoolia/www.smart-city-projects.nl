@@ -1,0 +1,151 @@
+{% if section.settings.insta_get != blank %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.instagramFeed/3.0.4/jquery.instagramFeed.min.js" defer="defer" crossorigin></script>
+<div id="instagram_block_home1" class="block">
+  {% if section.settings.insta_title != blank%}
+  <div class="footer-title">
+    <h5>{{ section.settings.insta_title }}</h5>
+  </div>
+  {% endif %}
+    <div class="row_items content_block owl-carousel owl-theme" id="instafeed">
+  </div>
+  <script type = "text/javascript" >
+    $(document).ready(function() {
+
+      $.instagramFeed({
+        {% if section.settings.insta_get contains '@' %}
+        'username': '{{ section.settings.insta_get | remove_first: "@" }}',
+        {% elsif section.settings.insta_get contains '#' %}
+        'tag': '{{ section.settings.insta_get | remove_first: "#" }}',
+        {% endif %}
+        'host': 'https://images' + ~~(Math.random() * 3333) + '-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=https://www.instagram.com/',
+        'container': "#instafeed",
+        'display_profile': false,
+        'display_biography': false,
+        'display_gallery': true,
+        'display_captions': false,
+        'max_tries': 8,
+        'callback': null,
+        'styling': true,
+        'items': 6,
+        'items_per_row': 3,
+        'image_size' : 240,
+        'margin': 1,
+        'lazy_load': true,
+        'on_error': console.error
+      });
+    }); 
+</script>
+</div>
+{% endif %}
+{% if section.settings.insta_get != blank %}
+{{ 'instastory.min.js' | asset_url | script_tag }}
+<div id="instagram_block_home1" class="block">
+  {% if section.settings.insta_title != blank%}
+  <div class="footer-title">
+    <h5>{{ section.settings.insta_title }}</h5>
+  </div>
+  {% endif %}
+  <div class="row">
+    <div class="row_items content_block owl-carousel owl-theme" id="instafeed">
+    </div>
+  </div>
+  <script type = "text/javascript" >
+    $(document).ready(function() {
+
+        $("#instafeed").instastory({
+            get: "{{ section.settings.insta_get }}",
+            limit: "6",
+            imageSize: 150,
+            after: function() {
+                jQuery("#instafeed a").attr("target","_blank");
+                jQuery("#instafeed a").attr("href", $(this).find('img').attr('src'));
+                jQuery("#instafeed a img").addClass("fancybox");
+                jQuery("#instafeed a img").addClass("img-responsive");
+                jQuery("#instafeed a img").addClass("insta-size");
+                {% if settings.lazyloading_enable %}jQuery("#instafeed a img").addClass("lazyload");{% endif %}
+                $("#instagram_block_home .content_block").owlCarousel({
+                autoPlay: false,
+                items : 6,
+                slideSpeed : 1000,
+                navigation : false,
+                pagination : false,
+                stopOnHover : true,
+                itemsDesktop : [1199, 3],
+                itemsDesktopSmall : [991, 3],
+                itemsTablet : [767, 4],
+                itemsMobile : [480, 2],
+              });
+      		  {% if settings.grid_auto_resize != 'false' -%}
+      		  	mass.resizeInsta();
+      		  {% endif %}
+            }
+        });
+    }); 
+</script>
+  <script type="text/javascript">
+    /*$('.content_block').magnificPopup({
+      type: 'image',
+      delegate: 'm',
+      gallery: {
+        enabled : true
+      }
+    });*/
+  </script>
+</div>
+{% endif %}
+
+{% if section.settings.insta_access_token != blank %}
+{{ 'instafeed.min.js' | asset_url | script_tag }}
+<div id="instagram_block_home1" class="block">
+  {% if section.settings.insta_title != blank%}
+  <div class="footer-title">
+    <h5>{{ section.settings.insta_title }}</h5>
+  </div>
+  {% endif %}
+  <div class="row">
+    <div class="row_items content_block owl-carousel owl-theme" id="instafeed">
+    </div>
+  </div>
+  <script type="text/javascript">
+    jQuery(document).ready(function(){
+      var feed = new Instafeed({        
+        get: "user",    
+        userId:{{ section.settings.insta_access_token | split:"." | first }}, 
+        accessToken: '{{ section.settings.insta_access_token }}', 
+        limit: "6",
+        resolution: "thumbnail",
+        after: function() {
+        jQuery("#instafeed a").attr("target","_blank");
+        jQuery("#instafeed a").attr("href", $(this).find('img').attr('src'));
+        jQuery("#instafeed a img").addClass("fancybox");
+        jQuery("#instafeed a img").addClass("img-responsive");
+        jQuery("#instafeed a img").addClass("insta-size");
+        {% if settings.lazyloading_enable %}jQuery("#instafeed a img").addClass("lazyload");{% endif %}
+        $("#instagram_block_home .content_block").owlCarousel({
+        autoPlay: false,
+        items : 6,
+        slideSpeed : 1000,
+        navigation : false,
+        pagination : false,
+        stopOnHover : true,
+        itemsDesktop : [1199, 3],
+        itemsDesktopSmall : [991, 3],
+        itemsTablet : [767, 4],
+        itemsMobile : [480, 2],
+      });
+    }
+                           });
+    feed.run();
+    });
+  </script>
+  <script type="text/javascript">
+    $('.content_block').magnificPopup({
+      type: 'image',
+      delegate: 'm',
+      gallery: {
+        enabled : true
+      }
+    });
+  </script>
+</div>
+{% endif %}

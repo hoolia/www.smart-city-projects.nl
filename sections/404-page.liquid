@@ -1,0 +1,44 @@
+<!--Error Text Area Start-->
+<div id="error-not-found" class="container">
+  <div class="row">
+    <div id="content" class="col-lg-12 col-md-12 col-sm-12">
+      <div class="error-text">
+        {% if section.settings.image != blank %}
+          <img {% if settings.lazyloading_enable %}data-{% endif %}src="{{ section.settings.image | img_url: 'master' }}" alt="" class="{% if settings.lazyloading_enable %}lazyload{% endif %} img-responsive" />
+          {% endif %}
+        <h1>{{ 'general.404.title' | t }}</h1>
+        <div class="btn" style="display:block;">
+          {% if section.settings.link != blank %}          
+          <a href="{{ section.settings.link }}" class="btn">{{ 'general.404.button' | t }}</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End of Error Text Area-->
+{% schema %}
+{
+   "name": "404 Page",
+   "settings": [
+	  {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image",
+        "info": "404 image"
+      },
+      {
+        "type": "paragraph",
+        "content": "You can use the language editor for editing heading and button text as shown [here](https://help.shopify.com/manual/using-themes/change-wording). The literals are 'general.404.title' and 'general.404.button'."
+      },
+      {
+        "type": "url",
+        "id": "link",
+        "label": "Link URL",
+		"default": "/"
+      }
+    ],
+   "blocks": [],
+   "presets": []
+}
+{% endschema %}

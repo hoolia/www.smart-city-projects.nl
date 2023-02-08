@@ -1,0 +1,59 @@
+<div class="follow">
+  <label>{{ 'layout.footer.follow_us' | t }}</label>
+  <ul class="link-follow">
+    {% if settings.social_facebook_link != blank %}
+    <li class="first">
+      <a class="fa fa-facebook" data-toggle="tooltip" data-placement="bottom" href="{{ settings.social_facebook_link }}" title="{{ 'layout.footer.store_on_social_network' | t: store_name: shop.name, social_network: 'Facebook' | escape }}">
+      </a>
+    </li>
+    {% endif %}
+    {% if settings.social_twitter_link != blank %}
+    <li>
+      <a class="fa fa-twitter" data-toggle="tooltip" data-placement="bottom" href="{{ settings.social_twitter_link }}" title="{{ 'layout.footer.store_on_social_network' | t: store_name: shop.name, social_network: 'Twitter' | escape }}">
+      </a>
+    </li>
+    {% endif %}
+    {% if settings.social_pinterest_link != blank %}
+    <li>
+      <a class="fa fa-pinterest-square" data-toggle="tooltip" data-placement="bottom"  href="{{ settings.social_pinterest_link }}" title="{{ 'layout.footer.store_on_social_network' | t: store_name: shop.name, social_network: 'Pinterest' | escape }}">
+      </a>
+    </li>
+    {% endif %}
+    {% if settings.social_google_plus_link != blank %}
+    <li>
+      <a class="fa fa-google-plus" data-toggle="tooltip" data-placement="bottom" href="{{ settings.social_google_plus_link }}" title="{{ 'layout.footer.store_on_social_network' | t: store_name: shop.name, social_network: 'Google' | escape }}" rel="publisher">
+      </a>
+    </li>
+    {% endif %}
+    {% if settings.social_instagram_link != blank %}
+    <li>
+      <a class="fa fa-instagram" data-toggle="tooltip" data-placement="bottom" href="{{ settings.social_instagram_link }}" title="{{ 'layout.footer.store_on_social_network' | t: store_name: shop.name, social_network: 'Instagram' | escape }}">
+      </a>
+    </li>
+    {% endif %}
+    {% if settings.social_tumblr_link != blank %}
+    <li>
+      <a class="fa fa-tumblr" data-toggle="tooltip" data-placement="bottom" href="{{ settings.social_tumblr_link }}" title="{{ 'layout.footer.store_on_social_network' | t: store_name: shop.name, social_network: 'Tumblr' | escape }}">
+      </a>
+    </li>
+    {% endif %}
+    {% if settings.social_youtube_link != blank %}
+    <li>
+      <a class="fa fa-youtube" data-toggle="tooltip" data-placement="bottom"  href="{{ settings.social_youtube_link }}" title="{{ 'layout.footer.store_on_social_network' | t: store_name: shop.name, social_network: 'YouTube' | escape }}">
+      </a>
+    </li>
+    {% endif %}
+    {% if settings.social_vimeo_link != blank %}
+    <li>  
+      <a class="fa fa-vimeo" data-toggle="tooltip" data-placement="bottom"  href="{{ settings.social_vimeo_link }}" title="{{ 'layout.footer.store_on_social_network' | t: store_name: shop.name, social_network: 'Vimeo' | escape }}">
+      </a>
+    </li>
+    {% endif %}
+    {% if settings.social_fancy_link != blank %}
+    <li>
+      <a class="fa fa-fancy" data-toggle="tooltip" data-placement="bottom"  href="{{ settings.social_fancy_link }}" title="{{ 'layout.footer.store_on_social_network' | t: store_name: shop.name, social_network: 'Fancy' | escape }}">
+      </a>
+    </li>
+    {% endif %}
+  </ul>
+</div>

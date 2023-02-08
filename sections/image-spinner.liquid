@@ -1,0 +1,165 @@
+<div class="main-row {% if section.settings.fullwidth == true %}full-width{% endif  %} {% if section.settings.background == true %} layer-background {% endif  %} " data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div class="row sub-row">
+          <div class="sub-col col-sm-12 col-md-12">
+            <div class="module-title">
+              {% if section.settings.heading != blank %}  
+              <h2>{{ section.settings.heading }}</h2>
+              {% endif %}
+              {% if section.settings.description != blank %}  
+              <p class="sub-title">{{ section.settings.description }}</p>
+              {% endif %}
+            </div>
+            <div id="360frames" style="margin: 0 auto auto;"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>
+<style>
+  {% if section.settings.background_color != settings.section_bg_color -%}
+  #shopify-section-{{section.id }} .layer-background {
+    background: {{ section.settings.background_color }};
+  }
+  {%- endif %}
+</style>    
+<script src="//unpkg.com/spritespin@x.x.x/release/spritespin.js" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "Image Spinner",
+  "class": "image-spinner",
+  "max_blocks": 40,
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+	{
+      "type": "checkbox",
+      "id": "fullwidth",
+      "label": "Set Div fullwidth?",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "background",
+      "label": "Add Background",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Sections Background Color",
+      "info": "This option allows you to set different background color than default one for the section.",
+      "default": "#f8f8f8"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Spinner image"
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Image spinner section",
+    "category": "Image",
+    "blocks": [
+      {
+        "type": "image"
+      },
+      {
+        "type": "image"
+      }
+    ]
+  }]
+}
+{% endschema %}
+<script type="text/javascript">
+  $(function(){
+    {% if section.blocks.size > 0 %}
+    {% for block in section.blocks %}
+    {% if block.settings.image != blank %}
+    {% assign frames = frames | append: block.settings.image | img_url: 'master' %}
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+    var frames = [ 
+      {% if section.blocks.size > 0 %}
+    {% for block in section.blocks %}
+    {% if block.settings.image != blank %}
+      {{ block.settings.image | img_url: 'master' | prepend: '"' | append: '",' }}
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+    ];
+
+    $("#360frames").spritespin({
+      frames: frames.length,
+      sense : -1,
+      source: frames,
+      animate: false,
+      plugins: [
+        '360',
+        'move'
+      ],
+      loop: true,
+      frameWrap : true,
+      frameStep : 1,
+      frameTime : 60,
+      enableCanvas : true,
+      responsive: false
+    });
+
+  });
+</script>
+<style type="text/css">
+      .detail{
+      position: absolute;
+      width: 100px;
+      background: white; 
+      opacity: 0.7;
+      padding: 10px;
+      border: 1px dashed black;
+      z-index: 1000;
+    }
+    .detail-0{
+      top : 40px;
+      left: 40px;
+    }
+
+    .detail-8{
+      right : 40px;
+      bottom: 40px;
+    }
+
+  .detail-20{
+    top: 40px;
+    left: 40px;
+  }
+
+  @media (max-width: 991px){
+    .spritespin-instance{
+      width: 100% !important;
+      /*height: 65vw !important;*/
+    }
+  }
+</style>

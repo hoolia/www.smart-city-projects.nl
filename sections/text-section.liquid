@@ -1,0 +1,276 @@
+<div class="main-row {% if section.settings.fullwidth == true %}full-width{% endif  %} {% if section.settings.background == true %} layer-background {% endif  %} " {% if section.settings.bg-image != blank %}style="background-image: url('{{ section.settings.bg-image | img_url: 'master' }}');" {% endif %} data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div class="row sub-row">
+          <div class="sub-col col-sm-12 col-md-12">
+            {% include section.settings.product_advert_design %}
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>    
+<style>
+  #shopify-section-{{section.id }} .static2-elomus1 {
+    margin-top: 0px;
+  }
+  
+  #shopify-section-{{section.id }} .margin-top {
+    margin-top: 80px;
+  }
+  {% if section.settings.background_color != settings.section_bg_color -%}
+  #shopify-section-{{section.id }} .layer-background {
+    background: {{ section.settings.background_color }};
+  }
+  {%- endif %}
+  #shopify-section-{{section.id }} h4, #shopify-section-{{section.id }} .sub-title, #shopify-section-{{section.id }} .sub-title1 {
+    color: {{ section.settings.sub_heading_color }};
+    font-size:{{ section.settings.sub_heading_size }}px;
+  }
+  #shopify-section-{{section.id }} h2, #shopify-section-{{section.id }} h3 {
+    color: {{ section.settings.heading_color }};
+    font-size:{{ section.settings.heading_size }}px;
+  }
+  #shopify-section-{{section.id }} p, #shopify-section-{{section.id }}  div {
+    color: {{ section.settings.description_color }};
+    font-size:{{ section.settings.description_size }}px;
+  }
+  {% if section.settings.overwrite_link_color %}
+  #shopify-section-{{section.id }} a.txt {
+    color: {{ section.settings.link_color_text }};
+    border-color: {{ section.settings.link_color_text }};
+    background-color: {{ section.settings.link_color_bg }};
+  }
+  #shopify-section-{{section.id }} a.txt:hover {
+    color: {{ section.settings.link_color_text }};
+    border-color: {{ settings.color_skin }};
+    background-color: {{ settings.color_skin }};
+  }
+  {% endif %}
+  {% if section.settings.overwrite_link2_color %}
+  #shopify-section-{{section.id }} a.txt2 {
+    color: {{ section.settings.link2_color_text }};
+    border-color: {{ section.settings.link2_color_text }};
+    background-color: {{ section.settings.link2_color_bg }};
+  }
+  #shopify-section-{{section.id }} a.txt2:hover {
+    color: {{ section.settings.link2_color_bg }};
+    border-color: {{ settings.color_skin }};
+    background-color: {{ settings.color_skin }};
+  }
+  {% endif %}
+  
+</style>
+
+
+{% schema %}
+{
+  "name": "Text Content section",
+  "class": "index-section index-section--flush",
+  "settings": [
+    {
+    "type": "select",
+    "id": "product_advert_design",
+    "label": "Select Design",
+    "options": [
+	  {
+        "value": "text-content1",
+        "label": "Design 1"
+      }
+    ],
+    "default": "text-content1"
+    },
+	{
+      "type": "checkbox",
+      "id": "fullwidth",
+      "label": "Set Div fullwidth?",
+      "default": true
+    },
+	{
+      "type": "checkbox",
+      "id": "background",
+      "label": "Add Background",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Sections Background Color",
+      "info": "This option allows you to set different background color than default one for the section.",
+      "default": "#f8f8f8"
+    },
+	{
+      "type": "image_picker",
+      "id": "bg-image",
+      "label": "Image",
+      "info": "Background image"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_margin",
+      "label": "Add top margin?",
+      "info": "White empty space above section",
+      "default": false
+    },
+	{
+      "type": "text",
+      "id": "subheading",
+      "label": "SubHeading",
+      "info": "Mostly appears on top of main heading in small fonts"
+    },
+    {
+      "type": "range",
+      "id": "sub_heading_size",
+      "label": "SubHeading Size(px)",
+      "min": 8,
+      "max": 40,
+      "step": 2,
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "sub_heading_color",
+      "label": "Subheading Color",
+      "default": "#ababab",
+      "info": "Used for top heading and features Text1"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main Heading"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Main Heading Size(px)",
+      "min": 20,
+      "max": 80,
+      "step": 2,
+      "default": 36
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#454545",
+      "info": "Used for main title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "label": "Description Size(px)",
+      "min": 8,
+      "max": 40,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#7e7e7e"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link Text"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link URL"
+    },
+	{
+      "type": "checkbox",
+      "id": "overwrite_link_color",
+      "label": "Override default link Color?",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "link_color_text",
+      "label": "Text Color",
+      "default": "#454545"
+    },
+    {
+      "type": "color",
+      "id": "link_color_bg",
+      "label": "Background Color",
+      "default": "#fff"
+    },
+    {
+      "type": "text",
+      "id": "link_text_2",
+      "label": "Button 2 Text"
+    },
+    {
+      "type": "url",
+      "id": "link_2",
+      "label": "Button 2 URL"
+    },
+	{
+      "type": "checkbox",
+      "id": "overwrite_link2_color",
+      "label": "Override default link Color?",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "link2_color_text",
+      "label": "Text Color",
+      "default": "#454545"
+    },
+    {
+      "type": "color",
+      "id": "link2_color_bg",
+      "label": "Background Color",
+      "default": "#fff"
+    },
+    {
+      "type": "select",
+      "id": "ad_align",
+      "label": "Align",
+      "options": [
+        {
+        "value": "left",
+        "label": "left"
+        },
+        {
+        "value": "center",
+        "label": "center"
+        },
+        {
+        "value": "right",
+        "label": "right"
+        }
+       ],
+      "default": "left",
+	  "info": "Used for text alignment"
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding",
+      "label": "Add bottom margin?",
+      "info": "White empty space below section",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_border",
+      "label": "Add bottom border?",
+      "info": "Border line below section",
+      "default": false
+    }
+  ],
+  "presets": [{
+    "name": "Text Content section",
+    "category": "Text"
+  }]
+}
+{% endschema %}

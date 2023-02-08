@@ -1,0 +1,104 @@
+<div class="sidebar-overlay"></div>
+<div class="oc-menu"  id="sidebar-toggle">
+  <input type="hidden" id="menu-effect-{{section.id}}" class="menu-effect" value="none" />
+  <div class="oc-menu-bar visible-sm visible-xs">
+    <div class="left"><i class="icon-menu" aria-hidden="true"></i> <span>{{ 'collections.sidebar.sidebar_filters' | t }}</span></div>
+  </div>
+</div>
+<aside id="column-left" class="col-sm-12 col-md-3">
+  <div class="layernavigation-module">
+    <div class="panel panel-default">
+      {% if page_title != 'Products' %}
+      <div class="panel-heading layered-heading">
+        {{ page_title }}
+      </div>
+      {% endif %}
+      <div class="layered">
+        <div class="list-group">
+          {% for block in section.blocks %}
+          {% if block.type == 'search' %}
+          <!--Blog search start-->
+          {% if block.settings.show_sidebar_search_box %}
+          <div class="filter-attribute-container filter-attribute-remove-container">
+            <div id="search" class="blog input-group">
+              <form action="/search" method="POST" role="search" name ="blog-search" id="blog-search">
+                <input type="hidden" name="type" value="blog">
+                <input type="text" name="q" id="text-search" value="{{ search.terms | escape }}" placeholder="{{ 'layout.search_bar.placeholder_blog' | t }}" class="form-control input-lg" aria-label="{{ 'layout.search_bar.placeholder_blog' | t }}" />
+                <span class="input-group-btn">
+                  <button type="submit" form="blog-search" class="btn btn-default btn-lg">&nbsp;</button>
+                </span>
+              </form>
+            </div>
+          </div>
+          {% endif %}
+          {% elsif block.type == 'links' %}
+          <!-- Shows a link menu selected from settings -->
+          {% if block.settings.sidebar_menu != blank %}
+          <div class="filter-attribute-container filter-categories">
+            <label>{{ linklists[block.settings.sidebar_menu].title }}</label>
+            <div class="list-group-item">
+              <div id="filter-group0">
+                {% for link in linklists[block.settings.sidebar_menu].links %}
+                <a class="a-filter add-filter {% if link.active %} active {% endif %}" href="{{link.url}}">{{link.title}}</a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% elsif block.type == 'recent-articles' %}
+          <!--Sidebar recent articles -->
+          <div id="blog-sidebar" class="filter-attribute-container">
+            {% if block.settings.show_article_heading %}
+            <label>{{ 'blogs.sidebar.recent_articles' | t }}</label>
+            {% endif %}
+            <div class="article-page">
+              {% for article in blog.articles limit:5 %}
+              <div class="intro-content">
+                <div class="article-name">
+                  <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+                </div>
+                {% if block.settings.article_publish_info %}
+                <p class="articledate">
+                  <time datetime="{{ article.published_at }}">{{ article.published_at | date: "%b %d, %Y" }}</time> <strong>{{ 'blogs.article.by' | t }}</strong> {{ article.author }}
+                </p>
+                {% endif %}
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% elsif block.type == 'tags' %}
+          <!--Sidebar tags section -->
+          <div class="filter-attribute-container">
+            {% if block.settings.show_sidebar_tags_title %}
+            <label>{{ 'blogs.sidebar.tags_cloud' | t }}</label>
+            {% endif %}
+            <div class="list-group-item">
+              <div id="filter-group{{forloop.index}}">
+                <div class="tagcloud05">
+                  <ul>
+                    {% for tag in blog.all_tags %}
+                    <li>
+                      {{ tag | link_to_tag: tag }}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elsif block.type == 'image' and block.settings.side_image %} 
+          <!--Sidebar image section -->
+          <div class="banner-static static-sidebar">
+            <div class="image">
+              <a href="{{ block.settings.side_link }}">
+                <img src="{{ block.settings.side_image | img_url: 'master' }}" alt="#">
+              </a>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
