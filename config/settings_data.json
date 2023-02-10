@@ -990,6 +990,11 @@
           "sub-heading": "Revolutionizing the industry with its \"Distributed DataCenter\" based on 100% renewable energy!",
           "content": "<p>With our deepest belief in the concept of circular economy, we have generated a brilliant idea:<br\/>Repurpose waste heat from DataCenters to heat Office Buildings, by bringing small “DataCenter modules” running on 100% pure Green Renewable & Recycled Energy!<\/p><p> <\/p><p>Ending the cycle of Big Centralized DataCenter. It is time to create micro-grid communities and give power back to the people.<\/p><p> <\/p><p>Watch this video for more information.<\/p>"
         }
+      },
+      "23726bfe-e4ad-4539-a4f1-4289742a83db": {
+        "type": "TimeLine-list",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
@@ -1000,7 +1005,8 @@
       "2ed49d5d-c193-49be-a728-959c0685fe8b",
       "1527121164309",
       "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
-      "49a10ab4-423c-48b5-ba41-1a8db40c7525"
+      "49a10ab4-423c-48b5-ba41-1a8db40c7525",
+      "23726bfe-e4ad-4539-a4f1-4289742a83db"
     ]
   },
   "presets": {
