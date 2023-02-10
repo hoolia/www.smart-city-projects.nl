@@ -66,11 +66,11 @@
       "settings": {
         "layout": "brands",
         "heading": "Logo Brands & Clients",
-        "fullwidth": false,
+        "fullwidth": true,
         "background": false,
         "background_color": "#f8f8f8",
-        "top_margin": false,
-        "bottom_padding": false
+        "top_margin": true,
+        "bottom_padding": true
       }
     }
   },
