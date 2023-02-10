@@ -1,6 +1,6 @@
 <div class="container" >
   <div class="constyle2le1">
-  
+  {% for block in blocks %}
      <div data-v-e6ef43fc="" class="st2_1tem pcst2_1tem">
       <div data-v-129dd9bd="" data-v-e6ef43fc="" class="imgbox">
         <!---->
@@ -9,8 +9,7 @@
           title=""
           class="imgico imgico2 pcimgico2"
           data-psize='{"w":15,"h":32}'
-          data-src="https://static.eznetonline.com//webquick/public/assets/tel.png"
-          src="https://static.eznetonline.com//webquick/public/assets/tel.png"
+          src={{ block.settings.image  | img_url: 'master'}}
           lazy="loaded"
         />
         <!---->
@@ -24,7 +23,7 @@
         <p><span style="color: #008117;">Tel: +31 – 85 – 7738870</span></p>
       </div>
     </div>
-  
+  {% endfor %}
   
   </div>
 </div>
