@@ -1,10 +1,5 @@
 {
   "sections": {
-    "5eea40a6-8bf4-429e-9a13-4c4357feb43b": {
-      "type": "icon-with-text",
-      "settings": {
-      }
-    },
     "db4ef997-b436-40d6-b1f5-46bc3a4693d0": {
       "type": "text-section",
       "settings": {
@@ -37,6 +32,11 @@
         "bottom_border": false
       }
     },
+    "5eea40a6-8bf4-429e-9a13-4c4357feb43b": {
+      "type": "icon-with-text",
+      "settings": {
+      }
+    },
     "main": {
       "type": "contact-page",
       "settings": {
@@ -49,8 +49,8 @@
     }
   },
   "order": [
-    "5eea40a6-8bf4-429e-9a13-4c4357feb43b",
     "db4ef997-b436-40d6-b1f5-46bc3a4693d0",
+    "5eea40a6-8bf4-429e-9a13-4c4357feb43b",
     "main"
   ]
 }
