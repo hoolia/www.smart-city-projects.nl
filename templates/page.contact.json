@@ -41,43 +41,10 @@
         "accept_check_enable": true,
         "accept_text": "I agree with the terms and conditions."
       }
-    },
-    "41b5770c-6de8-4315-a492-5d249ac11daf": {
-      "type": "brands",
-      "blocks": {
-        "template--17645887193390__41b5770c-6de8-4315-a492-5d249ac11daf-16760386863bfad19b-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/installation.png",
-            "link": ""
-          }
-        },
-        "template--17645887193390__41b5770c-6de8-4315-a492-5d249ac11daf-16760386863bfad19b-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/contract.png",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17645887193390__41b5770c-6de8-4315-a492-5d249ac11daf-16760386863bfad19b-0",
-        "template--17645887193390__41b5770c-6de8-4315-a492-5d249ac11daf-16760386863bfad19b-1"
-      ],
-      "settings": {
-        "layout": "brands",
-        "heading": "Logo Brands & Clients",
-        "fullwidth": true,
-        "background": false,
-        "background_color": "#f8f8f8",
-        "top_margin": true,
-        "bottom_padding": true
-      }
     }
   },
   "order": [
     "db4ef997-b436-40d6-b1f5-46bc3a4693d0",
-    "main",
-    "41b5770c-6de8-4315-a492-5d249ac11daf"
+    "main"
   ]
 }
