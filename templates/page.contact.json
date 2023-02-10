@@ -21,12 +21,12 @@
         "link": "",
         "overwrite_link_color": false,
         "link_color_text": "#454545",
-        "link_color_bg": "#fff",
+        "link_color_bg": "#ffffff",
         "link_text_2": "",
         "link_2": "",
         "overwrite_link2_color": false,
         "link2_color_text": "#454545",
-        "link2_color_bg": "#fff",
+        "link2_color_bg": "#ffffff",
         "ad_align": "left",
         "bottom_padding": false,
         "bottom_border": false
@@ -41,10 +41,42 @@
         "accept_check_enable": true,
         "accept_text": "I agree with the terms and conditions."
       }
+    },
+    "41b5770c-6de8-4315-a492-5d249ac11daf": {
+      "type": "brands",
+      "blocks": {
+        "template--17645887193390__41b5770c-6de8-4315-a492-5d249ac11daf-16760386863bfad19b-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/installation.png",
+            "link": ""
+          }
+        },
+        "template--17645887193390__41b5770c-6de8-4315-a492-5d249ac11daf-16760386863bfad19b-1": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17645887193390__41b5770c-6de8-4315-a492-5d249ac11daf-16760386863bfad19b-0",
+        "template--17645887193390__41b5770c-6de8-4315-a492-5d249ac11daf-16760386863bfad19b-1"
+      ],
+      "settings": {
+        "layout": "brands",
+        "heading": "Logo Brands & Clients",
+        "fullwidth": false,
+        "background": false,
+        "background_color": "#f8f8f8",
+        "top_margin": false,
+        "bottom_padding": false
+      }
     }
   },
   "order": [
     "db4ef997-b436-40d6-b1f5-46bc3a4693d0",
-    "main"
+    "main",
+    "41b5770c-6de8-4315-a492-5d249ac11daf"
   ]
 }
