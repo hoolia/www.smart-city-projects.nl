@@ -981,6 +981,7 @@
         "type": "image-with-text",
         "settings": {
           "Image-left": "shopify:\/\/shop_images\/bg_green_building.jpg",
+          "Video-Image": "shopify:\/\/shop_images\/hoolia-video.png",
           "heading": "",
           "sub-heading": "",
           "content": ""
