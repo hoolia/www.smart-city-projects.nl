@@ -367,4 +367,5 @@ p{margin:0 0 10px;}
 }
 .main-timeline .timeline:last-child  .timeline-year:after{
   border: 8px solid #00f100;
+      border-left-color: transparent;
 }
