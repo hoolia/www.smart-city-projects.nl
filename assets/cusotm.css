@@ -319,6 +319,7 @@ p{margin:0 0 10px;}
     width: 70px;
     right: 0;
     top: -65px;
+    background:#f1f1f1
   }
   .main-timeline .timeline-year:after {
     display: none;
