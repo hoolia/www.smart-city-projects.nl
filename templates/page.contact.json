@@ -55,6 +55,7 @@
         "template--17645887193390__41b5770c-6de8-4315-a492-5d249ac11daf-16760386863bfad19b-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/contract.png",
             "link": ""
           }
         }
