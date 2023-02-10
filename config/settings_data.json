@@ -22,7 +22,7 @@
     "color_skin_2": "#242424",
     "color_body": "#cccccc",
     "bg_color": "#f8f8f8",
-    "section_bg_color": "#f8f8f8",
+    "section_bg_color": "#ffffff",
     "headings_color": "#f8f8f8",
     "header_fg_color": "#30bf32",
     "overwrite_header_bg_color": true,
@@ -292,16 +292,18 @@
           "1504781997946-0": {
             "type": "box",
             "settings": {
-              "use_feature_service_icon": true,
+              "image": "shopify:\/\/shop_images\/book.png",
+              "use_feature_service_icon": false,
               "feature_service_icon": "fa-oil-can",
-              "feature_service_title": "Dependance on fossil",
+              "feature_service_title": "Economical Risk",
               "feature_service_description": "Gas is a finite resource, and increasing reliance on it could contribute to energy insecurity and price volatility in the long term."
             }
           },
           "1504781997946-1": {
             "type": "box",
             "settings": {
-              "use_feature_service_icon": true,
+              "image": "shopify:\/\/shop_images\/cost.png",
+              "use_feature_service_icon": false,
               "feature_service_icon": "fa-money-bill",
               "feature_service_title": "Cost",
               "feature_service_description": "Prices can be volatile, and companies may be subject to price increases over time. Additionally, there may be costs associated with installing and maintaining natural gas infrastructure."
@@ -310,18 +312,20 @@
           "1504782065705": {
             "type": "box",
             "settings": {
-              "use_feature_service_icon": true,
+              "image": "shopify:\/\/shop_images\/reputation.png",
+              "use_feature_service_icon": false,
               "feature_service_icon": "fa-star",
-              "feature_service_title": "Reputational Risk",
+              "feature_service_title": "Reputation",
               "feature_service_description": "Companies that use natural gas may be perceived as contributing to environmental and climate change, and could face backlash from consumers, investors, or other stakeholders."
             }
           },
           "5fbcce04-ef97-4d4d-9c57-f352145cb080": {
             "type": "box",
             "settings": {
-              "use_feature_service_icon": true,
+              "image": "shopify:\/\/shop_images\/changing.png",
+              "use_feature_service_icon": false,
               "feature_service_icon": "fa-leaf",
-              "feature_service_title": "Netherlands Energy Plan",
+              "feature_service_title": "Changing Plans",
               "feature_service_description": "Government aims to\nreduce CO2 emissions in\nAmsterdam. The price of natural gas will be higher, and as a result, will the electricity price."
             }
           }
@@ -333,19 +337,20 @@
           "5fbcce04-ef97-4d4d-9c57-f352145cb080"
         ],
         "settings": {
-          "layout": "feature-service4",
-          "heading": "<br>Switch to renewable energy <br>for a sustainable future.",
-          "heading_color": "#0c9e0e",
+          "layout": "feature-service-custom",
+          "heading": "The reasons behind this idea",
+          "heading_color": "#ffffff",
           "description": "",
           "description_color": "#007501",
-          "fullwidth": false,
-          "background": false,
-          "background_color": "#f8f8f8",
+          "fullwidth": true,
+          "background": true,
+          "background_color": "#43db44",
           "bottom_border": false
         }
       },
       "1527121164309": {
         "type": "newsletter",
+        "disabled": true,
         "settings": {
           "fullwidth": true,
           "mailing_list_form_action": "",
@@ -895,6 +900,91 @@
           "bottom_padding": false,
           "bottom_border": false
         }
+      },
+      "75a43b2a-1a20-41a3-9caf-43f29d41f10d": {
+        "type": "testimonial",
+        "blocks": {
+          "75a43b2a-1a20-41a3-9caf-43f29d41f10d-16756091868ec9a208-0": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/global-warming.png",
+              "title": "Global Warming Reduction",
+              "description": "With minimal emissions, renewable energy sources offer a solution to reducing global warming. By augmenting their supply, we can substitute carbon-intensive sources and greatly decrease emissions.",
+              "author": ""
+            }
+          },
+          "75a43b2a-1a20-41a3-9caf-43f29d41f10d-16756091868ec9a208-1": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/global-warming.png",
+              "title": "Global Warming Reduction",
+              "description": "With minimal emissions, renewable energy sources offer a solution to reducing global warming. By augmenting their supply, we can substitute carbon-intensive sources and greatly decrease emissions.",
+              "author": ""
+            }
+          },
+          "eb68ac26-6f6d-4d50-bc10-6856d378300d": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/global-warming.png",
+              "title": "Jobs and other economic benefits",
+              "description": "Air and water pollution, the root cause of many health issues, are non-existent with clean energy technologies. These technologies have been estimated to save public health costs of $74.6 billion annually.",
+              "author": ""
+            }
+          },
+          "dc126c73-c1ee-4bd5-8ec4-df32170a00d2": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/global-warming.png",
+              "title": "Improved public health",
+              "description": "Renewable energy has been proven time and again to be capable of meeting a significant portion of future electricity demands, even with potential limitations taken into account.",
+              "author": ""
+            }
+          },
+          "df3cc870-ae48-49f7-bbbf-c86c6f46afc1": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/global-warming.png",
+              "title": "Inexhaustible energy",
+              "description": "Renewable energy sources generate more jobs per unit of electricity compared to fossil fuels. Furthermore, the expansion of clean energy can also have positive economic “ripple” effects.",
+              "author": ""
+            }
+          },
+          "178768a7-f87a-4c6b-945f-788fb4961fae": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/global-warming.png",
+              "title": "Stable energy prices",
+              "description": "Initial investments are necessary to construct renewable facilities, but once in operation, they have low ongoing costs, resulting in stable energy prices over time compared to fossil energy prices.",
+              "author": ""
+            }
+          }
+        },
+        "block_order": [
+          "75a43b2a-1a20-41a3-9caf-43f29d41f10d-16756091868ec9a208-0",
+          "75a43b2a-1a20-41a3-9caf-43f29d41f10d-16756091868ec9a208-1",
+          "eb68ac26-6f6d-4d50-bc10-6856d378300d",
+          "dc126c73-c1ee-4bd5-8ec4-df32170a00d2",
+          "df3cc870-ae48-49f7-bbbf-c86c6f46afc1",
+          "178768a7-f87a-4c6b-945f-788fb4961fae"
+        ],
+        "settings": {
+          "layout": "testimonials-custom",
+          "heading": "Additional Advantages",
+          "description": "Some other public and financial advantages",
+          "fullwidth": true,
+          "background": true,
+          "background_color": "#ffffff",
+          "top_margin": false
+        }
+      },
+      "49a10ab4-423c-48b5-ba41-1a8db40c7525": {
+        "type": "image-with-text",
+        "settings": {
+          "Image-left": "shopify:\/\/shop_images\/bg_green_building.jpg",
+          "heading": "",
+          "sub-heading": "",
+          "content": ""
+        }
       }
     },
     "content_for_index": [
@@ -903,7 +993,9 @@
       "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
       "dd2de1a0-dce4-4bdd-a8aa-4cb8fe55753c",
       "2ed49d5d-c193-49be-a728-959c0685fe8b",
-      "1527121164309"
+      "1527121164309",
+      "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
+      "49a10ab4-423c-48b5-ba41-1a8db40c7525"
     ]
   },
   "presets": {
