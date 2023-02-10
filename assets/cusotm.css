@@ -230,6 +230,7 @@ p{margin:0 0 10px;}
   position: absolute;
   right: -120px;
   top: -85px;
+  #f1f1f1
 }
 .main-timeline .timeline-year:after {
   content: "";
@@ -319,7 +320,7 @@ p{margin:0 0 10px;}
     width: 70px;
     right: 0;
     top: -65px;
-    background:#f1f1f1
+
   }
   .main-timeline .timeline-year:after {
     display: none;
