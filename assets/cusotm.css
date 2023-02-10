@@ -361,3 +361,6 @@ p{margin:0 0 10px;}
   -o-object-fit: cover;
   object-fit: cover;
 }
+.timeline:last-child .timeline-year {
+    background-color: #00f100;
+}
