@@ -993,6 +993,21 @@
       },
       "23726bfe-e4ad-4539-a4f1-4289742a83db": {
         "type": "TimeLine-list",
+        "blocks": {
+          "59ed0018-36c6-49c6-80c8-99b277470b71": {
+            "type": "slide",
+            "settings": {
+              "Title": "TASK",
+              "image": "shopify:\/\/shop_images\/project-management.png",
+              "task": "TASK",
+              "Day_": "DAY 02",
+              "discription": "Manage the Project"
+            }
+          }
+        },
+        "block_order": [
+          "59ed0018-36c6-49c6-80c8-99b277470b71"
+        ],
         "settings": {
         }
       }
