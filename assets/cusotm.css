@@ -364,4 +364,7 @@ p{margin:0 0 10px;}
 .timeline:last-child .timeline-year {
     background-color: #00f100;
   color:white
+
+.main-timeline .timeline:last-child  .timeline-year:after{
+  border: 8px solid #00f100;
 }
