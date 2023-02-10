@@ -184,7 +184,7 @@ p{margin:0 0 10px;}
   content: "";
   height: 100%;
   width: 2px;
-  border: 2px dashed;
+  border: 2px dashed #333333;
   transform: translateX(-50%);
   position: absolute;
   left: 50%;
