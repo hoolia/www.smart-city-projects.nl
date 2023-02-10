@@ -1017,17 +1017,27 @@
           "c26bf8d3-4fae-46ea-98df-0523e5d49ad8": {
             "type": "slide",
             "settings": {
-              "Title": "",
+              "Title": "We",
               "task": "",
               "Day_": "xx",
               "discription": "Prepare the legal contracts"
+            }
+          },
+          "a1b1d056-e356-4b3c-bf1f-872b0cad9292": {
+            "type": "slide",
+            "settings": {
+              "Title": "we",
+              "task": "",
+              "Day_": "xx",
+              "discription": "Install all the devices"
             }
           }
         },
         "block_order": [
           "59ed0018-36c6-49c6-80c8-99b277470b71",
           "b18b8e89-31b2-4b7f-ae23-06e6bab5d9b1",
-          "c26bf8d3-4fae-46ea-98df-0523e5d49ad8"
+          "c26bf8d3-4fae-46ea-98df-0523e5d49ad8",
+          "a1b1d056-e356-4b3c-bf1f-872b0cad9292"
         ],
         "settings": {
         }
