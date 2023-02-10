@@ -26,7 +26,7 @@
     "section_bg_color": "#ffffff",
     "headings_color": "#f8f8f8",
     "header_fg_color": "#30bf32",
-    "overwrite_header_bg_color": true,
+    "overwrite_header_bg_color": false,
     "header_inner_bar_color": "#0c9e0e",
     "hd_menu_color": "#0c9e0e",
     "hd_menu_inner_color": "#30bf32",
