@@ -219,7 +219,7 @@ p{margin:0 0 10px;}
   clip-path: polygon(100% 0, 0 0, 0 100%);
 }
 .main-timeline .timeline-year {
-  color: #fff;
+  color: #43db43;
   transition: 1s;
   font-weight: 900;
   text-align: center;
