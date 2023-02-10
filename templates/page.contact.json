@@ -41,10 +41,18 @@
             "image": "shopify:\/\/shop_images\/mobile.png",
             "text": "Tel: +31 – 85 – 7738870"
           }
+        },
+        "809b4583-5a98-4dda-8dc0-4aa754bb5f2b": {
+          "type": "blcok",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/message.png",
+            "text": "E-mail: support@hoolia.eu"
+          }
         }
       },
       "block_order": [
-        "da0f363f-e1f3-477e-9c8d-d9c87bd98bda"
+        "da0f363f-e1f3-477e-9c8d-d9c87bd98bda",
+        "809b4583-5a98-4dda-8dc0-4aa754bb5f2b"
       ],
       "settings": {
       }
