@@ -230,7 +230,7 @@ p{margin:0 0 10px;}
   position: absolute;
   right: -120px;
   top: -85px;
-  #f1f1f1
+  background:#f1f1f1
 }
 .main-timeline .timeline-year:after {
   content: "";
