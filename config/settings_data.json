@@ -1018,6 +1018,7 @@
             "type": "slide",
             "settings": {
               "Title": "We",
+              "image": "shopify:\/\/shop_images\/contract.png",
               "task": "",
               "Day_": "xx",
               "discription": "Prepare the legal contracts"
@@ -1027,6 +1028,7 @@
             "type": "slide",
             "settings": {
               "Title": "we",
+              "image": "shopify:\/\/shop_images\/installation.png",
               "task": "",
               "Day_": "xx",
               "discription": "Install all the devices"
