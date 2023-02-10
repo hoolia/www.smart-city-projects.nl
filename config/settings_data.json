@@ -1003,10 +1003,21 @@
               "Day_": "02",
               "discription": "Manage the Project"
             }
+          },
+          "b18b8e89-31b2-4b7f-ae23-06e6bab5d9b1": {
+            "type": "slide",
+            "settings": {
+              "Title": "We",
+              "image": "shopify:\/\/shop_images\/project-management.png",
+              "task": "Task",
+              "Day_": "03",
+              "discription": "Mange the subsidies"
+            }
           }
         },
         "block_order": [
-          "59ed0018-36c6-49c6-80c8-99b277470b71"
+          "59ed0018-36c6-49c6-80c8-99b277470b71",
+          "b18b8e89-31b2-4b7f-ae23-06e6bab5d9b1"
         ],
         "settings": {
         }
