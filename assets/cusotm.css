@@ -372,4 +372,7 @@ p{margin:0 0 10px;}
 .main-timeline .timeline:last-child .timeline-content  .timeline-icon{
   background:#00f100
 }
+.timeline-icon {
+    background-color: rgb(241, 241, 241);
+}
 
