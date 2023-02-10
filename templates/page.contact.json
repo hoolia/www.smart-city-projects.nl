@@ -34,6 +34,18 @@
     },
     "5eea40a6-8bf4-429e-9a13-4c4357feb43b": {
       "type": "icon-with-text",
+      "blocks": {
+        "da0f363f-e1f3-477e-9c8d-d9c87bd98bda": {
+          "type": "blcok",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mobile.png",
+            "text": "Tel: +31 – 85 – 7738870"
+          }
+        }
+      },
+      "block_order": [
+        "da0f363f-e1f3-477e-9c8d-d9c87bd98bda"
+      ],
       "settings": {
       }
     },
