@@ -834,6 +834,7 @@
       },
       "386b4cd7-ab21-481a-b3c6-e1a106db3b6a": {
         "type": "feature-product",
+        "disabled": true,
         "settings": {
           "heading": "Our Featured Product",
           "feature_product_design": "feature-product1",
@@ -857,6 +858,7 @@
       },
       "dd2de1a0-dce4-4bdd-a8aa-4cb8fe55753c": {
         "type": "feature-product",
+        "disabled": true,
         "settings": {
           "heading": "Our Featured Product",
           "feature_product_design": "feature-product1",
@@ -880,6 +882,7 @@
       },
       "2ed49d5d-c193-49be-a728-959c0685fe8b": {
         "type": "feature-product",
+        "disabled": true,
         "settings": {
           "heading": "Our Featured Product",
           "feature_product_design": "feature-product1",
