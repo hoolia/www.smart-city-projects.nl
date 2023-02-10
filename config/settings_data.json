@@ -1019,7 +1019,7 @@
             "settings": {
               "Title": "We",
               "image": "shopify:\/\/shop_images\/contract.png",
-              "task": "",
+              "task": "Task",
               "Day_": "xx",
               "discription": "Prepare the legal contracts"
             }
@@ -1029,7 +1029,7 @@
             "settings": {
               "Title": "we",
               "image": "shopify:\/\/shop_images\/installation.png",
-              "task": "",
+              "task": "Task",
               "Day_": "xx",
               "discription": "Install all the devices"
             }
