@@ -380,3 +380,6 @@ div#content h1,
 div#content h3 {
   display: none;
 }
+div#content {
+    margin-top: 10rem;
+}
