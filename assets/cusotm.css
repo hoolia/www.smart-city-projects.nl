@@ -376,3 +376,7 @@ p{margin:0 0 10px;}
     background-color: rgb(241, 241, 241);
 }
 
+div#content h1,
+div#content h3 {
+  display: none;
+}
