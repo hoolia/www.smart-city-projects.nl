@@ -396,6 +396,7 @@ div#content {
   display:none
 }
 .cd-faq-group .cd-faq-title h2 {
+  padding-left:24px;
     text-transform: uppercase;
     color: #42db43;
     margin-bottom: 50px;
