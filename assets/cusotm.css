@@ -411,3 +411,7 @@ div#content {
     color: #545454;
   
 }
+.cd-faq-group > li {
+    background: #ffffff;
+    margin-bottom: 6px;
+    box-shadow: unset;
