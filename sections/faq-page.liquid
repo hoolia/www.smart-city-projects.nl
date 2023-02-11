@@ -10,7 +10,10 @@
             {% if section.blocks.size > 0 %}
             {% for block in section.blocks %}
             <li>
+                   {% comment %}
               <a class="cd-faq-trigger" href="#0">{{ block.settings.question }}</a>
+              {% endcomment %}
+               <a class="cd-faq-trigger" >{{ block.settings.question }}</a>
               <div class="cd-faq-content">
                 <p>{{ block.settings.answer }}</p>
               </div> <!-- cd-faq-content -->
