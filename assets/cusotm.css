@@ -428,6 +428,9 @@ section.cd-faq {
     background: unset;
 }
 /* footer */
+.footer-top {
+    text-align: center;
+}
 .footer-contact li:before {
     content: "\e6ab";
     font-family: 'Stroke-Gap-Icons';
