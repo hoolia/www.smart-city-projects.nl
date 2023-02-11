@@ -1,5 +1,13 @@
 {
   "sections": {
+    "62dc4ece-61c1-4260-b8d7-0f0fc3816e2b": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "{{page.title}}"
+      }
+    },
     "main": {
       "type": "faq-page",
       "blocks": {
@@ -326,6 +334,7 @@
     }
   },
   "order": [
+    "62dc4ece-61c1-4260-b8d7-0f0fc3816e2b",
     "main",
     "4ade7a86-0fb8-4d00-b7e1-3ca01bf4091c",
     "d88c3799-9268-4e94-a2b5-28af08f4871f",
