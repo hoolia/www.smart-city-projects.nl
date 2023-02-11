@@ -395,10 +395,17 @@ div#content {
 .cd-faq-trigger::before , .cd-faq-trigger::after{
   display:none
 }
+.cd-faq-group .cd-faq-title h2 {
+    text-transform: uppercase;
+    color: #42db43;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
 .faq_question {
    padding:24px 72px 10px 24px;
      margin-bottom: 10px;
     font-weight: bold;
     font-size: 20px;
     color: #545454;
+  
 }
