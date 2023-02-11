@@ -392,6 +392,6 @@ div#content {
 .cd-faq-content {
     display: block !important;
 }
-.cd-faq-trigger::before{
+.cd-faq-trigger::before , .cd-faq-trigger::after{
   display:none
 }
