@@ -445,3 +445,6 @@ section.cd-faq {
     display: flex;
     justify-content: center;
 }
+.footer-contact li:before{
+  display:none
+}
