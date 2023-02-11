@@ -395,9 +395,10 @@ div#content {
 .cd-faq-trigger::before , .cd-faq-trigger::after{
   display:none
 }
-.faq_question{
-    font-size: 24px !important;
+.faq_question {
+    font-size: 30px!important;
     font-weight: 300;
-    margin: 0;
     padding: 24px 72px 24px 24px;
+    color: #42db43;
+    margin-bottom: 25px !important;
 }
