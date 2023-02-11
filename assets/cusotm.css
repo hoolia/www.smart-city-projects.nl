@@ -396,7 +396,7 @@ div#content {
   display:none
 }
 .faq_question {
-    padding: 24px 72px 24px 24px;
+   padding:24px 72px 10px 24px;
      margin-bottom: 10px;
     font-weight: bold;
     font-size: 20px;
