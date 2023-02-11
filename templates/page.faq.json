@@ -94,6 +94,13 @@
             "question": "What if we encounter a technical problem ? Do you handle it ?",
             "answer": "Hoolia Energy provides maintenance and technical support for its solutions, and will handle any technical issues that may arise."
           }
+        },
+        "5aff0557-5e9b-4315-adcc-4352b9d929a7": {
+          "type": "faq",
+          "settings": {
+            "question": "What are Hoolia's data centers used for ?",
+            "answer": "Our HPC data centers are used for our Hoolia Webhosting Company solutions. We propose Webhosting and DevOps solutions for small and big companies, this requires high quality servers."
+          }
         }
       },
       "block_order": [
@@ -102,7 +109,8 @@
         "352ad82a-c336-4be9-ab6e-4b0247729e6e",
         "fd302a75-b539-4f75-8624-3f0aa8d720bc",
         "2810237b-66fd-42b1-a835-17b156a2f894",
-        "d90442ab-e9e3-42fa-9245-866433806dfd"
+        "d90442ab-e9e3-42fa-9245-866433806dfd",
+        "5aff0557-5e9b-4315-adcc-4352b9d929a7"
       ],
       "settings": {
         "Title": "Installation"
