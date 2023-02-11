@@ -427,3 +427,13 @@ section.cd-faq {
 .hd2 .fix-header:hover {
     background: unset;
 }
+/* footer */
+.footer-contact li:before {
+    content: "\e6ab";
+    font-family: 'Stroke-Gap-Icons';
+    display: revert;
+    vertical-align: top;
+    font-size: 16px;
+    position: inherit;
+    right: 12px;
+}
