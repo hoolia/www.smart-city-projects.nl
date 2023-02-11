@@ -68,10 +68,16 @@
         "section_enable": true,
         "section_title": "Shipping information"
       }
+    },
+    "4ade7a86-0fb8-4d00-b7e1-3ca01bf4091c": {
+      "type": "faq-page",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "d4048570-03d9-4761-9a16-e90049de1937"
+    "d4048570-03d9-4761-9a16-e90049de1937",
+    "4ade7a86-0fb8-4d00-b7e1-3ca01bf4091c"
   ]
 }
