@@ -176,6 +176,42 @@
     },
     "fa208734-0e01-462d-ae78-b3ea1bd202b4": {
       "type": "faq-page",
+      "blocks": {
+        "f4587876-ee59-4e0b-9534-8509ef8bad0f": {
+          "type": "faq",
+          "settings": {
+            "question": "How much space do I have to allocate to this solution ?",
+            "answer": "The amount of space required for Hoolia's solution is minimum 5 m² to be sure to have enough space to install and manage the modules."
+          }
+        },
+        "6be9d810-71ce-41de-8631-b39b899d262f": {
+          "type": "faq",
+          "settings": {
+            "question": "How do i signup?",
+            "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+          }
+        },
+        "a53ce1ff-6276-4291-971e-90edd1bc60d1": {
+          "type": "faq",
+          "settings": {
+            "question": "How do i signup?",
+            "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+          }
+        },
+        "0a6a2a0d-1aa6-4442-834d-cf31d6f3ab54": {
+          "type": "faq",
+          "settings": {
+            "question": "How do i signup?",
+            "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+          }
+        }
+      },
+      "block_order": [
+        "f4587876-ee59-4e0b-9534-8509ef8bad0f",
+        "6be9d810-71ce-41de-8631-b39b899d262f",
+        "a53ce1ff-6276-4291-971e-90edd1bc60d1",
+        "0a6a2a0d-1aa6-4442-834d-cf31d6f3ab54"
+      ],
       "settings": {
         "Title": "Office space"
       }
