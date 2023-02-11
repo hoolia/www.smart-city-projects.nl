@@ -424,3 +424,6 @@ section.cd-faq {
     line-height: 1.4;
     color: #000;
 }
+.hd2 .fix-header:hover {
+    background: unset;
+}
