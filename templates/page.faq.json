@@ -153,6 +153,13 @@
             "question": "How much noise does it make ?",
             "answer": "The Hoolia system's very low noise level is uncomparable. Our machines produce less than 60 dB, which is comparable to a fridge's noise."
           }
+        },
+        "e09883bb-637d-4d7e-aeee-5a71290a1056": {
+          "type": "faq",
+          "settings": {
+            "question": "Do I have to purchase this installation ?",
+            "answer": "You don't pay anything for the material. Actually, you receive something.\nWe offer you all the solar panels that have been installed on your roof making you save and earn money for 15 years."
+          }
         }
       },
       "block_order": [
@@ -160,7 +167,8 @@
         "fd57cddf-4f6d-4db5-a5a5-fb0e70fc914a",
         "70b1078c-6b20-4577-85a0-99bca9320605",
         "61e3bb50-8d06-4995-810f-06dff8357cd9",
-        "5e37acf3-d01a-48c6-a5e4-de79581d4606"
+        "5e37acf3-d01a-48c6-a5e4-de79581d4606",
+        "e09883bb-637d-4d7e-aeee-5a71290a1056"
       ],
       "settings": {
         "Title": "Material"
