@@ -431,7 +431,7 @@ section.cd-faq {
 .footer-top {
     text-align: center;
 }
-.footer-contact li:before {
+/* .footer-contact li:before {
     content: "\e6ab";
     font-family: 'Stroke-Gap-Icons';
     display: revert;
@@ -440,3 +440,4 @@ section.cd-faq {
     position: inherit;
     right: 12px;
 }
+ */
