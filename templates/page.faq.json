@@ -144,6 +144,13 @@
           "type": "faq",
           "settings": {
             "question": "How much place does it take ?",
+            "answer": "One of the Hoolia system best point is its size. It has a very small footprint compared to classic data centers, and can be integrated into existing buildings and offices. We install all of our components into 19\" width racks per module, wich is the industry's standard."
+          }
+        },
+        "5e37acf3-d01a-48c6-a5e4-de79581d4606": {
+          "type": "faq",
+          "settings": {
+            "question": "How much noise does it make ?",
             "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
           }
         }
@@ -152,7 +159,8 @@
         "74285f3b-ed1f-4594-808c-6c7c4365020b",
         "fd57cddf-4f6d-4db5-a5a5-fb0e70fc914a",
         "70b1078c-6b20-4577-85a0-99bca9320605",
-        "61e3bb50-8d06-4995-810f-06dff8357cd9"
+        "61e3bb50-8d06-4995-810f-06dff8357cd9",
+        "5e37acf3-d01a-48c6-a5e4-de79581d4606"
       ],
       "settings": {
         "Title": "Material"
