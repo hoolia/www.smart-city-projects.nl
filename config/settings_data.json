@@ -226,7 +226,7 @@
           "show_menu_fixbar": true,
           "use_bottom_menu": false,
           "use_box_layout": false,
-          "show_search": true,
+          "show_search": false,
           "show_cart": false,
           "show_settings_menu": false
         }
