@@ -160,6 +160,13 @@
             "question": "Do I have to purchase this installation ?",
             "answer": "You don't pay anything for the material. Actually, you receive something.\nWe offer you all the solar panels that have been installed on your roof making you save and earn money for 15 years."
           }
+        },
+        "f992e5b8-e932-40dc-b65c-8f47412dccfa": {
+          "type": "faq",
+          "settings": {
+            "question": "The amount of space required for Hoolia's solution is minimum 5 m² to be sure to have enough space to install and manage the modules.",
+            "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+          }
         }
       },
       "block_order": [
@@ -168,7 +175,8 @@
         "70b1078c-6b20-4577-85a0-99bca9320605",
         "61e3bb50-8d06-4995-810f-06dff8357cd9",
         "5e37acf3-d01a-48c6-a5e4-de79581d4606",
-        "e09883bb-637d-4d7e-aeee-5a71290a1056"
+        "e09883bb-637d-4d7e-aeee-5a71290a1056",
+        "f992e5b8-e932-40dc-b65c-8f47412dccfa"
       ],
       "settings": {
         "Title": "Material"
