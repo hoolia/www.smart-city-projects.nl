@@ -820,11 +820,38 @@
               "video_src": "https:\/\/gateway.pinata.cloud\/ipfs\/QmXcDC4UjaUhnA5uzRYFak6XdrXgFwpQwgqPdPYkfjCeiD?_gl=1*1wg0wlc*_ga*MTE0MjUzODQ4Mi4xNjczOTA4NjQ4*_ga_5RMPXG14TE*MTY3Mzk4MTU1NS4yLjEuMTY3Mzk4MTkwNi42MC4wLjA.",
               "video_autoplay": false
             }
+          },
+          "a77d6d75-801a-4f72-8b36-b2c3f2fea785": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "animation_style": "slider-1",
+              "heading": "",
+              "heading_size": "18px",
+              "heading_color": "#fff",
+              "subheading": "",
+              "subheading_size": "90px",
+              "subheading_color": "#fff",
+              "description": "",
+              "description_size": "16px",
+              "description_color": "#fff",
+              "slide_link_text": "",
+              "slide_link": "",
+              "link_bg": "#000",
+              "link_color": "#fff",
+              "image_clickable": false,
+              "top": "50%",
+              "right": "0%",
+              "left": "0%",
+              "width": "100%",
+              "float": "left"
+            }
           }
         },
         "block_order": [
           "1480267833382-1",
-          "16e78fb4-bae5-4082-b449-e6ceb0344c2b"
+          "16e78fb4-bae5-4082-b449-e6ceb0344c2b",
+          "a77d6d75-801a-4f72-8b36-b2c3f2fea785"
         ],
         "settings": {
           "autoplay_speed": "10000",
