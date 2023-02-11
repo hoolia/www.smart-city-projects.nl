@@ -5,7 +5,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "liquid": "<p style=\"text-align\">{{page.title}}<\/p>"
+        "liquid": "<p style=\"text-align:center\">{{page.title}}<\/p>"
       }
     },
     "main": {
