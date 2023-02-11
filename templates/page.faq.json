@@ -34,42 +34,6 @@
         "Title": "Earnings"
       }
     },
-    "d4048570-03d9-4761-9a16-e90049de1937": {
-      "type": "Faq",
-      "disabled": true,
-      "blocks": {
-        "template--17645886701870__d4048570-03d9-4761-9a16-e90049de1937-167604421258f9f926-0": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "- Earnings",
-            "faq_description": "How much can I expect to save with your source of energy ?"
-          }
-        },
-        "template--17645886701870__d4048570-03d9-4761-9a16-e90049de1937-167604421258f9f926-1": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "frequently Ask Question",
-            "faq_description": "Once your order has been shipped, you will receive an email with your tracking and shipping information."
-          }
-        },
-        "template--17645886701870__d4048570-03d9-4761-9a16-e90049de1937-167604421258f9f926-2": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "frequently Ask Question",
-            "faq_description": "Once your order has been shipped, you will receive an email with your tracking and shipping information."
-          }
-        }
-      },
-      "block_order": [
-        "template--17645886701870__d4048570-03d9-4761-9a16-e90049de1937-167604421258f9f926-0",
-        "template--17645886701870__d4048570-03d9-4761-9a16-e90049de1937-167604421258f9f926-1",
-        "template--17645886701870__d4048570-03d9-4761-9a16-e90049de1937-167604421258f9f926-2"
-      ],
-      "settings": {
-        "section_enable": true,
-        "section_title": "Shipping information"
-      }
-    },
     "4ade7a86-0fb8-4d00-b7e1-3ca01bf4091c": {
       "type": "faq-page",
       "settings": {
@@ -79,7 +43,6 @@
   },
   "order": [
     "main",
-    "d4048570-03d9-4761-9a16-e90049de1937",
     "4ade7a86-0fb8-4d00-b7e1-3ca01bf4091c"
   ]
 }
