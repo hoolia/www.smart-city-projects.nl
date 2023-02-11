@@ -251,7 +251,14 @@
         "0cfa600a-c0c4-42e5-9391-528656101da5": {
           "type": "faq",
           "settings": {
-            "question": "How do i signup?",
+            "question": "What are safety advantages ?",
+            "answer": "Hoolia's technology and material are designed with safety in mind, including the use of non-conductive fluid in the cooling system\nand regular maintenance and technical support.\n\nThe use of water doesn't allow fire accidents."
+          }
+        },
+        "d8d0361d-35ca-491f-bdc5-68cc07979e01": {
+          "type": "faq",
+          "settings": {
+            "question": "Can this source of energy face any shortage ?",
             "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
           }
         }
@@ -260,7 +267,8 @@
         "57c729f6-fb5b-454f-b3f5-d7ed444166d3",
         "34dfd692-fe7e-43ca-bc6f-1df033f6ad4c",
         "6f1b4fcb-eac7-4e6d-8a67-3cf0b8cd4420",
-        "0cfa600a-c0c4-42e5-9391-528656101da5"
+        "0cfa600a-c0c4-42e5-9391-528656101da5",
+        "d8d0361d-35ca-491f-bdc5-68cc07979e01"
       ],
       "settings": {
         "Title": "Advantages"
