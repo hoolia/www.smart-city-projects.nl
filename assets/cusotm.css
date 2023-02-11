@@ -415,3 +415,9 @@ div#content {
     background: #ffffff;
     margin-bottom: 6px;
     box-shadow: unset;
+}
+.cd-faq-content p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+}
