@@ -223,12 +223,62 @@
       "settings": {
         "Title": "Office space"
       }
+    },
+    "0d4e7611-c2aa-46ec-8eae-627a2267dce3": {
+      "type": "faq-page",
+      "blocks": {
+        "57c729f6-fb5b-454f-b3f5-d7ed444166d3": {
+          "type": "faq",
+          "settings": {
+            "question": "How do i signup?",
+            "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+          }
+        },
+        "34dfd692-fe7e-43ca-bc6f-1df033f6ad4c": {
+          "type": "faq",
+          "settings": {
+            "question": "How do i signup?",
+            "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+          }
+        },
+        "6f1b4fcb-eac7-4e6d-8a67-3cf0b8cd4420": {
+          "type": "faq",
+          "settings": {
+            "question": "How do i signup?",
+            "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+          }
+        },
+        "0cfa600a-c0c4-42e5-9391-528656101da5": {
+          "type": "faq",
+          "settings": {
+            "question": "How do i signup?",
+            "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+          }
+        }
+      },
+      "block_order": [
+        "57c729f6-fb5b-454f-b3f5-d7ed444166d3",
+        "34dfd692-fe7e-43ca-bc6f-1df033f6ad4c",
+        "6f1b4fcb-eac7-4e6d-8a67-3cf0b8cd4420",
+        "0cfa600a-c0c4-42e5-9391-528656101da5"
+      ],
+      "settings": {
+        "Title": "Advantages"
+      }
+    },
+    "4621f723-7f84-48e7-83f2-6deaec7e600f": {
+      "type": "faq-page",
+      "settings": {
+        "Title": ""
+      }
     }
   },
   "order": [
     "main",
     "4ade7a86-0fb8-4d00-b7e1-3ca01bf4091c",
     "d88c3799-9268-4e94-a2b5-28af08f4871f",
-    "fa208734-0e01-462d-ae78-b3ea1bd202b4"
+    "fa208734-0e01-462d-ae78-b3ea1bd202b4",
+    "0d4e7611-c2aa-46ec-8eae-627a2267dce3",
+    "4621f723-7f84-48e7-83f2-6deaec7e600f"
   ]
 }
