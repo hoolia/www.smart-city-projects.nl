@@ -388,3 +388,7 @@ div#content {
     margin-top: 3rem;
 }
 }
+/* Faq  */
+.cd-faq-content {
+    display: block !important;
+}
