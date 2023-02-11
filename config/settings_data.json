@@ -246,6 +246,7 @@
           },
           "3e5bbff7-3d4a-4692-99f6-8ef503248b9f": {
             "type": "menu",
+            "disabled": true,
             "settings": {
               "footer_menu_1": "main-menu"
             }
