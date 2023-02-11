@@ -396,9 +396,8 @@ div#content {
   display:none
 }
 .faq_question {
-    font-size: 30px!important;
-    font-weight: 300;
-    padding: 24px 72px 24px 24px;
-    color: #42db43;
-    margin-bottom: 25px !important;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #545454;
 }
