@@ -10315,10 +10315,9 @@ button.close {
         -ms-flex-direction: row;
         flex-direction: row
     }
-    /*
     .swiper-slide[data-v-40e70fa0] {
         padding: 0 12%
-    }*/
+    }
 }
 
 @media (max-width:760px) {
