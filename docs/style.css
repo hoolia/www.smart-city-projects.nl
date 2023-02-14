@@ -6,12 +6,9 @@
     src: url('iconfont.woff2?t=1668395754692') format('woff2'), url('iconfont.woff?t=1668395754692') format('woff'), url('iconfont.ttf?t=1668395754692') format('truetype');
 }
 
-.iconfont {
-    font-family: "iconfont" !important;
-    font-size: 16px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.rZJEp {
+    margin-left: 0px !important;
+    margin-right: 0px!important;
 }
 
 .icon-a-shanchu11376:before {
@@ -10258,7 +10255,7 @@ button.close {
     background-size: contain
 }
 
-.swiper_flex[data-v-40e70fa0] {
+.swiper_flex[data-v-40e70fa0]:not(.calculator) {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -10271,9 +10268,11 @@ button.close {
     margin-right: 80px
 }
 
+
+/*
 .swiper-slide[data-v-40e70fa0] {
-    padding: 0 17%
-}
+    padding: 0 5%
+}*/
 
 .btom10[data-v-40e70fa0] {
     margin-bottom: 10px
@@ -10312,7 +10311,7 @@ button.close {
         margin-right: 0;
         margin-bottom: 50px
     }
-    .swiper_flex[data-v-40e70fa0] {
+    .swiper_flex[data-v-40e70fa0]:not(.calculator) {
         -ms-flex-direction: column;
         flex-direction: column
     }
@@ -19070,6 +19069,7 @@ span.tips:hover {
     .Jso-Text {
         font-size: calc(1.4rem + (1.6 - 1.4) * ((100vw - 32rem) / (102 - 32))) !important;
         line-height: calc(1.5 * (1.4rem + (1.6 - 1.4) * ((100vw - 32rem) / (102 - 32)))) !important;
+        max-width: 600px !important;
     }
     .Jso-Btn p,
     .Jso-Btn p span,
