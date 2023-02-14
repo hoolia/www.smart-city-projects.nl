@@ -10312,12 +10312,13 @@ button.close {
         margin-bottom: 50px
     }
     .swiper_flex[data-v-40e70fa0]:not(.calculator) {
-        -ms-flex-direction: column;
-        flex-direction: column
+        -ms-flex-direction: row;
+        flex-direction: row
     }
+    /*
     .swiper-slide[data-v-40e70fa0] {
         padding: 0 12%
-    }
+    }*/
 }
 
 @media (max-width:760px) {
@@ -16646,7 +16647,8 @@ input[data-v-129dd9bd]::-webkit-input-placeholder {
 }
 
 .imgbox[data-v-129dd9bd] {
-    position: relative
+    position: relative;
+    display: contents;
 }
 
 .imgbox>.mask[data-v-129dd9bd] {
@@ -19069,7 +19071,7 @@ span.tips:hover {
     .Jso-Text {
         font-size: calc(1.4rem + (1.6 - 1.4) * ((100vw - 32rem) / (102 - 32))) !important;
         line-height: calc(1.5 * (1.4rem + (1.6 - 1.4) * ((100vw - 32rem) / (102 - 32)))) !important;
-        max-width: 600px !important;
+        max-width: 400px !important;
     }
     .Jso-Btn p,
     .Jso-Btn p span,
