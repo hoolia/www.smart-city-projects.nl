@@ -1,5 +1,8 @@
 {
   "current": {
+    "type_base_family": "helvetica_n4",
+    "type_header_family": "helvetica_n4",
+    "type_accent_family": "helvetica_n4",
     "favicon_enable": true,
     "show_collection_top_image": false,
     "color_top_bg": "#292929",
@@ -21,19 +24,19 @@
     "color_skin": "#30bf32",
     "color_skin_2": "#242424",
     "color_body": "#cccccc",
-    "bg_color": "#f8f8f8",
-    "section_bg_color": "#f8f8f8",
+    "bg_color": "#ffffff",
+    "section_bg_color": "#ffffff",
     "headings_color": "#f8f8f8",
     "header_fg_color": "#30bf32",
-    "overwrite_header_bg_color": true,
+    "overwrite_header_bg_color": false,
     "header_inner_bar_color": "#0c9e0e",
     "hd_menu_color": "#0c9e0e",
     "hd_menu_inner_color": "#30bf32",
     "top_bar_color": "#fff",
     "top_bar_bgcolor": "#4ad44a",
-    "footer_color_bg": "#e5e5e5",
-    "footer_color_heading": "#4ad44a",
-    "footer_color_links": "#0c9e0e",
+    "footer_color_bg": "#000000",
+    "footer_color_heading": "#ffffff",
+    "footer_color_links": "#ffffff",
     "footer_bottom_bg_color": "#001e00",
     "footer_bar_color_links": "#f8f8f8",
     "label_new": "#0c9e0e",
@@ -215,17 +218,17 @@
           "1522697402496"
         ],
         "settings": {
-          "header_layout": "header-5",
+          "header_layout": "header-1alt",
           "use_top_bar": false,
           "top_bar_message": "",
           "logo_use_image": true,
-          "logo": "shopify:\/\/shop_images\/Colorful_Freelancer_YouTube_Thumbnail_2_f88e8ea3-b88d-48c2-8e0d-0fb93b8ba7ec.png",
+          "logo": "shopify:\/\/shop_images\/logos.png",
           "logo_padding": "25px 0px 25px 0px",
           "header_menu_1": "main-menu",
           "show_menu_fixbar": true,
           "use_bottom_menu": false,
           "use_box_layout": false,
-          "show_search": true,
+          "show_search": false,
           "show_cart": false,
           "show_settings_menu": false
         }
@@ -236,15 +239,17 @@
           "ce0c8397-1e10-46a3-b96e-2112a4c4e3a9": {
             "type": "contact_information",
             "settings": {
+              "image": "shopify:\/\/shop_images\/hoolia-white_7511.png",
               "footer_content_enable": false,
-              "footer_about_us": "Be part of the futur. Contact us now and let our experts spark your savings.",
-              "footer_address": "Alexanderstraat 946812BH  Amsterdam",
-              "footer_phone": "+31 – 85 – 7738870",
-              "footer_email": "support@hoolia.eu"
+              "footer_about_us": "",
+              "footer_address": "Amsterdam",
+              "footer_phone": "+31 252 799 302",
+              "footer_email": "sales@hoolia.energy"
             }
           },
           "3e5bbff7-3d4a-4692-99f6-8ef503248b9f": {
             "type": "menu",
+            "disabled": true,
             "settings": {
               "footer_menu_1": "main-menu"
             }
@@ -292,37 +297,41 @@
           "1504781997946-0": {
             "type": "box",
             "settings": {
-              "use_feature_service_icon": true,
+              "image": "shopify:\/\/shop_images\/book.png",
+              "use_feature_service_icon": false,
               "feature_service_icon": "fa-oil-can",
-              "feature_service_title": "Dependance on fossil",
+              "feature_service_title": "Economical Risk",
               "feature_service_description": "Gas is a finite resource, and increasing reliance on it could contribute to energy insecurity and price volatility in the long term."
             }
           },
           "1504781997946-1": {
             "type": "box",
             "settings": {
-              "use_feature_service_icon": true,
+              "image": "shopify:\/\/shop_images\/cost.png",
+              "use_feature_service_icon": false,
               "feature_service_icon": "fa-money-bill",
               "feature_service_title": "Cost",
-              "feature_service_description": "Prices can be volatile, and companies may be subject to price increases over time. Additionally, there may be costs associated with installing and maintaining natural gas infrastructure."
+              "feature_service_description": "Natural gas prices become more volatile, because of various geopolitical, economic, and social changes that the world is experiencing."
             }
           },
           "1504782065705": {
             "type": "box",
             "settings": {
-              "use_feature_service_icon": true,
+              "image": "shopify:\/\/shop_images\/reputation.png",
+              "use_feature_service_icon": false,
               "feature_service_icon": "fa-star",
-              "feature_service_title": "Reputational Risk",
-              "feature_service_description": "Companies that use natural gas may be perceived as contributing to environmental and climate change, and could face backlash from consumers, investors, or other stakeholders."
+              "feature_service_title": "Reputation",
+              "feature_service_description": "Companies that use natural gas may be perceived as contributing to environmental and climate change in comparison with companies that use green energy and that add value and create a good reputation among rivals."
             }
           },
           "5fbcce04-ef97-4d4d-9c57-f352145cb080": {
             "type": "box",
             "settings": {
-              "use_feature_service_icon": true,
+              "image": "shopify:\/\/shop_images\/changing.png",
+              "use_feature_service_icon": false,
               "feature_service_icon": "fa-leaf",
-              "feature_service_title": "Netherlands Energy Plan",
-              "feature_service_description": "Government aims to\nreduce CO2 emissions in\nAmsterdam. The price of natural gas will be higher, and as a result, will the electricity price."
+              "feature_service_title": "Changing Plans",
+              "feature_service_description": "The Dutch government aims to reduce CO2 emissions by a whopping 49\/ by 2030. Offsets are a cost and do not have a financial return on investment compared to other operational efficiencies such as on-site solar. which means the price of natural gas and electricity is likely to become more expensive."
             }
           }
         },
@@ -333,29 +342,15 @@
           "5fbcce04-ef97-4d4d-9c57-f352145cb080"
         ],
         "settings": {
-          "layout": "feature-service4",
-          "heading": "<br>Switch to renewable energy <br>for a sustainable future.",
-          "heading_color": "#0c9e0e",
+          "layout": "feature-service-custom",
+          "heading": "The reasons behind this idea",
+          "heading_color": "#ffffff",
           "description": "",
           "description_color": "#007501",
-          "fullwidth": false,
-          "background": false,
-          "background_color": "#f8f8f8",
-          "bottom_border": false
-        }
-      },
-      "1527121164309": {
-        "type": "newsletter",
-        "settings": {
           "fullwidth": true,
-          "mailing_list_form_action": "",
-          "overwrite_text_color": true,
-          "heading_color_text": "#4ad44a",
-          "subheading_color_bg": "#0c9e0e",
-          "heading": "Subscribe",
-          "background": false,
-          "background_color": "#242424",
-          "top_margin": true
+          "background": true,
+          "background_color": "#43db44",
+          "bottom_border": false
         }
       },
       "list-collection-page": {
@@ -466,28 +461,28 @@
             "type": "faq",
             "settings": {
               "question": "How do i signup?",
-              "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi.<\/p>"
             }
           },
           "849e68ea-e642-4b51-b239-45162dc16656": {
             "type": "faq",
             "settings": {
               "question": "Do you offer refunds?",
-              "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi.<\/p>"
             }
           },
           "904a04a6-90c8-4196-be36-cca12dcfab85": {
             "type": "faq",
             "settings": {
               "question": "What are your shipping rates?",
-              "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi.<\/p>"
             }
           },
           "0b49f8f2-98ea-425a-ab3c-ce144fbf2302": {
             "type": "faq",
             "settings": {
               "question": "Do you offer international Delivery?",
-              "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi."
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi.<\/p>"
             }
           }
         },
@@ -782,18 +777,18 @@
           "1480267833382-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/city-behind-greenery_b502cd38-ca93-4000-ad95-11c0fd53d3ca.jpg",
+              "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-11_at_19.33.52_2.jpg",
               "animation_style": "slider-1",
               "heading": "",
               "heading_size": "12px",
-              "heading_color": "#ffffff",
-              "subheading": "Share Energy, Save and Respect the Environment",
-              "subheading_size": "60px",
-              "subheading_color": "#ffffff",
-              "description": "<b>Take part in the company's ecological transition. <\/b><br> For you. For your city. For the whole planet",
-              "description_size": "20px",
-              "description_color": "#ffffff",
-              "slide_link_text": "Let's discover",
+              "heading_color": "#f7f7f7",
+              "subheading": "Share Energy, Save the Environment",
+              "subheading_size": "48px",
+              "subheading_color": "#f7f7f7",
+              "description": "<span>Creating Self-sustaining Communities <\/span><br> For you. For your city. For the whole planet",
+              "description_size": "30px",
+              "description_color": "#f7f7f7",
+              "slide_link_text": "",
               "slide_link": "",
               "link_bg": "#0c9e0e",
               "link_color": "#ffffff",
@@ -807,6 +802,7 @@
           },
           "16e78fb4-bae5-4082-b449-e6ceb0344c2b": {
             "type": "video",
+            "disabled": true,
             "settings": {
               "video_type": "mp4",
               "video_src": "https:\/\/gateway.pinata.cloud\/ipfs\/QmXcDC4UjaUhnA5uzRYFak6XdrXgFwpQwgqPdPYkfjCeiD?_gl=1*1wg0wlc*_ga*MTE0MjUzODQ4Mi4xNjczOTA4NjQ4*_ga_5RMPXG14TE*MTY3Mzk4MTU1NS4yLjEuMTY3Mzk4MTkwNi42MC4wLjA.",
@@ -827,83 +823,293 @@
           "full_size_on_mobile": false
         }
       },
-      "386b4cd7-ab21-481a-b3c6-e1a106db3b6a": {
-        "type": "feature-product",
+      "75a43b2a-1a20-41a3-9caf-43f29d41f10d": {
+        "type": "testimonial",
+        "blocks": {
+          "75a43b2a-1a20-41a3-9caf-43f29d41f10d-16756091868ec9a208-0": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/global-warming.png",
+              "title": "Global Warming Reduction",
+              "description": "With minimal emissions, renewable energy sources offer a solution to reducing global warming. By augmenting their supply, we can substitute carbon-intensive sources and greatly decrease emissions.",
+              "author": ""
+            }
+          },
+          "75a43b2a-1a20-41a3-9caf-43f29d41f10d-16756091868ec9a208-1": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/global-warming.png",
+              "title": "Global Warming Reduction",
+              "description": "With minimal emissions, renewable energy sources offer a solution to reducing global warming. By augmenting their supply, we can substitute carbon-intensive sources and greatly decrease emissions.",
+              "author": ""
+            }
+          },
+          "eb68ac26-6f6d-4d50-bc10-6856d378300d": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/global-warming.png",
+              "title": "Jobs and other economic benefits",
+              "description": "Air and water pollution, the root cause of many health issues, are non-existent with clean energy technologies. These technologies have been estimated to save public health costs of $74.6 billion annually.",
+              "author": ""
+            }
+          },
+          "dc126c73-c1ee-4bd5-8ec4-df32170a00d2": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/global-warming.png",
+              "title": "Improved public health",
+              "description": "Renewable energy has been proven time and again to be capable of meeting a significant portion of future electricity demands, even with potential limitations taken into account.",
+              "author": ""
+            }
+          },
+          "df3cc870-ae48-49f7-bbbf-c86c6f46afc1": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/global-warming.png",
+              "title": "Inexhaustible energy",
+              "description": "Renewable energy sources generate more jobs per unit of electricity compared to fossil fuels. Furthermore, the expansion of clean energy can also have positive economic “ripple” effects.",
+              "author": ""
+            }
+          },
+          "178768a7-f87a-4c6b-945f-788fb4961fae": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/global-warming.png",
+              "title": "Stable energy prices",
+              "description": "Initial investments are necessary to construct renewable facilities, but once in operation, they have low ongoing costs, resulting in stable energy prices over time compared to fossil energy prices.",
+              "author": ""
+            }
+          }
+        },
+        "block_order": [
+          "75a43b2a-1a20-41a3-9caf-43f29d41f10d-16756091868ec9a208-0",
+          "75a43b2a-1a20-41a3-9caf-43f29d41f10d-16756091868ec9a208-1",
+          "eb68ac26-6f6d-4d50-bc10-6856d378300d",
+          "dc126c73-c1ee-4bd5-8ec4-df32170a00d2",
+          "df3cc870-ae48-49f7-bbbf-c86c6f46afc1",
+          "178768a7-f87a-4c6b-945f-788fb4961fae"
+        ],
         "settings": {
-          "heading": "Our Featured Product",
-          "feature_product_design": "feature-product1",
-          "feature_product": "dcx-immersion-cooling",
-          "description": true,
-          "product_summary_words": "30",
-          "show_summary_stripped": false,
-          "price": false,
-          "view_details": false,
-          "add_to_cart": false,
-          "buy_now": false,
-          "image_position": "right",
-          "ad_align": "left",
-          "fullwidth": false,
-          "background": false,
-          "background_color": "#f8f8f8",
-          "top_margin": true,
-          "bottom_padding": false,
-          "bottom_border": false
+          "layout": "testimonials-custom",
+          "heading": "Additional Advantages",
+          "description": "Some other public and financial advantages",
+          "fullwidth": true,
+          "background": true,
+          "background_color": "#ffffff",
+          "top_margin": false
         }
       },
-      "dd2de1a0-dce4-4bdd-a8aa-4cb8fe55753c": {
-        "type": "feature-product",
+      "49a10ab4-423c-48b5-ba41-1a8db40c7525": {
+        "type": "image-with-text",
         "settings": {
-          "heading": "Our Featured Product",
-          "feature_product_design": "feature-product1",
-          "feature_product": "vaillant-allstor-system",
-          "description": true,
-          "product_summary_words": "30",
-          "show_summary_stripped": true,
-          "price": false,
-          "view_details": false,
-          "add_to_cart": false,
-          "buy_now": false,
-          "image_position": "left",
-          "ad_align": "left",
-          "fullwidth": false,
-          "background": false,
-          "background_color": "#f8f8f8",
-          "top_margin": true,
-          "bottom_padding": false,
-          "bottom_border": false
+          "Image-left": "shopify:\/\/shop_images\/bg_green_building.jpg",
+          "Video-Image": "shopify:\/\/shop_images\/hoolia-video.png",
+          "video_type": "Youtube-Vimeo",
+          "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5aed5792501e4b989ae9cf5d2def8856.mp4",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+          "heading": "Welcome to Hoolia Energy",
+          "sub-heading": "Revolutionizing the industry with its \"Distributed DataCenter\" based on 100% renewable energy!",
+          "content": "<p>With our deepest belief in the concept of circular economy, we have generated a brilliant idea:<br\/>Repurpose waste heat from DataCenters to heat Office Buildings, by bringing small “DataCenter modules” running on 100% pure Green Renewable & Recycled Energy!<\/p><p> <\/p><p>Ending the cycle of Big Centralized DataCenter. It is time to create micro-grid communities and give power back to the people.<\/p><p> <\/p><p>Watch this video for more information.<\/p>"
         }
       },
-      "2ed49d5d-c193-49be-a728-959c0685fe8b": {
-        "type": "feature-product",
+      "23726bfe-e4ad-4539-a4f1-4289742a83db": {
+        "type": "TimeLine-list",
+        "blocks": {
+          "59ed0018-36c6-49c6-80c8-99b277470b71": {
+            "type": "slide",
+            "settings": {
+              "Title": "We",
+              "image": "shopify:\/\/shop_images\/project-management.png",
+              "task": "TASK",
+              "Day_": "02",
+              "discription": "Manage the Project"
+            }
+          },
+          "b18b8e89-31b2-4b7f-ae23-06e6bab5d9b1": {
+            "type": "slide",
+            "settings": {
+              "Title": "We",
+              "image": "shopify:\/\/shop_images\/subsidies.png",
+              "task": "Task",
+              "Day_": "03",
+              "discription": "Mange the subsidies"
+            }
+          },
+          "c26bf8d3-4fae-46ea-98df-0523e5d49ad8": {
+            "type": "slide",
+            "settings": {
+              "Title": "We",
+              "image": "shopify:\/\/shop_images\/contract.png",
+              "task": "Task",
+              "Day_": "xx",
+              "discription": "Prepare the legal contracts"
+            }
+          },
+          "a1b1d056-e356-4b3c-bf1f-872b0cad9292": {
+            "type": "slide",
+            "settings": {
+              "Title": "we",
+              "image": "shopify:\/\/shop_images\/installation.png",
+              "task": "Task",
+              "Day_": "xx",
+              "discription": "Install all the devices"
+            }
+          },
+          "2b4d10ee-1b87-42f9-a8d5-beacafafd09b": {
+            "type": "slide",
+            "settings": {
+              "Title": "You",
+              "image": "shopify:\/\/shop_images\/icons8-euro-100.png",
+              "task": "Task",
+              "Day_": "xx",
+              "discription": "Earn the benefits."
+            }
+          }
+        },
+        "block_order": [
+          "59ed0018-36c6-49c6-80c8-99b277470b71",
+          "b18b8e89-31b2-4b7f-ae23-06e6bab5d9b1",
+          "c26bf8d3-4fae-46ea-98df-0523e5d49ad8",
+          "a1b1d056-e356-4b3c-bf1f-872b0cad9292",
+          "2b4d10ee-1b87-42f9-a8d5-beacafafd09b"
+        ],
         "settings": {
-          "heading": "Our Featured Product",
-          "feature_product_design": "feature-product1",
-          "feature_product": "the-batteries",
-          "description": true,
-          "product_summary_words": "30",
-          "show_summary_stripped": true,
-          "price": false,
-          "view_details": false,
-          "add_to_cart": false,
-          "buy_now": false,
-          "image_position": "right",
-          "ad_align": "left",
-          "fullwidth": false,
-          "background": false,
-          "background_color": "#f8f8f8",
-          "top_margin": true,
-          "bottom_padding": false,
-          "bottom_border": false
+        }
+      },
+      "bcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e": {
+        "type": "custom-slider",
+        "blocks": {
+          "b74b474a-5bdd-4d0a-948f-ff31fa14492c": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/solar.png",
+              "Title": "Solar panels",
+              "discription": "<p>Our last generation solar panels that are installed on the roof of the building drastically reduce energy costs, as they can generate electricity during peak demand periods. They are relatively low maintenance, as they do not require any moving parts and have a long lifespan. Also, They can be easily integrated with other renewable energy sources, such as wind and hydropower, to create a more robust and reliable energy system.<\/p>"
+            }
+          },
+          "5bfc1c89-1063-4eb4-a6ef-4f9540c6232f": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/poly.png",
+              "Title": "Pylontech Batteries",
+              "discription": "<p>Our last generation batteries system are modular in design, which enables us to \"rack and stack\" them in order to scale the nominal capacity of the solar energy storage system.<\/p><p><br\/>At 24 kg and 19\", these batteries are smaller than the average solar battery in the market, which makes them easy to install and move.<\/p>"
+            }
+          },
+          "2ad3ab9e-2d3b-42d9-ab30-d19c4588d4ba": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/valliant.png",
+              "Title": "Vaillant allSTOR system",
+              "discription": "<p>This multi-function buffer tank gives the possibility to accumulate and distribute any form of heating energy in an entire building. Made of steel with special coating. that makes it resistant to rust.<br\/>It is an easy plug-in installation that can connect to different types of input and output sources.<\/p>"
+            }
+          },
+          "e495f0f3-ae5c-4bdb-b40f-f28180694ec4": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HVAC_white_background.jpg",
+              "Title": "Air conditioning",
+              "discription": "<p>Hoolia's unique solution allows you to heat your working space through water, but also using air distribution installations. Heating offices via air conditioners is an option chosen by many building owners, that is why we offer you the possibility to keep your employees warmed during winter.<\/p>"
+            }
+          },
+          "0abf8e33-eb72-4b19-9820-0e813de20466": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/container.png",
+              "Title": "Containers",
+              "discription": "<p>Some buildings owners may not have the chance to have our datacenter incorporated directly into their offices. That's why we developed a solution. With our external containers, we offer the opportunity to profit of our energy without allocating any space inside the building.<\/p>"
+            }
+          },
+          "e10cfa33-75a1-4ed0-8884-64e9b35daf86": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/rack-hoolia_1.png",
+              "Title": "High-Performance Computing",
+              "discription": "<p>High-Performance Computing (HPC) is an innovative technology that allows a highly efficient speed and quantity of calculation.<br\/>A cooling system, that immerses the equipment in a fluid, is used to reduce energy consumption and decrease maintenance costs.<br\/>The fluid used in this technology is non-conductive, for high safety purposes. Also, the heat generated by these computers is the source of energy that will warm your offices either by Water (radiator) or Air (duct).<br\/>With its compact size and very low noise production, this system is the discreetest source of energy on the market.<\/p>"
+            }
+          },
+          "44b990e3-15bd-47e5-8889-e6d25078f2ee": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "Title": "",
+              "discription": ""
+            }
+          }
+        },
+        "block_order": [
+          "b74b474a-5bdd-4d0a-948f-ff31fa14492c",
+          "5bfc1c89-1063-4eb4-a6ef-4f9540c6232f",
+          "2ad3ab9e-2d3b-42d9-ab30-d19c4588d4ba",
+          "e495f0f3-ae5c-4bdb-b40f-f28180694ec4",
+          "0abf8e33-eb72-4b19-9820-0e813de20466",
+          "e10cfa33-75a1-4ed0-8884-64e9b35daf86",
+          "44b990e3-15bd-47e5-8889-e6d25078f2ee"
+        ],
+        "settings": {
+          "heading": "The Installation",
+          "description": "The material that makes the magic happen"
+        }
+      },
+      "b22743f1-00fa-4113-be00-1b9a4880e779": {
+        "type": "Tabs-Section",
+        "blocks": {
+          "a8512a92-9d4d-4fbd-acfe-589c278acbc2": {
+            "type": "slide",
+            "settings": {
+              "title": "Rent",
+              "Tab-heading": "Office and Roof rent revenue",
+              "tab-discription": "<p>We pay you the rent for a corner of your space and a place on the roof. The space you want to allocate for our system can be variable and adapted to your case.<\/p>",
+              "image": "shopify:\/\/shop_images\/rent_97f305f0-d5c3-49e7-9608-9a69b9cd3dbe.png"
+            }
+          },
+          "8ab24557-d4ab-4ae8-8ee6-a11c7f066e3b": {
+            "type": "slide",
+            "settings": {
+              "title": "Savings",
+              "Tab-heading": "Save heating cost",
+              "tab-discription": "<p>Expect to save about 66% on building heating cost with our green renewable energy system. A classic source of heating would cost you XX€ for XXkW\/h, meanwhile our solution costs around XX€ for XXkW\/h.<\/p>",
+              "image": "shopify:\/\/shop_images\/saving.png"
+            }
+          },
+          "478072eb-a0f4-48aa-9610-c680d4757f49": {
+            "type": "slide",
+            "settings": {
+              "title": "Subsidy",
+              "Tab-heading": "Contract terms",
+              "tab-discription": "<p>The government guarantees a success with its SDE++ subsidy offering a guarenteed steady revenue for a much as 15 years if you use a sustainable source of energy. Following this advantage, we propose contracts from 10 to 15 years.<\/p>",
+              "image": "shopify:\/\/shop_images\/subsidy.png"
+            }
+          },
+          "479d1b76-b234-49c2-9b90-500bfca348d3": {
+            "type": "slide",
+            "settings": {
+              "title": "Investment",
+              "Tab-heading": "Own the solar panels after 15 years",
+              "tab-discription": "<p>Become 100% owner of the solar panels after 15 years.<br\/>Solar Panels easily last 25 years.<\/p>",
+              "image": "shopify:\/\/shop_images\/investment.png"
+            }
+          }
+        },
+        "block_order": [
+          "a8512a92-9d4d-4fbd-acfe-589c278acbc2",
+          "8ab24557-d4ab-4ae8-8ee6-a11c7f066e3b",
+          "478072eb-a0f4-48aa-9610-c680d4757f49",
+          "479d1b76-b234-49c2-9b90-500bfca348d3"
+        ],
+        "settings": {
+          "heading": "The Financial Benefits",
+          "description": "Here is what to expect with our solution"
         }
       }
     },
     "content_for_index": [
       "1480267833382",
+      "49a10ab4-423c-48b5-ba41-1a8db40c7525",
       "1504781997946",
-      "386b4cd7-ab21-481a-b3c6-e1a106db3b6a",
-      "dd2de1a0-dce4-4bdd-a8aa-4cb8fe55753c",
-      "2ed49d5d-c193-49be-a728-959c0685fe8b",
-      "1527121164309"
+      "bcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e",
+      "b22743f1-00fa-4113-be00-1b9a4880e779",
+      "23726bfe-e4ad-4539-a4f1-4289742a83db",
+      "75a43b2a-1a20-41a3-9caf-43f29d41f10d"
     ]
   },
   "presets": {
