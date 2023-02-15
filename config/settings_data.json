@@ -1134,9 +1134,9 @@
             "type": "feature",
             "settings": {
               "use_feature_icon": true,
-              "feature_icon": "fa-tractor",
-              "text1": "De Boer",
-              "text2": "Als boer verkoop jij de grondstof \"mest\" en koop je het schone restproduct \"digestaat\" weer terug.<br>\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik verkoop mijn shit<\/button><a href=\"#contactus\">contact us<\/a>"
+              "feature_icon": "fa-building",
+              "text1": "Building Owner",
+              "text2": "You enjoy free heat and cheap electricity by providing us some space where we can set up shop.(rent roof+office)<br>\n<a href=\"#contactus\" class=\"btn\">I can provide Space<\/a>"
             }
           },
           "71cf6522-51f6-4750-b870-82a59e85afbf-16764820874cacbb19-1": {
@@ -1144,8 +1144,8 @@
             "settings": {
               "use_feature_icon": true,
               "feature_icon": "fa-user",
-              "text1": "Operationeel Beheer",
-              "text2": "Geen geld om te investeren? Geen probleem. Jij kunt het project ook helpen door je handen uit de mouw te steken. Hiervoor krijg jij <b>€  2000,-\/maand<\/b> salaris.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik werk mee<\/button>"
+              "text1": "Operational Management",
+              "text2": "Love what we are doing? Want to be part of it? Then we have a job for you as Site Manager. Earn a salary of up to <b>€  2000,-\/maand<\/b> salary.\n<a href=\"#contactus\" class=\"btn\">I want this Job<\/a>"
             }
           },
           "fc52e929-f501-4944-9a64-1dba23ef2a68": {
@@ -1194,13 +1194,13 @@
           "0ee6592d-df22-47a3-b18e-5a1d179ebf51"
         ],
         "custom_css": [
-          ".icon-image {background-color: white; }"
+          ".icon-image {background-color: white;}"
         ],
         "settings": {
           "product_advert_design": "product-feature-advert3",
           "fullwidth": true,
           "background": false,
-          "background_color": "#fff",
+          "background_color": "#ffffff",
           "top_margin": false,
           "bg-image": "shopify:\/\/shop_images\/biogas-process.png",
           "image_position": "right",
