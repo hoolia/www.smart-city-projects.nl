@@ -1073,7 +1073,7 @@
             "settings": {
               "title": "Savings",
               "Tab-heading": "Save heating cost",
-              "tab-discription": "<p>Expect to save about 66% on building heating cost with our green renewable energy system. A classic source of heating would cost you XX€ for XXkW\/h, meanwhile our solution costs around XX€ for XXkW\/h.<\/p>",
+              "tab-discription": "<p>Expect to save about 66% on building heating cost with our green renewable energy system.<\/p>",
               "tab-calculator": "cRzrCrDGDnSJMcpyQ",
               "image": "shopify:\/\/shop_images\/saving.png"
             }
@@ -1200,7 +1200,7 @@
           "product_advert_design": "product-feature-advert3",
           "fullwidth": true,
           "background": false,
-          "background_color": "#ffffff",
+          "background_color": "#242424",
           "top_margin": false,
           "bg-image": "shopify:\/\/shop_images\/hoolia-energycoop.png",
           "image_position": "right",
