@@ -922,7 +922,7 @@
               "image": "shopify:\/\/shop_images\/project-management.png",
               "task": "TASK",
               "Day_": "02",
-              "discription": "Manage the Project"
+              "discription": "Manage the Project:<br>We take care of the entire project, from start to finish, ensuring a seamless process for you."
             }
           },
           "b18b8e89-31b2-4b7f-ae23-06e6bab5d9b1": {
@@ -932,7 +932,7 @@
               "image": "shopify:\/\/shop_images\/subsidies.png",
               "task": "Task",
               "Day_": "03",
-              "discription": "Mange the subsidies"
+              "discription": "Mange the subsidies<br>We handle all of the necessary paperwork and processes for obtaining subsidies, including the SDE++ aid provided by the Dutch government, to help maximize your financial benefits."
             }
           },
           "c26bf8d3-4fae-46ea-98df-0523e5d49ad8": {
@@ -942,7 +942,7 @@
               "image": "shopify:\/\/shop_images\/contract.png",
               "task": "Task",
               "Day_": "xx",
-              "discription": "Prepare the legal contracts"
+              "discription": "Prepare the legal contracts:<br>We handle all of the necessary legal contracts and documentation for the installation of solar panels and machines, as well as renting the roof, to ensure compliance with regulations."
             }
           },
           "a1b1d056-e356-4b3c-bf1f-872b0cad9292": {
@@ -952,7 +952,7 @@
               "image": "shopify:\/\/shop_images\/installation.png",
               "task": "Task",
               "Day_": "xx",
-              "discription": "Install all the devices"
+              "discription": "Install all the devices:<br>We take care of the installation of all necessary devices, such as batteries, HPCs, and solar panels, to help you transition to a more sustainable and efficient energy solution."
             }
           },
           "2b4d10ee-1b87-42f9-a8d5-beacafafd09b": {
@@ -962,7 +962,7 @@
               "image": "shopify:\/\/shop_images\/icons8-euro-100.png",
               "task": "Task",
               "Day_": "xx",
-              "discription": "Earn the benefits."
+              "discription": "Earn the benefits:<br>You get to enjoy the benefits of your new energy solution, including reduced energy costs and a more sustainable, environmentally-friendly way of generating energy."
             }
           }
         },
