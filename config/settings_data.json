@@ -1145,7 +1145,7 @@
               "use_feature_icon": true,
               "feature_icon": "fa-user",
               "text1": "Operationeel Beheer",
-              "text2": "Geen geld om te investeren? Geen probleem. Jij kunt het project ook helpen door je handen uit de mouw te steken. Hiervoor krijg jij <b>\\u20ac 2000,-\/maand<\/b> salaris.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik werk mee<\/button>"
+              "text2": "Geen geld om te investeren? Geen probleem. Jij kunt het project ook helpen door je handen uit de mouw te steken. Hiervoor krijg jij <b>€  2000,-\/maand<\/b> salaris.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik werk mee<\/button>"
             }
           },
           "fc52e929-f501-4944-9a64-1dba23ef2a68": {
@@ -1154,7 +1154,7 @@
               "use_feature_icon": true,
               "feature_icon": "fa-plug",
               "text1": "Energie Consument",
-              "text2": "We verkopenen de resulterende energie aan nabijgelegen lokale bedrijven voor <b>\\u20ac 0,10\/kWh<\/b> zodat ook zij de winter overleven.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik wil kopen<\/button>"
+              "text2": "We verkopenen de resulterende energie aan nabijgelegen lokale bedrijven voor <b>€ 0,10\/kWh<\/b> zodat ook zij de winter overleven.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik wil kopen<\/button>"
             }
           },
           "7a96155d-0976-4b76-8630-147b1e21721c": {
@@ -1199,7 +1199,7 @@
           "background": false,
           "background_color": "#30bf32",
           "top_margin": false,
-          "bg-image": "shopify:\/\/shop_images\/biogas-process.png",
+          "bg-image": "shopify:\/\/shop_images\/contract.png",
           "image_position": "right",
           "heading": "Ik wil meedoen",
           "heading_color": "#454545",
