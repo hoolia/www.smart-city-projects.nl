@@ -1153,8 +1153,8 @@
             "settings": {
               "use_feature_icon": true,
               "feature_icon": "fa-plug",
-              "text1": "Energie Consument",
-              "text2": "We verkopenen de resulterende energie aan nabijgelegen lokale bedrijven voor <b>€ 0,10\/kWh<\/b> zodat ook zij de winter overleven.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik wil kopen<\/button>"
+              "text1": "Energy Consumer",
+              "text2": "We sell our renewable electricity to local businesses for as low as <b>€ 0,10\/kWh<\/b>, creating self-sustaining communities.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">I want to Buy<\/button>"
             }
           },
           "7a96155d-0976-4b76-8630-147b1e21721c": {
@@ -1162,8 +1162,8 @@
             "settings": {
               "use_feature_icon": true,
               "feature_icon": "fa-euro-sign",
-              "text1": "Investeerder",
-              "text2": "Iedereen die geloofd in dit project mag investeren. Het verwachte dividend is <b>50%<\/b>.<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik wil investeren<\/button>"
+              "text1": "Investor",
+              "text2": "Everyone is welcome to join our community as an investor. Our expected dividend is <b>50%<\/b>.<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">I want to Invest<\/button>"
             }
           },
           "b0ec3539-7a73-42a8-b2b0-e3b15095965b": {
@@ -1171,8 +1171,8 @@
             "settings": {
               "use_feature_icon": true,
               "feature_icon": "fa-fire",
-              "text1": "Warmte Consument",
-              "text2": "Restwarmte wordt verkocht aan nabijgelegen kasbouw of warmtenet voor <b>€ 1,-\/m3<\/b> zodat ook zij de winter overleven.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik wil kopen<\/button>"
+              "text1": "Heat Consumer",
+              "text2": "We sell our recycled heat to local businesses for the lowest market price guaranteed: <b>€ 1,-\/m3<\/b>. <button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">I want to Buy<\/button>"
             }
           },
           "0ee6592d-df22-47a3-b18e-5a1d179ebf51": {
@@ -1180,8 +1180,8 @@
             "settings": {
               "use_feature_icon": true,
               "feature_icon": "fa-landmark",
-              "text1": "Overheid",
-              "text2": "De overheid subsidieert dit project voor <b>\\u20ac 0,10\/kWh<\/b> opgewekte stroom, gegarandeerd voor de komende 15 jaar."
+              "text1": "Government",
+              "text2": "The government will guarantee a success by guaranteeing a selling price of <b>€ 0,10\/kWh<\/b> guaranteed for 15 years."
             }
           }
         },
