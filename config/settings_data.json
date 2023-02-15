@@ -922,6 +922,7 @@
               "image": "shopify:\/\/shop_images\/project-management.png",
               "task": "TASK",
               "Day_": "02",
+              "description-title": "",
               "discription": "Manage the Project"
             }
           },
@@ -932,6 +933,7 @@
               "image": "shopify:\/\/shop_images\/subsidies.png",
               "task": "Task",
               "Day_": "03",
+              "description-title": "",
               "discription": "Mange the subsidies"
             }
           },
@@ -942,6 +944,7 @@
               "image": "shopify:\/\/shop_images\/contract.png",
               "task": "Task",
               "Day_": "xx",
+              "description-title": "",
               "discription": "Prepare the legal contracts"
             }
           },
@@ -952,6 +955,7 @@
               "image": "shopify:\/\/shop_images\/installation.png",
               "task": "Task",
               "Day_": "xx",
+              "description-title": "",
               "discription": "Install all the devices"
             }
           },
@@ -962,6 +966,7 @@
               "image": "shopify:\/\/shop_images\/icons8-euro-100.png",
               "task": "Task",
               "Day_": "xx",
+              "description-title": "",
               "discription": "Earn the benefits."
             }
           }
@@ -1089,7 +1094,7 @@
               "title": "Investment",
               "Tab-heading": "Own the solar panels after 15 years",
               "tab-discription": "<p>Become 100% owner of the solar panels after 15 years.<br\/>Solar Panels easily last 25 years.<\/p>",
-              "tab-calculator": "Kxtb79tA5GmKZS9e2",
+              "tab-calculator": "",
               "image": "shopify:\/\/shop_images\/investment.png"
             }
           }
