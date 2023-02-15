@@ -1133,34 +1133,75 @@
           "71cf6522-51f6-4750-b870-82a59e85afbf-16764820874cacbb19-0": {
             "type": "feature",
             "settings": {
-              "use_feature_icon": false,
-              "feature_icon": "fa-shopping-bag",
-              "text1": "",
-              "text2": ""
+              "use_feature_icon": true,
+              "feature_icon": "fa-tractor",
+              "text1": "De Boer",
+              "text2": "Als boer verkoop jij de grondstof \"mest\" en koop je het schone restproduct \"digestaat\" weer terug.<br>\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik verkoop mijn shit<\/button>"
             }
           },
           "71cf6522-51f6-4750-b870-82a59e85afbf-16764820874cacbb19-1": {
             "type": "feature",
             "settings": {
-              "use_feature_icon": false,
-              "feature_icon": "fa-shopping-bag",
-              "text1": "",
-              "text2": ""
+              "use_feature_icon": true,
+              "feature_icon": "fa-user",
+              "text1": "Operationeel Beheer",
+              "text2": "Geen geld om te investeren? Geen probleem. Jij kunt het project ook helpen door je handen uit de mouw te steken. Hiervoor krijg jij <b>\\u20ac 2000,-\/maand<\/b> salaris.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik werk mee<\/button>"
+            }
+          },
+          "fc52e929-f501-4944-9a64-1dba23ef2a68": {
+            "type": "feature",
+            "settings": {
+              "use_feature_icon": true,
+              "feature_icon": "fa-plug",
+              "text1": "Energie Consument",
+              "text2": "We verkopenen de resulterende energie aan nabijgelegen lokale bedrijven voor <b>\\u20ac 0,10\/kWh<\/b> zodat ook zij de winter overleven.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik wil kopen<\/button>"
+            }
+          },
+          "7a96155d-0976-4b76-8630-147b1e21721c": {
+            "type": "feature",
+            "settings": {
+              "use_feature_icon": true,
+              "feature_icon": "fa-euro-sign",
+              "text1": "Investeerder",
+              "text2": "Iedereen die geloofd in dit project mag investeren. Het verwachte dividend is <b>50%<\/b>.<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik wil investeren<\/button>"
+            }
+          },
+          "b0ec3539-7a73-42a8-b2b0-e3b15095965b": {
+            "type": "feature",
+            "settings": {
+              "use_feature_icon": true,
+              "feature_icon": "fa-fire",
+              "text1": "Warmte Consument",
+              "text2": "Restwarmte wordt verkocht aan nabijgelegen kasbouw of warmtenet voor <b>\\u20ac 1,-\/m3<\/b> zodat ook zij de winter overleven.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik wil kopen<\/button>"
+            }
+          },
+          "0ee6592d-df22-47a3-b18e-5a1d179ebf51": {
+            "type": "feature",
+            "settings": {
+              "use_feature_icon": true,
+              "feature_icon": "fa-landmark",
+              "text1": "Overheid",
+              "text2": "De overheid subsidieert dit project voor <b>\\u20ac 0,10\/kWh<\/b> opgewekte stroom, gegarandeerd voor de komende 15 jaar."
             }
           }
         },
         "block_order": [
           "71cf6522-51f6-4750-b870-82a59e85afbf-16764820874cacbb19-0",
-          "71cf6522-51f6-4750-b870-82a59e85afbf-16764820874cacbb19-1"
+          "71cf6522-51f6-4750-b870-82a59e85afbf-16764820874cacbb19-1",
+          "fc52e929-f501-4944-9a64-1dba23ef2a68",
+          "7a96155d-0976-4b76-8630-147b1e21721c",
+          "b0ec3539-7a73-42a8-b2b0-e3b15095965b",
+          "0ee6592d-df22-47a3-b18e-5a1d179ebf51"
         ],
         "settings": {
-          "product_advert_design": "product-feature-advert1",
-          "fullwidth": false,
+          "product_advert_design": "product-feature-advert2",
+          "fullwidth": true,
           "background": false,
-          "background_color": "#f8f8f8",
+          "background_color": "#30bf32",
           "top_margin": false,
+          "bg-image": "shopify:\/\/shop_images\/biogas-process.png",
           "image_position": "right",
-          "heading": "",
+          "heading": "Ik wil meedoen",
           "heading_color": "#454545",
           "description": "",
           "link_text": "",
