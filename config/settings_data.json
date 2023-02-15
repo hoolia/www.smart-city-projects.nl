@@ -1136,7 +1136,7 @@
               "use_feature_icon": true,
               "feature_icon": "fa-tractor",
               "text1": "De Boer",
-              "text2": "Als boer verkoop jij de grondstof \"mest\" en koop je het schone restproduct \"digestaat\" weer terug.<br>\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik verkoop mijn shit<\/button>"
+              "text2": "Als boer verkoop jij de grondstof \"mest\" en koop je het schone restproduct \"digestaat\" weer terug.<br>\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik verkoop mijn shit<\/button><a href=\"#contactus\">contact us<\/a>"
             }
           },
           "71cf6522-51f6-4750-b870-82a59e85afbf-16764820874cacbb19-1": {
