@@ -18,7 +18,11 @@
       <!--Map area end -->
       <div class="form-horizontal hiddde_">
         {% form 'contact' %}
-        
+        {% if form.posted_successfully? %}
+        <p class="note form-success">
+          {{ 'contact.form.post_success' | t }}
+        </p>
+        {% endif %}
 
         {% include 'form-errors-custom' %}
         <fieldset>
@@ -66,11 +70,6 @@
             <input class="btn btn-primary" id="submitMessage" name="submitMessage" type="submit" value="{{ 'contact.form.send' | t }}" />
           </div>
         </div>
-        {% if form.posted_successfully? %}
-        <p class="note form-success">
-          {{ 'contact.form.post_success' | t }}
-        </p>
-        {% endif %}
 
         {% endform %}
       </div>    
