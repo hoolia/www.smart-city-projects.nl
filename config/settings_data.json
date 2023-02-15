@@ -923,7 +923,7 @@
               "task": "TASK",
               "Day_": "02",
               "description-title": "Manage the Project",
-              "discription": "description of the project"
+              "discription": "We take care of the entire project, from start to finish, ensuring a seamless process for you."
             }
           },
           "b18b8e89-31b2-4b7f-ae23-06e6bab5d9b1": {
@@ -934,7 +934,7 @@
               "task": "Task",
               "Day_": "03",
               "description-title": "Manage the subsidies",
-              "discription": ""
+              "discription": "We handle all of the necessary paperwork and processes for obtaining subsidies, including the SDE++ aid provided by the Dutch government, to help maximize your financial benefits."
             }
           },
           "c26bf8d3-4fae-46ea-98df-0523e5d49ad8": {
@@ -944,8 +944,8 @@
               "image": "shopify:\/\/shop_images\/contract.png",
               "task": "Task",
               "Day_": "xx",
-              "description-title": "",
-              "discription": "Prepare the legal contracts"
+              "description-title": "Prepare the legal contracts",
+              "discription": ""
             }
           },
           "a1b1d056-e356-4b3c-bf1f-872b0cad9292": {
@@ -955,8 +955,8 @@
               "image": "shopify:\/\/shop_images\/installation.png",
               "task": "Task",
               "Day_": "xx",
-              "description-title": "",
-              "discription": "Install all the devices"
+              "description-title": "Install all the devices",
+              "discription": ""
             }
           },
           "2b4d10ee-1b87-42f9-a8d5-beacafafd09b": {
@@ -966,8 +966,8 @@
               "image": "shopify:\/\/shop_images\/icons8-euro-100.png",
               "task": "Task",
               "Day_": "xx",
-              "description-title": "",
-              "discription": "Earn the benefits."
+              "description-title": "Earn the benefits",
+              "discription": "You get to enjoy the benefits of your new energy solution, including reduced energy costs and a more sustainable, environmentally-friendly way of generating energy."
             }
           }
         },
