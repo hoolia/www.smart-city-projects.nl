@@ -69,6 +69,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     {{ 'theme.css' | asset_url | stylesheet_tag }}
     {{ 'stylesheet.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
+    {{ 'cusotm.css' | asset_url | stylesheet_tag }}
     {% if template contains 'collection' or template contains 'blog' or template contains 'article' %}
     {{ 'filter.css' | asset_url | stylesheet_tag }}
     {% endif %}
@@ -86,6 +87,9 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     {% if template == 'cart' %}
     <script src="{{ 'shipping-cart.js' | asset_url }}"></script>
     {% endif %}
+
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body class="{% case template %}
                {% when 'index' %}
@@ -105,3 +109,5 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
                {% else %} {{ template }}
                {% endcase %} home1" ><div class="pagefly-container">{{ content_for_layout }}</div></body>
 </html>
+
+
