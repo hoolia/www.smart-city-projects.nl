@@ -1063,7 +1063,7 @@
             "settings": {
               "title": "Rent",
               "Tab-heading": "Office and Roof rent revenue",
-              "tab-discription": "<p>We pay you the rent for a corner of your space and a place on the roof. The space you want to allocate for our system can be variable and adapted to your case.<\/p>",
+              "tab-discription": "<p>We pay you rent for a corner of your utility room to setup our DataCenter Modules and rent for your roof to place solarpanels. The space you want to allocate for our system can be variable and adapted to your case.<\/p>",
               "tab-calculator": "",
               "image": "shopify:\/\/shop_images\/rent_97f305f0-d5c3-49e7-9608-9a69b9cd3dbe.png"
             }
@@ -1093,7 +1093,7 @@
             "settings": {
               "title": "Investment",
               "Tab-heading": "Own the solar panels after 15 years",
-              "tab-discription": "<p>Become 100% owner of the solar panels after 15 years.<\/p><p>On average, a solar panel's lifetime is between 25 and 30 years<\/p>",
+              "tab-discription": "<p>Become 100% owner of the solar panels after 15 years.<\/p><p>On average, a solarpanel's lifespan is between 25 and 30 years<\/p>",
               "tab-calculator": "7mawFbsq7363vaEJo",
               "image": "shopify:\/\/shop_images\/investment.png"
             }
