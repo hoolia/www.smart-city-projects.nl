@@ -57,7 +57,6 @@ var category_view = {
     localStorage.setItem('type', type);
     localStorage.setItem('cols', cols);
     localStorage.setItem('element', element);
-    resizeCollGrid();
     
   },
 

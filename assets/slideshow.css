@@ -231,7 +231,7 @@ html[xmlns] .oc-banner7-container .slides {display: block;}
   line-height: 1;
   margin-top: 0;
   font-weight: normal;
-  font-family:  Oswald, sans-serif ;
+  font-family:  Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif ;
   font-style: italic;
   position: relative;
   padding-left: 70px;
@@ -260,7 +260,7 @@ html[xmlns] .oc-banner7-container .slides {display: block;}
 }
 
 .banner7-content .sub-title span{
-  color: #a8741a;
+  color: #30bf32;
 }
 .banner7-content.slider-2 .sub-title {
 
@@ -278,7 +278,7 @@ html[xmlns] .oc-banner7-container .slides {display: block;}
   color: #fff;
   text-transform: capitalize;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 61px;
 }
 
 
@@ -301,9 +301,9 @@ html[xmlns] .oc-banner7-container .slides {display: block;}
   -webkit-box-shadow: none;
 }
 .banner7-content .banner7-readmore a:hover {
-  color: #a8741a;
+  color: #30bf32;
   background: #fff;  
-  border: 1px solid #a8741a;
+  border: 1px solid #30bf32;
 }
 .slider-2 .banner7-readmore a {
 
@@ -466,8 +466,8 @@ html[xmlns] .oc-banner7-container .slides {display: block;}
   border-radius: 100%;
   line-height: 50px;
   text-align: center;
-  color: #fff;
-  /*border: 1px solid #fff;*/
+  color: #0c9e0e;
+  /*border: 1px solid #0c9e0e;*/
 }
 
 .oc-banner7-container .flex-direction-nav .flex-next,
@@ -487,9 +487,9 @@ html[xmlns] .oc-banner7-container .slides {display: block;}
 .oc-banner7-container .nivo-directionNav a.nivo-nextNav:hover,
 .oc-banner7-container .flexslider .flex-prev:hover, 
 .oc-banner7-container .nivo-directionNav a.nivo-prevNav:hover {
-  color: #a8741a;
+  color: #30bf32;
   background: #fff;
-  border-color: #a8741a;
+  border-color: #30bf32;
 }
 .oc-banner7-container .flex-direction-nav .flex-disabled {
   opacity: .3!important; 
@@ -839,7 +839,7 @@ html[xmlns] .oc-banner8-container .slides {display: block;}
   line-height: 1;
   margin-top: 0;
   font-weight: normal;
-  font-family:  Oswald, sans-serif ;
+  font-family:  Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif ;
   font-style: italic;
   position: relative;
   margin-bottom: 15px;
@@ -875,7 +875,7 @@ html[xmlns] .oc-banner8-container .slides {display: block;}
   margin: 0;
 }
 .banner8-content .banner8-des h4 span {
-  color: #a8741a;
+  color: #30bf32;
 }
 .banner8-content .banner8-des p{
   font-size: 15px;
@@ -908,9 +908,9 @@ html[xmlns] .oc-banner8-container .slides {display: block;}
   -webkit-box-shadow: none;
 }
 .banner8-content .banner8-readmore a:hover {
-  color: #242424;
-  background: #a8741a;
-  border: 1px solid #242424;
+  color: #ffffff;
+  background: #30bf32;
+  border: 1px solid #ffffff;
 }
 .slider-2 .banner8-readmore a {
 
@@ -1091,7 +1091,7 @@ html[xmlns] .oc-banner8-container .slides {display: block;}
 .oc-banner8-container .flexslider .flex-next:hover, 
 .oc-banner8-container .nivo-directionNav a.nivo-nextNav:hover,
 .oc-banner8-container .flexslider .flex-prev:hover, 
-.oc-banner8-container .nivo-directionNav a.nivo-prevNav:hover {color: #a8741a;background: #fff;}
+.oc-banner8-container .nivo-directionNav a.nivo-prevNav:hover {color: #30bf32;background: #fff;}
 .oc-banner8-container .flex-direction-nav .flex-disabled {
   opacity: .3!important; 
   filter:alpha(opacity=30); 

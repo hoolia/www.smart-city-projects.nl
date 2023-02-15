@@ -1,0 +1,201 @@
+<div class="testimonial-container" {% if section.settings.image != blank %}style="background-image: url('{{ section.settings.image | img_url: 'master' }}');" {% endif %}>
+  <div class="">
+    <div class="module-title">
+      {% if section.settings.heading %}
+      <h2 class="title_"><strong>{{ section.settings.heading }}</strong></h2>
+      {% endif %}
+       {% if section.settings.description %}
+      <p class="sub-title">{{ section.settings.description }}</p>
+      {% endif %}
+    </div>
+    <div class="block-content">
+      <div class="owl-container  ">
+        <div id="slides" class="main_ owl-theme {{ section.id }}">
+          {% if section.blocks.size > 0 %}
+          {% for block in section.blocks %}
+          <div class="row_items">
+            <div class="testimonial-content">
+              <div class="item">
+                <div class="item-inner">
+                  <div class="testimonial-images">
+                    {% if block.settings.image != blank %}
+                    <img data-aos="zoom-in-right" {% if settings.lazyloading_enable %}  class="lazyload" data-{% endif %}src="{{ block.settings.image | img_url: '100x100' }}" alt="{{ block.settings.author }}"/>
+                    {% endif %}
+                  </div>
+                  <h4 class="title">
+                    <a href="#"><strong>{{ block.settings.title }} </strong></a>
+                  </h4>
+                  <div class="testimonial-box">
+                    <a href="#">{{ block.settings.description }}</a>
+                  </div>
+                 
+                
+                </div>
+              </div>
+            </div>
+            <!--testimonial-content-->
+          </div>
+          {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <!--block-content-->
+  </div>
+</div>
+<!--testimonial-container-->
+<style>
+  .module-title .sub-title {
+    font-size: 30px;
+    color: #707070;
+    text-transform: none;
+    font-family: 'georgia';
+    font-style: normal;
+    margin-bottom: 3px;
+}
+  .module-title h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+  .module-title h2:after, .module-title h2:before{
+    width: 0;
+}
+  
+  .title_{
+    color:#4ad44a
+  }
+  .testimonial-content .item-inner {
+    padding: 30px;
+}
+  .common-home .testimonial-images {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    align-items: center;
+    background: #f2f3f9;
+}
+  .common-home .testimonial-images {
+    display: flex;
+    vertical-align: top;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    align-items: center;
+    background: #f2f3f9;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+  .main_{
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .testimonial-content .title a {
+    font-size: 17px;
+    color: #000;
+}
+  .testimonial-content .title a:hover {
+    color: #000;
+}
+  .testimonial-box a {
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: none;
+    display: block;
+    color: #000;
+    font-size:17px;
+    text-align: justify;
+}
+  .testimonial-box a:hover {
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: none;
+    display: block;
+    color: #000;
+}
+  .testimonial-content .item-inner{
+    border:none;
+    -webkit-box-shadow:none;
+  }
+  .testimonial-content .item-inner:hover{
+    background: unset;
+    -webkit-box-shadow: unset;
+  }
+@media(max-width: 1200px){
+  .common-home .testimonial-images {
+    display: flex;
+    vertical-align: top;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align-items: center;
+    background: #f2f3f9;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+  .main_ {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  .testimonial-content .title a {
+    font-size: 16px;
+    color: #000;
+}
+}
+  @media(max-width: 768px){
+    .testimonial-content .item-inner {
+    padding: 0 30px 30px;
+}
+      .main_ 
+    {
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+}
+</style>
+
+
+
+
+{% comment %}
+<script >
+  $(document).ready(function() {
+    $("#slides.{{ section.id }}").owlCarousel({
+      autoPlay :  false ,
+
+      loop: true,
+      margin: 0,
+      navSpeed : 3000,
+      dotsSpeed : 3000,
+      autoplaySpeed : 3000,
+      nav :  false ,
+      dots : true ,
+      lazyLoad: true,
+      responsive:{
+        0:{
+          items: 1
+        },
+        480:{
+          items: 2
+        },
+        768:{
+          items: 2
+        },
+        992:{
+          items: 3
+        },
+        1200:{
+          items : 3
+        }
+      }
+    });
+  });
+</script>
+{% endcomment %}

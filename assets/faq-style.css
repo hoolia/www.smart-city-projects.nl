@@ -193,7 +193,7 @@ body.cd-overlay::after {
   top: 50%;
   height: 2px;
   width: 13px;
-  background: #a8741a;
+  background: #30bf32;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition-property: -webkit-transform;

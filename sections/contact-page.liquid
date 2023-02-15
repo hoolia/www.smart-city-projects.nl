@@ -16,7 +16,7 @@
       </div>
       {% endif %}
       <!--Map area end -->
-      <div class="form-horizontal">
+      <div class="form-horizontal hiddde_">
         {% form 'contact' %}
         {% if form.posted_successfully? %}
         <p class="note form-success">
@@ -122,7 +122,9 @@
       }
     ],
    "blocks": [],
-   "presets": []
+ "presets": [{
+    "name": "Contact Form section"
+  }]
 }
 {% endschema %}
 {% if section.settings.accept_check_enable %}
@@ -140,3 +142,12 @@
       });
 </script>
 {% endif %}
+
+
+
+
+<Style>
+.form-horizontal.hiddde_{
+  display:none
+}
+</Style>

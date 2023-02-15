@@ -1,0 +1,119 @@
+<div class="container" >
+  <div class="constyle2le1">
+  {% for block  in section.blocks %}
+     <div data-v-e6ef43fc="" class="st2_1tem pcst2_1tem">
+      <div data-v-129dd9bd="" data-v-e6ef43fc="" class="imgbox">
+        <!---->
+        <img
+          data-v-129dd9bd=""
+          title=""
+          class="imgico imgico2 pcimgico2"
+          data-psize='{"w":15,"h":32}'
+          src={{ block.settings.image  | img_url: 'master'}}
+          lazy="loaded"
+        />
+        <!---->
+      </div>
+      <div
+        data-v-e6ef43fc=""
+        class="Jso-Text"
+        data-top="layer8CF148DFBE97EF2DC5DFA105EC018B93"
+        style="display: inline-block;"
+      >
+        <p><span style="color: #008117;">{{ block.settings.text }}</span></p>
+      </div>
+    </div>
+  {% endfor %}
+  
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Icon With text",
+    "settings": [
+      
+    ],
+         "blocks": [
+     {
+       "name": "Block",
+       "type": "blcok",
+       "settings": [
+        
+        {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         },
+        {
+          "type":"text",
+          "id":"text",
+          "label":"title"
+        }
+       ]
+     }
+   ],
+    "presets":[
+      {
+        "name":"Icon With text"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+  .constyle2le1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    width: 100%;
+}
+.imgico {
+    min-width: 15px;
+    min-height: 15px;
+    width: 25px;
+    height: auto;
+}
+  .st2_1tem.pcst2_1tem {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+}
+  
+  .Jso-Text {
+    font-size: 1.6rem;
+}
+  .st2_1tem.pcst2_1tem:nth-child(2) {
+    border-right: 2px solid #e6e6e6;
+    border-left: 2px solid #e6e6e6;
+}
+    .st2_1tem.pcst2_1tem:last-child {
+    margin-bottom: 3rem;
+}
+@media only screen and (max-width: 700px) {
+  .imgbox {
+    padding-bottom: 7px;
+}
+  .st2_1tem.pcst2_1tem {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+  .st2_1tem.pcst2_1tem:nth-child(2) {
+    border-top: 2px solid #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 7px 0;
+    border-left: none;
+    border-right: none;
+}
+
+}
+</style>

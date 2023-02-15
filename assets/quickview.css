@@ -92,7 +92,7 @@ a.see-all {
 }
 .modal-product .product-info .price-box p { margin: 0 }
 .modal-product .product-info .price-box .special-price {
-  color: #a8741a;
+  color: #30bf32;
   font-size: 24px;
   font-weight: 400;
 }
@@ -111,7 +111,7 @@ a.see-all {
   border: 1px solid #ddd;
 }
 .quick-add-to-cart .single_add_to_cart_button {
-  background: #a8741a none repeat scroll 0 0;
+  background: #30bf32 none repeat scroll 0 0;
   border: medium none;
   color: #fff;
   float: left;
@@ -126,7 +126,7 @@ a.see-all {
   background: #282828 none repeat scroll 0 0;
 }
 .modal-product .product-info .see-all:hover {
-  color: #a8741a;
+  color: #30bf32;
 }
 h3.widget-title-modal {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;

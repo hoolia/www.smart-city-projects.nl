@@ -20,6 +20,7 @@
         </a>
         {% endif %}
       </div>
+    
       {% endfor %}
     </div>
   {% endif %}
@@ -28,7 +29,7 @@
   $(document).ready(function() {
     $("#banner{{section.id}}").owlCarousel({
       autoPlay :  false ,
-      items : 5,
+      items : 1,
       margin: 60,
       loop: true,			
       navSpeed : 1000,
@@ -50,7 +51,7 @@
           items: 4
         },
         1200:{
-          items: 5
+          items: 3
         }
       }
     });

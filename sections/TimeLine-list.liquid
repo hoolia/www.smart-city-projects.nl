@@ -1,0 +1,105 @@
+<div data-v-3f5bad52="" id="layer356F8356B3FBE17294C0259809D849D6" data-role="timeline4" class="cstlayer" style="background-color: rgb(17, 171, 19);">
+  <!---->
+  <section data-v-3f5bad52="" class="timeline4 time05 padA timeline4-div plug-padding-tb" style="padding: 100px 0px;">
+    <div class="container containerM">
+      <div class="row" data-aos="fade-up">
+        <div class="col-md-12">
+          <div class="main-timeline">
+             {% for block in section.blocks %}  
+            <div class="timeline">
+              <a href="#" class="timeline-content">
+                <div class="timeline-year">
+                  <div class="Jso-M-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                    <p>
+                      <span>{{ block.settings.Title }}</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline-icon">
+                  <div data-v-129dd9bd="" class="imgbox">
+                    <!---->
+                    <img data-v-129dd9bd="" title="" class=""  src={{ block.settings.image  | img_url: 'master'}} lazy="loaded">
+                    <!---->
+                  </div>
+                </div>
+                <div class="title Jso-S-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                  <p style="text-align: left;">
+                    <span >{{ block.settings.task }}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #434343;">
+                        <strong>
+                          <span style="font-size: 1.4rem;">Day {{ block.settings.Day_ }}</span>
+                        </strong>
+                      </span>
+                    </span>
+                  </p>
+                </div>
+                <div class="description Jso-M-Title" data-top="layer356F8356B3FBE17294C0259809D849D6">
+                  <p>
+                    <strong>
+                      <span >{{ block.settings.discription }}</span>
+                    </strong>
+                  </p>
+                </div>
+              </a>
+            </div>
+          
+              {% endfor %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---->
+  <!---->
+</div>
+{% schema %}
+  {
+    "name": "Time line List",
+    "settings": [],
+      "blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+        {
+          "type":"text",
+          "id":"Title",
+          "label":"title"
+        },
+        {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         },
+       {
+          "type":"text",
+          "id":"task",
+          "label":"Task"
+        },
+          {
+          "type":"text",
+          "id":"Day_",
+          "label":"day"
+        },
+         {
+          "type":"text",
+          "id":"discription",
+          "label":"discription"
+        }
+       ]
+     }
+   ],
+    
+     "presets":[
+      {
+        "name":"Time line List"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

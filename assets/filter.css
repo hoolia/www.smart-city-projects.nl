@@ -55,14 +55,14 @@ Get font-families from theme settings
   background: #fff;
 }
 .list-group .filter-attribute-container a.add-filter:hover {
-  color: #a8741a;
+  color: #30bf32;
 }
 .list-group .filter-attribute-container a.add-filter:hover:before,
 .list-group .filter-attribute-container a.add-filter.active:before 
 {
   color: #fff;
-  background: #a8741a;
-  border-color: #a8741a;
+  background: #30bf32;
+  border-color: #30bf32;
 }
 .filter-attribute-remove-container {
   background: none;
@@ -85,7 +85,7 @@ Get font-families from theme settings
   position: relative;
 }
 #slider-price .ui-widget-header {
-  background: #a8741a;
+  background: #30bf32;
   height: 100%;
   border-radius: 0;
   position: absolute;
@@ -106,7 +106,7 @@ Get font-families from theme settings
   margin-left: -18px;
 }
 .ui-slider .ui-slider-handle:hover {
-  background: #a8741a;
+  background: #30bf32;
 }
 .filter-price .slider-values {
   padding: 5px 0;

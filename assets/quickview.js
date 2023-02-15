@@ -77,10 +77,6 @@ $(document).ready(function () {
     }
     
     
-    if (Currency.cookie.read() != null) {
-      Currency.convertAll(shopCurrency, Currency.cookie.read());
-    }
-    
 
     $(field_add).val(product_info['variants'][0]['id']);
 

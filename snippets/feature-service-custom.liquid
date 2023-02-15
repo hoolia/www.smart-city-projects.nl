@@ -1,0 +1,39 @@
+<!--Service Area Start-->
+<div class="static1-elomus2">
+  {% if section.settings.heading != blank %} 
+  <div class="module-title" data-aos="fade-down">
+    {% if section.settings.description != blank %}  
+    <p class="sub-title">{{ section.settings.description }}</p>
+    {% endif %}
+    <h2>{{ section.settings.heading }}</h2>
+  </div>
+  {% endif %}
+  <div class="row" data-aos="fade-up-right">
+    {% if section.blocks.size > 0 %}
+    {% for block in section.blocks %}
+    <div class="col col-sm-12 col-xs-12 col-md-6">
+     <div class="services-main">
+  <div class="service-left">
+          <div class="icon">
+        {% if block.settings.use_feature_service_icon %}
+        {% if block.settings.feature_service_icon != blank %}
+        <i class="fa {{block.settings.feature_service_icon }}"></i>
+        {% endif %}
+        {% else %}
+        {% if block.settings.image != blank %}
+        <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ block.settings.image | img_url: 'master' }}" alt="" />
+        {% endif %}
+        {% endif %} 
+      </div>
+  </div>
+      <div class="service-right">
+       <h3>  <p> {{ block.settings.feature_service_title }}</p></h3>
+      <p>{{ block.settings.feature_service_description }}</p>
+      </div>
+     </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+</div>
+<!--End of Service Area-->

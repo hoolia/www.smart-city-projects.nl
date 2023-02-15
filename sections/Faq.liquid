@@ -1,0 +1,294 @@
+{%- capture html -%}
+{% if section.settings.section_enable %}
+<div class="faq-area mt-100  mt-xs-80 mt-sm-80" id="section-{{ section.id }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="faq-wrapper">
+          <div class="single-faq mb-80 mb-xs-60 mb-sm-60">
+           
+            {% if section.settings.section_title != blank %}
+            <h2 class="faq-title mb-20">{{ section.settings.section_title }}</h2>
+            {% endif %}
+            
+            <div class="accordion" id="shippingInfo">
+              {% for block in section.blocks %}
+              {% case block.type %}
+              {% when 'faq' %}
+              <div class="card">
+                
+                <div class="card-header" id="heading-{{ forloop.index }}">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link {% unless forloop.first == true %} collapsed {% endunless %}" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}"
+                            aria-expanded="{% if forloop.first == true %}true {% else%} false {% endif %}" aria-controls="collapse-{{ forloop.index }}">
+                      {{ block.settings.faq_title }}
+                    </button>
+                  </h5>
+                </div>
+                
+                <div id="collapse-{{ forloop.index }}" class="collapse {% if forloop.first == true %}show{% endif %} " aria-labelledby="heading-{{ forloop.index }}"
+                     data-parent="#shippingInfo">
+                  <div class="card-body">
+                    {% if block.settings.faq_description != blank %}
+                    <p>{{ block.settings.faq_description }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+              {% endcase %}
+              {% endfor %}
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+{%- endcapture -%}
+{{ html | strip_newlines | replace:'	','' | replace:'    ','' | replace:'  ',' ' }}
+
+{% render 'section_typography' %}
+
+{% schema %}
+  {
+    "name": "Faq",
+    "settings": [
+		{
+		  "type": "header",
+          "content": "Section Enable"
+        },
+		{
+          "type": "checkbox",
+          "id": "section_enable",
+          "label": "Section Enable",  
+          "default": true
+      	},
+		{
+		  "type": "header",
+          "content": "Section Heading"
+        },
+		{
+          "type": "text",
+          "id": "section_title",
+          "label": "Section Title",
+          "default": "Shipping information"
+      	}
+	],
+	"blocks":[
+      {
+          "type": "faq",
+          "name": "Frequently Ask Questions",
+          "settings": [
+            {
+              "type": "textarea",
+              "id": "faq_title",
+              "label": "Faq title",
+              "default": "frequently Ask Question"
+            },
+            {
+              "type": "textarea",
+              "id": "faq_description",
+              "label": "Faq Description",
+              "default": "Once your order has been shipped, you will receive an email with your tracking and shipping information."
+            }
+         ]
+  	  },
+	  {
+          "type": "section_margin",
+          "name": "Section Margin",
+		  "limit": 1,
+          "settings": [
+            {
+			  "type": "header",
+			  "content": "Large/Desktop Device"
+			},
+			{
+			  "type": "range",
+			  "id": "section_margin_top",
+			  "min": 0,
+			  "max": 150,
+			  "step": 5,
+			  "label": "Margin Top",
+			  "unit": "px",
+			  "default": 0
+			},
+			{
+			  "type": "range",
+			  "id": "section_margin_bottom",
+			  "min": 0,
+			  "max": 150,
+			  "step": 5,
+			  "label": "Margin Bottom",
+			  "unit": "px",
+			  "default": 0
+			},
+			{
+			  "type": "header",
+			  "content": "Tablet Device"
+			},
+			{
+			  "type": "range",
+			  "id": "section_margin_top_md",
+			  "min": 0,
+			  "max": 150,
+			  "step": 5,
+			  "label": "Margin Top",
+			  "unit": "px",
+			  "default": 0
+			},
+			{
+			  "type": "range",
+			  "id": "section_margin_bottom_md",
+			  "min": 0,
+			  "max": 150,
+			  "step": 5,
+			  "label": "Margin Bottom",
+			  "unit": "px",
+			  "default": 0
+			},
+			{
+			  "type": "header",
+			  "content": "Mobile Device"
+			},
+			{
+			  "type": "range",
+			  "id": "section_margin_top_xs",
+			  "min": 0,
+			  "max": 150,
+			  "step": 5,
+			  "label": "Margin Top",
+			  "unit": "px",
+			  "default": 0
+			},
+			{
+			  "type": "range",
+			  "id": "section_margin_bottom_xs",
+			  "min": 0,
+			  "max": 150,
+			  "step": 5,
+			  "label": "Margin Bottom",
+			  "unit": "px",
+			  "default": 0
+			}
+          ]
+       },
+	   {
+          "type": "section_padding",
+          "name": "Section Padding",
+		  "limit": 1,
+          "settings": [
+            {
+			  "type": "header",
+			  "content": "Large/Desktop Device"
+			},
+			{
+			  "type": "range",
+			  "id": "section_padding_top",
+			  "min": 0,
+			  "max": 150,
+			  "step": 5,
+			  "label": "Padding Top",
+			  "unit": "px",
+			  "default": 0
+			},
+			{
+			  "type": "range",
+			  "id": "section_padding_bottom",
+			  "min": 0,
+			  "max": 150,
+			  "step": 5,
+			  "label": "Padding Bottom",
+			  "unit": "px",
+			  "default": 100
+			},
+			{
+			  "type": "header",
+			  "content": "Tablet Device"
+			},
+			{
+			  "type": "range",
+			  "id": "section_padding_top_md",
+			  "min": 0,
+			  "max": 150,
+			  "step": 5,
+			  "label": "Padding Top",
+			  "unit": "px",
+			  "default": 0
+			},
+			{
+			  "type": "range",
+			  "id": "section_padding_bottom_md",
+			  "min": 0,
+			  "max": 150,
+			  "step": 5,
+			  "label": "Padding Bottom",
+			  "unit": "px",
+			  "default": 80
+			},
+			{
+			  "type": "header",
+			  "content": "Mobile Device"
+			},
+			{
+			  "type": "range",
+			  "id": "section_padding_top_xs",
+			  "min": 0,
+			  "max": 150,
+			  "step": 5,
+			  "label": "Padding Top",
+			  "unit": "px",
+			  "default": 0
+			},
+			{
+			  "type": "range",
+			  "id": "section_padding_bottom_xs",
+			  "min": 0,
+			  "max": 150,
+			  "step": 5,
+			  "label": "Padding Bottom",
+			  "unit": "px",
+			  "default": 60
+			}
+          ]
+       },
+	   {
+          "type": "section_background",
+          "name": "Section Background",
+		  "limit": 1,
+          "settings": [
+            {
+			  "type": "image_picker",
+			  "id": "section_bg_image",
+			  "label": "BG Image"
+			},
+			{
+			  "type": "color",
+			  "id": "section_bg_color",
+			  "label": "BG Color",
+			  "default": "#ffffff"
+			}
+          ]
+       }
+	],
+	"presets": [
+		{
+		  "name": "Faq",
+		  "category": "9.2 Theme Others",
+		  "blocks":[
+              {
+              	"type": "faq"
+              },
+			  {
+              	"type": "faq"
+              },
+			  {
+              	"type": "faq"
+              }
+            ]
+		}
+	]
+  }
+{% endschema %}

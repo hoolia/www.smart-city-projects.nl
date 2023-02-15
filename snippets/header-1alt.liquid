@@ -205,3 +205,118 @@
     </div>
   </div>
 </header>
+<style>
+  div#logo {
+    width: 164px;
+}
+  #oc-menu-header .ul-top-items .li-top-item .a-top-link {
+    padding: 5px 25px 5px 25px;
+    color: white;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+  .fix-header {
+    width: 100%;
+    max-width: 100% !important;
+    background: white;
+  }
+  .hd5 .fix-header #logo {
+    -webkit-filter: brightness(0) invert(1);
+    filter: unset;
+}
+  .fix-header:hover {
+    background: white;
+}
+  
+  #oc-menu-header .ul-top-items .li-top-item.active .a-top-link {
+    color: #30bf32;
+    font-weight: 600;
+    color: rgb(66, 219, 69);
+    border-bottom: 1px solid rgb(66, 219, 69) !important;
+    border: unset;
+}
+
+  .hd5 .horizontal-menu {
+    text-align: right;
+}
+  .horizontal-menu {
+    padding-right: 0;
+}
+  #oc-menu-header .ul-top-items .li-top-item.active .a-top-link {
+    color: #30bf32;
+    font-weight: 600;
+    color: rgb(66, 219, 69) !important;
+    border-bottom: 1px solid rgb(66, 219, 69) !important;
+    border: unset;
+}
+
+  {% if template == 'index' %}
+/* .hd1 .header-inner {
+    width: 100%;
+    max-width: 100% !important;
+    background: unset  !important;
+}*/
+  .header-inner.fix.fix-header {
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+  .hd5 .fix-header .horizontal-menu .ul-top-items .li-top-item > a {
+    -webkit-filter: brightness(0) invert(1);
+    filter: unset;
+}
+#oc-menu-header .fix-header .ul-top-items .li-top-item .a-top-link {
+    padding: 5px 25px 5px 25px;
+    color: black;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+  .fix-header .container-inner .box.box-left #oc-menu-header .ul-top-items .li-top-item .a-top-link {
+    color: #000;
+}
+  @media (max-width: 991px){
+.common-home .header-inner.fix.fix-header {
+    position: fixed;
+    background: white;
+/*       height: 61px; */
+}
+    
+.hd5 .fix-header #oc-menu-mheader .oc-menu-bar {
+    filter: UNSET;
+}
+    
+  }
+  {% else %}
+   header.hd5.hd1 {
+    top: -19px;
+}
+.fix-header , .hd1 .header-inner {
+    width: 100%;
+    max-width: 100% !important;
+    background: #f8f8f8;
+}
+  #oc-menu-header  .ul-top-items .li-top-item .a-top-link , #oc-menu-header .fix-header .ul-top-items .li-top-item .a-top-link {
+    padding: 5px 25px 5px 25px;
+    color: #0c9e0e;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+  .hd5 .fix-header .horizontal-menu .ul-top-items .li-top-item > a {
+    filter: unset;
+}
+    @media (max-width: 1200px){
+
+    
+.hd5 .fix-header #oc-menu-mheader .oc-menu-bar {
+    filter: UNSET;
+}
+    
+  }
+  {% endif %}
+  
+
+  </style>

@@ -24,10 +24,22 @@
               <li class="address">{{ block.settings.footer_address }}</li>
               {% endif %}
               {% if block.settings.footer_phone != blank %}
-              <li class="phone">{{ block.settings.footer_phone }}</li>
+            
+                 <span class="phone">
+                 
+                   
+                   <i class="fa fa-phone" aria-hidden="true"></i></span> 
+              <span class="phone">{{ block.settings.footer_phone }}</span>
+   
               {% endif %}
               {% if block.settings.footer_email != blank %}
-              <li class="email">{{ block.settings.footer_email }}</li>
+          
+              <div class="email"> <i class="fa fa-envelope" aria-hidden="true"></i>
+
+
+              <span>{{ block.settings.footer_email }}</span> 
+              </div>
+
               {% endif %}
             </ul>
           </div>
@@ -101,6 +113,34 @@
   {% endfor %}
   <div id="back-top"><i class="fa fa-angle-up"></i></div>
 </footer>
+<style>
+.footer_ i {
+  font-size:40px;
+  vertical-align:middle;
+} 
+.footer_ i + span{
+  margin-left:20px;
+}
+   #back-top{
+     color:#30bf32;
+   }
+   #back-top:hover{
+     color:white;
+   }
+ span.phone .imgico.imgico2.pcimgico2 {
+    filter: brightness(0) invert(1);
+   width:24px
+}
+  span.footers_ {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+align-items: stretch;
+        width: fit-content;
+    justify-items: end;
+        justify-content: space-evenly;
+}
+</style>
 <script >
   $(document).ready(function(){
     // hide #back-top first

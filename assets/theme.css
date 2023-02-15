@@ -49,8 +49,8 @@ Get font-families from theme settings
 }
 .horizontal-menu .ul-top-items .li-top-item > a:hover,.horizontal-menu .ul-top-items .li-top-item.active > a {
   opacity: 1;
-  border-color: rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.1);
+/*   border-color: rgba(12, 158, 14, 0.2); */
+  background: rgba(12, 158, 14, 0.1);
 }
 .hd2 .horizontal-menu .ul-top-items .li-top-item > a:hover,.hd2 .horizontal-menu .ul-top-items .li-top-item.active > a {
   opacity: 1;
@@ -59,7 +59,7 @@ Get font-families from theme settings
 }
 .hd5 .horizontal-menu .ul-top-items .li-top-item > a:hover, .hd5 .horizontal-menu .ul-top-items .li-top-item.active > a,
 .hd3alt .horizontal-menu .ul-top-items .li-top-item > a:hover, .hd3alt .horizontal-menu .ul-top-items .li-top-item.active > a{
-  border-color: #a8741a;
+/*   border-color: #30bf32; */
   background: none;
 }
 .mega-menu-container .a-mega-second-link, .mega-menu-container .widget-html-title {
@@ -70,7 +70,7 @@ Get font-families from theme settings
   margin-bottom: 14px;
 }
 .mega-menu-container .a-mega-second-link:hover, .mega-menu-container .widget-html-title:hover,.oc-menu .ul-top-items .mega-menu-container .a-mega-third-link:hover {
-  color: #a8741a !important;
+  color: #30bf32 !important;
 }
 
 .oc-menu .ul-top-items .mega-menu-container .a-mega-third-link {
@@ -206,7 +206,7 @@ right: 0;
 .horizontal-menu .flyout-menu-container.left {
   float: left;
   text-align: left;
-  background: #242424;
+  background: #ffffff;
   padding: 45px 30px 45px 30px;
 }
 .horizontal-menu .flyout-menu-container.right {
@@ -325,13 +325,13 @@ right: 0;
   vertical-align: top;
   width: 100%;
   background: transparent !important;
-  border: 1px solid #ffffff;
+  border: 1px solid #30bf32;
 }
 .hd5 .mobile-menu .oc-menu-bar, .hd6 .mobile-menu .oc-menu-bar{
-  border: 1px solid #ffffff; 
+  border: 1px solid #30bf32; 
 }
 .hd3alt .mobile-menu .oc-menu-bar{
-  border: 1px solid #a8741a; 
+  border: 1px solid #30bf32; 
 }
 .mobile-menu .oc-menu-bar .left {
   padding: 0;
@@ -354,8 +354,8 @@ right: 0;
   line-height: inherit;
 }
 .mobile-menu .oc-menu-bar .right:hover {
-  color: #a8741a;
-  background: #242424;
+  color: #30bf32;
+  background: #ffffff;
 }
 .mobile-menu .ul-top-items {
   display: none;
@@ -368,7 +368,7 @@ right: 0;
   border-radius: 30px;
   overflow: hidden;
   padding: 15px;
-  background: #242424;
+  background: #ffffff;
   box-shadow: 0 0 18px 1px rgba(0,0,0,0.07);
   -webkit-box-shadow: 0 0 18px 1px rgba(0,0,0,0.07);
 }
@@ -526,7 +526,7 @@ a.see-all {
 }
 .modal-product .product-info .price-box p { margin: 0 }
 .modal-product .product-info .price-box .special-price {
-  color: #a8741a;
+  color: #30bf32;
   font-size: 24px;
   font-weight: 400;
 }
@@ -545,7 +545,7 @@ a.see-all {
   border: 1px solid #ddd;
 }
 .quick-add-to-cart .single_add_to_cart_button {
-  background: #a8741a none repeat scroll 0 0;
+  background: #30bf32 none repeat scroll 0 0;
   border: medium none;
   color: #fff;
   float: left;
@@ -560,7 +560,7 @@ a.see-all {
   background: #282828 none repeat scroll 0 0;
 }
 .modal-product .product-info .see-all:hover {
-  color: #a8741a;
+  color: #30bf32;
 }
 h3.widget-title-modal {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
