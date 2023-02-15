@@ -1069,7 +1069,7 @@
               "title": "Savings",
               "Tab-heading": "Save heating cost",
               "tab-discription": "<p>Expect to save about 66% on building heating cost with our green renewable energy system. A classic source of heating would cost you XX€ for XXkW\/h, meanwhile our solution costs around XX€ for XXkW\/h.<\/p>",
-              "tab-calculator": "YKRu5WFKFwPZhc8ad",
+              "tab-calculator": "cRzrCrDGDnSJMcpyQ",
               "image": "shopify:\/\/shop_images\/saving.png"
             }
           },
@@ -1112,7 +1112,7 @@
           "fieldset {max-width: 600px; margin: 0 auto;}",
           ".buttons {display: flex; justify-content: center;}",
           ".form-success {color: #42db44;}",
-          "label{font-weight:bold; color: #42db44;}"
+          "label {font-weight: bold; color: #42db44;}"
         ],
         "settings": {
           "show_map": false,
