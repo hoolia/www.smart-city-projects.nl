@@ -1,6 +1,6 @@
 <!--Contact Us Area Start-->
-<div class="container">
-  <div class="row">
+<div id="contactus" class="container">
+  <div class="row" class="reveal-modal">
     <div id="content" class="col-sm-12">
       <h1>Contact Us</h1>
       {% if section.settings.show_map %}
@@ -147,7 +147,25 @@
 
 
 <Style>
-.form-horizontal.hiddde_{
- 
-}
+  .form-horizontal.hiddde_ {
+  }
+
+  #contactus {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    background-color: rgba(22,22,22,0.5); /* complimenting your modal colors */
+  }
+  #contactus:target {
+    visibility: visible;
+    display: block;
+  }
+  .reveal-modal {
+    position: relative;
+    margin: 0 auto;
+    top: 25%;
+  }
 </Style>
