@@ -1108,7 +1108,8 @@
       "811dc7ef-6454-452b-b077-7da890f0fbdf": {
         "type": "contact-page",
         "custom_css": [
-          "h1 {color: #42db44; display: flex; justify-content: center; font-weight: bold; font-size: 4rem;}"
+          "h1 {color: #42db44; display: flex; justify-content: center; font-weight: bold; font-size: 4rem;}",
+          "fieldset {max-width: 768px; margin: 0 auto;}"
         ],
         "settings": {
           "show_map": false,
