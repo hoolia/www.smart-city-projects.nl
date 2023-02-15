@@ -1111,14 +1111,14 @@
           "h1 {color: #42db44; display: flex; justify-content: center; font-weight: bold; font-size: 4rem;}",
           "fieldset {max-width: 768px; margin: 0 auto;}",
           ".buttons {display: flex; justify-content: center;}",
-          ".form-success{color: #42db44;}"
+          ".form-success {color: #42db44;}"
         ],
         "settings": {
           "show_map": false,
           "map_code": "",
           "show_content": true,
-          "accept_check_enable": true,
-          "accept_text": "I agree with the terms and conditions."
+          "accept_check_enable": false,
+          "accept_text": ""
         }
       }
     },
