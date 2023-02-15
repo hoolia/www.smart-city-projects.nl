@@ -1193,12 +1193,15 @@
           "b0ec3539-7a73-42a8-b2b0-e3b15095965b",
           "0ee6592d-df22-47a3-b18e-5a1d179ebf51"
         ],
+        "custom_css": [
+          ".icon-image {background-color: white; }"
+        ],
         "settings": {
           "product_advert_design": "product-feature-advert3",
-          "fullwidth": false,
+          "fullwidth": true,
           "background": false,
-          "background_color": "#ffffff",
-          "top_margin": true,
+          "background_color": "#fff",
+          "top_margin": false,
           "bg-image": "shopify:\/\/shop_images\/biogas-process.png",
           "image_position": "right",
           "heading": "Project Participatie",
