@@ -1059,6 +1059,7 @@
               "title": "Rent",
               "Tab-heading": "Office and Roof rent revenue",
               "tab-discription": "<p>We pay you the rent for a corner of your space and a place on the roof. The space you want to allocate for our system can be variable and adapted to your case.<\/p>",
+              "tab-calculator": "",
               "image": "shopify:\/\/shop_images\/rent_97f305f0-d5c3-49e7-9608-9a69b9cd3dbe.png"
             }
           },
@@ -1068,6 +1069,7 @@
               "title": "Savings",
               "Tab-heading": "Save heating cost",
               "tab-discription": "<p>Expect to save about 66% on building heating cost with our green renewable energy system. A classic source of heating would cost you XX€ for XXkW\/h, meanwhile our solution costs around XX€ for XXkW\/h.<\/p>",
+              "tab-calculator": "",
               "image": "shopify:\/\/shop_images\/saving.png"
             }
           },
@@ -1077,6 +1079,7 @@
               "title": "Subsidy",
               "Tab-heading": "Contract terms",
               "tab-discription": "<p>The government guarantees a success with its SDE++ subsidy offering a guarenteed steady revenue for a much as 15 years if you use a sustainable source of energy. Following this advantage, we propose contracts from 10 to 15 years.<\/p>",
+              "tab-calculator": "",
               "image": "shopify:\/\/shop_images\/subsidy.png"
             }
           },
@@ -1086,6 +1089,7 @@
               "title": "Investment",
               "Tab-heading": "Own the solar panels after 15 years",
               "tab-discription": "<p>Become 100% owner of the solar panels after 15 years.<br\/>Solar Panels easily last 25 years.<\/p>",
+              "tab-calculator": "Kxtb79tA5GmKZS9e2",
               "image": "shopify:\/\/shop_images\/investment.png"
             }
           }
