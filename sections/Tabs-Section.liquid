@@ -20,6 +20,10 @@
       <div class="tab_content">
         <div class="left-content">
           <div class="Tab-heading">{{ block.settings.Tab-heading }}</div>
+          {% if section.settings.calculator %}
+              <div class="calculator" data-calc-id="{{ block.settings.calculator }}" data-type="framed"></div>
+              <script src="https://scripts.convertcalculator.com/embed.js" async="true"></script>
+          {% endif %}
          <div class="tab-discription">{{ block.settings.tab-discription }}</div> 
         </div>
         <div class="right-content">
@@ -73,6 +77,11 @@
           "type":"richtext",
           "id":"tab-discription",
           "label":"discription"
+        },
+         {
+          "type":"text",
+          "id":"tab-calculator",
+          "label":"Calculator ID"
         },
         {
            "type": "image_picker",
