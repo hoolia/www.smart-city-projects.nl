@@ -1172,7 +1172,7 @@
               "use_feature_icon": true,
               "feature_icon": "fa-fire",
               "text1": "Warmte Consument",
-              "text2": "Restwarmte wordt verkocht aan nabijgelegen kasbouw of warmtenet voor <b>\\u20ac 1,-\/m3<\/b> zodat ook zij de winter overleven.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik wil kopen<\/button>"
+              "text2": "Restwarmte wordt verkocht aan nabijgelegen kasbouw of warmtenet voor <b>€ 1,-\/m3<\/b> zodat ook zij de winter overleven.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">Ik wil kopen<\/button>"
             }
           },
           "0ee6592d-df22-47a3-b18e-5a1d179ebf51": {
@@ -1196,7 +1196,7 @@
         "settings": {
           "product_advert_design": "product-feature-advert3",
           "fullwidth": false,
-          "background": true,
+          "background": false,
           "background_color": "#ffffff",
           "top_margin": true,
           "bg-image": "shopify:\/\/shop_images\/biogas-process.png",
