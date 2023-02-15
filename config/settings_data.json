@@ -1109,7 +1109,8 @@
         "type": "contact-page",
         "custom_css": [
           "h1 {color: #42db44; display: flex; justify-content: center; font-weight: bold; font-size: 4rem;}",
-          "fieldset {max-width: 768px; margin: 0 auto;}"
+          "fieldset {max-width: 768px; margin: 0 auto;}",
+          ".buttons{display: flex; justify-content: center;}"
         ],
         "settings": {
           "show_map": false,
