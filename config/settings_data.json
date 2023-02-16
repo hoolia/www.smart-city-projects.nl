@@ -923,7 +923,7 @@
               "task": "TASK",
               "Day_": "02",
               "description-title": "Manage the Project",
-              "discription": "We take care of the entire project, from start to finish, ensuring a seamless process for you."
+              "description": ""
             }
           },
           "b18b8e89-31b2-4b7f-ae23-06e6bab5d9b1": {
@@ -934,7 +934,7 @@
               "task": "Task",
               "Day_": "03",
               "description-title": "Manage the subsidies",
-              "discription": "We handle all of the necessary paperwork and processes for obtaining subsidies, including the SDE++ aid provided by the Dutch government, to help maximize your financial benefits."
+              "description": ""
             }
           },
           "c26bf8d3-4fae-46ea-98df-0523e5d49ad8": {
@@ -945,7 +945,7 @@
               "task": "Task",
               "Day_": "xx",
               "description-title": "Prepare the legal contracts",
-              "discription": "We handle all of the necessary legal contracts and documentation for the installation of solar panels and machines, as well as renting of the roof, to ensure compliance with regulations."
+              "description": ""
             }
           },
           "a1b1d056-e356-4b3c-bf1f-872b0cad9292": {
@@ -956,7 +956,7 @@
               "task": "Task",
               "Day_": "xx",
               "description-title": "Install all the devices",
-              "discription": "We take care of the installation of all necessary devices, such as batteries, HPCs, and solar panels, to help you transition to a more sustainable and efficient energy solution."
+              "description": ""
             }
           },
           "2b4d10ee-1b87-42f9-a8d5-beacafafd09b": {
@@ -967,7 +967,7 @@
               "task": "Task",
               "Day_": "xx",
               "description-title": "Earn the benefits",
-              "discription": "You get to enjoy the benefits of your new energy solution, including reduced energy costs and a more sustainable, environmentally-friendly way of generating energy."
+              "description": ""
             }
           }
         },
@@ -1145,7 +1145,7 @@
               "use_feature_icon": true,
               "feature_icon": "fa-user",
               "text1": "Operational Management",
-              "text2": "Love what we are doing? Want to be part of it? Then we have a job for you as Site Manager. Earn a salary of up to <b>€  2000,-\/maand<\/b> salary.\n<a href=\"#contactus\" class=\"btn\">I want this Job<\/a>"
+              "text2": "Love what we are doing? Want to be part of it? Then we have a job for you as Site Manager. Earn a salary of up to <b>€  2000,-\/maand<\/b> salary.<br>\n<a href=\"#contactus\" class=\"btn\">I want this Job<\/a>"
             }
           },
           "fc52e929-f501-4944-9a64-1dba23ef2a68": {
@@ -1154,7 +1154,7 @@
               "use_feature_icon": true,
               "feature_icon": "fa-plug",
               "text1": "Energy Consumer",
-              "text2": "We sell our renewable electricity to local businesses for as low as <b>€ 0,10\/kWh<\/b>, creating self-sustaining communities.\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">I want to Buy<\/button>"
+              "text2": "We sell our renewable electricity to local businesses for as low as <b>€ 0,10\/kWh<\/b>, creating self-sustaining communities.<br>\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">I want to Buy<\/button>"
             }
           },
           "7a96155d-0976-4b76-8630-147b1e21721c": {
@@ -1163,7 +1163,7 @@
               "use_feature_icon": true,
               "feature_icon": "fa-euro-sign",
               "text1": "Investor",
-              "text2": "Everyone is welcome to join our community as an investor. Our expected dividend is <b>50%<\/b>.<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">I want to Invest<\/button>"
+              "text2": "Everyone is welcome to join our community as an investor. Our expected dividend is <b>50%<\/b>.<br><button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">I want to Invest<\/button>"
             }
           },
           "b0ec3539-7a73-42a8-b2b0-e3b15095965b": {
@@ -1172,7 +1172,7 @@
               "use_feature_icon": true,
               "feature_icon": "fa-fire",
               "text1": "Heat Consumer",
-              "text2": "We sell our recycled heat to local businesses for the lowest market price guaranteed: <b>€ 1,-\/m3<\/b>. <button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">I want to Buy<\/button>"
+              "text2": "We sell our recycled heat to local businesses for the lowest market price guaranteed: <b>€ 1,-\/m3<\/b>.<br> <button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">I want to Buy<\/button>"
             }
           },
           "0ee6592d-df22-47a3-b18e-5a1d179ebf51": {
