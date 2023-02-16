@@ -24,10 +24,10 @@
               <li class="address">{{ block.settings.footer_address }}</li>
               {% endif %}
               {% if block.settings.footer_phone != blank %}
-              <li class="phone">{{ block.settings.footer_phone }}</li>
+              <li class="phone"><a href="tel:{{ block.settings.footer_phone }}">{{ block.settings.footer_phone }}</a></li>
               {% endif %}
               {% if block.settings.footer_email != blank %}
-              <li class="email">{{ block.settings.footer_email }}</li>
+              <li class="email"><a href="mailto:{{ block.settings.footer_email }}">{{ block.settings.footer_email }}</a></li>
               {% endif %}
             </ul>
           </div>

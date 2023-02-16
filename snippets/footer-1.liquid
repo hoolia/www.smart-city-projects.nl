@@ -25,19 +25,14 @@
               {% endif %}
               {% if block.settings.footer_phone != blank %}
             
-                 <span class="phone">
-                 
-                   
-                   <i class="fa fa-phone" aria-hidden="true"></i></span> 
-              <span class="phone">{{ block.settings.footer_phone }}</span>
+                 <span class="phone"><i class="fa fa-phone" aria-hidden="true"></i></span> 
+                 <span class="phone"><a href="tel:{{ block.settings.footer_phone }}">{{ block.settings.footer_phone }}</a></span>
    
               {% endif %}
               {% if block.settings.footer_email != blank %}
           
-              <div class="email"> <i class="fa fa-envelope" aria-hidden="true"></i>
-
-
-              <span>{{ block.settings.footer_email }}</span> 
+              <div class="email"><i class="fa fa-envelope" aria-hidden="true"></i>
+                <span><a href="mailto:{{ block.settings.footer_email }}">{{ block.settings.footer_email }}</a></span> 
               </div>
 
               {% endif %}
