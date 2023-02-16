@@ -838,43 +838,43 @@
           "75a43b2a-1a20-41a3-9caf-43f29d41f10d-16756091868ec9a208-1": {
             "type": "testimonial",
             "settings": {
-              "image": "shopify:\/\/shop_images\/global-warming.png",
-              "title": "Global Warming Reduction",
-              "description": "With minimal emissions, renewable energy sources offer a solution to reducing global warming. By augmenting their supply, we can substitute carbon-intensive sources and greatly decrease emissions.",
+              "image": "shopify:\/\/shop_images\/care.png",
+              "title": "Improved public health",
+              "description": "Air and water pollution, the root cause of many health issues, are non-existent with clean energy technologies. These technologies have been estimated to save public health costs of $74.6 billion annually.",
               "author": ""
             }
           },
           "eb68ac26-6f6d-4d50-bc10-6856d378300d": {
             "type": "testimonial",
             "settings": {
-              "image": "shopify:\/\/shop_images\/global-warming.png",
-              "title": "Jobs and other economic benefits",
-              "description": "Air and water pollution, the root cause of many health issues, are non-existent with clean energy technologies. These technologies have been estimated to save public health costs of $74.6 billion annually.",
+              "image": "shopify:\/\/shop_images\/inexhaustible-energy.png",
+              "title": "Inexhaustible energy",
+              "description": "Renewable energy has been proven time and again to be capable of meeting a significant portion of future electricity demands, even with potential limitations taken into account.",
               "author": ""
             }
           },
           "dc126c73-c1ee-4bd5-8ec4-df32170a00d2": {
             "type": "testimonial",
             "settings": {
-              "image": "shopify:\/\/shop_images\/global-warming.png",
-              "title": "Improved public health",
-              "description": "Renewable energy has been proven time and again to be capable of meeting a significant portion of future electricity demands, even with potential limitations taken into account.",
+              "image": "shopify:\/\/shop_images\/jobs.png",
+              "title": "Jobs and other economic benefits",
+              "description": "Renewable energy sources generate more jobs per unit of electricity compared to fossil fuels. Furthermore, the expansion of clean energy can also have positive economic “ripple” effects.",
               "author": ""
             }
           },
           "df3cc870-ae48-49f7-bbbf-c86c6f46afc1": {
             "type": "testimonial",
             "settings": {
-              "image": "shopify:\/\/shop_images\/global-warming.png",
-              "title": "Inexhaustible energy",
-              "description": "Renewable energy sources generate more jobs per unit of electricity compared to fossil fuels. Furthermore, the expansion of clean energy can also have positive economic “ripple” effects.",
+              "image": "shopify:\/\/shop_images\/solar-panel-trust.png",
+              "title": "Reliability and resilience",
+              "description": "Solar panels, due to their distributed and modular design, are less susceptible to widespread failure and can function dependably even under conditions that would necessitate shutting down a fossil fuel plant.",
               "author": ""
             }
           },
           "178768a7-f87a-4c6b-945f-788fb4961fae": {
             "type": "testimonial",
             "settings": {
-              "image": "shopify:\/\/shop_images\/global-warming.png",
+              "image": "shopify:\/\/shop_images\/money-time.png",
               "title": "Stable energy prices",
               "description": "Initial investments are necessary to construct renewable facilities, but once in operation, they have low ongoing costs, resulting in stable energy prices over time compared to fossil energy prices.",
               "author": ""
