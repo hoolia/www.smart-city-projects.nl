@@ -1,6 +1,7 @@
 <div class="container" >
   <div class="constyle2le1">
   {% for block  in section.blocks %}
+     {% if block.type == 'Email' %}
      <div data-v-e6ef43fc="" class="st2_1tem pcst2_1tem">
       <div data-v-129dd9bd="" data-v-e6ef43fc="" class="imgbox">
         <!---->
@@ -23,6 +24,33 @@
         <p><span style="color: #008117;"><a href="">{{ block.settings.text }} </a></span></p>
       </div>
     </div>
+         {% elsif block.type == 'Blcok' %}
+
+  <div data-v-e6ef43fc="" class="st2_1tem pcst2_1tem">
+      <div data-v-129dd9bd="" data-v-e6ef43fc="" class="imgbox">
+        <!---->
+        <img
+          data-v-129dd9bd=""
+          title=""
+          class="imgico imgico2 pcimgico2"
+          data-psize='{"w":15,"h":32}'
+          src={{ block.settings.image  | img_url: 'master'}}
+          lazy="loaded"
+        />
+        <!---->
+      </div>
+      <div
+        data-v-e6ef43fc=""
+        class="Jso-Text"
+        data-top="layer8CF148DFBE97EF2DC5DFA105EC018B93"
+        style="display: inline-block;"
+      >
+        <p><span style="color: #008117;"><a href="">{{ block.settings.text }} </a></span></p>
+      </div>
+    </div>
+
+    
+       {% endif %}
   {% endfor %}
   
   </div>
