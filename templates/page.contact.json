@@ -49,10 +49,18 @@
             "image": "shopify:\/\/shop_images\/mobile.png",
             "text": "+31 252 799 302"
           }
+        },
+        "243d8e57-3493-459a-bbf8-945098d502db": {
+          "type": "Email",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/message.png",
+            "text": ""
+          }
         }
       },
       "block_order": [
-        "37468329-9d3b-4ce2-b5c1-51850c604122"
+        "37468329-9d3b-4ce2-b5c1-51850c604122",
+        "243d8e57-3493-459a-bbf8-945098d502db"
       ],
       "settings": {
       }
