@@ -56,11 +56,19 @@
             "image": "shopify:\/\/shop_images\/message.png",
             "text": "support@hoolia.eu"
           }
+        },
+        "dda88554-685b-4053-816a-d4e87ad474eb": {
+          "type": "Address",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home.png",
+            "text": "Alexanderstraat 946812BH Amsterdam"
+          }
         }
       },
       "block_order": [
         "37468329-9d3b-4ce2-b5c1-51850c604122",
-        "243d8e57-3493-459a-bbf8-945098d502db"
+        "243d8e57-3493-459a-bbf8-945098d502db",
+        "dda88554-685b-4053-816a-d4e87ad474eb"
       ],
       "settings": {
       }
