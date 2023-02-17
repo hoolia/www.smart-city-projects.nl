@@ -43,32 +43,16 @@
     "5eea40a6-8bf4-429e-9a13-4c4357feb43b": {
       "type": "icon-with-text",
       "blocks": {
-        "da0f363f-e1f3-477e-9c8d-d9c87bd98bda": {
-          "type": "blcok",
+        "37468329-9d3b-4ce2-b5c1-51850c604122": {
+          "type": "Phone",
           "settings": {
             "image": "shopify:\/\/shop_images\/mobile.png",
-            "text": "Tel: +31 252 799302"
-          }
-        },
-        "809b4583-5a98-4dda-8dc0-4aa754bb5f2b": {
-          "type": "blcok",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/message.png",
-            "text": "E-mail: sales@hoolia.energy"
-          }
-        },
-        "ae3252ae-a642-452a-8b9c-4e37fef9e7f1": {
-          "type": "blcok",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/home.png",
-            "text": "Laan van Gildestein 40<br>2151HV Amsterdam"
+            "text": "+31 252 799 302"
           }
         }
       },
       "block_order": [
-        "da0f363f-e1f3-477e-9c8d-d9c87bd98bda",
-        "809b4583-5a98-4dda-8dc0-4aa754bb5f2b",
-        "ae3252ae-a642-452a-8b9c-4e37fef9e7f1"
+        "37468329-9d3b-4ce2-b5c1-51850c604122"
       ],
       "settings": {
       }
