@@ -1062,8 +1062,8 @@
             "type": "slide",
             "settings": {
               "title": "Rent",
-              "Tab-heading": "Office and Roof rent revenue",
-              "tab-discription": "<p>We pay you rent for a corner of your utility room to setup our DataCenter Modules and rent for your roof to place solarpanels. The space you want to allocate for our system can be variable and adapted to your case.<\/p>",
+              "Tab-heading": "",
+              "tab-discription": "<p>We pay you rent for a corner of your utility room to setup our DataCenter Modules and rent for your roof to place solarpanels. The space you want to allocate for our system can be variable and adapted to your case.<\/p><p><\/p>",
               "tab-calculator": "8StRWCmALjPHKQ3st",
               "image": "shopify:\/\/shop_images\/rent_97f305f0-d5c3-49e7-9608-9a69b9cd3dbe.png"
             }
@@ -1073,7 +1073,7 @@
             "settings": {
               "title": "Savings",
               "Tab-heading": "",
-              "tab-discription": "<p>Expect to save about 66% on building heating cost with our green renewable energy system.<\/p>",
+              "tab-discription": "<p>Expect to save about 66% on building heating cost with our green renewable energy system.<\/p><p><\/p>",
               "tab-calculator": "cRzrCrDGDnSJMcpyQ",
               "image": "shopify:\/\/shop_images\/saving.png"
             }
@@ -1082,8 +1082,8 @@
             "type": "slide",
             "settings": {
               "title": "Subsidy",
-              "Tab-heading": "Contract terms",
-              "tab-discription": "<p>The government guarantees a success with its SDE++ subsidy offering a guarenteed steady revenue for a much as 15 years if you use a sustainable source of energy. Following this advantage, we propose contracts from 10 to 15 years.<\/p>",
+              "Tab-heading": "",
+              "tab-discription": "<p>The government guarantees a success with its SDE++ subsidy offering a guarenteed steady revenue for a much as 15 years if you use a sustainable source of energy. Following this advantage, we propose contracts from 10 to 15 years.<\/p><p><\/p>",
               "tab-calculator": "",
               "image": "shopify:\/\/shop_images\/subsidy.png"
             }
@@ -1092,8 +1092,8 @@
             "type": "slide",
             "settings": {
               "title": "Investment",
-              "Tab-heading": "Own the solar panels after 15 years",
-              "tab-discription": "<p>Become 100% owner of the solar panels after 15 years.<\/p><p>On average, a solarpanel's lifespan is between 25 and 30 years<\/p>",
+              "Tab-heading": "",
+              "tab-discription": "<p>Become 100% owner of the solar panels after 15 years.<\/p><p>On average, a solarpanel's lifespan is between 25 and 30 years<\/p><p><\/p>",
               "tab-calculator": "7mawFbsq7363vaEJo",
               "image": "shopify:\/\/shop_images\/investment.png"
             }
