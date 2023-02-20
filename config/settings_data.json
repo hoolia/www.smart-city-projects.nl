@@ -1064,7 +1064,7 @@
               "title": "Rent",
               "Tab-heading": "",
               "tab-discription": "<p>We pay you rent for a corner of your utility room to setup our DataCenter Modules and rent for your roof to place solarpanels. The space you want to allocate for our system can be variable and adapted to your case.<\/p><p><\/p>",
-              "tab-calculator": "8StRWCmALjPHKQ3st",
+              "tab-calculator": "",
               "image": "shopify:\/\/shop_images\/rent_97f305f0-d5c3-49e7-9608-9a69b9cd3dbe.png"
             }
           },
@@ -1094,7 +1094,7 @@
               "title": "Investment",
               "Tab-heading": "",
               "tab-discription": "<p>Become 100% owner of the solar panels after 15 years.<\/p><p>On average, a solarpanel's lifespan is between 25 and 30 years<\/p><p><\/p>",
-              "tab-calculator": "7mawFbsq7363vaEJo",
+              "tab-calculator": "",
               "image": "shopify:\/\/shop_images\/investment.png"
             }
           }
@@ -1104,6 +1104,9 @@
           "8ab24557-d4ab-4ae8-8ee6-a11c7f066e3b",
           "478072eb-a0f4-48aa-9610-c680d4757f49",
           "479d1b76-b234-49c2-9b90-500bfca348d3"
+        ],
+        "custom_css": [
+          "tabs-section{height:100%;}"
         ],
         "settings": {
           "heading": "The Financial Benefits",
