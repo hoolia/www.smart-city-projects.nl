@@ -376,3 +376,25 @@
     text-align: center;
   }
 </style>
+<script
+  src="https://code.jquery.com/jquery-3.6.3.slim.js"
+  integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc="
+  crossorigin="anonymous"
+></script>
+<script>
+  $(document).ready(function(){
+          $(".hideme").show();
+      	$(".showme").hide();
+  	$(".switch input").on("change", function(e) {
+    	const isOn = e.currentTarget.checked;
+
+      if (isOn) {
+      	$(".hideme").hide();
+      	$(".showme").show();
+      } else {
+      	$(".hideme").show();
+      	$(".showme").hide();
+      }
+    });
+  });
+</script>
