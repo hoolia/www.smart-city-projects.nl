@@ -9,6 +9,9 @@
       <p class="sub-title">{{ section.settings.description }}</p>
     {% endif %}
   </div>
+  <div>
+    <label class="switch"><input type="checkbox"><span class="slid round hide-off"></span></label>
+  </div>
   <div id="owl-carousel{{section.id}}" class="owl-carousel">
     {% for block in section.blocks %}
       <div>
@@ -289,6 +292,108 @@
           items: 2,
 
         }
+      }
+    });
+  });
+</script>
+<style>
+  .switch {
+      position: center;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slid {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slid:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked + .slid {
+      background-color: #2196F3;
+    }
+
+    input:focus + .slid {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slid:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slid.round {
+      border-radius: 34px;
+    }
+
+    .slid.round:before {
+      border-radius: 50%;
+    }
+
+  /*END OF TOGGLE SWITCH*/
+
+
+  .showme {
+    padding:20px;
+    background: green;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .hideme {
+    padding:20px;
+    background: blue;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+  }
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.6.3.slim.js"
+  integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc="
+  crossorigin="anonymous"
+></script>
+<script>
+  $(document).ready(function(){
+          $(".hideme").show();
+      	$(".showme").hide();
+  	$(".switch input").on("change", function(e) {
+    	const isOn = e.currentTarget.checked;
+
+      if (isOn) {
+      	$(".hideme").hide();
+      	$(".showme").show();
+      } else {
+      	$(".hideme").show();
+      	$(".showme").hide();
       }
     });
   });
