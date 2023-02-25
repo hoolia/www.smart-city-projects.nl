@@ -1215,6 +1215,23 @@
           "bottom_padding": false,
           "bottom_border": false
         }
+      },
+      "top-menu": {
+        "type": "top-menu",
+        "blocks": {
+          "00159152-3945-4294-8a81-ec5d0fd7aca5": {
+            "type": "tab",
+            "settings": {
+              "title": "Furnityre",
+              "url": "shopify:\/\/pages\/contact"
+            }
+          }
+        },
+        "block_order": [
+          "00159152-3945-4294-8a81-ec5d0fd7aca5"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
