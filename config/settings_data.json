@@ -1225,10 +1225,18 @@
               "title": "Furnityre",
               "url": "shopify:\/\/pages\/contact"
             }
+          },
+          "c2dd1cf2-334e-4753-9af0-53b0457335fc": {
+            "type": "tab",
+            "settings": {
+              "title": "Testing",
+              "url": "shopify:\/\/collections\/all"
+            }
           }
         },
         "block_order": [
-          "00159152-3945-4294-8a81-ec5d0fd7aca5"
+          "00159152-3945-4294-8a81-ec5d0fd7aca5",
+          "c2dd1cf2-334e-4753-9af0-53b0457335fc"
         ],
         "settings": {
         }
