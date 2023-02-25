@@ -1,12 +1,82 @@
 {
   "sections": {
+    "92b04207-d061-4f54-9405-7e7abfff4572": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18158520369454__92b04207-d061-4f54-9405-7e7abfff4572-1677330918e696287e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-11_at_19.33.52_2.jpg",
+            "animation_style": "slider-1",
+            "heading": "",
+            "heading_size": "18px",
+            "heading_color": "#fff",
+            "subheading": "",
+            "subheading_size": "90px",
+            "subheading_color": "#fff",
+            "description": "",
+            "description_size": "16px",
+            "description_color": "#fff",
+            "slide_link_text": "",
+            "slide_link": "",
+            "link_bg": "#000",
+            "link_color": "#fff",
+            "image_clickable": false,
+            "top": "50%",
+            "right": "0%",
+            "left": "0%",
+            "width": "100%",
+            "float": "left"
+          }
+        },
+        "template--18158520369454__92b04207-d061-4f54-9405-7e7abfff4572-1677330918e696287e-1": {
+          "type": "image",
+          "settings": {
+            "animation_style": "slider-1",
+            "heading": "",
+            "heading_size": "18px",
+            "heading_color": "#fff",
+            "subheading": "",
+            "subheading_size": "90px",
+            "subheading_color": "#fff",
+            "description": "",
+            "description_size": "16px",
+            "description_color": "#fff",
+            "slide_link_text": "",
+            "slide_link": "",
+            "link_bg": "#000",
+            "link_color": "#fff",
+            "image_clickable": false,
+            "top": "50%",
+            "right": "0%",
+            "left": "0%",
+            "width": "100%",
+            "float": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--18158520369454__92b04207-d061-4f54-9405-7e7abfff4572-1677330918e696287e-0",
+        "template--18158520369454__92b04207-d061-4f54-9405-7e7abfff4572-1677330918e696287e-1"
+      ],
+      "settings": {
+        "autoplay_speed": "5000",
+        "layout_slider": "slider-1",
+        "fullwidth": true,
+        "use_box_layout": false,
+        "fit_to_container": false,
+        "full_size_on_mobile": false
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     }
   },
   "order": [
+    "92b04207-d061-4f54-9405-7e7abfff4572",
     "main"
   ]
 }
