@@ -64,7 +64,7 @@
         "layout_slider": "slider-1",
         "fullwidth": true,
         "use_box_layout": false,
-        "fit_to_container": false,
+        "fit_to_container": true,
         "full_size_on_mobile": false
       }
     },
