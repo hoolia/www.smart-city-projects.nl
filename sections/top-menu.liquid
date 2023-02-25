@@ -2,7 +2,7 @@
   <ul class="menu_ul">
       {% for block in section.blocks %}  
     <li class="menu_li_first" href="#">
-      <a href="javascript:void(0)">FURNITURE</a>
+      <a href="javascript:void(0)">{{ block.settings.title }}</a>
     </li>
     {% endfor %}
   </ul>
