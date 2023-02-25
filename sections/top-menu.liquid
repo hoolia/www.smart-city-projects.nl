@@ -1,7 +1,7 @@
 <div class="header_top_nav_menu">
   <ul class="menu_ul">
       {% for block in section.blocks %}  
-    <li class="menu_li_first" href="#" style="">
+    <li class="menu_li_first" href="#" style="background: {{ block.settings.bg }};">
       <a href="{{ block.settings.url }}">{{ block.settings.title }}</a>
     </li>
     {% endfor %}
@@ -18,6 +18,11 @@
        "name": "Tab",
        "type": "tab",
        "settings": [
+         {
+           "type":"color",
+           "id":"bg",
+           "label":"Tab Background"
+         },
       {
           "type":"text",
           "id":"title",
