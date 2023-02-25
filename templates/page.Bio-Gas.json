@@ -14,7 +14,7 @@
             "subheading": "",
             "subheading_size": "90px",
             "subheading_color": "#fff",
-            "description": "",
+            "description": "Share Energy, Save the Environment",
             "description_size": "16px",
             "description_color": "#fff",
             "slide_link_text": "",
@@ -31,6 +31,7 @@
         },
         "template--18158520369454__92b04207-d061-4f54-9405-7e7abfff4572-1677330918e696287e-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/subsidy.png",
             "animation_style": "slider-1",
