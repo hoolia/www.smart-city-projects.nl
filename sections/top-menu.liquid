@@ -1,9 +1,12 @@
 <div class="header_top_nav_menu">
   <ul class="menu_ul">
       {% for block in section.blocks %}  
+     <a href="{{ block.settings.url }}"
     <li class="menu_li_first" href="#" style="background: {{ block.settings.bg }};">
-      <a href="{{ block.settings.url }}" style="color: {{ block.settings.clr }} !important;">{{ block.settings.title }}</a>
+     <span></span> style="color: {{ block.settings.clr }} !important;">{{ block.settings.title }}</span>
+    
     </li>
+     </a>
     {% endfor %}
   </ul>
 </div>
