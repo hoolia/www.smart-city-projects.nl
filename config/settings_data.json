@@ -1247,8 +1247,8 @@
             "type": "tab",
             "settings": {
               "bg": "",
-              "title": "Testing 3",
-              "url": "#"
+              "title": "All Products",
+              "url": "shopify:\/\/collections\/all"
             }
           }
         },
