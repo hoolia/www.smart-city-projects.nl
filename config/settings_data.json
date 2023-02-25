@@ -1264,10 +1264,79 @@
         ],
         "settings": {
         }
+      },
+      "a0c86bf8-d225-4367-8357-086e3d273aff": {
+        "type": "slideshow",
+        "blocks": {
+          "a0c86bf8-d225-4367-8357-086e3d273aff-1677330918e696287e-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/investment.png",
+              "animation_style": "slider-1",
+              "heading": "",
+              "heading_size": "18px",
+              "heading_color": "#fff",
+              "subheading": "",
+              "subheading_size": "90px",
+              "subheading_color": "#fff",
+              "description": "",
+              "description_size": "16px",
+              "description_color": "#fff",
+              "slide_link_text": "",
+              "slide_link": "",
+              "link_bg": "#000",
+              "link_color": "#fff",
+              "image_clickable": false,
+              "top": "50%",
+              "right": "0%",
+              "left": "0%",
+              "width": "100%",
+              "float": "left"
+            }
+          },
+          "a0c86bf8-d225-4367-8357-086e3d273aff-1677330918e696287e-1": {
+            "type": "image",
+            "settings": {
+              "animation_style": "slider-1",
+              "heading": "",
+              "heading_size": "18px",
+              "heading_color": "#fff",
+              "subheading": "",
+              "subheading_size": "90px",
+              "subheading_color": "#fff",
+              "description": "",
+              "description_size": "16px",
+              "description_color": "#fff",
+              "slide_link_text": "",
+              "slide_link": "",
+              "link_bg": "#000",
+              "link_color": "#fff",
+              "image_clickable": false,
+              "top": "50%",
+              "right": "0%",
+              "left": "0%",
+              "width": "100%",
+              "float": "left"
+            }
+          }
+        },
+        "block_order": [
+          "a0c86bf8-d225-4367-8357-086e3d273aff-1677330918e696287e-0",
+          "a0c86bf8-d225-4367-8357-086e3d273aff-1677330918e696287e-1"
+        ],
+        "settings": {
+          "autoplay_speed": "5000",
+          "layout_slider": "slider-1",
+          "fullwidth": true,
+          "use_box_layout": false,
+          "fit_to_container": false,
+          "full_size_on_mobile": false
+        }
       }
     },
     "content_for_index": [
       "1480267833382",
+      "a0c86bf8-d225-4367-8357-086e3d273aff",
       "49a10ab4-423c-48b5-ba41-1a8db40c7525",
       "1504781997946",
       "bcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e",
