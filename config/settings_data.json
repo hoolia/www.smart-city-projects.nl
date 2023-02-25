@@ -1223,6 +1223,7 @@
             "type": "tab",
             "settings": {
               "bg": "#732c2c",
+              "clr": "#ffffff",
               "title": "Solar Pannel",
               "url": "shopify:\/\/pages\/solar-pannel"
             }
@@ -1231,6 +1232,7 @@
             "type": "tab",
             "settings": {
               "bg": "#0c9e0e",
+              "clr": "",
               "title": "Testing",
               "url": "shopify:\/\/collections\/all"
             }
@@ -1239,6 +1241,7 @@
             "type": "tab",
             "settings": {
               "bg": "#e5e5e5",
+              "clr": "",
               "title": "Testing 2",
               "url": ""
             }
@@ -1247,6 +1250,7 @@
             "type": "tab",
             "settings": {
               "bg": "#4ad44a",
+              "clr": "",
               "title": "All Products",
               "url": "shopify:\/\/collections\/all"
             }
