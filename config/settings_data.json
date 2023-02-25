@@ -1246,7 +1246,7 @@
           "122403aa-dd38-4b04-af4f-44f9b2d8c784": {
             "type": "tab",
             "settings": {
-              "bg": "",
+              "bg": "#4ad44a",
               "title": "All Products",
               "url": "shopify:\/\/collections\/all"
             }
