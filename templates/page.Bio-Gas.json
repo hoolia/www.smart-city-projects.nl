@@ -32,6 +32,7 @@
         "template--18158520369454__92b04207-d061-4f54-9405-7e7abfff4572-1677330918e696287e-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/subsidy.png",
             "animation_style": "slider-1",
             "heading": "",
             "heading_size": "18px",
