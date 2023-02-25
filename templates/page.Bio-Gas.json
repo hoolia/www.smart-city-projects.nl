@@ -13,7 +13,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-11_at_19.33.52_2.jpg",
-            "animation_style": "slider-1",
+            "animation_style": "slider-2",
             "heading": "hello",
             "heading_size": "18px",
             "heading_color": "#fff",
