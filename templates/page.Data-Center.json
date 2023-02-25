@@ -58,11 +58,21 @@
             "width": "100%",
             "float": "left"
           }
+        },
+        "c3bcbaf7-b4d5-45c5-92bf-391c688cf418": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/saving.png",
+            "video_type": "youtube",
+            "video_src": "bLwl0gRbyrk",
+            "video_autoplay": true
+          }
         }
       },
       "block_order": [
         "template--18158520402222__52b02ff9-2ce0-441a-befb-3b807e7dab38-1677330918e696287e-0",
-        "template--18158520402222__52b02ff9-2ce0-441a-befb-3b807e7dab38-1677330918e696287e-1"
+        "template--18158520402222__52b02ff9-2ce0-441a-befb-3b807e7dab38-1677330918e696287e-1",
+        "c3bcbaf7-b4d5-45c5-92bf-391c688cf418"
       ],
       "settings": {
         "autoplay_speed": "5000",
