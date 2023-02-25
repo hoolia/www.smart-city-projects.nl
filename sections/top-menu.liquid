@@ -2,7 +2,7 @@
   <ul class="menu_ul">
       {% for block in section.blocks %}  
     <li class="menu_li_first" href="#" style="background: {{ block.settings.bg }};">
-      <a href="{{ block.settings.url }}" style="background: {{ block.settings.clr }};">{{ block.settings.title }}</a>
+      <a href="{{ block.settings.url }}" style="color: {{ block.settings.clr }};">{{ block.settings.title }}</a>
     </li>
     {% endfor %}
   </ul>
