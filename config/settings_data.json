@@ -1222,6 +1222,7 @@
           "00159152-3945-4294-8a81-ec5d0fd7aca5": {
             "type": "tab",
             "settings": {
+              "bg": "#732c2c",
               "title": "Furnityre",
               "url": "shopify:\/\/pages\/contact"
             }
@@ -1229,6 +1230,7 @@
           "c2dd1cf2-334e-4753-9af0-53b0457335fc": {
             "type": "tab",
             "settings": {
+              "bg": "#0c9e0e",
               "title": "Testing",
               "url": "shopify:\/\/collections\/all"
             }
