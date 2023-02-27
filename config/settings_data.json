@@ -1275,9 +1275,9 @@
             "settings": {
               "bg": "#186019",
               "hover-bg": "#186019",
-              "clr": "#fff",
+              "clr": "#ffffff",
               "title": "All products",
-              "mega_menu": ""
+              "mega_menu": "side-menu"
             }
           }
         },
