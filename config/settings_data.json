@@ -1272,17 +1272,6 @@
               "title": "All products",
               "mega_menu": "side-menu"
             }
-          },
-          "3ca6004c-f1b3-4ca3-8ccd-5cce709206a8": {
-            "type": "tab",
-            "settings": {
-              "bg": "",
-              "hover-bg": "",
-              "clr": "",
-              "icon": "",
-              "title": "",
-              "url": ""
-            }
           }
         },
         "block_order": [
@@ -1290,8 +1279,7 @@
           "64248ca8-8efa-4cf4-921d-d157e6526178",
           "63d7d44e-f62f-4948-be83-ca05d351dffa",
           "c2dd1cf2-334e-4753-9af0-53b0457335fc",
-          "470bee2f-719d-493f-be41-02b204fa0fd6",
-          "3ca6004c-f1b3-4ca3-8ccd-5cce709206a8"
+          "470bee2f-719d-493f-be41-02b204fa0fd6"
         ],
         "settings": {
         }
