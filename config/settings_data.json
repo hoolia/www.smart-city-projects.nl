@@ -1263,18 +1263,6 @@
               "url": "shopify:\/\/pages\/bio-gas"
             }
           },
-          "122403aa-dd38-4b04-af4f-44f9b2d8c784": {
-            "type": "tab",
-            "disabled": true,
-            "settings": {
-              "bg": "#186019",
-              "hover-bg": "#30bf32",
-              "clr": "#ffffff",
-              "icon": "",
-              "title": "All Products",
-              "url": "shopify:\/\/collections\/all"
-            }
-          },
           "470bee2f-719d-493f-be41-02b204fa0fd6": {
             "type": "Menu",
             "settings": {
@@ -1291,7 +1279,6 @@
           "64248ca8-8efa-4cf4-921d-d157e6526178",
           "63d7d44e-f62f-4948-be83-ca05d351dffa",
           "c2dd1cf2-334e-4753-9af0-53b0457335fc",
-          "122403aa-dd38-4b04-af4f-44f9b2d8c784",
           "470bee2f-719d-493f-be41-02b204fa0fd6"
         ],
         "settings": {
