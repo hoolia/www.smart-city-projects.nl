@@ -16,7 +16,7 @@
   <nav role="navigation">
   <ul>
     {%- for link in linklists.side-menu.links -%}
-      <li class="dropdown">
+      <li class="dropdown" onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;" >
         <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
           {{ link.title }}
         </a>
