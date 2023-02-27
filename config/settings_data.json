@@ -212,10 +212,47 @@
               "mega_menu_image_link_col_4": "",
               "bottom_image_link": ""
             }
+          },
+          "a1971d4d-53c7-4d67-b9d7-f3f31d4886de": {
+            "type": "megamenu",
+            "settings": {
+              "mega_menu": "main-menu",
+              "menu_items_count": 6,
+              "mega_menu_col_1": "menu",
+              "mega_menu_title_col_1": "",
+              "mega_menu_link_col_1": "",
+              "mega_menu_ll_col_1": "",
+              "mega_menu_collection_col_1": "",
+              "mega_menu_product_col_1": "",
+              "mega_menu_image_link_col_1": "",
+              "mega_menu_col_2": "none",
+              "mega_menu_title_col_2": "",
+              "mega_menu_link_col_2": "",
+              "mega_menu_ll_col_2": "",
+              "mega_menu_collection_col_2": "",
+              "mega_menu_product_col_2": "",
+              "mega_menu_image_link_col_2": "",
+              "mega_menu_col_3": "none",
+              "mega_menu_title_col_3": "",
+              "mega_menu_link_col_3": "",
+              "mega_menu_ll_col_3": "",
+              "mega_menu_collection_col_3": "",
+              "mega_menu_product_col_3": "",
+              "mega_menu_image_link_col_3": "",
+              "mega_menu_col_4": "none",
+              "mega_menu_title_col_4": "",
+              "mega_menu_link_col_4": "",
+              "mega_menu_ll_col_4": "",
+              "mega_menu_collection_col_4": "",
+              "mega_menu_product_col_4": "",
+              "mega_menu_image_link_col_4": "",
+              "bottom_image_link": ""
+            }
           }
         },
         "block_order": [
-          "1522697402496"
+          "1522697402496",
+          "a1971d4d-53c7-4d67-b9d7-f3f31d4886de"
         ],
         "settings": {
           "header_layout": "header-1alt",
