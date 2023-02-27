@@ -1233,7 +1233,7 @@
             "type": "tab",
             "settings": {
               "bg": "#0c9e0e",
-              "hover-bg": "#4ad44a",
+              "hover-bg": "#e5e5e5",
               "clr": "",
               "title": "Bio Gas",
               "url": "shopify:\/\/pages\/bio-gas"
@@ -1243,7 +1243,7 @@
             "type": "tab",
             "settings": {
               "bg": "#e5e5e5",
-              "hover-bg": "#862121",
+              "hover-bg": "",
               "clr": "",
               "title": "Data Center",
               "url": "shopify:\/\/pages\/data-center"
