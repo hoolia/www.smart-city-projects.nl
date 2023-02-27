@@ -1233,7 +1233,7 @@
             "type": "tab",
             "settings": {
               "bg": "#0c9e0e",
-              "hover-bg": "",
+              "hover-bg": "#e5e5e5",
               "clr": "",
               "title": "Bio Gas",
               "url": "shopify:\/\/pages\/bio-gas"
