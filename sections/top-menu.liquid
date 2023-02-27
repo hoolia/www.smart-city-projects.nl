@@ -3,49 +3,60 @@
   <ul class="menu_ul">
       {% for block in section.blocks %}  
  {% case block.type %}
-  {% when 'tab' %}
+    {% when 'tab' %}
     <a href="{{ block.settings.url }}">
-      <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;">
-        <i class="fa-light fa-solar-panel"></i>
-        <a href="{{ block.settings.url }}" style="color: {{ block.settings.clr }} !important;"> {{ block.settings.title }}</a>
-      </li>
-    </a>
-  {% when 'Menu' %}
-    <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;">
-      <ul>
-        {% for link in linklists.side-menu.links %}
-          <span class="dropdown cstm-width">
-            <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
-              {{ link.title }}
-            </a>
-            {% if link.links != blank %}
-              <ul class="dropdown-content">
-                {% for child_link in link.links %}
-                  <li>
-                    <a class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
-                      {{ child_link.title }}
-                    </a>
-                    {% if child_link.links != blank %}
-                      <ul>
-                        {% for grandchild_link in child_link.links %}
-                          <li>
-                            <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
-                              {{ grandchild_link.title }}
-                            </a>
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    {% endif %}
-                  </li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-          </span>
-        {% endfor %}
-      </ul>
-    </li>
-{% endcase %}
+     
+    <li  onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;" >
+      <a href="{{ block.settings.url }}" style="color: {{ block.settings.clr }} !important;">{{ block.settings.title }}</a>
 
+    </li>
+        
+    </a>
+  
+     {% when 'Menu' %}
+ 
+
+ <li  onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;" > 
+
+  <ul>
+    {%- for link in linklists.side-menu.links -%}
+      <span class="dropdown cstm-width">
+        <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+          {{ link.title }}
+        </a>
+
+        {%- if link.links != blank -%}
+          <ul class="dropdown-content">
+            {%- for child_link in link.links -%}
+              <li>
+                <a class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+                  {{ child_link.title }}
+                </a>
+
+                {%- if child_link.links != blank -%}
+                  <ul>
+                    {%- for grandchild_link in child_link.links -%}
+                      <li>
+                        <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+                          {{ grandchild_link.title }}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+
+      </span>
+    {%- endfor -%}
+  </ul>
+
+ </li>
+
+  {% endcase %}
     {% endfor %}
   </ul>
 </div>
@@ -78,11 +89,6 @@
            "id":"clr",
            "label":"Font Color"
          },
-           {
-          "type":"html",
-          "id":"icon",
-          "label":"please insert Icon class from https://fontawesome.com/icons"
-        },
       {
           "type":"text",
           "id":"title",
