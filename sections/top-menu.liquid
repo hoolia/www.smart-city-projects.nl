@@ -1,14 +1,17 @@
 <div class="header_top_nav_menu">
   <ul class="menu_ul">
       {% for block in section.blocks %}  
- 
+ {% case block.type %}
+    {% when 'Tab' %}
+  
     <a href="{{ block.settings.url }}">
     <li  onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;" >
       <a href="{{ block.settings.url }}" style="color: {{ block.settings.clr }} !important;">{{ block.settings.title }}</a>
 <!--         {{ block.settings.title }} -->
     </li>
     </a>
-
+    
+  {% endcase %}
     {% endfor %}
   </ul>
 </div>
