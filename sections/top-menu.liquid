@@ -11,8 +11,7 @@
       </li>
     </a>
   {% when 'Menu' %}
-<img src="{{ section.settings.img | img_url: 'master' }}" lazy="loaded">
-   <img src="{{ section.settings.img2 | img_url: 'master' }}" lazy="loaded">
+
     <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;">
       <ul>
         {% for link in linklists.side-menu.links %}
@@ -22,6 +21,8 @@
             </a>
             {% if link.links != blank %}
               <ul class="dropdown-content">
+                <img src="{{ section.settings.img | img_url: 'master' }}" lazy="loaded">
+   <img src="{{ section.settings.img2 | img_url: 'master' }}" lazy="loaded">
                 {% for child_link in link.links %}
                   <li>
                     <a class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
