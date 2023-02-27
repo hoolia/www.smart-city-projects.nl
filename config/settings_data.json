@@ -1261,9 +1261,10 @@
           },
           "122403aa-dd38-4b04-af4f-44f9b2d8c784": {
             "type": "tab",
+            "disabled": true,
             "settings": {
               "bg": "#186019",
-              "hover-bg": "",
+              "hover-bg": "#30bf32",
               "clr": "#ffffff",
               "title": "All Products",
               "url": "shopify:\/\/collections\/all"
