@@ -1272,9 +1272,9 @@
           "470bee2f-719d-493f-be41-02b204fa0fd6": {
             "type": "Menu",
             "settings": {
-              "bg": "",
+              "bg": "#186019",
               "hover-bg": "",
-              "clr": "",
+              "clr": "#fff",
               "title": "All products",
               "mega_menu": ""
             }
