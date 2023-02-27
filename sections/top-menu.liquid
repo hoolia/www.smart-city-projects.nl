@@ -21,7 +21,7 @@
 
   <ul>
     {%- for link in linklists.side-menu.links -%}
-      <li class="dropdown cstm-width">
+      <span class="dropdown cstm-width">
         <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
           {{ link.title }}
         </a>
@@ -51,7 +51,7 @@
           </ul>
         {%- endif -%}
 
-      </li>
+      </span>
     {%- endfor -%}
   </ul>
 
