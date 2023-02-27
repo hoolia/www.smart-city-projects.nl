@@ -1,4 +1,18 @@
 <div class="header_top_nav_menu">
+
+  <ul class="menu_ul">
+      {% for block in section.blocks %}  
+ {% case block.type %}
+    {% when 'tab' %}
+  
+    <a href="{{ block.settings.url }}">
+    <li  onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;" >
+      <a href="{{ block.settings.url }}" style="color: {{ block.settings.clr }} !important;">{{ block.settings.title }}</a>
+<!--         {{ block.settings.title }} -->
+    </li>
+    </a>
+     {% when 'Menu' %}
+
   <nav role="navigation">
   <ul>
     {%- for link in linklists.side-menu.links -%}
@@ -36,26 +50,12 @@
     {%- endfor -%}
   </ul>
 </nav>
-
-
-  
-  <ul class="menu_ul">
-      {% for block in section.blocks %}  
- {% case block.type %}
-    {% when 'tab' %}
-  
-    <a href="{{ block.settings.url }}">
-    <li  onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;" >
-      <a href="{{ block.settings.url }}" style="color: {{ block.settings.clr }} !important;">{{ block.settings.title }}</a>
-<!--         {{ block.settings.title }} -->
-    </li>
-    </a>
-     {% when 'Menu' %}
+<!-- 
     <a href="{{ block.settings.url }}">
     <li  onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;" >
       <a href="{{ block.settings.mega_menu }}" style="color: {{ block.settings.clr }} !important;">{{ block.settings.title }}</a>
 <!--         {{ block.settings.title }} -->
-    </li>
+    </li> -->
     </a>
     
   {% endcase %}
