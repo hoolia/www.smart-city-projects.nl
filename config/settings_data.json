@@ -1225,7 +1225,7 @@
               "bg": "#3d3e3d",
               "hover-bg": "#186019",
               "clr": "#ffffff",
-              "icon": "<i class=\"fa-light fa-solar-panel\"><\/i>",
+              "icon": "<i class=\"fa fa-solar-panel\"><\/i>",
               "title": "OFFICE HEATING",
               "url": "shopify:\/\/pages\/solar-pannel"
             }
