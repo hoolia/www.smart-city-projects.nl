@@ -1274,7 +1274,7 @@
             "type": "Menu",
             "settings": {
               "bg": "#186019",
-              "hover-bg": "",
+              "hover-bg": "#186019",
               "clr": "#fff",
               "title": "All products",
               "mega_menu": ""
