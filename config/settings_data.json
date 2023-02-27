@@ -1243,7 +1243,7 @@
             "type": "tab",
             "settings": {
               "bg": "#474947",
-              "hover-bg": "",
+              "hover-bg": "#30bf32",
               "clr": "#ffffff",
               "title": "WINDMILL",
               "url": "shopify:\/\/pages\/data-center"
@@ -1253,7 +1253,7 @@
             "type": "tab",
             "settings": {
               "bg": "#474947",
-              "hover-bg": "#e5e5e5",
+              "hover-bg": "#30bf32",
               "clr": "#ffffff",
               "title": "Bio Gas",
               "url": "shopify:\/\/pages\/bio-gas"
