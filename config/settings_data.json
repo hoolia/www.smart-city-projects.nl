@@ -1229,16 +1229,6 @@
               "url": "shopify:\/\/pages\/solar-pannel"
             }
           },
-          "c2dd1cf2-334e-4753-9af0-53b0457335fc": {
-            "type": "tab",
-            "settings": {
-              "bg": "#0c9e0e",
-              "hover-bg": "#e5e5e5",
-              "clr": "",
-              "title": "Bio Gas",
-              "url": "shopify:\/\/pages\/bio-gas"
-            }
-          },
           "63d7d44e-f62f-4948-be83-ca05d351dffa": {
             "type": "tab",
             "settings": {
@@ -1247,6 +1237,16 @@
               "clr": "",
               "title": "WINDMILL",
               "url": "shopify:\/\/pages\/data-center"
+            }
+          },
+          "c2dd1cf2-334e-4753-9af0-53b0457335fc": {
+            "type": "tab",
+            "settings": {
+              "bg": "#0c9e0e",
+              "hover-bg": "#e5e5e5",
+              "clr": "",
+              "title": "Bio Gas",
+              "url": "shopify:\/\/pages\/bio-gas"
             }
           },
           "122403aa-dd38-4b04-af4f-44f9b2d8c784": {
@@ -1258,13 +1258,24 @@
               "title": "All Products",
               "url": "shopify:\/\/collections\/all"
             }
+          },
+          "64248ca8-8efa-4cf4-921d-d157e6526178": {
+            "type": "tab",
+            "settings": {
+              "bg": "",
+              "hover-bg": "",
+              "clr": "",
+              "title": "",
+              "url": ""
+            }
           }
         },
         "block_order": [
           "00159152-3945-4294-8a81-ec5d0fd7aca5",
-          "c2dd1cf2-334e-4753-9af0-53b0457335fc",
           "63d7d44e-f62f-4948-be83-ca05d351dffa",
-          "122403aa-dd38-4b04-af4f-44f9b2d8c784"
+          "c2dd1cf2-334e-4753-9af0-53b0457335fc",
+          "122403aa-dd38-4b04-af4f-44f9b2d8c784",
+          "64248ca8-8efa-4cf4-921d-d157e6526178"
         ],
         "settings": {
         }
