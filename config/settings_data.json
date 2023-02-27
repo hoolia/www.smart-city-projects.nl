@@ -1244,7 +1244,7 @@
             "settings": {
               "bg": "#474947",
               "hover-bg": "",
-              "clr": "",
+              "clr": "#ffffff",
               "title": "WINDMILL",
               "url": "shopify:\/\/pages\/data-center"
             }
@@ -1254,7 +1254,7 @@
             "settings": {
               "bg": "#474947",
               "hover-bg": "#e5e5e5",
-              "clr": "",
+              "clr": "#ffffff",
               "title": "Bio Gas",
               "url": "shopify:\/\/pages\/bio-gas"
             }
