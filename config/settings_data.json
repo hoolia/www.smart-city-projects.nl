@@ -1256,7 +1256,7 @@
             "type": "tab",
             "settings": {
               "bg": "#474947",
-              "hover-bg": "#30bf32",
+              "hover-bg": "#186019",
               "clr": "#ffffff",
               "icon": "<i class=\"fa fa-solar-panel\"><\/i>",
               "title": "Bio Gas",
