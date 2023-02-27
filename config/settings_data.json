@@ -1222,7 +1222,7 @@
           "00159152-3945-4294-8a81-ec5d0fd7aca5": {
             "type": "tab",
             "settings": {
-              "bg": "#732c2c",
+              "bg": "#3d3e3d",
               "hover-bg": "#5c1b1b",
               "clr": "#ffffff",
               "title": "OFFICE HEATING",
@@ -1232,7 +1232,7 @@
           "64248ca8-8efa-4cf4-921d-d157e6526178": {
             "type": "tab",
             "settings": {
-              "bg": "",
+              "bg": "#3d3e3d",
               "hover-bg": "",
               "clr": "",
               "title": "GREENHOUSE HEATING",
