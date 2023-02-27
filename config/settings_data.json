@@ -1268,6 +1268,16 @@
               "title": "All Products",
               "url": "shopify:\/\/collections\/all"
             }
+          },
+          "4b3dd38a-8907-4dc4-b435-ccdc573f858b": {
+            "type": "Menu",
+            "settings": {
+              "bg": "",
+              "hover-bg": "",
+              "clr": "",
+              "title": "All Products",
+              "mega_menu": "main-menu"
+            }
           }
         },
         "block_order": [
@@ -1275,7 +1285,8 @@
           "64248ca8-8efa-4cf4-921d-d157e6526178",
           "63d7d44e-f62f-4948-be83-ca05d351dffa",
           "c2dd1cf2-334e-4753-9af0-53b0457335fc",
-          "122403aa-dd38-4b04-af4f-44f9b2d8c784"
+          "122403aa-dd38-4b04-af4f-44f9b2d8c784",
+          "4b3dd38a-8907-4dc4-b435-ccdc573f858b"
         ],
         "settings": {
         }
