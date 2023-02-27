@@ -1223,7 +1223,7 @@
             "type": "tab",
             "settings": {
               "bg": "#3d3e3d",
-              "hover-bg": "#5c1b1b",
+              "hover-bg": "#186019",
               "clr": "#ffffff",
               "title": "OFFICE HEATING",
               "url": "shopify:\/\/pages\/solar-pannel"
@@ -1233,7 +1233,7 @@
             "type": "tab",
             "settings": {
               "bg": "#474947",
-              "hover-bg": "",
+              "hover-bg": "#30bf32",
               "clr": "#ffffff",
               "title": "GREENHOUSE HEATING",
               "url": ""
