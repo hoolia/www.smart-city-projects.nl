@@ -8,8 +8,7 @@
 }
       </style>
     <a href="{{ block.settings.url }}">
-    <li class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;" onMouseOver="this.style.color='#0F0'"
-   onMouseOut="this.style.color='#00F'" >
+    <li  onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;" >
       <a href="{{ block.settings.url }}" style="color: {{ block.settings.clr }} !important;">{{ block.settings.title }}</a>
 <!--         {{ block.settings.title }} -->
     </li>
@@ -35,7 +34,11 @@
            "id":"bg",
            "label":"Tab Background"
          },
-   
+         {
+           "type":"color",
+           "id":"hover-bg",
+           "label":"Hover Background Color"
+         },
         {
            "type":"color",
            "id":"clr",
