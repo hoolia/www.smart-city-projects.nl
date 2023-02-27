@@ -1223,7 +1223,7 @@
             "type": "tab",
             "settings": {
               "bg": "#732c2c",
-              "hover-bg": "#4ad44a",
+              "hover-bg": "#e5e5e5",
               "clr": "#ffffff",
               "title": "Solar Pannel",
               "url": "shopify:\/\/pages\/solar-pannel"
