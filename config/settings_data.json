@@ -1236,7 +1236,7 @@
               "bg": "#474947",
               "hover-bg": "#30bf32",
               "clr": "#ffffff",
-              "icon": "a-light fa-solar-panel",
+              "icon": "<i class=\"fa-light fa-solar-panel\"><\/i>",
               "title": "GREENHOUSE HEATING",
               "url": ""
             }
