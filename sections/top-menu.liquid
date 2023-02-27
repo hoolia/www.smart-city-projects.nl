@@ -8,7 +8,7 @@
         </a>
 
         {%- if link.links != blank -%}
-          <ul>
+          <ul class="dropdown-content">
             {%- for child_link in link.links -%}
               <li>
                 <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
