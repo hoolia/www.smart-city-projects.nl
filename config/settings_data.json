@@ -1278,6 +1278,16 @@
               "title": "All Products",
               "mega_menu": "main-menu"
             }
+          },
+          "6173912d-8c46-4fd1-92dd-1599caa90db9": {
+            "type": "tab",
+            "settings": {
+              "bg": "",
+              "hover-bg": "",
+              "clr": "",
+              "title": "sdfsdf",
+              "url": ""
+            }
           }
         },
         "block_order": [
@@ -1286,7 +1296,8 @@
           "63d7d44e-f62f-4948-be83-ca05d351dffa",
           "c2dd1cf2-334e-4753-9af0-53b0457335fc",
           "122403aa-dd38-4b04-af4f-44f9b2d8c784",
-          "4b3dd38a-8907-4dc4-b435-ccdc573f858b"
+          "4b3dd38a-8907-4dc4-b435-ccdc573f858b",
+          "6173912d-8c46-4fd1-92dd-1599caa90db9"
         ],
         "settings": {
         }
