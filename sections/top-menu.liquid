@@ -18,7 +18,7 @@
   <nav role="navigation">
   <ul>
     {%- for link in linklists.side-menu.links -%}
-      <li class="dropdown">
+      <li class="dropdown cstm-width">
         <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
           {{ link.title }}
         </a>
