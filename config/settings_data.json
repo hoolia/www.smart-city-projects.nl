@@ -1225,6 +1225,7 @@
               "bg": "#3d3e3d",
               "hover-bg": "#186019",
               "clr": "#ffffff",
+              "icon": "<i class=\"fa-light fa-solar-panel\"><\/i>",
               "title": "OFFICE HEATING",
               "url": "shopify:\/\/pages\/solar-pannel"
             }
@@ -1235,6 +1236,7 @@
               "bg": "#474947",
               "hover-bg": "#30bf32",
               "clr": "#ffffff",
+              "icon": "a-light fa-solar-panel",
               "title": "GREENHOUSE HEATING",
               "url": ""
             }
@@ -1245,6 +1247,7 @@
               "bg": "#474947",
               "hover-bg": "#30bf32",
               "clr": "#ffffff",
+              "icon": "",
               "title": "WINDMILL",
               "url": "shopify:\/\/pages\/data-center"
             }
@@ -1255,6 +1258,7 @@
               "bg": "#474947",
               "hover-bg": "#30bf32",
               "clr": "#ffffff",
+              "icon": "",
               "title": "Bio Gas",
               "url": "shopify:\/\/pages\/bio-gas"
             }
@@ -1266,6 +1270,7 @@
               "bg": "#186019",
               "hover-bg": "#30bf32",
               "clr": "#ffffff",
+              "icon": "",
               "title": "All Products",
               "url": "shopify:\/\/collections\/all"
             }
