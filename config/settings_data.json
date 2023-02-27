@@ -1234,7 +1234,7 @@
             "settings": {
               "bg": "#3d3e3d",
               "hover-bg": "",
-              "clr": "",
+              "clr": "#ffffff",
               "title": "GREENHOUSE HEATING",
               "url": ""
             }
