@@ -92,11 +92,13 @@
   font-weight: bold;
   letter-spacing: 0;
 }
-  
+        {% for block in section.blocks %} 
+
 .header_top_nav_menu .menu_ul li:hover {
   cursor: pointer;
   background: {{ block.settings.hover-bg }}!important;
 }
+    {% endfor %}
 .header_top_nav_menu .menu_ul:hover a {
   text-decoration: none;
 }
