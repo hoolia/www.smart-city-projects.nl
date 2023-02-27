@@ -6,12 +6,11 @@
   {% when 'tab' %}
     <a href="{{ block.settings.url }}">
       <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;">
-        {{ block.settings.icon }}
+        <i class="fa-light fa-solar-panel"></i>
         <a href="{{ block.settings.url }}" style="color: {{ block.settings.clr }} !important;"> {{ block.settings.title }}</a>
       </li>
     </a>
   {% when 'Menu' %}
-
     <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;">
       <ul>
         {% for link in linklists.side-menu.links %}
@@ -21,10 +20,6 @@
             </a>
             {% if link.links != blank %}
               <ul class="dropdown-content">
-              {% comment %}
-                <img src="{{ block.settings.img | img_url: 'master' }}" lazy="loaded">
-   <img src="{{ block.settings.img2 | img_url: 'master' }}" lazy="loaded">
-              {% endcomment %}
                 {% for child_link in link.links %}
                   <li>
                     <a class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
@@ -50,7 +45,6 @@
       </ul>
     </li>
 {% endcase %}
-
 
     {% endfor %}
   </ul>
@@ -132,17 +126,7 @@
                "id":"mega_menu",
                "label":"Menu To Use",
                "info":"The menu should have atleast one item and main menu should have an item with the same name"
-            },
-          {
-            "type":"image_picker",
-            "id":"img2",
-            "label":"image"
-          },
-             {
-            "type":"image_picker",
-            "id":"img",
-            "label":"image2"
-          }
+            }
             
        ]
      }
@@ -230,7 +214,6 @@ span.dropdown.cstm-width {
   padding: 12px 16px;
   z-index: 99;
   height: 100vh;
-
   
 }
 
@@ -241,6 +224,6 @@ span.dropdown.cstm-width {
     display: flex;
     align-items: center;
     justify-content: center;
- 
+    margin: 1rem;
 }  
 </style>
