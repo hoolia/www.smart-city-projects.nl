@@ -142,7 +142,7 @@
       "settings": {
         "layout": "feature-service-custom",
         "heading": "The reasons behind this idea",
-        "heading_color": "#fff",
+        "heading_color": "#ffffff",
         "description": "Experience",
         "description_color": "#007501",
         "fullwidth": true,
@@ -542,7 +542,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/investment.png",
-            "Title": "",
+            "Title": "inamulhaqmayo",
             "discription": ""
           }
         }
