@@ -589,7 +589,7 @@
       ],
       "settings": {
         "autoplay_speed": "5000",
-        "layout_slider": "slider-1",
+        "layout_slider": "slider-2",
         "fullwidth": true,
         "use_box_layout": false,
         "fit_to_container": true,
