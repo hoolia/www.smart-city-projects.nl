@@ -311,10 +311,10 @@
         "0b1d5997-d749-48a4-a186-dfd6e0e3cd54": {
           "type": "feature",
           "settings": {
-            "use_feature_icon": false,
-            "feature_icon": "fa-shopping-bag",
-            "text1": "",
-            "text2": ""
+            "use_feature_icon": true,
+            "feature_icon": "fa-euro-sign",
+            "text1": "Investor",
+            "text2": "Everyone is welcome to join our community as an investor. Our expected dividend is <b>50%<\/b>.<br><button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">I want to Invest<\/button>"
           }
         },
         "f5827e67-f0ca-484d-ba42-e1c68ac139aa": {
