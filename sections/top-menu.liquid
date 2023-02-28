@@ -21,12 +21,13 @@
             </a>
             {% if link.links != blank %}
               <ul class="dropdown-content">
+                <li> <i class="fa-solid fa-xmark"></i></li>
               {% comment %}
                 <img src="{{ block.settings.img | img_url: 'master' }}" lazy="loaded">
    <img src="{{ block.settings.img2 | img_url: 'master' }}" lazy="loaded">
               {% endcomment %}
                 {% for child_link in link.links %}
-                  <i class="fa-solid fa-xmark"></i>
+                 
                   <li>
                     <a class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
                       {{ child_link.title }}
