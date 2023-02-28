@@ -526,35 +526,6 @@
         "background_color": "#ffffff",
         "top_margin": false
       }
-    },
-    "bb403afc-95b1-4a4c-a0f8-2db74d9b44d8": {
-      "type": "custom-slider",
-      "blocks": {
-        "245c5990-12ac-47e0-b711-ca8d1d563c67": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/rent_97f305f0-d5c3-49e7-9608-9a69b9cd3dbe.png",
-            "Title": "",
-            "discription": ""
-          }
-        },
-        "fd5ac5e9-f7c2-49e9-b70a-e903987bd602": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/investment.png",
-            "Title": "inamulhaqmayo",
-            "discription": ""
-          }
-        }
-      },
-      "block_order": [
-        "245c5990-12ac-47e0-b711-ca8d1d563c67",
-        "fd5ac5e9-f7c2-49e9-b70a-e903987bd602"
-      ],
-      "settings": {
-        "heading": "WHAT OUR CLIENTS SAY",
-        "description": "Welcome to my personal presentation"
-      }
     }
   },
   "order": [
@@ -567,7 +538,6 @@
     "220279a3-de34-424a-929b-ea747a38d49b",
     "32b2b833-50aa-4583-8ccb-f47afe40d0e9",
     "7cc3f607-508c-4118-8c9d-eb15c6ea0dc0",
-    "32a4d689-38ca-4981-89e9-a6fd074de186",
-    "bb403afc-95b1-4a4c-a0f8-2db74d9b44d8"
+    "32a4d689-38ca-4981-89e9-a6fd074de186"
   ]
 }
