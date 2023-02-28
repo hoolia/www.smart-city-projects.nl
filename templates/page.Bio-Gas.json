@@ -320,10 +320,10 @@
         "f5827e67-f0ca-484d-ba42-e1c68ac139aa": {
           "type": "feature",
           "settings": {
-            "use_feature_icon": false,
-            "feature_icon": "fa-shopping-bag",
-            "text1": "",
-            "text2": ""
+            "use_feature_icon": true,
+            "feature_icon": "fa-fire",
+            "text1": "Heat Consumer",
+            "text2": "We sell our recycled heat to local businesses for the lowest market price guaranteed: <b>€ 1,-\/m3<\/b>.<br> <button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">I want to Buy<\/button>"
           }
         },
         "23b166c2-837e-4b36-8ba4-172ddb7c0d57": {
