@@ -104,10 +104,11 @@
         "template--18158520369454__282d1a92-6eab-4610-b383-1ec7edfa31f2-1677580568805e3b0c-1": {
           "type": "box",
           "settings": {
+            "image": "shopify:\/\/shop_images\/cost.png",
             "use_feature_service_icon": false,
-            "feature_service_icon": "fa-shopping-bag",
-            "feature_service_title": "",
-            "feature_service_description": ""
+            "feature_service_icon": "fa-money-bill",
+            "feature_service_title": "Cost",
+            "feature_service_description": "Natural gas prices become more volatile, because of various geopolitical, economic, and social changes that the world is experiencing."
           }
         }
       },
