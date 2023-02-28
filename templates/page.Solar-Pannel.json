@@ -13,7 +13,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/investment.png",
-            "animation_style": "slider-1",
+            "animation_style": "slider-3",
             "heading": "",
             "heading_size": "18px",
             "heading_color": "#fff",
@@ -59,11 +59,20 @@
             "width": "100%",
             "float": "left"
           }
+        },
+        "a3c895ab-25c4-4936-a80c-9ae917e9f52b": {
+          "type": "video",
+          "settings": {
+            "video_type": "youtube",
+            "video_src": "bLwl0gRbyrk",
+            "video_autoplay": true
+          }
         }
       },
       "block_order": [
         "template--18158340079918__6a644425-cbb4-4dff-b291-8e11f1793fae-16775794147a020ca8-0",
-        "template--18158340079918__6a644425-cbb4-4dff-b291-8e11f1793fae-16775794147a020ca8-1"
+        "template--18158340079918__6a644425-cbb4-4dff-b291-8e11f1793fae-16775794147a020ca8-1",
+        "a3c895ab-25c4-4936-a80c-9ae917e9f52b"
       ],
       "settings": {
         "autoplay_speed": "5000",
