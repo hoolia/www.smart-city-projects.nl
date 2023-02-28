@@ -424,7 +424,12 @@ header .box-left {
     background: transparent;
 }
 }
-
+@media (max-width: 940px){
+.header-inner .container-inner {
+    position: relative;
+    margin-top: 4rem;
+}
+}
 @media only screen and (max-width: 768px) {
     #oc-menu-mheader .ul-top-items .li-top-item .a-top-link {
     padding: 5px 20px 5px 20px;
