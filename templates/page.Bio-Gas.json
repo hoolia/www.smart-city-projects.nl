@@ -172,8 +172,9 @@
         "57c48e83-4f77-4ec6-b742-1c7ec0e7630d": {
           "type": "slide",
           "settings": {
-            "Title": "",
-            "discription": ""
+            "image": "shopify:\/\/shop_images\/valliant.png",
+            "Title": "Vaillant allSTOR system",
+            "discription": "<p>This multi-function buffer tank gives the possibility to accumulate and distribute any form of heating energy in an entire building. Made of steel with special coating. that makes it resistant to rust.<br\/>It is an easy plug-in installation that can connect to different types of input and output sources.<\/p>"
           }
         },
         "bd7ed784-ba7a-41f8-851a-6c326f587be0": {
