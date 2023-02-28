@@ -28,10 +28,10 @@
             "link_bg": "#0c9e0e",
             "link_color": "#ffffff",
             "image_clickable": false,
-            "top": "50%",
+            "top": "40%",
             "right": "0%",
             "left": "0%",
-            "width": "100%",
+            "width": "50%",
             "float": "left"
           }
         },
