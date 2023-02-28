@@ -425,6 +425,9 @@ header .box-left {
 }
 }
 @media (max-width: 940px){
+  .header-inner.fix {
+    margin-top: 4rem;
+}
 .header-inner .container-inner {
     position: relative;
     margin-top: 4rem;
