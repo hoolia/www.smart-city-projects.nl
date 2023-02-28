@@ -302,10 +302,10 @@
         "4ddf9613-c0c0-4102-8a2e-a1e6b91ec1d2": {
           "type": "feature",
           "settings": {
-            "use_feature_icon": false,
-            "feature_icon": "fa-shopping-bag",
-            "text1": "",
-            "text2": ""
+            "use_feature_icon": true,
+            "feature_icon": "fa-plug",
+            "text1": "Energy Consumer",
+            "text2": "We sell our renewable electricity to local businesses for as low as <b>€ 0,10\/kWh<\/b>, creating self-sustaining communities.<br>\n<button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">I want to Buy<\/button>"
           }
         },
         "0b1d5997-d749-48a4-a186-dfd6e0e3cd54": {
