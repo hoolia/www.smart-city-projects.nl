@@ -255,12 +255,23 @@
             "tab-calculator": "",
             "image": "shopify:\/\/shop_images\/subsidy.png"
           }
+        },
+        "9c06567b-8028-403e-889e-7b5c7e94f479": {
+          "type": "slide",
+          "settings": {
+            "title": "Investment",
+            "Tab-heading": "",
+            "tab-discription": "<p>Become 100% owner of the solar panels after 15 years.<\/p><p>On average, a solarpanel's lifespan is between 25 and 30 years<\/p>",
+            "tab-calculator": "7mawFbsq7363vaEJo",
+            "image": "shopify:\/\/shop_images\/investment.png"
+          }
         }
       },
       "block_order": [
         "301be99f-c15c-43d0-b51c-0e4f79b87f33",
         "95c7c09a-0ff1-46ad-833b-9f21fce04ea4",
-        "121c561a-b0c8-483b-aab3-b615461bb5d5"
+        "121c561a-b0c8-483b-aab3-b615461bb5d5",
+        "9c06567b-8028-403e-889e-7b5c7e94f479"
       ],
       "settings": {
         "heading": "The Financial Benefits",
