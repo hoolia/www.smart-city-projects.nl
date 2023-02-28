@@ -344,6 +344,9 @@
         "f5827e67-f0ca-484d-ba42-e1c68ac139aa",
         "23b166c2-837e-4b36-8ba4-172ddb7c0d57"
       ],
+      "custom_css": [
+        ".icon-image {background-color: white;}"
+      ],
       "settings": {
         "product_advert_design": "product-feature-advert3",
         "fullwidth": true,
