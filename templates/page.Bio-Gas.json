@@ -383,6 +383,55 @@
     },
     "7cc3f607-508c-4118-8c9d-eb15c6ea0dc0": {
       "type": "TimeLine-list",
+      "blocks": {
+        "11356e73-4a0c-404f-9542-8d276c05fae7": {
+          "type": "slide",
+          "settings": {
+            "Title": "We",
+            "image": "shopify:\/\/shop_images\/project-management.png",
+            "task": "TASK",
+            "Day_": "02",
+            "description-title": "Manage the Project",
+            "description": "We take care of the entire project, from A to Z, ensuring a seamless process for you."
+          }
+        },
+        "16bc4bee-bc86-4995-aa14-d11a3ef5c6ba": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "task": "",
+            "Day_": "",
+            "description-title": "",
+            "description": ""
+          }
+        },
+        "a0ad482b-f739-4116-95f3-6af58112b983": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "task": "",
+            "Day_": "",
+            "description-title": "",
+            "description": ""
+          }
+        },
+        "be4c487f-d846-452a-ad7d-22f28b41cda9": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "task": "",
+            "Day_": "",
+            "description-title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "11356e73-4a0c-404f-9542-8d276c05fae7",
+        "16bc4bee-bc86-4995-aa14-d11a3ef5c6ba",
+        "a0ad482b-f739-4116-95f3-6af58112b983",
+        "be4c487f-d846-452a-ad7d-22f28b41cda9"
+      ],
       "settings": {
       }
     }
