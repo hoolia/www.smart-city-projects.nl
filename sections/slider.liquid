@@ -1,12 +1,329 @@
+{% include section.settings.layout_slider %}
 {% schema %}
-  {
-    "name": "Slider",
-    "settings": []
-  }
+{
+  "name": "Sliders",
+  "class": "index-section slider",
+  "max_blocks": 7,
+  "settings": [
+    {
+      "type": "select",
+      "id": "autoplay_speed",
+      "label": "Change slides every",
+      "options": [
+        { "value": "5000", "label": "5 seconds" },
+        { "value": "6000", "label": "6 seconds" },
+        { "value": "7000", "label": "7 seconds" },
+        { "value": "8000", "label": "8 seconds" },
+        { "value": "9000", "label": "9 seconds" },
+        { "value": "10000", "label": "10 seconds" }
+      ],
+      "default": "10000"
+    },
+	{
+        "type": "select",
+        "id": "layout_slider",
+        "label": "Select page slider",
+        "options": [
+              {
+                "value": "slider-1",
+                "label": "Slider 1"
+              },
+			  {
+                "value": "slider-2",
+                "label": "Slider 2"
+              }
+            ]	
+        },
+		{
+          "type": "checkbox",
+          "id": "fullwidth",
+          "label": "Fullwidth",
+          "default": true
+        },
+        {
+           "type":"checkbox",
+           "id":"use_box_layout",
+           "label":"Use Box Layout?",
+           "default":false
+        },
+		{
+          "type": "checkbox",
+          "id": "fit_to_container",
+          "label": "Fit Text to Container",
+          "default": false,
+		  "info": "Text doesn't stretch on high resolution screens"
+        },
+		{
+          "type": "checkbox",
+          "id": "full_size_on_mobile",
+          "label": "Show Full Image on Mobile",
+          "default": false,
+		  "info": "By default images are cropped from sides in order to show bigger slideshow image on mobile layout"
+        }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Slide image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1920x900px used on demo stores"
+        },
+		{
+        "type": "select",
+        "id": "animation_style",
+        "label": "Select page slider",
+        "options": [
+              {
+              "value": "none",
+              "label": "None"
+              },
+              {
+              "value": "slider-1",
+              "label": "Style 1"
+              },
+              {
+              "value": "slider-2",
+              "label": "Style 2"
+              },
+              {
+              "value": "slider-3",
+              "label": "Style 3"
+              }
+            ],
+        "default": "slider-1"	
+        },
+		{
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+		{
+          "type": "text",
+          "id": "heading_size",
+          "label": "Font size",
+		  "default": "18px"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading Color",
+          "default": "#fff"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading"
+        },
+		{
+          "type": "text",
+          "id": "subheading_size",
+          "label": "Font size",
+		  "default": "90px"
+        },
+        {
+          "type": "color",
+          "id": "subheading_color",
+          "label": "Subheading Color",
+          "default": "#fff"
+        },		
+		{
+          "type": "textarea",
+          "id": "description",
+          "label": "Slide Description",
+          "info": "Used in slider 1"
+        },
+		{
+          "type": "text",
+          "id": "description_size",
+          "label": "Font size",
+		  "default": "16px"
+        },
+        {
+          "type": "color",
+          "id": "description_color",
+          "label": "Description Color",
+          "default": "#fff"
+        },
+		{
+          "type": "text",
+          "id": "slide_link_text",
+          "label": "Link Text"
+        },
+        {
+          "type": "url",
+          "id": "slide_link",
+          "label": "Link URL"
+        },
+		{
+          "type": "color",
+          "id": "link_bg",
+          "label": "Link Button Background",
+		  "default": "#000"
+        },
+        {
+          "type": "color",
+          "id": "link_color",
+          "label": "Link Color",
+          "default": "#fff"
+        },
+        {
+          "type": "checkbox",
+          "id": "image_clickable",
+          "label": "Make background image clickable",
+          "default": false,
+          "info": "Button hover effect won't work in this case"
+        },
+        {
+          "type": "header",
+          "content": "Text Position Settings"
+        },
+        {
+          "type": "text",
+          "id": "top",
+          "label": "Top",
+		  "default": "50%"
+        },
+        {
+          "type": "text",
+          "id": "right",
+          "label": "right",
+		  "default": "0%"
+        },
+        {
+          "type": "text",
+          "id": "left",
+          "label": "Left",
+		  "default": "0%"
+        },
+        {
+          "type": "text",
+          "id": "width",
+          "label": "Width",
+		  "default": "100%"
+        },
+		{
+        "type": "select",
+        "id": "float",
+        "label": "float",
+        "options": [
+              {
+              "value": "none",
+              "label": "None"
+              },
+              {
+              "value": "left",
+              "label": "left"
+              },
+              {
+              "value": "center",
+              "label": "center"
+              },
+              {
+              "value": "right",
+              "label": "right"
+              }
+            ],
+        "default": "left"	
+        }
+      ]
+    },
+	{
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Image must be added for size detection. 1920x960px recommended for preload image"
+        },
+		{
+        "type": "select",
+        "id": "video_type",
+        "label": "Select video type",
+        "options": [
+              {
+              "value": "youtube",
+              "label": "Youtube"
+              },
+              {
+              "value": "vimeo",
+              "label": "Vimeo"
+              },
+              {
+              "value": "mp4",
+              "label": "Mp4"
+              }
+            ],
+        "default": "youtube"	
+        },
+		{
+          "type": "text",
+          "id": "video_src",
+          "label": "Video Src",
+		  "default": "bLwl0gRbyrk",
+		  "info": "Add src id for youtube/vimeo and full link for video file"
+        },
+		{
+          "type": "checkbox",
+          "id": "video_autoplay",
+          "label": "Autoplay",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Sliders",
+    "category": "Image",
+    "settings": {
+      "autoplay_speed": "5000"
+    },
+    "blocks": [
+      {
+        "type": "image"
+      },
+      {
+        "type": "image"
+      }
+    ]
+  }]
+}
 {% endschema %}
+<style>
+  {% if section.settings.use_box_layout -%}
+  @media(min-width:768px){
+    #shopify-section-{{section.id}}.slider {
+      max-width: 1920px;
+      padding: 0 30px !important;
+      width: auto;
+      margin: 0px auto;
+    }
+    #shopify-section-{{section.id}}.slider .container {
+      width: auto;
+    }
+  }
+  {%- endif %}
+  {% unless section.settings.full_size_on_mobile %}
+  @media(max-width:420px){
+    .row-{{section.id}} .nivo-main-image {
+      width: auto !important;
+      z-index:7;
+      height:44vh !important;  
+      min-height: 44vh !important;
+      transform: translateX(-50%) !important;
+      left: 50% !important;
+      filter: brightness(40%);
+    }
+    .row-{{section.id}} .static_video1 img.img_static1 {
+      height:42vh !important;  
+      min-height: 42vh !important;
+    }
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+  }
+  {% endunless %}
+</style>
