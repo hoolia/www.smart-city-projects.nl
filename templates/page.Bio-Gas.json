@@ -139,14 +139,14 @@
         "b6d23f87-6aa3-4ebd-8c57-f70f3503ae2a"
       ],
       "settings": {
-        "layout": "feature-service1",
-        "heading": "FLY IN THE SKY",
-        "heading_color": "#454545",
+        "layout": "feature-service-custom",
+        "heading": "The reasons behind this idea",
+        "heading_color": "#fff",
         "description": "Experience",
-        "description_color": "#7e7e7e",
-        "fullwidth": false,
+        "description_color": "#007501",
+        "fullwidth": true,
         "background": true,
-        "background_color": "#f8f8f8",
+        "background_color": "#12f215",
         "bottom_border": false
       }
     }
