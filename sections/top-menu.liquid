@@ -28,8 +28,8 @@
               {% endcomment %}
                 {% for child_link in link.links %}
                  
-                  <li  data-aos="flip-left">
-                    <a class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+                  <li  >
+                    <a  data-aos="flip-left" class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
                       {{ child_link.title }}
                     </a>
                     {% if child_link.links != blank %}
