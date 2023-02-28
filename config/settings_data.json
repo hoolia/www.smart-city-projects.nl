@@ -6,7 +6,7 @@
     "favicon_enable": true,
     "show_collection_top_image": false,
     "color_top_bg": "#292929",
-    "lazyloading_enable": true,
+    "lazyloading_enable": false,
     "img_size_product": "900x900",
     "img_width_grid": "400",
     "grid_aspect_ratio": "2:3",
