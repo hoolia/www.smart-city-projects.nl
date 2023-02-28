@@ -21,11 +21,11 @@
             </a>
             {% if link.links != blank %}
               <ul class="dropdown-content" id="content"> 
- 
-                  <a href="#content" id="toggle" class="close" href="#">×</a>
-              {% comment %}
-                <img src="{{ block.settings.img | img_url: 'master' }}" lazy="loaded">
-   <img src="{{ block.settings.img2 | img_url: 'master' }}" lazy="loaded">
+
+                  {% comment %}     
+                 <a href="#content" id="toggle" class="close" href="#">×</a>
+       
+         
               {% endcomment %}
                 {% for child_link in link.links %}
                  
