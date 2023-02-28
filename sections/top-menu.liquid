@@ -20,7 +20,7 @@
               {{ link.title }}
             </a>
             {% if link.links != blank %}
-              <ul class="dropdown-content" data-aos="flip-left">
+              <ul class="dropdown-content">
                
               {% comment %}
                 <img src="{{ block.settings.img | img_url: 'master' }}" lazy="loaded">
@@ -29,7 +29,7 @@
                 {% for child_link in link.links %}
                  
                   <li  >
-                    <a  data-aos="flip-left" class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+                    <a  class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
                       {{ child_link.title }}
                     </a>
                     {% if child_link.links != blank %}
