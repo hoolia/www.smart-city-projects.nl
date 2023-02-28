@@ -8,12 +8,13 @@
     },
     "6a644425-cbb4-4dff-b291-8e11f1793fae": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "template--18158340079918__6a644425-cbb4-4dff-b291-8e11f1793fae-16775794147a020ca8-0": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/investment.png",
-            "animation_style": "slider-2",
+            "animation_style": "slider-3",
             "heading": "jfsjkdhfkjsdh",
             "heading_size": "18px",
             "heading_color": "#ec4141",
