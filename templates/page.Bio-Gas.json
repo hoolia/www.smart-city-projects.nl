@@ -94,10 +94,11 @@
         "template--18158520369454__282d1a92-6eab-4610-b383-1ec7edfa31f2-1677580568805e3b0c-0": {
           "type": "box",
           "settings": {
+            "image": "shopify:\/\/shop_images\/book.png",
             "use_feature_service_icon": false,
-            "feature_service_icon": "fa-shopping-bag",
-            "feature_service_title": "",
-            "feature_service_description": ""
+            "feature_service_icon": "a-oil-can",
+            "feature_service_title": "Economical Risk",
+            "feature_service_description": "Gas is a finite resource, and increasing reliance on it could contribute to energy insecurity and price volatility in the long term."
           }
         },
         "template--18158520369454__282d1a92-6eab-4610-b383-1ec7edfa31f2-1677580568805e3b0c-1": {
