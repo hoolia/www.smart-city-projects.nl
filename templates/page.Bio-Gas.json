@@ -277,6 +277,89 @@
         "heading": "The Financial Benefits",
         "description": "Here is what to expect with our solution"
       }
+    },
+    "220279a3-de34-424a-929b-ea747a38d49b": {
+      "type": "ad-product-feature",
+      "blocks": {
+        "template--18158520369454__220279a3-de34-424a-929b-ea747a38d49b-1677582353de0068b6-0": {
+          "type": "feature",
+          "settings": {
+            "use_feature_icon": false,
+            "feature_icon": "fa-shopping-bag",
+            "text1": "",
+            "text2": ""
+          }
+        },
+        "template--18158520369454__220279a3-de34-424a-929b-ea747a38d49b-1677582353de0068b6-1": {
+          "type": "feature",
+          "settings": {
+            "use_feature_icon": false,
+            "feature_icon": "fa-shopping-bag",
+            "text1": "",
+            "text2": ""
+          }
+        },
+        "4ddf9613-c0c0-4102-8a2e-a1e6b91ec1d2": {
+          "type": "feature",
+          "settings": {
+            "use_feature_icon": false,
+            "feature_icon": "fa-shopping-bag",
+            "text1": "",
+            "text2": ""
+          }
+        },
+        "0b1d5997-d749-48a4-a186-dfd6e0e3cd54": {
+          "type": "feature",
+          "settings": {
+            "use_feature_icon": false,
+            "feature_icon": "fa-shopping-bag",
+            "text1": "",
+            "text2": ""
+          }
+        },
+        "f5827e67-f0ca-484d-ba42-e1c68ac139aa": {
+          "type": "feature",
+          "settings": {
+            "use_feature_icon": false,
+            "feature_icon": "fa-shopping-bag",
+            "text1": "",
+            "text2": ""
+          }
+        },
+        "23b166c2-837e-4b36-8ba4-172ddb7c0d57": {
+          "type": "feature",
+          "settings": {
+            "use_feature_icon": false,
+            "feature_icon": "fa-shopping-bag",
+            "text1": "",
+            "text2": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18158520369454__220279a3-de34-424a-929b-ea747a38d49b-1677582353de0068b6-0",
+        "template--18158520369454__220279a3-de34-424a-929b-ea747a38d49b-1677582353de0068b6-1",
+        "4ddf9613-c0c0-4102-8a2e-a1e6b91ec1d2",
+        "0b1d5997-d749-48a4-a186-dfd6e0e3cd54",
+        "f5827e67-f0ca-484d-ba42-e1c68ac139aa",
+        "23b166c2-837e-4b36-8ba4-172ddb7c0d57"
+      ],
+      "settings": {
+        "product_advert_design": "product-feature-advert3",
+        "fullwidth": true,
+        "background": false,
+        "background_color": "#242424",
+        "top_margin": false,
+        "bg-image": "shopify:\/\/shop_images\/hoolia-energycoop.png",
+        "image_position": "right",
+        "heading": "How can i participate?",
+        "heading_color": "#30bf32",
+        "description": "Building \"micro-grid\" communities",
+        "link_text": "Building \"micro-grid\" communities",
+        "link": "",
+        "bottom_padding": false,
+        "bottom_border": false
+      }
     }
   },
   "order": [
@@ -285,6 +368,7 @@
     "96f13f7b-5dd3-47f6-8cd9-7d454b985956",
     "282d1a92-6eab-4610-b383-1ec7edfa31f2",
     "b843a0b8-baf4-46b8-8413-73e3c0a7aa89",
-    "8e39da31-78f8-43c4-aa28-2d30c4ce549d"
+    "8e39da31-78f8-43c4-aa28-2d30c4ce549d",
+    "220279a3-de34-424a-929b-ea747a38d49b"
   ]
 }
