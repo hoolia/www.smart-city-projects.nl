@@ -465,15 +465,56 @@
         "template--18158520369454__32a4d689-38ca-4981-89e9-a6fd074de186-16775839849aeaa31e-1": {
           "type": "testimonial",
           "settings": {
-            "title": "",
-            "description": "",
+            "image": "shopify:\/\/shop_images\/care.png",
+            "title": "Improved public health",
+            "description": "Air and water pollution, the root cause of many health issues, are non-existent with clean energy technologies. These technologies have been estimated to save public health costs of $74.6 billion annually.",
+            "author": ""
+          }
+        },
+        "90b5da3f-1f32-4571-8ef1-d81323bf61fa": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/inexhaustible-energy.png",
+            "title": "Inexhaustible energy",
+            "description": "Renewable energy has been proven time and again to be capable of meeting a significant portion of future electricity demands, even with potential limitations taken into account.",
+            "author": ""
+          }
+        },
+        "2f6a3d35-59e9-4003-9110-759950a9451f": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jobs.png",
+            "title": "Jobs and other economic benefits",
+            "description": "Renewable energy sources generate more jobs per unit of electricity compared to fossil fuels. Furthermore, the expansion of clean energy can also have positive economic “ripple” effects.",
+            "author": ""
+          }
+        },
+        "48c9faca-790e-4db2-abdb-bddce92e4167": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/solar-panel-trust.png",
+            "title": "Reliability and resilience",
+            "description": "Solar panels, due to their distributed and modular design, are less susceptible to widespread failure and can function dependably even under conditions that would necessitate shutting down a fossil fuel plant.",
+            "author": ""
+          }
+        },
+        "24bcacb2-a3b9-48e1-b2b7-2a26cbabb6d4": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/money-time.png",
+            "title": "Stable energy prices",
+            "description": "Initial investments are necessary to construct renewable facilities, but once in operation, they have low ongoing costs, resulting in stable energy prices over time compared to fossil energy prices.",
             "author": ""
           }
         }
       },
       "block_order": [
         "template--18158520369454__32a4d689-38ca-4981-89e9-a6fd074de186-16775839849aeaa31e-0",
-        "template--18158520369454__32a4d689-38ca-4981-89e9-a6fd074de186-16775839849aeaa31e-1"
+        "template--18158520369454__32a4d689-38ca-4981-89e9-a6fd074de186-16775839849aeaa31e-1",
+        "90b5da3f-1f32-4571-8ef1-d81323bf61fa",
+        "2f6a3d35-59e9-4003-9110-759950a9451f",
+        "48c9faca-790e-4db2-abdb-bddce92e4167",
+        "24bcacb2-a3b9-48e1-b2b7-2a26cbabb6d4"
       ],
       "settings": {
         "layout": "testimonials-custom",
