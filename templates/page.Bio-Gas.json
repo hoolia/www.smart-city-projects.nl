@@ -27,7 +27,7 @@
             "slide_link": "",
             "link_bg": "#0c9e0e",
             "link_color": "#ffffff",
-            "image_clickable": false,
+            "image_clickable": true,
             "top": "40%",
             "right": "0%",
             "left": "0%",
