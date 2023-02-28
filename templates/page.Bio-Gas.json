@@ -110,11 +110,32 @@
             "feature_service_title": "Cost",
             "feature_service_description": "Natural gas prices become more volatile, because of various geopolitical, economic, and social changes that the world is experiencing."
           }
+        },
+        "a5153a3f-1bcf-4fba-8dcf-b9af7c296cc5": {
+          "type": "box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/reputation.png",
+            "use_feature_service_icon": false,
+            "feature_service_icon": "fa-star",
+            "feature_service_title": "Reputation",
+            "feature_service_description": "Companies that use natural gas may be perceived as contributing to environmental and climate change in comparison with companies that use green energy and that add value and create a good reputation among rivals."
+          }
+        },
+        "b6d23f87-6aa3-4ebd-8c57-f70f3503ae2a": {
+          "type": "box",
+          "settings": {
+            "use_feature_service_icon": false,
+            "feature_service_icon": "fa-shopping-bag",
+            "feature_service_title": "",
+            "feature_service_description": ""
+          }
         }
       },
       "block_order": [
         "template--18158520369454__282d1a92-6eab-4610-b383-1ec7edfa31f2-1677580568805e3b0c-0",
-        "template--18158520369454__282d1a92-6eab-4610-b383-1ec7edfa31f2-1677580568805e3b0c-1"
+        "template--18158520369454__282d1a92-6eab-4610-b383-1ec7edfa31f2-1677580568805e3b0c-1",
+        "a5153a3f-1bcf-4fba-8dcf-b9af7c296cc5",
+        "b6d23f87-6aa3-4ebd-8c57-f70f3503ae2a"
       ],
       "settings": {
         "layout": "feature-service1",
