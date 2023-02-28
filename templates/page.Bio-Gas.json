@@ -409,21 +409,23 @@
         "a0ad482b-f739-4116-95f3-6af58112b983": {
           "type": "slide",
           "settings": {
-            "Title": "",
-            "task": "",
-            "Day_": "",
-            "description-title": "",
-            "description": ""
+            "Title": "We",
+            "image": "shopify:\/\/shop_images\/contract.png",
+            "task": "TASK",
+            "Day_": "xx",
+            "description-title": "Prepare the legal contracts",
+            "description": "We are in charge of all the necessary legal contracts and documentation for the installation of solar panels and machines, as well as renting of the roof, to ensure compliance with regulations."
           }
         },
         "be4c487f-d846-452a-ad7d-22f28b41cda9": {
           "type": "slide",
           "settings": {
-            "Title": "",
-            "task": "",
-            "Day_": "",
-            "description-title": "",
-            "description": ""
+            "Title": "We",
+            "image": "shopify:\/\/shop_images\/installation.png",
+            "task": "TASK",
+            "Day_": "xx",
+            "description-title": "Install all the devices",
+            "description": "We take care of the installation of all necessary devices, such as batteries, HPCs, and solar panels, to help you transit to a more sustainable and efficient energy solution."
           }
         }
       },
