@@ -149,12 +149,81 @@
         "background_color": "#12f215",
         "bottom_border": false
       }
+    },
+    "b843a0b8-baf4-46b8-8413-73e3c0a7aa89": {
+      "type": "custom-slider",
+      "blocks": {
+        "2c31570f-b4ad-4504-a6c1-80fee2b02189": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/solar.png",
+            "Title": "Solar panels",
+            "discription": "<p>Our last generation solar panels that are installed on the roof of the building drastically reduce energy costs, as they can generate electricity during peak demand periods. They are relatively low maintenance, as they do not require any moving parts and have a long lifespan. Also, They can be easily integrated with other renewable energy sources, such as wind and hydropower, to create a more robust and reliable energy system.<\/p>"
+          }
+        },
+        "172e002a-0f83-44f8-9aac-c5266e25cd5a": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "57c48e83-4f77-4ec6-b742-1c7ec0e7630d": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "bd7ed784-ba7a-41f8-851a-6c326f587be0": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "b7d2bc09-bdcd-42bd-bc77-36a5825218d2": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "f8bded95-0a40-40f1-a2df-93310e41c73e": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "5a84d096-3564-40fb-a4c9-295b0498063a": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        }
+      },
+      "block_order": [
+        "2c31570f-b4ad-4504-a6c1-80fee2b02189",
+        "172e002a-0f83-44f8-9aac-c5266e25cd5a",
+        "57c48e83-4f77-4ec6-b742-1c7ec0e7630d",
+        "bd7ed784-ba7a-41f8-851a-6c326f587be0",
+        "b7d2bc09-bdcd-42bd-bc77-36a5825218d2",
+        "f8bded95-0a40-40f1-a2df-93310e41c73e",
+        "5a84d096-3564-40fb-a4c9-295b0498063a"
+      ],
+      "settings": {
+        "heading": "WHAT OUR CLIENTS SAY",
+        "description": "Welcome to my personal presentation"
+      }
     }
   },
   "order": [
     "main",
     "d9284b76-2234-4983-b999-7cda3a8ff5fb",
     "96f13f7b-5dd3-47f6-8cd9-7d454b985956",
-    "282d1a92-6eab-4610-b383-1ec7edfa31f2"
+    "282d1a92-6eab-4610-b383-1ec7edfa31f2",
+    "b843a0b8-baf4-46b8-8413-73e3c0a7aa89"
   ]
 }
