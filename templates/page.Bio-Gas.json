@@ -245,11 +245,22 @@
             "tab-calculator": "cRzrCrDGDnSJMcpyQ",
             "image": "shopify:\/\/shop_images\/saving.png"
           }
+        },
+        "121c561a-b0c8-483b-aab3-b615461bb5d5": {
+          "type": "slide",
+          "settings": {
+            "title": "Subsidy",
+            "Tab-heading": "",
+            "tab-discription": "<p>The government guarantees a success with its SDE++ subsidy offering a guarenteed steady revenue for a much as 15 years if you use a sustainable source of energy. Following this advantage, we propose contracts from 10 to 15 years.<\/p><p><\/p>",
+            "tab-calculator": "",
+            "image": "shopify:\/\/shop_images\/subsidy.png"
+          }
         }
       },
       "block_order": [
         "301be99f-c15c-43d0-b51c-0e4f79b87f33",
-        "95c7c09a-0ff1-46ad-833b-9f21fce04ea4"
+        "95c7c09a-0ff1-46ad-833b-9f21fce04ea4",
+        "121c561a-b0c8-483b-aab3-b615461bb5d5"
       ],
       "settings": {
         "heading": "The Financial Benefits",
