@@ -235,10 +235,21 @@
             "tab-calculator": "8StRWCmALjPHKQ3st",
             "image": "shopify:\/\/shop_images\/rent.png"
           }
+        },
+        "95c7c09a-0ff1-46ad-833b-9f21fce04ea4": {
+          "type": "slide",
+          "settings": {
+            "title": "Savings",
+            "Tab-heading": "",
+            "tab-discription": "<p>Expect to save about 66% on building heating cost with our green renewable energy system.<\/p><p><\/p>",
+            "tab-calculator": "cRzrCrDGDnSJMcpyQ",
+            "image": "shopify:\/\/shop_images\/saving.png"
+          }
         }
       },
       "block_order": [
-        "301be99f-c15c-43d0-b51c-0e4f79b87f33"
+        "301be99f-c15c-43d0-b51c-0e4f79b87f33",
+        "95c7c09a-0ff1-46ad-833b-9f21fce04ea4"
       ],
       "settings": {
         "heading": "The Financial Benefits",
