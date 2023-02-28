@@ -37,6 +37,7 @@
         },
         "template--18158520369454__d9284b76-2234-4983-b999-7cda3a8ff5fb-1677330918e696287e-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/city-behind-greenery.jpg",
             "animation_style": "slider-1",
