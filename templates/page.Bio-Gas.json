@@ -363,6 +363,28 @@
         "bottom_padding": false,
         "bottom_border": false
       }
+    },
+    "32b2b833-50aa-4583-8ccb-f47afe40d0e9": {
+      "type": "contact-page",
+      "custom_css": [
+        "h1 {color: #42db44; display: flex; justify-content: center; font-weight: bold; font-size: 4rem;}",
+        "fieldset {max-width: 600px; margin: 0 auto;}",
+        ".buttons {display: flex; justify-content: center;}",
+        ".form-success {color: #42db44;}",
+        "label {font-weight: bold; color: #42db44;}"
+      ],
+      "settings": {
+        "show_map": false,
+        "map_code": "",
+        "show_content": true,
+        "accept_check_enable": false,
+        "accept_text": "I agree with the terms and conditions."
+      }
+    },
+    "7cc3f607-508c-4118-8c9d-eb15c6ea0dc0": {
+      "type": "TimeLine-list",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -372,6 +394,8 @@
     "282d1a92-6eab-4610-b383-1ec7edfa31f2",
     "b843a0b8-baf4-46b8-8413-73e3c0a7aa89",
     "8e39da31-78f8-43c4-aa28-2d30c4ce549d",
-    "220279a3-de34-424a-929b-ea747a38d49b"
+    "220279a3-de34-424a-929b-ea747a38d49b",
+    "32b2b833-50aa-4583-8ccb-f47afe40d0e9",
+    "7cc3f607-508c-4118-8c9d-eb15c6ea0dc0"
   ]
 }
