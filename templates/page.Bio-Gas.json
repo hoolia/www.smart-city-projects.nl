@@ -284,10 +284,10 @@
         "template--18158520369454__220279a3-de34-424a-929b-ea747a38d49b-1677582353de0068b6-0": {
           "type": "feature",
           "settings": {
-            "use_feature_icon": false,
-            "feature_icon": "fa-shopping-bag",
-            "text1": "",
-            "text2": ""
+            "use_feature_icon": true,
+            "feature_icon": "fa-building",
+            "text1": "Building Owner",
+            "text2": "You enjoy free heat and cheap electricity by providing us some space where we can set up shop.\n<br>Your rental income: <b>€ 30,-\/m2<\/b> office + <b>€ 3,-\/m2<\/b> roof<br>\n<a href=\"#contactus\" class=\"btn\">I can provide Space<\/a>"
           }
         },
         "template--18158520369454__220279a3-de34-424a-929b-ea747a38d49b-1677582353de0068b6-1": {
