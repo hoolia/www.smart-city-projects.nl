@@ -402,7 +402,7 @@
             "image": "shopify:\/\/shop_images\/subsidies.png",
             "task": "TASK",
             "Day_": "03",
-            "description-title": "",
+            "description-title": "Manage the subsidies",
             "description": "We are in charge of all the necessary paperwork and processes to obtain subsidies, including the SDE++ aid provided by the Dutch government, to help maximize your financial benefits."
           }
         },
@@ -427,13 +427,24 @@
             "description-title": "Install all the devices",
             "description": "We take care of the installation of all necessary devices, such as batteries, HPCs, and solar panels, to help you transit to a more sustainable and efficient energy solution."
           }
+        },
+        "42829ddb-2b9f-4dd6-81b1-5be67ae71bfe": {
+          "type": "slide",
+          "settings": {
+            "Title": "You",
+            "task": "TASK",
+            "Day_": "xx",
+            "description-title": "Earn the benefits",
+            "description": "You will enjoy the benefits of your new energy solution, including reduced energy costs and a more sustainable, environmentally-friendly way of generating energy."
+          }
         }
       },
       "block_order": [
         "11356e73-4a0c-404f-9542-8d276c05fae7",
         "16bc4bee-bc86-4995-aa14-d11a3ef5c6ba",
         "a0ad482b-f739-4116-95f3-6af58112b983",
-        "be4c487f-d846-452a-ad7d-22f28b41cda9"
+        "be4c487f-d846-452a-ad7d-22f28b41cda9",
+        "42829ddb-2b9f-4dd6-81b1-5be67ae71bfe"
       ],
       "settings": {
       }
