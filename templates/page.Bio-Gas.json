@@ -74,10 +74,63 @@
         "fit_to_container": false,
         "full_size_on_mobile": false
       }
+    },
+    "96f13f7b-5dd3-47f6-8cd9-7d454b985956": {
+      "type": "image-with-text",
+      "settings": {
+        "Image-left": "shopify:\/\/shop_images\/bg_green_building.jpg",
+        "Video-Image": "shopify:\/\/shop_images\/hoolia-video.png",
+        "video_type": "Youtube-Vimeo",
+        "video_link": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "heading": "",
+        "sub-heading": "",
+        "content": ""
+      }
+    },
+    "282d1a92-6eab-4610-b383-1ec7edfa31f2": {
+      "type": "service-box",
+      "blocks": {
+        "template--18158520369454__282d1a92-6eab-4610-b383-1ec7edfa31f2-1677580568805e3b0c-0": {
+          "type": "box",
+          "settings": {
+            "use_feature_service_icon": false,
+            "feature_service_icon": "fa-shopping-bag",
+            "feature_service_title": "",
+            "feature_service_description": ""
+          }
+        },
+        "template--18158520369454__282d1a92-6eab-4610-b383-1ec7edfa31f2-1677580568805e3b0c-1": {
+          "type": "box",
+          "settings": {
+            "use_feature_service_icon": false,
+            "feature_service_icon": "fa-shopping-bag",
+            "feature_service_title": "",
+            "feature_service_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18158520369454__282d1a92-6eab-4610-b383-1ec7edfa31f2-1677580568805e3b0c-0",
+        "template--18158520369454__282d1a92-6eab-4610-b383-1ec7edfa31f2-1677580568805e3b0c-1"
+      ],
+      "settings": {
+        "layout": "feature-service1",
+        "heading": "FLY IN THE SKY",
+        "heading_color": "#454545",
+        "description": "Experience",
+        "description_color": "#7e7e7e",
+        "fullwidth": false,
+        "background": true,
+        "background_color": "#f8f8f8",
+        "bottom_border": false
+      }
     }
   },
   "order": [
     "main",
-    "d9284b76-2234-4983-b999-7cda3a8ff5fb"
+    "d9284b76-2234-4983-b999-7cda3a8ff5fb",
+    "96f13f7b-5dd3-47f6-8cd9-7d454b985956",
+    "282d1a92-6eab-4610-b383-1ec7edfa31f2"
   ]
 }
