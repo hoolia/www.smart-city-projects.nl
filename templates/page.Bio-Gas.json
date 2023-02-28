@@ -39,6 +39,7 @@
         "ab8ce6e5-1d9d-4cf3-b3af-251138faccd7": {
           "type": "video",
           "settings": {
+            "image": "shopify:\/\/shop_images\/investment.png",
             "video_type": "youtube",
             "video_src": "https:\/\/www.youtube.com\/watch?v=H0dgkbpw4p0&list=RDH0dgkbpw4p0&start_radio=1",
             "video_autoplay": true
