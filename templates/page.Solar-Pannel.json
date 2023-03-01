@@ -519,8 +519,9 @@
         "9e09618a-bfa0-4e2a-acc7-337336239985": {
           "type": "testimonial",
           "settings": {
-            "title": "",
-            "description": "",
+            "image": "shopify:\/\/shop_images\/solar-panel-trust.png",
+            "title": "Reliability and resilience",
+            "description": "Solar panels, due to their distributed and modular design, are less susceptible to widespread failure and can function dependably even under conditions that would necessitate shutting down a fossil fuel plant.",
             "author": ""
           }
         },
