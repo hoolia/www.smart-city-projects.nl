@@ -320,10 +320,10 @@
         "template--18158340079918__1af9d9b3-49a6-4ba9-848e-e5e2e0226b6b-1677686451bf8673e2-1": {
           "type": "feature",
           "settings": {
-            "use_feature_icon": false,
-            "feature_icon": "fa-shopping-bag",
-            "text1": "",
-            "text2": ""
+            "use_feature_icon": true,
+            "feature_icon": "fa-user",
+            "text1": "Operational Management",
+            "text2": "Love what we are doing? Want to be part of it? Then we have a job for you as Site Manager. Earn a salary of up to <b>€  2000,-\/maand<\/b> salary.<br>\n<a href=\"#contactus\" class=\"btn\">I want this Job<\/a>"
           }
         }
       },
