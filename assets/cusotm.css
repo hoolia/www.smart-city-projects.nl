@@ -573,7 +573,9 @@ section.cd-faq {
     top: 18vh !important;
     margin-left: -1.5rem !important;
 }
-
+.header-inner.fix.whiteHeader {
+    margin-top: 0;
+}
   }
 
 @media(max-width: 768px){
