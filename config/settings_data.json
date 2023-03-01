@@ -820,7 +820,8 @@
           "fullwidth": true,
           "use_box_layout": false,
           "fit_to_container": true,
-          "full_size_on_mobile": false
+          "full_size_on_mobile": false,
+          "custom-class": ""
         }
       },
       "75a43b2a-1a20-41a3-9caf-43f29d41f10d": {
@@ -1238,7 +1239,7 @@
               "clr": "#ffffff",
               "icon": "<i class=\"fa fa-solar-panel\"><\/i>",
               "title": "GREENHOUSE HEATING",
-              "url": ""
+              "url": "shopify:\/\/pages\/solar-pannel"
             }
           },
           "63d7d44e-f62f-4948-be83-ca05d351dffa": {
@@ -1326,7 +1327,8 @@
           "fullwidth": true,
           "use_box_layout": false,
           "fit_to_container": false,
-          "full_size_on_mobile": false
+          "full_size_on_mobile": false,
+          "custom-class": ""
         }
       }
     },
