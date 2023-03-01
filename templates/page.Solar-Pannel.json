@@ -286,10 +286,11 @@
         "2704bcaf-15b7-4883-ab75-f9de771b81a3": {
           "type": "slide",
           "settings": {
-            "title": "",
+            "title": "Investment",
             "Tab-heading": "",
-            "tab-discription": "",
-            "tab-calculator": ""
+            "tab-discription": "<p>Become 100% owner of the solar panels after 15 years.<\/p><p>On average, a solarpanel's lifespan is between 25 and 30 years<\/p>",
+            "tab-calculator": "",
+            "image": "shopify:\/\/shop_images\/investment.png"
           }
         }
       },
