@@ -445,6 +445,7 @@
           "type": "slide",
           "settings": {
             "Title": "We",
+            "image": "shopify:\/\/shop_images\/installation.png",
             "task": "Task",
             "Day_": "xx",
             "description-title": "Install all the devices",
