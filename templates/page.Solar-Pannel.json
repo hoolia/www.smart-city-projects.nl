@@ -390,6 +390,23 @@
         "bottom_padding": false,
         "bottom_border": false
       }
+    },
+    "c082a15f-ae88-422b-8d7e-6b4afbbc7876": {
+      "type": "contact-page",
+      "custom_css": [
+        "h1 {color: #42db44; display: flex; justify-content: center; font-weight: bold; font-size: 4rem;}",
+        "fieldset {max-width: 600px; margin: 0 auto;}",
+        ".buttons {display: flex; justify-content: center;}",
+        ".form-success {color: #42db44;}",
+        "label {font-weight: bold; color: #42db44;}"
+      ],
+      "settings": {
+        "show_map": false,
+        "map_code": "",
+        "show_content": true,
+        "accept_check_enable": false,
+        "accept_text": ""
+      }
     }
   },
   "order": [
@@ -400,6 +417,7 @@
     "205da92b-694d-4732-ab1e-144c336938be",
     "048fc042-f3b5-4be5-9206-822bfa07b88d",
     "6dd25c35-d299-49e8-8acf-9ff2f487c7ab",
-    "1af9d9b3-49a6-4ba9-848e-e5e2e0226b6b"
+    "1af9d9b3-49a6-4ba9-848e-e5e2e0226b6b",
+    "c082a15f-ae88-422b-8d7e-6b4afbbc7876"
   ]
 }
