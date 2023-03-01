@@ -131,10 +131,11 @@
         "template--18158340079918__205da92b-694d-4732-ab1e-144c336938be-1677684144fc3a088d-1": {
           "type": "box",
           "settings": {
+            "image": "shopify:\/\/shop_images\/cost.png",
             "use_feature_service_icon": false,
-            "feature_service_icon": "fa-shopping-bag",
-            "feature_service_title": "",
-            "feature_service_description": ""
+            "feature_service_icon": "Gas is a finite resource, and increasing reliance on it could contribute to energy insecurity and price volatility in the long term.",
+            "feature_service_title": "cost",
+            "feature_service_description": "Natural gas prices become more volatile, because of various geopolitical, economic, and social changes that the world is experiencing."
           }
         },
         "6eb2a636-56d1-47e9-a551-4650e9f8f6dc": {
