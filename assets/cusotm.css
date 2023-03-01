@@ -521,6 +521,24 @@ section.cd-faq {
 }
 
 @media(max-width: 1200px){
+
+/*  1 march 2023 */
+
+.mobile-menu .ul-top-items {
+    width: 100vw !important;
+    height: 100vh !important;
+    border-radius: 0 !important;
+    min-width: 100% !important;
+    top: 16rem !important;
+    margin-top: -2px!important;
+    margin-left: -6rem !important;
+}
+.header-inner.fix.whiteHeader .container-inner .box.box-left {
+    position: relative;
+}
+  
+
+  
   .banner7-content .container .text-content {
     top: 40%!important;
 }
@@ -536,6 +554,10 @@ section.cd-faq {
       line-height: 44px;
     font-size:34px;
   }
+
+
+
+  
 }
 
 @media(max-width: 768px){
@@ -547,10 +569,6 @@ section.cd-faq {
     position: relative;
 /*          position: absolute; */
 }
-
-
-
-  
   .banner7-content .banner7-des p {
     line-height: 22px;
   }
