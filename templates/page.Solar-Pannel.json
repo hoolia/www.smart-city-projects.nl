@@ -501,8 +501,9 @@
         "ddbd999d-9fcd-4a28-89cc-781be423cb17": {
           "type": "testimonial",
           "settings": {
-            "title": "",
-            "description": "",
+            "image": "shopify:\/\/shop_images\/inexhaustible-energy.png",
+            "title": "Inexhaustible energy",
+            "description": "Renewable energy has been proven time and again to be capable of meeting a significant portion of future electricity demands, even with potential limitations taken into account.",
             "author": ""
           }
         },
