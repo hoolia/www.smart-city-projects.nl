@@ -531,12 +531,12 @@ section.cd-faq {
     min-width: 100% !important;
     top: 16rem !important;
     margin-top: -2px!important;
-    margin-left: -3rem !important;
+    margin-left: -3`rem !important;
 }
 .header-inner.fix.whiteHeader .container-inner .box.box-left {
     position: relative;
 }
-  
+
 
 
 
@@ -563,6 +563,18 @@ section.cd-faq {
 
   
 }
+
+  @media (max-width: 991px){
+.mobile-menu .ul-top-items {
+    width: 100vw !important;
+    height: 100vh !important;
+    border-radius: 0 !important;
+    min-width: 100% !important;
+    top: 22vh !important;
+    margin-left: -1.5rem !important;
+}
+
+  }
 
 @media(max-width: 768px){
    .header-inner .container-inner .box.box-left {
