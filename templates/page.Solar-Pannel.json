@@ -476,6 +476,77 @@
       ],
       "settings": {
       }
+    },
+    "a3dd625e-6719-44ac-9932-5072adaf4548": {
+      "type": "testimonial",
+      "blocks": {
+        "template--18158340079918__a3dd625e-6719-44ac-9932-5072adaf4548-167768756570075d21-0": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/global-warming.png",
+            "title": "Global Warming Reduction",
+            "description": "With minimal emissions, renewable energy sources offer a solution to reducing global warming. By augmenting their supply, we can substitute carbon-intensive sources and greatly decrease emissions.",
+            "author": ""
+          }
+        },
+        "template--18158340079918__a3dd625e-6719-44ac-9932-5072adaf4548-167768756570075d21-1": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "description": "",
+            "author": ""
+          }
+        },
+        "ddbd999d-9fcd-4a28-89cc-781be423cb17": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "description": "",
+            "author": ""
+          }
+        },
+        "524e5c54-b2da-4799-b0c3-f2309593db5f": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "description": "",
+            "author": ""
+          }
+        },
+        "9e09618a-bfa0-4e2a-acc7-337336239985": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "description": "",
+            "author": ""
+          }
+        },
+        "270bba07-cb0c-47bc-9341-241453a11dae": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "description": "",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18158340079918__a3dd625e-6719-44ac-9932-5072adaf4548-167768756570075d21-0",
+        "template--18158340079918__a3dd625e-6719-44ac-9932-5072adaf4548-167768756570075d21-1",
+        "ddbd999d-9fcd-4a28-89cc-781be423cb17",
+        "524e5c54-b2da-4799-b0c3-f2309593db5f",
+        "9e09618a-bfa0-4e2a-acc7-337336239985",
+        "270bba07-cb0c-47bc-9341-241453a11dae"
+      ],
+      "settings": {
+        "layout": "testimonials-custom",
+        "heading": "Additional Advantages",
+        "description": "Some other public and financial advantages",
+        "fullwidth": true,
+        "background": true,
+        "background_color": "#ffffff",
+        "top_margin": false
+      }
     }
   },
   "order": [
@@ -488,6 +559,7 @@
     "6dd25c35-d299-49e8-8acf-9ff2f487c7ab",
     "1af9d9b3-49a6-4ba9-848e-e5e2e0226b6b",
     "c082a15f-ae88-422b-8d7e-6b4afbbc7876",
-    "1330d087-5e19-414a-9ac3-2ff145d1a5f2"
+    "1330d087-5e19-414a-9ac3-2ff145d1a5f2",
+    "a3dd625e-6719-44ac-9932-5072adaf4548"
   ]
 }
