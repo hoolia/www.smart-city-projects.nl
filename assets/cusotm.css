@@ -455,6 +455,10 @@ body {
 .header-inner.fix ul.ul-top-items {
     display: none !important;
 }
+.hd5 .fix-header #oc-menu-mheader .oc-menu-bar {
+    color: green !important;
+    filter: unset;
+}
 /* Faq  */
 section.cd-faq {
     width: 80%;
