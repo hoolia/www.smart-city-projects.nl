@@ -565,7 +565,7 @@ section.cd-faq {
 }
 
   @media (max-width: 991px){
-    .header-inner.fix.whiteHeader {
+ .common-home .header-inner.fix.fix-header{
     margin-top: 0;
 }
 .mobile-menu .ul-top-items {
