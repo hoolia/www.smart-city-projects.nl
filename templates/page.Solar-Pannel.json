@@ -407,6 +407,70 @@
         "accept_check_enable": false,
         "accept_text": ""
       }
+    },
+    "1330d087-5e19-414a-9ac3-2ff145d1a5f2": {
+      "type": "TimeLine-list",
+      "blocks": {
+        "c449a784-55fd-4731-80ff-5e2ba657f847": {
+          "type": "slide",
+          "settings": {
+            "Title": "We",
+            "task": "TASK",
+            "Day_": "02",
+            "description-title": "Manage the Project",
+            "description": "We take care of the entire project, from A to Z, ensuring a seamless process for you."
+          }
+        },
+        "c979d1f7-c2cb-4edd-925f-0141bbc158dc": {
+          "type": "slide",
+          "settings": {
+            "Title": "We",
+            "task": "Task",
+            "Day_": "o3",
+            "description-title": "Manage the subsidies",
+            "description": "We are in charge of all the necessary paperwork and processes to obtain subsidies, including the SDE++ aid provided by the Dutch government, to help maximize your financial benefits."
+          }
+        },
+        "dd4fc0bf-f99a-40c9-a4a0-023f6afae647": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "task": "",
+            "Day_": "",
+            "description-title": "",
+            "description": ""
+          }
+        },
+        "d39cb51f-a071-46fe-a2d5-642dc21b6a88": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "task": "",
+            "Day_": "",
+            "description-title": "",
+            "description": ""
+          }
+        },
+        "07c9c66c-7e32-41c0-9229-68d11ea9ab03": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "task": "",
+            "Day_": "",
+            "description-title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "c449a784-55fd-4731-80ff-5e2ba657f847",
+        "c979d1f7-c2cb-4edd-925f-0141bbc158dc",
+        "dd4fc0bf-f99a-40c9-a4a0-023f6afae647",
+        "d39cb51f-a071-46fe-a2d5-642dc21b6a88",
+        "07c9c66c-7e32-41c0-9229-68d11ea9ab03"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -418,6 +482,7 @@
     "048fc042-f3b5-4be5-9206-822bfa07b88d",
     "6dd25c35-d299-49e8-8acf-9ff2f487c7ab",
     "1af9d9b3-49a6-4ba9-848e-e5e2e0226b6b",
-    "c082a15f-ae88-422b-8d7e-6b4afbbc7876"
+    "c082a15f-ae88-422b-8d7e-6b4afbbc7876",
+    "1330d087-5e19-414a-9ac3-2ff145d1a5f2"
   ]
 }
