@@ -447,7 +447,7 @@ body {
 }
 }
 
-
+@media only screen and (max-width: 1200px) {
 
 .header-inner.fix.whiteHeader ul.ul-top-items {
     display: block !important;
@@ -458,6 +458,7 @@ body {
 .hd5 .fix-header #oc-menu-mheader .oc-menu-bar {
     color: green !important;
     filter: unset;
+}
 }
 /* Faq  */
 section.cd-faq {
