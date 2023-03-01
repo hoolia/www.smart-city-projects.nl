@@ -347,6 +347,15 @@
         "27d813f5-29a8-4259-827c-570aa95ee445": {
           "type": "feature",
           "settings": {
+            "use_feature_icon": true,
+            "feature_icon": "fa-fire",
+            "text1": "Heat Consumer",
+            "text2": "We sell our recycled heat to local businesses for the lowest market price guaranteed: <b>€ 1,-\/m3<\/b>.<br> <button class=\"button button-cart btn\" style=\"clear:none;\" type=\"button\" data-loading-text=\"Loading...\" onclick=\"cart.add('43759081718062',1,true);\">I want to Buy<\/button>"
+          }
+        },
+        "99002476-d38e-4234-bb60-0ada38b7b110": {
+          "type": "feature",
+          "settings": {
             "use_feature_icon": false,
             "feature_icon": "fa-shopping-bag",
             "text1": "",
@@ -359,7 +368,8 @@
         "template--18158340079918__1af9d9b3-49a6-4ba9-848e-e5e2e0226b6b-1677686451bf8673e2-1",
         "df544180-8f60-4e30-b6df-5f5e9dad539c",
         "a00933c8-752f-4412-a455-3d67be4111d7",
-        "27d813f5-29a8-4259-827c-570aa95ee445"
+        "27d813f5-29a8-4259-827c-570aa95ee445",
+        "99002476-d38e-4234-bb60-0ada38b7b110"
       ],
       "custom_css": [
         ".icon-image {background-color: white;}"
