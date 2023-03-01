@@ -523,11 +523,7 @@ section.cd-faq {
 @media(max-width: 1200px){
 
 /*  1 march 2023 */
-.mobile-menu .ul-top-items {
-  display: unset;
 
-
-}
 .mobile-menu .ul-top-items {
     width: 100vw !important;
     height: 100vh !important;
