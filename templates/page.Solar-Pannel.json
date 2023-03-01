@@ -249,6 +249,57 @@
         "heading": "The Installation",
         "description": "The material that makes the magic happen"
       }
+    },
+    "6dd25c35-d299-49e8-8acf-9ff2f487c7ab": {
+      "type": "Tabs-Section",
+      "blocks": {
+        "ab05c927-9744-4afd-80d9-d2e8b87dd330": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "Tab-heading": "",
+            "tab-discription": "",
+            "tab-calculator": ""
+          }
+        },
+        "6c33b5bc-6688-4e4d-9947-ab12e9b4dd63": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "Tab-heading": "",
+            "tab-discription": "",
+            "tab-calculator": ""
+          }
+        },
+        "b3c13d52-686a-40cb-b2d8-a5e064dcf21d": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "Tab-heading": "",
+            "tab-discription": "",
+            "tab-calculator": ""
+          }
+        },
+        "2704bcaf-15b7-4883-ab75-f9de771b81a3": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "Tab-heading": "",
+            "tab-discription": "",
+            "tab-calculator": ""
+          }
+        }
+      },
+      "block_order": [
+        "ab05c927-9744-4afd-80d9-d2e8b87dd330",
+        "6c33b5bc-6688-4e4d-9947-ab12e9b4dd63",
+        "b3c13d52-686a-40cb-b2d8-a5e064dcf21d",
+        "2704bcaf-15b7-4883-ab75-f9de771b81a3"
+      ],
+      "settings": {
+        "heading": "The Financial Benefits",
+        "description": "Here is what to expect with our solution"
+      }
     }
   },
   "order": [
@@ -257,6 +308,7 @@
     "37542373-1f71-4f73-9b15-432cb8461519",
     "67f14f1c-701f-4b8d-86c7-fd5a218b04a0",
     "205da92b-694d-4732-ab1e-144c336938be",
-    "048fc042-f3b5-4be5-9206-822bfa07b88d"
+    "048fc042-f3b5-4be5-9206-822bfa07b88d",
+    "6dd25c35-d299-49e8-8acf-9ff2f487c7ab"
   ]
 }
