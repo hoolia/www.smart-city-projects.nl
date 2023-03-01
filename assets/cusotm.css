@@ -449,7 +449,12 @@ body {
 
 
 
-
+.header-inner.fix.whiteHeader ul.ul-top-items {
+    display: unset;
+}
+.header-inner.fix ul.ul-top-items {
+    display: none;
+}
 /* Faq  */
 section.cd-faq {
     width: 80%;
