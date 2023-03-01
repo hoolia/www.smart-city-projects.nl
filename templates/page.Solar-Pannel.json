@@ -492,8 +492,9 @@
         "template--18158340079918__a3dd625e-6719-44ac-9932-5072adaf4548-167768756570075d21-1": {
           "type": "testimonial",
           "settings": {
-            "title": "",
-            "description": "",
+            "image": "shopify:\/\/shop_images\/care.png",
+            "title": "Improved public health",
+            "description": "Air and water pollution, the root cause of many health issues, are non-existent with clean energy technologies. These technologies have been estimated to save public health costs of $74.6 billion annually.",
             "author": ""
           }
         },
