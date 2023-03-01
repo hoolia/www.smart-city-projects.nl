@@ -453,7 +453,7 @@ body {
     display: block !important;
 }
 .header-inner.fix ul.ul-top-items {
-    display: none;
+    display: none !important;
 }
 /* Faq  */
 section.cd-faq {
