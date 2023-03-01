@@ -215,8 +215,9 @@
         "c3be1178-ea6c-4566-9ea5-aecf0de8bca1": {
           "type": "slide",
           "settings": {
-            "Title": "",
-            "discription": ""
+            "image": "shopify:\/\/shop_images\/container.png",
+            "Title": "Containers",
+            "discription": "<p>Some buildings owners may not have the chance to have our datacenter incorporated directly into their offices. That's why we developed a solution. With our external containers, we offer the opportunity to profit of our energy without allocating any space inside the building.<\/p>"
           }
         },
         "df7923ec-cf33-4be7-a26c-75171be34563": {
