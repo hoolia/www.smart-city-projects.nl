@@ -565,6 +565,9 @@ section.cd-faq {
 }
 
   @media (max-width: 991px){
+    .header-inner.fix.whiteHeader {
+    margin-top: 0;
+}
 .mobile-menu .ul-top-items {
     width: 100vw !important;
     height: 100vh !important;
