@@ -415,6 +415,7 @@
           "type": "slide",
           "settings": {
             "Title": "We",
+            "image": "shopify:\/\/shop_images\/project-management.png",
             "task": "TASK",
             "Day_": "02",
             "description-title": "Manage the Project",
@@ -425,6 +426,7 @@
           "type": "slide",
           "settings": {
             "Title": "We",
+            "image": "shopify:\/\/shop_images\/subsidies.png",
             "task": "Task",
             "Day_": "o3",
             "description-title": "Manage the subsidies",
