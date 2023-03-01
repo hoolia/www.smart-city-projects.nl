@@ -69,17 +69,17 @@
             "animation_style": "slider-1",
             "heading": "",
             "heading_size": "18px",
-            "heading_color": "#fff",
+            "heading_color": "#ffffff",
             "subheading": "",
             "subheading_size": "90px",
-            "subheading_color": "#fff",
+            "subheading_color": "#ffffff",
             "description": "",
             "description_size": "16px",
-            "description_color": "#fff",
+            "description_color": "#ffffff",
             "slide_link_text": "",
             "slide_link": "",
-            "link_bg": "#000",
-            "link_color": "#fff",
+            "link_bg": "#000000",
+            "link_color": "#ffffff",
             "image_clickable": false,
             "top": "50%",
             "right": "0%",
@@ -256,10 +256,11 @@
         "ab05c927-9744-4afd-80d9-d2e8b87dd330": {
           "type": "slide",
           "settings": {
-            "title": "",
+            "title": "Rent",
             "Tab-heading": "",
-            "tab-discription": "",
-            "tab-calculator": ""
+            "tab-discription": "<p>We pay you rent for a corner of your utility room to setup our DataCenter Modules and rent for your roof to place solarpanels. The space you want to allocate for our system can be variable and adapted to your case.<\/p><p><\/p>",
+            "tab-calculator": "8StRWCmALjPHKQ3st",
+            "image": "shopify:\/\/shop_images\/rent_97f305f0-d5c3-49e7-9608-9a69b9cd3dbe.png"
           }
         },
         "6c33b5bc-6688-4e4d-9947-ab12e9b4dd63": {
