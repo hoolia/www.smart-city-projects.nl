@@ -157,23 +157,13 @@
             "feature_service_title": "Changing Plans",
             "feature_service_description": "The Dutch government aims to reduce CO2 emissions by a whopping 49\/ by 2030. Offsets are a cost and do not have a financial return on investment compared to other operational efficiencies such as on-site solar. which means the price of natural gas and electricity is likely to become more expensive."
           }
-        },
-        "26ecbe50-353f-4407-b3a6-b762f764658b": {
-          "type": "box",
-          "settings": {
-            "use_feature_service_icon": false,
-            "feature_service_icon": "fa-shopping-bag",
-            "feature_service_title": "",
-            "feature_service_description": ""
-          }
         }
       },
       "block_order": [
         "template--18158340079918__205da92b-694d-4732-ab1e-144c336938be-1677684144fc3a088d-0",
         "template--18158340079918__205da92b-694d-4732-ab1e-144c336938be-1677684144fc3a088d-1",
         "6eb2a636-56d1-47e9-a551-4650e9f8f6dc",
-        "3a004958-73b8-4871-abfe-e2f8e503a5f0",
-        "26ecbe50-353f-4407-b3a6-b762f764658b"
+        "3a004958-73b8-4871-abfe-e2f8e503a5f0"
       ],
       "settings": {
         "layout": "feature-service-custom",
@@ -186,6 +176,74 @@
         "background_color": "#43db44",
         "bottom_border": false
       }
+    },
+    "048fc042-f3b5-4be5-9206-822bfa07b88d": {
+      "type": "custom-slider",
+      "blocks": {
+        "b3750c85-4a04-4687-9e0b-55a61abd6f9a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/solar.png",
+            "Title": "Solar panels",
+            "discription": "<p>TOur last generation solar panels that are installed on the roof of the building drastically reduce energy costs, as they can generate electricity during peak demand periods. They are relatively low maintenance, as they do not require any moving parts and have a long lifespan. Also, They can be easily integrated with other renewable energy sources, such as wind and hydropower, to create a more robust and reliable energy system.he material that makes the magic happen<\/p>"
+          }
+        },
+        "ef9dc4f3-4399-4a0b-9720-4f5a9b6c1f19": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "1a73c71a-2a77-47bd-820d-8fc08c31f2b8": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "0bfece5a-0385-4fd2-9701-518f3511f21b": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "c3be1178-ea6c-4566-9ea5-aecf0de8bca1": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "df7923ec-cf33-4be7-a26c-75171be34563": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "3bb55200-d3d5-4cf1-9e45-80730160bf4c": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        }
+      },
+      "block_order": [
+        "b3750c85-4a04-4687-9e0b-55a61abd6f9a",
+        "ef9dc4f3-4399-4a0b-9720-4f5a9b6c1f19",
+        "1a73c71a-2a77-47bd-820d-8fc08c31f2b8",
+        "0bfece5a-0385-4fd2-9701-518f3511f21b",
+        "c3be1178-ea6c-4566-9ea5-aecf0de8bca1",
+        "df7923ec-cf33-4be7-a26c-75171be34563",
+        "3bb55200-d3d5-4cf1-9e45-80730160bf4c"
+      ],
+      "settings": {
+        "heading": "The Installation",
+        "description": "The material that makes the magic happen"
+      }
     }
   },
   "order": [
@@ -193,6 +251,7 @@
     "6a644425-cbb4-4dff-b291-8e11f1793fae",
     "37542373-1f71-4f73-9b15-432cb8461519",
     "67f14f1c-701f-4b8d-86c7-fd5a218b04a0",
-    "205da92b-694d-4732-ab1e-144c336938be"
+    "205da92b-694d-4732-ab1e-144c336938be",
+    "048fc042-f3b5-4be5-9206-822bfa07b88d"
   ]
 }
