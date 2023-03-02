@@ -155,10 +155,11 @@
         "9bc23628-0f2c-43e7-b2b4-21aaf5b2244b": {
           "type": "box",
           "settings": {
+            "image": "shopify:\/\/shop_images\/reputation.png",
             "use_feature_service_icon": false,
-            "feature_service_icon": "fa-shopping-bag",
-            "feature_service_title": "",
-            "feature_service_description": ""
+            "feature_service_icon": "fa-star",
+            "feature_service_title": "Reputation",
+            "feature_service_description": "Companies that use natural gas may be perceived as contributing to environmental and climate change in comparison with companies that use green energy and that add value and create a good reputation among rivals."
           }
         },
         "fd409ec8-f5ce-430b-8e85-650d90d9146a": {
