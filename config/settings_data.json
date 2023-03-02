@@ -1337,8 +1337,8 @@
           "d6bbb6a4-2a04-4cb4-ac12-49c6f22e68ce": {
             "type": "Menu",
             "settings": {
-              "custm-width": 100,
-              "bg": "#30bf32",
+              "custm-width": 20,
+              "bg": "#cccccc",
               "hover-bg": "#cccccc",
               "clr": "#d13434",
               "title": "All Products",
