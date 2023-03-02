@@ -370,10 +370,10 @@
         "3ffa1309-544a-4361-a95f-ddddf037c347": {
           "type": "feature",
           "settings": {
-            "use_feature_icon": false,
-            "feature_icon": "fa-shopping-bag",
-            "text1": "",
-            "text2": ""
+            "use_feature_icon": true,
+            "feature_icon": "fa-landmark",
+            "text1": "Government",
+            "text2": "The government will guarantee a success by guaranteeing a selling price of <b>€ 0,10\/kWh<\/b> guaranteed for 15 years."
           }
         }
       },
