@@ -524,8 +524,9 @@
         "7d1e34f0-f0ed-40d1-a54c-7a0710d301d5": {
           "type": "testimonial",
           "settings": {
-            "title": "",
-            "description": "",
+            "image": "shopify:\/\/shop_images\/jobs.png",
+            "title": "Jobs and other economic benefits",
+            "description": "Renewable energy sources generate more jobs per unit of electricity compared to fossil fuels. Furthermore, the expansion of clean energy can also have positive economic “ripple” effects.",
             "author": ""
           }
         },
