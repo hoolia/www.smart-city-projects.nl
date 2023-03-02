@@ -542,8 +542,9 @@
         "ee5cfb8b-0974-47f3-887c-cac79775acb9": {
           "type": "testimonial",
           "settings": {
-            "title": "",
-            "description": "",
+            "image": "shopify:\/\/shop_images\/money-time.png",
+            "title": "Stable energy prices",
+            "description": "Initial investments are necessary to construct renewable facilities, but once in operation, they have low ongoing costs, resulting in stable energy prices over time compared to fossil energy prices.",
             "author": ""
           }
         }
