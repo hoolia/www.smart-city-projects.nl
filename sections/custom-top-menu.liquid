@@ -29,17 +29,7 @@
                     <a  class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
                       {{ child_link.title }}
                     </a>
-                    {% if child_link.links != blank %}
-                      <ul>
-                        {% for grandchild_link in child_link.links %}
-                          <li>
-                            <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
-                              {{ grandchild_link.title }}
-                            </a>
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    {% endif %}
+
                   </li>
                 {% endfor %}
 
