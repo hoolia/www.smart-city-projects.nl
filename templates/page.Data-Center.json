@@ -266,6 +266,51 @@
     },
     "b053ae8b-c9db-4af1-9495-fac05e64a0f1": {
       "type": "Tabs-Section",
+      "blocks": {
+        "33124c0d-1759-4a06-88fe-abb332da33f3": {
+          "type": "slide",
+          "settings": {
+            "title": "Rant",
+            "Tab-heading": "",
+            "tab-discription": "<p>We pay you rent for a corner of your utility room to setup our DataCenter Modules and rent for your roof to place solarpanels. The space you want to allocate for our system can be variable and adapted to your case.<\/p><p><\/p>",
+            "tab-calculator": "",
+            "image": "shopify:\/\/shop_images\/rent_97f305f0-d5c3-49e7-9608-9a69b9cd3dbe.png"
+          }
+        },
+        "366b1786-5bee-4c62-be27-bf1ec0fe6bcc": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "Tab-heading": "",
+            "tab-discription": "",
+            "tab-calculator": ""
+          }
+        },
+        "f7b2944f-07b0-4752-9ad4-e92235b4690c": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "Tab-heading": "",
+            "tab-discription": "",
+            "tab-calculator": ""
+          }
+        },
+        "20318778-0b91-4658-a30f-5aa2877468e3": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "Tab-heading": "",
+            "tab-discription": "",
+            "tab-calculator": ""
+          }
+        }
+      },
+      "block_order": [
+        "33124c0d-1759-4a06-88fe-abb332da33f3",
+        "366b1786-5bee-4c62-be27-bf1ec0fe6bcc",
+        "f7b2944f-07b0-4752-9ad4-e92235b4690c",
+        "20318778-0b91-4658-a30f-5aa2877468e3"
+      ],
       "settings": {
         "heading": "The Financial Benefits",
         "description": "Here is what to expect with our solution"
