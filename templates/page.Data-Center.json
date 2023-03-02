@@ -128,12 +128,72 @@
         "sub-heading": "Revolutionizing the industry with its \"Distributed DataCenter\" based on 100% renewable energy!",
         "content": "<p>With our deepest belief in the concept of circular economy, we have generated a brilliant idea:<br\/>Repurpose waste heat from DataCenters to heat Office Buildings, by bringing small “DataCenter modules” running on 100% pure Green Renewable & Recycled Energy!<\/p><p> <\/p><p>Ending the cycle of Big Centralized DataCenter. It is time to create micro-grid communities and give power back to the people.<\/p><p> <\/p><p>Watch this video for more information.<\/p>"
       }
+    },
+    "3b061912-8385-4217-9b7c-ccceea8b3f9c": {
+      "type": "service-box",
+      "blocks": {
+        "template--18158520402222__3b061912-8385-4217-9b7c-ccceea8b3f9c-16777626979b2571f6-0": {
+          "type": "box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/book.png",
+            "use_feature_service_icon": false,
+            "feature_service_icon": "fa-oil-caan",
+            "feature_service_title": "Economical Risk",
+            "feature_service_description": "Gas is a finite resource, and increasing reliance on it could contribute to energy insecurity and price volatility in the long term."
+          }
+        },
+        "template--18158520402222__3b061912-8385-4217-9b7c-ccceea8b3f9c-16777626979b2571f6-1": {
+          "type": "box",
+          "settings": {
+            "use_feature_service_icon": false,
+            "feature_service_icon": "fa-shopping-bag",
+            "feature_service_title": "",
+            "feature_service_description": ""
+          }
+        },
+        "9bc23628-0f2c-43e7-b2b4-21aaf5b2244b": {
+          "type": "box",
+          "settings": {
+            "use_feature_service_icon": false,
+            "feature_service_icon": "fa-shopping-bag",
+            "feature_service_title": "",
+            "feature_service_description": ""
+          }
+        },
+        "fd409ec8-f5ce-430b-8e85-650d90d9146a": {
+          "type": "box",
+          "settings": {
+            "use_feature_service_icon": false,
+            "feature_service_icon": "fa-shopping-bag",
+            "feature_service_title": "",
+            "feature_service_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18158520402222__3b061912-8385-4217-9b7c-ccceea8b3f9c-16777626979b2571f6-0",
+        "template--18158520402222__3b061912-8385-4217-9b7c-ccceea8b3f9c-16777626979b2571f6-1",
+        "9bc23628-0f2c-43e7-b2b4-21aaf5b2244b",
+        "fd409ec8-f5ce-430b-8e85-650d90d9146a"
+      ],
+      "settings": {
+        "layout": "feature-service-custom",
+        "heading": "The reasons behind this idea",
+        "heading_color": "#ffffff",
+        "description": "",
+        "description_color": "#007501",
+        "fullwidth": true,
+        "background": true,
+        "background_color": "#43db44",
+        "bottom_border": false
+      }
     }
   },
   "order": [
     "main",
     "383de6f6-cfc3-410f-9492-cf4c384ee1e5",
     "d47fc383-51a6-4c5e-9596-3f6d3c4dd380",
-    "9d520113-c577-490d-8572-f4696732077d"
+    "9d520113-c577-490d-8572-f4696732077d",
+    "3b061912-8385-4217-9b7c-ccceea8b3f9c"
   ]
 }
