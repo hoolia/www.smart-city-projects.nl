@@ -197,8 +197,9 @@
         "6e2038ef-b6c2-4139-8004-42952cd11706": {
           "type": "slide",
           "settings": {
-            "Title": "",
-            "discription": ""
+            "image": "shopify:\/\/shop_images\/solar.png",
+            "Title": "Solar panels",
+            "discription": "<p>Our last generation solar panels that are installed on the roof of the building drastically reduce energy costs, as they can generate electricity during peak demand periods. They are relatively low maintenance, as they do not require any moving parts and have a long lifespan. Also, They can be easily integrated with other renewable energy sources, such as wind and hydropower, to create a more robust and reliable energy system.<\/p>"
           }
         },
         "ac554fed-249c-4111-839e-224705ef491c": {
