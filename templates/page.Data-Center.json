@@ -335,6 +335,71 @@
         "accept_check_enable": false,
         "accept_text": ""
       }
+    },
+    "c0f09147-5a33-4000-ada9-4bfc0e33018f": {
+      "type": "TimeLine-list",
+      "blocks": {
+        "2a996492-6785-4104-911f-2ed254f8dcf1": {
+          "type": "slide",
+          "settings": {
+            "Title": "We",
+            "image": "shopify:\/\/shop_images\/project-management.png",
+            "task": "TASK",
+            "Day_": "02",
+            "description-title": "Manage the Project",
+            "description": "We take care of the entire project, from A to Z, ensuring a seamless process for you."
+          }
+        },
+        "e7dad553-136e-4af8-9d2a-48af660a8c53": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "task": "",
+            "Day_": "",
+            "description-title": "",
+            "description": ""
+          }
+        },
+        "f9f91a08-9252-44d6-a167-0d80ecaf60e6": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "task": "",
+            "Day_": "",
+            "description-title": "",
+            "description": ""
+          }
+        },
+        "48d966b5-3c04-4071-9adc-b6fa53fbbe44": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "task": "",
+            "Day_": "",
+            "description-title": "",
+            "description": ""
+          }
+        },
+        "e6336767-a6e6-4924-91ab-a1926e22c75d": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "task": "",
+            "Day_": "",
+            "description-title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "2a996492-6785-4104-911f-2ed254f8dcf1",
+        "e7dad553-136e-4af8-9d2a-48af660a8c53",
+        "f9f91a08-9252-44d6-a167-0d80ecaf60e6",
+        "48d966b5-3c04-4071-9adc-b6fa53fbbe44",
+        "e6336767-a6e6-4924-91ab-a1926e22c75d"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -345,6 +410,7 @@
     "3b061912-8385-4217-9b7c-ccceea8b3f9c",
     "f2b41e72-d3f7-437c-8372-855712a6cae8",
     "b053ae8b-c9db-4af1-9495-fac05e64a0f1",
-    "e638511f-02b9-4e22-a70d-554be875b65d"
+    "e638511f-02b9-4e22-a70d-554be875b65d",
+    "c0f09147-5a33-4000-ada9-4bfc0e33018f"
   ]
 }
