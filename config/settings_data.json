@@ -1330,6 +1330,27 @@
           "full_size_on_mobile": false,
           "custom-class": ""
         }
+      },
+      "custom-top-menu": {
+        "type": "custom-top-menu",
+        "blocks": {
+          "d6bbb6a4-2a04-4cb4-ac12-49c6f22e68ce": {
+            "type": "Menu",
+            "settings": {
+              "custm-width": 100,
+              "bg": "#30bf32",
+              "hover-bg": "#cccccc",
+              "clr": "#fff",
+              "title": "",
+              "mega_menu": ""
+            }
+          }
+        },
+        "block_order": [
+          "d6bbb6a4-2a04-4cb4-ac12-49c6f22e68ce"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
