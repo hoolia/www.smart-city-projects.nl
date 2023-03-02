@@ -119,6 +119,8 @@
     "9d520113-c577-490d-8572-f4696732077d": {
       "type": "image-with-text",
       "settings": {
+        "Image-left": "shopify:\/\/shop_images\/bg_green_building.jpg",
+        "Video-Image": "shopify:\/\/shop_images\/hoolia-video.png",
         "video_type": "Youtube-Vimeo",
         "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5aed5792501e4b989ae9cf5d2def8856.mp4",
         "video_url": "https:\/\/youtu.be\/vtdd1W9hT8s",
