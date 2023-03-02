@@ -1341,8 +1341,8 @@
               "bg": "#30bf32",
               "hover-bg": "#cccccc",
               "clr": "#fff",
-              "title": "",
-              "mega_menu": ""
+              "title": "All Products",
+              "mega_menu": "side-menu"
             }
           }
         },
