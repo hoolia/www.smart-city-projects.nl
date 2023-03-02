@@ -364,11 +364,12 @@
         "f9f91a08-9252-44d6-a167-0d80ecaf60e6": {
           "type": "slide",
           "settings": {
-            "Title": "",
-            "task": "",
-            "Day_": "",
-            "description-title": "",
-            "description": ""
+            "Title": "We",
+            "image": "shopify:\/\/shop_images\/contract.png",
+            "task": "Task",
+            "Day_": "xx",
+            "description-title": "Prepare the legal contracts",
+            "description": "We are in charge of all the necessary legal contracts and documentation for the installation of solar panels and machines, as well as renting of the roof, to ensure compliance with regulations."
           }
         },
         "48d966b5-3c04-4071-9adc-b6fa53fbbe44": {
