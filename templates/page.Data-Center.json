@@ -166,7 +166,7 @@
           "type": "box",
           "settings": {
             "image": "shopify:\/\/shop_images\/changing.png",
-            "use_feature_service_icon": true,
+            "use_feature_service_icon": false,
             "feature_service_icon": "fa-leaf",
             "feature_service_title": "Changing Plans",
             "feature_service_description": "The Dutch government aims to reduce CO2 emissions by a whopping 49\/ by 2030. Offsets are a cost and do not have a financial return on investment compared to other operational efficiencies such as on-site solar. which means the price of natural gas and electricity is likely to become more expensive."
