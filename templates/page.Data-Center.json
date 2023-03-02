@@ -205,15 +205,17 @@
         "ac554fed-249c-4111-839e-224705ef491c": {
           "type": "slide",
           "settings": {
-            "Title": "",
-            "discription": ""
+            "image": "shopify:\/\/shop_images\/poly.png",
+            "Title": "Pylontech Batteries",
+            "discription": "<p>Our last generation batteries system are modular in design, which enables us to \"rack and stack\" them in order to scale the nominal capacity of the solar energy storage system.<\/p><p><br\/>At 24 kg and 19\", these batteries are smaller than the average solar battery in the market, which makes them easy to install and move.<\/p>"
           }
         },
         "29faebe2-9ac0-4600-b4d7-f930943766b0": {
           "type": "slide",
           "settings": {
-            "Title": "",
-            "discription": ""
+            "image": "shopify:\/\/shop_images\/valliant.png",
+            "Title": "Vaillant allSTOR system",
+            "discription": "<p>This multi-function buffer tank gives the possibility to accumulate and distribute any form of heating energy in an entire building. Made of steel with special coating. that makes it resistant to rust.<br\/>It is an easy plug-in installation that can connect to different types of input and output sources.<\/p>"
           }
         },
         "fc2b2fa0-6806-4aaf-9fd0-d4ab47b9fe7d": {
