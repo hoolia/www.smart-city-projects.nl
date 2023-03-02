@@ -190,6 +190,65 @@
         "background_color": "#43db44",
         "bottom_border": false
       }
+    },
+    "f2b41e72-d3f7-437c-8372-855712a6cae8": {
+      "type": "custom-slider",
+      "blocks": {
+        "6e2038ef-b6c2-4139-8004-42952cd11706": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "ac554fed-249c-4111-839e-224705ef491c": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "29faebe2-9ac0-4600-b4d7-f930943766b0": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "fc2b2fa0-6806-4aaf-9fd0-d4ab47b9fe7d": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "3baba639-a95c-4c06-a08b-c23647d36dcb": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        },
+        "1485ef15-93e4-4e26-aea1-d315e5cfb69f": {
+          "type": "slide",
+          "settings": {
+            "Title": "",
+            "discription": ""
+          }
+        }
+      },
+      "block_order": [
+        "6e2038ef-b6c2-4139-8004-42952cd11706",
+        "ac554fed-249c-4111-839e-224705ef491c",
+        "29faebe2-9ac0-4600-b4d7-f930943766b0",
+        "fc2b2fa0-6806-4aaf-9fd0-d4ab47b9fe7d",
+        "3baba639-a95c-4c06-a08b-c23647d36dcb",
+        "1485ef15-93e4-4e26-aea1-d315e5cfb69f"
+      ],
+      "settings": {
+        "heading": "The Installation",
+        "description": "The material that makes the magic happen"
+      }
     }
   },
   "order": [
@@ -197,6 +256,7 @@
     "383de6f6-cfc3-410f-9492-cf4c384ee1e5",
     "d47fc383-51a6-4c5e-9596-3f6d3c4dd380",
     "9d520113-c577-490d-8572-f4696732077d",
-    "3b061912-8385-4217-9b7c-ccceea8b3f9c"
+    "3b061912-8385-4217-9b7c-ccceea8b3f9c",
+    "f2b41e72-d3f7-437c-8372-855712a6cae8"
   ]
 }
