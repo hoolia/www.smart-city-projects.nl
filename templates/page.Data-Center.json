@@ -318,6 +318,23 @@
         "heading": "The Financial Benefits",
         "description": "Here is what to expect with our solution"
       }
+    },
+    "e638511f-02b9-4e22-a70d-554be875b65d": {
+      "type": "contact-page",
+      "custom_css": [
+        "h1 {color: #42db44; display: flex; justify-content: center; font-weight: bold; font-size: 4rem;}",
+        "fieldset {max-width: 600px; margin: 0 auto;}",
+        ".buttons {display: flex; justify-content: center;}",
+        ".form-success {color: #42db44;}",
+        "label {font-weight: bold; color: #42db44;}"
+      ],
+      "settings": {
+        "show_map": true,
+        "map_code": "",
+        "show_content": true,
+        "accept_check_enable": false,
+        "accept_text": ""
+      }
     }
   },
   "order": [
@@ -327,6 +344,7 @@
     "9d520113-c577-490d-8572-f4696732077d",
     "3b061912-8385-4217-9b7c-ccceea8b3f9c",
     "f2b41e72-d3f7-437c-8372-855712a6cae8",
-    "b053ae8b-c9db-4af1-9495-fac05e64a0f1"
+    "b053ae8b-c9db-4af1-9495-fac05e64a0f1",
+    "e638511f-02b9-4e22-a70d-554be875b65d"
   ]
 }
