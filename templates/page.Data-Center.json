@@ -263,6 +263,13 @@
         "heading": "The Installation",
         "description": "The material that makes the magic happen"
       }
+    },
+    "b053ae8b-c9db-4af1-9495-fac05e64a0f1": {
+      "type": "Tabs-Section",
+      "settings": {
+        "heading": "The Financial Benefits",
+        "description": "Here is what to expect with our solution"
+      }
     }
   },
   "order": [
@@ -271,6 +278,7 @@
     "d47fc383-51a6-4c5e-9596-3f6d3c4dd380",
     "9d520113-c577-490d-8572-f4696732077d",
     "3b061912-8385-4217-9b7c-ccceea8b3f9c",
-    "f2b41e72-d3f7-437c-8372-855712a6cae8"
+    "f2b41e72-d3f7-437c-8372-855712a6cae8",
+    "b053ae8b-c9db-4af1-9495-fac05e64a0f1"
   ]
 }
