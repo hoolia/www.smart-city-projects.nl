@@ -634,7 +634,9 @@ section.cd-faq {
     justify-content: flex-end;
 }
  
- 
+ .header-inner.fix.fix-header {
+    z-index: 9999;
+}
 .mobile-menu .ul-top-items {
     width: 100vw;
     height: 100vh;
