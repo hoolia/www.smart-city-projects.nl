@@ -490,6 +490,76 @@
       ],
       "settings": {
       }
+    },
+    "34798dd0-af3a-4753-ae34-a7a937455c93": {
+      "type": "testimonial",
+      "blocks": {
+        "template--18158520402222__34798dd0-af3a-4753-ae34-a7a937455c93-167776766700e732f6-0": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "description": "",
+            "author": ""
+          }
+        },
+        "template--18158520402222__34798dd0-af3a-4753-ae34-a7a937455c93-167776766700e732f6-1": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "description": "",
+            "author": ""
+          }
+        },
+        "3d13cfa2-0e98-4b63-b821-6d27d3b1f089": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "description": "",
+            "author": ""
+          }
+        },
+        "7d1e34f0-f0ed-40d1-a54c-7a0710d301d5": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "description": "",
+            "author": ""
+          }
+        },
+        "5cfc943d-e7dd-474d-b26b-e82e64f505a6": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "description": "",
+            "author": ""
+          }
+        },
+        "ee5cfb8b-0974-47f3-887c-cac79775acb9": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "description": "",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18158520402222__34798dd0-af3a-4753-ae34-a7a937455c93-167776766700e732f6-0",
+        "template--18158520402222__34798dd0-af3a-4753-ae34-a7a937455c93-167776766700e732f6-1",
+        "3d13cfa2-0e98-4b63-b821-6d27d3b1f089",
+        "7d1e34f0-f0ed-40d1-a54c-7a0710d301d5",
+        "5cfc943d-e7dd-474d-b26b-e82e64f505a6",
+        "ee5cfb8b-0974-47f3-887c-cac79775acb9"
+      ],
+      "settings": {
+        "layout": "testimonials-custom",
+        "heading": "Additional Advantages",
+        "description": "Some other public and financial advantages",
+        "fullwidth": true,
+        "background": true,
+        "background_color": "#ffffff",
+        "top_margin": false
+      }
     }
   },
   "order": [
@@ -502,6 +572,7 @@
     "b053ae8b-c9db-4af1-9495-fac05e64a0f1",
     "70703c50-764e-4371-b34d-feeef61e868b",
     "e638511f-02b9-4e22-a70d-554be875b65d",
-    "c0f09147-5a33-4000-ada9-4bfc0e33018f"
+    "c0f09147-5a33-4000-ada9-4bfc0e33018f",
+    "34798dd0-af3a-4753-ae34-a7a937455c93"
   ]
 }
