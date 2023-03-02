@@ -497,8 +497,9 @@
         "template--18158520402222__34798dd0-af3a-4753-ae34-a7a937455c93-167776766700e732f6-0": {
           "type": "testimonial",
           "settings": {
-            "title": "",
-            "description": "",
+            "image": "shopify:\/\/shop_images\/global-warming.png",
+            "title": "Global Warming Reduction",
+            "description": "with minimal emissions,",
             "author": ""
           }
         },
