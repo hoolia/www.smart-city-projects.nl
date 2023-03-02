@@ -970,6 +970,16 @@
               "description-title": "Earn the benefits",
               "description": "You will enjoy the benefits of your new energy solution, including reduced energy costs and a more sustainable, environmentally-friendly way of generating energy."
             }
+          },
+          "7e63f5bb-de1f-41ec-b5f1-c3986b4178b7": {
+            "type": "slide",
+            "settings": {
+              "Title": "",
+              "task": "",
+              "Day_": "",
+              "description-title": "",
+              "description": ""
+            }
           }
         },
         "block_order": [
@@ -977,7 +987,8 @@
           "b18b8e89-31b2-4b7f-ae23-06e6bab5d9b1",
           "c26bf8d3-4fae-46ea-98df-0523e5d49ad8",
           "a1b1d056-e356-4b3c-bf1f-872b0cad9292",
-          "2b4d10ee-1b87-42f9-a8d5-beacafafd09b"
+          "2b4d10ee-1b87-42f9-a8d5-beacafafd09b",
+          "7e63f5bb-de1f-41ec-b5f1-c3986b4178b7"
         ],
         "settings": {
         }
