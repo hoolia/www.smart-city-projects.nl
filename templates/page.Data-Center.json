@@ -386,11 +386,12 @@
         "e6336767-a6e6-4924-91ab-a1926e22c75d": {
           "type": "slide",
           "settings": {
-            "Title": "",
-            "task": "",
-            "Day_": "",
-            "description-title": "",
-            "description": ""
+            "Title": "You",
+            "image": "shopify:\/\/shop_images\/icons8-euro-100.png",
+            "task": "task",
+            "Day_": "xx",
+            "description-title": "Earn the benefits",
+            "description": "You will enjoy the benefits of your new energy solution, including reduced energy costs and a more sustainable, environmentally-friendly way of generating energy."
           }
         }
       },
