@@ -502,9 +502,11 @@
     },
     "f2aa9f1d-924b-40b4-930a-1634a98bcac0": {
       "type": "slider",
+      "disabled": true,
       "blocks": {
         "template--18158520369454__f2aa9f1d-924b-40b4-930a-1634a98bcac0-1677594643f78eddad-0": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-11_at_19.33.52_2.jpg",
             "animation_style": "slider-1",
