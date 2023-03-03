@@ -30,7 +30,7 @@
               {% endcomment %}
                 {% for child_link in link.links %}
                  
-                  <li  >
+                  <li >
                     <a  class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
                       {{ child_link.title }}
                     </a>
@@ -293,5 +293,7 @@ ul.dropdown-content li:first-child {
 } */
 
 
-  
+  span.dropdown.cstm-width ul.dropdown-content {
+    display: block !important;
+}
 </style>
