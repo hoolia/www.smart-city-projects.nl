@@ -1,1 +1,116 @@
-{"sections":{"main":{"type":"product-page","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "product-page",
+      "settings": {
+        "product_page_layout": "horizontal_thumbs",
+        "show_zoom": true,
+        "enable_preload": false,
+        "show_summary": true,
+        "show_summary_stripped": true,
+        "product_summary_words": "30",
+        "product_vendor_enable": true,
+        "product_stock_enable": true,
+        "product_show_sku": true,
+        "product_show_barcode": false,
+        "show_variant_swatches": "color",
+        "product_quantity_enable": true,
+        "product_quantity_message": true,
+        "overwrite_addtocart_color": false,
+        "addtocart_color_text": "#454545",
+        "addtocart_color_bg": "#fff",
+        "show_buy_now": true,
+        "overwrite_buy_now_color": false,
+        "buy_now_color_text": "#454545",
+        "buy_now_color_bg": "#fff",
+        "show_tags_links": true,
+        "product_description_layout": "tab",
+        "show_description_tab": true,
+        "show_reviews_tab": true,
+        "show_third_tab": true,
+        "third_tab_title": "Custom Tab",
+        "third_tab_text": "You can add, text, html, images and videos as well to the tab from product settings area",
+        "show_tags_tab": true,
+        "custom_tab_title": "Additional Info",
+        "related_products_enable": true,
+        "recent_products_enable": true,
+        "product_grid_img_carousel": false,
+        "product_sharing_links": true,
+        "product_sticky_cart": true
+      }
+    },
+    "77ad2da1-44c6-434a-b873-3f0cf77c4772": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18146879537454__77ad2da1-44c6-434a-b873-3f0cf77c4772-1677843838f9d4a2e1-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-11_at_19.33.52_2.jpg",
+            "animation_style": "slider-1",
+            "heading": "",
+            "heading_size": "18px",
+            "heading_color": "#fff",
+            "subheading": "",
+            "subheading_size": "90px",
+            "subheading_color": "#fff",
+            "description": "",
+            "description_size": "16px",
+            "description_color": "#fff",
+            "slide_link_text": "",
+            "slide_link": "",
+            "link_bg": "#000",
+            "link_color": "#fff",
+            "image_clickable": false,
+            "top": "50%",
+            "right": "0%",
+            "left": "0%",
+            "width": "100%",
+            "float": "left"
+          }
+        },
+        "template--18146879537454__77ad2da1-44c6-434a-b873-3f0cf77c4772-1677843838f9d4a2e1-1": {
+          "type": "image",
+          "settings": {
+            "animation_style": "slider-1",
+            "heading": "",
+            "heading_size": "18px",
+            "heading_color": "#fff",
+            "subheading": "",
+            "subheading_size": "90px",
+            "subheading_color": "#fff",
+            "description": "",
+            "description_size": "16px",
+            "description_color": "#fff",
+            "slide_link_text": "",
+            "slide_link": "",
+            "link_bg": "#000",
+            "link_color": "#fff",
+            "image_clickable": false,
+            "top": "50%",
+            "right": "0%",
+            "left": "0%",
+            "width": "100%",
+            "float": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--18146879537454__77ad2da1-44c6-434a-b873-3f0cf77c4772-1677843838f9d4a2e1-0",
+        "template--18146879537454__77ad2da1-44c6-434a-b873-3f0cf77c4772-1677843838f9d4a2e1-1"
+      ],
+      "settings": {
+        "autoplay_speed": "5000",
+        "layout_slider": "slider-1",
+        "fullwidth": true,
+        "use_box_layout": false,
+        "fit_to_container": false,
+        "full_size_on_mobile": false,
+        "custom-class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "77ad2da1-44c6-434a-b873-3f0cf77c4772"
+  ]
+}
