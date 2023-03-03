@@ -9,36 +9,10 @@
     "2ae76537-6ea1-4b21-9738-ac75785b180b": {
       "type": "slideshow",
       "blocks": {
-        "template--18158520369454__2ae76537-6ea1-4b21-9738-ac75785b180b-1677596702529e5212-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-11_at_19.33.52_2.jpg",
-            "animation_style": "slider-1",
-            "heading": "",
-            "heading_size": "18px",
-            "heading_color": "#ffffff",
-            "subheading": "adsfasdf",
-            "subheading_size": "90px",
-            "subheading_color": "#ffffff",
-            "description": "asdfsdafsadf",
-            "description_size": "16px",
-            "description_color": "#ffffff",
-            "slide_link_text": "",
-            "slide_link": "",
-            "link_bg": "#000000",
-            "link_color": "#ffffff",
-            "image_clickable": false,
-            "top": "50%",
-            "right": "0%",
-            "left": "0%",
-            "width": "100%",
-            "float": "left"
-          }
-        },
         "template--18158520369454__2ae76537-6ea1-4b21-9738-ac75785b180b-1677596702529e5212-1": {
           "type": "image",
-          "disabled": true,
           "settings": {
+            "image": "shopify:\/\/shop_images\/subsidy.png",
             "animation_style": "slider-1",
             "heading": "",
             "heading_size": "18px",
@@ -63,7 +37,6 @@
         }
       },
       "block_order": [
-        "template--18158520369454__2ae76537-6ea1-4b21-9738-ac75785b180b-1677596702529e5212-0",
         "template--18158520369454__2ae76537-6ea1-4b21-9738-ac75785b180b-1677596702529e5212-1"
       ],
       "settings": {
