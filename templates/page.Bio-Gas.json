@@ -571,6 +571,7 @@
     },
     "6e550516-bb4f-406e-bf11-8f96bbdbcbe4": {
       "type": "slider",
+      "disabled": true,
       "blocks": {
         "template--18158520369454__6e550516-bb4f-406e-bf11-8f96bbdbcbe4-1677842482dcb6a205-0": {
           "type": "image",
