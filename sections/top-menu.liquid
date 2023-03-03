@@ -24,7 +24,7 @@
               
                   {% for collection in collections %}
                   {{- collection.title | link_to: collection.url }}
-                  {% paginate collection.products by 20 %}
+                  {% paginate collection.products by 100 %}
                   {% for product in collection.products %}
                    
                <a href="{{ product.url }}" class="top_menu">
