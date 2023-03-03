@@ -296,15 +296,17 @@ ul.dropdown-content.my-class {
   }
 </style>
 <script>
-function clsfn(event) {
-  event.preventDefault();
-  const otherDiv = document.querySelector('ul.dropdown-content');
+            function clsfn(){
+      debugger
+      
+const otherDiv = document.querySelector(' ul.dropdown-content');
   otherDiv.classList.remove("my-class");
-}
-
-function myfn(){
-  const myDiv = document.querySelector('ul.dropdown-content');
-  myDiv.classList.add("my-class");
-}
+            }  
+  function myfn(){
+    
+const myDiv = document.querySelector(' ul.dropdown-content');
+myDiv.classList.add("my-class");
+   // debugger
+  } 
 
 </script>
