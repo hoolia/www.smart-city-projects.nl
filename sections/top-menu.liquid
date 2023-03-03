@@ -20,10 +20,9 @@
             </a>
             {% if link.links != blank %}
               <ul class="dropdown-content" > 
-             {% if collection.metafields.custom.icon %}
-  <img src="{{ collection.metafields.custom.icons | asset_url }}" alt="My File">
-{% endif %}
-          
+       {% for collection in collections %}
+  {{- collection.title | link_to: collection.url }}
+{% endfor %}
                  <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
             
               {% for child_link in link.links %}
