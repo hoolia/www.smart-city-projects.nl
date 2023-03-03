@@ -6,7 +6,7 @@
     "favicon_enable": true,
     "show_collection_top_image": false,
     "color_top_bg": "#292929",
-    "lazyloading_enable": false,
+    "lazyloading_enable": true,
     "img_size_product": "900x900",
     "img_width_grid": "400",
     "grid_aspect_ratio": "2:3",
@@ -1238,7 +1238,7 @@
               "hover-bg": "#186019",
               "clr": "#ffffff",
               "icon": "<i class=\"fa fa-solar-panel\"><\/i>",
-              "title": "Solar pannel",
+              "title": "OFFICE HEATING",
               "url": "shopify:\/\/pages\/solar-pannel"
             }
           },
