@@ -25,6 +25,7 @@
 {% paginate collection.products by 20 %}
   {% for product in collection.products %}
  <li> {{ product.title }}</li> 
+ <li><a href="{{ product.url }}" class="product-image"></a></li>
   {% endfor %}
 
   {{ paginate | default_pagination }}
