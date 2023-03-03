@@ -40,7 +40,15 @@
                 <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
 
 
-
+  {% endif %}
+    
+          </span>
+        {% endfor %}
+ 
+        
+      </ul>
+    </li>
+{% endcase %}
                 
 {% comment %}
 {% for child_link in link.links %}
@@ -62,7 +70,7 @@
 </li>
 {% endfor %}
 </ul>
- {% endcomment %}
+
             {% endif %}
     
           </span>
@@ -72,7 +80,7 @@
       </ul>
     </li>
 {% endcase %}
-
+ {% endcomment %}
     {% endfor %}
   </ul>
 </div>
