@@ -22,6 +22,15 @@
               <ul class="dropdown-content" > 
        {% for collection in collections %}
   {{- collection.title | link_to: collection.url }}
+{% paginate collection.products by 20 %}
+  {% for product in collection.products %}
+    <!-- product info -->
+  {% endfor %}
+
+  {{ paginate | default_pagination }}
+{% endpaginate %}
+
+                
 {% endfor %}
                  <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
             
