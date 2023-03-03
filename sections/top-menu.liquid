@@ -20,9 +20,9 @@
             </a>
             {% if link.links != blank %}
               <ul class="dropdown-content" > 
-                <ul>
-                 <li  id="toggle" class="close" href="#">×</li>
-               </ul>
+                
+                 <div  id="toggle" class="close" href="#">×</div>
+            
               {% for child_link in link.links %}
                   <li >
                     <a  class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
