@@ -15,7 +15,7 @@
     <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
       <ul>
         {% for link in linklists.side-menu.links %}
-          <span class="dropdown cstm-width">
+          <span class="dropdown cstm-width" >
             <a href="#" {% if link.active %}aria-current="page"{% endif %}>
               {{ link.title }}
             </a>
@@ -234,7 +234,9 @@ span.dropdown.cstm-width {
 
 
 
-
+.dropdown {
+  
+}
 
 .dropdown {
   position: relative;
@@ -297,3 +299,6 @@ ul.dropdown-content li:first-child {
     display: block !important;
 }
 </style>
+<script>
+  
+</script>
