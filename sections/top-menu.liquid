@@ -21,6 +21,7 @@
             {% if link.links != blank %}
               <ul class="dropdown-content" > 
               {{ collection.metafields.custom.icon }}
+              {{  collection.metafields.custom.text}}
               <img src="{{ collection.metafields.custom.icon | img_url: 'master' }}">
                <img src=" {{ collection.metafields.namespace.key | img_url: 'master' }}">
                  <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
