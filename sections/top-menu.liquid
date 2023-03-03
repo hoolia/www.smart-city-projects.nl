@@ -20,12 +20,14 @@
             </a>
             {% if link.links != blank %}
               <ul class="dropdown-content" > 
-       {% for collection in collections %}
+       
+              
+  {% for collection in collections %}
   {{- collection.title | link_to: collection.url }}
-{% paginate collection.products by 20 %}
+  {% paginate collection.products by 20 %}
   {% for product in collection.products %}
- <li> {{ product.title }}</li> 
- <li><a href="{{ product.url }}" class="product-image"></a></li>
+   <li> {{ product.title }}</li> 
+   <li><a href="{{ product.url }}" class="product-image"></a></li>
   {% endfor %}
 
   {{ paginate | default_pagination }}
@@ -33,8 +35,10 @@
 
                 
 {% endfor %}
-                 <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
-            
+                 
+               
+                <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
+             {% comment %}
               {% for child_link in link.links %}
                   <li >
                     <a  class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
@@ -54,9 +58,13 @@
                   </li>
                 {% endfor %}
               </ul>
+                         {% endcomment %}
             {% endif %}
+    
           </span>
         {% endfor %}
+ 
+        
       </ul>
     </li>
 {% endcase %}
