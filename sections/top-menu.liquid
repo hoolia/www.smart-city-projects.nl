@@ -296,18 +296,17 @@ ul.dropdown-content.my-class {
   }
 </style>
 <script>
-     const myButton = document.querySelector('#my-button');
-const myDiv = document.querySelector('#my-div');
-
-myButton.addEventListener('click', function(event) {
-  event.preventDefault(); // prevent the button's default behavior
-
-  if (myDiv.style.display === 'none') {
-    myDiv.style.display = 'block';
-  } else {
-    myDiv.style.display = 'none';
-  }
-});
-
+            function clsfn(){
+      debugger
+      
+const otherDiv = document.querySelector(' ul.dropdown-content');
+  otherDiv.classList.remove("my-class");
+            }  
+  function myfn(){
+    
+const myDiv = document.querySelector(' ul.dropdown-content');
+myDiv.classList.add("my-class");
+   // debugger
+  } 
 
 </script>
