@@ -21,7 +21,7 @@
             {% if link.links != blank %}
               <ul class="dropdown-content" > 
               {{ collection.metafields.custom.icon }}
-              <img src="{{ collection.metafields.custom.icon | image_url}}">
+              <img src="{{ collection.metafields.custom.icon }}">
                  <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
             
               {% for child_link in link.links %}
