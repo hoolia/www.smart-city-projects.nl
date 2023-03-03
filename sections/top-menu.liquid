@@ -27,7 +27,7 @@
                   {% paginate collection.products by 20 %}
                   {% for product in collection.products %}
                    
-               <a href="{{ product.url }}" class="">
+               <a href="{{ product.url }}" class="top_menu">
            <img id="{{ image.id }}"
      class="{% if customclass %} {{ customclass }} {% else %} img-responsive {% endif %} {% if settings.lazyloading_enable %}lazyload{% endif %}{% if hover == true and template contains 'collection' %} img-rotate-image{% elsif hover == true %} img-r{%endif%}{% if settings.product_grid_img_carousel != true or hover != true %} img-default-image img-cate-{{product.id}}{% if section %}-{{section.id}}{%endif %}{% endif %}"
      {% if settings.lazyloading_enable -%}
