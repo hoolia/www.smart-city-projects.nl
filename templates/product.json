@@ -38,80 +38,9 @@
         "product_sharing_links": true,
         "product_sticky_cart": true
       }
-    },
-    "77ad2da1-44c6-434a-b873-3f0cf77c4772": {
-      "type": "slideshow",
-      "blocks": {
-        "template--18146879537454__77ad2da1-44c6-434a-b873-3f0cf77c4772-1677843838f9d4a2e1-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-11_at_19.33.52_2.jpg",
-            "animation_style": "slider-1",
-            "heading": "",
-            "heading_size": "18px",
-            "heading_color": "#fff",
-            "subheading": "Creating Self-sustaining Communities  For you. For your city. For the whole planet",
-            "subheading_size": "90px",
-            "subheading_color": "#fff",
-            "description": "",
-            "description_size": "16px",
-            "description_color": "#fff",
-            "slide_link_text": "",
-            "slide_link": "",
-            "link_bg": "#000",
-            "link_color": "#fff",
-            "image_clickable": false,
-            "top": "50%",
-            "right": "0%",
-            "left": "0%",
-            "width": "100%",
-            "float": "left"
-          }
-        },
-        "template--18146879537454__77ad2da1-44c6-434a-b873-3f0cf77c4772-1677843838f9d4a2e1-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "animation_style": "slider-1",
-            "heading": "",
-            "heading_size": "18px",
-            "heading_color": "#fff",
-            "subheading": "",
-            "subheading_size": "90px",
-            "subheading_color": "#fff",
-            "description": "",
-            "description_size": "16px",
-            "description_color": "#fff",
-            "slide_link_text": "",
-            "slide_link": "",
-            "link_bg": "#000",
-            "link_color": "#fff",
-            "image_clickable": false,
-            "top": "50%",
-            "right": "0%",
-            "left": "0%",
-            "width": "100%",
-            "float": "left"
-          }
-        }
-      },
-      "block_order": [
-        "template--18146879537454__77ad2da1-44c6-434a-b873-3f0cf77c4772-1677843838f9d4a2e1-0",
-        "template--18146879537454__77ad2da1-44c6-434a-b873-3f0cf77c4772-1677843838f9d4a2e1-1"
-      ],
-      "settings": {
-        "autoplay_speed": "5000",
-        "layout_slider": "slider-1",
-        "fullwidth": true,
-        "use_box_layout": false,
-        "fit_to_container": true,
-        "full_size_on_mobile": false,
-        "custom-class": ""
-      }
     }
   },
   "order": [
-    "main",
-    "77ad2da1-44c6-434a-b873-3f0cf77c4772"
+    "main"
   ]
 }
