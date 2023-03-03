@@ -70,6 +70,7 @@
         },
         "template--18146879537454__77ad2da1-44c6-434a-b873-3f0cf77c4772-1677843838f9d4a2e1-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "animation_style": "slider-1",
             "heading": "",
