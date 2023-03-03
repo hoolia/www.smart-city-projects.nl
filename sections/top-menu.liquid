@@ -22,22 +22,26 @@
               <ul class="dropdown-content" > 
        
               
-  {% for collection in collections %}
-  {{- collection.title | link_to: collection.url }}
-  {% paginate collection.products by 20 %}
-  {% for product in collection.products %}
-   <li> {{ product.title }}</li> 
-   <li><a href="{{ product.url }}" class="product-image"></a></li>
-  {% endfor %}
-
-  {{ paginate | default_pagination }}
-{% endpaginate %}
-
+                  {% for collection in collections %}
+                  {{- collection.title | link_to: collection.url }}
+                  {% paginate collection.products by 20 %}
+                  {% for product in collection.products %}
+                   <li> {{ product.title }}</li> 
+                   <li><a href="{{ product.url }}" class="product-image"></a></li>
+                  {% endfor %}
                 
-{% endfor %}
+                  {{ paginate | default_pagination }}
+                {% endpaginate %}
+                
+                                
+                {% endfor %}
                  
                
                 <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
+
+
+
+                
              {% comment %}
               {% for child_link in link.links %}
                   <li >
