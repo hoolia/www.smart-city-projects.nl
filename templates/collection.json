@@ -57,8 +57,8 @@
     "a9746d73-67c5-452a-97ba-19fb3712a3e6": {
       "type": "custom-liquid",
       "settings": {
-        "subheading": "Sub-heading",
-        "title": "Your Liquid",
+        "subheading": "{{ collection.metafields.custom.text.value }}",
+        "title": "",
         "liquid": "{{custom.text}}"
       }
     }
