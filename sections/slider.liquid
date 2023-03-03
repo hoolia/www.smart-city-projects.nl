@@ -84,34 +84,7 @@
                     }
                   </style>
                   {% endif %}
-                  {% if block.type == 'video' %}
-                  <div id="banner{{section.id}}-caption{{ forloop.index }}" {{ block.shopify_attributes }} class="banner7-caption nivo-html-caption nivo-caption move-slides-effect">
-                    <div class="timeloading"></div>
-                    <div class="banner7-content {{ block.settings.animation_style }}">
-                      <div class="text-content">
-                      </div>
-                    </div>
-                    <div id="cms_play"><img style="display: block; z-index: 99;" src=" {{ 'playing_video.png' | asset_url }}" alt="" width="100"></div>
-                    <script>// <![CDATA[
-                      $(document).ready(function(){
-                        $('.row-{{section.id}} #cms_play').click(function(){
-                          $(this).hide('fast');
-                          $('.row-{{section.id}} .nivo-main-image').hide();
-                          {% if block.settings.video_type == 'youtube' %}
-                          $('.row-{{section.id}} .nivo-main-image').after('<iframe class="added_video" id="svid" src="https://www.youtube.com/embed/{{ block.settings.video_src }}?rel=0&showinfo=0&autoplay={{ block.settings.video_autoplay }}" frameborder="0" allowfullscreen></iframe>');
-                                                      {% elsif block.settings.video_type == 'vimeo' %}
-                                                      $('.row-{{section.id}} .nivo-main-image').after('<iframe class="added_video" id="svid" src="https://player.vimeo.com/video/{{ block.settings.video_src }}?color=ffffff&title=0&byline=0&portrait=0&autoplay={{ block.settings.video_autoplay }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
-                                                      {% elsif block.settings.video_type == 'mp4' %}
-                                                      $('.row-{{section.id}} .nivo-main-image').after('<video class="added_video" id="svid" controls autoplay width="100%" height="100%" poster="https://via.placeholder.com/1920x850/ffffff/ffffff" ><source src="{{ block.settings.video_src }}" type="video/mp4"></video>');
-                                                      {% endif %}
-                                                      });
-                                                      });
-                                                      {% unless block.settings.video_type == 'mp4' and block.settings.video_autoplay == false %}
-                                                      $('.row-{{section.id}} #cms_play').click();
-                                                      {% endunless %}
-                                                      // ]]></script>
-                  </div>
-                  {% endif %}
+                  
                   {% endfor %}
                   <script type="text/javascript">
                   $(document).ready(function() {
