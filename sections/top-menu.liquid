@@ -25,7 +25,6 @@
                   {{- collection.title | link_to: collection.url }}
                   {% paginate collection.products by 20 %}
                   {% for product in collection.products %}
-                   
                   <a href="{{ product.url }}" class="top_menu">
                   {% include 'product-grid-image',image:product.featured_image %}
                   {% if settings.hide_hover != true %}
@@ -40,13 +39,11 @@
                    <li> {{ product.title }}</li> 
                    <li><a href="{{ product.url }}" class="product-image"></a></li>
                   {% endfor %}
-                
                   {{ paginate | default_pagination }}
                 {% endpaginate %}                                
                 {% endfor %}
                 <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
-  {% endif %}
-    
+                {% endif %}
           </span>
         {% endfor %}
  
