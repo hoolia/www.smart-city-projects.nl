@@ -32,15 +32,18 @@
             <section id="{{ forloop.index }}">
 
               {% for product in collection.products %}
+                
               <a href="{{ product.url }}" class="top_menu">
                 {% include 'product-grid-image',image:product.featured_image %}
                 {% if settings.hide_hover != true %}
                 {% include 'product-grid-image',image:product.images.last,hover:true %}
                 {% endif %}
-               
               </a>
-              <li>{{ product.title }}</li>
-              <li><a href="{{ product.url }}" class="product-image"></a></li>
+             
+              <li><a href="{{ product.url }}" class="product-image">  <li>{{ product.title }}</li></a></li>
+               
+
+                
               {% endfor %}
 
 
