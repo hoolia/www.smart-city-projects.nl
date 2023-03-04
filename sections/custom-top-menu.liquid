@@ -11,46 +11,110 @@
       </li>
     </a>
   {% when 'Menu' %}
-
     <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
       <ul>
         {% for link in linklists.side-menu.links %}
-          <span class="dropdown cstm-width">
+          <span class="dropdown cstm-width" onclick="myfn()">
             <a href="#" {% if link.active %}aria-current="page"{% endif %}>
               {{ link.title }}
             </a>
             {% if link.links != blank %}
               <ul class="dropdown-content" > 
-
+       
               
-                {% for child_link in link.links %}
-                 
-                  <li  >
-                    <a  class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
-                      {{ child_link.title }}
-                    </a>
-                  </li>
-                {% endfor %}
-
-                
-              </ul>
+                  {% for collection in collections %}
+                  {{- collection.title | link_to: collection.url }}
+                  {% paginate collection.products by 100 %}
+                  {% for product in collection.products %}
+                   
+               <a href="{{ product.url }}" class="top_menu">
+           <img id="{{ image.id }}"
+     class="{% if customclass %} {{ customclass }} {% else %} img-responsive {% endif %} {% if settings.lazyloading_enable %}lazyload{% endif %}{% if hover == true and template contains 'collection' %} img-rotate-image{% elsif hover == true %} img-r{%endif%}{% if settings.product_grid_img_carousel != true or hover != true %} img-default-image img-cate-{{product.id}}{% if section %}-{{section.id}}{%endif %}{% endif %}"
+     {% if settings.lazyloading_enable -%}
+     {%if settings.grid_auto_resize == 'resize-crop' -%}
+     src="{{ image.src | img_url: w100, crop:img_crop }}"
+     srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+     data-src="{{ image.src | img_url: img_size, crop:img_crop }}"
+     data-srcset="{{ image.src | img_url: w360, crop:img_crop }} 360w, {{ image.src | img_url: w540, crop:img_crop }} 540w, {{ image.src | img_url: w720, crop:img_crop }} 720w, {{ image.src | img_url: w1024, crop:img_crop }} 1024w"
+     {%else%}
+     src="{{ image.src | img_url: w100 }}"
+     srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+     data-src="{{ image.src | img_url: img_size }}"
+     data-srcset="{{ image.src | img_url: w360 }} 360w, {{ image.src | img_url: w540 }} 540w, {{ image.src | img_url: w720 }} 720w, {{ image.src | img_url: w1024 }} 1024w"
+     {%endif%}
+     data-aspectratio="{{ settings.grid_aspect_ratio | replace: ':', '/' }}"
+     data-sizes="auto"
+     {% else -%}
+     src="{%if settings.grid_auto_resize == 'resize-crop' -%}{{ image.src | img_url: img_size, crop:img_crop }}{%else%}{{ image.src | img_url: img_size }}{%endif%}"
+     {% endif %}
+     alt="{{ image.alt | escape }}">
+            {% if settings.hide_hover != true %}
+            {% include 'product-grid-image',image:product.images.last,hover:true %}
             {% endif %}
+            {% if settings.grid_color_swatches != 'false' and settings.product_grid_img_carousel == false %}
+            {% if product.available and product.variants.size > 1 %}
+            {% include 'swatch-grid-img' with 'Color'  %}
+            {% endif %}
+            {% endif %}
+          </a>
+                   <li> {{ product.title }}</li> 
+                   <li><a href="{{ product.url }}" class="product-image"></a></li>
+                  {% endfor %}
+                
+                  {{ paginate | default_pagination }}
+                {% endpaginate %}
+                
+                                
+                {% endfor %}
+                 
+               
+                <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
+
+
+  {% endif %}
+    
           </span>
         {% endfor %}
+ 
+        
       </ul>
     </li>
 {% endcase %}
-
-
+                
+{% comment %}
+{% for child_link in link.links %}
+<li >
+<a  class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+{{ child_link.title }}
+</a>
+{% if child_link.links != blank %}
+<ul>
+{% for grandchild_link in child_link.links %}
+<li>
+<a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+{{ grandchild_link.title }}
+</a>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+</span>
+{% endfor %}
+ </ul>
+</li>
+{% endcase %}
+ {% endcomment %}
     {% endfor %}
   </ul>
 </div>
 {% schema %}
   {
-    "name": "custom-top-menu",
+    "name": "top-menu",
     "settings": [
-
-      
     ],
     "blocks": [
      {
@@ -68,7 +132,6 @@
            "id":"hover-bg",
            "label":"Hover Background"
          },
-
         {
            "type":"color",
            "id":"clr",
@@ -144,7 +207,7 @@
    ],
     "presets":[
       {
-        "name":"custom-top-menu"
+        "name":"top-menu"
       }
     ]
   }
@@ -158,10 +221,10 @@
 }
   {% endif %}
 
-
+/* 
 span.dropdown.cstm-width {
     width: 100% !important;
-}
+} */
 
 
   
@@ -220,7 +283,9 @@ span.dropdown.cstm-width {
 
 
 
-
+.dropdown {
+  
+}
 
 .dropdown {
   position: relative;
@@ -237,26 +302,24 @@ span.dropdown.cstm-width {
   padding: 0 16px;
   margin: 0;
   margin-top:1vh;
-  
   z-index: 99;
   height: 100vh;
   width: 100%;
-  max-height: 0;
-  overflow: hidden;
+/   max-height: 0; /
+  overflow: scroll;
   transition: max-height 0.5s ease-out;
 }
 
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
   max-height: 100vh;
-  
 }
-
+ */
 ul.dropdown-content li:first-child {
-    margin-top: 1rem;
+    margin-top: 0;
+    position: initial;
 }
 
-  
-/*   
+    
  .close {
   position: absolute;
   top: 20px;
@@ -276,8 +339,38 @@ ul.dropdown-content li:first-child {
 
 #content:target {
   display: none;
-} */
+}
+ul.dropdown-content.my-class {
+    height: 100vh;
+}
+  span.dropdown.cstm-width ul.dropdown-content {
 
+    display:none
+}
 
-  
+    span.dropdown.cstm-width ul.dropdown-content.my-class {
+    display: block;
+    padding: 3rem 3rem;
+
+}
+  a.top_menu img {
+    width: 100%;
+}
+
 </style>
+<script>
+            function clsfn(){
+      debugger
+      
+const otherDiv = document.querySelector(' ul.dropdown-content');
+  otherDiv.classList.remove("my-class");
+        
+            }  
+  function myfn(){
+    
+const myDiv = document.querySelector(' ul.dropdown-content');
+myDiv.classList.add("my-class");
+   // debugger
+  } 
+
+</script>
