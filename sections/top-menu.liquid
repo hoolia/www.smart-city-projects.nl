@@ -11,7 +11,7 @@
       </li>
     </a>
   {% when 'Menu' %}
-
+<li onMouseOver=“this.style.backgroundColor=‘{{ block.settings.hover-bg }}’ ” onMouseOut=“this.style.backgroundColor=‘{{ block.settings.bg }} ‘” class=“menu_li_first” href=“{{ block.settings.url }}” style=“background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%“>
  <nav>
    <a href="#first"><i class="far fa-user"></i></a>
    <a href="#second"><i class="fas fa-briefcase"></i></a>
@@ -36,6 +36,7 @@
    <h1>Fourth</h1>
   </section>
 </div>
+</li>
     
 {% endcase %}
                 
