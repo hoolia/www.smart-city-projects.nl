@@ -90,7 +90,7 @@
 <script>
   const navLinks = document.querySelectorAll('nav a');
   const sections = document.querySelectorAll('section');
-debugger
+
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       // Hide all sections
@@ -103,6 +103,7 @@ debugger
       const href = link.getAttribute('href');
               debugger
       const section = document.querySelector(href);
+              debugger
       section.style.opacity = '1';
       section.style.pointerEvents = 'auto';
     });
