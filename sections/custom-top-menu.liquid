@@ -19,64 +19,62 @@
               {{ link.title }}
             </a>
             {% if link.links != blank %}
-              <ul class="dropdown-content" > 
-       
-              
+{% comment %}
+            <ul class="dropdown-content" > 
+             
                   {% for collection in collections %}
                   {{- collection.title | link_to: collection.url }}
-                  {% paginate collection.products by 100 %}
+                  {% paginate collection.products by 20 %}
                   {% for product in collection.products %}
-                   
-               <a href="{{ product.url }}" class="top_menu">
-           <img id="{{ image.id }}"
-     class="{% if customclass %} {{ customclass }} {% else %} img-responsive {% endif %} {% if settings.lazyloading_enable %}lazyload{% endif %}{% if hover == true and template contains 'collection' %} img-rotate-image{% elsif hover == true %} img-r{%endif%}{% if settings.product_grid_img_carousel != true or hover != true %} img-default-image img-cate-{{product.id}}{% if section %}-{{section.id}}{%endif %}{% endif %}"
-     {% if settings.lazyloading_enable -%}
-     {%if settings.grid_auto_resize == 'resize-crop' -%}
-     src="{{ image.src | img_url: w100, crop:img_crop }}"
-     srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-     data-src="{{ image.src | img_url: img_size, crop:img_crop }}"
-     data-srcset="{{ image.src | img_url: w360, crop:img_crop }} 360w, {{ image.src | img_url: w540, crop:img_crop }} 540w, {{ image.src | img_url: w720, crop:img_crop }} 720w, {{ image.src | img_url: w1024, crop:img_crop }} 1024w"
-     {%else%}
-     src="{{ image.src | img_url: w100 }}"
-     srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-     data-src="{{ image.src | img_url: img_size }}"
-     data-srcset="{{ image.src | img_url: w360 }} 360w, {{ image.src | img_url: w540 }} 540w, {{ image.src | img_url: w720 }} 720w, {{ image.src | img_url: w1024 }} 1024w"
-     {%endif%}
-     data-aspectratio="{{ settings.grid_aspect_ratio | replace: ':', '/' }}"
-     data-sizes="auto"
-     {% else -%}
-     src="{%if settings.grid_auto_resize == 'resize-crop' -%}{{ image.src | img_url: img_size, crop:img_crop }}{%else%}{{ image.src | img_url: img_size }}{%endif%}"
-     {% endif %}
-     alt="{{ image.alt | escape }}">
-            {% if settings.hide_hover != true %}
-            {% include 'product-grid-image',image:product.images.last,hover:true %}
-            {% endif %}
-            {% if settings.grid_color_swatches != 'false' and settings.product_grid_img_carousel == false %}
-            {% if product.available and product.variants.size > 1 %}
-            {% include 'swatch-grid-img' with 'Color'  %}
-            {% endif %}
-            {% endif %}
-          </a>
+                  <a href="{{ product.url }}" class="top_menu">
+                  {% include 'product-grid-image',image:product.featured_image %}
+                  {% if settings.hide_hover != true %}
+                  {% include 'product-grid-image',image:product.images.last,hover:true %}
+                  {% endif %}
+                  {% if settings.grid_color_swatches != 'false' and settings.product_grid_img_carousel == false %}
+                  {% if product.available and product.variants.size > 1 %}
+                  {% include 'swatch-grid-img' with 'Color'  %}
+                  {% endif %}
+                  {% endif %}
+                  </a>
                    <li> {{ product.title }}</li> 
                    <li><a href="{{ product.url }}" class="product-image"></a></li>
                   {% endfor %}
-                
                   {{ paginate | default_pagination }}
-                {% endpaginate %}
-                
-                                
+                {% endpaginate %}                                
                 {% endfor %}
-                 
-               
                 <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
-
-
-  {% endif %}
-    
+           </ul>
+{% endcomment %}
+<ul class="dropdown-content">
+ <nav>
+   <a href="#first"><i class="far fa-user"></i></a>
+   <a href="#second"><i class="fas fa-briefcase"></i></a>
+   <a href="#third"><i class="far fa-file"></i></a>
+   <a href="#fourth"><i class="far fa-address-card"></i></a>
+ </nav>
+  
+<div class= 'container'> 
+  <section id= 'first'>
+    <h1>First</h1>
+  </section>
+  
+  <section id= 'second'>
+    <h1>Second</h1>
+  </section>
+  
+ <section id= 'third'>
+   <h1>Third</h1>
+  </section>
+  
+ <section id= 'fourth'>
+   <h1>Fourth</h1>
+  </section>
+</div>
+</ul>         
+              {% endif %}
           </span>
         {% endfor %}
- 
-        
       </ul>
     </li>
 {% endcase %}
@@ -237,7 +235,6 @@ span.dropdown.cstm-width {
   display: flex;
   width: 100%;
   margin: 0;
-  justify-content: flex-end;
 }
 .header_top_nav_menu .menu_ul li {
   width: 100%;
@@ -306,7 +303,7 @@ span.dropdown.cstm-width {
   z-index: 99;
   height: 100vh;
   width: 100%;
-/   max-height: 0; /
+/*   max-height: 0; */
   overflow: scroll;
   transition: max-height 0.5s ease-out;
 }
@@ -348,7 +345,6 @@ ul.dropdown-content.my-class {
 
     display:none
 }
-
     span.dropdown.cstm-width ul.dropdown-content.my-class {
     display: block;
     padding: 3rem 3rem;
@@ -357,8 +353,104 @@ ul.dropdown-content.my-class {
   a.top_menu img {
     width: 100%;
 }
-
 </style>
+
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+--primary-color: #D96AA7;
+--secondary-color: #422C73;
+--complimentary-color: #88BFB5;
+--contrast-color: #F2E527;
+--light-color: #D2A9D9;
+}
+
+.container {
+  background: #191919;
+  min-height: 100vh;
+  font-family: Montserrat, sans-serif;
+}
+
+nav a {
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--secondary-color);
+}
+/* ul.dropdown-content.my-class .container {
+    position: fixed;
+} */
+ ul.dropdown-content.my-class .container section {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 0;
+    opacity: 0;
+    transition: all ease-in .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+ ul.dropdown-content.my-class .container section h1 {
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+/* Styles applied on trigger */
+ ul.dropdown-content.my-class .container section:target {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+ ul.dropdown-content.my-class .container section:target h1 {
+    opacity: 0;
+    animation: 2s fadeIn forwards .5s;
+}
+
+#first {
+  background:var(--primary-color);
+}
+#second {
+    background: var(--complimentary-color);
+}
+
+#third {
+    background: var(--contrast-color);
+}
+
+#fourth {
+    background: var(--light-color);
+}
+
+@keyframes fadeIn {
+    100% { opacity:1 }
+}
+</style>
+  
 <script>
             function clsfn(){
       debugger
