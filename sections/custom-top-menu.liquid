@@ -19,7 +19,8 @@
               {{ link.title }}
             </a>
             {% if link.links != blank %}
-<ul class="dropdown-content">
+
+              <ul class="dropdown-content">
  <nav>
                      {% for collection in collections %}
                 <a href="#{{ forloop.index }}" id="{{ forloop.index }}"><i class="far fa-user"></i> <span style=" display: none;">  {{- collection.title }} </span></a>
