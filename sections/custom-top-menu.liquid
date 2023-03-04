@@ -23,7 +23,7 @@
               <ul class="dropdown-content">
  <nav>
                      {% for collection in collections %}
-                <a href="#{{ forloop.index }}" id="{{ forloop.index }}  class="{{ forloop.index }}"><i class="far fa-user"></i> <span style=" display: none;">  {{- collection.title }} </span></a>
+                <a href="#{{ forloop.index }}" id="{{ forloop.index }}""  class="{{ forloop.index }}"><i class="far fa-user"></i> <span style=" display: none;">  {{- collection.title }} </span></a>
                   
                 {% endfor %}
  </nav>
@@ -70,7 +70,8 @@
       // Display the clicked section
       const href = link.getAttribute('href');
               debugger
-      const section = document.querySelector(href);
+      // const section = document.querySelector(href);
+             const section =       document.querySelector('nav a').getAttribute('href');
               debugger
       section.style.opacity = '1';
       section.style.pointerEvents = 'auto';
