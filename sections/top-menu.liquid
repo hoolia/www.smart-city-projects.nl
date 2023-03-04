@@ -19,62 +19,45 @@
               {{ link.title }}
             </a>
             {% if link.links != blank %}
-{% comment %}
-            <ul class="dropdown-content" > 
-             
+              <ul class="dropdown-content" > 
+       
+              
                   {% for collection in collections %}
                   {{- collection.title | link_to: collection.url }}
                   {% paginate collection.products by 20 %}
                   {% for product in collection.products %}
-                  <a href="{{ product.url }}" class="top_menu">
-                  {% include 'product-grid-image',image:product.featured_image %}
-                  {% if settings.hide_hover != true %}
-                  {% include 'product-grid-image',image:product.images.last,hover:true %}
-                  {% endif %}
-                  {% if settings.grid_color_swatches != 'false' and settings.product_grid_img_carousel == false %}
-                  {% if product.available and product.variants.size > 1 %}
-                  {% include 'swatch-grid-img' with 'Color'  %}
-                  {% endif %}
-                  {% endif %}
-                  </a>
+                   
+               <a href="{{ product.url }}" class="top_menu">
+            {% include 'product-grid-image',image:product.featured_image %}
+            {% if settings.hide_hover != true %}
+            {% include 'product-grid-image',image:product.images.last,hover:true %}
+            {% endif %}
+            {% if settings.grid_color_swatches != 'false' and settings.product_grid_img_carousel == false %}
+            {% if product.available and product.variants.size > 1 %}
+            {% include 'swatch-grid-img' with 'Color'  %}
+            {% endif %}
+            {% endif %}
+          </a>
                    <li> {{ product.title }}</li> 
                    <li><a href="{{ product.url }}" class="product-image"></a></li>
                   {% endfor %}
+                
                   {{ paginate | default_pagination }}
-                {% endpaginate %}                                
+                {% endpaginate %}
+                
+                                
                 {% endfor %}
+                 
+               
                 <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
-           </ul>
-{% endcomment %}
-<ul class="dropdown-content">
- <nav>
-   <a href="#first"><i class="far fa-user"></i></a>
-   <a href="#second"><i class="fas fa-briefcase"></i></a>
-   <a href="#third"><i class="far fa-file"></i></a>
-   <a href="#fourth"><i class="far fa-address-card"></i></a>
- </nav>
-  
-<div class= 'container'> 
-  <section id= 'first'>
-    <h1>First</h1>
-  </section>
-  
-  <section id= 'second'>
-    <h1>Second</h1>
-  </section>
-  
- <section id= 'third'>
-   <h1>Third</h1>
-  </section>
-  
- <section id= 'fourth'>
-   <h1>Fourth</h1>
-  </section>
-</div>
-</ul>         
-              {% endif %}
+
+
+  {% endif %}
+    
           </span>
         {% endfor %}
+ 
+        
       </ul>
     </li>
 {% endcase %}
@@ -245,7 +228,6 @@ span.dropdown.cstm-width {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0;
-  
 }
   
 .header_top_nav_menu .menu_ul li:hover {
@@ -354,103 +336,6 @@ ul.dropdown-content.my-class {
     width: 100%;
 }
 </style>
-
-<style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
---primary-color: #D96AA7;
---secondary-color: #422C73;
---complimentary-color: #88BFB5;
---contrast-color: #F2E527;
---light-color: #D2A9D9;
-}
-
-.container {
-  background: #191919;
-  min-height: 100vh;
-  font-family: Montserrat, sans-serif;
-}
-
-nav a {
-    font-size: 40px;
-    color: #fff;
-    text-decoration: none;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    position: fixed;
-    right: 0;
-    z-index: 50;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    height: 100vh;
-    background: var(--secondary-color);
-}
-/* ul.dropdown-content.my-class .container {
-    position: fixed;
-} */
- ul.dropdown-content.my-class .container section {
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 0;
-    opacity: 0;
-    transition: all ease-in .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-
- ul.dropdown-content.my-class .container section h1 {
-    color: #fff;
-    font-size: 50px;
-    text-transform: uppercase;
-    opacity: 0;
-}
-
-/* Styles applied on trigger */
- ul.dropdown-content.my-class .container section:target {
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-}
-
- ul.dropdown-content.my-class .container section:target h1 {
-    opacity: 0;
-    animation: 2s fadeIn forwards .5s;
-}
-
-#first {
-  background:var(--primary-color);
-}
-#second {
-    background: var(--complimentary-color);
-}
-
-#third {
-    background: var(--contrast-color);
-}
-
-#fourth {
-    background: var(--light-color);
-}
-
-@keyframes fadeIn {
-    100% { opacity:1 }
-}
-</style>
-  
 <script>
             function clsfn(){
       debugger
