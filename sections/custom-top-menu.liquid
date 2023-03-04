@@ -85,6 +85,36 @@
   </section>
 
  {% endfor %}
+
+<script>
+  const navLinks = document.querySelectorAll('nav a');
+  const sections = document.querySelectorAll('section');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Hide all sections
+      sections.forEach(section => {
+        section.style.opacity = '0';
+        section.style.pointerEvents = 'none';
+      });
+
+      // Display the clicked section
+      const href = link.getAttribute('href');
+      const section = document.querySelector(href);
+      section.style.opacity = '1';
+      section.style.pointerEvents = 'auto';
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+              
               
 </div>
 </ul>         
