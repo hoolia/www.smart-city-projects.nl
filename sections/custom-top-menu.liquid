@@ -58,9 +58,8 @@
                     });
 
                     // Display the clicked section
-                   const href = link.getAttribute('href');
-const section = document.querySelector(`#${href}`);
-
+                    const href = link.getAttribute('href');
+                    const section = document.querySelector(href);
                     if (section) {
                       section.style.opacity = '1';
                       section.style.pointerEvents = 'auto';
