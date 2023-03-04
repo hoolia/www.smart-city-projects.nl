@@ -32,7 +32,7 @@
             <section id="{{ forloop.index }}">
 
               {% for product in collection.products %}
-                
+            <div  class="product-cotainer">
               <a href="{{ product.url }}" class="top_menu">
                 {% include 'product-grid-image',image:product.featured_image %}
                 {% if settings.hide_hover != true %}
@@ -42,7 +42,7 @@
              
               <li><a href="{{ product.url }}" class="product-image">  <li>{{ product.title }}</li></a></li>
                
-
+            </div>
                 
               {% endfor %}
 
