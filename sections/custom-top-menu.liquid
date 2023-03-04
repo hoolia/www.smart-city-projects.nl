@@ -57,15 +57,25 @@
                       section.style.pointerEvents = 'none';
                     });
 
-                    // Display the clicked section
-                 const href = link.getAttribute('href');
-const section = document.querySelector(`[id="${href}"]`);
+                   const navLinks = document.querySelectorAll('nav a');
+const sections = document.querySelectorAll('section');
 
+navLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // prevent default link behavior
+    
+    // Hide all sections
+    sections.forEach(section => {
+      section.style.display = 'none';
+    });
 
-                    if (section) {
-                      section.style.opacity = '1';
-                      section.style.pointerEvents = 'auto';
-                    }
+    // Display the clicked section
+    const href = link.getAttribute('href');
+    const section = document.querySelector(href);
+    section.style.display = 'block';
+  });
+});
+
                   });
                 });
               </script>
