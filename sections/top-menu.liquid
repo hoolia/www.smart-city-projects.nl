@@ -27,7 +27,7 @@
                   {% paginate collection.products by 20 %}
                   {% for product in collection.products %}
                    
-               <a href="{{ product.url }}" class="">
+               <a href="{{ product.url }}" class="top_menu">
             {% include 'product-grid-image',image:product.featured_image %}
             {% if settings.hide_hover != true %}
             {% include 'product-grid-image',image:product.images.last,hover:true %}
