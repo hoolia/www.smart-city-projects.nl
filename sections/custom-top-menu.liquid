@@ -55,10 +55,9 @@
  {% endfor %}
  <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
 <script>
-  // const navLinks = document.querySelectorAll('nav a');
-  // const sections = document.querySelectorAll('section');
-const sectionId = link.getAttribute('href').substring(1);
-const section = document.getElementById(sectionId);
+  const navLinks = document.querySelectorAll('nav a');
+  const sections = document.querySelectorAll('section');
+
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       // Hide all sections
