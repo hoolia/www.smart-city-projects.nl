@@ -19,9 +19,9 @@
               {{ link.title }}
             </a>
             {% if link.links != blank %}
-              
+              {% comment %}
             <ul class="dropdown-content" > 
-             {% comment %}
+             
                   {% for collection in collections %}
                   {{- collection.title | link_to: collection.url }}
                   {% paginate collection.products by 20 %}
@@ -45,12 +45,9 @@
                 {% endfor %}
                 <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
 
-          {% endcomment %}
-
-
-              
+          
            </ul>
-
+{% endcomment %}
 
             
               {% endif %}
