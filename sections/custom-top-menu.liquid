@@ -48,6 +48,27 @@
 {% endcomment %}
 <ul class="dropdown-content">
  <nav>
+                     {% for collection in collections %}
+                  {{- collection.title | link_to: collection.url }}
+                  {% paginate collection.products by 20 %}
+                  {% for product in collection.products %}
+                  <a href="{{ product.url }}" class="top_menu">
+                  {% include 'product-grid-image',image:product.featured_image %}
+                  {% if settings.hide_hover != true %}
+                  {% include 'product-grid-image',image:product.images.last,hover:true %}
+                  {% endif %}
+                  {% if settings.grid_color_swatches != 'false' and settings.product_grid_img_carousel == false %}
+                  {% if product.available and product.variants.size > 1 %}
+                  {% include 'swatch-grid-img' with 'Color'  %}
+                  {% endif %}
+                  {% endif %}
+                  </a>
+                   <li> {{ product.title }}</li> 
+                   <li><a href="{{ product.url }}" class="product-image"></a></li>
+                  {% endfor %}
+                  {{ paginate | default_pagination }}
+                {% endpaginate %}                                
+                {% endfor %}
    <a href="#first"><i class="far fa-user"></i></a>
    <a href="#second"><i class="fas fa-briefcase"></i></a>
    <a href="#third"><i class="far fa-file"></i></a>
