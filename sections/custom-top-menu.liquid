@@ -31,9 +31,13 @@
   
 <div class= 'container'> 
          {% for collection in collections %}      
-  <section id="#{{ forloop.index }}">
+  <section id="#{{ forloop.index }}" >
 
-
+<style>
+#{{ forloop.index }}{
+opacity:0;
+           }
+           </style>
  {% for product in collection.products %}
                   <a href="{{ product.url }}" class="top_menu">
                   {% include 'product-grid-image',image:product.featured_image %}
