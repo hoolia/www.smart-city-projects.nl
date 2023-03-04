@@ -11,55 +11,32 @@
       </li>
     </a>
   {% when 'Menu' %}
-    <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
-      <ul>
-        {% for link in linklists.side-menu.links %}
-          <span class="dropdown cstm-width" onclick="myfn()">
-            <a href="#" {% if link.active %}aria-current="page"{% endif %}>
-              {{ link.title }}
-            </a>
-            {% if link.links != blank %}
-              <ul class="dropdown-content" > 
-       
-              
-                  {% for collection in collections %}
-                  {{- collection.title | link_to: collection.url }}
-                  {% paginate collection.products by 20 %}
-                  {% for product in collection.products %}
-                   
-               <a href="{{ product.url }}" class="top_menu">
-            {% include 'product-grid-image',image:product.featured_image %}
-            {% if settings.hide_hover != true %}
-            {% include 'product-grid-image',image:product.images.last,hover:true %}
-            {% endif %}
-            {% if settings.grid_color_swatches != 'false' and settings.product_grid_img_carousel == false %}
-            {% if product.available and product.variants.size > 1 %}
-            {% include 'swatch-grid-img' with 'Color'  %}
-            {% endif %}
-            {% endif %}
-          </a>
-                   <li> {{ product.title }}</li> 
-                   <li><a href="{{ product.url }}" class="product-image"></a></li>
-                  {% endfor %}
-                
-                  {{ paginate | default_pagination }}
-                {% endpaginate %}
-                
-                                
-                {% endfor %}
-                 
-               
-                <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
 
-
-  {% endif %}
+ <nav>
+   <a href="#first"><i class="far fa-user"></i></a>
+   <a href="#second"><i class="fas fa-briefcase"></i></a>
+   <a href="#third"><i class="far fa-file"></i></a>
+   <a href="#fourth"><i class="far fa-address-card"></i></a>
+ </nav>
+  
+<div class= 'container'> 
+  <section id= 'first'>
+    <h1>First</h1>
+  </section>
+  
+  <section id= 'second'>
+    <h1>Second</h1>
+  </section>
+  
+ <section id= 'third'>
+   <h1>Third</h1>
+  </section>
+  
+ <section id= 'fourth'>
+   <h1>Fourth</h1>
+  </section>
+</div>
     
-          </span>
-        {% endfor %}
- 
-        
-      </ul>
-    </li>
 {% endcase %}
                 
 {% comment %}
@@ -260,14 +237,6 @@ span.dropdown.cstm-width {
     margin: 0;
   }
 }
-
-
-
-
-.dropdown {
-  
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -290,11 +259,6 @@ span.dropdown.cstm-width {
   overflow: scroll;
   transition: max-height 0.5s ease-out;
 }
-
-/* .dropdown:hover .dropdown-content {
-  max-height: 100vh;
-}
- */
 ul.dropdown-content li:first-child {
     margin-top: 0;
     position: initial;
@@ -336,6 +300,10 @@ ul.dropdown-content.my-class {
   a.top_menu img {
     width: 100%;
 }
+
+
+
+  
 </style>
 <script>
             function clsfn(){
