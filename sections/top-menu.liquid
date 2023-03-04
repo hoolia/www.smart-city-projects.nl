@@ -394,10 +394,10 @@ nav {
     height: 100vh;
     background: var(--secondary-color);
 }
-/* ul.dropdown-content.my-class .container {
+ul.dropdown-content.my-class .container {
     position: fixed;
-} */
- ul.dropdown-content.my-class .container section {
+}
+section {
     position: absolute;
     top: 0;
     height: 100vh;
@@ -409,7 +409,7 @@ nav {
     align-items: center;
 } 
 
- ul.dropdown-content.my-class .container section h1 {
+section h1 {
     color: #fff;
     font-size: 50px;
     text-transform: uppercase;
@@ -417,7 +417,7 @@ nav {
 }
 
 /* Styles applied on trigger */
- ul.dropdown-content.my-class .container section:target {
+section:target {
     opacity: 1;
     position: absolute;
     left: 0;
@@ -426,7 +426,7 @@ nav {
     z-index: 10;
 }
 
- ul.dropdown-content.my-class .container section:target h1 {
+section:target h1 {
     opacity: 0;
     animation: 2s fadeIn forwards .5s;
 }
