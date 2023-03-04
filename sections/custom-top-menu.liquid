@@ -33,11 +33,6 @@
          {% for collection in collections %}      
   <section id="#{{ forloop.index }}" >
 
-<style>
-#{{ forloop.index }}{
-opacity:0;
-           }
-           </style>
  {% for product in collection.products %}
                   <a href="{{ product.url }}" class="top_menu">
                   {% include 'product-grid-image',image:product.featured_image %}
@@ -60,9 +55,10 @@ opacity:0;
  {% endfor %}
  <li  id="toggle" class="close crs" ><a onclick="clsfn()">×</a></li>
 <script>
-  const navLinks = document.querySelectorAll('nav a');
-  const sections = document.querySelectorAll('section');
-
+  // const navLinks = document.querySelectorAll('nav a');
+  // const sections = document.querySelectorAll('section');
+const sectionId = link.getAttribute('href').substring(1);
+const section = document.getElementById(sectionId);
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       // Hide all sections
