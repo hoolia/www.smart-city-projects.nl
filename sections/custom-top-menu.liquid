@@ -58,8 +58,9 @@
                     });
 
                     // Display the clicked section
-                   const sectionId = link.getAttribute('id');
-                  const section = document.querySelector(`#${sectionId}`);
+                 const href = link.getAttribute('href');
+const section = document.querySelector(`[id="${href}"]`);
+
 
                     if (section) {
                       section.style.opacity = '1';
