@@ -11,71 +11,76 @@
       </li>
     </a>
  {% when 'Menu' %}
-<li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}'" onMouseOut="this.style.backgroundColor='{{ block.settings.bg }}'" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
-  <ul>
-    {% for link in linklists.side-menu.links %}
+{% when 'Menu' %}
+  <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}'" onMouseOut="this.style.backgroundColor='{{ block.settings.bg }}'" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
+    <ul>
+      {% for link in linklists.side-menu.links %}
       <span class="dropdown cstm-width" onclick="myfn()">
         <a href="#" {% if link.active %}aria-current="page"{% endif %}>
           {{ link.title }}
         </a>
         {% if link.links != blank %}
-          <ul class="dropdown-content">
-            <nav>
-              {% for collection in collections %}
-                <a href="#{{ forloop.index }}" id="{{ forloop.index }}" class="{{ forloop.index }}"><i class="far fa-user"></i> <span style="display: none;">{{- collection.title }}</span></a>
-              {% endfor %}
-            </nav>
-            <div class='container'>
-              {% for collection in collections %}
-                <section id="{{ forloop.index }}">
-                  {% for product in collection.products %}
-                    <a href="{{ product.url }}" class="top_menu">
-                      {% include 'product-grid-image', image:product.featured_image %}
-                      {% if settings.hide_hover != true %}
-                        {% include 'product-grid-image', image:product.images.last, hover:true %}
-                      {% endif %}
-                      {% if settings.grid_color_swatches != 'false' and settings.product_grid_img_carousel == false %}
-                        {% if product.available and product.variants.size > 1 %}
-                          {% include 'swatch-grid-img' with 'Color' %}
-                        {% endif %}
-                      {% endif %}
-                    </a>
-                    <li>{{ product.title }}</li>
-                    <li><a href="{{ product.url }}" class="product-image"></a></li>
-                  {% endfor %}
-                </section>
-              {% endfor %}
-              <li id="toggle" class="close crs"><a onclick="clsfn()">×</a></li>
-              <script>
-              
-const navLinks = document.querySelectorAll('nav a');
-const sections = document.querySelectorAll('section');
+        <ul class="dropdown-content">
+          <nav>
+            {% for collection in collections %}
+            <a href="#{{ forloop.index }}" id="{{ forloop.index }}" class="{{ forloop.index }}"><i class="far fa-user"></i> <span style=" display: none;">{{- collection.title }}</span></a>
+            {% endfor %}
+          </nav>
 
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    // Hide all sections
-    sections.forEach(section => {
-      section.style.opacity = '0';
-      section.style.pointerEvents = 'none';
-    });
+          <div class='container'>
+            {% for collection in collections %}
+            <section id="{{ forloop.index }}">
 
-    // Display the clicked section
-    const href = link.getAttribute('href');
-debugger
-    const section = document.querySelector(href);
-    debugger
-    section.style.opacity = '1';
-    section.style.pointerEvents = 'auto';
-  });
-});
-              </script>
-            </div>
-          </ul>
+              {% for product in collection.products %}
+              <a href="{{ product.url }}" class="top_menu">
+                {% include 'product-grid-image',image:product.featured_image %}
+                {% if settings.hide_hover != true %}
+                {% include 'product-grid-image',image:product.images.last,hover:true %}
+                {% endif %}
+                {% if settings.grid_color_swatches != 'false' and settings.product_grid_img_carousel == false %}
+                {% if product.available and product.variants.size > 1 %}
+                {% include 'swatch-grid-img' with 'Color'  %}
+                {% endif %}
+                {% endif %}
+              </a>
+              <li>{{ product.title }}</li>
+              <li><a href="{{ product.url }}" class="product-image"></a></li>
+              {% endfor %}
+
+
+            </section>
+
+            {% endfor %}
+            <li id="toggle" class="close crs"><a onclick="clsfn()">×</a></li>
+          </div>
+        </ul>
         {% endif %}
       </span>
-    {% endfor %}
-  </ul>
-</li>
+      {% endfor %}
+    </ul>
+  </li>
+  <script>
+    const navLinks = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('section');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Hide all sections
+        sections.forEach(section => {
+          section.style.opacity = '0';
+          section.style.pointerEvents = 'none';
+        });
+
+        // Display the clicked section
+        const href = link.getAttribute('href');
+
+        const section = document.querySelector(href);
+        section.style.opacity = '1';
+        section.style.pointerEvents = 'auto';
+      });
+    });
+  </script>
+
 
 {% endcase %}
                 
