@@ -10,7 +10,7 @@
         <a href="{{ block.settings.url }}" style="color: {{ block.settings.clr }} !important;"> {{ block.settings.title }}</a>
       </li>
     </a>
- {% when 'Menu' %}
+ 
 {% when 'Menu' %}
   <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}'" onMouseOut="this.style.backgroundColor='{{ block.settings.bg }}'" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
     <ul>
@@ -406,9 +406,7 @@ nav {
     flex-direction: column;
     height: 100vh;
     background: var(--secondary-color);
-}
-/* ul.dropdown-content.my-class .container {
-    position: fixed;
+} fixed;
 } */
 ul.dropdown-content.my-class .container section {
     position: absolute;
@@ -447,24 +445,7 @@ ul.dropdown-content.my-class .container section {
     animation: 2s fadeIn forwards .5s;
 }
 
-# {
-  background:var(--primary-color);
-}
-#second {
-    background: var(--complimentary-color);
-}
 
-#third {
-    background: var(--contrast-color);
-}
-
-#fourth {
-    background: var(--light-color);
-}
-
-/* @keyframes fadeIn {
-    100% { opacity:1 }
-} */
 </style>
   
 <script>
