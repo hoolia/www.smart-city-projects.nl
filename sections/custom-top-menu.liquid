@@ -10,7 +10,7 @@
         <a href="{{ block.settings.url }}" style="color: {{ block.settings.clr }} !important;"> {{ block.settings.title }}</a>
       </li>
     </a>
- 
+ {% when 'Menu' %}
 {% when 'Menu' %}
   <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}'" onMouseOut="this.style.backgroundColor='{{ block.settings.bg }}'" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
     <ul>
@@ -91,7 +91,33 @@
 
 {% endcase %}
                 
-
+{% comment %}
+{% for child_link in link.links %}
+<li >
+<a  class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+{{ child_link.title }}
+</a>
+{% if child_link.links != blank %}
+<ul>
+{% for grandchild_link in child_link.links %}
+<li>
+<a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+{{ grandchild_link.title }}
+</a>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+</span>
+{% endfor %}
+ </ul>
+</li>
+{% endcase %}
+ {% endcomment %}
     {% endfor %}
   </ul>
 </div>
@@ -342,9 +368,6 @@ ul.dropdown-content.my-class {
 }
 </style>
 
-
-
-<!-- from this -->
 <style>
   * {
   margin: 0;
@@ -383,10 +406,21 @@ nav {
     flex-direction: column;
     height: 100vh;
     background: var(--secondary-color);
-} fixed;
+}
+/* ul.dropdown-content.my-class .container {
+    position: fixed;
 } */
-ul.dropdown-content.my-class .container section {
-    position: absolute;
+ ul.dropdown-content.my-class .container section {
+/*     position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 0;
+    opacity: 0;
+    transition: all ease-in .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+       position: absolute;
     top: 0;
     height: 100vh;
     width: 100%;
@@ -395,10 +429,7 @@ ul.dropdown-content.my-class .container section {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: grid;
-    justify-content: start;
-    overflow: scroll;
-}
+} 
 
  ul.dropdown-content.my-class .container section h1 {
     color: #fff;
@@ -422,7 +453,24 @@ ul.dropdown-content.my-class .container section {
     animation: 2s fadeIn forwards .5s;
 }
 
+# {
+  background:var(--primary-color);
+}
+#second {
+    background: var(--complimentary-color);
+}
 
+#third {
+    background: var(--contrast-color);
+}
+
+#fourth {
+    background: var(--light-color);
+}
+
+/* @keyframes fadeIn {
+    100% { opacity:1 }
+} */
 </style>
   
 <script>
