@@ -410,17 +410,8 @@ nav {
 /* ul.dropdown-content.my-class .container {
     position: fixed;
 } */
- ul.dropdown-content.my-class .container section {
-/*     position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 0;
-    opacity: 0;
-    transition: all ease-in .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-       position: absolute;
+ul.dropdown-content.my-class .container section {
+    position: absolute;
     top: 0;
     height: 100vh;
     width: 100%;
@@ -429,7 +420,10 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+    display: grid;
+    justify-content: start;
+    overflow: scroll;
+}
 
  ul.dropdown-content.my-class .container section h1 {
     color: #fff;
