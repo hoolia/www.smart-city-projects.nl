@@ -13,34 +13,7 @@
   {% when 'Menu' %}
   
 {% endcase %}
-                
-{% comment %}
-{% for child_link in link.links %}
-<li >
-<a  class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
-{{ child_link.title }}
-</a>
-{% if child_link.links != blank %}
-<ul>
-{% for grandchild_link in child_link.links %}
-<li>
-<a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
-{{ grandchild_link.title }}
-</a>
-</li>
-{% endfor %}
-</ul>
-{% endif %}
-</li>
-{% endfor %}
-</ul>
-{% endif %}
-</span>
-{% endfor %}
- </ul>
-</li>
-{% endcase %}
- {% endcomment %}
+
     {% endfor %}
   </ul>
 </div>
@@ -214,82 +187,6 @@ span.dropdown.cstm-width {
 
 
 
-
-.dropdown {
-  
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-}
-
-.dropdown-content {
-  display: block;
-  position: absolute;
-  background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 0 16px;
-  margin: 0;
-  margin-top:1vh;
-  z-index: 99;
-  height: 100vh;
-  width: 100%;
-/*   max-height: 0; */
-  overflow: scroll;
-  transition: max-height 0.5s ease-out;
-}
-
-/* .dropdown:hover .dropdown-content {
-  max-height: 100vh;
-}
- */
-ul.dropdown-content li:first-child {
-    margin-top: 0;
-    position: initial;
-}
-
-    
- .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-  
-}
-
-.close:hover {
-  color: orange;
-  transform: rotate(90deg);
-}
-
-#content:target {
-  display: none;
-}
-ul.dropdown-content.my-class {
-    height: 100vh;
-}
-  span.dropdown.cstm-width ul.dropdown-content {
-
-    display:none
-}
-    span.dropdown.cstm-width ul.dropdown-content.my-class {
-    display: block;
-    padding: 3rem 3rem;
-
-}
-  a.top_menu img {
-    width: 100%;
-}
-  li#toggle a {
-    background: red;
-}
 </style>
 <script>
             
