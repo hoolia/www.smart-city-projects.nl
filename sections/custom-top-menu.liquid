@@ -72,7 +72,7 @@
       // hide all sections except the one that was clicked
       sections.forEach(section => {
         if (section.id === sectionId) {
-          section.style.display = 'flex';
+          section.style.display = 'grid';
         } else {
           section.style.display = 'none';
         }
@@ -91,33 +91,7 @@
 
 {% endcase %}
                 
-{% comment %}
-{% for child_link in link.links %}
-<li >
-<a  class="drpdwn-menu" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
-{{ child_link.title }}
-</a>
-{% if child_link.links != blank %}
-<ul>
-{% for grandchild_link in child_link.links %}
-<li>
-<a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
-{{ grandchild_link.title }}
-</a>
-</li>
-{% endfor %}
-</ul>
-{% endif %}
-</li>
-{% endfor %}
-</ul>
-{% endif %}
-</span>
-{% endfor %}
- </ul>
-</li>
-{% endcase %}
- {% endcomment %}
+
     {% endfor %}
   </ul>
 </div>
