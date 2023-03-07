@@ -2,6 +2,14 @@
   <!---->
   <section data-v-3f5bad52="" class="timeline4 time05 padA timeline4-div plug-padding-tb" style="padding: 100px 0px;">
     <div class="container containerM">
+      <div class="module-title aos-init aos-animate" data-aos="fade-down">
+      {% if section.settings.section_title != blank %}
+        <h2 class="mb-20">{{ section.settings.section_title }}</h2>
+      {% endif %}
+      {% if section.settings.description %}
+        <p class="sub-title Timeline-sub">{{ section.settings.description }}</p>
+      {% endif %}
+      </div>
       <div class="row" data-aos="fade-up">
         <div class="col-md-12">
           <div class="main-timeline">
@@ -58,7 +66,20 @@
 {% schema %}
   {
     "name": "Time line List",
-    "settings": [],
+    "settings": [
+		{
+          "type": "text",
+          "id": "section_title",
+          "label": "Section Title",
+          "default": "Your Journey"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "We take care of the entire project, from A to Z"
+        }
+     ],
       "blocks": [
      {
        "name": "Slide",

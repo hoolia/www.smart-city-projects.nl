@@ -173,6 +173,11 @@ p{margin:0 0 10px;}
 .Video5 .at__big-img_size2{height:470px;}
 }
 /* timeline-list */
+.timeline4, .timeline4 .module-title .sub-title
+{
+  color: #f8f8f8;
+}
+
 .main-timeline .timeline-year > div {
   line-height: inherit !important;
 }
