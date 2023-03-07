@@ -299,9 +299,9 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/book.png",
               "use_feature_service_icon": false,
-              "feature_service_icon": "fa-oil-can",
-              "feature_service_title": "Economical Risk",
-              "feature_service_description": "Gas is a finite resource, and increasing reliance on it could contribute to energy insecurity and price volatility in the long term."
+              "feature_service_icon": "fa-arrow-rotate-right",
+              "feature_service_title": "Circular Economy",
+              "feature_service_description": "Open your eyes! It is right in front of you.  Your existing energy can be twice as efficient, twice as cheap, if you just embrace the concept of \"Circular Economy\" by \"recycling waste energy\". Let's educate the world and reap the benefits."
             }
           },
           "1504781997946-1": {
@@ -330,8 +330,8 @@
               "image": "shopify:\/\/shop_images\/changing.png",
               "use_feature_service_icon": false,
               "feature_service_icon": "fa-leaf",
-              "feature_service_title": "Changing Plans",
-              "feature_service_description": "The Dutch government aims to reduce CO2 emissions by a whopping 49\/ by 2030. Offsets are a cost and do not have a financial return on investment compared to other operational efficiencies such as on-site solar. which means the price of natural gas and electricity is likely to become more expensive."
+              "feature_service_title": "Save The Planet",
+              "feature_service_description": "The Dutch government aims to reduce CO2 emissions by a whopping 49% by 2030. Introducing incentives like SDE++ subsidies to help you help them. It is a win-win-win situation. Helping the next generation live in a better world."
             }
           }
         },
