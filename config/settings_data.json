@@ -922,19 +922,19 @@
               "image": "shopify:\/\/shop_images\/project-management.png",
               "task": "TASK",
               "Day_": "02",
-              "description-title": "Manage the Project",
-              "description": "We take care of the entire project, from A to Z, ensuring a seamless process for you."
+              "description-title": "Site Visit",
+              "description": "We scope possibilities, We discuss options, We finalize on your intent."
             }
           },
           "b18b8e89-31b2-4b7f-ae23-06e6bab5d9b1": {
             "type": "slide",
             "settings": {
-              "Title": "We",
+              "Title": "You",
               "image": "shopify:\/\/shop_images\/subsidies.png",
               "task": "Task",
               "Day_": "03",
-              "description-title": "Manage the subsidies",
-              "description": "We are in charge of all the necessary paperwork and processes to obtain subsidies, including the SDE++ aid provided by the Dutch government, to help maximize your financial benefits."
+              "description-title": "Paperwork",
+              "description": "Final details are finalized on Paper. For you to Sign."
             }
           },
           "c26bf8d3-4fae-46ea-98df-0523e5d49ad8": {
@@ -943,9 +943,9 @@
               "Title": "We",
               "image": "shopify:\/\/shop_images\/contract.png",
               "task": "Task",
-              "Day_": "xx",
-              "description-title": "Prepare the legal contracts",
-              "description": "We are in charge of all the necessary legal contracts and documentation for the installation of solar panels and machines, as well as renting of the roof, to ensure compliance with regulations."
+              "Day_": "04",
+              "description-title": "Preparations",
+              "description": "Behind the scenes we are working hard to order all the materials, plan our engineers for installation, request the SDE++ subsidies, etc."
             }
           },
           "a1b1d056-e356-4b3c-bf1f-872b0cad9292": {
@@ -954,9 +954,9 @@
               "Title": "We",
               "image": "shopify:\/\/shop_images\/installation.png",
               "task": "Task",
-              "Day_": "xx",
-              "description-title": "Install all the devices",
-              "description": "We take care of the installation of all necessary devices, such as batteries, HPCs, and solar panels, to help you transit to a more sustainable and efficient energy solution."
+              "Day_": "24",
+              "description-title": "Installation Day",
+              "description": "We take care of the installation of all necessary devices, such as DataCenter Modules, Water Tanks and Solar Panels, to help you transit to a more sustainable and efficient energy solution."
             }
           },
           "2b4d10ee-1b87-42f9-a8d5-beacafafd09b": {
@@ -965,8 +965,8 @@
               "Title": "You",
               "image": "shopify:\/\/shop_images\/icons8-euro-100.png",
               "task": "Task",
-              "Day_": "xx",
-              "description-title": "Earn the benefits",
+              "Day_": "30",
+              "description-title": "Online",
               "description": "You will enjoy the benefits of your new energy solution, including reduced energy costs and a more sustainable, environmentally-friendly way of generating energy."
             }
           }
@@ -979,6 +979,8 @@
           "2b4d10ee-1b87-42f9-a8d5-beacafafd09b"
         ],
         "settings": {
+          "section_title": "Your Journey",
+          "description": "We take care of the entire project, from A to Z"
         }
       },
       "bcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e": {
