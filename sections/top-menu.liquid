@@ -413,20 +413,24 @@ ul.dropdown-content.my-class .container section {
 // myDiv.classList.add("my-class");
 // // document.querySelector('.my-class').style.display="block"
 //   } 
-
+// function clsfn(){
+//   debugger
+// const otherDiv = document.querySelector(' ul.dropdown-content');
+// document.querySelector('.my-class').style.display="none"
+             
+//             }  
 
   function myfn() {
   const myDiv = document.querySelector('ul.dropdown-content');
   myDiv.classList.add("my-class");
   document.querySelector('#toggle').style.display = 'block';
 }
+function clsfn() {
+  const otherDiv = document.querySelector('ul.dropdown-content');
+  document.querySelector('.my-class').style.display = "none";
+  document.querySelector('#toggle').style.display = 'none';
+}
 
-function clsfn(){
-  debugger
-const otherDiv = document.querySelector(' ul.dropdown-content');
-document.querySelector('.my-class').style.display="none"
-             
-            }  
 
 //  its for showing products
   const navLinks = document.querySelectorAll('nav a');
