@@ -427,24 +427,8 @@ function myfn() {
   document.querySelector('#toggle').style.display = 'block';
 }
 function clsfn(e) {
-  e.preventDefault();
-  var li = e.target.closest("li");
-  if (li) {
-    var content = li.querySelector(".child");
-    if (content) {
-      if (content.classList.contains("d-none")) {
-        content.classList.remove("d-none");
-        if (e.target.innerHTML) {
-          e.target.innerHTML = e.target.innerHTML.replace("+", "-");
-        }
-      } else {
-        content.classList.add("d-none");
-        if (e.target.innerHTML) {
-          e.target.innerHTML = e.target.innerHTML.replace("-", "+");
-        }
-      }
-    }
-  }
+const otherDiv = document.querySelector(' ul.dropdown-content');
+ document.querySelector('.my-class').style.display="none"
 }
 
 
