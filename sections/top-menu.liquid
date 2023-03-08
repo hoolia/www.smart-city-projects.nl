@@ -27,7 +27,7 @@
             {% endfor %}
           </nav>
 
-          <div class='container'>
+          <div class='containers'>
             {% for collection in collections %}
             <section id="{{ forloop.index }}">
 
@@ -320,7 +320,7 @@ ul.dropdown-content li:first-child {
 --contrast-color: #F2E527;
 --light-color: #D2A9D9;
 }
-ul.dropdown-content.my-class .container {
+ul.dropdown-content.my-class .containers {
     background: #fdfdfd;
     position: fixed;
     min-height: 100vh;
@@ -348,7 +348,7 @@ nav {
 /* ul.dropdown-content.my-class .container {
     position: fixed;
 } */
-ul.dropdown-content.my-class .container section {
+ul.dropdown-content.my-class .containers section {
   
     position: absolute;
     top: 0;
@@ -363,7 +363,7 @@ ul.dropdown-content.my-class .container section {
     margin-top: 2rem;
     grid-template-columns: 1fr;
 }
- ul.dropdown-content.my-class .container section h1 {
+ ul.dropdown-content.my-class .containers section h1 {
     color: #fff;
     font-size: 50px;
     text-transform: uppercase;
@@ -371,7 +371,7 @@ ul.dropdown-content.my-class .container section {
 }
 
 /* Styles applied on trigger */
- ul.dropdown-content.my-class .container section:target {
+ ul.dropdown-content.my-class .containers section:target {
     opacity: 1;
     position: absolute;
     left: 0;
@@ -380,7 +380,7 @@ ul.dropdown-content.my-class .container section {
     z-index: 10;
 }
 
- ul.dropdown-content.my-class .container section:target h1 {
+ ul.dropdown-content.my-class .containers section:target h1 {
     opacity: 0;
     animation: 2s fadeIn forwards .5s;
 }
@@ -401,11 +401,11 @@ ul.dropdown-content.my-class .container section {
 }
 
 @media screen and (max-width 768px){
-  ul.dropdown-content.my-class .container {
+  ul.dropdown-content.my-class .containers {
     right: 9rem;
     width: 23rem;
 }
-  ul.dropdown-content.my-class .container section {
+  ul.dropdown-content.my-class .containers section {
     position: absolute;
     top: 0;
     height: 100vh;
@@ -421,7 +421,7 @@ ul.dropdown-content.my-class .container section {
     width: 100%;
 }
 
-ul.dropdown-content.my-class .container {
+ul.dropdown-content.my-class .containers {
     background: #fdfdfd;
     position: fixed;
     min-height: 100vh;
