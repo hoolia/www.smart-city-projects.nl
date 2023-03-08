@@ -421,14 +421,14 @@ ul.dropdown-content.my-class .container section {
              
 //             }  
 
-  function myfn() {
+function myfn() {
   const myDiv = document.querySelector('ul.dropdown-content');
-  myDiv.classList.add("my-class");
+  myDiv.classList.toggle("my-class");
   document.querySelector('#toggle').style.display = 'block';
 }
 function clsfn() {
   const otherDiv = document.querySelector('ul.dropdown-content');
-  document.querySelector('.my-class').style.display = "none";
+  otherDiv.classList.remove("my-class");
   document.querySelector('#toggle').style.display = 'none';
 }
 
