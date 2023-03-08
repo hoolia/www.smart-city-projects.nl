@@ -426,13 +426,23 @@ function myfn() {
   myDiv.classList.toggle("my-class");
   document.querySelector('#toggle').style.display = 'block';
 }
-function clsfn() {
-  var li = this.parentElement;
-  var content = li.querySelector(".child:first-child");
-
-  // toggle the 'hidden' class on the clicked element
-  content.classList.toggle("hidden");
+function clsfn(e) {
+  e.preventDefault();
+  var li = e.target.closest("li");
+  if (li) {
+    var content = li.querySelector(".child");
+    if (content) {
+      if (content.classList.contains("d-none")) {
+        content.classList.remove("d-none");
+        e.target.innerHTML = e.target.innerHTML.replace("+", "-");
+      } else {
+        content.classList.add("d-none");
+        e.target.innerHTML = e.target.innerHTML.replace("-", "+");
+      }
+    }
+  }
 }
+
 
 
 
