@@ -21,7 +21,7 @@
         {% if link.links != blank %}
         <ul class="dropdown-content">
           <nav>
-             <a id="toggle" class="close crs"><a onclick="clsfn()">×</a></a>
+             <li id="toggle" class="close crs"><a onclick="clsfn()">×</a></li>
             {% for collection in collections %}
             <a href="#{{ forloop.index }}" id="{{ forloop.index }}" class="{{ forloop.index }}"><i class="far fa-user"></i> <span style=" display: none;">{{- collection.title }}</span></a>
             {% endfor %}
@@ -426,12 +426,14 @@ function myfn() {
   myDiv.classList.toggle("my-class");
   document.querySelector('#toggle').style.display = 'block';
 }
-function clsfn(){
-  console.log("clsfn() called");
-  var x = document.getElementById("poppedup");
-  console.log("x =", x);
-  x.classList.replace("show","hide");
+function clsfn() {
+  var li = this.parentElement;
+  var content = li.querySelector(".child");
+
+  // toggle the 'hidden' class on the clicked element
+  content.classList.toggle("hidden");
 }
+
 
 
 //  its for showing products
