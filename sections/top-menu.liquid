@@ -428,7 +428,7 @@ function myfn() {
 }
 function clsfn() {
   var li = this.parentElement;
-  var content = li.querySelector(".child");
+  var content = li.querySelector(".child:first-child");
 
   // toggle the 'hidden' class on the clicked element
   content.classList.toggle("hidden");
