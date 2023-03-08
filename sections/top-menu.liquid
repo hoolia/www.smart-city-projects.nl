@@ -57,34 +57,7 @@
       {% endfor %}
     </ul>
   </li>
-<script>
-  const navLinks = document.querySelectorAll('nav a');
-  const sections = document.querySelectorAll('section');
 
-  navLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault(); // prevent default link behavior
-
-      // get the section ID from the link href attribute
-      const sectionId = link.getAttribute('href').replace('#', '');
-
-      // hide all sections except the one that was clicked
-      sections.forEach(section => {
-        if (section.id === sectionId) {
-          section.style.display = 'grid';
-        } else {
-          section.style.display = 'none';
-        }
-      });
-
-      // remove the active class from all nav links and add it to the clicked link
-      navLinks.forEach(navLink => {
-        navLink.classList.remove('active');
-      });
-      link.classList.add('active');
-    });
-  });
-</script>
 
 
 
@@ -448,4 +421,32 @@ const otherDiv = document.querySelector(' ul.dropdown-content');
 document.querySelector('.my-class').style.display="none"
              
             }  
+</script>
+<script>
+  const navLinks = document.querySelectorAll('nav a');
+  const sections = document.querySelectorAll('section');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault(); // prevent default link behavior
+
+      // get the section ID from the link href attribute
+      const sectionId = link.getAttribute('href').replace('#', '');
+
+      // hide all sections except the one that was clicked
+      sections.forEach(section => {
+        if (section.id === sectionId) {
+          section.style.display = 'grid';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+
+      // remove the active class from all nav links and add it to the clicked link
+      navLinks.forEach(navLink => {
+        navLink.classList.remove('active');
+      });
+      link.classList.add('active');
+    });
+  });
 </script>
