@@ -277,7 +277,7 @@ ul.dropdown-content.my-class {
 
 
 </style>
-{% comment %}
+
 <style>
   .dropdown {
   position: relative;
@@ -444,132 +444,8 @@ ul.dropdown-content.my-class .container {
 }
 }
 </style>
-{% endcomment %}
-<style>
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-  }
 
-  .dropdown-content {
-    display: block;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 0 16px;
-    margin: 0;
-    margin-top:1vh;
-    z-index: 99;
-    height: 100vh;
-    width: 100%;
-    overflow: scroll;
-    transition: max-height 0.5s ease-out;
-  }
 
-  ul.dropdown-content.my-class .container {
-    background: #fdfdfd;
-    font-family: Montserrat, sans-serif;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-top: 100px;
-  }
-
-  nav a {
-    font-size: 40px;
-    color: #fff;
-    text-decoration: none;
-    padding: 20px;
-    text-align: center;
-  }
-
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: var(--secondary-color);
-    z-index: 50;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-  }
-
-  ul.dropdown-content.my-class .container section {
-    display: none;
-    position: relative;
-    top: 0;
-    opacity: 1;
-    transition: all ease-in .5s;
-    justify-content: start;
-    margin-top: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  ul.dropdown-content.my-class .container section h1 {
-    color: #fff;
-    font-size: 50px;
-    text-transform: uppercase;
-    opacity: 0;
-  }
-
-  ul.dropdown-content.my-class .container section:target {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-  }
-
-  ul.dropdown-content.my-class .container section:target h1 {
-    opacity: 0;
-    animation: 2s fadeIn forwards .5s;
-  }
-
-  .product-cotainer:last-child {
-    padding-bottom: 16rem;
-  }
-
-  #second {
-    background: var(--complimentary-color);
-  }
-
-  #third {
-    background: var(--contrast-color);
-  }
-
-  #fourth {
-    background: var(--light-color);
-  }
-
-  @media screen and (max-width: 768px) {
-    ul.dropdown-content.my-class .container {
-      right: 9rem;
-      width: 23rem;
-      overflow: hidden;
-      padding-top: 0;
-    }
-    ul.dropdown-content.my-class .container section {
-      margin-top: 1rem;
-      width: 100%;
-      padding: 0 0.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-    nav {
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-    }
-  }
-  <li onmouseover="this.style.backgroundColor='red'; this.style.color='white';" onmouseout="this.style.backgroundColor='white'; this.style.color='black';">Item</li>
-
-</style>
 
 <script>
             
