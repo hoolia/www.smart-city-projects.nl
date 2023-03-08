@@ -402,9 +402,16 @@ ul.dropdown-content.my-class .container section {
     background: var(--light-color);
 }
 
-/* @keyframes fadeIn {
-    100% { opacity:1 }
-} */
+@media screen and (max-width 768px){
+ul.dropdown-content.my-class .container {
+    background: #fdfdfd;
+    position: fixed;
+    min-height: 100vh;
+    font-family: Montserrat, sans-serif;
+    left: 19px;
+    width: 271px;
+}
+}
 </style>
 <script>
             
