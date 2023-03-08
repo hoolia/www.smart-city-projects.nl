@@ -434,10 +434,14 @@ function clsfn(e) {
     if (content) {
       if (content.classList.contains("d-none")) {
         content.classList.remove("d-none");
-        e.target.innerHTML = e.target.innerHTML.replace("+", "-");
+        if (e.target.innerHTML) {
+          e.target.innerHTML = e.target.innerHTML.replace("+", "-");
+        }
       } else {
         content.classList.add("d-none");
-        e.target.innerHTML = e.target.innerHTML.replace("-", "+");
+        if (e.target.innerHTML) {
+          e.target.innerHTML = e.target.innerHTML.replace("-", "+");
+        }
       }
     }
   }
