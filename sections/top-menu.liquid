@@ -166,6 +166,63 @@
     ]
   }
 {% endschema %}
+
+<script>
+            
+//   function myfn(){
+
+// ;const myDiv = document.querySelector(' ul.dropdown-content');
+// myDiv.classList.add("my-class");
+// // document.querySelector('.my-class').style.display="block"
+//   } 
+// function clsfn(){
+//   debugger
+// const otherDiv = document.querySelector(' ul.dropdown-content');
+// document.querySelector('.my-class').style.display="none"
+             
+//             }  
+
+function myfn() {
+  const myDiv = document.querySelector('ul.dropdown-content');
+  myDiv.classList.toggle("my-class");
+  document.querySelector('#toggle').style.display = 'block';
+}
+function clsfn(){
+  console.log("clsfn() called");
+  var x = document.getElementById("poppedup");
+  console.log("x =", x);
+  x.classList.replace("show","hide");
+}
+
+
+//  its for showing products
+  const navLinks = document.querySelectorAll('nav a');
+  const sections = document.querySelectorAll('section');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault(); // prevent default link behavior
+
+      // get the section ID from the link href attribute
+      const sectionId = link.getAttribute('href').replace('#', '');
+
+      // hide all sections except the one that was clicked
+      sections.forEach(section => {
+        if (section.id === sectionId) {
+          section.style.display = 'grid';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+
+      // remove the active class from all nav links and add it to the clicked link
+      navLinks.forEach(navLink => {
+        navLink.classList.remove('active');
+      });
+      link.classList.add('active');
+    });
+  });
+</script>
 <style>
 {% if template != 'index' %}
            
@@ -390,17 +447,6 @@ ul.dropdown-content.my-class .container section {
     padding-bottom: 16rem;
 }
 
-#second {
-    background: var(--complimentary-color);
-}
-
-#third {
-    background: var(--contrast-color);
-}
-
-#fourth {
-    background: var(--light-color);
-}
 
 @media screen and (max-width 768px){
   .container{
@@ -416,59 +462,3 @@ ul.dropdown-content.my-class .container {
 }
 }
 </style>
-<script>
-            
-//   function myfn(){
-
-// ;const myDiv = document.querySelector(' ul.dropdown-content');
-// myDiv.classList.add("my-class");
-// // document.querySelector('.my-class').style.display="block"
-//   } 
-// function clsfn(){
-//   debugger
-// const otherDiv = document.querySelector(' ul.dropdown-content');
-// document.querySelector('.my-class').style.display="none"
-             
-//             }  
-
-function myfn() {
-  const myDiv = document.querySelector('ul.dropdown-content');
-  myDiv.classList.toggle("my-class");
-  document.querySelector('#toggle').style.display = 'block';
-}
-function clsfn(){
-  console.log("clsfn() called");
-  var x = document.getElementById("poppedup");
-  console.log("x =", x);
-  x.classList.replace("show","hide");
-}
-
-
-//  its for showing products
-  const navLinks = document.querySelectorAll('nav a');
-  const sections = document.querySelectorAll('section');
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault(); // prevent default link behavior
-
-      // get the section ID from the link href attribute
-      const sectionId = link.getAttribute('href').replace('#', '');
-
-      // hide all sections except the one that was clicked
-      sections.forEach(section => {
-        if (section.id === sectionId) {
-          section.style.display = 'grid';
-        } else {
-          section.style.display = 'none';
-        }
-      });
-
-      // remove the active class from all nav links and add it to the clicked link
-      navLinks.forEach(navLink => {
-        navLink.classList.remove('active');
-      });
-      link.classList.add('active');
-    });
-  });
-</script>
