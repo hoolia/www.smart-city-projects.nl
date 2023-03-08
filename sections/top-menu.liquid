@@ -11,10 +11,85 @@
       </li>
     </a>
   {% when 'Menu' %}
+<li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}'" onMouseOut="this.style.backgroundColor='{{ block.settings.bg }}'" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
+    <ul>
+      {% for link in linklists.side-menu.links %}
+      <span class="dropdown cstm-width" onclick="myfn()">
+        <a href="#" {% if link.active %}aria-current="page"{% endif %}>
+          {{ link.title }}
+        </a>
+        {% if link.links != blank %}
+        <ul class="dropdown-content">
+          <nav>
+            {% for collection in collections %}
+            <a href="#{{ forloop.index }}" id="{{ forloop.index }}" class="{{ forloop.index }}"><i class="far fa-user"></i> <span style=" display: none;">{{- collection.title }}</span></a>
+            {% endfor %}
+          </nav>
+
+          <div class='container'>
+            {% for collection in collections %}
+            <section id="{{ forloop.index }}">
+
+              {% for product in collection.products %}
+            <div  class="product-cotainer">
+              <a href="{{ product.url }}" class="top_menu">
+                {% include 'product-grid-image',image:product.featured_image %}
+                {% if settings.hide_hover != true %}
+                {% include 'product-grid-image',image:product.images.last,hover:true %}
+                {% endif %}
+              </a>
+             
+              <li><a href="{{ product.url }}" class="product-image">  <li>{{ product.title }}</li></a></li>
+               
+            </div>
+                
+              {% endfor %}
 
 
-    
+            </section>
+
+            {% endfor %}
+            <li id="toggle" class="close crs"><a onclick="clsfn()">×</a></li>
+          </div>
+        </ul>
+        {% endif %}
+      </span>
+      {% endfor %}
+    </ul>
+  </li>
+<script>
+  const navLinks = document.querySelectorAll('nav a');
+  const sections = document.querySelectorAll('section');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault(); // prevent default link behavior
+
+      // get the section ID from the link href attribute
+      const sectionId = link.getAttribute('href').replace('#', '');
+
+      // hide all sections except the one that was clicked
+      sections.forEach(section => {
+        if (section.id === sectionId) {
+          section.style.display = 'grid';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+
+      // remove the active class from all nav links and add it to the clicked link
+      navLinks.forEach(navLink => {
+        navLink.classList.remove('active');
+      });
+      link.classList.add('active');
+    });
+  });
+</script>
+
+
+
 {% endcase %}
+                
 
     {% endfor %}
   </ul>
