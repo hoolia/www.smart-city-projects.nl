@@ -21,6 +21,7 @@
         {% if link.links != blank %}
         <ul class="dropdown-content">
           <nav>
+             <li id="toggle" class="close crs"><a onclick="clsfn()">×</a></li>
             {% for collection in collections %}
             <a href="#{{ forloop.index }}" id="{{ forloop.index }}" class="{{ forloop.index }}"><i class="far fa-user"></i> <span style=" display: none;">{{- collection.title }}</span></a>
             {% endfor %}
@@ -46,7 +47,7 @@
             </section>
 
             {% endfor %}
-            <li id="toggle" class="close crs"><a onclick="clsfn()">×</a></li>
+           
           </div>
         </ul>
         {% endif %}
