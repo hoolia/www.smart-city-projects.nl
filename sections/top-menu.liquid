@@ -402,7 +402,19 @@ ul.dropdown-content.my-class .container section {
     background: var(--light-color);
 }
 
-
+@media screen and (max-width 768px){
+  .container{
+    display:none
+  }
+ul.dropdown-content.my-class .container {
+    width: 340px;
+    right: 3rem;
+}
+  ul.dropdown-content.my-class .container {
+    right: 0;
+    width: 340px;
+}
+}
 </style>
 <script>
             

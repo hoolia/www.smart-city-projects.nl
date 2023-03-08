@@ -652,19 +652,7 @@ section.cd-faq {
   .banner7-content {
     background: #00000096;
 }
-@media screen and (max-width 768px){
-  .container{
-    display:none
-  }
-ul.dropdown-content.my-class .container {
-    width: 340px;
-    right: 3rem;
-}
-  ul.dropdown-content.my-class .container {
-    right: 0;
-    width: 340px;
-}
-}
+
 @media(min-width: 767px){
   .mobile-menu .ul-top-items{
      margin-top: -2px!important;
