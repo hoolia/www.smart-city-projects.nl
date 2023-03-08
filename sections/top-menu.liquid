@@ -426,10 +426,11 @@ function myfn() {
   myDiv.classList.toggle("my-class");
   document.querySelector('#toggle').style.display = 'block';
 }
-function clsfn() {
-  const otherDiv = document.querySelector('ul.dropdown-content');
-  otherDiv.classList.remove("my-class");
-  document.querySelector('#toggle').style.display = 'none';
+function clsfn(){
+  console.log("clsfn() called");
+  var x = document.getElementById("poppedup");
+  console.log("x =", x);
+  x.classList.replace("show","hide");
 }
 
 
