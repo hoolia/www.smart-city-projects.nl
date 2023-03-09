@@ -23,7 +23,7 @@
 
   <div id="owl-carousel{{section.id}}" class="owl-carousel">
     {% for block in section.blocks %}
-      <div>
+      <div id="{{ block.id }}">
         <div class="slide-item">
           <div class="left-slider">
             <img src="{{ block.settings.image  | img_url: 'master'}}" alt="">
