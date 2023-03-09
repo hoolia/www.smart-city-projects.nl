@@ -398,56 +398,50 @@
 </script>
 
 <script>
-        const st = {};
+      const st = {};
 
-    st.flap = document.querySelector('#flap');
-    st.toggle = document.querySelector('.toggle');
+  st.flap = document.querySelector('#flap');
+  st.toggle = document.querySelector('.toggle');
 
-    st.choice1 = document.querySelector('#choice1');
-    st.choice2 = document.querySelector('#choice2');
+  st.choice1 = document.querySelector('#choice1');
+  st.choice2 = document.querySelector('#choice2');
 
-    st.flap.addEventListener('transitionend', () => {
-  var slider = document.querySelector("#owl-carousel{{section.id}}");
-      var matches = container.querySelectorAll("div.highlighted > p");
+  st.flap.addEventListener('transitionend', () => {
 
-
-
-      console.log(slider);
-      console.log("on parle du slider");
-        if (st.choice1.checked) {
-            st.toggle.style.transform = 'rotateY(-15deg)';
-            setTimeout(() => st.toggle.style.transform = '', 400);
-            var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
-             x = x.parentNode;
-            console.log(x)  ;
-            x.style.display = "none";
-
-            console.log("on est ici ---------------------");
-        } else {
-            st.toggle.style.transform = 'rotateY(15deg)';
-            setTimeout(() => st.toggle.style.transform = '', 400);
-            var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
+      if (st.choice1.checked) {
+          st.toggle.style.transform = 'rotateY(-15deg)';
+          setTimeout(() => st.toggle.style.transform = '', 400);
+          var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
            x = x.parentNode;
-            console.log(x);
-          x.style.display = "block";
-            console.log("on est ici ---------------------");
+          console.log(x)  ;
+          x.style.display = "none";
 
-        }
+          console.log("on est ici ---------------------");
+      } else {
+          st.toggle.style.transform = 'rotateY(15deg)';
+          setTimeout(() => st.toggle.style.transform = '', 400);
+          var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
+         x = x.parentNode;
+          console.log(x);
+        x.style.display = "block";
+          console.log("on est ici ---------------------");
 
-    })
+      }
 
-    st.clickHandler = (e) => {
+  })
 
-        if (e.target.tagName === 'LABEL') {
-            setTimeout(() => {
-                st.flap.children[0].textContent = e.target.textContent;
-            }, 250);
-        }
-    }
+  st.clickHandler = (e) => {
 
-    document.addEventListener('DOMContentLoaded', () => {
-        st.flap.children[0].textContent = st.choice2.nextElementSibling.textContent;
-    });
+      if (e.target.tagName === 'LABEL') {
+          setTimeout(() => {
+              st.flap.children[0].textContent = e.target.textContent;
+          }, 250);
+      }
+  }
 
-    document.addEventListener('click', (e) => st.clickHandler(e));
+  document.addEventListener('DOMContentLoaded', () => {
+      st.flap.children[0].textContent = st.choice2.nextElementSibling.textContent;
+  });
+
+  document.addEventListener('click', (e) => st.clickHandler(e));
 </script>
