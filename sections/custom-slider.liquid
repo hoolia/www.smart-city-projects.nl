@@ -23,7 +23,7 @@
 
   <div id="owl-carousel{{section.id}}" class="owl-carousel">
     {% for block in section.blocks %}
-      <div id="ss{{ block.id }}">
+      <div id="{{ block.id }}">
         <script>
           console.log("{{ block.id }}");
           console.log("c'est l'id du block")
