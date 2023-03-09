@@ -21,7 +21,7 @@
     </form>
   </div>
 
-  <div id="owl-carousel{{section.id}}1" class="owl-carousel">
+  <div id="owl-carousel{{section.id}}" class="owl-carousel">
     {% for block in section.blocks %}
       <div id="{{ block.id }}">
         <script>
@@ -415,12 +415,12 @@
       if (st.choice1.checked) {
           st.toggle.style.transform = 'rotateY(-15deg)';
           setTimeout(() => st.toggle.style.transform = '', 400);
-        document.getElementById("owl-carouselbcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e1").style.display = "none";
+        document.getElementById("owl-carouselbcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e").style.display = "none";
         console.log("on est ici ---------------------");
       } else {
           st.toggle.style.transform = 'rotateY(15deg)';
           setTimeout(() => st.toggle.style.transform = '', 400);
-                document.getElementById("owl-carouselbcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e1").style.display = "block";
+                document.getElementById("owl-carouselbcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e").style.display = "block";
         console.log("on est ici ---------------------");
 
       }
