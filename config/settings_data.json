@@ -1217,6 +1217,13 @@
           "bottom_padding": false,
           "bottom_border": false
         }
+      },
+      "45a3f3bb-c0e6-47c7-b0af-ec92c349a457": {
+        "type": "custom-slider",
+        "settings": {
+          "heading": "WHAT OUR CLIENTS SAY",
+          "description": "Welcome to my personal presentation"
+        }
       }
     },
     "content_for_index": [
@@ -1224,6 +1231,7 @@
       "49a10ab4-423c-48b5-ba41-1a8db40c7525",
       "1504781997946",
       "bcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e",
+      "45a3f3bb-c0e6-47c7-b0af-ec92c349a457",
       "b22743f1-00fa-4113-be00-1b9a4880e779",
       "71cf6522-51f6-4750-b870-82a59e85afbf",
       "811dc7ef-6454-452b-b077-7da890f0fbdf",
