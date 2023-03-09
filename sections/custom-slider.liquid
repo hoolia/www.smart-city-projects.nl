@@ -402,43 +402,45 @@
 </script>
 
 <script>
-      const st = {};
+        const st = {};
 
-  st.flap = document.querySelector('#flap');
-  st.toggle = document.querySelector('.toggle');
+    st.flap = document.querySelector('#flap');
+    st.toggle = document.querySelector('.toggle');
 
-  st.choice1 = document.querySelector('#choice1');
-  st.choice2 = document.querySelector('#choice2');
+    st.choice1 = document.querySelector('#choice1');
+    st.choice2 = document.querySelector('#choice2');
 
-  st.flap.addEventListener('transitionend', () => {
+    st.flap.addEventListener('transitionend', () => {
 
-      if (st.choice1.checked) {
-          st.toggle.style.transform = 'rotateY(-15deg)';
-          setTimeout(() => st.toggle.style.transform = '', 400);
-        document.getElementById("0abf8e33-eb72-4b19-9820-0e813de20466").style.display = "none";
-        console.log("on est ici ---------------------");
-      } else {
-          st.toggle.style.transform = 'rotateY(15deg)';
-          setTimeout(() => st.toggle.style.transform = '', 400);
-                document.getElementById("0abf8e33-eb72-4b19-9820-0e813de20466").style.display = "none";
-        console.log("on est ici ---------------------");
+        if (st.choice1.checked) {
+            st.toggle.style.transform = 'rotateY(-15deg)';
+            setTimeout(() => st.toggle.style.transform = '', 400);
+          document.getElementById("owl-carouselbcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e
+  ").style.display = "none";
+          console.log("on est ici ---------------------");
+        } else {
+            st.toggle.style.transform = 'rotateY(15deg)';
+            setTimeout(() => st.toggle.style.transform = '', 400);
+                  document.getElementById("owl-carouselbcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e
+  ").style.display = "none";
+          console.log("on est ici ---------------------");
 
-      }
+        }
 
-  })
+    })
 
-  st.clickHandler = (e) => {
+    st.clickHandler = (e) => {
 
-      if (e.target.tagName === 'LABEL') {
-          setTimeout(() => {
-              st.flap.children[0].textContent = e.target.textContent;
-          }, 250);
-      }
-  }
+        if (e.target.tagName === 'LABEL') {
+            setTimeout(() => {
+                st.flap.children[0].textContent = e.target.textContent;
+            }, 250);
+        }
+    }
 
-  document.addEventListener('DOMContentLoaded', () => {
-      st.flap.children[0].textContent = st.choice2.nextElementSibling.textContent;
-  });
+    document.addEventListener('DOMContentLoaded', () => {
+        st.flap.children[0].textContent = st.choice2.nextElementSibling.textContent;
+    });
 
-  document.addEventListener('click', (e) => st.clickHandler(e));
+    document.addEventListener('click', (e) => st.clickHandler(e));
 </script>
