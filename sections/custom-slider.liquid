@@ -25,6 +25,9 @@
   <div id="owl-carousel{{section.id}}" class="owl-carousel">
     {% for block in section.blocks %}
       <div id="{{ block.id }}">
+        <script>
+          console.log("{{ block.id }}");
+        </script>
         <div class="slide-item">
           <div class="left-slider">
             <img src="{{ block.settings.image  | img_url: 'master'}}" alt="">
