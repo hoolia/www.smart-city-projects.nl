@@ -1351,6 +1351,26 @@
         ],
         "settings": {
         }
+      },
+      "fab7068f-cc57-46ec-bf94-e4c533426ed3": {
+        "type": "collection-tab",
+        "settings": {
+          "products_tab_layout": "products-tab1",
+          "listing_rows": 2,
+          "no_of_products": 4,
+          "heading": "Featured collection",
+          "description": "Browse the collection of our best selling and trending products",
+          "fullwidth": false,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "products_tab_collection1": "frontpage",
+          "products_tab_collection2": "positive-impact",
+          "products_tab_collection3": "",
+          "products_tab_collection4": "",
+          "products_tab_collection5": "",
+          "products_tab_count": 8,
+          "product_grid_img_carousel": false
+        }
       }
     },
     "content_for_index": [
@@ -1363,7 +1383,8 @@
       "71cf6522-51f6-4750-b870-82a59e85afbf",
       "811dc7ef-6454-452b-b077-7da890f0fbdf",
       "23726bfe-e4ad-4539-a4f1-4289742a83db",
-      "75a43b2a-1a20-41a3-9caf-43f29d41f10d"
+      "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
+      "fab7068f-cc57-46ec-bf94-e4c533426ed3"
     ]
   },
   "presets": {
