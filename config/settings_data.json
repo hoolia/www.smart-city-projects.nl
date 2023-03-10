@@ -1354,6 +1354,7 @@
       },
       "fab7068f-cc57-46ec-bf94-e4c533426ed3": {
         "type": "collection-tab",
+        "disabled": true,
         "settings": {
           "products_tab_layout": "products-tab1",
           "listing_rows": 2,
