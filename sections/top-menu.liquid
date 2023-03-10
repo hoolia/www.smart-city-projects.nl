@@ -19,9 +19,10 @@
           {{ link.title }}
         </a>
         {% if link.links != blank %}
+          <ul><li id="toggle" class="close crs"><a onclick="clsfn()">×</a></li></ul>
         <ul class="dropdown-content">
           <nav>
-             <li id="toggle" class="close crs"><a onclick="clsfn()">×</a></li>
+             
             {% for collection in collections %}
             <a href="#{{ forloop.index }}" id="{{ forloop.index }}" class="{{ forloop.index }}">
 <!--               <i class="far fa-user"></i> -->
