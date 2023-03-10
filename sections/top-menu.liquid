@@ -396,7 +396,12 @@ ul.dropdown-content.my-class .container {
 myDiv.classList.add("my-class");
 document.querySelector('.my-class').style.display="block";
 
-
+    
+let myMediaQuery = window.matchMedia('(max-width: 768px)');
+ if(myMediaQuery.matches) {
+   alert("ok");  
+ }
+    
 
 
     
