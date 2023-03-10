@@ -19,7 +19,11 @@
           {{ link.title }}
         </a>
         {% if link.links != blank %}
-          <ul><li  class="close crs"><a onclick="clsfn()">×</a></li></ul>
+          <ul style="
+    position: fixed;
+    z-index: 999999;
+"><li  class="close crs" style="
+    font-size: 54px;"><a onclick="clsfn()">×</a></li></ul>
         <ul class="dropdown-content">
           <nav>
              
