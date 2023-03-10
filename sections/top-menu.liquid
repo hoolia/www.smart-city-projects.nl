@@ -18,18 +18,18 @@
         <a href="#" {% if link.active %}aria-current="page"{% endif %}>
           {{ link.title }}
         </a>
+      </span>
         {% if link.links != blank %}
           <ul style="
     position: fixed;
-    z-index: 999999;
-"><li  class="close crs" style="
+    z-index: 999999;"><li  class="close crs" style="
     font-size: 54px;"><a onclick="myfn()">×</a></li></ul>
         <ul class="dropdown-content">
           <nav>
              
             {% for collection in collections %}
             <a href="#{{ forloop.index }}" id="{{ forloop.index }}" class="{{ forloop.index }}">
-<!--               <i class="far fa-user"></i> -->
+
               
               <img src="{{ collection.metafields.custom.icon | image_url }}">
 <span style=" display: none;">{{- collection.title }}</span></a>
