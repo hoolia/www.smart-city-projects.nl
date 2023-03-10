@@ -11,6 +11,7 @@
       </li>
     </a>
   {% when 'Menu' %}
+   {% comment %}
 <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}'" onMouseOut="this.style.backgroundColor='{{ block.settings.bg }}'" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
     <ul>
       {% for link in linklists.side-menu.links %}
@@ -21,16 +22,15 @@
         {% if link.links != blank %}
           <ul style="
     position: fixed;
-    z-index: 999999;
-"><li  class="close crs" style="
+    z-index: 999999;">
+            <li  class="close crs" style="
     font-size: 54px;"><a onclick="myfn()">×</a></li></ul>
         <ul class="dropdown-content">
           <nav>
              
             {% for collection in collections %}
             <a href="#{{ forloop.index }}" id="{{ forloop.index }}" class="{{ forloop.index }}">
-<!--               <i class="far fa-user"></i> -->
-              
+  
               <img src="{{ collection.metafields.custom.icon | image_url }}">
 <span style=" display: none;">{{- collection.title }}</span></a>
             {% endfor %}
@@ -64,7 +64,7 @@
       {% endfor %}
     </ul>
   </li>
-
+{% endcomment %}
 
 
 
