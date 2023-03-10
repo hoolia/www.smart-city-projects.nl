@@ -11,7 +11,6 @@
       </li>
     </a>
   {% when 'Menu' %}
-   {% comment %}
 <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}'" onMouseOut="this.style.backgroundColor='{{ block.settings.bg }}'" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
     <ul>
       {% for link in linklists.side-menu.links %}
@@ -22,15 +21,16 @@
         {% if link.links != blank %}
           <ul style="
     position: fixed;
-    z-index: 999999;">
-            <li  class="close crs" style="
+    z-index: 999999;
+"><li  class="close crs" style="
     font-size: 54px;"><a onclick="myfn()">×</a></li></ul>
         <ul class="dropdown-content">
           <nav>
              
             {% for collection in collections %}
             <a href="#{{ forloop.index }}" id="{{ forloop.index }}" class="{{ forloop.index }}">
-  
+<!--               <i class="far fa-user"></i> -->
+              
               <img src="{{ collection.metafields.custom.icon | image_url }}">
 <span style=" display: none;">{{- collection.title }}</span></a>
             {% endfor %}
@@ -64,58 +64,9 @@
       {% endfor %}
     </ul>
   </li>
-{% endcomment %}
 
-<li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}'" onMouseOut="this.style.backgroundColor='{{ block.settings.bg }}'" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
-<section class="app">
-  <aside class="sidebar">
-         <header>
-        Menu
-      </header>
-    <nav class="sidebar-nav">
- 
-      <ul>
-        <li>
-          <a href="#"><i class="ion-bag"></i> <span>Shop</span></a>
-          <ul class="nav-flyout">
-            <li>
-              <a href="#"><i class="ion-ios-color-filter-outline"></i>Derps</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-clock-outline"></i>Times</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-android-star-outline"></i>Hates</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-heart-broken"></i>Beat</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#"><i class="ion-ios-settings"></i> <span class="">Controls</span></a>
-          <ul class="nav-flyout">
-            <li>
-              <a href="#"><i class="ion-ios-alarm-outline"></i>Watch</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-camera-outline"></i>Creeper</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-chatboxes-outline"></i>Hate</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-cog-outline"></i>Grinder</a>
-            </li>
-          </ul>
-        </li>
-     
-      </ul>
-    </nav>
-  </aside>
-</section>
 
-</li>
+
 
 {% endcase %}
                 
@@ -508,13 +459,13 @@ ul.dropdown-content.my-class .container {
 <script>
             
   function myfn(){
-  alert("dd");
-const myDiv = document.querySelector(' ul.dropdown-content');
+
+;const myDiv = document.querySelector(' ul.dropdown-content');
 myDiv.classList.add("my-class");
 document.querySelector('.my-class').style.display="block"
   } 
 function clsfn(){
-
+  alert("dd");
 const otherDiv = document.querySelector(' ul.dropdown-content');
 document.querySelector('.my-class').style.display="none"
              
