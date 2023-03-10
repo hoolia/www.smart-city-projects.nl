@@ -12,7 +12,8 @@
     </a>
  
 {% when 'Menu' %}
-  <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}'" onMouseOut="this.style.backgroundColor='{{ block.settings.bg }}'" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
+ {% comment %}
+    <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}'" onMouseOut="this.style.backgroundColor='{{ block.settings.bg }}'" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
     <ul>
       {% for link in linklists.side-menu.links %}
       <span class="dropdown cstm-width" onclick="myfn()">
@@ -86,7 +87,7 @@
     });
   });
 </script>
-
+{% endcomment %}
 
 
 {% endcase %}
