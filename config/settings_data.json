@@ -1264,6 +1264,26 @@
           "heading": "in-house water-heated",
           "description": "Welcome to my personal presentation"
         }
+      },
+      "5af3a3a6-7041-495a-916d-7bfac2568687": {
+        "type": "custom-slider",
+        "blocks": {
+          "2732c2f0-6e65-4696-9fdd-dad77172a8f5": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/investment.png",
+              "Title": "external a",
+              "discription": ""
+            }
+          }
+        },
+        "block_order": [
+          "2732c2f0-6e65-4696-9fdd-dad77172a8f5"
+        ],
+        "settings": {
+          "heading": "external air-heated",
+          "description": "Welcome to my personal presentation"
+        }
       }
     },
     "content_for_index": [
@@ -1278,7 +1298,8 @@
       "23726bfe-e4ad-4539-a4f1-4289742a83db",
       "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
       "cce8cbd4-961d-41c8-8b27-36215ed23783",
-      "54bd7d73-010b-4598-a901-72830cff2778"
+      "54bd7d73-010b-4598-a901-72830cff2778",
+      "5af3a3a6-7041-495a-916d-7bfac2568687"
     ]
   },
   "presets": {
