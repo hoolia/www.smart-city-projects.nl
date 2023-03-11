@@ -273,8 +273,8 @@
   st.clickHandler = (e) => {
 
       if (e.target.tagName === 'LABEL') {
-          setTimeout(() => {
-              st.flap.children[0].textContent = e.target.textContent;
+          setTimeout(() => {if(e.target.id == 'choice1' || e.target.id == 'choice2')
+          {st.flap.children[0].textContent = e.target.textContent;}else{st.flap1.children[0].textContent = e.target.textContent;}
           }, 250);
       }
   }
@@ -282,7 +282,6 @@
 
   document.addEventListener('DOMContentLoaded', () => {
           st.flap1.children[0].textContent = st.choice4.nextElementSibling.textContent;
-
       st.flap.children[0].textContent = st.choice2.nextElementSibling.textContent;
 
   });
