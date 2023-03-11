@@ -304,11 +304,11 @@
 
   })
 
-  st.clickHandler1 = (e) => {
+  st.clickHandler1 = (f) => {
 
-      if (e.target.tagName === 'LABEL') {
+      if (f.target.tagName === 'LABEL') {
           setTimeout(() => {
-              st.flap1.children[0].textContent = e.target.textContent;
+              st.flap1.children[0].textContent = f.target.textContent;
           }, 250);
       }
   }
@@ -319,5 +319,5 @@
 
   });
 
-  document.addEventListener('click', (e) => st.clickHandler1(e))
+  document.addEventListener('click', (f) => st.clickHandler1(f))
 </script>
