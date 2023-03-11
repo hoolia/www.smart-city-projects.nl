@@ -1308,8 +1308,8 @@
       "4e60826a-8669-4c67-bdfd-9811f4f440b2": {
         "type": "custom-liquid",
         "settings": {
-          "subheading": "Sub-heading",
-          "title": "Your Liquid",
+          "subheading": "togggle headinf",
+          "title": "toggle subheading",
           "liquid": "<div class=\"row aos-init aos-animate\" data-aos=\"fade-down\">\n<div class=\"col col-sm-12 col-xs-12 col-md-6\">toggle 1<\/div>\n<div class=\"col col-sm-12 col-xs-12 col-md-6\">toggle 2<\/div>\n<\/div>"
         }
       }
