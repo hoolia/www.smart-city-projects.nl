@@ -294,9 +294,19 @@
           }, 250);
       }
   }
+  st.clickHandler1 = (e) => {
+
+      if (e.target.tagName === 'LABEL') {
+          setTimeout(() => {
+              st.flap1.children[0].textContent = e.target.textContent;
+          }, 250);
+      }
+  }
 
   document.addEventListener('DOMContentLoaded', () => {
       st.flap.children[0].textContent = st.choice2.nextElementSibling.textContent;
+          st.flap1.children[0].textContent = st.choice4.nextElementSibling.textContent;
+
   });
 
   document.addEventListener('click', (e) => st.clickHandler(e));
