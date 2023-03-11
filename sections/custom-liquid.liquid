@@ -281,6 +281,8 @@
 
 
   document.addEventListener('DOMContentLoaded', () => {
+          st.flap1.children[0].textContent = st.choice4.nextElementSibling.textContent;
+
       st.flap.children[0].textContent = st.choice2.nextElementSibling.textContent;
 
   });
@@ -314,10 +316,7 @@
   }
 
 
-  document.addEventListener('DOMContentLoaded', () => {
-      st.flap1.children[0].textContent = st.choice4.nextElementSibling.textContent;
 
-  });
 
   document.addEventListener('click', (f) => st.clickHandler1(f));
 </script>
