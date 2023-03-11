@@ -14,27 +14,7 @@
 <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}'" onMouseOut="this.style.backgroundColor='{{ block.settings.bg }}'" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
      <ul class="close-div"><li  class="close crs"><a onclick="clsfn()">×</a></li></ul>
 
-<style>
-  .close-div {
-    position: fixed;
-    z-index: 999999;
-   right: 5rem;
-   display:none;
-}
-   .close-div .close.crs {
-font-size: 54px;
-    position: absolute;
-    display: flex;
-    z-index: 9999;
-       right: 0;
-}
-   .close.crs a {
-    right: 0;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-   </style>
+
    
    <ul>
       {% for link in linklists.side-menu.links %}
