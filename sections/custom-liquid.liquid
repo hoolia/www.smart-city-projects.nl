@@ -239,76 +239,75 @@
       transform-style: preserve-3d;
   }
 </style>
-{% comment %}
-  <script>
-        const st = {};
 
-    st.flap = document.querySelector('#flap');
-    st.toggle = document.querySelector('.toggle');
-    st.flap1 = document.querySelector('#flap1');
-    st.toggle1 = document.querySelector('.toggle1');
+<script>
+      const st = {};
 
-    st.choice1 = document.querySelector('#choice1');
-    st.choice2 = document.querySelector('#choice2');
-     st.choice3 = document.querySelector('#choice3');
-    st.choice4 = document.querySelector('#choice4');
+  st.flap = document.querySelector('#flap');
+  st.toggle = document.querySelector('.toggle');
+  st.flap1 = document.querySelector('#flap1');
+  st.toggle1 = document.querySelector('.toggle1');
 
-    st.flap.addEventListener('transitionend', () => {
+  st.choice1 = document.querySelector('#choice1');
+  st.choice2 = document.querySelector('#choice2');
+   st.choice3 = document.querySelector('#choice3');
+  st.choice4 = document.querySelector('#choice4');
 
-        if (st.choice1.checked) {
-            st.toggle.style.transform = 'rotateY(-15deg)';
-            setTimeout(() => st.toggle.style.transform = '', 400);
-            var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
+  st.flap.addEventListener('transitionend', () => {
 
-        } else {
-            st.toggle.style.transform = 'rotateY(15deg)';
-            setTimeout(() => st.toggle.style.transform = '', 400);
-            var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
+      if (st.choice1.checked) {
+          st.toggle.style.transform = 'rotateY(-15deg)';
+          setTimeout(() => st.toggle.style.transform = '', 400);
+          var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
 
-
-        }
-
-    })
-     st.flap1.addEventListener('transitionend', () => {
-
-        if (st.choice3.checked) {
-            st.toggle1.style.transform = 'rotateY(-15deg)';
-            setTimeout(() => st.toggle1.style.transform = '', 400);
-            var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
-
-        } else {
-            st.toggle1.style.transform = 'rotateY(15deg)';
-            setTimeout(() => st.toggle1.style.transform = '', 400);
-            var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
+      } else {
+          st.toggle.style.transform = 'rotateY(15deg)';
+          setTimeout(() => st.toggle.style.transform = '', 400);
+          var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
 
 
-        }
+      }
 
-    })
+  })
+   st.flap1.addEventListener('transitionend', () => {
 
-    st.clickHandler = (e) => {
+      if (st.choice3.checked) {
+          st.toggle1.style.transform = 'rotateY(-15deg)';
+          setTimeout(() => st.toggle1.style.transform = '', 400);
+          var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
 
-        if (e.target.tagName === 'LABEL') {
-            setTimeout(() => {
-                st.flap.children[0].textContent = e.target.textContent;
-            }, 250);
-        }
-    }
-    st.clickHandler1 = (e) => {
+      } else {
+          st.toggle1.style.transform = 'rotateY(15deg)';
+          setTimeout(() => st.toggle1.style.transform = '', 400);
+          var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
 
-        if (e.target.tagName === 'LABEL') {
-            setTimeout(() => {
-                st.flap1.children[0].textContent = e.target.textContent;
-            }, 250);
-        }
-    }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        st.flap.children[0].textContent = st.choice2.nextElementSibling.textContent;
-            st.flap1.children[0].textContent = st.choice4.nextElementSibling.textContent;
+      }
 
-    });
+  })
 
-    document.addEventListener('click', (e) => {st.clickHandler1(e));}
-  </script>
-{% endcomment %}
+  st.clickHandler = (e) => {
+
+      if (e.target.tagName === 'LABEL') {
+          setTimeout(() => {
+              st.flap.children[0].textContent = e.target.textContent;
+          }, 250);
+      }
+  }
+  st.clickHandler1 = (e) => {
+
+      if (e.target.tagName === 'LABEL') {
+          setTimeout(() => {
+              st.flap1.children[0].textContent = e.target.textContent;
+          }, 250);
+      }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+      st.flap.children[0].textContent = st.choice2.nextElementSibling.textContent;
+          st.flap1.children[0].textContent = st.choice4.nextElementSibling.textContent;
+
+  });
+
+  document.addEventListener('click', (e) => {st.clickHandler1(e));}
+</script>
