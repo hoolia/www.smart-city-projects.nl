@@ -1218,18 +1218,31 @@
           "bottom_border": false
         }
       },
-      "45a3f3bb-c0e6-47c7-b0af-ec92c349a457": {
-        "type": "custom-slider",
-        "settings": {
-          "heading": "WHAT OUR CLIENTS SAY",
-          "description": "Welcome to my personal presentation"
-        }
-      },
       "dd9a72f1-2f8c-46f9-8e57-4d1f55d162ab": {
         "type": "Tabs-Section",
         "settings": {
           "heading": "The Installation",
           "description": "The material that makes the magic happen"
+        }
+      },
+      "cce8cbd4-961d-41c8-8b27-36215ed23783": {
+        "type": "custom-slider",
+        "blocks": {
+          "2ff3a9b9-5d7b-4cae-87a4-29107ba0be42": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/money-time.png",
+              "Title": "",
+              "discription": ""
+            }
+          }
+        },
+        "block_order": [
+          "2ff3a9b9-5d7b-4cae-87a4-29107ba0be42"
+        ],
+        "settings": {
+          "heading": "WHAT OUR CLIENTS SAY",
+          "description": "Welcome to my personal presentation"
         }
       }
     },
@@ -1239,12 +1252,12 @@
       "1504781997946",
       "dd9a72f1-2f8c-46f9-8e57-4d1f55d162ab",
       "bcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e",
-      "45a3f3bb-c0e6-47c7-b0af-ec92c349a457",
       "b22743f1-00fa-4113-be00-1b9a4880e779",
       "71cf6522-51f6-4750-b870-82a59e85afbf",
       "811dc7ef-6454-452b-b077-7da890f0fbdf",
       "23726bfe-e4ad-4539-a4f1-4289742a83db",
-      "75a43b2a-1a20-41a3-9caf-43f29d41f10d"
+      "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
+      "cce8cbd4-961d-41c8-8b27-36215ed23783"
     ]
   },
   "presets": {
