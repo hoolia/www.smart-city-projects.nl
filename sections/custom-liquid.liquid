@@ -1,54 +1,219 @@
-<section class="Section Section--spacingNormal" id="section-{{ section.id }}">
-  <div class="Container">
-    {%- if section.settings.subheading != blank or section.settings.title != blank -%}
-      <header class="SectionHeader SectionHeader--center">
-        {%- if section.settings.subheading != blank -%}
-          <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
-        {%- endif -%}
+{% comment %}
+  }}<section class="Section Section--spacingNormal" id="section-{{ section.id }}">
+    <div class="Container">
+      {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+        <header class="SectionHeader SectionHeader--center">
+          {%- if section.settings.subheading != blank -%}
+            <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+          {%- endif -%}
 
-        {%- if section.settings.title != blank -%}
-          <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
-        {%- endif -%}
-      </header>
-    {%- endif -%}
+          {%- if section.settings.title != blank -%}
+            <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+          {%- endif -%}
+        </header>
+      {%- endif -%}
 
-    <div class="Liquid">
-      {{ section.settings.liquid }}
+      <div class="Liquid">
+        {{ section.settings.liquid }}
+      </div>
     </div>
+  </section>
+
+  {% schema %}
+  {
+    "name": "Custom Liquid",
+    "class": "shopify-section--bordered",
+    "settings": [
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "Sub-heading",
+        "default": "Sub-heading"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Your Liquid"
+      },
+      {
+        "type": "liquid",
+        "id": "liquid",
+        "label": "Liquid",
+        "info": "Add app snippets or other Liquid code to create advanced customizations.",
+        "default": "<p>Write your own custom Liquid content.</p>"
+      }
+    ],
+    "presets": [
+      {
+        "category": "Advanced",
+        "name": "Custom Liquid",
+        "settings": {}
+      }
+    ]
+  }
+  {% endschema %}
+{% endcomment %}
+<div class="container">
+  <div class="module-title">
+    {% if section.settings.heading %}
+      <h2 class="title_">
+        <strong>{{ section.settings.heading }}</strong>
+      </h2>
+    {% endif %}
+    {% if section.settings.description %}
+      <p class="sub-title">{{ section.settings.description }}</p>
+    {% endif %}
   </div>
-</section>
+  <div class="containerr">
+    <form class="toggle">
+      <input type="radio" id="choice1" name="choice" value="Interior">
+      <label for="choice1">In-house</label>
+
+      <input type="radio" id="choice2" name="choice" value="exterior">
+      <label for="choice2">External</label>
+
+      <div id="flap"><span class="content">productive</span></div>
+    </form>
+  </div>
+</div>
 
 {% schema %}
 {
-  "name": "Custom Liquid",
-  "class": "shopify-section--bordered",
-  "settings": [
-    {
-      "type": "text",
-      "id": "subheading",
-      "label": "Sub-heading",
-      "default": "Sub-heading"
-    },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Heading",
-      "default": "Your Liquid"
-    },
-    {
-      "type": "liquid",
-      "id": "liquid",
-      "label": "Liquid",
-      "info": "Add app snippets or other Liquid code to create advanced customizations.",
-      "default": "<p>Write your own custom Liquid content.</p>"
-    }
-  ],
-  "presets": [
-    {
-      "category": "Advanced",
-      "name": "Custom Liquid",
-      "settings": {}
-    }
-  ]
+  "name": "Section name",
+  "settings": []
 }
 {% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+<style>
+      :root {
+      --accent: #2bda04;
+      --border-width: 6px;
+      --border-radius: 55px;
+      --font-size: 30px;
+  }
+
+
+
+  .containerr {
+      perspective: 800px;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20;
+      font-family: sans-serif;
+  }
+
+  .toggle {
+      position: relative;
+      border: solid var(--border-width) var(--accent);
+      border-radius: var(--border-radius);
+      transition: transform cubic-bezier(0, 0, 0.30, 2) .4s;
+      transform-style: preserve-3d;
+      perspective: 800px;
+  }
+
+  .toggle>input[type="radio"] {
+      display: none;
+  }
+
+  .toggle>#choice1:checked~#flap {
+      transform: rotateY(-180deg);
+  }
+
+  .toggle>#choice1:checked~#flap>.content {
+      transform: rotateY(-180deg);
+  }
+
+  .toggle>#choice2:checked~#flap {
+      transform: rotateY(0deg);
+  }
+
+  .toggle>label {
+      display: inline-block;
+      min-width: 70px;
+      padding: 5px;
+      font-size: var(--font-size);
+      text-align: center;
+      color: var(--accent);
+      cursor: pointer;
+  }
+
+  .toggle>label,
+  .toggle>#flap {
+      font-weight: bold;
+      text-transform: capitalize;
+  }
+
+  .toggle>#flap {
+      position: absolute;
+      top: calc( 0px - var(--border-width));
+      left: 50%;
+      height: calc(100% + var(--border-width) * 2);
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: var(--font-size);
+      background-color: var(--accent);
+      border-top-right-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+      transform-style: preserve-3d;
+      transform-origin: left;
+      transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
+  }
+
+  .toggle>#flap>.content {
+      color: #333;
+      transition: transform 0s linear .25s;
+      transform-style: preserve-3d;
+  }
+</style>
+
+<script>
+      const st = {};
+
+  st.flap = document.querySelector('#flap');
+  st.toggle = document.querySelector('.toggle');
+
+  st.choice1 = document.querySelector('#choice1');
+  st.choice2 = document.querySelector('#choice2');
+
+  st.flap.addEventListener('transitionend', () => {
+
+      if (st.choice1.checked) {
+          st.toggle.style.transform = 'rotateY(-15deg)';
+          setTimeout(() => st.toggle.style.transform = '', 400);
+          var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
+
+      } else {
+          st.toggle.style.transform = 'rotateY(15deg)';
+          setTimeout(() => st.toggle.style.transform = '', 400);
+          var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
+
+
+      }
+
+  })
+
+  st.clickHandler = (e) => {
+
+      if (e.target.tagName === 'LABEL') {
+          setTimeout(() => {
+              st.flap.children[0].textContent = e.target.textContent;
+          }, 250);
+      }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+      st.flap.children[0].textContent = st.choice2.nextElementSibling.textContent;
+  });
+
+  document.addEventListener('click', (e) => st.clickHandler(e));
+</script>
