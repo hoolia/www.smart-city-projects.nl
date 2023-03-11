@@ -1284,6 +1284,26 @@
           "heading": "external air-heated",
           "description": "Welcome to my personal presentation"
         }
+      },
+      "0da78190-b55d-4e99-afff-3b144ec81180": {
+        "type": "custom-slider",
+        "blocks": {
+          "6025b2da-82a5-48a2-bdff-d80df9871073": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-11_at_19.33.52_2.jpg",
+              "Title": "",
+              "discription": ""
+            }
+          }
+        },
+        "block_order": [
+          "6025b2da-82a5-48a2-bdff-d80df9871073"
+        ],
+        "settings": {
+          "heading": "externel water-heated",
+          "description": "Welcome to my personal presentation"
+        }
       }
     },
     "content_for_index": [
@@ -1299,7 +1319,8 @@
       "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
       "cce8cbd4-961d-41c8-8b27-36215ed23783",
       "54bd7d73-010b-4598-a901-72830cff2778",
-      "5af3a3a6-7041-495a-916d-7bfac2568687"
+      "5af3a3a6-7041-495a-916d-7bfac2568687",
+      "0da78190-b55d-4e99-afff-3b144ec81180"
     ]
   },
   "presets": {
