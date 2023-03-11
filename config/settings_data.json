@@ -1304,6 +1304,14 @@
           "heading": "externel water-heated",
           "description": "Welcome to my personal presentation"
         }
+      },
+      "262165a2-ea78-42ea-ae40-828f0c5347e7": {
+        "type": "custom-liquid",
+        "settings": {
+          "subheading": "Sub-heading",
+          "title": "Your Liquid",
+          "liquid": "<div class=\"row\"><div class=\"eight columns alpha\">\nColumn 1\n<\/div>\n​\n<div class=\"eight columns omega\">\nColumn 2\n<\/div><\/div>"
+        }
       }
     },
     "content_for_index": [
@@ -1320,7 +1328,8 @@
       "cce8cbd4-961d-41c8-8b27-36215ed23783",
       "54bd7d73-010b-4598-a901-72830cff2778",
       "5af3a3a6-7041-495a-916d-7bfac2568687",
-      "0da78190-b55d-4e99-afff-3b144ec81180"
+      "0da78190-b55d-4e99-afff-3b144ec81180",
+      "262165a2-ea78-42ea-ae40-828f0c5347e7"
     ]
   },
   "presets": {
