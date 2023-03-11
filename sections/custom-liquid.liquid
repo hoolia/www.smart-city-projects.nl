@@ -272,14 +272,11 @@
 
   st.clickHandler = (e) => {
 
-      if (e.target.id === 'choice1' || e.target.id === 'choice2') {
+      if (e.target.id === 'LABEL' && (e.target.id === 'choice1' || e.target.id === 'choice2')) {
           setTimeout(() => {
-              st.flap.children[0].textContent = e.target.content;
+              st.flap.children[0].textContent = e.target.textContent;
           }, 250);
-      }else (e.target.id === 'choice3' || e.target.id === 'choice4') {
-          setTimeout(() => {
-              st.flap1.children[0].textContent = e.target.content;
-          }, 250);
+      }
   }
 
 
