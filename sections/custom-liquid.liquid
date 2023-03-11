@@ -267,7 +267,10 @@
       if (st.choice1.checked) {
           st.toggle.style.transform = 'rotateY(-15deg)';
           setTimeout(() => st.toggle.style.transform = '', 400);
-          var x = document.getElementById("e10cfa33-75a1-4ed0-8884-64e9b35daf86") ;
+        if (st.choice3.checked)
+            {interior_air.style.display="block";global.style.display=interior_water.style.display= exterior_air.style.display=exterior_water.style.display="none";}
+        else
+           {interior_water.style.display="block";interior_air.style.display=exterior_air.style.display= global.style.display=exterior_water.style.display="none";}
 
       } else {
           st.toggle.style.transform = 'rotateY(15deg)';
