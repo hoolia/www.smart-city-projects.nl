@@ -627,7 +627,7 @@ section.cd-faq {
 }
  
  .header-inner.fix.fix-header {
-    z-index: 9999;
+    z-index: 999999;
 }
 .mobile-menu .ul-top-items {
     width: 100vw;
