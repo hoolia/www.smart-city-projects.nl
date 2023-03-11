@@ -273,8 +273,8 @@
   st.clickHandler = (e) => {
 
       if (e.target.tagName === 'LABEL') {
-          setTimeout(() => {if(e.target.id == 'choice3' || e.target.id == 'choice1')
-          {st.flap.children[0].textContent = e.target.textContent;}else{st.flap1.children[0].textContent = e.target.textContent;}
+          setTimeout(() => {
+              st.flap.children[0].textContent = e.target.textContent;
           }, 250);
       }
   }
