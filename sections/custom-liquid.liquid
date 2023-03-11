@@ -272,7 +272,7 @@
 
   st.clickHandler = (e) => {
 
-      if (e.target.id === 'LABEL') {
+      if (e.target.tagName === 'LABEL') {
           setTimeout(() => { console.log("lllllllllllllllllllllllllllllll");
               st.flap.children[0].textContent = e.target.textContent;
           }, 250);
