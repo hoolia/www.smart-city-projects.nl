@@ -1244,6 +1244,26 @@
           "heading": "in-house air-heated",
           "description": "Welcome to my personal presentation"
         }
+      },
+      "54bd7d73-010b-4598-a901-72830cff2778": {
+        "type": "custom-slider",
+        "blocks": {
+          "51d30a26-02b9-44bb-8dfc-2ef6168a2e53": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/saving.png",
+              "Title": "",
+              "discription": ""
+            }
+          }
+        },
+        "block_order": [
+          "51d30a26-02b9-44bb-8dfc-2ef6168a2e53"
+        ],
+        "settings": {
+          "heading": "in-house water-heated",
+          "description": "Welcome to my personal presentation"
+        }
       }
     },
     "content_for_index": [
@@ -1257,7 +1277,8 @@
       "811dc7ef-6454-452b-b077-7da890f0fbdf",
       "23726bfe-e4ad-4539-a4f1-4289742a83db",
       "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
-      "cce8cbd4-961d-41c8-8b27-36215ed23783"
+      "cce8cbd4-961d-41c8-8b27-36215ed23783",
+      "54bd7d73-010b-4598-a901-72830cff2778"
     ]
   },
   "presets": {
