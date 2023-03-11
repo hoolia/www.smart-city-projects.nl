@@ -171,6 +171,73 @@
       transition: transform 0s linear .25s;
       transform-style: preserve-3d;
   }
+
+
+
+   .toggle1 {
+      position: relative;
+      border: solid var(--border-width) var(--accent);
+      border-radius: var(--border-radius);
+      transition: transform cubic-bezier(0, 0, 0.30, 2) .4s;
+      transform-style: preserve-3d;
+      perspective: 800px;
+  }
+
+  .toggle1>input[type="radio"] {
+      display: none;
+  }
+
+  .toggle1>#choice3:checked~#flap {
+      transform: rotateY(-180deg);
+  }
+
+  .toggle1>#choice3:checked~#flap>.content {
+      transform: rotateY(-180deg);
+  }
+
+  .toggle1>#choice4:checked~#flap {
+      transform: rotateY(0deg);
+  }
+
+  .toggle1>label {
+      display: inline-block;
+      min-width: 70px;
+      padding: 5px;
+      font-size: var(--font-size);
+      text-align: center;
+      color: var(--accent);
+      cursor: pointer;
+  }
+
+  .toggle1>label,
+  .toggle1>#flap1 {
+      font-weight: bold;
+      text-transform: capitalize;
+  }
+
+  .toggle1>#flap1 {
+      position: absolute;
+      top: calc( 0px - var(--border-width));
+      left: 50%;
+      height: calc(100% + var(--border-width) * 2);
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: var(--font-size);
+      background-color: var(--accent);
+      border-top-right-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+      transform-style: preserve-3d;
+      transform-origin: left;
+      transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
+  }
+
+  .toggle1>#flap1>.content {
+      color: #333;
+      transition: transform 0s linear .25s;
+      transform-style: preserve-3d;
+  }
 </style>
 
 <script>
