@@ -323,7 +323,10 @@
       if (st.choice3.checked) {console.log(st.choice1.checked);
           st.toggle1.style.transform = 'rotateY(-15deg)';
           setTimeout(() => st.toggle1.style.transform = '', 400);
-        if (st.choice1.checked){console.log(st.choice1);console.log(st.choice2);interior_air.style.display="block";}else{exterior_air.style.display="block";}
+        if (st.choice1.checked)
+            {interior_air.style.display="block";global.style.display=interior_water.style.display= exterior_air.style.display=exterior_water.style.display="none";}
+        else
+           {exterior_air.style.display="block";interior_air.style.display=interior_water.style.display= global.style.display=exterior_water.style.display="none";}
 
       } else {
           st.toggle1.style.transform = 'rotateY(15deg)';
