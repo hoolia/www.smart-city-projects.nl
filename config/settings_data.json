@@ -1308,9 +1308,13 @@
       "4e60826a-8669-4c67-bdfd-9811f4f440b2": {
         "type": "custom-liquid",
         "settings": {
-          "subheading": "togggle headinf",
-          "title": "toggle subheading",
-          "liquid": "<div class=\"row aos-init aos-animate\" data-aos=\"fade-down\">\n<div class=\"col col-sm-12 col-xs-12 col-md-6\"><div class=\"services-main\">toggle 1<\/div><\/div>\n\n<\/div>"
+        }
+      },
+      "4cba55d7-e0fb-45a4-985b-164e2dca4e56": {
+        "type": "Tabs-Section",
+        "settings": {
+          "heading": "The Installation",
+          "description": "The material that makes the magic happen"
         }
       }
     },
@@ -1329,7 +1333,8 @@
       "54bd7d73-010b-4598-a901-72830cff2778",
       "5af3a3a6-7041-495a-916d-7bfac2568687",
       "0da78190-b55d-4e99-afff-3b144ec81180",
-      "4e60826a-8669-4c67-bdfd-9811f4f440b2"
+      "4e60826a-8669-4c67-bdfd-9811f4f440b2",
+      "4cba55d7-e0fb-45a4-985b-164e2dca4e56"
     ]
   },
   "presets": {
