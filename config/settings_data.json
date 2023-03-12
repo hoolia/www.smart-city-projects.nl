@@ -1372,14 +1372,32 @@
           "6025b2da-82a5-48a2-bdff-d80df9871073": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-11_at_19.33.52_2.jpg",
-              "Title": "externel water-heated",
-              "discription": ""
+              "image": "shopify:\/\/shop_images\/solar.png",
+              "Title": "Solar Panels",
+              "discription": "<p>Our last generation solar panels that are installed on the roof of the building drastically reduce energy costs, as they can generate electricity during peak demand periods. They are relatively low maintenance, as they do not require any moving parts and have a long lifespan. Also, They can be easily integrated with other renewable energy sources, such as wind and hydropower, to create a more robust and reliable energy system.<\/p>"
+            }
+          },
+          "1cc09d61-dcd8-4bbf-b705-51aaae47ab9a": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/container.png",
+              "Title": "HPC DataCenter Container",
+              "discription": "<p>Some buildings owners may not have the chance to have our datacenter incorporated directly into their offices. That's why we developed a solution. With our external containers, we offer the opportunity to profit of our energy without allocating any space inside the building.<\/p>"
+            }
+          },
+          "457780de-b2a2-47e8-95e3-38041b73365c": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Bredenoord-battery-box-600_71bd896668.png",
+              "Title": "Battery Container",
+              "discription": "<p>Our last generation batteries system are modular in design, which enables us to \"rack and stack\" them in order to scale the nominal capacity of the solar energy storage system.<\/p><p><br\/>At 24 kg and 19\", these batteries are smaller than the average solar battery in the market, which makes them easy to install and move.<\/p>"
             }
           }
         },
         "block_order": [
-          "6025b2da-82a5-48a2-bdff-d80df9871073"
+          "6025b2da-82a5-48a2-bdff-d80df9871073",
+          "1cc09d61-dcd8-4bbf-b705-51aaae47ab9a",
+          "457780de-b2a2-47e8-95e3-38041b73365c"
         ],
         "settings": {
           "heading": "externel water-heated",
