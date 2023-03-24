@@ -427,10 +427,6 @@ document.querySelector('.my-class').style.display="none"
 document.querySelector('.close-div').style.display="none";
             }  
 
-
-
-
-  
 //  its for showing products
   const navLinks = document.querySelectorAll('nav a');
   const sections = document.querySelectorAll('section');
@@ -452,9 +448,9 @@ document.querySelector('.close-div').style.display="none";
       });
 
       // remove the active class from all nav links and add it to the clicked link
-      navLinks.forEach(navLink => {
-        navLink.classList.remove('active');
-      });
+      // navLinks.forEach(navLink => {
+      //   navLink.classList.remove('active');
+      // });
       link.classList.add('active');
     });
   });
