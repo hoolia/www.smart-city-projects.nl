@@ -109,9 +109,10 @@
 <![endif]-->
    
     <div class="wrapper">
-      {% section 'custom-top-menu' %} 
-    {% section 'top-menu' %}
-
+      {% section 'custom-top-menus' %} 
+   {% comment %}
+      {% section 'top-menu' %}
+{% endcomment %}
       {% section 'header' %}
       {% if template == 'index' or template contains 'product.' %}
       <div id="content">
