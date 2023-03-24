@@ -37,7 +37,7 @@
             {% endfor %}
           </nav>
 
-          <div class='container'>
+          <div class='products-div'>
             {% for collection in collections %}
             <section id="{{ forloop.index }}">
 
@@ -295,7 +295,7 @@ ul.dropdown-content li:first-child {
 }
 
 
-ul.dropdown-content .container {
+ul.dropdown-content .products-div {
     background: #fdfdfd;
     position: fixed;
     min-height: 100vh;
@@ -322,7 +322,7 @@ nav {
     padding-top:4rem;
     width: 8rem;
 }
-  ul.dropdown-content .container section {
+  ul.dropdown-content .products-div section {
     position: absolute;
     top: 0;
     height: 100vh;
@@ -365,12 +365,12 @@ nav {
 }
 
 @media screen and (max-width 1908px){
-ul.dropdown-content.my-class .container section {
+ul.dropdown-content.my-class .products-div section {
     width: 15%;
 }
 }
 @media screen and (max-width 768px){
-ul.dropdown-content .container {
+ul.dropdown-content .products-div {
     background: #fdfdfd;
     position: fixed;
     min-height: 100vh;
@@ -378,7 +378,7 @@ ul.dropdown-content .container {
     width: 50%;
     right: 2rem;
 }
-  ul.dropdown-content .container section {
+  ul.dropdown-content .products-div section {
     position: absolute;
     top: 0;
     height: 100vh;
@@ -411,8 +411,8 @@ document.querySelector('.close-div').style.display="block";
     
 let myMediaQuery = window.matchMedia('(max-width: 768px)');
  if(myMediaQuery.matches) {
-   document.querySelector("ul.dropdown-content.my-class .container").style="  width: 50%;right: 2rem";
- document.querySelector(" ul.dropdown-content.my-class .container section").style="position: absolute;width: 77%;    display: block;"
+   document.querySelector("ul.dropdown-content.my-class .products-div").style="  width: 50%;right: 2rem";
+ document.querySelector(" ul.dropdown-content.my-class .products-div section").style="position: absolute;width: 77%;    display: block;"
  
  }
     
