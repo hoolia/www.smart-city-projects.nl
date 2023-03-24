@@ -25,7 +25,7 @@
  
         {% if link.links != blank %}
         
-        <div class="dropdown-content">
+        <ul class="dropdown-content">
           <nav>
              
             {% for collection in collections %}
@@ -37,7 +37,7 @@
             {% endfor %}
           </nav>
 
-          <div class='products-div'>
+          <div class='container'>
             {% for collection in collections %}
             <section id="{{ forloop.index }}">
 
@@ -59,7 +59,7 @@
             {% endfor %}
            
           </div>
-        </div>
+        </ul>
         {% endif %}
       </span>
       {% endfor %}
@@ -247,14 +247,14 @@
 #content:target {
   display: none;
 }
-div.dropdown-content.my-class {
+ul.dropdown-content.my-class {
     height: 100vh;
 }
-  span.dropdown.cstm-width div.dropdown-content {
+  span.dropdown.cstm-width ul.dropdown-content {
 
     display:none
 }
-    span.dropdown.cstm-width div.dropdown-content.my-class {
+    span.dropdown.cstm-width ul.dropdown-content.my-class {
     display: block;
     padding:0;
 
@@ -289,13 +289,13 @@ div.dropdown-content.my-class {
   transition: max-height 0.5s ease-out;
 }
 
-div.dropdown-content li:first-child {
+ul.dropdown-content li:first-child {
     margin-top: 0;
     position: initial;
 }
 
 
-div.dropdown-content .products-div {
+ul.dropdown-content .container {
     background: #fdfdfd;
     position: fixed;
     min-height: 100vh;
@@ -322,11 +322,11 @@ nav {
     padding-top:4rem;
     width: 8rem;
 }
-  div.dropdown-content .products-div section {
-/*     position: absolute; */
+  ul.dropdown-content .container section {
+    position: absolute;
     top: 0;
     height: 100vh;
-    width: fit-content;
+    width: 12%;
     opacity: 1;
     transition: all ease-in .5s;
     display: none;
@@ -365,12 +365,12 @@ nav {
 }
 
 @media screen and (max-width 1908px){
-div.dropdown-content.my-class .products-div section {
+ul.dropdown-content.my-class .container section {
     width: 15%;
 }
 }
 @media screen and (max-width 768px){
-div.dropdown-content .products-div {
+ul.dropdown-content .container {
     background: #fdfdfd;
     position: fixed;
     min-height: 100vh;
@@ -378,7 +378,7 @@ div.dropdown-content .products-div {
     width: 50%;
     right: 2rem;
 }
-  div.dropdown-content .products-div section {
+  ul.dropdown-content .container section {
     position: absolute;
     top: 0;
     height: 100vh;
@@ -394,13 +394,6 @@ div.dropdown-content .products-div {
 }
 
 }
-
-
-
-.dropdown-content {
-    position: fixed;
-}
-  
 </style>
 
 
@@ -409,19 +402,16 @@ div.dropdown-content .products-div {
             
   function myfn(){
 
-const myDiv = document.querySelector(' div.dropdown-content');
+const myDiv = document.querySelector(' ul.dropdown-content');
 myDiv.classList.add("my-class");
 document.querySelector('.my-class').style.display="block";
 document.querySelector('.close-div').style.display="block";
-
-
-    
-let myMediaQuery = window.matchMedia('(max-width: 768px)');
- if(myMediaQuery.matches) {
-   document.querySelector("div.dropdown-content.my-class .products-div").style="  width: 50%;right: 2rem";
- document.querySelector(" div.dropdown-content.my-class .products-div section").style="position: absolute;width: 77%;    display: block;"
+// let myMediaQuery = window.matchMedia('(max-width: 768px)');
+//  if(myMediaQuery.matches) {
+//    document.querySelector("ul.dropdown-content.my-class .container").style="  width: 50%;right: 2rem";
+//  document.querySelector(" ul.dropdown-content.my-class .container section").style="position: absolute;width: 77%;"
  
- }
+//  }
     
 
 
@@ -429,15 +419,11 @@ let myMediaQuery = window.matchMedia('(max-width: 768px)');
   } 
 function clsfn(){
 
-const otherDiv = document.querySelector(' div.dropdown-content');
+const otherDiv = document.querySelector(' ul.dropdown-content');
 document.querySelector('.my-class').style.display="none"
 document.querySelector('.close-div').style.display="none";
             }  
 
-
-
-
-  
 //  its for showing products
   const navLinks = document.querySelectorAll('nav a');
   const sections = document.querySelectorAll('section');
@@ -459,9 +445,9 @@ document.querySelector('.close-div').style.display="none";
       });
 
       // remove the active class from all nav links and add it to the clicked link
-      navLinks.forEach(navLink => {
-        navLink.classList.remove('active');
-      });
+      // navLinks.forEach(navLink => {
+      //   navLink.classList.remove('active');
+      // });
       link.classList.add('active');
     });
   });
