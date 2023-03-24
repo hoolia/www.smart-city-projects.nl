@@ -1,17 +1,461 @@
+<div class="header_top_nav_menu">
+
+  <ul class="menu_ul">
+      {% for block in section.blocks %}  
+ {% case block.type %}
+  {% when 'tab' %}
+    <a href="{{ block.settings.url }}">
+      <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;">
+        {{ block.settings.icon }}
+        <a href="{{ block.settings.url }}" style="color: {{ block.settings.clr }} !important;"> {{ block.settings.title }}</a>
+      </li>
+    </a>
+  {% when 'Menu' %}
+<li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}'" onMouseOut="this.style.backgroundColor='{{ block.settings.bg }}'" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
+<!--      <ul class="close-div"><li  class="close crs"><a onclick="clsfn()">×</a></li></ul> -->
+ <ul class="close-div"><li  class="closes "><a onclick="clsfn()">×</a></li></ul>
+
+   
+   <ul>
+      {% for link in linklists.side-menu.links %}
+      <span class="dropdown cstm-width" onclick="myfn()">
+        <a href="#" {% if link.active %}aria-current="page"{% endif %}>
+          {{ link.title }}
+        </a>
+ 
+        {% if link.links != blank %}
+        
+        <ul class="dropdown-content">
+          <nav>
+             
+            {% for collection in collections %}
+            <a href="#{{ forloop.index }}" id="{{ forloop.index }}" class="{{ forloop.index }}">
+
+              
+              <img src="{{ collection.metafields.custom.icon | image_url }}">
+<span style=" display: none;">{{- collection.title }}</span></a>
+            {% endfor %}
+          </nav>
+
+          <div class='container'>
+            {% for collection in collections %}
+            <section id="{{ forloop.index }}">
+
+              {% for product in collection.products %}
+            <div  class="product-cotainer">
+              <a href="{{ product.url }}" class="top_menu">
+                {% include 'product-grid-image',image:product.featured_image | limits:1%}
+              </a>
+             
+              <li><a href="{{ product.url }}" class="product-image">  <li>{{ product.title }}</li></a></li>
+               
+            </div>
+                
+              {% endfor %}
+
+
+            </section>
+
+            {% endfor %}
+           
+          </div>
+        </ul>
+        {% endif %}
+      </span>
+      {% endfor %}
+    </ul>
+  </li>
+
+
+
+
+{% endcase %}
+                
+
+    {% endfor %}
+  </ul>
+</div>
 {% schema %}
   {
-    "name": "custom-top-menus",
-    "settings": [],
+    "name": "top-menu",
+    "settings": [
+    ],
+    "blocks": [
+     {
+       "name": "Tab",
+       "type": "tab",
+ 
+       "settings": [
+         {
+           "type":"color",
+           "id":"bg",
+           "label":"Tab Background"
+         },
+            {
+           "type":"color",
+           "id":"hover-bg",
+           "label":"Hover Background"
+         },
+        {
+           "type":"color",
+           "id":"clr",
+           "label":"Font Color"
+         },
+           {
+          "type":"html",
+          "id":"icon",
+          "label":"please insert Icon class from https://fontawesome.com/icons"
+        },
+      {
+          "type":"text",
+          "id":"title",
+          "label":"Tab Name"
+        },
+         {
+           "type":"url",
+           "id":"url",
+           "label":"Url"
+         }
+       ]
+     },
+      {
+       "name": "Menu",
+       "type": "Menu",
+         
+       "settings": [
+         {
+           "type":"number",
+           "id":"custm-width",
+           "label":"Please insert Width in %"
+         },
+         {
+           "type":"color",
+           "id":"bg",
+           "label":"Tab Background"
+         },
+            {
+           "type":"color",
+           "id":"hover-bg",
+           "label":"Hover Background"
+         },
+
+        {
+           "type":"color",
+           "id":"clr",
+           "label":"Font Color"
+         },
+      {
+          "type":"text",
+          "id":"title",
+          "label":"Tab Name"
+        },
+    {
+               "type":"link_list",
+               "id":"mega_menu",
+               "label":"Menu To Use",
+               "info":"The menu should have atleast one item and main menu should have an item with the same name"
+            },
+          {
+            "type":"image_picker",
+            "id":"img2",
+            "label":"image"
+          },
+             {
+            "type":"image_picker",
+            "id":"img",
+            "label":"image2"
+          }
+            
+       ]
+     }
+   ],
     "presets":[
       {
-        "name":"custom-top-menus"
+        "name":"custom-top-menu"
       }
     ]
   }
 {% endschema %}
+<style>
+{% if template != 'index' %}
+           
+  .header_top_nav_menu {
+    display: block;
+    height: 6.5rem;
+}
+  {% endif %}
+.header_top_nav_menu .menu_ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+.header_top_nav_menu .menu_ul li {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  top:3rem
+}
+  
+.header_top_nav_menu .menu_ul li:hover {
+  cursor: pointer;
+}
+  
+/* .header_top_nav_menu .menu_ul:hover a {
+  text-decoration: none;
+} */
 
-{% stylesheet %}
-{% endstylesheet %}
+@media only screen and (max-width: 1300px) {
+.header_top_nav_menu .menu_ul li {
+     font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+  }
+  
+@media only screen and (max-width: 768px) {
+  .header_top_nav_menu .menu_ul li {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+  }
+}
 
-{% javascript %}
-{% endjavascript %}
+    
+ .closes {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  
+}
+
+#content:target {
+  display: none;
+}
+ul.dropdown-content.my-class {
+    height: 100vh;
+}
+  span.dropdown.cstm-width ul.dropdown-content {
+
+    display:none
+}
+    span.dropdown.cstm-width ul.dropdown-content.my-class {
+    display: block;
+    padding:0;
+
+}
+  a.top_menu img {
+    width: 100%;
+}
+
+
+</style>
+
+<style>
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0 16px;
+  margin: 0;
+  margin-top:1vh;
+  z-index: 99;
+  height: 100vh;
+  width: 100%;
+  overflow: scroll;
+  transition: max-height 0.5s ease-out;
+}
+
+ul.dropdown-content li:first-child {
+    margin-top: 0;
+    position: initial;
+}
+
+
+ul.dropdown-content .container {
+    background: #fdfdfd;
+    position: fixed;
+    min-height: 100vh;
+    font-family: Montserrat, sans-serif;
+}
+
+nav a {
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--secondary-color);
+    padding-top:4rem;
+    width: 8rem;
+}
+  ul.dropdown-content .container section {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 12%;
+    opacity: 1;
+    transition: all ease-in .5s;
+    display: none;
+    overflow: scroll;
+    justify-content: start;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    padding-right:1rem
+  
+
+}
+
+
+.product-cotainer:last-child {
+    padding-bottom: 16rem;
+}
+    .close-div {
+    position: fixed;
+    z-index: 999999;
+   right: 3rem;
+   display:none;
+}
+   .close-div .closes {
+    font-size: 54px;
+    position: absolute;
+    display: flex;
+    z-index: 9999;
+       right: 0;
+}
+   .closes a {
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+      font-size: 43px;
+}
+
+@media screen and (max-width 1908px){
+ul.dropdown-content.my-class .container section {
+    width: 15%;
+}
+}
+@media screen and (max-width 768px){
+ul.dropdown-content .container {
+    background: #fdfdfd;
+    position: fixed;
+    min-height: 100vh;
+    font-family: Montserrat, sans-serif;
+    width: 50%;
+    right: 2rem;
+}
+  ul.dropdown-content .container section {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 60%;
+    opacity: 1;
+/*     transition: all ease-in .5s; */
+    display: none;
+    justify-content: center;
+    overflow: scroll;
+    justify-content: start;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+}
+
+}
+</style>
+
+
+
+<script>
+            
+  function myfn(){
+
+const myDiv = document.querySelector(' ul.dropdown-content');
+myDiv.classList.add("my-class");
+document.querySelector('.my-class').style.display="block";
+document.querySelector('.close-div').style.display="block";
+
+
+    
+let myMediaQuery = window.matchMedia('(max-width: 768px)');
+ if(myMediaQuery.matches) {
+   document.querySelector("ul.dropdown-content.my-class .container").style="  width: 50%;right: 2rem";
+ document.querySelector(" ul.dropdown-content.my-class .container section").style="position: absolute;width: 77%;    display: block;"
+ 
+ }
+    
+
+
+    
+  } 
+function clsfn(){
+
+const otherDiv = document.querySelector(' ul.dropdown-content');
+document.querySelector('.my-class').style.display="none"
+document.querySelector('.close-div').style.display="none";
+            }  
+
+
+
+
+  
+//  its for showing products
+  const navLinks = document.querySelectorAll('nav a');
+  const sections = document.querySelectorAll('section');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault(); // prevent default link behavior
+
+      // get the section ID from the link href attribute
+      const sectionId = link.getAttribute('href').replace('#', '');
+
+      // hide all sections except the one that was clicked
+      sections.forEach(section => {
+        if (section.id === sectionId) {
+          section.style.display = 'grid';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+
+      // remove the active class from all nav links and add it to the clicked link
+      navLinks.forEach(navLink => {
+        navLink.classList.remove('active');
+      });
+      link.classList.add('active');
+    });
+  });
+</script>
