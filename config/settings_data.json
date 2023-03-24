@@ -1331,27 +1331,6 @@
           "custom-class": ""
         }
       },
-      "custom-top-menu": {
-        "type": "custom-top-menu",
-        "blocks": {
-          "d6bbb6a4-2a04-4cb4-ac12-49c6f22e68ce": {
-            "type": "Menu",
-            "settings": {
-              "custm-width": 20,
-              "bg": "#cccccc",
-              "hover-bg": "#cccccc",
-              "clr": "#d13434",
-              "title": "All Products",
-              "mega_menu": "side-menu"
-            }
-          }
-        },
-        "block_order": [
-          "d6bbb6a4-2a04-4cb4-ac12-49c6f22e68ce"
-        ],
-        "settings": {
-        }
-      },
       "fab7068f-cc57-46ec-bf94-e4c533426ed3": {
         "type": "collection-tab",
         "disabled": true,
@@ -1371,6 +1350,62 @@
           "products_tab_collection5": "",
           "products_tab_count": 8,
           "product_grid_img_carousel": false
+        }
+      },
+      "custom-top-menus": {
+        "type": "custom-top-menus",
+        "blocks": {
+          "7db26638-b82b-4bba-8a43-bc31c2df3375": {
+            "type": "tab",
+            "settings": {
+              "bg": "#30bf32",
+              "hover-bg": "",
+              "clr": "#fff",
+              "icon": "",
+              "title": "test1",
+              "url": "#"
+            }
+          },
+          "456a4f4d-d7fe-4021-a33c-72ddb4535702": {
+            "type": "tab",
+            "settings": {
+              "bg": "",
+              "hover-bg": "",
+              "clr": "",
+              "icon": "",
+              "title": "",
+              "url": ""
+            }
+          },
+          "722a17c0-d9e3-42e1-80be-810168c8d3f5": {
+            "type": "tab",
+            "settings": {
+              "bg": "",
+              "hover-bg": "",
+              "clr": "",
+              "icon": "",
+              "title": "",
+              "url": ""
+            }
+          },
+          "e8bca942-8e7e-4c22-91f7-2eba47c9b8c7": {
+            "type": "Menu",
+            "settings": {
+              "bg": "",
+              "hover-bg": "",
+              "clr": "",
+              "title": "",
+              "mega_menu": ""
+            }
+          }
+        },
+        "block_order": [
+          "7db26638-b82b-4bba-8a43-bc31c2df3375",
+          "456a4f4d-d7fe-4021-a33c-72ddb4535702",
+          "722a17c0-d9e3-42e1-80be-810168c8d3f5",
+          "e8bca942-8e7e-4c22-91f7-2eba47c9b8c7"
+        ],
+        "settings": {
         }
       }
     },
