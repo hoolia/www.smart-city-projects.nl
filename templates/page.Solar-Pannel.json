@@ -8,6 +8,7 @@
     },
     "7199c77d-574d-4b9b-8d4d-a38e83683d87": {
       "type": "slider",
+      "disabled": true,
       "blocks": {
         "template--18158340079918__7199c77d-574d-4b9b-8d4d-a38e83683d87-16778537971d3df61a-0": {
           "type": "image",
