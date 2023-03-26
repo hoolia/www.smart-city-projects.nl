@@ -661,7 +661,7 @@ section.cd-faq {
     height: unset !important;
 }
   .header-inner.fix {
-    background: transparent;
+    background: transparent !important;
 }
 }
 
