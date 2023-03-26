@@ -2,12 +2,12 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
     "383de6f6-cfc3-410f-9492-cf4c384ee1e5": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "template--18158520402222__383de6f6-cfc3-410f-9492-cf4c384ee1e5-1677330918e696287e-0": {
           "type": "image",
