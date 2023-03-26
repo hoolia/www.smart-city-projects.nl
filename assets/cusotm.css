@@ -599,12 +599,10 @@ section.cd-faq {
 
 @media(max-width: 768px){
    .header-inner .container-inner .box.box-left {
-/*     position: relative; */
          position: absolute;
 }
 .header-inner.fix.whiteHeader .container-inner .box.box-left {
     position: relative;
-/*          position: absolute; */
 }
   .banner7-content .banner7-des p {
     line-height: 22px;
