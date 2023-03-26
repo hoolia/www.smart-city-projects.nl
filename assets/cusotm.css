@@ -660,6 +660,9 @@ section.cd-faq {
     display: block;
     height: unset !important;
 }
+  .header-inner.fix {
+    background: transparent;
+}
 }
 
 
