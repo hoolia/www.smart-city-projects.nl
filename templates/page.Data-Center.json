@@ -247,6 +247,7 @@
         },
         "2f8bc535-6d06-4194-82d6-c118a07466e9": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "Title": "",
             "discription": ""
