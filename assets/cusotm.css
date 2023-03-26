@@ -652,6 +652,10 @@ section.cd-faq {
   .header-inner.fix.fix-header {
     top: 0;
 }
+
+  .header-inner.fix {
+    top: 3rem;
+}
 }
 
 
