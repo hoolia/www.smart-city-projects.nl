@@ -663,6 +663,9 @@ section.cd-faq {
   .header-inner.fix {
     background: transparent !important;
 }
+  .header-inner.fix.fix-header {
+    background: #f8f8f8 !important;
+}
 }
 
 
