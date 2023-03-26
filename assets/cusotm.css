@@ -656,6 +656,10 @@ section.cd-faq {
   .header-inner.fix {
     top: 3rem;
 }
+  .header_top_nav_menu {
+    display: block;
+    height: unset;
+}
 }
 
 
