@@ -48,6 +48,10 @@
     <link rel="preload" as="style" href="{{ 'stroke-gap-icons.css' | asset_url }}" onload="this.rel='stylesheet'" defer>
     {% include 'google-fonts' %}
     {% if template == 'index' or template contains 'product.' %}<link rel="preload" as="style" href="{{ 'slideshow.css' | asset_url }}" onload="this.rel='stylesheet'">{% endif %}
+
+    <link rel="preload" as="style" href="{{ template }}" templates>
+
+    
     {% if template contains 'product-disabled' %}
     <link rel="preload" as="style" href="{{ 'zoom.css' | asset_url }}" onload="this.rel='stylesheet'">
     <link rel="preload" as="style" href="{{ 'magnific-popup.css' | asset_url }}" onload="this.rel='stylesheet'">

@@ -65,7 +65,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     {% if template == 'page.faq' %}
     <link rel="preload" as="style" href="{{ 'faq-style.css' | asset_url }}" onload="this.rel='stylesheet'">   
     {% endif %}
-    <link rel="preload" as="style" href="{{ template }}" templates>
+    
 
     {{ 'plugins.min.css' | asset_url | stylesheet_tag }}
     {{ 'theme.css' | asset_url | stylesheet_tag }}
