@@ -1275,9 +1275,7 @@
               "hover-bg": "#186019",
               "clr": "#ffffff",
               "title": "All products",
-              "mega_menu": "side-menu",
-              "img2": "shopify:\/\/shop_images\/investment.png",
-              "img": "shopify:\/\/shop_images\/rent.png"
+              "mega_menu": "side-menu"
             }
           }
         },
