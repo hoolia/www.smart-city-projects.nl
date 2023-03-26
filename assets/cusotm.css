@@ -625,7 +625,6 @@ section.cd-faq {
     display: flex;
     justify-content: flex-end;
 }
- 
  .header-inner.fix.fix-header {
     z-index: 999999;
 }
