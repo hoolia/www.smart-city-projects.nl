@@ -50,7 +50,6 @@
 
 
 /*  image with text */
-/*! CSS Used from: http://hooliaenergy.iwopop.com/css?cs=vstatic%2Fcss%2Fapp.css%2Cinner%2Fglobal.css */
 .cstlayer[data-v-3f5bad52]{position:relative;background-position:50% 50%;background-repeat:no-repeat;background-size:cover;}
 .cstlayer>.bgoverlay[data-v-3f5bad52]{position:absolute;width:100%;height:100%;z-index:0;}
 .imgbox[data-v-129dd9bd]{position:relative;}
@@ -85,7 +84,6 @@ p{list-style:none;margin:0;padding:0;}
 .Jso-M-Title p,.Jso-M-Title{font-size:calc( 1.9rem + (3 - 1.9) * ((100vw - 32rem) / (102 - 32)))!important;line-height:calc( 1.5 * (1.9rem + (3 - 1.9) * ((100vw - 32rem) / (102 - 32))))!important;}
 .Jso-S-Title p,.Jso-S-Title{font-size:calc( 1.5rem + (1.7 - 1.5) * ((100vw - 32rem) / (102 - 32)))!important;line-height:calc( 1.5 * (1.5rem + (1.7 - 1.5) * ((100vw - 32rem) / (102 - 32))))!important;}
 }
-/*! CSS Used from: http://static.eznetonline.com//webquick/public/bootstrap/index.css */
 video{display:inline-block;vertical-align:baseline;}
 a{background-color:transparent;}
 a:active,a:hover{outline:0;}
