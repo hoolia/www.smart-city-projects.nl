@@ -649,10 +649,11 @@ section.cd-faq {
      margin-top: -2px!important;
       margin-left: -3rem;
   }
+  /*26-march  */
   .header-inner.fix.fix-header {
     top: 0;
 }
-/*26-march  */
+
   .header-inner.fix {
     top: 3rem;
 }
@@ -666,6 +667,7 @@ section.cd-faq {
   .header-inner.fix.fix-header {
     background: #f8f8f8 !important;
 }
+  
 }
 
 
