@@ -132,10 +132,8 @@ p{margin:0 0 10px;}
 }
 .container:after,.container:before,.row:after,.row:before{display:table;content:" ";}
 .container:after,.row:after{clear:both;}
-/*! CSS Used from: Embedded */
 .cstlayer:not(.isnav) a{color:#008117;}
 .cstlayer:not(.isnav) a:hover{color:#000;}
-/*! CSS Used from: http://static.eznetonline.com//webquick/public/vplugin/video5/video5.css?_r=16727942 */
 .video5_bigtile[data-v-434c247c]{line-height:normal!important;margin-bottom:20px;}
 .align-items-center[data-v-434c247c]{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap;}
 .Video5_content-wrapper .at__left[data-v-434c247c]{margin-right:40px;position:relative;}
