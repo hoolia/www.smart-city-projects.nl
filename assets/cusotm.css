@@ -658,11 +658,7 @@ section.cd-faq {
 }
   .header_top_nav_menu {
     display: block;
-    height: unset;
-}
-  .header_top_nav_menu {
-    display: block;
-    height: unset;
+    height: unset !important;
 }
 }
 
