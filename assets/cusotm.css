@@ -649,7 +649,9 @@ section.cd-faq {
      margin-top: -2px!important;
       margin-left: -3rem;
   }
-  
+  .header-inner.fix.fix-header {
+    top: 0;
+}
 }
 
 
