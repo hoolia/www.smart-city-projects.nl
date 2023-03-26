@@ -634,7 +634,7 @@ section.cd-faq {
     height: 100vh;
     border-radius: 0;
     min-width: 100%;
-    top: 16rem;
+    top: 16rem !important;
     margin-top: -2px!important;
     margin-left: -6rem;
 }
