@@ -652,9 +652,13 @@ section.cd-faq {
   .header-inner.fix.fix-header {
     top: 0;
 }
-
+/*26-march  */
   .header-inner.fix {
     top: 3rem;
+}
+  .header_top_nav_menu {
+    display: block;
+    height: unset;
 }
   .header_top_nav_menu {
     display: block;
