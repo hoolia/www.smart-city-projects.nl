@@ -90,7 +90,7 @@
       --accent: #2bda04;
       --border-width: 4px;
       --border-radius: 35px;
-      --font-size: 10px;
+      --font-size: 14px;
   }
 
 
@@ -136,19 +136,17 @@
   .toggle>label {
       display: inline-block;
       min-width: 70px;
-      padding: center;
+      padding: 5px;
       font-size: var(--font-size);
       text-align: center;
       color: var(--accent);
       cursor: pointer;
-    
   }
 
   .toggle>label,
   .toggle>#flap {
       font-weight: bold;
       text-transform: capitalize;
-    
   }
 
   .toggle>#flap {
@@ -167,15 +165,13 @@
       transform-style: preserve-3d;
       transform-origin: left;
       transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
-    
   }
 
   .toggle>#flap>.content {
       color: #333;
       transition: transform 0s linear .25s;
       transform-style: preserve-3d;
-      font-size: 14px;height: 3vh;
-    
+      font-size: 14px;
   }
 
 
