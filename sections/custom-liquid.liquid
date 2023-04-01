@@ -474,4 +474,43 @@
       }
 
   })
+
+  ///////
+  let off = document.getElementById('off');
+let on = document.getElementById('on');
+let radio = document.querySelector('.radio');
+
+off.addEventListener('click', () => {
+    radio.classList.add('off');
+});
+
+on.addEventListener('click', () => {
+    radio.classList.remove('off');
+});
+
+let checkbox = document.querySelector('.checkbox');
+let checkboxOn = document.querySelector('.checkbox .on');
+let checkboxOff = document.querySelector('.checkbox .off');
+let checkboxLabel = document.querySelector('.checkbox label');
+let trigger = true;
+
+anime({ 
+    targets: checkboxOn, 
+    translateX: '0',
+    zIndex: {
+        value: [1, 2],
+        round: true
+        },
+    duration: 0
+})
+
+anime({ 
+    targets: checkboxOff, 
+    translateX: '-100%',
+    zIndex: {
+        value: [2, 1],
+        round: true
+        },
+    duration: 0
+})
 </script>
