@@ -57,34 +57,188 @@
 <div class="container">
   <div class="row aos-init aos-animate" data-aos="fade-up-right">
     <div class="col col-sm-12 col-xs-12 col-md-6">
-      <div class="containerr">
-        <form class="toggle">
-          <input type="radio" id="choice1" name="choice" value="In-house">
-          <label for="choice1">In-house</label>
+     <div class="radio">
+    <div class="wrap">
+        <input type="radio" id="on" name="radio">
+        <label for="on">ON</label>
 
-          <input type="radio" id="choice2" name="choice" value="external">
-          <label for="choice2">External</label>
+        <input type="radio" id="off" name="radio">
+        <label for="off">OFF</label>
 
-          <div id="flap"><span class="content">productive</span></div>
-        </form>
-      </div>
+        <div class="bar"></div>
+    </div>
+</div>
     </div>
     <div class="col col-sm-12 col-xs-12 col-md-6">
-      <div class="containerr">
-        <form class="toggle1">
-          <input type="radio" id="choice3" name="choice" value="Air">
-          <label for="choice3"> Air </label>
+      <div class="radio">
+    <div class="wrap">
+        <input type="radio" id="on" name="radio">
+        <label for="on">ON</label>
 
-          <input type="radio" id="choice4" name="choice" value=" Water">
-          <label for="choice4"> Water </label>
+        <input type="radio" id="off" name="radio">
+        <label for="off">OFF</label>
 
-          <div id="flap1"><span class="content">proactive</span></div>
-        </form>
-      </div>
+        <div class="bar"></div>
+    </div>
+</div>
     </div>
   </div>
 </div>
 
+<style>
+
+.radio {
+  background: #1e1e1e;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  padding: 10px 15px;
+  color: #626262;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 20px;
+  width: 100px;
+  font-size: 21px;
+  position: relative;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  margin-bottom: 20px; }
+  .radio.off {
+    background: #fff; }
+    .radio.off .bar {
+      background: #ccc;
+      left: 50px; }
+    .radio.off label[for='on'] {
+      color: #626262; }
+    .radio.off label[for='off'] {
+      color: #000; }
+  .radio .wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    height: 40px; }
+  .radio input {
+    opacity: 0;
+    pointer-events: none; }
+  .radio label {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    .radio label[for='on'] {
+      margin-left: 10px;
+      color: #000; }
+    .radio label[for='off'] {
+      margin-right: 10px; }
+  .radio #on {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .radio #off {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .radio .bar {
+    position: absolute;
+    left: -90px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #fff;
+    height: 40px;
+    width: 200px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+  
+</style>
+<script>
+
+  let off = document.getElementById('off');
+let on = document.getElementById('on');
+let radio = document.querySelector('.radio');
+
+off.addEventListener('click', () => {
+    radio.classList.add('off');
+});
+
+on.addEventListener('click', () => {
+    radio.classList.remove('off');
+});
+
+let checkbox = document.querySelector('.checkbox');
+let checkboxOn = document.querySelector('.checkbox .on');
+let checkboxOff = document.querySelector('.checkbox .off');
+let checkboxLabel = document.querySelector('.checkbox label');
+let trigger = true;
+
+anime({ 
+    targets: checkboxOn, 
+    translateX: '0',
+    zIndex: {
+        value: [1, 2],
+        round: true
+        },
+    duration: 0
+})
+
+anime({ 
+    targets: checkboxOff, 
+    translateX: '-100%',
+    zIndex: {
+        value: [2, 1],
+        round: true
+        },
+    duration: 0
+})
+  
+</script>
+
+
+
+
+
+{% comment %}
 <style>
       :root {
       --accent: #2bda04;
@@ -347,3 +501,4 @@
 
   })
 </script>
+{% endcomment %}
