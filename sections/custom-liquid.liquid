@@ -57,34 +57,39 @@
 <div class="container">
   <div class="row aos-init aos-animate" data-aos="fade-up-right">
     <div class="col col-sm-12 col-xs-12 col-md-6">
-      <div class="containerr">
-        <form class="toggle">
-          <input type="radio" id="choice1" name="choice" value="In-house">
-          <label for="choice1">In-house</label>
+     <div class="radio">
+    <div class="wrap">
+        <input type="radio" id="on" name="radio">
+        <label for="on">ON</label>
 
-          <input type="radio" id="choice2" name="choice" value="external">
-          <label for="choice2">External</label>
+        <input type="radio" id="off" name="radio">
+        <label for="off">OFF</label>
 
-          <div id="flap"><span class="content">productive</span></div>
-        </form>
-      </div>
+        <div class="bar"></div>
+    </div>
+</div>
     </div>
     <div class="col col-sm-12 col-xs-12 col-md-6">
-      <div class="containerr">
-        <form class="toggle1">
-          <input type="radio" id="choice3" name="choice" value="Air">
-          <label for="choice3"> Air </label>
+      <div class="radio">
+    <div class="wrap">
+        <input type="radio" id="on" name="radio">
+        <label for="on">ON</label>
 
-          <input type="radio" id="choice4" name="choice" value=" Water">
-          <label for="choice4"> Water </label>
+        <input type="radio" id="off" name="radio">
+        <label for="off">OFF</label>
 
-          <div id="flap1"><span class="content">proactive</span></div>
-        </form>
-      </div>
+        <div class="bar"></div>
+    </div>
+</div>
     </div>
   </div>
 </div>
 
+
+
+
+
+{% comment %}
 <style>
       :root {
       --accent: #2bda04;
@@ -347,3 +352,4 @@
 
   })
 </script>
+{% endcomment %}
