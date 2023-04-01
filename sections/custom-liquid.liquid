@@ -263,6 +263,112 @@
       transform-style: preserve-3d;
 
   }
+
+///////////////////////
+  .radio {
+  background: #1e1e1e;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  padding: 10px 15px;
+  color: #626262;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 45px;
+  width: 245px;
+  font-size: 21px;
+  position: relative;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  margin-bottom: 20px; }
+  .radio.off {
+    background: #fff; }
+    .radio.off .bar {
+      background: #ccc;
+      left: 136px; }
+    .radio.off label[for='on'] {
+      color: #626262; }
+    .radio.off label[for='off'] {
+      color: #000; }
+  .radio .wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    height: 40px; }
+  .radio input {
+    opacity: 0;
+    pointer-events: none; }
+  .radio label {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    .radio label[for='on'] {
+      margin-left: 10px;
+      color: #000; }
+    .radio label[for='off'] {
+      margin-right: 10px; }
+  .radio #on {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .radio #off {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .radio .bar {
+    position: absolute;
+    left: -90px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #fff;
+    height: 40px;
+    width: 200px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+  
 </style>
 
 <script>
