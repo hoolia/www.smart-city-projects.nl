@@ -88,9 +88,9 @@
 <style>
       :root {
       --accent: #2bda04;
-      --border-width: 4px;
+      --border-width: 5px;
       --border-radius: 35px;
-      --font-size: 14px;
+      --font-size: 30px;
   }
 
 
@@ -114,7 +114,6 @@
       transition: transform cubic-bezier(0, 0, 0.30, 4) .4s;
       transform-style: preserve-3d;
       perspective: 800px;
-       height: 5vh;
   }
 
   .toggle>input[type="radio"] {
@@ -136,12 +135,11 @@
   .toggle>label {
       display: inline-block;
       min-width: 70px;
-     vertical-align: middle;
+      padding: 5px;
       font-size: var(--font-size);
       text-align: center;
       color: var(--accent);
       cursor: pointer;
-    
   }
 
   .toggle>label,
@@ -172,7 +170,6 @@
       color: #333;
       transition: transform 0s linear .25s;
       transform-style: preserve-3d;
-      font-size: 14px;
   }
 
 
@@ -216,7 +213,8 @@
   .toggle1>#flap1 {
       font-weight: bold;
       text-transform: capitalize;
-    
+    padding-left: 35px;
+      padding-right: 35px;
   }
 
   .toggle1>#flap1 {
@@ -328,7 +326,7 @@
   ////////////////////////////////////////
    st.flap1.addEventListener('transitionend', () => {
 
-      if (st.choice3.checked) {
+      if (st.choice3.checked) {console.log(st.choice1.checked);
           st.toggle1.style.transform = 'rotateY(-15deg)';
           setTimeout(() => st.toggle1.style.transform = '', 400);
         if (st.choice1.checked)
