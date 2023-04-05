@@ -55,8 +55,8 @@
   {% endschema %}
 {% endcomment %}
 <div class="container">
-  <div class="col col-sm-12 col-xs-12 col-md-6" data-aos="fade-up-right">
-    <div class="row">
+  <div class="row aos-init aos-animate" data-aos="fade-up-right">
+    <div class="col col-sm-12 col-xs-12 col-md-6">
       <div class="containerr">
         <form class="toggle">
           <input type="radio" id="choice1" name="choice" value="In-house">
@@ -69,7 +69,7 @@
         </form>
       </div>
     </div>
-    <div class="row">
+    <div class="col col-sm-12 col-xs-12 col-md-6">
       <div class="containerr">
         <form class="toggle1">
           <input type="radio" id="choice3" name="choice" value="Air">
@@ -83,14 +83,14 @@
       </div>
     </div>
   </div>
- </div>
+</div>
 
 <style>
       :root {
       --accent: #2bda04;
-      --border-width: 1px;
+      --border-width: 5px;
       --border-radius: 35px;
-      --font-size: 11px;
+      --font-size: 14px;
   }
 
 
@@ -99,13 +99,12 @@
 
   .containerr {
       perspective: 800px;
-      height: 30px;
+      height: 10vh;
       display: flex;
-      justify-content: right;
+      justify-content: center;
       align-items: center;
       margin: 20;
       font-family: sans-serif;
-    padding-right: 50 px;
   }
 
   .toggle {
@@ -187,7 +186,7 @@
       transition: transform cubic-bezier(0, 0, 0.30, 2) .4s;
       transform-style: preserve-3d;
       perspective: 800px;
-     height: 16px;
+     height: fit-content;
   }
 
   .toggle1>input[type="radio"] {
@@ -208,7 +207,7 @@
 
   .toggle1>label {
       display: inline-block;
-      min-width: 30px;
+      min-width: 60px;
       padding: 1px;
       font-size: var(--font-size);
       text-align: center;
@@ -220,12 +219,6 @@
   .toggle1>#flap1 {
       font-weight: bold;
       text-transform: capitalize;
-    height: 100px;
-    padding: 0px, 4px;
-    margin:0px;
-    top:-7px;
-    position: relative ;
-    padding-right: 4px;
    
   }
 
@@ -235,7 +228,7 @@
       left: 50%;
       height: calc(100% + var(--border-width) * 2);
       width: 50%;
-      display: block;
+      display: flex;
       justify-content: center;
       align-items: center;
       font-size: var(--font-size);
@@ -251,9 +244,6 @@
       color: #333;
       transition: transform 0s linear .25s;
       transform-style: preserve-3d;
-    position: relative;
-    top: -4px;
-    left: 3px;
 
   }
 </style>
