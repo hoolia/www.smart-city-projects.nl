@@ -234,7 +234,7 @@
       left: 50%;
       height: calc(100% + var(--border-width) * 2);
       width: 50%;
-      display: flex;
+      display: block;
       justify-content: center;
       align-items: center;
       font-size: var(--font-size);
@@ -250,6 +250,9 @@
       color: #333;
       transition: transform 0s linear .25s;
       transform-style: preserve-3d;
+    position: relative;
+    top: -4px;
+    left: 3px;
 
   }
 </style>
