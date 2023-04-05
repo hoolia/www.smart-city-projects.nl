@@ -83,14 +83,14 @@
       </div>
     </div>
   </div>
- </div>
+</div>
 
 <style>
       :root {
       --accent: #2bda04;
       --border-width: 1px;
       --border-radius: 35px;
-      --font-size: 11px;
+      --font-size: 11;
   }
 
 
@@ -105,7 +105,7 @@
       align-items: center;
       margin: 20;
       font-family: sans-serif;
-    padding-right: 50 px;
+      padding-right: 50 px;
   }
 
   .toggle {
@@ -116,6 +116,7 @@
       transform-style: preserve-3d;
       perspective: 8000px;
       height: 16px;
+    
   }
 
   .toggle>input[type="radio"] {
@@ -142,7 +143,7 @@
       text-align: center;
       color: var(--accent);
       cursor: pointer;
-    vertical-align:middle;
+      vertical-align:middle;
   }
 
   .toggle>label,
@@ -187,7 +188,7 @@
       transition: transform cubic-bezier(0, 0, 0.30, 2) .4s;
       transform-style: preserve-3d;
       perspective: 800px;
-      height: 16px;
+     height:16px
   }
 
   .toggle1>input[type="radio"] {
@@ -208,36 +209,33 @@
 
   .toggle1>label {
       display: inline-block;
+      min-width: 30px;
       padding: 1px;
       font-size: var(--font-size);
       text-align: center;
       color: var(--accent);
       cursor: pointer;
-        min-width: 45px;
-
-
   }
 
   .toggle1>label,
   .toggle1>#flap1 {
-      font-weight: bold;
-      text-transform: capitalize;
-      height: 100px;
-      margin: 0px;
-      top: -5px;
-      position: relative;
-      padding-right: 4px;
-      min-width: 45px;
+    font-weight: bold;
+    text-transform: capitalize;
+    height: 100px;
+    margin:0px;
+    top:-7px;
+    position: relative ;
+    padding-right: 4px;
    
   }
 
   .toggle1>#flap1 {
-      position: relative;
+      position: absolute;
       top: calc( 0px - var(--border-width));
       left: 50%;
       height: calc(100% + var(--border-width) * 2);
       width: 50%;
-      display: block;
+      display: flex;
       justify-content: center;
       align-items: center;
       font-size: var(--font-size);
@@ -247,15 +245,12 @@
       transform-style: preserve-3d;
       transform-origin: left;
       transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
-
   }
 
   .toggle1>#flap1>.content {
       color: #333;
       transition: transform 0s linear .25s;
       transform-style: preserve-3d;
-    position: relative;
-    
 
   }
 </style>
