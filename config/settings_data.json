@@ -320,7 +320,7 @@
               "image": "shopify:\/\/shop_images\/reputation.png",
               "use_feature_service_icon": false,
               "feature_service_icon": "fa-star",
-              "feature_service_title": "Helping Local Communities",
+              "feature_service_title": "Local Communities",
               "feature_service_description": "Building small MicroGrid communities by bringing energy <i>Load<\/i> and <i>Generation<\/i> together, bringing <i>Investors<\/i> and <i>Opportunities<\/i> together, has so many benefits, like Grid Balancing, reducing cost, green investments. But best of all: Helping your neighbor! <br>\nBy the People, for the People!"
             }
           },
@@ -908,7 +908,7 @@
           "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5aed5792501e4b989ae9cf5d2def8856.mp4",
           "video_url": "https:\/\/youtu.be\/vtdd1W9hT8s",
           "heading": "Welcome to Hoolia Energy",
-          "sub-heading": "Revolutionizing the industry with its \"Distributed DataCenter\" based on 100% renewable energy!",
+          "sub-heading": "Revolutionizing the industry with its \"Distributed DataCenter\" running on 100% renewable energy!",
           "content": "<p>With our deepest belief in the concept of circular economy, we have generated a brilliant idea:<br\/>Repurpose waste heat from DataCenters to heat Office Buildings, by bringing small “DataCenter modules” running on 100% pure Green Renewable & Recycled Energy!<\/p><p> <\/p><p>Ending the cycle of Big Centralized DataCenter. It is time to create micro-grid communities and give power back to the people.<\/p><p> <\/p><p>Watch this video for more information.<\/p>"
         }
       },
@@ -1209,7 +1209,7 @@
           "top_margin": false,
           "bg-image": "shopify:\/\/shop_images\/hoolia-energycoop.png",
           "image_position": "right",
-          "heading": "How can i participate?",
+          "heading": "Join the Collective",
           "heading_color": "#30bf32",
           "description": "Building \"micro-grid\" communities",
           "link_text": "Shop now",
