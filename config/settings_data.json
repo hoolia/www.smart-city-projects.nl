@@ -1408,12 +1408,24 @@
         "type": "custom-liquid",
         "settings": {
         }
+      },
+      "ee1cb9db-dd4b-4737-916b-3491cdc54314": {
+        "type": "videobox",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/How_does_it_work.png",
+          "video_type": "youtube",
+          "video_src": "Z8GA5t3_mq0",
+          "video_autoplay": true,
+          "fullwidth": true,
+          "top_margin": false
+        }
       }
     },
     "content_for_index": [
       "1480267833382",
       "49a10ab4-423c-48b5-ba41-1a8db40c7525",
       "1504781997946",
+      "ee1cb9db-dd4b-4737-916b-3491cdc54314",
       "dd9a72f1-2f8c-46f9-8e57-4d1f55d162ab",
       "4e60826a-8669-4c67-bdfd-9811f4f440b2",
       "bcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e",
