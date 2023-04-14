@@ -1415,7 +1415,7 @@
           "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-04-11_at_20.15.01.jpg",
           "video_type": "youtube",
           "video_src": "Z8GA5t3_mq0",
-          "video_autoplay": true,
+          "video_autoplay": false,
           "fullwidth": true,
           "top_margin": false
         }
