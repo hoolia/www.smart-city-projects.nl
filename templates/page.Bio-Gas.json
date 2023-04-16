@@ -526,6 +526,26 @@
         "background_color": "#ffffff",
         "top_margin": false
       }
+    },
+    "e9620690-2a02-498e-9fde-2f3252217f5d": {
+      "type": "custom-slider",
+      "blocks": {
+        "2e046fb6-da55-4df9-8243-5edd78c20096": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/210820_afbeelding-website_van-koe-tot-stroom_Tekengebied-1-1024x171.png",
+            "Title": "",
+            "discription": ""
+          }
+        }
+      },
+      "block_order": [
+        "2e046fb6-da55-4df9-8243-5edd78c20096"
+      ],
+      "settings": {
+        "heading": "WHAT OUR CLIENTS SAY",
+        "description": "Welcome to my personal presentation"
+      }
     }
   },
   "order": [
@@ -539,6 +559,7 @@
     "220279a3-de34-424a-929b-ea747a38d49b",
     "32b2b833-50aa-4583-8ccb-f47afe40d0e9",
     "7cc3f607-508c-4118-8c9d-eb15c6ea0dc0",
-    "32a4d689-38ca-4981-89e9-a6fd074de186"
+    "32a4d689-38ca-4981-89e9-a6fd074de186",
+    "e9620690-2a02-498e-9fde-2f3252217f5d"
   ]
 }
