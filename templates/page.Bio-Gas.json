@@ -460,8 +460,8 @@
           "type": "testimonial",
           "settings": {
             "image": "shopify:\/\/shop_images\/inexhaustible-energy.png",
-            "title": "Inexhaustible energy",
-            "description": "Renewable energy has been proven time and again to be capable of meeting a significant portion of future electricity demands, even with potential limitations taken into account.",
+            "title": "Energy independence and economic benefits",
+            "description": "Biogas energy solutions offer farmers a way to become more energy independent, create jobs, and generate additional revenue streams.",
             "author": ""
           }
         },
@@ -469,8 +469,8 @@
           "type": "testimonial",
           "settings": {
             "image": "shopify:\/\/shop_images\/jobs.png",
-            "title": "Jobs and other economic benefits",
-            "description": "Renewable energy sources generate more jobs per unit of electricity compared to fossil fuels. Furthermore, the expansion of clean energy can also have positive economic “ripple” effects.",
+            "title": "Improved soil quality",
+            "description": "The digestate produced from biogas production can be used as a fertilizer, improving soil quality and reducing the need for chemical fertilizers.",
             "author": ""
           }
         },
@@ -478,8 +478,8 @@
           "type": "testimonial",
           "settings": {
             "image": "shopify:\/\/shop_images\/solar-panel-trust.png",
-            "title": "Reliability and resilience",
-            "description": "Solar panels, due to their distributed and modular design, are less susceptible to widespread failure and can function dependably even under conditions that would necessitate shutting down a fossil fuel plant.",
+            "title": "Reduced odors and pollution",
+            "description": "Using cow manure for biogas production can reduce odors and air pollution, benefiting surrounding communities.",
             "author": ""
           }
         },
@@ -487,8 +487,8 @@
           "type": "testimonial",
           "settings": {
             "image": "shopify:\/\/shop_images\/money-time.png",
-            "title": "Stable energy prices",
-            "description": "Initial investments are necessary to construct renewable facilities, but once in operation, they have low ongoing costs, resulting in stable energy prices over time compared to fossil energy prices.",
+            "title": "Energy security",
+            "description": "Biogas energy solutions offer a reliable source of energy that is not subject to fluctuations in fossil fuel prices, providing energy security for farmers and communities.",
             "author": ""
           }
         }
