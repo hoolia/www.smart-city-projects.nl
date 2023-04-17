@@ -109,7 +109,7 @@
             "use_feature_service_icon": false,
             "feature_service_icon": "fa-money-bill",
             "feature_service_title": "Cost",
-            "feature_service_description": "Natural gas prices become more volatile, because of various geopolitical, economic, and social changes that the world is experiencing."
+            "feature_service_description": "Natural gas prices are becoming increasingly volatile due to geopolitical, economic, and social changes. On the other hand, biogas production using cow manure offers a cost-effective and stable alternative energy source."
           }
         },
         "a5153a3f-1bcf-4fba-8dcf-b9af7c296cc5": {
@@ -119,7 +119,7 @@
             "use_feature_service_icon": false,
             "feature_service_icon": "fa-star",
             "feature_service_title": "Reputation",
-            "feature_service_description": "Companies that use natural gas may be perceived as contributing to environmental and climate change in comparison with companies that use green energy and that add value and create a good reputation among rivals."
+            "feature_service_description": "Companies that prioritize sustainability and use renewable energy sources are increasingly viewed positively by consumers and stakeholders. By adopting a biogas energy solution, companies can improve their reputation and contribute to a cleaner environment."
           }
         },
         "b6d23f87-6aa3-4ebd-8c57-f70f3503ae2a": {
@@ -128,8 +128,8 @@
             "image": "shopify:\/\/shop_images\/changing.png",
             "use_feature_service_icon": false,
             "feature_service_icon": "fa-leaf",
-            "feature_service_title": "Changing Plans",
-            "feature_service_description": "The Dutch government aims to reduce CO2 emissions by a whopping 49\/ by 2030. Offsets are a cost and do not have a financial return on investment compared to other operational efficiencies such as on-site solar. which means the price of natural gas and electricity is likely to become more expensive."
+            "feature_service_title": "Government regulation",
+            "feature_service_description": "Governments around the world are imposing strict regulations to reduce carbon emissions. For example, the Dutch government aims to reduce CO2 emissions by 49% by 2030. Using a biogas energy solution helps companies comply with these regulations and reduce their carbon footprint."
           }
         }
       },
