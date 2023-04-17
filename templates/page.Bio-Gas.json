@@ -466,7 +466,7 @@
         "template--18158520369454__32a4d689-38ca-4981-89e9-a6fd074de186-16775839849aeaa31e-1": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/care.png",
+            "image": "shopify:\/\/shop_images\/icons8-waste-90.png",
             "title": "Waste management",
             "description": "Using cow manure for biogas production turns waste into a valuable resource and helps manage the environmental impacts of animal waste.",
             "author": ""
@@ -475,7 +475,7 @@
         "90b5da3f-1f32-4571-8ef1-d81323bf61fa": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/inexhaustible-energy.png",
+            "image": "shopify:\/\/shop_images\/icons8-weak-financial-growth-90.png",
             "title": "Energy independence and economic benefits",
             "description": "Biogas energy solutions offer farmers a way to become more energy independent, create jobs, and generate additional revenue streams.",
             "author": ""
@@ -484,7 +484,7 @@
         "2f6a3d35-59e9-4003-9110-759950a9451f": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/jobs.png",
+            "image": "shopify:\/\/shop_images\/icons8-soil-90.png",
             "title": "Improved soil quality",
             "description": "The digestate produced from biogas production can be used as a fertilizer, improving soil quality and reducing the need for chemical fertilizers.",
             "author": ""
