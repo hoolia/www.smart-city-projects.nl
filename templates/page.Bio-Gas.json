@@ -493,7 +493,7 @@
         "48c9faca-790e-4db2-abdb-bddce92e4167": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/solar-panel-trust.png",
+            "image": "shopify:\/\/shop_images\/icons8-pollution-90.png",
             "title": "Reduced odors and pollution",
             "description": "Using cow manure for biogas production can reduce odors and air pollution, benefiting surrounding communities.",
             "author": ""
@@ -502,9 +502,9 @@
         "24bcacb2-a3b9-48e1-b2b7-2a26cbabb6d4": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/money-time.png",
-            "title": "Energy security",
-            "description": "Biogas energy solutions offer a reliable source of energy that is not subject to fluctuations in fossil fuel prices, providing energy security for farmers and communities.",
+            "image": "shopify:\/\/shop_images\/icons8-biogas-90.png",
+            "title": "Logistics advantages",
+            "description": "Offsets can be a costly way to reduce emissions, while on-site biogas production offers a more cost-effective solution with a financial return on investment.",
             "author": ""
           }
         }
