@@ -97,7 +97,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/icons8-security-energy-100.png",
             "use_feature_service_icon": false,
-            "feature_service_icon": "a-oil-can",
+            "feature_service_icon": "security-energy-100",
             "feature_service_title": "Energy Security",
             "feature_service_description": "As a finite resource, natural gas reliance can lead to energy insecurity and price volatility in the long term. Our biogas energy solution provides a reliable and sustainable source of energy, reducing dependence on finite resources."
           }
