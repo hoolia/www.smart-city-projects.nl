@@ -62,6 +62,38 @@
         "content": "<p>At our core, we are committed to the principles of the circular economy.<\/p><p>That's why we've come up with an innovative idea to repurpose waste from dairy farms and transform it into clean, renewable energy.<\/p><p><\/p><p>Our biogas energy solution harnesses the power of cow manure to produce biogas, which can then be used to heat office buildings.<\/p><p><\/p><p>We envision a future where micro-grid communities can thrive, powered by 100% renewable and recycled energy sources.<\/p><p><\/p><p>Say goodbye to the traditional centralized energy model and hello to a more sustainable future.<\/p><p><\/p><p>Watch this video for more information.<\/p>"
       }
     },
+    "505fd889-463e-4280-bd26-9c7ae1f66310": {
+      "type": "text-section",
+      "settings": {
+        "product_advert_design": "text-content1",
+        "fullwidth": true,
+        "background": false,
+        "background_color": "#f8f8f8",
+        "top_margin": false,
+        "subheading": "",
+        "sub_heading_size": 20,
+        "sub_heading_color": "#ababab",
+        "heading": "FROM MANURE TO ENERGY AND HEAT",
+        "heading_size": 36,
+        "heading_color": "#454545",
+        "description": "Fresh manure is pumped directly to the silo and mixed there at a constant temperature (39-42°C). As a result, the anaerobic organisms produce methane gas, which is diverted to the container. There we filter out the sulfur and generate energy and heat using a combustion engine and a generator. After fermentation, the digestate is more fluid. Ideal for fertilizing fields and meadows.",
+        "description_size": 16,
+        "description_color": "#7e7e7e",
+        "link_text": "",
+        "link": "",
+        "overwrite_link_color": false,
+        "link_color_text": "#454545",
+        "link_color_bg": "#fff",
+        "link_text_2": "",
+        "link_2": "",
+        "overwrite_link2_color": false,
+        "link2_color_text": "#454545",
+        "link2_color_bg": "#fff",
+        "ad_align": "center",
+        "bottom_padding": false,
+        "bottom_border": false
+      }
+    },
     "6a12516b-1e7e-46c1-a4d2-74563ef61add": {
       "type": "image-spinner",
       "blocks": {
@@ -532,6 +564,7 @@
     "main",
     "2ae76537-6ea1-4b21-9738-ac75785b180b",
     "96f13f7b-5dd3-47f6-8cd9-7d454b985956",
+    "505fd889-463e-4280-bd26-9c7ae1f66310",
     "6a12516b-1e7e-46c1-a4d2-74563ef61add",
     "282d1a92-6eab-4610-b383-1ec7edfa31f2",
     "b843a0b8-baf4-46b8-8413-73e3c0a7aa89",
