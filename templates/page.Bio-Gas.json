@@ -83,12 +83,12 @@
         "link": "",
         "overwrite_link_color": false,
         "link_color_text": "#454545",
-        "link_color_bg": "#fff",
+        "link_color_bg": "#ffffff",
         "link_text_2": "",
         "link_2": "",
         "overwrite_link2_color": false,
         "link2_color_text": "#454545",
-        "link2_color_bg": "#fff",
+        "link2_color_bg": "#ffffff",
         "ad_align": "center",
         "bottom_padding": false,
         "bottom_border": false
@@ -436,7 +436,7 @@
             "task": "TASK",
             "Day_": "03",
             "description-title": "Manage the subsidies",
-            "description": "We are in charge of all the necessary paperwork and processes to obtain subsidies, including the SDE++ aid provided by the Dutch government, to help maximize your financial benefits."
+            "description": "We are in charge of all the necessary paperwork and processes to obtain subsidies to help maximize your financial benefits."
           }
         },
         "a0ad482b-f739-4116-95f3-6af58112b983": {
@@ -447,7 +447,7 @@
             "task": "TASK",
             "Day_": "xx",
             "description-title": "Prepare the legal contracts",
-            "description": "We are in charge of all the necessary legal contracts and documentation for the installation of solar panels and machines, as well as renting of the roof, to ensure compliance with regulations."
+            "description": "We are in charge of all the necessary legal contracts and documentation for the installation of all the equipments, to ensure compliance with regulations."
           }
         },
         "be4c487f-d846-452a-ad7d-22f28b41cda9": {
