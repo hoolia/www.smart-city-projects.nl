@@ -202,22 +202,6 @@
             "discription": "<p>Our last generation batteries system are modular in design, which enables us to \"rack and stack\" them in order to scale the nominal capacity of the solar energy storage system.<\/p><p><br\/>At 24 kg and 19\", these batteries are smaller than the average solar battery in the market, which makes them easy to install and move.<\/p>"
           }
         },
-        "57c48e83-4f77-4ec6-b742-1c7ec0e7630d": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/valliant.png",
-            "Title": "Vaillant allSTOR system",
-            "discription": "<p>This multi-function buffer tank gives the possibility to accumulate and distribute any form of heating energy in an entire building. Made of steel with special coating. that makes it resistant to rust.<br\/>It is an easy plug-in installation that can connect to different types of input and output sources.<\/p>"
-          }
-        },
-        "bd7ed784-ba7a-41f8-851a-6c326f587be0": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HVAC_white_background.jpg",
-            "Title": "Air conditioning",
-            "discription": "<p>Hoolia's unique solution allows you to heat your working space through water, but also using air distribution installations. Heating offices via air conditioners is an option chosen by many building owners, that is why we offer you the possibility to keep your employees warmed during winter.<\/p>"
-          }
-        },
         "b7d2bc09-bdcd-42bd-bc77-36a5825218d2": {
           "type": "slide",
           "settings": {
@@ -245,8 +229,6 @@
       "block_order": [
         "2c31570f-b4ad-4504-a6c1-80fee2b02189",
         "172e002a-0f83-44f8-9aac-c5266e25cd5a",
-        "57c48e83-4f77-4ec6-b742-1c7ec0e7630d",
-        "bd7ed784-ba7a-41f8-851a-6c326f587be0",
         "b7d2bc09-bdcd-42bd-bc77-36a5825218d2",
         "f8bded95-0a40-40f1-a2df-93310e41c73e",
         "5a84d096-3564-40fb-a4c9-295b0498063a"
