@@ -229,6 +229,7 @@
         "a532b750-f3e0-4d38-8301-094cd3df79f6": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Sans_titre_1.png",
             "Title": "Generator",
             "discription": "<p>The generator is used to convert the energy produced by the internal combustion engine into electricity. Its advantage is that it can be used to power homes, farms, and businesses, providing a sustainable source of power.<\/p>"
           }
