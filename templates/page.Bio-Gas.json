@@ -250,6 +250,7 @@
     },
     "8e39da31-78f8-43c4-aa28-2d30c4ce549d": {
       "type": "Tabs-Section",
+      "disabled": true,
       "blocks": {
         "301be99f-c15c-43d0-b51c-0e4f79b87f33": {
           "type": "slide",
