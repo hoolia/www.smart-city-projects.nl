@@ -1408,6 +1408,40 @@
         ],
         "settings": {
         }
+      },
+      "133e8656-b58a-40ff-8fcc-f1de3887efb0": {
+        "type": "ad-product",
+        "settings": {
+          "product_advert_design": "product-advert2alt",
+          "fullwidth": true,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "top_margin": false,
+          "bg-image": "shopify:\/\/shop_images\/overview.png",
+          "image_position": "right",
+          "img_percentage": "55",
+          "subheading": "WeWe",
+          "sub_heading_color": "#ababab",
+          "heading": "We la zon",
+          "heading_color": "#454545",
+          "description": "We la zon en pers We la zon en pers We la zon en pers We la zon en pers We la zon en pers We la zon en pers We la zon en pers We la zon en pers We la zon en pers We la zon en pers We la zon en pers",
+          "description_color": "#7e7e7e",
+          "price": "",
+          "price_color": "#454545",
+          "link_text": "",
+          "link": "",
+          "overwrite_link_color": false,
+          "link_color_text": "#454545",
+          "link_color_bg": "#fff",
+          "link_text_2": "",
+          "link_2": "",
+          "overwrite_link2_color": false,
+          "link2_color_text": "#454545",
+          "link2_color_bg": "#fff",
+          "ad_align": "left",
+          "bottom_padding": false,
+          "bottom_border": false
+        }
       }
     },
     "content_for_index": [
@@ -1421,7 +1455,8 @@
       "811dc7ef-6454-452b-b077-7da890f0fbdf",
       "23726bfe-e4ad-4539-a4f1-4289742a83db",
       "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
-      "fab7068f-cc57-46ec-bf94-e4c533426ed3"
+      "fab7068f-cc57-46ec-bf94-e4c533426ed3",
+      "133e8656-b58a-40ff-8fcc-f1de3887efb0"
     ]
   },
   "presets": {
