@@ -879,6 +879,14 @@
               "description": "Initial investments are necessary to construct renewable facilities, but once in operation, they have low ongoing costs, resulting in stable energy prices over time compared to fossil energy prices.",
               "author": ""
             }
+          },
+          "4425d3a3-4a95-4f24-86c1-1e2e98546006": {
+            "type": "testimonial",
+            "settings": {
+              "title": "",
+              "description": "",
+              "author": ""
+            }
           }
         },
         "block_order": [
@@ -887,7 +895,8 @@
           "eb68ac26-6f6d-4d50-bc10-6856d378300d",
           "dc126c73-c1ee-4bd5-8ec4-df32170a00d2",
           "df3cc870-ae48-49f7-bbbf-c86c6f46afc1",
-          "178768a7-f87a-4c6b-945f-788fb4961fae"
+          "178768a7-f87a-4c6b-945f-788fb4961fae",
+          "4425d3a3-4a95-4f24-86c1-1e2e98546006"
         ],
         "settings": {
           "layout": "testimonials-custom",
@@ -1419,11 +1428,6 @@
           "fullwidth": true,
           "top_margin": false
         }
-      },
-      "2cee1217-d14f-4367-8df9-7d5f11b45f21": {
-        "type": "icon-with-text",
-        "settings": {
-        }
       }
     },
     "content_for_index": [
@@ -1442,8 +1446,7 @@
       "71cf6522-51f6-4750-b870-82a59e85afbf",
       "811dc7ef-6454-452b-b077-7da890f0fbdf",
       "23726bfe-e4ad-4539-a4f1-4289742a83db",
-      "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
-      "2cee1217-d14f-4367-8df9-7d5f11b45f21"
+      "75a43b2a-1a20-41a3-9caf-43f29d41f10d"
     ]
   },
   "presets": {
