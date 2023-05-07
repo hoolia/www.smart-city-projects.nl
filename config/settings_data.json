@@ -1420,15 +1420,9 @@
           "top_margin": false
         }
       },
-      "2672f651-377b-4581-b023-f9f99ec91242": {
-        "type": "image-with-text",
+      "2cee1217-d14f-4367-8df9-7d5f11b45f21": {
+        "type": "icon-with-text",
         "settings": {
-          "video_type": "Youtube-Vimeo",
-          "video_link": "",
-          "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-          "heading": "",
-          "sub-heading": "",
-          "content": ""
         }
       }
     },
@@ -1449,7 +1443,7 @@
       "811dc7ef-6454-452b-b077-7da890f0fbdf",
       "23726bfe-e4ad-4539-a4f1-4289742a83db",
       "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
-      "2672f651-377b-4581-b023-f9f99ec91242"
+      "2cee1217-d14f-4367-8df9-7d5f11b45f21"
     ]
   },
   "presets": {
