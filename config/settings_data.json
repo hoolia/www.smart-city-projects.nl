@@ -1408,6 +1408,37 @@
         ],
         "settings": {
         }
+      },
+      "0a861b9d-08d1-4f56-89c4-1d72cf4df013": {
+        "type": "brands",
+        "blocks": {
+          "0a861b9d-08d1-4f56-89c4-1d72cf4df013-16834654686586cc62-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/overview.png",
+              "link": ""
+            }
+          },
+          "0a861b9d-08d1-4f56-89c4-1d72cf4df013-16834654686586cc62-1": {
+            "type": "image",
+            "settings": {
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "0a861b9d-08d1-4f56-89c4-1d72cf4df013-16834654686586cc62-0",
+          "0a861b9d-08d1-4f56-89c4-1d72cf4df013-16834654686586cc62-1"
+        ],
+        "settings": {
+          "layout": "brands",
+          "heading": "Logo Brands & Clients",
+          "fullwidth": false,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "top_margin": false,
+          "bottom_padding": false
+        }
       }
     },
     "content_for_index": [
@@ -1421,7 +1452,8 @@
       "811dc7ef-6454-452b-b077-7da890f0fbdf",
       "23726bfe-e4ad-4539-a4f1-4289742a83db",
       "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
-      "fab7068f-cc57-46ec-bf94-e4c533426ed3"
+      "fab7068f-cc57-46ec-bf94-e4c533426ed3",
+      "0a861b9d-08d1-4f56-89c4-1d72cf4df013"
     ]
   },
   "presets": {
