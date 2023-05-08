@@ -1412,7 +1412,7 @@
       "133e8656-b58a-40ff-8fcc-f1de3887efb0": {
         "type": "ad-product",
         "settings": {
-          "product_advert_design": "product-advert4alt",
+          "product_advert_design": "product-advert1alt",
           "fullwidth": true,
           "background": false,
           "background_color": "#f8f8f8",
@@ -1422,9 +1422,9 @@
           "img_percentage": "55",
           "subheading": "",
           "sub_heading_color": "#ababab",
-          "heading": "Home assistant",
+          "heading": "Personalized Dashboard",
           "heading_color": "#454545",
-          "description": "Introducing the heart of our smart office solution : Raspberry 4 !\n<br>With our technology, you can control the temperature and monitor the performance of your office's HVAC, solar panels, and other devices with ease. Our user-friendly dashboard provides real-time data and allows you to make quick adjustments to maintain optimal conditions.",
+          "description": "Introducing our innovative home assistant dashboard. Our system allows clients to easily control the temperature and other environmental factors in their offices, all from one centralized location. The dashboard provides real-time data on temperature, humidity, air quality, and solar panel efficiency, allowing clients to make informed decisions about energy usage and conservation.\n<br>In addition to the environmental benefits, our system also provides financial savings for our clients. By monitoring and optimizing energy usage, clients can reduce their energy bills and increase their overall efficiency. With our easy-to-use interface and customizable settings, managing your office's environment has never been easier or more cost-effective.",
           "description_color": "#7e7e7e",
           "price": "",
           "price_color": "#454545",
