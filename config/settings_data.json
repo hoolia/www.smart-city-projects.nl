@@ -1412,6 +1412,40 @@
       "133e8656-b58a-40ff-8fcc-f1de3887efb0": {
         "type": "ad-product",
         "settings": {
+          "product_advert_design": "product-advert4alt",
+          "fullwidth": true,
+          "background": false,
+          "background_color": "#f8f8f8",
+          "top_margin": false,
+          "bg-image": "shopify:\/\/shop_images\/overview_ddb199a3-8795-4f48-9506-b094692cf572.png",
+          "image_position": "right",
+          "img_percentage": "55",
+          "subheading": "",
+          "sub_heading_color": "#ababab",
+          "heading": "Home assistant",
+          "heading_color": "#454545",
+          "description": "Introducing the heart of our smart office solution : Raspberry 4 !\n<br>With our technology, you can control the temperature and monitor the performance of your office's HVAC, solar panels, and other devices with ease. Our user-friendly dashboard provides real-time data and allows you to make quick adjustments to maintain optimal conditions.",
+          "description_color": "#7e7e7e",
+          "price": "",
+          "price_color": "#454545",
+          "link_text": "",
+          "link": "",
+          "overwrite_link_color": false,
+          "link_color_text": "#454545",
+          "link_color_bg": "#ffffff",
+          "link_text_2": "",
+          "link_2": "",
+          "overwrite_link2_color": false,
+          "link2_color_text": "#454545",
+          "link2_color_bg": "#ffffff",
+          "ad_align": "left",
+          "bottom_padding": false,
+          "bottom_border": false
+        }
+      },
+      "b198dce0-cc6f-4dc8-a754-f97de373338a": {
+        "type": "ad-product",
+        "settings": {
           "product_advert_design": "product-advert2alt",
           "fullwidth": true,
           "background": false,
@@ -1432,12 +1466,12 @@
           "link": "",
           "overwrite_link_color": false,
           "link_color_text": "#454545",
-          "link_color_bg": "#fff",
+          "link_color_bg": "#ffffff",
           "link_text_2": "",
           "link_2": "",
           "overwrite_link2_color": false,
           "link2_color_text": "#454545",
-          "link2_color_bg": "#fff",
+          "link2_color_bg": "#ffffff",
           "ad_align": "left",
           "bottom_padding": false,
           "bottom_border": false
@@ -1456,7 +1490,8 @@
       "23726bfe-e4ad-4539-a4f1-4289742a83db",
       "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
       "fab7068f-cc57-46ec-bf94-e4c533426ed3",
-      "133e8656-b58a-40ff-8fcc-f1de3887efb0"
+      "133e8656-b58a-40ff-8fcc-f1de3887efb0",
+      "b198dce0-cc6f-4dc8-a754-f97de373338a"
     ]
   },
   "presets": {
