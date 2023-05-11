@@ -1427,7 +1427,7 @@
           "image": "shopify:\/\/shop_images\/7495236-1_3.png",
           "video_type": "youtube",
           "video_src": "Z8GA5t3_mq0",
-          "video_autoplay": true,
+          "video_autoplay": false,
           "fullwidth": false,
           "top_margin": true
         }
