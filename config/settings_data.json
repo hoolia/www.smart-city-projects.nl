@@ -1420,13 +1420,16 @@
       },
       "ee1cb9db-dd4b-4737-916b-3491cdc54314": {
         "type": "videobox",
+        "custom_css": [
+
+        ],
         "settings": {
           "image": "shopify:\/\/shop_images\/7495236-1_3.png",
           "video_type": "youtube",
           "video_src": "Z8GA5t3_mq0",
-          "video_autoplay": false,
-          "fullwidth": true,
-          "top_margin": false
+          "video_autoplay": true,
+          "fullwidth": false,
+          "top_margin": true
         }
       },
       "ada929a6-a078-48fe-9ad8-2cb13591bcc5": {
