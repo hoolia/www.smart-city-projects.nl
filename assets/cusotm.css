@@ -591,7 +591,7 @@ section.cd-faq {
 }
 /* 19 May 2023  */
     .our_story1 .static_video1 .img_static1 {
-    aspect-ratio: 3/1;
-    object-fit: contain;
-    background: #44dc44;
+    aspect-ratio: 3/1 !important;
+    object-fit: contain !important;
+    background: #44dc44 !important;
 }
