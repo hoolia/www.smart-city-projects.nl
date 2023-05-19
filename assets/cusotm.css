@@ -589,3 +589,9 @@ section.cd-faq {
       margin-left: -3rem;
   }
 }
+/* 19 May 2023  */
+    .our_story1 .static_video1 .img_static1 {
+    aspect-ratio: 3/1;
+    object-fit: contain;
+    background: #44dc44;
+}
