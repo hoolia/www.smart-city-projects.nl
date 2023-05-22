@@ -7,7 +7,9 @@
             <div class="our_story1 {% if section.settings.top_margin %} margin-top{% endif %}">
               <div class="static_video1">
                 {% comment %}<img class="img_static1{% if settings.lazyloading_enable %} lazyload{% endif %}" {% if settings.lazyloading_enable %} data-{% endif %}src="{% if section.settings.image != blank %}{{ section.settings.image | img_url: '1920x601' }}{% else %} {{ 'videobox.jpg' | asset_img_url: '1920x601' }} {% endif %}" alt="" style=" height: 500px; "> {% endcomment %}
-                <img class="img_static1{% if settings.lazyloading_enable %} lazyload{% endif %}" {% if settings.lazyloading_enable %} data-{% endif %}src="{% if section.settings.image != blank %}{{ section.settings.image | img_url: '1920x601' }}{% else %} {{ 'videobox.jpg' | asset_img_url: '1920x601' }} {% endif %}" alt="">
+                <img class="img_static1{% if settings.lazyloading_enable %} lazyload{% endif %}" {% if settings.lazyloading_enable %} data-{% endif %}src="{% if section.settings.image != blank %}{{ section.settings.image | img_url: '1920x601' }}{% else %} {{ 'videobox.jpg' | asset_img_url: '1920x601' }} {% endif %}" alt="" style="
+    background: {{ section.settings.bg }};
+">
                 <div id="cms_play1" class="{{section.id}}"><img src="{{ 'playing_video.png' | asset_url }}" alt=""></div>
               </div>
             </div>
