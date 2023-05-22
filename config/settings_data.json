@@ -1428,7 +1428,7 @@
           "video_type": "youtube",
           "video_src": "Z8GA5t3_mq0",
           "video_autoplay": false,
-          "fullwidth": false,
+          "fullwidth": true,
           "top_margin": true
         }
       },
