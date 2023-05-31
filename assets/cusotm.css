@@ -397,7 +397,11 @@ div#content h3 {
 .module-title h2 {
     text-transform: capitalize !important;
 }
-
+@media (min-width: 1200px){
+  .container.blog_posts {
+    padding-top: 12vh;
+}
+}
 @media (max-width: 1199px){
     .container.blog_posts {
     padding-top: 17vh;
@@ -596,6 +600,4 @@ section.cd-faq {
       margin-left: -3rem;
   }
 }
-    .container.blog_posts {
-    padding-top: 12vh;
-}
+  
