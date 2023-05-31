@@ -1432,12 +1432,6 @@
           "fullwidth": true,
           "top_margin": true
         }
-      },
-      "5f6a1fe2-af08-486d-8039-3c599031a649": {
-        "type": "pagefly-section",
-        "settings": {
-          "section_id": "pf-dd570e78"
-        }
       }
     },
     "content_for_index": [
@@ -1456,8 +1450,7 @@
       "71cf6522-51f6-4750-b870-82a59e85afbf",
       "811dc7ef-6454-452b-b077-7da890f0fbdf",
       "23726bfe-e4ad-4539-a4f1-4289742a83db",
-      "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
-      "5f6a1fe2-af08-486d-8039-3c599031a649"
+      "75a43b2a-1a20-41a3-9caf-43f29d41f10d"
     ]
   },
   "presets": {
