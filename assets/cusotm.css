@@ -556,6 +556,11 @@ section.cd-faq {
   font-weight: bold;
     font-size: 20px;
 }
+.article-description p, .intro-content p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+}
 @media(max-width: 768px){
   .container.blog_posts {
     padding-top: 21vh;
