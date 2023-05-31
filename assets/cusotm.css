@@ -561,6 +561,9 @@ section.cd-faq {
     line-height: 1.4;
     color: #000;
 }
+.article-item-inner.text-left a.btn.readmore-page {
+    color: black;
+}
 @media(max-width: 768px){
   .container.blog_posts {
     padding-top: 21vh;
