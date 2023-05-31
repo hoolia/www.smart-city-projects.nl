@@ -10,7 +10,7 @@
 {% assign even = 'even cross' %}
 {% endif %}
 
-<div class="container">
+<div class="container {{ section.settings.custom-class }}">
   <div class="main">
     <div class="row">
       <div class="col-order">
@@ -178,7 +178,12 @@
             }
          ],
          "default":"no"
-      }
+      },
+     {
+       "type":"text",
+       "id":"custom-class",
+       "label":"custom-class"
+     }
     ],
    "blocks": [
       {
