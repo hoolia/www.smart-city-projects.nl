@@ -542,7 +542,9 @@ section.cd-faq {
     font-size:34px;
   }
 }
-
+.container.blog_posts h1 {
+    color: #30bf32;
+}
 @media(max-width: 768px){
   .container.blog_posts {
     padding-top: 21vh;
