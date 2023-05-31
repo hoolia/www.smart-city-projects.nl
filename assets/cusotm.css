@@ -544,6 +544,9 @@ section.cd-faq {
 }
 
 @media(max-width: 768px){
+  .container.blog_posts {
+    padding-top: 21vh;
+}
    .header-inner .container-inner .box.box-left {
     position: relative;
 }
@@ -589,3 +592,4 @@ section.cd-faq {
       margin-left: -3rem;
   }
 }
+    
