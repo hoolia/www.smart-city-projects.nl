@@ -551,6 +551,9 @@ section.cd-faq {
 .container.blog_posts h1 {
     color: #43db43;
 }
+.article-name h3 a {
+    color: #545454;
+}
 @media(max-width: 768px){
   .container.blog_posts {
     padding-top: 21vh;
