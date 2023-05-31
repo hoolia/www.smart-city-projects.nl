@@ -90,7 +90,11 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  </head>
+  
+{{ 'custom-styles.css' | asset_url | stylesheet_tag }}
+
+  {{ 'gang-custom-css-shopify--main.css' | asset_url | stylesheet_tag }}
+</head>
   <body class="{% case template %}
                {% when 'index' %}
                common-home
@@ -109,5 +113,20 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
                {% else %} {{ template }}
                {% endcase %} home1" ><div class="pagefly-container">{{ content_for_layout }}</div></body>
 </html>
+<style>
+  @media screen and (min-width: 768px) {
+  /* 19 May 2023  */
+    .our_story1 .static_video1 .img_static1 {
+    aspect-ratio: 3/1 !important;
+    object-fit: contain !important;
+   
+}
+  }
+   @media screen and (max-width: 768px) {
+  div#cms_play1 img {
+    width: 51px;
+}
+   }
+</style>
 
 
