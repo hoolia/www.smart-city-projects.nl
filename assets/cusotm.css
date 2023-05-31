@@ -399,7 +399,7 @@ div#content h3 {
 }
 @media (min-width: 1200px){
   .container.blog_posts {
-    padding-top: 12vh;
+    padding-top: 19vh;
 }
 }
 @media (max-width: 1199px){
