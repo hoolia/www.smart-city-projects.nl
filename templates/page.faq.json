@@ -2,18 +2,14 @@
   "sections": {
     "aea273ab-9d82-42c3-80c1-0a7beec21174": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
-        "subheading": "Sub-heading",
-        "title": "Your Liquid",
-        "liquid": ""
       }
     },
     "62dc4ece-61c1-4260-b8d7-0f0fc3816e2b": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
-        "subheading": "",
-        "title": "",
-        "liquid": "<p class=\"top_padding\" style=\"text-align:center;color: #42db43;\n    font-size: 30px;    padding: 30px 0 0 0;\n    text-align: center;\">{{page.title}}<\/p>"
       }
     },
     "main": {
