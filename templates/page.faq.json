@@ -1,14 +1,13 @@
 {
   "sections": {
-    "aea273ab-9d82-42c3-80c1-0a7beec21174": {
+    "62dc4ece-61c1-4260-b8d7-0f0fc3816e2b": {
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
       }
     },
-    "62dc4ece-61c1-4260-b8d7-0f0fc3816e2b": {
+    "aea273ab-9d82-42c3-80c1-0a7beec21174": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
       }
     },
@@ -338,8 +337,8 @@
     }
   },
   "order": [
-    "aea273ab-9d82-42c3-80c1-0a7beec21174",
     "62dc4ece-61c1-4260-b8d7-0f0fc3816e2b",
+    "aea273ab-9d82-42c3-80c1-0a7beec21174",
     "main",
     "4ade7a86-0fb8-4d00-b7e1-3ca01bf4091c",
     "d88c3799-9268-4e94-a2b5-28af08f4871f",
