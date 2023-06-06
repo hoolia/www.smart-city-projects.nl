@@ -675,7 +675,10 @@ div#shopify-section-template--18146879832366__main #content {
     display: grid;
     justify-content: center;
 }
-
+div#shopify-section-template--18146879308078__main #content {
+    min-height: 300px;
+    margin-top: 18vh;
+}
 div#product-category {
     margin-top: 12rem;
 }
