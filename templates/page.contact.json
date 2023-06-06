@@ -2,9 +2,10 @@
   "sections": {
     "3fb6d9ae-5f87-41b3-8386-cae974077da8": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
-        "subheading": "a",
-        "title": "a",
+        "subheading": "",
+        "title": "",
         "liquid": ""
       }
     },
