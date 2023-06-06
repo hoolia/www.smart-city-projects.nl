@@ -669,7 +669,7 @@ section.cd-faq {
 
 /* 26june 2023  */
 
-#content {
+div#shopify-section-template--18146879832366__main #content {
     min-height: 300px;
     margin-top: 18vh;
     display: grid;
