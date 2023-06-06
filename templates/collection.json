@@ -43,7 +43,7 @@
       ],
       "settings": {
         "product_count_per_page": "12",
-        "show_top_filters": true,
+        "show_top_filters": false,
         "collection_view_default": "3",
         "show_summary": true,
         "show_summary_stripped": true,
