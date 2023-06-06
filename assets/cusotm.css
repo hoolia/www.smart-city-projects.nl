@@ -667,7 +667,12 @@ section.cd-faq {
 }
 
 
+/* 26june 2023  */
 
-
-
+#content {
+    min-height: 300px;
+    margin-top: 26vh;
+    display: grid;
+    justify-content: center;
+}
 
