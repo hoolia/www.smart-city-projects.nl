@@ -1,1 +1,112 @@
-{"sections":{"3fb6d9ae-5f87-41b3-8386-cae974077da8":{"type":"custom-liquid","disabled":true,"settings":{"subheading":"","title":"","liquid":""}},"db4ef997-b436-40d6-b1f5-46bc3a4693d0":{"type":"text-section","settings":{"product_advert_design":"text-content1","fullwidth":true,"background":false,"background_color":"#f8f8f8","top_margin":false,"subheading":"","sub_heading_size":20,"sub_heading_color":"#ababab","heading":"Contact Us","heading_size":36,"heading_color":"#30bf32","description":"","description_size":16,"description_color":"#7e7e7e","link_text":"","link":"","overwrite_link_color":false,"link_color_text":"#454545","link_color_bg":"#ffffff","link_text_2":"","link_2":"","overwrite_link2_color":false,"link2_color_text":"#454545","link2_color_bg":"#ffffff","ad_align":"left","bottom_padding":false,"bottom_border":false}},"5eea40a6-8bf4-429e-9a13-4c4357feb43b":{"type":"icon-with-text","blocks":{"37468329-9d3b-4ce2-b5c1-51850c604122":{"type":"Phone","settings":{"image":"shopify:\/\/shop_images\/mobile.png","text":"+31 252 799 302"}},"243d8e57-3493-459a-bbf8-945098d502db":{"type":"Email","settings":{"image":"shopify:\/\/shop_images\/message.png","text":"support@hoolia.eu"}},"dda88554-685b-4053-816a-d4e87ad474eb":{"type":"Address","settings":{"image":"shopify:\/\/shop_images\/home.png","text":"Alexanderstraat 946812BH Amsterdam"}}},"block_order":["37468329-9d3b-4ce2-b5c1-51850c604122","243d8e57-3493-459a-bbf8-945098d502db","dda88554-685b-4053-816a-d4e87ad474eb"],"settings":{}},"80e6ea8d-8e84-4897-b4f4-bb10f07f269f":{"type":"custom-liquid","disabled":true,"settings":{"subheading":"Sub-heading","title":"Your Liquid","liquid":""}},"main":{"type":"contact-page","custom_css":["div#content h1,div#content h3 {display: none;}"],"settings":{"show_map":true,"map_code":"<br><iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2436.3583210281076!2d4.918381315698107!3d52.36392245553684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60975620f671d%3A0x16af28020c881a3a!2sLaan%20van%20Gildestein%2040%2C%201092%20AD%20Amsterdam%2C!5e0!3m2!1sfr!2sbe!4v1673884942126!5m2!1sfr!2sbe\" width=\"100%\" height=\"600\" style=\"border: 0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>","show_content":false,"accept_check_enable":true,"accept_text":"I agree with the terms and conditions."}},"f8fe3086-a17c-482b-9de4-c6509ae7267f":{"type":"contact-page","settings":{"show_map":true,"map_code":"","show_content":false,"accept_check_enable":true,"accept_text":"I agree with the terms and conditions."}}},"order":["3fb6d9ae-5f87-41b3-8386-cae974077da8","db4ef997-b436-40d6-b1f5-46bc3a4693d0","5eea40a6-8bf4-429e-9a13-4c4357feb43b","80e6ea8d-8e84-4897-b4f4-bb10f07f269f","main","f8fe3086-a17c-482b-9de4-c6509ae7267f"]}
+{
+  "sections": {
+    "3fb6d9ae-5f87-41b3-8386-cae974077da8": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "db4ef997-b436-40d6-b1f5-46bc3a4693d0": {
+      "type": "text-section",
+      "settings": {
+        "product_advert_design": "text-content1",
+        "fullwidth": true,
+        "background": false,
+        "background_color": "#f8f8f8",
+        "top_margin": false,
+        "subheading": "",
+        "sub_heading_size": 20,
+        "sub_heading_color": "#ababab",
+        "heading": "Contact Us",
+        "heading_size": 36,
+        "heading_color": "#30bf32",
+        "description": "",
+        "description_size": 16,
+        "description_color": "#7e7e7e",
+        "link_text": "",
+        "link": "",
+        "overwrite_link_color": false,
+        "link_color_text": "#454545",
+        "link_color_bg": "#ffffff",
+        "link_text_2": "",
+        "link_2": "",
+        "overwrite_link2_color": false,
+        "link2_color_text": "#454545",
+        "link2_color_bg": "#ffffff",
+        "ad_align": "left",
+        "bottom_padding": false,
+        "bottom_border": false
+      }
+    },
+    "5eea40a6-8bf4-429e-9a13-4c4357feb43b": {
+      "type": "icon-with-text",
+      "blocks": {
+        "37468329-9d3b-4ce2-b5c1-51850c604122": {
+          "type": "Phone",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mobile.png",
+            "text": "+31 252 799 302"
+          }
+        },
+        "243d8e57-3493-459a-bbf8-945098d502db": {
+          "type": "Email",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/message.png",
+            "text": "support@hoolia.eu"
+          }
+        },
+        "dda88554-685b-4053-816a-d4e87ad474eb": {
+          "type": "Address",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home.png",
+            "text": "Alexanderstraat 946812BH Amsterdam"
+          }
+        }
+      },
+      "block_order": [
+        "37468329-9d3b-4ce2-b5c1-51850c604122",
+        "243d8e57-3493-459a-bbf8-945098d502db",
+        "dda88554-685b-4053-816a-d4e87ad474eb"
+      ],
+      "settings": {
+      }
+    },
+    "80e6ea8d-8e84-4897-b4f4-bb10f07f269f": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "contact-page",
+      "custom_css": [
+        "div#content h1,div#content h3 {display: none;}"
+      ],
+      "settings": {
+        "show_map": true,
+        "map_code": "<br><iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2436.3583210281076!2d4.918381315698107!3d52.36392245553684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60975620f671d%3A0x16af28020c881a3a!2sLaan%20van%20Gildestein%2040%2C%201092%20AD%20Amsterdam%2C!5e0!3m2!1sfr!2sbe!4v1673884942126!5m2!1sfr!2sbe\" width=\"100%\" height=\"600\" style=\"border: 0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>",
+        "show_content": false,
+        "accept_check_enable": true,
+        "accept_text": "I agree with the terms and conditions."
+      }
+    },
+    "f8fe3086-a17c-482b-9de4-c6509ae7267f": {
+      "type": "contact-page",
+      "settings": {
+        "show_map": true,
+        "map_code": "",
+        "show_content": false,
+        "accept_check_enable": true,
+        "accept_text": "I agree with the terms and conditions."
+      }
+    }
+  },
+  "order": [
+    "3fb6d9ae-5f87-41b3-8386-cae974077da8",
+    "db4ef997-b436-40d6-b1f5-46bc3a4693d0",
+    "5eea40a6-8bf4-429e-9a13-4c4357feb43b",
+    "80e6ea8d-8e84-4897-b4f4-bb10f07f269f",
+    "main",
+    "f8fe3086-a17c-482b-9de4-c6509ae7267f"
+  ]
+}
