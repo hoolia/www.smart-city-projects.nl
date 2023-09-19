@@ -3,7 +3,15 @@
   <p class="special-price"><span class="price" {% if page %}id="productPrice"{% endif %}>{{ product.selected_or_first_available_variant.price | money }}</span></p>
   <p class="old-price"><span class="price" {% if page %} id="comparePrice"{% endif %}>{{ product.selected_or_first_available_variant.compare_at_price | money }}</span></p>
   {% else %}
+  
+   {% if template == 'product' %}
+
+ <p class="regular-price"><span class="price" {% if page %} id="productPrice"{% endif %}>  {{ product.selected_or_first_available_variant.price | money }}</span></p>
+{% else %}
   <p class="regular-price"><span class="price" {% if page %} id="productPrice"{% endif %}>{{ product.selected_or_first_available_variant.price | money }}</span></p>
+ {% endif %}
+  
+  
   <p class="old-price"><span class="price" {% if page %} id="comparePrice"{% endif %}></span></p>
 {% endif %}
 </div>

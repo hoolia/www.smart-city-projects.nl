@@ -1,269 +1,274 @@
-<div class="module-title">
-  {% if section.settings.heading %}
-    <h2 class="title_">
-      <strong>{{ section.settings.heading }}</strong>
-    </h2>
-  {% endif %}
-  {% if section.settings.description %}
-    <p class="sub-title Tabs-sub">{{ section.settings.description }}</p>
-  {% endif %}
-</div>
-<div class="tabset" data-aos="fade-up">
-  {% for block in section.blocks %}
-    <!-- Tab 1 -->
-    <input type="radio" name="tabset" id="{{ forloop.index }}" aria-controls="{{ forloop.index }}" checked>
-    <label for="{{ forloop.index }}">{{ block.settings.title }}</label>
-  {% endfor %}
-
+   <div class="module-title">
+      {% if section.settings.heading %}
+      <h2 class="title_"><strong>{{ section.settings.heading }}</strong></h2>
+      {% endif %}
+       {% if section.settings.description %}
+      <p class="sub-title Tabs-sub">{{ section.settings.description }}</p>
+      {% endif %}
+    </div>
+<div class="tabset"  data-aos="fade-up">
+ 
+  {% for block in section.blocks %}  
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="{{ forloop.index }}" aria-controls="{{ forloop.index }}" checked>
+  <label for="{{ forloop.index }}">{{ block.settings.title }}</label>
+   {% endfor %}
+   
   <div class="tab-panels">
-    {% for block in section.blocks %}
-      <section id="{{ forloop.index }}" id="marzen" class="tab-panel">
-        <div class="tab_content">
-          <div class="left-content">
-            <div class="Tab-heading">{{ block.settings['Tab-heading'] }}</div>
-            <div class="tab-discription">{{ block.settings['tab-discription'] }}</div>
-            {% if block.settings['tab-calculator'] %}
+     {% for block in section.blocks %}  
+    <section id="{{ forloop.index }}" id="marzen" class="tab-panel">
+      <div class="tab_content">
+        <div class="left-content">
+          <div class="Tab-heading">{{ block.settings.Tab-heading }}</div>
+          <div class="tab-discription">{{ block.settings.tab-discription }}</div> 
+          {% if block.settings.tab-calculator %}
               <div class="calculator" data-calc-id="{{ block.settings.tab-calculator }}" data-type="framed"></div>
               <script src="https://scripts.convertcalculator.com/embed.js" async="true"></script>
-            {% endif %}
-          </div>
-          <div class="right-content">
-            <img src="{{ block.settings.image  | img_url: 'master'}}" alt="">
-          </div>
+          {% endif %}
         </div>
+        <div class="right-content">
+          <img  src={{ block.settings.image  | img_url: 'master'}} alt="">
+      </div>
+      </div>
       </section>
-    {% endfor %}
+       {% endfor %}
+    
   </div>
+      
 </div>
 
+
+
+
 {% schema %}
- {
-   "name": "Tabs-Section",
-"max_blocks": 4,
-   "settings": [
-           {
-     "type": "text",
-     "id": "heading",
-     "label": "Heading",
-     "default": "WHAT OUR CLIENTS SAY"
-},
-   {
-     "type": "textarea",
-     "id": "description",
-     "label": "Description",
-     "default": "Welcome to my personal presentation"
-   }
-   ],
-     "blocks": [
+  {
+    "name": "Tabs-Section",
+	"max_blocks": 4,
+    "settings": [
+            {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "WHAT OUR CLIENTS SAY"
+	},
     {
-      "name": "Tab",
-      "type": "slide",
-      "settings": [
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Welcome to my personal presentation"
+    }
+    ],
+      "blocks": [
      {
-         "type":"text",
-         "id":"title",
-         "label":"Tab Name"
-       },
-        {
+       "name": "Tab",
+       "type": "slide",
+       "settings": [
+      {
           "type":"text",
-          "id":"Tab-heading",
-          "label":"Heading"
+          "id":"title",
+          "label":"Tab Name"
+        },
+         {
+           "type":"text",
+           "id":"Tab-heading",
+           "label":"Heading"
+         },
+         {
+          "type":"richtext",
+          "id":"tab-discription",
+          "label":"discription"
+        },
+         {
+          "type":"text",
+          "id":"tab-calculator",
+          "label":"Calculator ID"
         },
         {
-         "type":"richtext",
-         "id":"tab-discription",
-         "label":"discription"
-       },
-        {
-         "type":"text",
-         "id":"tab-calculator",
-         "label":"Calculator ID"
-       },
-       {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        }
-      ]
-    }
-  ],
-   "presets":[
-     {
-       "name":"Tabs-Section"
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
      }
-   ]
- }
+   ],
+    "presets":[
+      {
+        "name":"Tabs-Section"
+      }
+    ]
+  }
 {% endschema %}
 <style>
-  p.sub-title.Tabs-sub {
-      line-height: 81px;
-    margin-bottom:80px !important;
-  }
-    /*
-   CSS for the main interaction
-  */
-  .tabset > input[type="radio"] {
-    position: absolute;
-    left: -200vw;
-  }
-
-  .tabset .tab-panel {
-    display: none;
-  }
-
-  .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
-  .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
-  .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
-  .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
-  .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
-  .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
-    display: block;
-  }
-
+p.sub-title.Tabs-sub {
+    line-height: 81px;
+  margin-bottom:80px !important;
+}
   /*
-   Styling
-  */
-  body {
-    font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
-    color: #333;
-    font-weight: 300;
-  }
-  .calculator {
-    margin-top: 20px;
-  }
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
 
-  .rZJEp {
-    margin-left: 0px !important;
-  }
-  .tabset > label {
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+body {
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  color: #333;
+  font-weight: 300;
+}
+.calculator {
+  margin-top: 20px;
+}
+
+.rZJEp {
+  margin-left: 0px !important;
+}
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  border: none;
+  border-bottom: 0;
+  cursor: pointer;
+  font-size:30px;
+  font-weight: 600;
+  padding: 15px 40px;
+}
+
+
+{% comment %} .tabset > label:hover,
+.tabset > input:focus + label {
+  color: #06c;
+} {% endcomment %}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #06c;
+}
+
+.tabset > input:checked + label {
+  border:none;
+  margin-bottom: -1px;
+      color: #42db44;
+    font-size: 4rem;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+}
+
+.tabset {
+  max-width: 65em;
+  margin:0 auto;
+  margin-bottom:70px;
+}
+  .left-content {
+    margin-right: 20px;
+}
+.tab_content {
+    display: flex;
+}
+  .Tab-heading {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #333333;
+    line-height: 81px;
+}
+  .tab-discription {
+    font-size: 16px;
+    line-height: 31px;
+    color: #333333;
+    font-weight: 400;
+    font-style: normal;
+}
+  .right-content img {
+    width: 315px;
+    border-radius:14px
+}
+  .right-content {
+    position: relative;
+}
+
+  @media only screen and (max-width: 1200px){
+    .tabset {
+    padding: 30px;
+}
+        .tabset > label {
     position: relative;
     display: inline-block;
     border: none;
     border-bottom: 0;
     cursor: pointer;
-    font-size:30px;
+    font-size: 30px !important;
     font-weight: 600;
-    padding: 15px 40px;
-  }
-
-
-  {% comment %} .tabset > label:hover,
-  .tabset > input:focus + label {
-    color: #06c;
-  } {% endcomment %}
-
-  .tabset > label:hover::after,
-  .tabset > input:focus + label::after,
-  .tabset > input:checked + label::after {
-    background: #06c;
-  }
-
-  .tabset > input:checked + label {
-    border:none;
+    padding: 15px 30px;
+}
+    tabset > input:checked + label {
+    border: none;
     margin-bottom: -1px;
-        color: #42db44;
-      font-size: 4rem;
+    color: #42db44;
+    font-size: 30px !important;
+}
+.tabset {
+  margin-bottom:40px;
   }
-
-  .tab-panel {
-    padding: 30px 0;
-    border-top: 1px solid #ccc;
+   @media only screen and (max-width: 768px){
+     .tabset {
+  margin-bottom:20px;
   }
-
-  /*
-   Demo purposes only
-  */
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
-
-  body {
-    padding: 30px;
-  }
-
-  .tabset {
-    max-width: 65em;
-    margin:0 auto;
-    margin-bottom:70px;
-  }
-    .left-content {
-      margin-right: 20px;
-  }
-  .tab_content {
-      display: flex;
-  }
-    .Tab-heading {
-      margin-bottom: 10px;
-      font-size: 30px;
-      color: #333333;
-      line-height: 81px;
-  }
-    .tab-discription {
-      font-size: 16px;
-      line-height: 31px;
-      color: #333333;
-      font-weight: 400;
-      font-style: normal;
-  }
-    .right-content img {
-      width: 315px;
-      border-radius:14px
-  }
-    .right-content {
-      position: relative;
-  }
-
-    @media only screen and (max-width: 1200px){
-      .tabset {
-      padding: 30px;
-  }
-          .tabset > label {
-      position: relative;
-      display: inline-block;
-      border: none;
-      border-bottom: 0;
-      cursor: pointer;
-      font-size: 30px !important;
-      font-weight: 600;
-      padding: 15px 30px;
-  }
-      tabset > input:checked + label {
-      border: none;
-      margin-bottom: -1px;
-      color: #42db44;
-      font-size: 30px !important;
-  }
-  .tabset {
-    margin-bottom:40px;
-    }
-     @media only screen and (max-width: 768px){
-       .tabset {
-    margin-bottom:20px;
-    }
-             .tabset > label {
-      position: relative;
-      display: inline-block;
-      border: none;
-      border-bottom: 0;
-      cursor: pointer;
-      font-size: 22px !important;
-      font-weight: 600;
-         padding: 12px 15px;
-  }
-      tabset > input:checked + label {
-      border: none;
-      margin-bottom: -1px;
-      color: #42db44;
-      font-size: 22px !important;
-  }
-  .tab_content {
-      display: grid;
-      grid-template-columns: 1fr;
-      align-items: center;
-      justify-content: center;
-      justify-items: center;
-  }
-     }
+           .tabset > label {
+    position: relative;
+    display: inline-block;
+    border: none;
+    border-bottom: 0;
+    cursor: pointer;
+    font-size: 22px !important;
+    font-weight: 600;
+       padding: 12px 15px;
+}
+    tabset > input:checked + label {
+    border: none;
+    margin-bottom: -1px;
+    color: #42db44;
+    font-size: 22px !important;
+}
+.tab_content {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+   }
 </style>
+

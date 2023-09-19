@@ -10,7 +10,7 @@
 {% assign even = 'even cross' %}
 {% endif %}
 
-<div class="container {{ section.settings.custom-class }}">
+<div class="container">
   <div class="main">
     <div class="row">
       <div class="col-order">
@@ -19,7 +19,9 @@
         {% endif %}
 
         <div id="content" class="{% if section.settings.show_sidebar != 'no' %}col-md-9{% else %}col-md-12{% endif %} col-sm-12 col-xs-12">
-          <h1>{{ 'blogs.title' | t }}</h1>
+  {% comment %}      
+  <h1>{{ 'blogs.title' | t }}</h1>
+  {% endcomment %}
           <div class="article-page">
             {% for article in blog.articles %}
             <div class="article-layout article-list {% if section.settings.blog_layout == 'grid2' %}grid col-md-6 {% elsif section.settings.blog_layout == 'grid3' %}grid col-md-4{% endif %}">
@@ -32,9 +34,11 @@
                         <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %} src="{{ article | img_url: blog_image_size }}" alt="{{ article.title }}">
                       </a>
                       {% endif %}
+              
                       <div class="article-name">
                         <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
                       </div>
+                      
                       <p class="articledate">
                         <time datetime="{{ article.published_at }}">{{ article.published_at | date: "%m/%d/%y" }}</time>
                         / {{ 'blogs.article.by' | t }}: {{ article.author }}
@@ -178,12 +182,7 @@
             }
          ],
          "default":"no"
-      },
-     {
-       "type":"text",
-       "id":"custom-class",
-       "label":"custom-class"
-     }
+      }
     ],
    "blocks": [
       {

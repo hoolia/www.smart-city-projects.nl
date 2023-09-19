@@ -4,7 +4,11 @@
     <a href="/" itemprop="url">
       <img src="{{ section.settings.logo | img_url: 'master' }}"
            alt="{{ section.settings.logo.alt | default: shop.name }}"
-           itemprop="logo" class="img-responsive logo"  />
+           itemprop="logo" class="img-responsive logo desktop_show"  />
+
+      <img src="{{ section.settings.mobile_logo | img_url: 'master' }}"
+           alt="{{ section.settings.mobile_logo.alt | default: shop.name }}"
+           itemprop="logo" class="img-responsive logo mobile_show"  />
     </a>
     {% else %}
     <a href="/" itemprop="url" class="navbar-brand img-responsive">{{ shop.name }}</a>

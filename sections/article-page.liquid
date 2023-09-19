@@ -3,7 +3,7 @@
 {% assign number_of_comments = article.comments_count | plus: 1 %}
 {% endif %}
 <!--blog main area -->
-<div class="container">
+<div class="container main_wrapper">
   <div class="main">
     <div class="row">
       <div class="col-order">
@@ -17,9 +17,15 @@
             <div class="article-subtitle">
             </div>
             <div class="article-description">
+              
               {% if article.image %}
+                <div class="image-with-shadow">
+
                 <img {% if settings.lazyloading_enable %} class="lazyload" data-{% endif %}src="{{ article | img_url: 'master' }}" alt="">
-              {% endif %}
+                </div>
+                  {% endif %}
+              
+            <span class="article_bottom">
               <div class="article-title">
                 <h1>{{ article.title }}</h1>
               </div>
@@ -28,13 +34,14 @@
                   {{ article.published_at | date: '%d/%m/%Y' }}
                 </time> | {{ article.author }}  
               </p>
-              <div style="padding: 20px 0 10px;">
+              <div class="article_content_wrapper" style="padding: 20px 85px;">
                 <p>{{ article.content }}</p>
                 <!-- AddThis Button BEGIN -->
                 <div class="addthis_toolbox addthis_default_style"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_counter addthis_pill_style"></a></div>
                 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script>
                 <!-- AddThis Button END -->
               </div>
+              </span>
             </div>
             <div class="clear"></div>
             {% if blog.comments_enabled? %}

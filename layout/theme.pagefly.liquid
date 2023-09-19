@@ -51,7 +51,11 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     <link rel="preload" as="style" href="//cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" onload="this.rel='stylesheet'" crossorigin defer>
     <link rel="preload" as="style" href="{{ 'stroke-gap-icons.css' | asset_url }}" onload="this.rel='stylesheet'" defer>
     {% include 'google-fonts' %}
+    {% comment %} 
     {% if template == 'index' or template contains 'product.' %}<link rel="preload" as="style" href="{{ 'slideshow.css' | asset_url }}" onload="this.rel='stylesheet'">{% endif %}
+    {% endcomment %}
+    <link rel="preload" as="style" href="{{ 'slideshow.css' | asset_url }}" onload="this.rel='stylesheet'">
+    
     {% if template contains 'product-disabled' %}
     <link rel="preload" as="style" href="{{ 'zoom.css' | asset_url }}" onload="this.rel='stylesheet'">
     <link rel="preload" as="style" href="{{ 'magnific-popup.css' | asset_url }}" onload="this.rel='stylesheet'">
@@ -69,6 +73,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     {{ 'theme.css' | asset_url | stylesheet_tag }}
     {{ 'stylesheet.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
+     {{ 'Dev_style_.css' | asset_url | stylesheet_tag }}
     {{ 'cusotm.css' | asset_url | stylesheet_tag }}
     {% if template contains 'collection' or template contains 'blog' or template contains 'article' %}
     {{ 'filter.css' | asset_url | stylesheet_tag }}
@@ -88,13 +93,26 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     <script src="{{ 'shipping-cart.js' | asset_url }}"></script>
     {% endif %}
 
-
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
-{{ 'custom-styles.css' | asset_url | stylesheet_tag }}
-
-  {{ 'gang-custom-css-shopify--main.css' | asset_url | stylesheet_tag }}
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Overpass:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
   <body class="{% case template %}
                {% when 'index' %}
                common-home
@@ -114,19 +132,10 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
                {% endcase %} home1" ><div class="pagefly-container">{{ content_for_layout }}</div></body>
 </html>
 <style>
-  @media screen and (min-width: 768px) {
-  /* 19 May 2023  */
-    .our_story1 .static_video1 .img_static1 {
-    aspect-ratio: 3/1 !important;
-    object-fit: contain !important;
-   
+  div#oc-menu-mheader {
+    position: absolute;
+    right: 0;
+    display: contents;
 }
-  }
-   @media screen and (max-width: 768px) {
-  div#cms_play1 img {
-    width: 51px;
-}
-   }
 </style>
-
 

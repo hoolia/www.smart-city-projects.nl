@@ -152,6 +152,7 @@ html[xmlns] .oc-banner7-container .slides {display: block;}
   top: 0;
   left: 0;
   display: none;
+  filter: brightness(40%);
 }
 .nivo-controlNav {
   padding: 0px 0;
@@ -260,7 +261,7 @@ html[xmlns] .oc-banner7-container .slides {display: block;}
 }
 
 .banner7-content .sub-title span{
-  color: #30bf32;
+  color: #ffffff;
 }
 .banner7-content.slider-2 .sub-title {
 
@@ -301,9 +302,9 @@ html[xmlns] .oc-banner7-container .slides {display: block;}
   -webkit-box-shadow: none;
 }
 .banner7-content .banner7-readmore a:hover {
-  color: #30bf32;
+  color: #ffffff;
   background: #fff;  
-  border: 1px solid #30bf32;
+  border: 1px solid #ffffff;
 }
 .slider-2 .banner7-readmore a {
 
@@ -379,6 +380,7 @@ html[xmlns] .oc-banner7-container .slides {display: block;}
   top:0px;
   left:0px;
   max-width: none;
+  filter: brightness(40%);
 }
 .nivo-main-image {
   display: block !important;
@@ -466,8 +468,8 @@ html[xmlns] .oc-banner7-container .slides {display: block;}
   border-radius: 100%;
   line-height: 50px;
   text-align: center;
-  color: #0c9e0e;
-  /*border: 1px solid #0c9e0e;*/
+  color: #ffffff;
+  /*border: 1px solid #ffffff;*/
 }
 
 .oc-banner7-container .flex-direction-nav .flex-next,
@@ -487,9 +489,9 @@ html[xmlns] .oc-banner7-container .slides {display: block;}
 .oc-banner7-container .nivo-directionNav a.nivo-nextNav:hover,
 .oc-banner7-container .flexslider .flex-prev:hover, 
 .oc-banner7-container .nivo-directionNav a.nivo-prevNav:hover {
-  color: #30bf32;
+  color: #ffffff;
   background: #fff;
-  border-color: #30bf32;
+  border-color: #ffffff;
 }
 .oc-banner7-container .flex-direction-nav .flex-disabled {
   opacity: .3!important; 
@@ -875,7 +877,7 @@ html[xmlns] .oc-banner8-container .slides {display: block;}
   margin: 0;
 }
 .banner8-content .banner8-des h4 span {
-  color: #30bf32;
+  color: #ffffff;
 }
 .banner8-content .banner8-des p{
   font-size: 15px;
@@ -909,7 +911,7 @@ html[xmlns] .oc-banner8-container .slides {display: block;}
 }
 .banner8-content .banner8-readmore a:hover {
   color: #ffffff;
-  background: #30bf32;
+  background: #ffffff;
   border: 1px solid #ffffff;
 }
 .slider-2 .banner8-readmore a {
@@ -1091,7 +1093,7 @@ html[xmlns] .oc-banner8-container .slides {display: block;}
 .oc-banner8-container .flexslider .flex-next:hover, 
 .oc-banner8-container .nivo-directionNav a.nivo-nextNav:hover,
 .oc-banner8-container .flexslider .flex-prev:hover, 
-.oc-banner8-container .nivo-directionNav a.nivo-prevNav:hover {color: #30bf32;background: #fff;}
+.oc-banner8-container .nivo-directionNav a.nivo-prevNav:hover {color: #ffffff;background: #fff;}
 .oc-banner8-container .flex-direction-nav .flex-disabled {
   opacity: .3!important; 
   filter:alpha(opacity=30); 

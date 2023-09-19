@@ -33,7 +33,7 @@
   -webkit-box-shadow: 1px 1px 0 0 #e5e5e5;*/
 }
 .additional-images .item.img-active {
-  border-color: #30bf32;
+  border-color: #ffffff;
 }
 
 .additional-images.owl-carousel.owl-theme .owl-nav div {
@@ -43,11 +43,11 @@
   line-height: 30px;
   border: 0;
   background: transparent;
-  color: #f8f8f8;
+  color: #fff;
   margin-top: -15px;
 }
 .additional-images.owl-carousel.owl-theme .owl-nav div:hover {
-  color: #30bf32;
+  color: #ffffff;
   background: transparent;
 }
 .additional-images.owl-carousel.owl-theme .owl-nav div:before {
