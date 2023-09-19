@@ -30,7 +30,7 @@ var category_view = {
     if(type == "grid") {
       var column = parseInt(cols);
       if(column == 2) {
-        $('#content .product-item').attr('class', 'product-layout product-grid grid-style col-lg-6 col-md-6 col-sm-6 col-xs-6 product-item');
+        $('#content .product-item').attr('class', 'product-layout product-grid grid-style col-lg-6 col-md-6 col-sm-6 col-xs-12 product-item');
       }
       if(column == 3) {
         $('#content .product-item').attr('class', 'product-layout product-grid grid-style col-lg-4 col-md-4 col-sm-4 col-xs-4 product-item');
@@ -57,6 +57,7 @@ var category_view = {
     localStorage.setItem('type', type);
     localStorage.setItem('cols', cols);
     localStorage.setItem('element', element);
+    resizeCollGrid();
     
   },
 

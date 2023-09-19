@@ -1,7 +1,17 @@
 <div class="container">
+  <div class="module-title">
+    {% if section.settings.heading %}
+      <h2 class="title_">
+        <strong>{{ section.settings.heading }}</strong>
+      </h2>
+    {% endif %}
+    {% if section.settings.description %}
+      <p class="sub-title">{{ section.settings.description }}</p>
+    {% endif %}
+  </div>
   <div id="owl-carousel{{section.id}}" class="owl-carousel">
     {% for block in section.blocks %}
-      <div id="{{ block.id }}">
+      <div>
         <div class="slide-item">
           <div class="left-slider">
             <img src="{{ block.settings.image  | img_url: 'master'}}" alt="">
@@ -14,7 +24,6 @@
         <div class="layer-mask"></div>
       </div>
     {% endfor %}
-
     <!--
       <div><img src="https://via.placeholder.com/400x300/f63/fff/?text=2" alt=""></div>
       <div><img src="https://via.placeholder.com/400x300/fc3/fff/?text=3" alt=""></div>
@@ -79,9 +88,9 @@
   .layer-mask {
       width: 100%;
       height: 100%;
-      opacity: .9;
+      opacity: .7;
       transition: all .5s;
-      background-color: #FFFFFF;
+      background-color: #3e3e3e;
       position: absolute;
       left: 0;
       top: 0;

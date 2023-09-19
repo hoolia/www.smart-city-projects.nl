@@ -15,10 +15,12 @@
           {% if block.settings.image == blank %}
           <div class="footer-title"><h5>{{ 'layout.footer.contact' | t }}</h5></div>
           {% endif %}
+          {% if block.settings.footer_about_us != blank and block.settings.footer_address != blank and block.settings.footer_phone != blank and block.settings.footer_email != blank %}
           <div class="footer-content">
-            {% if block.settings.footer_about_us %}
+            {% if block.settings.footer_about_us != blank %}
             <p>{{ block.settings.footer_about_us }}</p>
             {% endif %}
+          {% if block.settings.footer_address != blank and block.settings.footer_phone != blank and block.settings.footer_email != blank %}
             <ul class="footer-contact">
               {% if block.settings.footer_address != blank %}
               <li class="address">{{ block.settings.footer_address }}</li>
@@ -37,7 +39,11 @@
 
               {% endif %}
             </ul>
+          {% endif %}
+
           </div>
+          {% endif %}
+          
         </div>
         {% elsif block.type == 'menu' %}
         <div class="col col2 col-md-2 col-sm-6 col-xs-12 col-footer">
@@ -52,6 +58,41 @@
             </ul>
           </div>
         </div>
+
+
+ {% elsif block.type == 'Social_icons' %}
+
+<div class="col4  col-md-4 col-sm-12 col-xs-12 col-footer">
+              <div class="social_icons">
+          {% if block.settings.image1 != blank %}
+              <a href="#">
+              <img src="{{ block.settings.image1 | img_url: 'master' }}" alt="payment">
+              </a>
+            {% endif %}
+
+                 {% if block.settings.image2 != blank %}
+              <a href="#">
+              <img src="{{ block.settings.image2 | img_url: 'master' }}" alt="payment">
+              </a>
+                 {% endif %}
+           {% if block.settings.image3 != blank %}
+              <a href="#">
+              <img src="{{ block.settings.image3 | img_url: 'master' }}" alt="payment">
+              </a>
+           {% endif %}
+           {% if block.settings.image4 != blank %}
+
+              <a href="#">
+              <img src="{{ block.settings.image4 | img_url: 'master' }}" alt="payment">
+              </a>
+                 {% endif %}
+              </div>
+        </div>
+               {% elsif block.type == 'Rich_Text' %}
+                   <div class="col4  col-md-4 col-sm-12 col-xs-12 col-footer"> 
+              <div class="richtext">  {{ block.settings.richtext }}  </div>
+
+                   </div>
         {% elsif block.type == 'instagram' %}
         <div class="col4  col-md-4 col-sm-12 col-xs-12 col-footer">
           {% include 'footer-insta' %}
@@ -65,6 +106,9 @@
           <div class="footer-content">
             <p>{{ block.settings.footer_content_box_text }}</p>
           </div>
+
+
+          
           {% endif %}
         </div>
         {% endif %}

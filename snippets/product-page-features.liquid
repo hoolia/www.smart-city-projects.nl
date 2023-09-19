@@ -1,7 +1,9 @@
 {% include 'review' %}
 <!-- end-rating -->
 <h2 class="product-name" itemprop="name">{{ product.title }}</h2>
+{% comment %}
 {% include 'price', page:true %}
+{% endcomment %}
 {% if section.settings.show_summary %}
 <p class="short-des">
   {% if product.description contains '[summary]' %}
@@ -16,13 +18,16 @@
   {% endif %}
 </p>
 {% endif %}
-<ul class="list-unstyled">
+
+{% comment %}
+<ul class="list-unstyled prdct_page">
+  <li> {% include 'price', page:true %}</li>
   {% if section.settings.product_vendor_enable %}
-  <li>{{ 'products.product.brand' | t }}: {{ product.vendor | link_to_vendor }}</li>
+  <li><span class="product_price">{{ 'products.product.brand' | t }}</span>: {{ product.vendor | link_to_vendor }}</li>
   {% endif %}
   <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}"> 
   <li {% if section.settings.product_stock_enable == false %} style="display:none;"{% endif %} >
-    {{ 'products.product.availability' | t }}: 
+  <span class="product_price"> {{ 'products.product.availability' | t }}  </span>  : 
     <script>       
       var inv_qty = {};
       {% for var in product.variants %}
@@ -39,7 +44,8 @@
     {% endif %}
     {% else %} 
     <span style="" class="ex-text">
-      {% if product.available %} {{ 'products.product.in_stock' | t }}{% else %} {{ 'products.product.out_stock' | t }}{% endif %}
+      {% if product.available %} 
+ {{ 'products.product.in_stock' | t }} {% else %} {{ 'products.product.out_stock' | t }}{% endif %}
     </span>
     {% endif %}
   </li>
@@ -58,6 +64,93 @@
   </li>
   {% endif %}
 </ul>
+{% endcomment %}
+
+
+
+
+
+
+
+<div class="custom-product_info">  
+
+<table>
+  <tr class="_pric">
+    <td><span class="product_price"> Price  </span></td>
+    <td class="_right"> <span class="_colon">:</span> {% include 'price', page:true %}</td>
+  </tr>
+
+
+  
+   {% if section.settings.product_vendor_enable %}
+  <tr class="_brand">
+    <td>    
+  <span class="product_price">{{ 'products.product.brand' | t }}</span>
+  </td>
+    <td class="_right"> <span class="_colon">:</span> {{ product.vendor | link_to_vendor }}</td>
+  </tr>
+{% endif %}
+
+  
+  <tr class="_available">
+    <td>  <span {% if section.settings.product_stock_enable == false %} style="display:none;"{% endif %} >
+  <span class="product_price"> {{ 'products.product.availability' | t }}  </span>
+    <script>       
+      var inv_qty = {};
+      {% for var in product.variants %}
+      inv_qty[{{- var.id -}}] = {{ var.inventory_quantity | default: 0 }};
+      {% endfor %}
+    </script>
+
+    </span>
+</td>
+    <td class="_right">    <span class="_colon">:</span>
+      {% if product.variants.first.inventory_management == "shopify" %}
+    {% if product.variants.first.inventory_quantity >= 10 %}
+    <span class="ex-text">{{ 'products.product.in_stock' | t }}</span>
+    {% elsif product.variants.first.inventory_quantity > 0 and product.variants.first.inventory_quantity < 10  %}
+    <span style="font-weight:bold; color:orange" class="ex-text">{{ product.variants.first.inventory_quantity }} {{ 'products.product.in_stock' | t }}</span>
+    {% else %}
+    <span style="font-weight:bold; color:red" class="ex-text">{{ 'products.product.out_stock' | t }}</span>
+    {% endif %}
+    {% else %} 
+    <span style="" class="ex-text">
+      {% if product.available %} 
+ {{ 'products.product.in_stock' | t }} {% else %} {{ 'products.product.out_stock' | t }}{% endif %}
+    </span>
+    {% endif %}</td>
+  </tr>
+
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% if product.description contains "[deal]" %}
 <div class="item-inner">
   <div class="caption">
@@ -107,12 +200,16 @@
   </div>
   <div class="form-group">
     {% if section.settings.product_quantity_enable %}
+  <span class="cstm_inline"> 
     <label class="control-label" for="Quantity">{{ 'products.product.quantity' | t }}:</label>
     <input type="text" name="quantity" value="1" size="2" id="Quantity" onkeyup="updatecartsticky(1)" class="form-control" />
+  </span>
     {% endif %}
-    {% if section.settings.product_quantity_message %}
+    <span class="cstm_buy_Button">
+          {% if section.settings.product_quantity_message %}
     <span id="variantQuantity" class="variant-quantity hidden"></span>
-    {% endif %}      
+    {% endif %}     
+    
     {% include 'product-wishlist2' %}
     {% if product.description contains "[affiliate]" %}
     {% capture affiliate %} {{ product.description | split:'[affiliate]' | last | split :'[/affiliate]' | first }} {% endcapture %}
@@ -133,10 +230,15 @@
     </button> 
     {% endif %}      
     {% endif %}
+    </span>
   </div>
   {% endform %}
   <!-- end-button -->
 </div>
+
+
+
+
 <!-- AddThis Button BEGIN -->
 {% if section.settings.trust_badge_image %}
 <div>
@@ -161,3 +263,11 @@
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script>
 <!-- AddThis Button END -->
 {% endif %}
+
+
+
+
+
+
+
+

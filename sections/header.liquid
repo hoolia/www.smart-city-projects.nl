@@ -1,8 +1,11 @@
 <!--Start of Header Area-->
 {% include section.settings.header_layout %}
 <!--End of Header Area-->
+
 {% include 'breadcrumb' %}
+
 <script type="text/javascript">
+  
   $(document).ready(function() {
     // Move menu below slider
     {% if section.settings.use_bottom_menu %}
@@ -169,6 +172,12 @@
          "id":"logo",
          "label":"logo",
          "info":"135x28 used on demos. png recommended"
+      },
+
+           {
+         "type":"image_picker",
+         "id":"mobile_logo",
+         "label":"Mobile logo"
       },
 	  {
          "type":"text",

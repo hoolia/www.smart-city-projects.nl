@@ -50,7 +50,6 @@
 
 
 /*  image with text */
-/*! CSS Used from: http://hooliaenergy.iwopop.com/css?cs=vstatic%2Fcss%2Fapp.css%2Cinner%2Fglobal.css */
 .cstlayer[data-v-3f5bad52]{position:relative;background-position:50% 50%;background-repeat:no-repeat;background-size:cover;}
 .cstlayer>.bgoverlay[data-v-3f5bad52]{position:absolute;width:100%;height:100%;z-index:0;}
 .imgbox[data-v-129dd9bd]{position:relative;}
@@ -74,18 +73,17 @@ p{list-style:none;margin:0;padding:0;}
 }
 @media screen and (min-width:1440px) and (max-width:2559px){
 .container{max-width:100vw!important;}
-/* .container{width:100vw!important;} */
+.container{width:100vw!important;}
 }
 ::-webkit-scrollbar-thumb:hover{background:#008AFF;}
 .Jso-L-Title{font-size:4rem;line-height:calc( 1.5 * (3rem + (4 - 3) * ((100vw - 32rem) / (102 - 32))))!important;}
-.Jso-M-Title{font-size:3rem;line-height:calc( 1.0 * (1.9rem + (3 - 1.9) * ((100vw - 32rem) / (102 - 32))))!important;}
+.Jso-M-Title{font-size:3rem;line-height:calc( 1.5 * (1.9rem + (3 - 1.9) * ((100vw - 32rem) / (102 - 32))))!important;}
 .Jso-S-Title{font-size:1.7rem;line-height:calc( 1.5 * (1.5rem + (1.7 - 1.5) * ((100vw - 32rem) / (102 - 32))))!important;}
 @media screen and (max-width:1024px){
 .Jso-L-Title{font-size:calc( 3rem + (4 - 3) * ((100vw - 32rem) / (102 - 32)))!important;line-height:calc( 1.5 * (3rem + (4 - 3) * ((100vw - 32rem) / (102 - 32))))!important;}
-.Jso-M-Title p,.Jso-M-Title{font-size:calc( 1.5rem + (3 - 1.9) * ((100vw - 32rem) / (102 - 32)))!important;line-height:calc( 1.5 * (1.9rem + (3 - 1.9) * ((100vw - 32rem) / (102 - 32))))!important;}
+.Jso-M-Title p,.Jso-M-Title{font-size:calc( 1.9rem + (3 - 1.9) * ((100vw - 32rem) / (102 - 32)))!important;line-height:calc( 1.5 * (1.9rem + (3 - 1.9) * ((100vw - 32rem) / (102 - 32))))!important;}
 .Jso-S-Title p,.Jso-S-Title{font-size:calc( 1.5rem + (1.7 - 1.5) * ((100vw - 32rem) / (102 - 32)))!important;line-height:calc( 1.5 * (1.5rem + (1.7 - 1.5) * ((100vw - 32rem) / (102 - 32))))!important;}
 }
-/*! CSS Used from: http://static.eznetonline.com//webquick/public/bootstrap/index.css */
 video{display:inline-block;vertical-align:baseline;}
 a{background-color:transparent;}
 a:active,a:hover{outline:0;}
@@ -132,10 +130,8 @@ p{margin:0 0 10px;}
 }
 .container:after,.container:before,.row:after,.row:before{display:table;content:" ";}
 .container:after,.row:after{clear:both;}
-/*! CSS Used from: Embedded */
 .cstlayer:not(.isnav) a{color:#008117;}
 .cstlayer:not(.isnav) a:hover{color:#000;}
-/*! CSS Used from: http://static.eznetonline.com//webquick/public/vplugin/video5/video5.css?_r=16727942 */
 .video5_bigtile[data-v-434c247c]{line-height:normal!important;margin-bottom:20px;}
 .align-items-center[data-v-434c247c]{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap;}
 .Video5_content-wrapper .at__left[data-v-434c247c]{margin-right:40px;position:relative;}
@@ -173,11 +169,6 @@ p{margin:0 0 10px;}
 .Video5 .at__big-img_size2{height:470px;}
 }
 /* timeline-list */
-.timeline4, .timeline4 .module-title .sub-title
-{
-  color: #f8f8f8;
-}
-
 .main-timeline .timeline-year > div {
   line-height: inherit !important;
 }
@@ -385,27 +376,13 @@ p{margin:0 0 10px;}
     background-color: rgb(241, 241, 241);
 }
 
-/* div#content h1,
-div#content h3 {
-  display: none;
-} */
-/* div#content {
-    margin-top: 10rem;
-} */
-
 
 .module-title h2 {
     text-transform: capitalize !important;
 }
-@media (min-width: 1200px){
-  .container.blog_posts {
-    padding-top: 19vh;
-}
-}
+
 @media (max-width: 1199px){
-    .container.blog_posts {
-    padding-top: 17vh;
-}
+  
 header .box-left {
     z-index: 2;
     right: 0;
@@ -455,6 +432,20 @@ body {
 }
   .mobile-menu .ul-top-items {
     margin-left: -1.5rem !important;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+
+.header-inner.fix.whiteHeader ul.ul-top-items {
+    display: block !important;
+}
+.header-inner.fix ul.ul-top-items {
+    display: none !important;
+}
+.hd5 .fix-header #oc-menu-mheader .oc-menu-bar {
+    color: green !important;
+    filter: unset;
 }
 }
 /* Faq  */
@@ -520,18 +511,49 @@ section.cd-faq {
   display:none
 }
 /* banner  */
-.banner7-content .container 
+body.collection .banner7-content .container 
  .container-inner .text-content h2.sub-title {
     line-height: 71px;
 }
-.banner7-content .text-content{
-  max-width:100%
+body.collection .banner7-content .text-content{
+  max-width:100% !important;
 }
-.banner7-content .sub-title{
-  margin-bottom:3rem
+body.collection .banner7-content .title1 {
+    font-size: 44px !important;
+    margin-bottom: 1vw;
+}
+body.collection .banner7-content .title1 {
+    font-size: 44px !important;
+    margin-bottom: 1vw;
+   font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
 }
 
 @media(max-width: 1200px){
+
+/*  1 march 2023 */
+
+.mobile-menu .ul-top-items {
+    width: 100vw !important;
+    height: 100vh !important;
+    border-radius: 0 !important;
+    min-width: 100% !important;
+    top: 18vh !important;
+    margin-top: -2px!important;
+    margin-left: -3rem !important;
+}
+.header-inner.fix.whiteHeader .container-inner .box.box-left {
+    position: relative;
+}
+
+
+
+
+
+/* end 1 march 2023  */
+  
   .banner7-content .container .text-content {
     top: 40%!important;
 }
@@ -547,31 +569,46 @@ section.cd-faq {
       line-height: 44px;
     font-size:34px;
   }
+
+
+
+  
 }
-.container.blog_posts h1 {
-    color: #43db43;
+@media (max-width: 1024px){
+.mobile-menu .ul-top-items {
+    width: 100vw !important;
+    height: 100vh !important;
+    border-radius: 0 !important;
+    min-width: 100% !important;
+    top: 18vh !important;
+    margin-left: -3rem !important;
 }
-.article-name h3 a {
-    color: #545454;
-  font-weight: bold;
-    font-size: 20px;
-}
-.article-description p, .intro-content p {
-    font-size: 16px;
-    line-height: 1.4;
-    color: #000;
-}
-.article-item-inner.text-left a.btn.readmore-page {
-    color: black;
-}
-@media(max-width: 768px){
-  .container.blog_posts {
-    padding-top: 21vh;
-}
-   .header-inner .container-inner .box.box-left {
-    position: relative;
 }
 
+  @media (max-width: 991px){
+ .common-home .header-inner.fix.fix-header{
+    margin-top: 0;
+}
+.mobile-menu .ul-top-items {
+    width: 100vw !important;
+    height: 100vh !important;
+    border-radius: 0 !important;
+    min-width: 100% !important;
+    top: 24vh !important;
+    margin-left: -1.5rem !important;
+}
+.header-inner.fix.whiteHeader {
+    margin-top: 0;
+}
+  }
+
+@media(max-width: 768px){
+   .header-inner .container-inner .box.box-left {
+         position: absolute;
+}
+.header-inner.fix.whiteHeader .container-inner .box.box-left {
+    position: relative;
+}
   .banner7-content .banner7-des p {
     line-height: 22px;
   }
@@ -591,26 +628,91 @@ section.cd-faq {
     display: flex;
     justify-content: flex-end;
 }
- 
- 
+ .header-inner.fix.fix-header {
+    z-index: 999999;
+}
 .mobile-menu .ul-top-items {
     width: 100vw;
     height: 100vh;
     border-radius: 0;
     min-width: 100%;
-    top: 16rem;
+    top: 16rem !important;
     margin-top: -2px!important;
     margin-left: -6rem;
 }
   .header-inner.fix.whiteHeader {
-    background: white;
+    background: white !important;
+  }
   .banner7-content {
     background: #00000096;
 }
+
 @media(min-width: 767px){
   .mobile-menu .ul-top-items{
      margin-top: -2px!important;
       margin-left: -3rem;
   }
+
+
+  /*26-march  */
+  .header-inner.fix.fix-header {
+    top: 0;
+}
+
+  .header-inner.fix {
+    top: 2rem;
+}
+  .header_top_nav_menu {
+    display: block;
+    height: unset !important;
+}
+  .header-inner.fix {
+    background: transparent !important;
+}
+  .header-inner.fix.fix-header {
+    background: #f8f8f8 !important;
 }
   
+}
+
+
+/* 26june 2023  */
+
+div#shopify-section-template--18146879832366__main #content {
+    min-height: 300px;
+    margin-top: 18vh;
+    display: grid;
+    justify-content: center;
+}
+div#shopify-section-template--18146879308078__main #content {
+    min-height: 300px;
+    margin-top: 18vh;
+}
+div#product-category {
+    margin-top: 0rem;
+}
+
+
+
+body.collection img.nivo-main-image {
+      filter: unset;
+}
+body.collection .oc-menu {
+    display: none;
+}
+@media (min-width: 1200px){
+/* home banner */
+body.collection img.nivo-main-image {
+    object-fit: contain;
+    height: 400px !important;
+      filter: unset;
+}
+body.collection .banner7 {
+    height: 400px !important;
+  
+}
+
+body.collection .banner7 .oc-banner7-container .flexslider.oc-nivoslider.our_story {
+    height: 0 !important;
+    min-height: 0 !important;
+}

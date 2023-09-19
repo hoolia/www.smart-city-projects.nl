@@ -1,0 +1,427 @@
+
+<div data-section="row-{{section.id}}" class="row-{{section.id}} main-row {% if section.settings.fullwidth == true %}full-width{% endif  %}">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div class="row sub-row">
+          <div class="sub-col col-sm-12 col-md-12">
+            <!--Slider Area Start-->
+            <div class="banner7">
+              {% if section.blocks.size > 0 %}
+              <div class= "oc-banner7-container" id="Slideshow-{{ section.id }}">
+                <div class="flexslider oc-nivoslider our_story">
+                  <div class="oc-loading"></div>
+                  <div id="oc-inivoslider1" class="nivoSlider slides static_video">
+                    {% for block in section.blocks %}
+                    {% if block.type == 'image' or block.type == 'video' %}
+                    {% if block.settings.image != blank %}
+                    {% if block.settings.image_clickable %}
+                    <a href="{{ block.settings.slide_link }}">
+                      {% endif %}
+                      {% assign slide_image = block.settings.image | img_url: '1920x900', format: 'pjpg' %}
+                      {% if block.settings.image contains 'png' %} 
+                      {% assign slide_image = block.settings.image | img_url: '1920x900' %}
+                      {% endif %}
+                      <img style="display: none;" class="{% if block.type == 'video' %}img_static{% endif %}{% if settings.lazyloading_enable %} lazyload{% endif %}" {% if settings.lazyloading_enable %} data-{% endif %}src="{{ slide_image }}" alt="" title="#banner{{section.id}}-caption{{ forloop.index }}" />
+                      {% if block.settings.image_clickable %}
+                    </a>
+                    {% endif %}
+                    {% else %}
+                    <img style="display: none;" src="{{ 'slider-background.jpg' | asset_img_url: 'master' }}" alt="" title="#banner{{section.id}}-caption{{ forloop.index }}" />                  
+                    {% endif %}
+                    {% endif %}
+                    {% endfor %}
+                  </div>
+                  {% for block in section.blocks %}
+                  {% if block.type == 'image' %}
+                  <div id="banner{{section.id}}-caption{{ forloop.index }}" {{ block.shopify_attributes }} class="banner7-caption nivo-html-caption nivo-caption move-slides-effect" data-class="slide-movetype{{ forloop.inidex }}">
+                    <div class="timeloading"></div>
+                    <div class="banner7-content {{ block.settings.animation_style }}" >
+                      {% if section.settings.fit_to_container %}
+                      <div class="container" style="height:100%;">
+                        <div class="container-inner" style="height: 100%;position: relative;">
+                          {% endif %}
+                          <div class="text-content" style="top:{{ block.settings.top }};right:{{ block.settings.right }};left:{{ block.settings.left }};width:{{ block.settings.width }};text-align:{{ block.settings.float }};" >
+                            {% if block.settings.heading != blank %}  
+                            <h1 class="title1" style="font-size:{{ block.settings.heading_size }}; color:{{ block.settings.heading_color }};">{{ block.settings.heading }}</h1>
+                            {% endif %}
+                            {% if block.settings.subheading != blank %}  
+                            <h2 class="sub-title" style="font-size:{{ block.settings.subheading_size }};color:{{ block.settings.subheading_color }};">{{ block.settings.subheading }}</h2>
+                            {% endif %}
+                            <div class="banner7-des">
+                              {% if block.settings.description != blank %}  
+                              <p style="font-size:{{ block.settings.description_size }};color:{{ block.settings.description_color }}; {% if block.settings.float == 'center' %} margin-right:auto;margin-left:auto;{% endif %}"> {{ block.settings.description }}</p>
+                              {% endif %}
+                            </div>
+                            {% if block.settings.slide_link_text != blank %} 
+                            <div class="banner7-readmore">
+                              {% assign link_bg =  block.settings.link_bg | color_to_hex %}
+                              {% if link_bg == '#000000' %}
+                              {% capture border %}border-color: {{block.settings.link_color}} !important;{% endcapture %}
+                              {% else %}
+                              {% capture border %}border-color: {{block.settings.link_bg}} !important;{% endcapture %}
+                              {% capture border1 %}border-color: {{block.settings.link_color}} !important;{% endcapture %}
+                              {% endif %}
+                              <a class="btn" href="{{ block.settings.slide_link }}" style="background-color:{{ block.settings.link_bg }} !important;{{ border }}color:{{ block.settings.link_color }} !important;" onmouseover="this.style='background-color:{{ block.settings.link_color }} !important;{{ border1 }}color:{{ settings.color_skin }} !important;';" onmouseout="this.style='color:{{ block.settings.link_color }} !important;{{ border }}background-color:{{ block.settings.link_bg }} !important';">
+                                {{ block.settings.slide_link_text }}</a>		
+                            </div>
+                            {% endif %}
+                          </div>
+                          {% if section.settings.fit_to_container %}
+                        </div>
+                      </div>
+                      {% endif %}
+                    </div>
+                  </div>
+                  <style type="text/css">
+                    .row-{{section.id}} .banner7-content .title1:before {
+                      background:{{ block.settings.heading_color }};
+                    }
+                    .row-{{section.id}} .oc-banner7-container .flex-direction-nav a,
+                    .row-{{section.id}} .nivo-directionNav a {
+                      background: {{ block.settings.heading_color | color_modify: 'alpha', 0.2 }};
+                      color:{{ block.settings.heading_color }};
+                    }
+                  </style>
+                  {% endif %}
+                  
+                  {% endfor %}
+                  <script type="text/javascript">
+                  $(document).ready(function() {
+                    $('.row-{{section.id}} #oc-inivoslider1').nivoSlider({
+                        effect:    "random"  ,
+                        slices: 15,
+                        boxCols: 8,
+                        boxRows: 8,
+                        manualAdvance:  false  ,
+                        animSpeed: 500,
+                        pauseTime:   {{ section.settings.autoplay_speed }}  ,
+                        startSlide: 0,
+                        controlNav: {% if section.blocks.size > 1 %}true{% else %}false{% endif %},
+                        directionNav: {% if section.blocks.size > 1 %}true{% else %}false{% endif %},
+                        controlNavThumbs: false,
+                        pauseOnHover:   true  ,
+                        prevText: '<i class="fa fa-angle-left"></i>',
+                        nextText: '<i class="fa fa-angle-right"></i>',
+                        afterLoad: function(){
+                        $('.row-{{section.id}} .oc-loading').css("display","none");
+                        $('.row-{{section.id}} .timeloading').css('animation-duration'," {{ section.settings.autoplay_speed }}ms ");
+                      },						
+                     });				
+
+                        // Move menu below slider
+                        if ($(".bottom-menu").length) {
+                        $("#shopify-section-{{section.id}}").insertBefore("#shopify-section-header");
+                          $(".banner7").css({"margin-bottom": "0px"});
+                        stickyOffset += $('.shopify-section.slider').height();
+                        //console.log(stickyOffset);
+                      }
+                    });
+                  </script>
+                </div>
+              </div>
+              {% endif %}
+            </div>  
+          </div>
+        </div>
+        <!--End of Slider Area-->
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Sliders",
+  "class": "index-section slider",
+  "max_blocks": 7,
+  "settings": [
+    {
+      "type": "select",
+      "id": "autoplay_speed",
+      "label": "Change slides every",
+      "options": [
+        { "value": "5000", "label": "5 seconds" },
+        { "value": "6000", "label": "6 seconds" },
+        { "value": "7000", "label": "7 seconds" },
+        { "value": "8000", "label": "8 seconds" },
+        { "value": "9000", "label": "9 seconds" },
+          { "value": "10000", "label": "10 seconds" },
+        { "value": "900000000", "label": "no change" }
+      ],
+      "default": "10000"
+    },
+	{
+        "type": "select",
+        "id": "layout_slider",
+        "label": "Select page slider",
+        "options": [
+              {
+                "value": "slider-1",
+                "label": "Slider 1"
+              },
+			  {
+                "value": "slider-2",
+                "label": "Slider 2"
+              }
+            ]	
+        },
+		{
+          "type": "checkbox",
+          "id": "fullwidth",
+          "label": "Fullwidth",
+          "default": true
+        },
+        {
+           "type":"checkbox",
+           "id":"use_box_layout",
+           "label":"Use Box Layout?",
+           "default":false
+        },
+		{
+          "type": "checkbox",
+          "id": "fit_to_container",
+          "label": "Fit Text to Container",
+          "default": false,
+		  "info": "Text doesn't stretch on high resolution screens"
+        },
+		{
+          "type": "checkbox",
+          "id": "full_size_on_mobile",
+          "label": "Show Full Image on Mobile",
+          "default": false,
+		  "info": "By default images are cropped from sides in order to show bigger slideshow image on mobile layout"
+        }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Slide image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1920x900px used on demo stores"
+        },
+		{
+        "type": "select",
+        "id": "animation_style",
+        "label": "Select page slider",
+        "options": [
+              {
+              "value": "none",
+              "label": "None"
+              },
+              {
+              "value": "slider-1",
+              "label": "Style 1"
+              },
+              {
+              "value": "slider-2",
+              "label": "Style 2"
+              },
+              {
+              "value": "slider-3",
+              "label": "Style 3"
+              }
+            ],
+        "default": "slider-1"	
+        },
+		{
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+		{
+          "type": "text",
+          "id": "heading_size",
+          "label": "Font size",
+		  "default": "18px"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading Color",
+          "default": "#fff"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading"
+        },
+		{
+          "type": "text",
+          "id": "subheading_size",
+          "label": "Font size",
+		  "default": "90px"
+        },
+        {
+          "type": "color",
+          "id": "subheading_color",
+          "label": "Subheading Color",
+          "default": "#fff"
+        },		
+		{
+          "type": "textarea",
+          "id": "description",
+          "label": "Slide Description",
+          "info": "Used in slider 1"
+        },
+		{
+          "type": "text",
+          "id": "description_size",
+          "label": "Font size",
+		  "default": "16px"
+        },
+        {
+          "type": "color",
+          "id": "description_color",
+          "label": "Description Color",
+          "default": "#fff"
+        },
+		{
+          "type": "text",
+          "id": "slide_link_text",
+          "label": "Link Text"
+        },
+        {
+          "type": "url",
+          "id": "slide_link",
+          "label": "Link URL"
+        },
+		{
+          "type": "color",
+          "id": "link_bg",
+          "label": "Link Button Background",
+		  "default": "#000"
+        },
+        {
+          "type": "color",
+          "id": "link_color",
+          "label": "Link Color",
+          "default": "#fff"
+        },
+        {
+          "type": "checkbox",
+          "id": "image_clickable",
+          "label": "Make background image clickable",
+          "default": false,
+          "info": "Button hover effect won't work in this case"
+        },
+        {
+          "type": "header",
+          "content": "Text Position Settings"
+        },
+        {
+          "type": "text",
+          "id": "top",
+          "label": "Top",
+		  "default": "50%"
+        },
+        {
+          "type": "text",
+          "id": "right",
+          "label": "right",
+		  "default": "0%"
+        },
+        {
+          "type": "text",
+          "id": "left",
+          "label": "Left",
+		  "default": "0%"
+        },
+        {
+          "type": "text",
+          "id": "width",
+          "label": "Width",
+		  "default": "100%"
+        },
+		{
+        "type": "select",
+        "id": "float",
+        "label": "float",
+        "options": [
+              {
+              "value": "none",
+              "label": "None"
+              },
+              {
+              "value": "left",
+              "label": "left"
+              },
+              {
+              "value": "center",
+              "label": "center"
+              },
+              {
+              "value": "right",
+              "label": "right"
+              }
+            ],
+        "default": "left"	
+        }
+      ]
+    },
+	{
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Image must be added for size detection. 1920x960px recommended for preload image"
+        },
+		{
+        "type": "select",
+        "id": "video_type",
+        "label": "Select video type",
+        "options": [
+              {
+              "value": "youtube",
+              "label": "Youtube"
+              },
+              {
+              "value": "vimeo",
+              "label": "Vimeo"
+              },
+              {
+              "value": "mp4",
+              "label": "Mp4"
+              }
+            ],
+        "default": "youtube"	
+        },
+		{
+          "type": "text",
+          "id": "video_src",
+          "label": "Video Src",
+		  "default": "bLwl0gRbyrk",
+		  "info": "Add src id for youtube/vimeo and full link for video file"
+        },
+		{
+          "type": "checkbox",
+          "id": "video_autoplay",
+          "label": "Autoplay",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Sliders",
+    "category": "Image",
+    "settings": {
+      "autoplay_speed": "5000"
+    },
+    "blocks": [
+      {
+        "type": "image"
+      },
+      {
+        "type": "image"
+      }
+    ]
+  }]
+}
+{% endschema %}

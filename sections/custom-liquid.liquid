@@ -1,371 +1,54 @@
-{% comment %}
-  }}<section class="Section Section--spacingNormal" id="section-{{ section.id }}">
-    <div class="Container">
-      {%- if section.settings.subheading != blank or section.settings.title != blank -%}
-        <header class="SectionHeader SectionHeader--center">
-          {%- if section.settings.subheading != blank -%}
-            <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
-          {%- endif -%}
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}">
+  <div class="Container">
+    {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+      <header class="SectionHeader SectionHeader--center">
+        {%- if section.settings.subheading != blank -%}
+          <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+        {%- endif -%}
 
-          {%- if section.settings.title != blank -%}
-            <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
-          {%- endif -%}
-        </header>
-      {%- endif -%}
+        {%- if section.settings.title != blank -%}
+          <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+        {%- endif -%}
+      </header>
+    {%- endif -%}
 
-      <div class="Liquid">
-        {{ section.settings.liquid }}
-      </div>
-    </div>
-  </section>
-
-  {% schema %}
-  {
-    "name": "Custom Liquid",
-    "class": "shopify-section--bordered",
-    "settings": [
-      {
-        "type": "text",
-        "id": "subheading",
-        "label": "Sub-heading",
-        "default": "Sub-heading"
-      },
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Heading",
-        "default": "Your Liquid"
-      },
-      {
-        "type": "liquid",
-        "id": "liquid",
-        "label": "Liquid",
-        "info": "Add app snippets or other Liquid code to create advanced customizations.",
-        "default": "<p>Write your own custom Liquid content.</p>"
-      }
-    ],
-    "presets": [
-      {
-        "category": "Advanced",
-        "name": "Custom Liquid",
-        "settings": {}
-      }
-    ]
-  }
-  {% endschema %}
-{% endcomment %}
-<div class="container">
-  <div class="col col-sm-12 col-xs-12 col-md-12" data-aos="fade-up-right">
-    <div class="row">
-      <div class="containerr">
-        <form class="toggle">
-          <input type="radio" id="choice1" name="choice" value="In">
-          <label for="choice1">In</label>
-
-          <input type="radio" id="choice2" name="choice" value="Out">
-          <label for="choice2">out</label>
-
-          <div id="flap"><span class="content">productive</span></div>
-        </form>
-      </div>
-    </div>
-    <div class="row">
-      <div class="containerr">
-        <form class="toggle1">
-          <input type="radio" id="choice3" name="choice" value="Air">
-          <label for="choice3"> Air </label>
-
-          <input type="radio" id="choice4" name="choice" value=" Water">
-          <label for="choice4"> Water </label>
-
-          <div id="flap1"><span class="content">proactive</span></div>
-        </form>
-      </div>
+    <div class="Liquid">
+      {{ section.settings.liquid }}
     </div>
   </div>
-</div>
+</section>
 
-<style>
-      :root {
-      --accent: #43db44;
-      --border-width: 1px;
-      --border-radius: 35px;
-      --font-size: 11;
-  }
-
-
-
-
-
-  .containerr {
-      perspective: 800px;
-      height: 30px;
-      display: flex;
-      justify-content: right;
-      align-items: center;
-      margin: 20;
-      font-family: sans-serif;
-      padding-right: 50 px;
-  }
-
-  .toggle {
-      position: relative;
-      border: solid var(--border-width) var(--accent);
-      border-radius: var(--border-radius);
-      transition: transform cubic-bezier(0, 0, 0.30, 4) .4s;
-      transform-style: preserve-3d;
-      perspective: 8000px;
-      height: 16px;
-    
-  }
-
-  .toggle>input[type="radio"] {
-      display: none;
-  }
-
-  .toggle>#choice1:checked~#flap {
-      transform: rotateY(-180deg);
-  }
-
-  .toggle>#choice1:checked~#flap>.content {
-      transform: rotateY(-180deg);
-  }
-
-  .toggle>#choice2:checked~#flap {
-      transform: rotateY(0deg);
-  }
-
-  .toggle>label {
-      display: inline-block;
-      min-width: 10px;
-      padding: 1px;
-      font-size: var(--font-size);
-      text-align: center;
-      color: var(--accent);
-      cursor: pointer;
-      vertical-align:middle;
-      
-  }
-
-  .toggle>label,
-  .toggle>#flap {
-   font-weight: bold;
-    text-transform: capitalize;
-    height: 100px;
-    margin: 0px;
-    top: -5px;
-    position: relative;
-    padding-right: 4px;
-    min-width: 50px;
-     
-  }
-
-  .toggle>#flap {
-      position: absolute;
-      top: calc( 0px - var(--border-width));
-      left: 50%;
-      height: calc(100% + var(--border-width) * 2);
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: var(--font-size);
-      background-color: var(--accent);
-      border-top-right-radius: var(--border-radius);
-      border-bottom-right-radius: var(--border-radius);
-      transform-style: preserve-3d;
-      transform-origin: left;
-      transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
-  }
-
-  .toggle>#flap>.content {
-      color: #333;
-      transition: transform 0s linear .25s;
-      transform-style: preserve-3d;
-      position: relative;
-     
-    
-   
-  }
-
-
-
-   .toggle1 {
-      position: relative;
-      border: solid var(--border-width) var(--accent);
-      border-radius: var(--border-radius);
-      transition: transform cubic-bezier(0, 0, 0.30, 2) .4s;
-      transform-style: preserve-3d;
-      perspective: 800px;
-     height:16px
-  }
-
-  .toggle1>input[type="radio"] {
-      display: none;
-  }
-
-  .toggle1>#choice3:checked~#flap1 {
-      transform: rotateY(-180deg);
-  }
-
-  .toggle1>#choice3:checked~#flap1>.content {
-      transform: rotateY(-180deg);
-  }
-
-  .toggle1>#choice4:checked~#flap1 {
-      transform: rotateY(0deg);
-  }
-
-  .toggle1>label {
-      display: inline-block;
-      min-width: 30px;
-      padding: 1px;
-      font-size: var(--font-size);
-      text-align: center;
-      color: var(--accent);
-      cursor: pointer;
-  }
-
-  .toggle1>label,
-  .toggle1>#flap1 {
-        font-weight: bold;
-    text-transform: capitalize;
-    height: 100px;
-    margin: 0px;
-    top: -5px;
-    position: relative;
-    padding-right: 4px;
-    min-width: 50px;
-   
-  }
-
-  .toggle1>#flap1 {
-      position: absolute;
-      top: calc( 0px - var(--border-width));
-      left: 50%;
-      height: calc(100% + var(--border-width) * 2);
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: var(--font-size);
-      background-color: var(--accent);
-      border-top-right-radius: var(--border-radius);
-      border-bottom-right-radius: var(--border-radius);
-      transform-style: preserve-3d;
-      transform-origin: left;
-      transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
-  }
-
-  .toggle1>#flap1>.content {
-      color: #333;
-      transition: transform 0s linear .25s;
-      transform-style: preserve-3d;
-
-  }
-</style>
-
-<script>
-      const st = {};
-
-  st.flap = document.querySelector('#flap');
-  st.toggle = document.querySelector('.toggle');
-  st.flap1 = document.querySelector('#flap1');
-  st.toggle1 = document.querySelector('.toggle1');
-
-  st.choice1 = document.querySelector('#choice1');
-  st.choice2 = document.querySelector('#choice2');
-   st.choice3 = document.querySelector('#choice3');
-  st.choice4 = document.querySelector('#choice4');
-
-  var interior_air;
-  var interior_water;
-  var exterior_air;
-  var exterior_water;
-  var global;
-
-  st.flap.addEventListener('transitionend', () => {
-
-      if (st.choice1.checked) {
-          st.toggle.style.transform = 'rotateY(-15deg)';
-          setTimeout(() => st.toggle.style.transform = '', 400);
-        if (st.choice3.checked)
-            {interior_air.style.display="block";global.style.display=interior_water.style.display= exterior_air.style.display=exterior_water.style.display="none";}
-        else
-           {interior_water.style.display="block";interior_air.style.display=exterior_air.style.display= global.style.display=exterior_water.style.display="none";}
-
-      } else {
-          st.toggle.style.transform = 'rotateY(15deg)';
-          setTimeout(() => st.toggle.style.transform = '', 400);
-         if (st.choice3.checked)
-            {exterior_air.style.display="block";global.style.display=interior_air.style.display= interior_water.style.display=exterior_water.style.display="none";}
-         else
-           {exterior_water.style.display="block";interior_air.style.display=interior_water.style.display= global.style.display=exterior_air.style.display="none";}
-
-
-      }
-
-  })
-
-  st.clickHandler = (e) => {
-
-      if (e.target.id === 'choice1'  ){
-          setTimeout(() => {
-              st.flap.children[0].textContent = e.target.value;
-          }, 250);
-      }else if (e.target.id === 'choice2'  ){
-          setTimeout(() => {
-              st.flap.children[0].textContent = e.target.value;
-          }, 250);
-      } else if (e.target.id === 'choice3'  ){
-          setTimeout(() => {
-              st.flap1.children[0].textContent = e.target.value;
-          }, 250);
-      }else if (e.target.id === 'choice4'  ){
-          setTimeout(() => {
-              st.flap1.children[0].textContent = e.target.value;
-          }, 250);
-      }
-  }
-
-
-  document.addEventListener('DOMContentLoaded', () => {
-   interior_air=document.getElementById("shopify-section-cce8cbd4-961d-41c8-8b27-36215ed23783") ;
-   interior_water=document.getElementById("shopify-section-54bd7d73-010b-4598-a901-72830cff2778") ;
-   exterior_air=document.getElementById("shopify-section-5af3a3a6-7041-495a-916d-7bfac2568687") ;
-   exterior_water=document.getElementById("shopify-section-0da78190-b55d-4e99-afff-3b144ec81180") ;
-   global=document.getElementById("shopify-section-bcfa1053-3b94-4c79-b9a7-5fe4cecc1a3e") ;
-
-  interior_air.style.display=interior_water.style.display= exterior_air.style.display=exterior_water.style.display="none";
-
-      st.flap1.children[0].textContent = st.choice4.nextElementSibling.textContent;
-      st.flap.children[0].textContent = st.choice2.nextElementSibling.textContent;
-
-
-  });
-
-  document.addEventListener('click', (e) => st.clickHandler(e));
-  ////////////////////////////////////////
-   st.flap1.addEventListener('transitionend', () => {
-
-      if (st.choice3.checked) {console.log(st.choice1.checked);
-          st.toggle1.style.transform = 'rotateY(-15deg)';
-          setTimeout(() => st.toggle1.style.transform = '', 400);
-        if (st.choice1.checked)
-            {interior_air.style.display="block";global.style.display=interior_water.style.display= exterior_air.style.display=exterior_water.style.display="none";}
-        else
-           {exterior_air.style.display="block";interior_air.style.display=interior_water.style.display= global.style.display=exterior_water.style.display="none";}
-
-      } else {
-          st.toggle1.style.transform = 'rotateY(15deg)';
-          setTimeout(() => st.toggle1.style.transform = '', 400);
-         if (st.choice1.checked)
-            {interior_water.style.display="block";global.style.display=interior_air.style.display= exterior_air.style.display=exterior_water.style.display="none";}
-         else
-           {exterior_water.style.display="block";interior_air.style.display=interior_water.style.display= global.style.display=exterior_air.style.display="none";}
-
-
-      }
-
-  })
-</script>
+{% schema %}
+{
+  "name": "Custom Liquid",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Your Liquid"
+    },
+    {
+      "type": "liquid",
+      "id": "liquid",
+      "label": "Liquid",
+      "info": "Add app snippets or other Liquid code to create advanced customizations.",
+      "default": "<p>Write your own custom Liquid content.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced",
+      "name": "Custom Liquid",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

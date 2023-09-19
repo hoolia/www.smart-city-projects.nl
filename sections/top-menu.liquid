@@ -1,0 +1,619 @@
+<div class="header_top_nav_menu">
+
+  <ul class="menu_ul">
+      {% for block in section.blocks %}  
+ {% case block.type %}
+  {% when 'tab' %}
+    <a href="{{ block.settings.url }}">
+      <li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}' " onMouseOut="this.style.backgroundColor='{{ block.settings.bg }} '" class="menu_li_first" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important;">
+        {{ block.settings.icon }}
+        <a href="{{ block.settings.url }}" style="color: {{ block.settings.clr }} !important;"> {{ block.settings.title }}</a>
+      </li>
+    </a>
+  {% when 'Menu' %}
+<li onMouseOver="this.style.backgroundColor='{{ block.settings.hover-bg }}'" onMouseOut="this.style.backgroundColor='{{ block.settings.bg }}'" class="menu_li_first last" href="{{ block.settings.url }}" style="background: {{ block.settings.bg }}; color: {{ block.settings.clr }} !important; width:{{ block.settings.custm-width }}%">
+
+ <ul class="close-div"><li  class="closes  url"><a onclick="clsfn()">×</a></li></ul>
+
+   
+   <ul>
+      {% for link in linklists.side-menu.links %}
+      <span class="dropdown cstm-width" onclick="myfn()">
+        <a href="#" {% if link.active %}aria-current="page"{% endif %}>
+        {{ block.settings.title }}
+        </a>
+
+     
+      
+
+        
+        
+        <ul class="dropdown-content">
+           
+              <div class='container'>
+                {% for collection in collections %}
+                  {{ collection.title }}
+                  {% if collection.title == "Projects" %}
+                        <section {% comment %}id="{{ forloop.index }} " {% endcomment %}>
+                   {% for product in collection.products %}
+                      <div  class="product-cotainer">
+                   {% if product.featured_image != blank %}
+                        <a href="{{ product.url }}" class="top_menu">
+                          {% include 'product-grid-image',image:product.featured_image | limits:1%}
+                        </a>
+                 
+                        <li class="hide_prdct-img">
+                          <a href="{{ product.url }}" class="cstm-product-link">  <li>{{ product.title }}</li></a>
+                        </li>
+                     {% endif %}
+                      </div>
+                  {% endfor %}
+                </section>
+                  {% endif %}
+                {% endfor %}
+              </div>
+             <nav>
+             {% comment %}
+            {% for collection in collections %}
+            <a href="#{{ forloop.index }}" id="{{ forloop.index }}" class="{{ forloop.index }}">
+              <img src="{{ collection.metafields.custom.icon | image_url }}">
+              <span style=" display: none;">{{- collection.title }}</span></a>
+            {% endfor %}
+          {% endcomment %}
+
+
+      
+ {% for link in block.settings.mega_menu.links %}
+  <li><a href= "{{ link.url }}">  <i class="fa fa-solar-panel"></i>
+</a></li>
+ 
+{% endfor %} 
+
+
+        
+
+
+{% comment %}
+          {% if block.settings.icon1 != blank %}
+          <a href="{{ block.settings.link1 }}">{{ block.settings.icon1 }}</a>
+          {% endif %}
+          {% if block.settings.icon2 != blank %}
+          <a href="{{ block.settings.link2 }}">{{ block.settings.icon2 }}</a>
+          {% endif %}
+          {% if block.settings.icon3 != blank %}
+          <a href="{{ block.settings.link3 }}">{{ block.settings.icon3 }}</a>
+          {% endif %}
+         {% if block.settings.icon4 != blank %}
+          <a href="{{ block.settings.link4 }}">{{ block.settings.icon4 }}</a>
+          {% endif %}
+          {% if block.settings.icon5 != blank %}
+            <a href="{{ block.settings.link5 }}">
+            {{ block.settings.icon5 }}
+          </a>
+          {% endif %}
+                  {% if block.settings.icon6 != blank %}
+          <a href="{{ block.settings.link6 }}">
+            {{ block.settings.icon6 }}
+          </a>
+          {% endif %}
+                  {% if block.settings.icon7 != blank %}
+          <a href="{{ block.settings.link7 }}">
+            {{ block.settings.icon7 }}
+          </a>
+          {% endif %}
+
+{% endcomment %}
+        
+          </nav>
+        </ul>
+   
+
+
+
+
+        
+      </span>
+      {% endfor %}
+    </ul>
+  </li>
+
+
+
+
+{% endcase %}
+                
+
+    {% endfor %}
+  </ul>
+</div>
+{% schema %}
+  {
+    "name": "top-menu",
+  
+    "blocks": [
+     {
+       "name": "Tab",
+       "type": "tab",
+ 
+       "settings": [
+         {
+           "type":"color",
+           "id":"bg",
+           "label":"Tab Background"
+         },
+            {
+           "type":"color",
+           "id":"hover-bg",
+           "label":"Hover Background"
+         },
+        {
+           "type":"color",
+           "id":"clr",
+           "label":"Font Color"
+         },
+           {
+          "type":"html",
+          "id":"icon",
+          "label":"please insert Icon class from https://fontawesome.com/icons"
+        },
+      {
+          "type":"text",
+          "id":"title",
+          "label":"Tab Name"
+        },
+         {
+           "type":"url",
+           "id":"url",
+           "label":"Url"
+         }
+       ]
+     },
+      {
+       "name": "Menu",
+       "type": "Menu",
+         
+       "settings": [
+         
+         {
+           "type":"number",
+           "id":"custm-width",
+           "label":"Please insert Width in %"
+         },
+         {
+           "type":"color",
+           "id":"bg",
+           "label":"Tab Background"
+         },
+            {
+           "type":"color",
+           "id":"hover-bg",
+           "label":"Hover Background"
+         },
+
+        {
+           "type":"color",
+           "id":"clr",
+           "label":"Font Color"
+         },
+      {
+          "type":"text",
+          "id":"title",
+          "label":"Tab Name"
+        },
+        {
+               "type":"link_list",
+               "id":"mega_menu",
+               "label":"Menu To Use",
+               "info":"The menu should have atleast one item and main menu should have an item with the same name"
+        }       
+            
+       ]
+     }
+   ],
+    "presets":[
+      {
+        "name":"top-menu"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+{% if template != 'index' %}
+           
+  .header_top_nav_menu {
+    display: block;
+    height: 6.5rem;
+}
+  {% endif %}
+
+
+span.dropdown.cstm-width a.cstm-product-link:focus , span.dropdown.cstm-width a.cstm-product-link:hover {
+    color: #43db44 !important;
+    text-decoration: underline;
+}
+  li.hide_prdct-img {
+    display: none !important;
+}
+.header_top_nav_menu .menu_ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+.header_top_nav_menu .menu_ul li {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  top:4rem
+}
+  
+.header_top_nav_menu .menu_ul li:hover {
+  cursor: pointer;
+}
+  ul.dropdown-content.my-class nav a svg {
+    fill: white;
+}
+@media only screen and (max-width: 1300px) {
+.header_top_nav_menu .menu_ul li {
+     font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+  }
+  
+@media only screen and (max-width: 768px) {
+  .header_top_nav_menu .menu_ul li {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+  }
+}
+li.closes.url {
+    position: absolute;
+    top: 23px !important;
+}
+    
+ .closes {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  
+}
+.closes a {
+   
+    color: white;
+}
+  .closes a:hover {
+    color: white;
+    text-decoration: none;
+}
+#content:target {
+  display: none;
+}
+ul.dropdown-content.my-class {
+    height: 100vh;
+}
+  span.dropdown.cstm-width ul.dropdown-content {
+
+    display:none
+}
+    span.dropdown.cstm-width ul.dropdown-content.my-class {
+    display: block;
+    padding:0;
+
+}
+  a.top_menu img {
+    width: 100%;
+}
+
+
+</style>
+
+<style>
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #4d080800;
+  box-shadow: none;
+  padding: 0 16px;
+  margin: 0;
+  margin-top:1vh;
+  z-index: 99;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  transition: max-height 0.5s ease-out;
+}
+
+ul.dropdown-content li:first-child {
+    margin-top: 0;
+    position: initial;
+}
+
+
+ul.dropdown-content .container {
+    background: #fdfdfd;
+    position: fixed;
+    min-height: 100vh;
+    font-family: Montserrat, sans-serif;
+}
+
+nav a {
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    padding:0 20px;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    right: 300px;
+    z-index: 50;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    background: #43db44;
+    padding-top:4rem;
+    width: 8rem;
+  padding-top: 6rem !important;
+      row-gap: 2rem;
+}
+  ul.dropdown-content .container section {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    width: 12%;
+    opacity: 1;
+    transition: all ease-in .5s;
+    display: block !important;
+    overflow: scroll;
+    justify-content: start;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    padding-right:1rem
+  
+
+}
+nav li a i.fa {
+    font-size: 37px;
+}
+
+.product-cotainer:last-child {
+    padding-bottom: 16rem;
+}
+    .close-div {
+    position: fixed;
+    z-index: 999999;
+   right: 3rem;
+   display:none;
+}
+   .close-div .closes {
+    font-size: 54px;
+    position: absolute;
+    display: flex;
+    z-index: 9999;
+       right: 300px;
+}
+   .closes a {
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+      font-size: 43px;
+}
+
+ul.dropdown-content.my-class .container {
+  width: 300px !important;
+  right: 0px;
+  padding:0 6px;
+}
+ul.dropdown-content.my-class .container section{
+  width: 100%;
+}
+span.dropdown.cstm-width ul.dropdown-content.my-class{
+  top: 23px;
+}
+  span.dropdown.cstm-width a:hover {
+    color: white;
+}
+  .header_top_nav_menu .menu_ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 1020px){
+  .header_top_nav_menu .menu_ul li {
+    top: 3rem;
+}
+}
+@media screen and (max-width: 939px){
+  .header_top_nav_menu .menu_ul li {
+    top: 1rem;
+}
+}
+@media screen and (max-width: 875px){
+span.dropdown.cstm-width ul.dropdown-content.my-class {
+    top: 51px !important;
+}
+  .header_top_nav_menu .menu_ul li {
+    top: 3.5rem !important;
+}
+  nav {
+  /* padding-top: 6vw !important; */
+}
+}
+  @media screen and (max-width: 768px){
+  span.dropdown.cstm-width ul.dropdown-content.my-class {
+    top: 31px !important;
+}
+    .header_top_nav_menu .menu_ul li {
+    top: 1rem !important;
+    right: 266px;
+}
+  }
+    @media screen and (max-width: 768px){
+  .header_top_nav_menu .menu_ul li {
+    top: 2rem !important;
+}
+      nav {
+    padding-top: 11vw !important;
+}
+    }
+@media screen and (max-width: 1439px){
+  ul.dropdown-content.my-class .container {
+    width: 305px;
+    right: 0px;
+  }
+  ul.dropdown-content.my-class .container section{
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 939px){
+  .close-div{
+    top: 29px;
+  }
+  span.dropdown.cstm-width ul.dropdown-content.my-class{
+    top: 29px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  ul.dropdown-content .container {
+      background: #fdfdfd;
+      position: fixed;
+      min-height: 100vh;
+      font-family: Montserrat, sans-serif;
+      width: 50%;
+      right: 2rem;
+  }
+  ul.dropdown-content .container section {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 1;
+/*     display: none; */
+     display: block; 
+    justify-content: center;
+    overflow: scroll;
+    justify-content: start;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+}
+
+  ul.dropdown-content.my-class .container{
+    width: 250px !important;
+    right: 17px;
+  }
+  nav {
+    position: fixed;
+    right: 267px;
+  ul.dropdown-content.my-class .container section{
+    width: 100%;
+  }
+  .close-div{
+    top: 19px;
+  }
+  span.dropdown.cstm-width ul.dropdown-content.my-class{
+    top: 29px;
+  }
+    .close-div {
+    position: fixed;
+    z-index: 999999;
+    right: -6px;
+}
+    .header_top_nav_menu .menu_ul li {
+    top: 1rem;
+}
+}
+
+@media screen and (max-width: 446px){
+  .close-div{
+    top: 21px;
+  }
+  span.dropdown.cstm-width ul.dropdown-content.my-class{
+    top: 42px;
+  }
+}
+
+  ul.dropdown-content.my-class {
+    z-index: 11111;
+}
+  ul.dropdown-content.my-class nav a svg {
+    fill: white;
+}
+</style>
+
+
+
+<script>
+            
+  function myfn(){
+
+const myDiv = document.querySelector(' ul.dropdown-content');
+myDiv.classList.add("my-class");
+document.querySelector('.my-class').style.display="block";
+document.querySelector('.close-div').style.display="block";
+
+
+
+    
+  } 
+function clsfn(){
+
+const otherDiv = document.querySelector(' ul.dropdown-content');
+document.querySelector('.my-class').style.display="none"
+document.querySelector('.close-div').style.display="none";
+}  
+
+
+  {% comment %}
+//  its for showing products
+  const navLinks = document.querySelectorAll('nav a');
+  const sections = document.querySelectorAll('section');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault(); // prevent default link behavior
+
+      // get the section ID from the link href attribute
+      const sectionId = link.getAttribute('href').replace('#', '');
+
+      // hide all sections except the one that was clicked
+      sections.forEach(section => {
+        if (section.id === sectionId) {
+          section.style.display = 'grid';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+      link.classList.add('active');
+    });
+  });
+  {% endcomment %}
+</script>

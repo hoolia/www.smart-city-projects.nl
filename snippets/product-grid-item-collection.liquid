@@ -48,9 +48,10 @@
           {% endif %}
           <h4 class="product-name">
             <a href="{{ product.url | within: collection }}">
-              {% if settings.limit_title_words == true %}{{ product.title | truncate:settings.limit_title_words_count, "" }}{% else %}{{ product.title }}{% endif %}
+              {% if settings.limit_title_words == true %}{{ product.title | truncate:settingsl.limit_title_words_count, "" }}{% else %}{{ product.title }}{% endif %}
             </a>
           </h4>
+            {% include 'price'%}
           {% if section.settings.show_summary %}
           <p class="product-des">
             {% if product.description contains '[summary]' %}
@@ -64,7 +65,7 @@
             {% endif %}
           </p>
           {% endif %}
-          {% include 'price'%}
+        
           <button class="button btn-cart {% if sold_out %} btn disabled {% endif %}" type="button" data-toggle="tooltip" data-loading-text="{{ 'products.product.loading' | t }}" title="{{ 'products.product.add_to_cart' | t }}" {% if sold_out == false %}onclick="{% if product.variants.first.available %}cart.add('{{  product.variants.first.id  }}'){% else %}window.top.location.href='{{product.url}}'{% endif %};"{% endif %}>
             <span>{% if sold_out == false %}{{ 'products.product.add_to_cart' | t }}{% else %} {{ 'products.product.sold_out' | t }}{%endif%}</span>
           </button>

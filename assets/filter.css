@@ -21,12 +21,12 @@ Get font-families from theme settings
 }
 .layered-navigation-block { display: none; background-color : black; height : 100%; opacity : 0.35; position : fixed; top : 0; left: 0; width : 100%; z-index : 900; }
 .ajax-loader { display: none; z-index: 1000; position: fixed; top: 50%; left: 50%; }
-.layernavigation-module .layered-heading {display:none;color: #f8f8f8;text-transform: capitalize;font-size: 24px;background: none;border-radius: 0;box-shadow: none;margin-bottom: 30px;padding: 0;border: 0;font-weight: 500;}
+.layernavigation-module .layered-heading {display:none;color: #fff;text-transform: capitalize;font-size: 24px;background: none;border-radius: 0;box-shadow: none;margin-bottom: 30px;padding: 0;border: 0;font-weight: 500;}
 .filter-attribute-container {
   margin-bottom: 22px;
   overflow: hidden;
 }
-.filter-attribute-container label {display: block;margin-bottom: 17px;font-size: 22px;color: #f8f8f8;font-weight: 500;text-transform: capitalize;}
+.filter-attribute-container label {display: block;margin-bottom: 17px;font-size: 22px;color: #fff;font-weight: 500;text-transform: capitalize;}
 .filter-attribute-container:last-child { margin-bottom:0; }
 .filter-attribute-container .remove-filter {color: red;position: absolute;right: 0;top: 50%;margin-top: -10px;font-size: 0;width: 20px;height: 20px;text-align: center;padding: 0;border: 0;}
 .filter-attribute-container .remove-filter i {line-height: inherit;}
@@ -55,14 +55,14 @@ Get font-families from theme settings
   background: #fff;
 }
 .list-group .filter-attribute-container a.add-filter:hover {
-  color: #30bf32;
+  color: #ffffff;
 }
 .list-group .filter-attribute-container a.add-filter:hover:before,
 .list-group .filter-attribute-container a.add-filter.active:before 
 {
   color: #fff;
-  background: #30bf32;
-  border-color: #30bf32;
+  background: #ffffff;
+  border-color: #ffffff;
 }
 .filter-attribute-remove-container {
   background: none;
@@ -85,7 +85,7 @@ Get font-families from theme settings
   position: relative;
 }
 #slider-price .ui-widget-header {
-  background: #30bf32;
+  background: #ffffff;
   height: 100%;
   border-radius: 0;
   position: absolute;
@@ -106,7 +106,7 @@ Get font-families from theme settings
   margin-left: -18px;
 }
 .ui-slider .ui-slider-handle:hover {
-  background: #30bf32;
+  background: #ffffff;
 }
 .filter-price .slider-values {
   padding: 5px 0;
