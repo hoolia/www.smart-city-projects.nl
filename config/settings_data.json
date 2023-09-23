@@ -1464,8 +1464,8 @@
           "8ca29c6a-eeb9-40b3-b65f-4443df9da5e7": {
             "type": "tab",
             "settings": {
-              "bg": "#4ad44a",
-              "hover-bg": "#0c9e0e",
+              "bg": "#0b2e34",
+              "hover-bg": "#242424",
               "clr": "#fff",
               "icon": "",
               "title": "Office heating",
@@ -1486,8 +1486,8 @@
           "8be3d9f6-d330-4320-a67c-6f90675bcecb": {
             "type": "tab",
             "settings": {
-              "bg": "#4ad44a",
-              "hover-bg": "#0c9e0e",
+              "bg": "#0b2e34",
+              "hover-bg": "#242424",
               "clr": "#fff",
               "icon": "",
               "title": "Solar panels",
@@ -1497,7 +1497,7 @@
           "ed0099c4-5711-467a-b015-4ef3d374a8b0": {
             "type": "Menu",
             "settings": {
-              "bg": "#242424",
+              "bg": "#0b2e34",
               "hover-bg": "#242424",
               "clr": "#ffffff",
               "title": "More",
