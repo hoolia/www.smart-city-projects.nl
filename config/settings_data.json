@@ -1497,8 +1497,8 @@
           "ed0099c4-5711-467a-b015-4ef3d374a8b0": {
             "type": "Menu",
             "settings": {
-              "bg": "#30bf32",
-              "hover-bg": "#0c9e0e",
+              "bg": "#242424",
+              "hover-bg": "#242424",
               "clr": "#ffffff",
               "title": "More",
               "mega_menu": ""
