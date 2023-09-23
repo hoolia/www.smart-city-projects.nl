@@ -1499,7 +1499,7 @@
             "settings": {
               "bg": "#0b2e34",
               "hover-bg": "#242424",
-              "clr": "#242424",
+              "clr": "#ffffff",
               "title": "More",
               "mega_menu": ""
             }
