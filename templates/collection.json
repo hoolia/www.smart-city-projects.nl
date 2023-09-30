@@ -1,10 +1,5 @@
 {
   "sections": {
-    "a9746d73-67c5-452a-97ba-19fb3712a3e6": {
-      "type": "custom-liquid",
-      "settings": {
-      }
-    },
     "c0797022-7dd0-4faf-8efe-5b0b494af25e": {
       "type": "slider",
       "blocks": {
@@ -82,7 +77,6 @@
     }
   },
   "order": [
-    "a9746d73-67c5-452a-97ba-19fb3712a3e6",
     "c0797022-7dd0-4faf-8efe-5b0b494af25e",
     "main"
   ]
