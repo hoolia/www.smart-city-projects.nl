@@ -39,9 +39,15 @@
         "product_sharing_links": false,
         "product_sticky_cart": false
       }
+    },
+    "pagefly-product-section": {
+      "type": "pagefly-product-section",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "pagefly-product-section"
   ]
 }
