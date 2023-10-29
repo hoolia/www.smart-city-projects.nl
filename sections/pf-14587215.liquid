@@ -11,50 +11,33 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 
 .variant-block {
   border: 1px solid #e1e1e1;
-  padding: 10px 0 10px 0;
+  padding: 10px;
   flex: 0 0 calc(30% - 20px);
   margin: 10px 0;
   box-sizing: border-box;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;
-  transition: transform 0.3s;
-  margin-left: 10px;
-
-  /* Adding transition for the transform effect */
-}
-
-.variant-block .price {
-  margin: 10px 0;
-  /* This applies a 10px vertical margin (top and bottom) and no horizontal margin */
-}
-
-.variant-block:hover {
-  transform: scale(1.05);
-  /* Upscale the block slightly on hover */
+  /* Apply Poppins font */
 }
 
 .variant-block img {
-  max-width: 100%;
+  max-width: 120%;
   display: block;
-  margin: 0;
-  margin-top: -10px;
-  border-radius: 8px 8px 0 0;
+  margin-bottom: 10px;
+  border-radius: 8px;
 }
 
 .variant-block h2 {
   color: black;
   margin-bottom: 10px;
   font-weight: bold;
-  margin-left: 10px;
 }
 
 .variant-block p {
   font-size: 1.2em;
   margin-bottom: 10px;
   font-weight: bold;
-  margin-left: 10px;
-
+  /* Make the price bold */
 }
 
 .buy-button {
@@ -66,14 +49,11 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   border-radius: 5px;
   transition: background-color 0.3s;
   font-family: 'Poppins', sans-serif;
-  margin-left: 10px;
-
+  /* Apply Poppins font */
 }
 
-.buy-button:hover,
-.buy-button:active {
-  background-color: #0a8a4f;
-  color: #fff;
+.buy-button:hover {
+  background-color: #0da558;
 }
 
 .metafield-group {
@@ -82,21 +62,15 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
   padding: 5px 0;
-  margin-left: 10px;
-
 }
 
 .metafield-item {
   font-size: 0.9em;
   margin-bottom: 5px;
-  margin-left: 10px;
-
 }
 
 .metafield-item:last-child {
   margin-bottom: 0;
-  margin-left: 10px;
-
 }</style> <style></style><script>
 	window.__pageflyProducts = window.__pageflyProducts || {};
 	{% unless product.id == null %}window.__pageflyProducts["{{product.id}}"] = {
