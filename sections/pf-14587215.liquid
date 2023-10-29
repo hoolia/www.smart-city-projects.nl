@@ -149,13 +149,15 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   {% for variant in product.variants %}
   <div class="variant-block">
     {% if variant.image %}
-    <img src="{{ variant.image.src | img_url: '400x410' }}" alt="{{ variant.title }}">
+    <img src="{{ variant.image.src | img_url: '400x400' }}" alt="{{ variant.title }}">
        {% endif %}
     <h2>{{ variant.title }}</h2>
-    <p class="price">{{ variant.price | money_without_currency }} {{ shop.currency }}</p>
+    <div class="price"">
+      <p>{{ variant.price | money_without_currency }} {{ shop.currency }}</p>
+    </div>
 
-    <!-- Displaying metafield data -->
-    <div class="metafield-group">
+      <!-- Displaying metafield data -->
+      <div class=" metafield-group">
       <div class="metafield-item">
         <strong>Total Raised:</strong>
         {{ variant.metafields.custom.total_raised }}
