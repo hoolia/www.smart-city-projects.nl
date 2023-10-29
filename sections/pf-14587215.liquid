@@ -11,18 +11,27 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 
 .variant-block {
   border: 1px solid #e1e1e1;
-  padding: 10px;
+  padding: 10px 0 10px 0;
   flex: 0 0 calc(30% - 20px);
   margin: 10px 0;
   box-sizing: border-box;
   border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  transition: transform 0.3s;
+  /* Adding transition for the transform effect */
+}
+
+.variant-block:hover {
+  transform: scale(1.05);
+  /* Upscale the block slightly on hover */
 }
 
 .variant-block img {
-  max-width: 120%;
+  max-width: 100%;
   display: block;
-  margin-bottom: 10px;
-  border-radius: 8px;
+  margin: 0;
+  border-radius: 8px 8px 0 0;
 }
 
 .variant-block h2 {
@@ -34,6 +43,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 .variant-block p {
   font-size: 1.2em;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .buy-button {
@@ -50,9 +60,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 .buy-button:hover,
 .buy-button:active {
   background-color: #0a8a4f;
-  /* Darker green on hover/click */
-  color: #ffffff;
-  /* Ensuring text remains white */
+  color: #fff;
 }
 
 .metafield-group {
