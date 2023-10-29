@@ -152,7 +152,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     <img src="{{ variant.image.src | img_url: '400x410' }}" alt="{{ variant.title }}">
        {% endif %}
     <h2>{{ variant.title }}</h2>
-    <p>{{ variant.price | money_without_currency }} {{ shop.currency }}</p>
+    <p class="price">{{ variant.price | money_without_currency }} {{ shop.currency }}</p>
 
     <!-- Displaying metafield data -->
     <div class="metafield-group">
