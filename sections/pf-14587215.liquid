@@ -27,7 +27,12 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 }
 
 .variant-block img {
-  max-width: 100%;
+  width: 100%;
+  /* this will ensure the width matches the container */
+  height: 300px;
+  /* set a fixed height */
+  object-fit: cover;
+  object-position: center;
   display: block;
   margin: 0;
   border-radius: 8px 8px 0 0;
@@ -65,8 +70,10 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 
 .buy-button:hover,
 .buy-button:active {
- background-color: #10c166ff;  /* Keeps the button color green even on hover */
-    color: white;  /* Keeps the button text color white even on hover */
+  background-color: #10c166ff;
+  /* Keeps the button color green even on hover */
+  color: white;
+  /* Keeps the button text color white even on hover */
 }
 }
 
