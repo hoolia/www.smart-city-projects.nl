@@ -49,20 +49,24 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 }
 
 .buy-button {
-  display: inline-block;
-  padding: 8px 16px;
+  width: 100%;
+  /* This will make the button take up the full width of its container */
   background-color: #10c166ff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  /* Set button color to green */
+  color: white;
+  /* Set button text color to white */
+  border: none;
+  /* Removes any borders, if any */
+  transition: background-color 0.3s ease;
+  /* This smoothens the hover transition */
   font-family: 'Poppins', sans-serif;
 }
 
 .buy-button:hover,
 .buy-button:active {
-  background-color: #0a8a4f;
-  color: #fff;
+ background-color: #10c166ff;  /* Keeps the button color green even on hover */
+    color: white;  /* Keeps the button text color white even on hover */
+}
 }
 
 .metafield-group {
