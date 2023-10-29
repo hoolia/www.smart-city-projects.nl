@@ -11,7 +11,8 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 
 .variant-block {
   border: 1px solid #e1e1e1;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 10px 10px;
+  /* Adjusted padding */
   flex: 0 0 calc(30% - 20px);
   margin: 10px 0;
   box-sizing: border-box;
@@ -19,12 +20,10 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
   transition: transform 0.3s;
-  /* Adding transition for the transform effect */
 }
 
 .variant-block:hover {
   transform: scale(1.05);
-  /* Upscale the block slightly on hover */
 }
 
 .variant-block img {
@@ -38,10 +37,13 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   color: black;
   margin-bottom: 10px;
   font-weight: bold;
+  text-align: center;
+  /* Centering the title */
 }
 
 .variant-block p {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  /* Making the price a bit bigger */
   margin-bottom: 10px;
   font-weight: bold;
 }
