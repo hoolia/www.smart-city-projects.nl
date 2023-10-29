@@ -225,7 +225,7 @@
           "use_top_bar": false,
           "top_bar_message": "",
           "logo_use_image": true,
-          "logo": "shopify:\/\/shop_images\/Asset_9_2x_420e38b8-3d24-402b-80c1-3b7a3325ebfb.png",
+          "logo": "{{ shop.brand.logo }}",
           "logo_padding": "25px 0px 25px 0px",
           "header_menu_1": "main-menu",
           "show_menu_fixbar": false,
