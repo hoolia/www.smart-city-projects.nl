@@ -20,6 +20,11 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
   transition: transform 0.3s;
+  position: relative;
+  overflow: hidden;
+  /* Ensures that any child element does not spill outside its parent */
+  padding-right: 0;
+  /* Resets any existing right padding */
 }
 
 .variant-block:hover {
@@ -27,12 +32,11 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 }
 
 .variant-block img {
-  width: 100%;
+  width: 101%;
+  /* It will slightly expand the image beyond its container to ensure no gaps */
   display: block;
+  margin: 0;
   border-radius: 8px 8px 0 0;
-  margin-top: -10px;
-  margin-left: -10px;
-  margin-right: -10px;
 }
 
 .variant-block h2 {
