@@ -23,8 +23,6 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   position: relative;
   overflow: hidden;
   /* Ensures that any child element does not spill outside its parent */
-  padding-right: 0;
-  /* Resets any existing right padding */
 }
 
 .variant-block:hover {
@@ -35,8 +33,10 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   width: 100%;
   /* It will slightly expand the image beyond its container to ensure no gaps */
   display: block;
+  position: relative;
+  left: -0.5%;
   margin: 0;
-  border-radius: 8px 8px 8px 8px ;
+  border-radius: 8px 8px 8px 8px;
 }
 
 .variant-block h2 {
