@@ -159,7 +159,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
       </div>
       <div class="metafield-item">
         <strong>APR:</strong>
-        {{ variant.metafields.your_custom.apr}} <p>%</p>
+        {{ variant.metafields.custom.apr | times: 100 }}%
       </div>
     </div>
 
