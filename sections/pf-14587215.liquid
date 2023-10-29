@@ -11,29 +11,41 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 
 .variant-block {
   border: 1px solid #e1e1e1;
-  padding: 10px;
+  padding: 10px 0 10px 10px;
+  /* Adjusted padding */
   flex: 0 0 calc(30% - 20px);
   margin: 10px 0;
   box-sizing: border-box;
   border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.variant-block:hover {
+  transform: scale(1.05);
 }
 
 .variant-block img {
-  max-width: 120%;
+  max-width: 100%;
   display: block;
-  margin-bottom: 10px;
-  border-radius: 8px;
+  margin: 0;
+  border-radius: 8px 8px 0 0;
 }
 
 .variant-block h2 {
   color: black;
   margin-bottom: 10px;
   font-weight: bold;
+  text-align: center;
+  /* Centering the title */
 }
 
 .variant-block p {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  /* Making the price a bit bigger */
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .buy-button {
@@ -44,10 +56,13 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif;
 }
 
-.buy-button:hover {
-  background-color: #0da558;
+.buy-button:hover,
+.buy-button:active {
+  background-color: #0a8a4f;
+  color: #fff;
 }
 
 .metafield-group {
