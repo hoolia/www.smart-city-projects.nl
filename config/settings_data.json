@@ -29,7 +29,7 @@
     "headings_color": "#f8f8f8",
     "header_fg_color": "#ffffff",
     "overwrite_header_bg_color": true,
-    "header_bg_color": "#292929",
+    "header_bg_color": "#ffffff",
     "header_inner_bar_color": "#10c166",
     "hd_menu_color": "#10c166",
     "hd_menu_inner_color": "#10c166",
@@ -1541,7 +1541,15 @@
       "23726bfe-e4ad-4539-a4f1-4289742a83db",
       "75a43b2a-1a20-41a3-9caf-43f29d41f10d",
       "ada929a6-a078-48fe-9ad8-2cb13591bcc5"
-    ]
+    ],
+    "blocks": {
+      "16278478101612877664": {
+        "type": "shopify:\/\/apps\/pagefly-page-builder\/blocks\/app-embed\/83e179f7-59a0-4589-8c66-c0dddf959200",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
   }
