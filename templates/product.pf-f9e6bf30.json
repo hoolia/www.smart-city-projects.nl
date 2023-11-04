@@ -39,9 +39,15 @@
         "product_sharing_links": false,
         "product_sticky_cart": false
       }
+    },
+    "pf-f9e6bf30": {
+      "type": "pf-f9e6bf30",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "pf-f9e6bf30"
   ]
 }

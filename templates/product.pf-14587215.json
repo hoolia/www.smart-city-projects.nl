@@ -39,9 +39,15 @@
         "product_sharing_links": false,
         "product_sticky_cart": false
       }
+    },
+    "pf-14587215": {
+      "type": "pf-14587215",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "pf-14587215"
   ]
 }
