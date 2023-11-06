@@ -1,0 +1,53 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-page",
+      "disabled": true,
+      "settings": {
+        "product_page_layout": "horizontal_thumbs",
+        "show_zoom": false,
+        "enable_preload": false,
+        "show_summary": false,
+        "show_summary_stripped": true,
+        "product_summary_words": "30",
+        "product_vendor_enable": true,
+        "product_stock_enable": true,
+        "product_show_sku": true,
+        "product_show_barcode": false,
+        "show_variant_swatches": "color",
+        "product_quantity_enable": true,
+        "product_quantity_message": true,
+        "overwrite_addtocart_color": true,
+        "addtocart_color_text": "#323233",
+        "addtocart_color_bg": "#ffffff",
+        "show_buy_now": true,
+        "overwrite_buy_now_color": true,
+        "buy_now_color_text": "#323233",
+        "buy_now_color_bg": "#ffffff",
+        "show_tags_links": false,
+        "product_description_layout": "tab",
+        "show_description_tab": true,
+        "show_reviews_tab": false,
+        "show_third_tab": false,
+        "third_tab_title": "Custom Tab",
+        "third_tab_text": "You can add, text, html, images and videos as well to the tab from product settings area",
+        "show_tags_tab": false,
+        "custom_tab_title": "Additional Info",
+        "related_products_enable": false,
+        "recent_products_enable": false,
+        "product_grid_img_carousel": false,
+        "product_sharing_links": false,
+        "product_sticky_cart": false
+      }
+    },
+    "pf-accfd01a": {
+      "type": "pf-accfd01a",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "pf-accfd01a"
+  ]
+}
