@@ -135,7 +135,8 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 <body>
 
   <!-- Replace 'YOUR_PDF_URL_HERE' with the actual URL to your PDF file -->
-  <a href="YOUR_PDF_URL_HERE" class="download-pdf-button" target="_blank" rel="noopener noreferrer">
+  <a href="{{ product.metafields.custom.attachment }}" class="download-pdf-button" target="_blank"
+    rel="noopener noreferrer">
     Download PDF
   </a>
 
