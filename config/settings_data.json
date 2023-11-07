@@ -1548,6 +1548,24 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "316487575649303945": {
+        "type": "shopify:\/\/apps\/easify-product-options\/blocks\/app-embed-block\/d2288b18-c1ba-42f5-b3b3-26c75c8820bf",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "12319367313121097079": {
+        "type": "shopify:\/\/apps\/easify-attachments\/blocks\/app-embed-block\/cc218f93-dff3-4a2d-af6e-04e2bc66e693",
+        "disabled": false,
+        "settings": {
+          "title": "Product Attachments",
+          "show_file_icon": true,
+          "show_file_size": true,
+          "page_attachment_title": "Page Attachments",
+          "page_attachment_show_file_icon": true,
+          "page_attachment_show_file_size": true
+        }
       }
     }
   },
