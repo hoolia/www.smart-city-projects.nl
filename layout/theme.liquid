@@ -285,7 +285,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     this.querySelector('i').classList.toggle('icon-close')
 })
 </script>
-    
+<script>
+  // part-of: "Globo Product Options" App
+  var check = false;
+  var ga_interval = setInterval(checkApp, 100);
+  function checkApp() {
+    let cloneAtc = document.querySelector('.gpo-clone-atc-button');
+        if (cloneAtc) {
+           check = true;
+           clearInterval(ga_interval);
+        }
+        if (check) {
+           cloneAtc.removeAttribute('data-product-id');
+        }
+  }
+</script>    
   </body>
 </html>
 <style>
