@@ -1554,6 +1554,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "12973772748516043749": {
+        "type": "shopify:\/\/apps\/bitespeed-whatsapp-marketing\/blocks\/app-embed\/9efdb9ca-2d01-4a12-b1ac-02679fe0f6fc",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
