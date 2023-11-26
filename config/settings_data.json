@@ -1564,5 +1564,10 @@
     }
   },
   "presets": {
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".ul-top-items{color: #10c166; }"
+    ]
   }
 }
