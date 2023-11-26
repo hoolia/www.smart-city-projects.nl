@@ -1567,7 +1567,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".ul-top-items{color: #10c166; }"
+      ".ul-top-items {color: #FFFFFF;}"
     ]
   }
 }
