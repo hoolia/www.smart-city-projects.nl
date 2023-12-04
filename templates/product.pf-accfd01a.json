@@ -40,14 +40,14 @@
         "product_sticky_cart": false
       }
     },
-    "pf-f9e6bf30": {
-      "type": "pf-f9e6bf30",
+    "pf-accfd01a": {
+      "type": "pf-accfd01a",
       "settings": {
       }
     }
   },
   "order": [
     "main",
-    "pf-f9e6bf30"
+    "pf-accfd01a"
   ]
 }
