@@ -1,0 +1,89 @@
+{
+  "sections": {
+    "c0797022-7dd0-4faf-8efe-5b0b494af25e": {
+      "type": "slider",
+      "blocks": {
+        "template--19074922709316__c0797022-7dd0-4faf-8efe-5b0b494af25e-168736550656ff4170-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_15.png",
+            "animation_style": "none",
+            "heading": "Hoolia Web Shop",
+            "heading_size": "44px",
+            "heading_color": "#323233",
+            "subheading": "",
+            "subheading_size": "90px",
+            "subheading_color": "#ffffff",
+            "description": "",
+            "description_size": "16px",
+            "description_color": "#ffffff",
+            "slide_link_text": "",
+            "slide_link": "",
+            "link_bg": "#000000",
+            "link_color": "#ffffff",
+            "image_clickable": false,
+            "top": "50%",
+            "right": "0%",
+            "left": "0%",
+            "width": "100%",
+            "float": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--19074922709316__c0797022-7dd0-4faf-8efe-5b0b494af25e-168736550656ff4170-0"
+      ],
+      "settings": {
+        "autoplay_speed": "100000000",
+        "layout_slider": "slider-1",
+        "fullwidth": true,
+        "use_box_layout": true,
+        "fit_to_container": false,
+        "full_size_on_mobile": false
+      }
+    },
+    "main": {
+      "type": "collection-page",
+      "blocks": {
+        "1573617428544": {
+          "type": "filters",
+          "settings": {
+            "collection_sidebar_filters": "groups"
+          }
+        },
+        "1573617431533": {
+          "type": "image",
+          "settings": {
+            "collection_side_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "1573617428544",
+        "1573617431533"
+      ],
+      "settings": {
+        "product_count_per_page": "12",
+        "show_top_filters": true,
+        "collection_view_default": "5",
+        "show_summary": true,
+        "show_summary_stripped": true,
+        "product_summary_words": "100",
+        "show_collection_sidebar": "left",
+        "show_color_box": true,
+        "color_box_variant": "color",
+        "show_pagination_bar": "false"
+      }
+    },
+    "pf-ec1163c5": {
+      "type": "pf-ec1163c5",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "c0797022-7dd0-4faf-8efe-5b0b494af25e",
+    "main",
+    "pf-ec1163c5"
+  ]
+}
