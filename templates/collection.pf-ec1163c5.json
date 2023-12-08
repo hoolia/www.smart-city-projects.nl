@@ -33,6 +33,7 @@
       "block_order": [
         "template--19074922709316__c0797022-7dd0-4faf-8efe-5b0b494af25e-168736550656ff4170-0"
       ],
+      "disabled": true,
       "settings": {
         "autoplay_speed": "100000000",
         "layout_slider": "slider-1",
@@ -62,6 +63,7 @@
         "1573617428544",
         "1573617431533"
       ],
+      "disabled": true,
       "settings": {
         "product_count_per_page": "12",
         "show_top_filters": true,
