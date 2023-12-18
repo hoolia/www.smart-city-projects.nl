@@ -1482,8 +1482,8 @@
               "hover-bg": "#242424",
               "clr": "#ffffff",
               "icon": "",
-              "title": "Bio gas",
-              "url": "shopify:\/\/pages\/bio-gas"
+              "title": "Heatwave container",
+              "url": "shopify:\/\/pages\/greenwave"
             }
           },
           "8be3d9f6-d330-4320-a67c-6f90675bcecb": {
@@ -1567,7 +1567,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".ul-top-items {color: #FFFFFF;}"
+      ".ul-top-items {color: #ffffff;}"
     ]
   }
 }
