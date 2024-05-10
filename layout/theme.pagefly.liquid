@@ -9,7 +9,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 <!--[if (gt IE 9)|!(IE)]><!-->
 <html dir="ltr" lang="en">
   <!--<![endif]-->
-  <head>{% render 'pagefly-head' %}
+  <head>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -119,7 +119,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  </head>
+  
+
+{{ 'custom-styles.css' | asset_url | stylesheet_tag }}
+{% include 'pagefly-app-header' %}</head>
   <body class="{% case template %}
                {% when 'index' %}
                common-home
@@ -136,7 +139,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                {% when 'customers/login' %}
                account-login
                {% else %} {{ template }}
-               {% endcase %} home1" ><div class="pagefly-container">{{ content_for_layout }}</div></body>
+               {% endcase %} home1" ><div class="pagefly-container">
+              {{ content_for_layout }}
+            </div></body>
 </html>
 <style>
   div#oc-menu-mheader {
