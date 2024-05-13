@@ -1483,7 +1483,7 @@
               "clr": "#ffffff",
               "icon": "",
               "title": "Heatwave container",
-              "url": "shopify:\/\/pages\/greenwave"
+              "url": "shopify:\/\/pages\/heatwave-container"
             }
           },
           "8be3d9f6-d330-4320-a67c-6f90675bcecb": {
@@ -1567,9 +1567,9 @@
         "settings": {
           "button_color": "#000000",
           "button_icon": "team",
+          "button_text": "no_text",
           "button_horizontal_position": "bottom_left",
           "button_vertical_position": "higher",
-          "button_text": "no_text",
           "greeting_message": "👋 Hi, message us with any questions. We're happy to help!"
         }
       },
