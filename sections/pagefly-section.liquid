@@ -1,14 +1,13 @@
 
-{% if request.design_mode %}
-<style>.pf-ph{font-size:14px!important;background:#fafafa;padding:20px;text-align:center;border:1px solid #f0f0f0;border-radius:4px;margin:15px}.pf-ph span{display:block;background:#e6f7ff;padding:8px 15px;border:1px solid #91d5ff}</style>
-{% endif %}
 {% if section.settings.section_id.size > 0 %}
-  {% assign snippet_name = section.settings.section_id %}
-  {% render 'pagefly-settings' %}
-  {% include snippet_name %}
-  {% else %}
-    
+  <!-- PageFlyGlobalSection -->
+  {% render 'pagefly-main-js' %}
+  {% render 'pagefly-main-css' %}
+  {% include section.settings.section_id %}
+{% else %}
+  
     {% if request.design_mode %}
+      <style>.pf-ph{font-size:14px!important;background:#fafafa;padding:20px;text-align:center;border:1px solid #f0f0f0;border-radius:4px;margin:15px}.pf-ph span{display:block;background:#e6f7ff;padding:8px 15px;border:1px solid #91d5ff}</style>
       <div class="pf-ph">
         <h3>PageFly Section</h3>
         <span>No section selected. Please select your section from the list</span>
@@ -37,32 +36,12 @@
         {
           "label": "Team",
           "value": "pf-130bf1f5"
-        },
-        {
-          "label": "Project details",
-          "value": "pf-1b75f21f"
-        },
-        {
-          "label": "Key insights",
-          "value": "pf-8278d6f0"
-        },
-        {
-          "label": "Product section",
-          "value": "pf-02a38a47"
-        },
-        {
-          "label": "Zero cost",
-          "value": "pf-c94605e6"
-        },
-        {
-          "label": "Contact",
-          "value": "pf-d4dcd9b7"
         }
       ]
     },
     {
       "type": "paragraph",
-      "content": "Find and edit your section on the [section listing](https://apps.pagefly.io/sections)"
+      "content": "Find and edit your section on the [section listing](https://smart-city-projects-nl.myshopify.com/admin/apps/pagefly/sections)"
     },
     {
       "type": "paragraph",
