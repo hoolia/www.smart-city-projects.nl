@@ -39,7 +39,7 @@
                       <div  class="product-cotainer">
                    {% if product.featured_image != blank %}
                         <a href="{{ product.url }}" class="top_menu">
-                          {% include 'product-grid-image',image:product.featured_image | limits:1%}
+                          {% include 'product-grid-image', image: product.featured_image, limits: 1 %}
                         </a>
                  
                         <li class="hide_prdct-img">
@@ -616,4 +616,13 @@ document.querySelector('.close-div').style.display="none";
     });
   });
   {% endcomment %}
-</script>
+</script>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'product-grid-image',image:product.featured_image | limits:1%}"
+  to: "{% include 'product-grid-image', image: product.featured_image, limits: 1 %}"
+  position: 1970..2046
+{%- endcomment -%}
